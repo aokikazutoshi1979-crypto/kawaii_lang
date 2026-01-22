@@ -1,0 +1,2102 @@
+[
+  {
+    "id": "dating_001",
+    "scene": "dating",
+    "subScene": "dating_first_meeting",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "はじめまして。",
+      "en": "Nice to meet you.",
+      "zh": "很高兴见到你。",
+      "zh_TW": "很高興見到你。",
+      "ko": "만나서 반갑습니다.",
+      "es": "Mucho gusto.",
+      "fr": "Enchanté(e).",
+      "de": "Freut mich, Sie kennenzulernen.",
+      "vi": "Rất vui được gặp bạn.",
+      "id": "Senang bertemu dengan Anda."
+    }
+  },
+  {
+    "id": "dating_002",
+    "scene": "dating",
+    "subScene": "dating_first_meeting",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "お会いできてうれしいです。",
+      "en": "I’m glad to meet you.",
+      "zh": "很高兴见到你。",
+      "zh_TW": "很高興見到你。",
+      "ko": "만나서 기쁩니다.",
+      "es": "Me alegra conocerte.",
+      "fr": "Je suis heureux(se) de vous rencontrer.",
+      "de": "Ich freue mich, Sie kennenzulernen.",
+      "vi": "Tôi rất vui được gặp bạn.",
+      "id": "Saya senang bertemu dengan Anda."
+    }
+  },
+  {
+    "id": "dating_003",
+    "scene": "dating",
+    "subScene": "dating_first_meeting",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "どこから来られたんですか？",
+      "en": "Where are you from?",
+      "zh": "你来自哪里？",
+      "zh_TW": "你來自哪裡？",
+      "ko": "어디서 오셨어요?",
+      "es": "¿De dónde eres?",
+      "fr": "D’où venez-vous ?",
+      "de": "Woher kommen Sie?",
+      "vi": "Bạn đến từ đâu?",
+      "id": "Dari mana asal Anda?"
+    }
+  },
+  {
+    "id": "dating_004",
+    "scene": "dating",
+    "subScene": "dating_first_meeting",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "ここにはよく来るんですか？",
+      "en": "Do you come here often?",
+      "zh": "你经常来这里吗？",
+      "zh_TW": "你經常來這裡嗎？",
+      "ko": "여기 자주 오세요?",
+      "es": "¿Vienes aquí a menudo?",
+      "fr": "Vous venez souvent ici ?",
+      "de": "Kommen Sie oft hierher?",
+      "vi": "Bạn có hay đến đây không?",
+      "id": "Apakah Anda sering ke sini?"
+    }
+  },
+  {
+    "id": "dating_005",
+    "scene": "dating",
+    "subScene": "dating_first_meeting",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "初めて会った気がしませんね。",
+      "en": "It doesn’t feel like our first meeting.",
+      "zh": "感觉不像第一次见面。",
+      "zh_TW": "感覺不像第一次見面。",
+      "ko": "처음 만난 것 같지 않네요.",
+      "es": "Siento que no es la primera vez que nos vemos.",
+      "fr": "J’ai l’impression que ce n’est pas notre première rencontre.",
+      "de": "Es fühlt sich nicht wie unser erstes Treffen an.",
+      "vi": "Tôi cảm giác như đây không phải lần đầu gặp nhau.",
+      "id": "Rasanya ini bukan pertemuan pertama kita."
+    }
+  },
+  {
+    "id": "dating_006",
+    "scene": "dating",
+    "subScene": "dating_first_meeting",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "お名前を教えていただけますか？",
+      "en": "Could you tell me your name?",
+      "zh": "请告诉我你的名字好吗？",
+      "zh_TW": "請告訴我你的名字好嗎？",
+      "ko": "이름을 알려 주시겠어요?",
+      "es": "¿Podrías decirme tu nombre?",
+      "fr": "Pouvez-vous me dire votre nom ?",
+      "de": "Könnten Sie mir Ihren Namen sagen?",
+      "vi": "Bạn có thể cho tôi biết tên bạn không?",
+      "id": "Bisakah Anda memberitahu saya nama Anda?"
+    }
+  },
+  {
+    "id": "dating_007",
+    "scene": "dating",
+    "subScene": "dating_first_meeting",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "お会いするのは初めてですよね？",
+      "en": "This is our first time meeting, right?",
+      "zh": "这是我们第一次见面，对吗？",
+      "zh_TW": "這是我們第一次見面，對嗎？",
+      "ko": "우리 처음 만나는 거죠?",
+      "es": "Es la primera vez que nos vemos, ¿verdad?",
+      "fr": "C’est la première fois que nous nous rencontrons, n’est-ce pas ?",
+      "de": "Dies ist das erste Mal, dass wir uns treffen, richtig?",
+      "vi": "Đây là lần đầu tiên chúng ta gặp nhau, đúng không?",
+      "id": "Ini pertama kali kita bertemu, bukan?"
+    }
+  },
+  {
+    "id": "dating_008",
+    "scene": "dating",
+    "subScene": "dating_first_meeting",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "お話しできてうれしいです。",
+      "en": "I’m happy to talk with you.",
+      "zh": "很高兴和你聊天。",
+      "zh_TW": "很高興和你聊天。",
+      "ko": "이야기 나눌 수 있어서 기쁩니다.",
+      "es": "Me alegra poder hablar contigo.",
+      "fr": "Je suis heureux(se) de pouvoir parler avec vous.",
+      "de": "Ich freue mich, mit Ihnen zu sprechen.",
+      "vi": "Tôi rất vui được trò chuyện với bạn.",
+      "id": "Saya senang bisa berbicara dengan Anda."
+    }
+  },
+  {
+    "id": "dating_009",
+    "scene": "dating",
+    "subScene": "dating_first_meeting",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "今日ここに来られた理由は何ですか？",
+      "en": "What brought you here today?",
+      "zh": "你今天来这里的原因是什么？",
+      "zh_TW": "你今天來這裡的原因是什麼？",
+      "ko": "오늘 여기에 오신 이유가 뭐예요?",
+      "es": "¿Qué te trae por aquí hoy?",
+      "fr": "Qu’est-ce qui vous amène ici aujourd’hui ?",
+      "de": "Was hat Sie heute hierher gebracht?",
+      "vi": "Hôm nay điều gì đã đưa bạn đến đây?",
+      "id": "Apa yang membawamu ke sini hari ini?"
+    }
+  },
+  {
+    "id": "dating_010",
+    "scene": "dating",
+    "subScene": "dating_first_meeting",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "もっとお話ししたいです。",
+      "en": "I’d like to talk more.",
+      "zh": "我想多聊聊。",
+      "zh_TW": "我想多聊聊。",
+      "ko": "더 이야기하고 싶어요.",
+      "es": "Me gustaría hablar más.",
+      "fr": "J’aimerais discuter davantage.",
+      "de": "Ich möchte mehr reden.",
+      "vi": "Tôi muốn nói chuyện thêm.",
+      "id": "Saya ingin berbicara lebih banyak."
+    }
+  },
+  {
+    "id": "dating_011",
+    "scene": "dating",
+    "subScene": "dating_casual_talk",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "今日はどんな一日でしたか？",
+      "en": "How was your day?",
+      "zh": "你今天过得怎么样？",
+      "zh_TW": "你今天過得怎麼樣？",
+      "ko": "오늘 하루 어땠어요?",
+      "es": "¿Cómo estuvo tu día?",
+      "fr": "Comment s’est passée votre journée ?",
+      "de": "Wie war Ihr Tag?",
+      "vi": "Ngày hôm nay của bạn thế nào?",
+      "id": "Bagaimana harimu?"
+    }
+  },
+  {
+    "id": "dating_012",
+    "scene": "dating",
+    "subScene": "dating_casual_talk",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "最近は何をしていますか？",
+      "en": "What have you been doing recently?",
+      "zh": "最近在做什么？",
+      "zh_TW": "最近在做什麼？",
+      "ko": "요즘 뭐 하고 지내세요?",
+      "es": "¿Qué has estado haciendo últimamente?",
+      "fr": "Qu’est-ce que vous faites ces derniers temps ?",
+      "de": "Was machen Sie in letzter Zeit?",
+      "vi": "Dạo này bạn làm gì?",
+      "id": "Akhir-akhir ini Anda sibuk apa?"
+    }
+  },
+  {
+    "id": "dating_013",
+    "scene": "dating",
+    "subScene": "dating_casual_talk",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "趣味は何ですか？",
+      "en": "What are your hobbies?",
+      "zh": "你的爱好是什么？",
+      "zh_TW": "你的愛好是什麼？",
+      "ko": "취미가 뭐예요?",
+      "es": "¿Cuáles son tus pasatiempos?",
+      "fr": "Quels sont vos passe-temps ?",
+      "de": "Was sind Ihre Hobbys?",
+      "vi": "Sở thích của bạn là gì?",
+      "id": "Apa hobi Anda?"
+    }
+  },
+  {
+    "id": "dating_014",
+    "scene": "dating",
+    "subScene": "dating_casual_talk",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "休日はどう過ごしますか？",
+      "en": "How do you spend your days off?",
+      "zh": "你休息日怎么过？",
+      "zh_TW": "你休息日怎麼過？",
+      "ko": "휴일은 어떻게 보내세요?",
+      "es": "¿Cómo pasas tus días libres?",
+      "fr": "Comment passez-vous vos jours de congé ?",
+      "de": "Wie verbringen Sie Ihre freien Tage?",
+      "vi": "Bạn thường làm gì vào ngày nghỉ?",
+      "id": "Bagaimana Anda menghabiskan hari libur?"
+    }
+  },
+  {
+    "id": "dating_015",
+    "scene": "dating",
+    "subScene": "dating_casual_talk",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "好きな食べ物は何ですか？",
+      "en": "What’s your favorite food?",
+      "zh": "你最喜欢的食物是什么？",
+      "zh_TW": "你最喜歡的食物是什麼？",
+      "ko": "좋아하는 음식이 뭐예요?",
+      "es": "¿Cuál es tu comida favorita?",
+      "fr": "Quel est votre plat préféré ?",
+      "de": "Was ist Ihr Lieblingsessen?",
+      "vi": "Món ăn yêu thích của bạn là gì?",
+      "id": "Apa makanan favorit Anda?"
+    }
+  },
+  {
+    "id": "dating_016",
+    "scene": "dating",
+    "subScene": "dating_casual_talk",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "音楽は何をよく聴きますか？",
+      "en": "What kind of music do you listen to?",
+      "zh": "你常听什么音乐？",
+      "zh_TW": "你常聽什麼音樂？",
+      "ko": "어떤 음악 자주 들어요?",
+      "es": "¿Qué tipo de música escuchas?",
+      "fr": "Quel genre de musique écoutez-vous ?",
+      "de": "Welche Musik hören Sie oft?",
+      "vi": "Bạn hay nghe loại nhạc nào?",
+      "id": "Musik apa yang sering Anda dengarkan?"
+    }
+  },
+  {
+    "id": "dating_017",
+    "scene": "dating",
+    "subScene": "dating_casual_talk",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "旅行は好きですか？",
+      "en": "Do you like traveling?",
+      "zh": "你喜欢旅行吗？",
+      "zh_TW": "你喜歡旅行嗎？",
+      "ko": "여행 좋아하세요?",
+      "es": "¿Te gusta viajar?",
+      "fr": "Aimez-vous voyager ?",
+      "de": "Reisen Sie gern?",
+      "vi": "Bạn có thích du lịch không?",
+      "id": "Apakah Anda suka bepergian?"
+    }
+  },
+  {
+    "id": "dating_018",
+    "scene": "dating",
+    "subScene": "dating_casual_talk",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "ペットは飼っていますか？",
+      "en": "Do you have any pets?",
+      "zh": "你养宠物吗？",
+      "zh_TW": "你養寵物嗎？",
+      "ko": "애완동물 키우세요?",
+      "es": "¿Tienes mascotas?",
+      "fr": "Avez-vous des animaux de compagnie ?",
+      "de": "Haben Sie Haustiere?",
+      "vi": "Bạn có nuôi thú cưng không?",
+      "id": "Apakah Anda punya hewan peliharaan?"
+    }
+  },
+  {
+    "id": "dating_019",
+    "scene": "dating",
+    "subScene": "dating_casual_talk",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "最近観た映画は何ですか？",
+      "en": "What’s the last movie you watched?",
+      "zh": "你最近看了什么电影？",
+      "zh_TW": "你最近看了什麼電影？",
+      "ko": "최근에 본 영화가 뭐예요?",
+      "es": "¿Cuál fue la última película que viste?",
+      "fr": "Quel est le dernier film que vous avez vu ?",
+      "de": "Welchen Film haben Sie zuletzt gesehen?",
+      "vi": "Bộ phim gần đây bạn xem là gì?",
+      "id": "Film apa yang terakhir Anda tonton?"
+    }
+  },
+  {
+    "id": "dating_020",
+    "scene": "dating",
+    "subScene": "dating_casual_talk",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "ここはよく来る場所ですか？",
+      "en": "Do you come here often?",
+      "zh": "你经常来这里吗？",
+      "zh_TW": "你經常來這裡嗎？",
+      "ko": "여기 자주 오세요?",
+      "es": "¿Vienes aquí a menudo?",
+      "fr": "Vous venez souvent ici ?",
+      "de": "Kommen Sie oft hierher?",
+      "vi": "Bạn có hay đến đây không?",
+      "id": "Apakah Anda sering ke sini?"
+    }
+  },
+  {
+    "id": "dating_021",
+    "scene": "dating",
+    "subScene": "dating_invitation",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "今度一緒に食事に行きませんか？",
+      "en": "Would you like to have a meal together sometime?",
+      "zh": "下次一起去吃饭好吗？",
+      "zh_TW": "下次一起去吃飯好嗎？",
+      "ko": "다음에 같이 식사하실래요?",
+      "es": "¿Te gustaría ir a comer juntos algún día?",
+      "fr": "Aimeriez-vous aller manger ensemble un de ces jours ?",
+      "de": "Möchten Sie irgendwann zusammen essen gehen?",
+      "vi": "Lần tới chúng ta đi ăn cùng nhau nhé?",
+      "id": "Apakah Anda mau makan bersama lain kali?"
+    }
+  },
+  {
+    "id": "dating_022",
+    "scene": "dating",
+    "subScene": "dating_invitation",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "週末に映画を見に行きませんか？",
+      "en": "Shall we go watch a movie this weekend?",
+      "zh": "周末去看电影好吗？",
+      "zh_TW": "週末去看電影好嗎？",
+      "ko": "주말에 영화 보러 갈래요?",
+      "es": "¿Vamos al cine este fin de semana?",
+      "fr": "On va au cinéma ce week-end ?",
+      "de": "Wollen wir am Wochenende ins Kino gehen?",
+      "vi": "Cuối tuần này mình đi xem phim nhé?",
+      "id": "Apa kita nonton film akhir pekan ini?"
+    }
+  },
+  {
+    "id": "dating_023",
+    "scene": "dating",
+    "subScene": "dating_invitation",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "コンサートに一緒に行きませんか？",
+      "en": "Would you like to go to a concert together?",
+      "zh": "要不要一起去听音乐会？",
+      "zh_TW": "要不要一起去聽音樂會？",
+      "ko": "콘서트 같이 갈래요?",
+      "es": "¿Quieres ir a un concierto juntos?",
+      "fr": "Vous voulez aller à un concert ensemble ?",
+      "de": "Möchten Sie gemeinsam zu einem Konzert gehen?",
+      "vi": "Bạn có muốn đi hòa nhạc cùng không?",
+      "id": "Apakah Anda mau pergi ke konser bersama?"
+    }
+  },
+  {
+    "id": "dating_024",
+    "scene": "dating",
+    "subScene": "dating_invitation",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "公園を散歩しませんか？",
+      "en": "Shall we take a walk in the park?",
+      "zh": "我们去公园散步好吗？",
+      "zh_TW": "我們去公園散步好嗎？",
+      "ko": "공원 산책할래요?",
+      "es": "¿Damos un paseo por el parque?",
+      "fr": "Allons nous promener au parc ?",
+      "de": "Wollen wir im Park spazieren gehen?",
+      "vi": "Chúng ta đi dạo công viên nhé?",
+      "id": "Apa kita jalan-jalan di taman?"
+    }
+  },
+  {
+    "id": "dating_025",
+    "scene": "dating",
+    "subScene": "dating_invitation",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "カフェでお茶しませんか？",
+      "en": "Shall we have tea at a café?",
+      "zh": "要不要在咖啡馆喝茶？",
+      "zh_TW": "要不要在咖啡館喝茶？",
+      "ko": "카페에서 차 한 잔 할래요?",
+      "es": "¿Tomamos un té en una cafetería?",
+      "fr": "On prend un thé dans un café ?",
+      "de": "Wollen wir in einem Café Tee trinken?",
+      "vi": "Chúng ta uống trà ở quán cà phê nhé?",
+      "id": "Apa kita minum teh di kafe?"
+    }
+  },
+  {
+    "id": "dating_026",
+    "scene": "dating",
+    "subScene": "dating_invitation",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "美術館に行きませんか？",
+      "en": "Would you like to go to a museum?",
+      "zh": "要不要去美术馆？",
+      "zh_TW": "要不要去美術館？",
+      "ko": "미술관 갈래요?",
+      "es": "¿Quieres ir al museo?",
+      "fr": "Vous voulez aller au musée ?",
+      "de": "Möchten Sie ins Museum gehen?",
+      "vi": "Bạn có muốn đi bảo tàng không?",
+      "id": "Apakah Anda mau pergi ke museum?"
+    }
+  },
+  {
+    "id": "dating_027",
+    "scene": "dating",
+    "subScene": "dating_invitation",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "海辺をドライブしませんか？",
+      "en": "Shall we go for a drive along the beach?",
+      "zh": "我们去海边开车好吗？",
+      "zh_TW": "我們去海邊開車好嗎？",
+      "ko": "바닷가 드라이브 갈래요?",
+      "es": "¿Vamos a dar una vuelta en coche por la playa?",
+      "fr": "Allons faire un tour en voiture le long de la plage ?",
+      "de": "Wollen wir an der Küste entlang fahren?",
+      "vi": "Chúng ta lái xe dọc bờ biển nhé?",
+      "id": "Apa kita jalan-jalan naik mobil di pantai?"
+    }
+  },
+  {
+    "id": "dating_028",
+    "scene": "dating",
+    "subScene": "dating_invitation",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "買い物に行きませんか？",
+      "en": "Would you like to go shopping?",
+      "zh": "要不要去购物？",
+      "zh_TW": "要不要去購物？",
+      "ko": "쇼핑하러 갈래요?",
+      "es": "¿Quieres ir de compras?",
+      "fr": "Vous voulez aller faire du shopping ?",
+      "de": "Möchten Sie einkaufen gehen?",
+      "vi": "Bạn có muốn đi mua sắm không?",
+      "id": "Apakah Anda mau pergi berbelanja?"
+    }
+  },
+  {
+    "id": "dating_029",
+    "scene": "dating",
+    "subScene": "dating_invitation",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "次の休みにピクニックしませんか？",
+      "en": "Shall we have a picnic on the next holiday?",
+      "zh": "下次休假去野餐好吗？",
+      "zh_TW": "下次休假去野餐好嗎？",
+      "ko": "다음 휴일에 소풍 갈래요?",
+      "es": "¿Hacemos un picnic el próximo día libre?",
+      "fr": "On fait un pique-nique lors des prochaines vacances ?",
+      "de": "Wollen wir am nächsten freien Tag picknicken?",
+      "vi": "Kỳ nghỉ tới mình đi picnic nhé?",
+      "id": "Apa kita piknik di liburan berikutnya?"
+    }
+  },
+  {
+    "id": "dating_030",
+    "scene": "dating",
+    "subScene": "dating_invitation",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "一緒にスポーツをしませんか？",
+      "en": "Would you like to play sports together?",
+      "zh": "要不要一起做运动？",
+      "zh_TW": "要不要一起做運動？",
+      "ko": "같이 운동할래요?",
+      "es": "¿Quieres hacer deporte juntos?",
+      "fr": "Vous voulez faire du sport ensemble ?",
+      "de": "Wollen wir zusammen Sport treiben?",
+      "vi": "Bạn có muốn chơi thể thao cùng không?",
+      "id": "Apakah Anda mau olahraga bersama?"
+    }
+  },
+  {
+    "id": "dating_031",
+    "scene": "dating",
+    "subScene": "dating_accept_decline",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "いいですね、行きましょう。",
+      "en": "That sounds great, let’s go.",
+      "zh": "听起来不错，我们去吧。",
+      "zh_TW": "聽起來不錯，我們去吧。",
+      "ko": "좋아요, 가요.",
+      "es": "Suena bien, vamos.",
+      "fr": "Ça a l’air bien, allons-y.",
+      "de": "Klingt gut, gehen wir.",
+      "vi": "Nghe hay đấy, đi thôi.",
+      "id": "Kedengarannya bagus, ayo pergi."
+    }
+  },
+  {
+    "id": "dating_032",
+    "scene": "dating",
+    "subScene": "dating_accept_decline",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "喜んで行きます。",
+      "en": "I’d be happy to go.",
+      "zh": "我很乐意去。",
+      "zh_TW": "我很樂意去。",
+      "ko": "기꺼이 갈게요.",
+      "es": "Encantado(a) de ir.",
+      "fr": "Je serais ravi(e) d’y aller.",
+      "de": "Ich gehe gern.",
+      "vi": "Tôi rất vui được đi.",
+      "id": "Saya senang pergi."
+    }
+  },
+  {
+    "id": "dating_033",
+    "scene": "dating",
+    "subScene": "dating_accept_decline",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "すみません、その日は予定があります。",
+      "en": "Sorry, I have plans that day.",
+      "zh": "不好意思，那天我有安排。",
+      "zh_TW": "不好意思，那天我有安排。",
+      "ko": "죄송하지만 그날은 약속이 있어요.",
+      "es": "Lo siento, ese día tengo planes.",
+      "fr": "Désolé(e), ce jour-là j’ai un engagement.",
+      "de": "Leider habe ich an diesem Tag schon etwas vor.",
+      "vi": "Xin lỗi, hôm đó tôi có kế hoạch khác.",
+      "id": "Maaf, hari itu saya sudah ada rencana."
+    }
+  },
+  {
+    "id": "dating_034",
+    "scene": "dating",
+    "subScene": "dating_accept_decline",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "また別の日にしましょう。",
+      "en": "Let’s do it another day.",
+      "zh": "换一天吧。",
+      "zh_TW": "換一天吧。",
+      "ko": "다른 날로 해요.",
+      "es": "Hagámoslo otro día.",
+      "fr": "Faisons-le un autre jour.",
+      "de": "Lassen Sie es uns an einem anderen Tag machen.",
+      "vi": "Để hôm khác nhé.",
+      "id": "Mari kita lakukan di hari lain."
+    }
+  },
+  {
+    "id": "dating_035",
+    "scene": "dating",
+    "subScene": "dating_accept_decline",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "とても行きたいですが、都合がつきません。",
+      "en": "I’d love to, but I can’t.",
+      "zh": "我很想去，但没空。",
+      "zh_TW": "我很想去，但沒空。",
+      "ko": "정말 가고 싶은데 시간이 안 돼요.",
+      "es": "Me encantaría, pero no puedo.",
+      "fr": "J’aimerais beaucoup, mais je ne peux pas.",
+      "de": "Ich würde gerne, aber es geht nicht.",
+      "vi": "Tôi rất muốn nhưng không thể.",
+      "id": "Saya ingin sekali, tapi tidak bisa."
+    }
+  },
+  {
+    "id": "dating_036",
+    "scene": "dating",
+    "subScene": "dating_accept_decline",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "その日はちょっと…。",
+      "en": "That day’s a bit difficult.",
+      "zh": "那天有点不方便。",
+      "zh_TW": "那天有點不方便。",
+      "ko": "그날은 조금 어려워요.",
+      "es": "Ese día es un poco complicado.",
+      "fr": "Ce jour-là est un peu difficile.",
+      "de": "An dem Tag ist es etwas schwierig.",
+      "vi": "Ngày đó hơi khó.",
+      "id": "Hari itu agak sulit."
+    }
+  },
+  {
+    "id": "dating_037",
+    "scene": "dating",
+    "subScene": "dating_accept_decline",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "他の予定と重なっています。",
+      "en": "It overlaps with another plan.",
+      "zh": "和其他安排冲突。",
+      "zh_TW": "和其他安排衝突。",
+      "ko": "다른 일정이랑 겹쳐요.",
+      "es": "Se cruza con otro plan.",
+      "fr": "Cela chevauche un autre plan.",
+      "de": "Es überschneidet sich mit einem anderen Plan.",
+      "vi": "Bị trùng với kế hoạch khác.",
+      "id": "Bertabrakan dengan rencana lain."
+    }
+  },
+  {
+    "id": "dating_038",
+    "scene": "dating",
+    "subScene": "dating_accept_decline",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "代わりに別の提案をしてもいいですか？",
+      "en": "Can I suggest something else instead?",
+      "zh": "我可以提出别的建议吗？",
+      "zh_TW": "我可以提出別的建議嗎？",
+      "ko": "대신 다른 제안 해도 될까요?",
+      "es": "¿Puedo sugerir otra cosa?",
+      "fr": "Puis-je proposer autre chose ?",
+      "de": "Kann ich stattdessen etwas anderes vorschlagen?",
+      "vi": "Tôi có thể đề xuất điều khác không?",
+      "id": "Bolehkah saya mengusulkan hal lain?"
+    }
+  },
+  {
+    "id": "dating_039",
+    "scene": "dating",
+    "subScene": "dating_accept_decline",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "次回はぜひ。",
+      "en": "Definitely next time.",
+      "zh": "下次一定。",
+      "zh_TW": "下次一定。",
+      "ko": "다음에는 꼭이요.",
+      "es": "La próxima vez seguro.",
+      "fr": "La prochaine fois, c’est sûr.",
+      "de": "Beim nächsten Mal bestimmt.",
+      "vi": "Lần sau chắc chắn nhé.",
+      "id": "Pasti lain kali."
+    }
+  },
+  {
+    "id": "dating_040",
+    "scene": "dating",
+    "subScene": "dating_accept_decline",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "楽しみにしています。",
+      "en": "I’m looking forward to it.",
+      "zh": "我很期待。",
+      "zh_TW": "我很期待。",
+      "ko": "기대하고 있어요.",
+      "es": "Lo espero con ganas.",
+      "fr": "J’ai hâte.",
+      "de": "Ich freue mich darauf.",
+      "vi": "Tôi mong chờ điều đó.",
+      "id": "Saya menantikannya."
+    }
+  },
+  {
+    "id": "dating_041",
+    "scene": "dating",
+    "subScene": "dating_plan_schedule",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "来週の土曜日は空いていますか？",
+      "en": "Are you free next Saturday?",
+      "zh": "你下周六有空吗？",
+      "zh_TW": "你下週六有空嗎？",
+      "ko": "다음 주 토요일 시간 있어요?",
+      "es": "¿Estás libre el próximo sábado?",
+      "fr": "Êtes-vous libre samedi prochain ?",
+      "de": "Sind Sie nächsten Samstag frei?",
+      "vi": "Bạn có rảnh thứ bảy tới không?",
+      "id": "Apakah Anda bebas Sabtu depan?"
+    }
+  },
+  {
+    "id": "dating_042",
+    "scene": "dating",
+    "subScene": "dating_plan_schedule",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "何時ごろが都合いいですか？",
+      "en": "What time works best for you?",
+      "zh": "你什么时候方便？",
+      "zh_TW": "你什麼時候方便？",
+      "ko": "몇 시가 가장 편하세요?",
+      "es": "¿Qué hora te viene mejor?",
+      "fr": "Quelle heure vous convient le mieux ?",
+      "de": "Um wie viel Uhr passt es Ihnen am besten?",
+      "vi": "Mấy giờ thì thuận tiện cho bạn?",
+      "id": "Jam berapa yang paling cocok untuk Anda?"
+    }
+  },
+  {
+    "id": "dating_043",
+    "scene": "dating",
+    "subScene": "dating_plan_schedule",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "昼と夜、どちらがいいですか？",
+      "en": "Do you prefer daytime or evening?",
+      "zh": "你喜欢白天还是晚上？",
+      "zh_TW": "你喜歡白天還是晚上？",
+      "ko": "낮이 좋아요, 저녁이 좋아요?",
+      "es": "¿Prefieres de día o de noche?",
+      "fr": "Préférez-vous la journée ou le soir ?",
+      "de": "Mögen Sie lieber tagsüber oder abends?",
+      "vi": "Bạn thích ban ngày hay buổi tối?",
+      "id": "Anda lebih suka siang atau malam?"
+    }
+  },
+  {
+    "id": "dating_044",
+    "scene": "dating",
+    "subScene": "dating_plan_schedule",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "場所はどこがいいですか？",
+      "en": "Where would you like to meet?",
+      "zh": "你想在哪儿见面？",
+      "zh_TW": "你想在哪兒見面？",
+      "ko": "어디에서 만나고 싶으세요?",
+      "es": "¿Dónde te gustaría encontrarnos?",
+      "fr": "Où voulez-vous nous rencontrer ?",
+      "de": "Wo möchten Sie sich treffen?",
+      "vi": "Bạn muốn gặp ở đâu?",
+      "id": "Anda mau bertemu di mana?"
+    }
+  },
+  {
+    "id": "dating_045",
+    "scene": "dating",
+    "subScene": "dating_plan_schedule",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "東京駅で待ち合わせましょう。",
+      "en": "Let’s meet at Tokyo Station.",
+      "zh": "我们在东京站见面吧。",
+      "zh_TW": "我們在東京站見面吧。",
+      "ko": "도쿄역에서 만나요.",
+      "es": "Encontrémonos en la estación de Tokio.",
+      "fr": "Rencontrons-nous à la gare de Tokyo.",
+      "de": "Treffen wir uns am Bahnhof Tokio.",
+      "vi": "Hẹn gặp nhau ở ga Tokyo nhé.",
+      "id": "Mari bertemu di stasiun Tokyo."
+    }
+  },
+  {
+    "id": "dating_046",
+    "scene": "dating",
+    "subScene": "dating_plan_schedule",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "開始時間は午後7時でいいですか？",
+      "en": "Is 7 p.m. a good start time?",
+      "zh": "晚上7点开始可以吗？",
+      "zh_TW": "晚上7點開始可以嗎？",
+      "ko": "오후 7시 시작 괜찮아요?",
+      "es": "¿Está bien empezar a las 7 p.m.?",
+      "fr": "Est-ce que 19h convient ?",
+      "de": "Ist 19 Uhr ein guter Start?",
+      "vi": "Bắt đầu lúc 7 giờ tối được không?",
+      "id": "Apakah mulai jam 7 malam cocok?"
+    }
+  },
+  {
+    "id": "dating_047",
+    "scene": "dating",
+    "subScene": "dating_plan_schedule",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "何時間くらいの予定ですか？",
+      "en": "How long will it be?",
+      "zh": "大约多长时间？",
+      "zh_TW": "大約多長時間？",
+      "ko": "얼마나 걸릴 예정이에요?",
+      "es": "¿Cuánto tiempo será?",
+      "fr": "Combien de temps cela durera-t-il ?",
+      "de": "Wie lange wird es dauern?",
+      "vi": "Khoảng bao lâu?",
+      "id": "Berapa lama kira-kira?"
+    }
+  },
+  {
+    "id": "dating_048",
+    "scene": "dating",
+    "subScene": "dating_plan_schedule",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "他の日のほうがいいですか？",
+      "en": "Would another day be better?",
+      "zh": "换一天会更好吗？",
+      "zh_TW": "換一天會更好嗎？",
+      "ko": "다른 날이 더 나을까요?",
+      "es": "¿Sería mejor otro día?",
+      "fr": "Un autre jour serait-il mieux ?",
+      "de": "Wäre ein anderer Tag besser?",
+      "vi": "Ngày khác có tốt hơn không?",
+      "id": "Apakah hari lain lebih baik?"
+    }
+  },
+  {
+    "id": "dating_049",
+    "scene": "dating",
+    "subScene": "dating_plan_schedule",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "天気が良いといいですね。",
+      "en": "I hope the weather will be nice.",
+      "zh": "希望天气会好。",
+      "zh_TW": "希望天氣會好。",
+      "ko": "날씨가 좋았으면 좋겠어요.",
+      "es": "Espero que haga buen tiempo.",
+      "fr": "J’espère qu’il fera beau.",
+      "de": "Ich hoffe, das Wetter wird schön.",
+      "vi": "Tôi hy vọng thời tiết sẽ đẹp.",
+      "id": "Semoga cuacanya bagus."
+    }
+  },
+  {
+    "id": "dating_050",
+    "scene": "dating",
+    "subScene": "dating_plan_schedule",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "予定をカレンダーに入れますね。",
+      "en": "I’ll put it on my calendar.",
+      "zh": "我会把它写进日历。",
+      "zh_TW": "我會把它寫進日曆。",
+      "ko": "일정에 넣을게요.",
+      "es": "Lo pondré en mi calendario.",
+      "fr": "Je vais l’inscrire dans mon agenda.",
+      "de": "Ich trage es in meinen Kalender ein.",
+      "vi": "Tôi sẽ ghi vào lịch của mình.",
+      "id": "Saya akan memasukkannya ke kalender saya."
+    }
+  },
+  {
+    "id": "dating_051",
+    "scene": "dating",
+    "subScene": "dating_at_cafe",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "ここは静かで落ち着きますね。",
+      "en": "It’s quiet and relaxing here.",
+      "zh": "这里很安静，很舒服。",
+      "zh_TW": "這裡很安靜，很舒服。",
+      "ko": "여기는 조용하고 편안하네요.",
+      "es": "Aquí es tranquilo y relajante.",
+      "fr": "Ici, c’est calme et reposant.",
+      "de": "Hier ist es ruhig und entspannend.",
+      "vi": "Ở đây yên tĩnh và dễ chịu thật.",
+      "id": "Tempat ini tenang dan nyaman."
+    }
+  },
+  {
+    "id": "dating_052",
+    "scene": "dating",
+    "subScene": "dating_at_cafe",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "何を飲みますか？",
+      "en": "What would you like to drink?",
+      "zh": "你想喝什么？",
+      "zh_TW": "你想喝什麼？",
+      "ko": "뭘 마시고 싶어요?",
+      "es": "¿Qué te gustaría beber?",
+      "fr": "Que voulez-vous boire ?",
+      "de": "Was möchten Sie trinken?",
+      "vi": "Bạn muốn uống gì?",
+      "id": "Anda mau minum apa?"
+    }
+  },
+  {
+    "id": "dating_053",
+    "scene": "dating",
+    "subScene": "dating_at_cafe",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "おすすめのドリンクはありますか？",
+      "en": "Do you have any drink recommendations?",
+      "zh": "有推荐的饮料吗？",
+      "zh_TW": "有推薦的飲料嗎？",
+      "ko": "추천하는 음료가 있나요?",
+      "es": "¿Tienes alguna bebida para recomendar?",
+      "fr": "Avez-vous des boissons à recommander ?",
+      "de": "Haben Sie eine Getränkeempfehlung?",
+      "vi": "Bạn có đồ uống nào gợi ý không?",
+      "id": "Ada minuman yang Anda rekomendasikan?"
+    }
+  },
+  {
+    "id": "dating_054",
+    "scene": "dating",
+    "subScene": "dating_at_cafe",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "甘いものは好きですか？",
+      "en": "Do you like sweet things?",
+      "zh": "你喜欢甜的东西吗？",
+      "zh_TW": "你喜歡甜的東西嗎？",
+      "ko": "단 것을 좋아하세요?",
+      "es": "¿Te gustan las cosas dulces?",
+      "fr": "Aimez-vous les choses sucrées ?",
+      "de": "Mögen Sie Süßes?",
+      "vi": "Bạn có thích đồ ngọt không?",
+      "id": "Apakah Anda suka yang manis?"
+    }
+  },
+  {
+    "id": "dating_055",
+    "scene": "dating",
+    "subScene": "dating_at_cafe",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "このケーキ、美味しそうですね。",
+      "en": "This cake looks delicious.",
+      "zh": "这个蛋糕看起来很好吃。",
+      "zh_TW": "這個蛋糕看起來很好吃。",
+      "ko": "이 케이크 맛있어 보이네요.",
+      "es": "Este pastel se ve delicioso.",
+      "fr": "Ce gâteau a l’air délicieux.",
+      "de": "Dieser Kuchen sieht lecker aus.",
+      "vi": "Bánh này trông ngon quá.",
+      "id": "Kue ini terlihat enak."
+    }
+  },
+  {
+    "id": "dating_056",
+    "scene": "dating",
+    "subScene": "dating_at_cafe",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "よくカフェに行きますか？",
+      "en": "Do you go to cafés often?",
+      "zh": "你经常去咖啡馆吗？",
+      "zh_TW": "你經常去咖啡館嗎？",
+      "ko": "카페 자주 가세요?",
+      "es": "¿Vas mucho a cafeterías?",
+      "fr": "Allez-vous souvent au café ?",
+      "de": "Gehen Sie oft ins Café?",
+      "vi": "Bạn có hay đi quán cà phê không?",
+      "id": "Apakah Anda sering pergi ke kafe?"
+    }
+  },
+  {
+    "id": "dating_057",
+    "scene": "dating",
+    "subScene": "dating_at_cafe",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "このお店の雰囲気が好きです。",
+      "en": "I like the atmosphere of this place.",
+      "zh": "我喜欢这家店的氛围。",
+      "zh_TW": "我喜歡這家店的氛圍。",
+      "ko": "이 가게 분위기가 좋아요.",
+      "es": "Me gusta el ambiente de este lugar.",
+      "fr": "J’aime l’ambiance de cet endroit.",
+      "de": "Ich mag die Atmosphäre hier.",
+      "vi": "Tôi thích không khí ở đây.",
+      "id": "Saya suka suasana tempat ini."
+    }
+  },
+  {
+    "id": "dating_058",
+    "scene": "dating",
+    "subScene": "dating_at_cafe",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "コーヒーはよく飲みますか？",
+      "en": "Do you drink coffee often?",
+      "zh": "你经常喝咖啡吗？",
+      "zh_TW": "你經常喝咖啡嗎？",
+      "ko": "커피 자주 마셔요?",
+      "es": "¿Tomas café a menudo?",
+      "fr": "Buvez-vous souvent du café ?",
+      "de": "Trinken Sie oft Kaffee?",
+      "vi": "Bạn có hay uống cà phê không?",
+      "id": "Apakah Anda sering minum kopi?"
+    }
+  },
+  {
+    "id": "dating_059",
+    "scene": "dating",
+    "subScene": "dating_at_cafe",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "このあとどこか行きますか？",
+      "en": "Are we going somewhere after this?",
+      "zh": "之后我们要去哪里吗？",
+      "zh_TW": "之後我們要去哪裡嗎？",
+      "ko": "이따가 어디 갈까요?",
+      "es": "¿Vamos a algún lugar después?",
+      "fr": "On va quelque part après ?",
+      "de": "Gehen wir danach irgendwohin?",
+      "vi": "Chúng ta sẽ đi đâu đó sau đây chứ?",
+      "id": "Apakah kita akan pergi ke suatu tempat setelah ini?"
+    }
+  },
+  {
+    "id": "dating_060",
+    "scene": "dating",
+    "subScene": "dating_at_cafe",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "一緒に来られてよかったです。",
+      "en": "I’m glad we came together.",
+      "zh": "很高兴我们一起来了。",
+      "zh_TW": "很高興我們一起來了。",
+      "ko": "같이 와서 좋네요.",
+      "es": "Me alegra que hayamos venido juntos.",
+      "fr": "Je suis content(e) que nous soyons venus ensemble.",
+      "de": "Ich freue mich, dass wir zusammen gekommen sind.",
+      "vi": "Tôi vui vì chúng ta đã cùng đến.",
+      "id": "Saya senang kita datang bersama."
+    }
+  },
+  {
+    "id": "dating_061",
+    "scene": "dating",
+    "subScene": "dating_at_restaurant",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "このお店は評判がいいですね。",
+      "en": "This restaurant has a good reputation.",
+      "zh": "这家餐厅很有名。",
+      "zh_TW": "這家餐廳很有名。",
+      "ko": "이 가게는 평이 좋네요.",
+      "es": "Este restaurante tiene buena reputación.",
+      "fr": "Cet établissement a bonne réputation.",
+      "de": "Dieses Restaurant hat einen guten Ruf.",
+      "vi": "Quán này có tiếng tốt.",
+      "id": "Restoran ini punya reputasi baik."
+    }
+  },
+  {
+    "id": "dating_062",
+    "scene": "dating",
+    "subScene": "dating_at_restaurant",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "予約してくれてありがとうございます。",
+      "en": "Thank you for making a reservation.",
+      "zh": "谢谢你帮忙预订。",
+      "zh_TW": "謝謝你幫忙預訂。",
+      "ko": "예약해 줘서 고마워요.",
+      "es": "Gracias por hacer la reserva.",
+      "fr": "Merci d’avoir fait la réservation.",
+      "de": "Danke für die Reservierung.",
+      "vi": "Cảm ơn vì đã đặt chỗ.",
+      "id": "Terima kasih sudah memesan."
+    }
+  },
+  {
+    "id": "dating_063",
+    "scene": "dating",
+    "subScene": "dating_at_restaurant",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "何を注文しますか？",
+      "en": "What will you order?",
+      "zh": "你要点什么？",
+      "zh_TW": "你要點什麼？",
+      "ko": "뭘 주문할 거예요?",
+      "es": "¿Qué vas a pedir?",
+      "fr": "Qu’allez-vous commander ?",
+      "de": "Was werden Sie bestellen?",
+      "vi": "Bạn sẽ gọi món gì?",
+      "id": "Anda akan memesan apa?"
+    }
+  },
+  {
+    "id": "dating_064",
+    "scene": "dating",
+    "subScene": "dating_at_restaurant",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "おすすめは何ですか？",
+      "en": "What do you recommend?",
+      "zh": "你推荐什么？",
+      "zh_TW": "你推薦什麼？",
+      "ko": "추천 메뉴가 뭐예요?",
+      "es": "¿Qué recomiendas?",
+      "fr": "Que recommandez-vous ?",
+      "de": "Was empfehlen Sie?",
+      "vi": "Bạn gợi ý món gì?",
+      "id": "Apa yang Anda rekomendasikan?"
+    }
+  },
+  {
+    "id": "dating_065",
+    "scene": "dating",
+    "subScene": "dating_at_restaurant",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "この料理は美味しいですよ。",
+      "en": "This dish is delicious.",
+      "zh": "这道菜很好吃。",
+      "zh_TW": "這道菜很好吃。",
+      "ko": "이 요리는 맛있어요.",
+      "es": "Este plato está delicioso.",
+      "fr": "Ce plat est délicieux.",
+      "de": "Dieses Gericht ist köstlich.",
+      "vi": "Món này ngon lắm.",
+      "id": "Hidangan ini lezat."
+    }
+  },
+  {
+    "id": "dating_066",
+    "scene": "dating",
+    "subScene": "dating_at_restaurant",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "ワインはお好きですか？",
+      "en": "Do you like wine?",
+      "zh": "你喜欢葡萄酒吗？",
+      "zh_TW": "你喜歡葡萄酒嗎？",
+      "ko": "와인 좋아하세요?",
+      "es": "¿Te gusta el vino?",
+      "fr": "Aimez-vous le vin ?",
+      "de": "Mögen Sie Wein?",
+      "vi": "Bạn có thích rượu vang không?",
+      "id": "Apakah Anda suka anggur?"
+    }
+  },
+  {
+    "id": "dating_067",
+    "scene": "dating",
+    "subScene": "dating_at_restaurant",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "前菜から始めましょうか？",
+      "en": "Shall we start with an appetizer?",
+      "zh": "我们先点前菜好吗？",
+      "zh_TW": "我們先點前菜好嗎？",
+      "ko": "전채부터 시작할까요?",
+      "es": "¿Empezamos con un aperitivo?",
+      "fr": "On commence par une entrée ?",
+      "de": "Sollen wir mit einer Vorspeise anfangen?",
+      "vi": "Chúng ta bắt đầu với món khai vị nhé?",
+      "id": "Apakah kita mulai dengan hidangan pembuka?"
+    }
+  },
+  {
+    "id": "dating_068",
+    "scene": "dating",
+    "subScene": "dating_at_restaurant",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "デザートは別腹ですね。",
+      "en": "There’s always room for dessert.",
+      "zh": "甜点是另一個胃的。",
+      "zh_TW": "甜點是另一個胃的。",
+      "ko": "디저트는 항상 별도죠.",
+      "es": "Siempre hay espacio para el postre.",
+      "fr": "Il y a toujours de la place pour le dessert.",
+      "de": "Für Dessert ist immer Platz.",
+      "vi": "Lúc nào cũng còn chỗ cho món tráng miệng.",
+      "id": "Desert selalu ada tempatnya."
+    }
+  },
+  {
+    "id": "dating_069",
+    "scene": "dating",
+    "subScene": "dating_at_restaurant",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "楽しい時間を過ごしています。",
+      "en": "I’m having a great time.",
+      "zh": "我过得很开心。",
+      "zh_TW": "我過得很開心。",
+      "ko": "즐거운 시간을 보내고 있어요.",
+      "es": "Lo estoy pasando muy bien.",
+      "fr": "Je passe un bon moment.",
+      "de": "Ich habe eine schöne Zeit.",
+      "vi": "Tôi đang có khoảng thời gian vui vẻ.",
+      "id": "Saya menikmati waktu ini."
+    }
+  },
+  {
+    "id": "dating_070",
+    "scene": "dating",
+    "subScene": "dating_at_restaurant",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "また来たいですね。",
+      "en": "I’d like to come here again.",
+      "zh": "我还想再来。",
+      "zh_TW": "我還想再來。",
+      "ko": "또 오고 싶어요.",
+      "es": "Me gustaría volver aquí.",
+      "fr": "J’aimerais revenir ici.",
+      "de": "Ich würde gerne wieder hierher kommen.",
+      "vi": "Tôi muốn quay lại đây.",
+      "id": "Saya ingin datang ke sini lagi."
+    }
+  },
+  {
+    "id": "dating_071",
+    "scene": "dating",
+    "subScene": "dating_compliments",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "その服、とても似合っています。",
+      "en": "That outfit looks great on you.",
+      "zh": "这套衣服很适合你。",
+      "zh_TW": "這套衣服很適合你。",
+      "ko": "그 옷 정말 잘 어울려요.",
+      "es": "Esa ropa te queda muy bien.",
+      "fr": "Cette tenue vous va très bien.",
+      "de": "Dieses Outfit steht Ihnen sehr gut.",
+      "vi": "Bộ đồ này rất hợp với bạn.",
+      "id": "Pakaian itu sangat cocok untuk Anda."
+    }
+  },
+  {
+    "id": "dating_072",
+    "scene": "dating",
+    "subScene": "dating_compliments",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "笑顔が素敵ですね。",
+      "en": "You have a beautiful smile.",
+      "zh": "你的笑容很美。",
+      "zh_TW": "你的笑容很美。",
+      "ko": "웃는 모습이 멋져요.",
+      "es": "Tienes una sonrisa hermosa.",
+      "fr": "Vous avez un beau sourire.",
+      "de": "Sie haben ein schönes Lächeln.",
+      "vi": "Nụ cười của bạn thật đẹp.",
+      "id": "Senyummu indah sekali."
+    }
+  },
+  {
+    "id": "dating_073",
+    "scene": "dating",
+    "subScene": "dating_compliments",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "今日の髪型、いいですね。",
+      "en": "I like your hairstyle today.",
+      "zh": "你今天的发型很好看。",
+      "zh_TW": "你今天的髮型很好看。",
+      "ko": "오늘 머리 예쁘네요.",
+      "es": "Me gusta tu peinado de hoy.",
+      "fr": "J’aime votre coiffure aujourd’hui.",
+      "de": "Ich mag Ihre heutige Frisur.",
+      "vi": "Kiểu tóc hôm nay của bạn đẹp lắm.",
+      "id": "Gaya rambut Anda hari ini bagus."
+    }
+  },
+  {
+    "id": "dating_074",
+    "scene": "dating",
+    "subScene": "dating_compliments",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "話し方が優しいですね。",
+      "en": "You speak in a kind way.",
+      "zh": "你的说话方式很温柔。",
+      "zh_TW": "你的說話方式很溫柔。",
+      "ko": "말투가 부드럽네요.",
+      "es": "Hablas de una manera amable.",
+      "fr": "Vous parlez avec douceur.",
+      "de": "Sie sprechen freundlich.",
+      "vi": "Cách bạn nói thật dịu dàng.",
+      "id": "Cara bicaramu lembut sekali."
+    }
+  },
+  {
+    "id": "dating_075",
+    "scene": "dating",
+    "subScene": "dating_compliments",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "センスがいいですね。",
+      "en": "You have good taste.",
+      "zh": "你很有品味。",
+      "zh_TW": "你很有品味。",
+      "ko": "센스가 좋네요.",
+      "es": "Tienes buen gusto.",
+      "fr": "Vous avez bon goût.",
+      "de": "Sie haben guten Geschmack.",
+      "vi": "Bạn có gu thẩm mỹ tốt.",
+      "id": "Selera Anda bagus."
+    }
+  },
+  {
+    "id": "dating_076",
+    "scene": "dating",
+    "subScene": "dating_compliments",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "香水の香りが素敵です。",
+      "en": "I like your perfume.",
+      "zh": "你的香水味很好闻。",
+      "zh_TW": "你的香水味很好聞。",
+      "ko": "향수가 좋네요.",
+      "es": "Me gusta tu perfume.",
+      "fr": "J’aime votre parfum.",
+      "de": "Ihr Parfüm gefällt mir.",
+      "vi": "Tôi thích mùi nước hoa của bạn.",
+      "id": "Saya suka parfum Anda."
+    }
+  },
+  {
+    "id": "dating_077",
+    "scene": "dating",
+    "subScene": "dating_compliments",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "声が素敵ですね。",
+      "en": "You have a nice voice.",
+      "zh": "你的声音很好听。",
+      "zh_TW": "你的聲音很好聽。",
+      "ko": "목소리가 멋지네요.",
+      "es": "Tienes una voz bonita.",
+      "fr": "Vous avez une belle voix.",
+      "de": "Sie haben eine schöne Stimme.",
+      "vi": "Giọng của bạn hay quá.",
+      "id": "Suara Anda bagus."
+    }
+  },
+  {
+    "id": "dating_078",
+    "scene": "dating",
+    "subScene": "dating_compliments",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "笑い方が可愛いですね。",
+      "en": "Your laugh is cute.",
+      "zh": "你的笑声很可爱。",
+      "zh_TW": "你的笑聲很可愛。",
+      "ko": "웃는 소리가 귀여워요.",
+      "es": "Tu risa es linda.",
+      "fr": "Votre rire est mignon.",
+      "de": "Dein Lachen ist süß.",
+      "vi": "Tiếng cười của bạn dễ thương.",
+      "id": "Tawamu lucu sekali."
+    }
+  },
+  {
+    "id": "dating_079",
+    "scene": "dating",
+    "subScene": "dating_compliments",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "あなたといると楽しいです。",
+      "en": "It’s fun being with you.",
+      "zh": "和你在一起很开心。",
+      "zh_TW": "和你在一起很開心。",
+      "ko": "당신과 함께 있으면 즐거워요.",
+      "es": "Es divertido estar contigo.",
+      "fr": "C’est amusant d’être avec vous.",
+      "de": "Es macht Spaß, mit Ihnen zusammen zu sein.",
+      "vi": "Ở bên bạn thật vui.",
+      "id": "Menyenangkan bersama Anda."
+    }
+  },
+  {
+    "id": "dating_080",
+    "scene": "dating",
+    "subScene": "dating_compliments",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "今日会えてよかったです。",
+      "en": "I’m glad I saw you today.",
+      "zh": "今天见到你很高兴。",
+      "zh_TW": "今天見到你很高興。",
+      "ko": "오늘 만나서 좋았어요.",
+      "es": "Me alegra haberte visto hoy.",
+      "fr": "Je suis content(e) de t’avoir vu aujourd’hui.",
+      "de": "Ich freue mich, dich heute gesehen zu haben.",
+      "vi": "Hôm nay gặp bạn tôi rất vui.",
+      "id": "Saya senang bertemu denganmu hari ini."
+    }
+  },
+  {
+    "id": "dating_081",
+    "scene": "dating",
+    "subScene": "dating_express_feelings",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "あなたのことが好きです。",
+      "en": "I like you.",
+      "zh": "我喜欢你。",
+      "zh_TW": "我喜歡你。",
+      "ko": "당신을 좋아해요.",
+      "es": "Me gustas.",
+      "fr": "Tu me plais.",
+      "de": "Ich mag dich.",
+      "vi": "Tôi thích bạn.",
+      "id": "Saya suka kamu."
+    }
+  },
+  {
+    "id": "dating_082",
+    "scene": "dating",
+    "subScene": "dating_express_feelings",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "一緒にいると幸せです。",
+      "en": "I’m happy when I’m with you.",
+      "zh": "和你在一起很幸福。",
+      "zh_TW": "和你在一起很幸福。",
+      "ko": "함께 있으면 행복해요.",
+      "es": "Soy feliz cuando estoy contigo.",
+      "fr": "Je suis heureux(se) quand je suis avec vous.",
+      "de": "Ich bin glücklich, wenn ich bei dir bin.",
+      "vi": "Tôi hạnh phúc khi ở bên bạn.",
+      "id": "Saya bahagia saat bersama Anda."
+    }
+  },
+  {
+    "id": "dating_083",
+    "scene": "dating",
+    "subScene": "dating_express_feelings",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "あなたは特別な人です。",
+      "en": "You are a special person.",
+      "zh": "你是特别的人。",
+      "zh_TW": "你是特別的人。",
+      "ko": "당신은 특별한 사람이에요.",
+      "es": "Eres una persona especial.",
+      "fr": "Vous êtes une personne spéciale.",
+      "de": "Du bist ein besonderer Mensch.",
+      "vi": "Bạn là người đặc biệt.",
+      "id": "Anda adalah orang yang istimewa."
+    }
+  },
+  {
+    "id": "dating_084",
+    "scene": "dating",
+    "subScene": "dating_express_feelings",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "もっと知りたいです。",
+      "en": "I want to know more about you.",
+      "zh": "我想更多地了解你。",
+      "zh_TW": "我想更多地了解你。",
+      "ko": "당신에 대해 더 알고 싶어요.",
+      "es": "Quiero saber más de ti.",
+      "fr": "Je veux en savoir plus sur vous.",
+      "de": "Ich möchte mehr über dich wissen.",
+      "vi": "Tôi muốn biết thêm về bạn.",
+      "id": "Saya ingin tahu lebih banyak tentang Anda."
+    }
+  },
+  {
+    "id": "dating_085",
+    "scene": "dating",
+    "subScene": "dating_express_feelings",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "ずっと一緒にいたいです。",
+      "en": "I want to be with you forever.",
+      "zh": "我想永远和你在一起。",
+      "zh_TW": "我想永遠和你在一起。",
+      "ko": "영원히 함께하고 싶어요.",
+      "es": "Quiero estar contigo para siempre.",
+      "fr": "Je veux être avec vous pour toujours.",
+      "de": "Ich möchte für immer bei dir sein.",
+      "vi": "Tôi muốn ở bên bạn mãi mãi.",
+      "id": "Saya ingin bersama Anda selamanya."
+    }
+  },
+  {
+    "id": "dating_086",
+    "scene": "dating",
+    "subScene": "dating_express_feelings",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "会えないと寂しいです。",
+      "en": "I feel lonely when I can’t see you.",
+      "zh": "见不到你我会感到寂寞。",
+      "zh_TW": "見不到你我會感到寂寞。",
+      "ko": "못 만나면 외로워요.",
+      "es": "Me siento solo(a) cuando no te veo.",
+      "fr": "Je me sens seul(e) quand je ne vous vois pas.",
+      "de": "Ich fühle mich einsam, wenn ich dich nicht sehe.",
+      "vi": "Tôi thấy cô đơn khi không gặp bạn.",
+      "id": "Saya merasa kesepian jika tidak bertemu Anda."
+    }
+  },
+  {
+    "id": "dating_087",
+    "scene": "dating",
+    "subScene": "dating_express_feelings",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "あなたと過ごす時間が大好きです。",
+      "en": "I love spending time with you.",
+      "zh": "我喜欢和你在一起的时光。",
+      "zh_TW": "我喜歡和你在一起的時光。",
+      "ko": "당신과 보내는 시간이 정말 좋아요.",
+      "es": "Me encanta pasar tiempo contigo.",
+      "fr": "J’adore passer du temps avec vous.",
+      "de": "Ich verbringe gerne Zeit mit dir.",
+      "vi": "Tôi rất thích khoảng thời gian bên bạn.",
+      "id": "Saya senang menghabiskan waktu bersama Anda."
+    }
+  },
+  {
+    "id": "dating_088",
+    "scene": "dating",
+    "subScene": "dating_express_feelings",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "あなたが笑うと私も幸せです。",
+      "en": "When you smile, I’m happy too.",
+      "zh": "你笑的时候我也很幸福。",
+      "zh_TW": "你笑的時候我也很幸福。",
+      "ko": "당신이 웃으면 나도 행복해요.",
+      "es": "Cuando sonríes, yo también soy feliz.",
+      "fr": "Quand vous souriez, je suis heureux(se) aussi.",
+      "de": "Wenn du lächelst, bin ich auch glücklich.",
+      "vi": "Khi bạn cười, tôi cũng hạnh phúc.",
+      "id": "Ketika kamu tersenyum, saya juga bahagia."
+    }
+  },
+  {
+    "id": "dating_089",
+    "scene": "dating",
+    "subScene": "dating_express_feelings",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "あなたの声を聞くと安心します。",
+      "en": "I feel at ease when I hear your voice.",
+      "zh": "听到你的声音我很安心。",
+      "zh_TW": "聽到你的聲音我很安心。",
+      "ko": "당신 목소리를 들으면 안심돼요.",
+      "es": "Me siento tranquilo(a) al escuchar tu voz.",
+      "fr": "Je me sens rassuré(e) quand j’entends votre voix.",
+      "de": "Ich fühle mich beruhigt, wenn ich deine Stimme höre.",
+      "vi": "Tôi thấy yên tâm khi nghe giọng bạn.",
+      "id": "Saya merasa tenang saat mendengar suara Anda."
+    }
+  },
+  {
+    "id": "dating_090",
+    "scene": "dating",
+    "subScene": "dating_express_feelings",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "これからも一緒にいたいです。",
+      "en": "I want to stay with you from now on.",
+      "zh": "我希望今后也能在一起。",
+      "zh_TW": "我希望今後也能在一起。",
+      "ko": "앞으로도 계속 함께하고 싶어요.",
+      "es": "Quiero seguir contigo de ahora en adelante.",
+      "fr": "Je veux rester avec vous à partir de maintenant.",
+      "de": "Ich möchte von nun an bei dir bleiben.",
+      "vi": "Tôi muốn ở bên bạn từ giờ trở đi.",
+      "id": "Saya ingin tetap bersama Anda mulai sekarang."
+    }
+  },
+  {
+    "id": "dating_091",
+    "scene": "dating",
+    "subScene": "dating_goodbye",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "今日は本当に楽しかったです。",
+      "en": "I really had a great time today.",
+      "zh": "今天真的很开心。",
+      "zh_TW": "今天真的很開心。",
+      "ko": "오늘 정말 즐거웠어요.",
+      "es": "Me divertí mucho hoy.",
+      "fr": "Je me suis vraiment amusé(e) aujourd’hui.",
+      "de": "Ich hatte heute wirklich viel Spaß.",
+      "vi": "Hôm nay tôi thật sự rất vui.",
+      "id": "Hari ini saya sangat senang."
+    }
+  },
+  {
+    "id": "dating_092",
+    "scene": "dating",
+    "subScene": "dating_goodbye",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "またすぐに会いたいです。",
+      "en": "I want to see you again soon.",
+      "zh": "我想很快再见到你。",
+      "zh_TW": "我想很快再見到你。",
+      "ko": "곧 다시 만나고 싶어요.",
+      "es": "Quiero verte pronto otra vez.",
+      "fr": "Je veux te revoir bientôt.",
+      "de": "Ich möchte dich bald wiedersehen.",
+      "vi": "Tôi muốn gặp lại bạn sớm.",
+      "id": "Saya ingin bertemu Anda lagi segera."
+    }
+  },
+  {
+    "id": "dating_093",
+    "scene": "dating",
+    "subScene": "dating_goodbye",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "気をつけて帰ってください。",
+      "en": "Please get home safely.",
+      "zh": "请安全回家。",
+      "zh_TW": "請安全回家。",
+      "ko": "조심해서 돌아가세요.",
+      "es": "Llega a casa con cuidado.",
+      "fr": "Rentrez chez vous prudemment.",
+      "de": "Kommen Sie sicher nach Hause.",
+      "vi": "Về nhà an toàn nhé.",
+      "id": "Pulanglah dengan selamat."
+    }
+  },
+  {
+    "id": "dating_094",
+    "scene": "dating",
+    "subScene": "dating_goodbye",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "今日はありがとう。",
+      "en": "Thank you for today.",
+      "zh": "谢谢今天。",
+      "zh_TW": "謝謝今天。",
+      "ko": "오늘 고마워요.",
+      "es": "Gracias por hoy.",
+      "fr": "Merci pour aujourd’hui.",
+      "de": "Danke für heute.",
+      "vi": "Cảm ơn vì hôm nay.",
+      "id": "Terima kasih untuk hari ini."
+    }
+  },
+  {
+    "id": "dating_095",
+    "scene": "dating",
+    "subScene": "dating_goodbye",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "次の約束を楽しみにしています。",
+      "en": "I’m looking forward to our next plan.",
+      "zh": "我期待下次的约会。",
+      "zh_TW": "我期待下次的約會。",
+      "ko": "다음 약속이 기대돼요.",
+      "es": "Estoy deseando nuestra próxima cita.",
+      "fr": "J’attends notre prochain rendez-vous avec impatience.",
+      "de": "Ich freue mich auf unser nächstes Treffen.",
+      "vi": "Tôi mong chờ buổi hẹn lần sau.",
+      "id": "Saya menantikan rencana berikutnya."
+    }
+  },
+  {
+    "id": "dating_096",
+    "scene": "dating",
+    "subScene": "dating_goodbye",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "遅くならないうちに帰ってくださいね。",
+      "en": "Go home before it gets too late.",
+      "zh": "别太晚回家。",
+      "zh_TW": "別太晚回家。",
+      "ko": "너무 늦기 전에 가세요.",
+      "es": "No llegues demasiado tarde a casa.",
+      "fr": "Ne rentrez pas trop tard.",
+      "de": "Kommen Sie nicht zu spät nach Hause.",
+      "vi": "Về nhà trước khi quá muộn nhé.",
+      "id": "Pulang sebelum terlalu larut."
+    }
+  },
+  {
+    "id": "dating_097",
+    "scene": "dating",
+    "subScene": "dating_goodbye",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "また連絡しますね。",
+      "en": "I’ll contact you again.",
+      "zh": "我会再联系你。",
+      "zh_TW": "我會再聯繫你。",
+      "ko": "다시 연락할게요.",
+      "es": "Te contactaré de nuevo.",
+      "fr": "Je vous recontacterai.",
+      "de": "Ich melde mich wieder bei dir.",
+      "vi": "Tôi sẽ liên lạc lại với bạn.",
+      "id": "Saya akan menghubungi Anda lagi."
+    }
+  },
+  {
+    "id": "dating_098",
+    "scene": "dating",
+    "subScene": "dating_goodbye",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "今日は忘れられない日になりました。",
+      "en": "Today became an unforgettable day.",
+      "zh": "今天成了难忘的一天。",
+      "zh_TW": "今天成了難忘的一天。",
+      "ko": "오늘은 잊지 못할 날이 되었어요.",
+      "es": "Hoy se convirtió en un día inolvidable.",
+      "fr": "Aujourd’hui est devenu un jour inoubliable.",
+      "de": "Heute wurde ein unvergesslicher Tag.",
+      "vi": "Hôm nay trở thành một ngày khó quên.",
+      "id": "Hari ini menjadi hari yang tak terlupakan."
+    }
+  },
+  {
+    "id": "dating_099",
+    "scene": "dating",
+    "subScene": "dating_goodbye",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "またこのお店に来ましょう。",
+      "en": "Let’s come to this place again.",
+      "zh": "我们再来这家店吧。",
+      "zh_TW": "我們再來這家店吧。",
+      "ko": "이 가게에 또 오죠.",
+      "es": "Volvamos a este lugar.",
+      "fr": "Revenons dans cet endroit.",
+      "de": "Lassen Sie uns wieder hierher kommen.",
+      "vi": "Chúng ta lại đến quán này nhé.",
+      "id": "Mari kita datang lagi ke tempat ini."
+    }
+  },
+  {
+    "id": "dating_100",
+    "scene": "dating",
+    "subScene": "dating_goodbye",
+    "level": "beginner",
+    "tags": [
+      "dating"
+    ],
+    "translations": {
+      "ja": "おやすみなさい。",
+      "en": "Good night.",
+      "zh": "晚安。",
+      "zh_TW": "晚安。",
+      "ko": "안녕히 주무세요.",
+      "es": "Buenas noches.",
+      "fr": "Bonne nuit.",
+      "de": "Gute Nacht.",
+      "vi": "Chúc ngủ ngon.",
+      "id": "Selamat malam."
+    }
+  }
+]

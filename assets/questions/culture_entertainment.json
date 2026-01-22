@@ -1,0 +1,1902 @@
+[
+  {
+    "id": "culture_entertainment_001",
+    "scene": "culture_entertainment",
+    "subScene": "movies_theater",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "この映画は上映していますか？",
+      "en": "Is this movie still showing?",
+      "zh": "这部电影还在上映吗？",
+      "zh_TW": "這部電影還在上映嗎？",
+      "ko": "이 영화는 상영됩니까?",
+      "es": "¿Sigue en cartelera esta película?",
+      "fr": "Ce film est-il toujours à l'affiche ?",
+      "de": "Läuft dieser Film noch?",
+      "vi": "Phim này còn chiếu không?",
+      "id": "Apakah film ini masih diputar?"
+    }
+  },
+  {
+    "id": "culture_entertainment_002",
+    "scene": "culture_entertainment",
+    "subScene": "movies_theater",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "何時の回がありますか？",
+      "en": "What showings are there?",
+      "zh": "有哪些场次？",
+      "zh_TW": "有哪些場次？",
+      "ko": "몇 시간의 시간이 있습니까?",
+      "es": "¿A qué hora es la proyección?",
+      "fr": "Quelles sont les séances ?",
+      "de": "Welche Vorstellungen gibt es?",
+      "vi": "Hiện đang chiếu những suất nào?",
+      "id": "Pertunjukan apa saja yang ada?"
+    }
+  },
+  {
+    "id": "culture_entertainment_003",
+    "scene": "culture_entertainment",
+    "subScene": "movies_theater",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "字幕版と吹替版はどちらですか？",
+      "en": "Is the subtitled or dubbed version available?",
+      "zh": "有字幕版或配音版吗？",
+      "zh_TW": "有字幕版或配音版嗎？",
+      "ko": "자막 버전과 블로잉 버전은 어느 쪽입니까?",
+      "es": "¿Está subtitulada o doblada?",
+      "fr": "La version sous-titrée ou doublée est-elle disponible ?",
+      "de": "Gibt es die untertitelte oder synchronisierte Fassung?",
+      "vi": "Có bản phụ đề hoặc lồng tiếng không?",
+      "id": "Apakah versi subtitle atau sulih suara tersedia?"
+    }
+  },
+  {
+    "id": "culture_entertainment_004",
+    "scene": "culture_entertainment",
+    "subScene": "movies_theater",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "チケットはまだありますか？",
+      "en": "Are there still tickets available?",
+      "zh": "还有票吗？",
+      "zh_TW": "還有票嗎？",
+      "ko": "티켓은 아직 있나요?",
+      "es": "¿Aún tienen entradas disponibles?",
+      "fr": "Y a-t-il encore des billets ?",
+      "de": "Gibt es noch Karten?",
+      "vi": "Còn vé không?",
+      "id": "Apakah tiket masih tersedia?"
+    }
+  },
+  {
+    "id": "culture_entertainment_005",
+    "scene": "culture_entertainment",
+    "subScene": "movies_theater",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "2枚、真ん中あたりでお願いします。",
+      "en": "I'd like two tickets, somewhere in the middle, please.",
+      "zh": "我想要两张中间的票。",
+      "zh_TW": "我想要兩張中間的票。",
+      "ko": "2장, 중간에 부탁드립니다.",
+      "es": "Quisiera dos entradas, una intermedia, por favor.",
+      "fr": "J'aimerais deux billets, au milieu, s'il vous plaît.",
+      "de": "Ich hätte gerne zwei Karten, bitte irgendwo in der Mitte.",
+      "vi": "Cho tôi xin hai vé, ở giữa nhé.",
+      "id": "Saya ingin dua tiket, di tengah-tengah, ya."
+    }
+  },
+  {
+    "id": "culture_entertainment_006",
+    "scene": "culture_entertainment",
+    "subScene": "movies_theater",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "一番前以外の席は空いてますか？",
+      "en": "Are any seats available other than the front?",
+      "zh": "除了前排，还有其他座位吗？",
+      "zh_TW": "除了前排，還有其他座位嗎？",
+      "ko": "맨 앞 이외의 자리는 비어 있습니까?",
+      "es": "¿Hay asientos disponibles aparte de los de adelante?",
+      "fr": "Y a-t-il des places disponibles ailleurs qu'au premier rang ?",
+      "de": "Gibt es noch Plätze außer den vorderen?",
+      "vi": "Ngoài ghế trước ra còn chỗ nào không?",
+      "id": "Apakah ada kursi kosong selain di depan?"
+    }
+  },
+  {
+    "id": "culture_entertainment_007",
+    "scene": "culture_entertainment",
+    "subScene": "movies_theater",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "学割は使えますか？",
+      "en": "Can I get a student discount?",
+      "zh": "学生可以享受折扣吗？",
+      "zh_TW": "學生可以享有折扣嗎？",
+      "ko": "학할을 사용할 수 있습니까?",
+      "es": "¿Puedo usar el descuento de estudiante?",
+      "fr": "Puis-je bénéficier d'une réduction étudiante ?",
+      "de": "Bekomme ich Studentenrabatt?",
+      "vi": "Tôi có thể được giảm giá cho sinh viên không?",
+      "id": "Bisakah saya mendapatkan diskon pelajar?"
+    }
+  },
+  {
+    "id": "culture_entertainment_008",
+    "scene": "culture_entertainment",
+    "subScene": "movies_theater",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "予告は何分ありますか？",
+      "en": "How many minutes of previews are there?",
+      "zh": "预告片有多少分钟？",
+      "zh_TW": "預告片有多少分鐘？",
+      "ko": "예고는 몇 분입니까?",
+      "es": "¿Cuántos minutos de preestreno hay?",
+      "fr": "Combien de minutes d'avant-premières y a-t-il ?",
+      "de": "Wie viele Minuten Vorpremiere gibt es?",
+      "vi": "Có bao nhiêu phút chiếu thử?",
+      "id": "Berapa menit cuplikannya?"
+    }
+  },
+  {
+    "id": "culture_entertainment_009",
+    "scene": "culture_entertainment",
+    "subScene": "movies_theater",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "飲み物の持ち込みはできますか？",
+      "en": "Can I bring in drinks?",
+      "zh": "我可以带饮料进去吗？",
+      "zh_TW": "我可以帶飲料進去嗎？",
+      "ko": "음료 반입은 가능합니까?",
+      "es": "¿Puedo llevar bebidas al exterior?",
+      "fr": "Puis-je apporter des boissons ?",
+      "de": "Darf ich Getränke mitbringen?",
+      "vi": "Tôi có thể mang đồ uống vào không?",
+      "id": "Bolehkah saya membawa minuman?"
+    }
+  },
+  {
+    "id": "culture_entertainment_010",
+    "scene": "culture_entertainment",
+    "subScene": "movies_theater",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "エンドロール後に映像はありますか？",
+      "en": "Is there footage after the credits?",
+      "zh": "片尾字幕结束后有录像吗？",
+      "zh_TW": "片尾字幕結束後有錄影嗎？",
+      "ko": "엔드 롤 후에 영상이 있습니까?",
+      "es": "¿Hay alguna grabación después de los créditos finales?",
+      "fr": "Y a-t-il des images après le générique ?",
+      "de": "Gibt es Filmmaterial nach dem Abspann?",
+      "vi": "Có cảnh quay sau phần giới thiệu không?",
+      "id": "Apakah ada rekaman setelah kredit?"
+    }
+  },
+  {
+    "id": "culture_entertainment_011",
+    "scene": "culture_entertainment",
+    "subScene": "music_live",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "このバンドは出演しますか？",
+      "en": "Will this band be performing?",
+      "zh": "这个乐队会表演吗？",
+      "zh_TW": "這個樂團會表演嗎？",
+      "ko": "이 밴드는 출연합니까?",
+      "es": "¿Se presentará esta banda?",
+      "fr": "Ce groupe jouera-t-il ?",
+      "de": "Wird diese Band auftreten?",
+      "vi": "Ban nhạc này có biểu diễn không?",
+      "id": "Apakah band ini akan tampil?"
+    }
+  },
+  {
+    "id": "culture_entertainment_012",
+    "scene": "culture_entertainment",
+    "subScene": "music_live",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "開演は何時ですか？",
+      "en": "What time does the show start?",
+      "zh": "演出几点开始？",
+      "zh_TW": "演出幾點開始？",
+      "ko": "개연은 몇시입니까?",
+      "es": "¿A qué hora empieza el espectáculo?",
+      "fr": "À quelle heure commence le spectacle ?",
+      "de": "Wann beginnt die Show?",
+      "vi": "Chương trình bắt đầu lúc mấy giờ?",
+      "id": "Pukul berapa pertunjukan dimulai?"
+    }
+  },
+  {
+    "id": "culture_entertainment_013",
+    "scene": "culture_entertainment",
+    "subScene": "music_live",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "入場は先着ですか？整理番号ですか？",
+      "en": "Is it first-come, first-served? Or are there serial numbers?",
+      "zh": "是先到先得吗？还是有序列号？",
+      "zh_TW": "是先到先得嗎？還是有序號？",
+      "ko": "입장은 선착입니까? 정리 번호입니까?",
+      "es": "¿Se asigna por orden de llegada? ¿O tengo un número de entrada?",
+      "fr": "Premier arrivé, premier servi ? Ou y a-t-il des numéros de série ?",
+      "de": "Gilt es nach dem Prinzip „Wer zuerst kommt, mahlt zuerst“? Oder gibt es Seriennummern?",
+      "vi": "Ai đến trước được phục vụ trước? Hay có số sê-ri?",
+      "id": "Apakah berdasarkan siapa cepat dia dapat? Atau apakah ada nomor seri?"
+    }
+  },
+  {
+    "id": "culture_entertainment_014",
+    "scene": "culture_entertainment",
+    "subScene": "music_live",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "物販はどこで買えますか？",
+      "en": "Where can I buy merchandise?",
+      "zh": "我在哪里可以买到周边商品？",
+      "zh_TW": "我可以在哪裡買到週邊商品？",
+      "ko": "물건 판매는 어디에서 살 수 있습니까?",
+      "es": "¿Dónde puedo comprar artículos?",
+      "fr": "Où puis-je acheter des produits dérivés ?",
+      "de": "Wo kann ich Fanartikel kaufen?",
+      "vi": "Tôi có thể mua đồ lưu niệm ở đâu?",
+      "id": "Di mana saya bisa membeli merchandise?"
+    }
+  },
+  {
+    "id": "culture_entertainment_015",
+    "scene": "culture_entertainment",
+    "subScene": "music_live",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "ドリンク代はいくらですか？",
+      "en": "How much do drinks cost?",
+      "zh": "饮料多少钱？",
+      "zh_TW": "飲料多少錢？",
+      "ko": "음료 요금은 얼마입니까?",
+      "es": "¿Cuánto cuestan las bebidas?",
+      "fr": "Combien coûtent les boissons ?",
+      "de": "Wie viel kosten Getränke?",
+      "vi": "Đồ uống có giá bao nhiêu?",
+      "id": "Berapa harga minumannya?"
+    }
+  },
+  {
+    "id": "culture_entertainment_016",
+    "scene": "culture_entertainment",
+    "subScene": "music_live",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "再入場はできますか？",
+      "en": "Can I re-enter?",
+      "zh": "我可以再次入场吗？",
+      "zh_TW": "我可以再次入場嗎？",
+      "ko": "재입장은 가능합니까?",
+      "es": "¿Puedo volver a entrar?",
+      "fr": "Puis-je rentrer ?",
+      "de": "Kann ich wieder rein?",
+      "vi": "Tôi có thể vào lại không?",
+      "id": "Bolehkah saya masuk kembali?"
+    }
+  },
+  {
+    "id": "culture_entertainment_017",
+    "scene": "culture_entertainment",
+    "subScene": "music_live",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "撮影や録音は可能ですか？",
+      "en": "Can I take photos or record audio?",
+      "zh": "我可以拍照或录音吗？",
+      "zh_TW": "我可以拍照或錄音嗎？",
+      "ko": "촬영이나 녹음이 가능합니까?",
+      "es": "¿Puedo tomar fotos o grabar audio?",
+      "fr": "Puis-je prendre des photos ou enregistrer ?",
+      "de": "Darf ich Fotos machen oder Ton aufnehmen?",
+      "vi": "Tôi có thể chụp ảnh hoặc ghi âm không?",
+      "id": "Bolehkah saya mengambil foto atau merekam audio?"
+    }
+  },
+  {
+    "id": "culture_entertainment_018",
+    "scene": "culture_entertainment",
+    "subScene": "music_live",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "一番盛り上がる曲はどれですか？",
+      "en": "Which song was the most exciting?",
+      "zh": "哪首歌最精彩？",
+      "zh_TW": "哪首歌最精彩？",
+      "ko": "가장 흥미로운 노래는?",
+      "es": "¿Qué canción fue la más emocionante?",
+      "fr": "Quelle chanson était la plus entraînante ?",
+      "de": "Welches Lied war das spannendste?",
+      "vi": "Bài hát nào thú vị nhất?",
+      "id": "Lagu mana yang paling menarik?"
+    }
+  },
+  {
+    "id": "culture_entertainment_019",
+    "scene": "culture_entertainment",
+    "subScene": "music_live",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "アンコールは何曲ありましたか？",
+      "en": "How many encores were there?",
+      "zh": "返场了多少次？",
+      "zh_TW": "返場了幾次？",
+      "ko": "앙코르는 몇 곡 있었나요?",
+      "es": "¿Cuántos bises hubo?",
+      "fr": "Combien y a-t-il eu de rappels ?",
+      "de": "Wie viele Zugaben gab es?",
+      "vi": "Có bao nhiêu buổi biểu diễn encore?",
+      "id": "Ada berapa encore?"
+    }
+  },
+  {
+    "id": "culture_entertainment_020",
+    "scene": "culture_entertainment",
+    "subScene": "music_live",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "次のライブ予定はありますか？",
+      "en": "Are there any other live performances planned?",
+      "zh": "还有其他现场表演计划吗？",
+      "zh_TW": "還有其他現場表演計畫嗎？",
+      "ko": "다음 라이브 일정이 있나요?",
+      "es": "¿Hay próximas presentaciones en vivo?",
+      "fr": "Y a-t-il d'autres concerts prévus ?",
+      "de": "Sind weitere Live-Auftritte geplant?",
+      "vi": "Có chương trình biểu diễn trực tiếp nào khác không?",
+      "id": "Apakah ada pertunjukan langsung lainnya yang direncanakan?"
+    }
+  },
+  {
+    "id": "culture_entertainment_021",
+    "scene": "culture_entertainment",
+    "subScene": "museum_gallery",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "常設展と企画展の違いは何ですか？",
+      "en": "What is the difference between the permanent exhibition and the special exhibition?",
+      "zh": "常设展览和特别展览有什么区别？",
+      "zh_TW": "常設展和特別展有什麼不同？",
+      "ko": "상설전과 기획전의 차이는 무엇입니까?",
+      "es": "¿Cuál es la diferencia entre la exposición permanente y la exposición especial?",
+      "fr": "Quelle est la différence entre l'exposition permanente et l'exposition temporaire ?",
+      "de": "Was ist der Unterschied zwischen der Dauerausstellung und der Sonderausstellung?",
+      "vi": "Sự khác biệt giữa triển lãm cố định và triển lãm đặc biệt là gì?",
+      "id": "Apa perbedaan antara pameran permanen dan pameran khusus?"
+    }
+  },
+  {
+    "id": "culture_entertainment_022",
+    "scene": "culture_entertainment",
+    "subScene": "museum_gallery",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "音声ガイドはありますか？",
+      "en": "Are there audio guides?",
+      "zh": "有语音导览吗？",
+      "zh_TW": "有語音導覽嗎？",
+      "ko": "음성 가이드가 있습니까?",
+      "es": "¿Hay audioguía?",
+      "fr": "Y a-t-il des audioguides ?",
+      "de": "Gibt es Audioguides?",
+      "vi": "Có hướng dẫn âm thanh không?",
+      "id": "Apakah ada panduan audio?"
+    }
+  },
+  {
+    "id": "culture_entertainment_023",
+    "scene": "culture_entertainment",
+    "subScene": "museum_gallery",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "写真撮影はできますか？",
+      "en": "Can I take photos?",
+      "zh": "我可以拍照吗？",
+      "zh_TW": "我可以拍照嗎？",
+      "ko": "사진 촬영을 할 수 있습니까?",
+      "es": "¿Puedo tomar fotos?",
+      "fr": "Puis-je prendre des photos ?",
+      "de": "Darf ich Fotos machen?",
+      "vi": "Tôi có thể chụp ảnh không?",
+      "id": "Bolehkah saya mengambil foto?"
+    }
+  },
+  {
+    "id": "culture_entertainment_024",
+    "scene": "culture_entertainment",
+    "subScene": "museum_gallery",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "チケットはオンラインで買えますか？",
+      "en": "Can I buy tickets online?",
+      "zh": "我可以在线购票吗？",
+      "zh_TW": "我可以在線上購票嗎？",
+      "ko": "티켓은 온라인으로 구입할 수 있습니까?",
+      "es": "¿Puedo comprar entradas en línea?",
+      "fr": "Puis-je acheter des billets en ligne ?",
+      "de": "Kann ich Tickets online kaufen?",
+      "vi": "Tôi có thể mua vé trực tuyến không?",
+      "id": "Bolehkah saya membeli tiket secara online?"
+    }
+  },
+  {
+    "id": "culture_entertainment_025",
+    "scene": "culture_entertainment",
+    "subScene": "museum_gallery",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "所要時間はどれくらいですか？",
+      "en": "How long is the show?",
+      "zh": "演出持续多长时间？",
+      "zh_TW": "演出持續多久？",
+      "ko": "소요 시간은 얼마입니까?",
+      "es": "¿Cuánto dura la exposición?",
+      "fr": "Combien de temps dure l'exposition ?",
+      "de": "Wie lange dauert die Show?",
+      "vi": "Chương trình kéo dài bao lâu?",
+      "id": "Berapa lama pertunjukannya?"
+    }
+  },
+  {
+    "id": "culture_entertainment_026",
+    "scene": "culture_entertainment",
+    "subScene": "museum_gallery",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "学生割引はありますか？",
+      "en": "Are there student discounts?",
+      "zh": "学生有折扣吗？",
+      "zh_TW": "學生有折扣嗎？",
+      "ko": "학생 할인이 있습니까?",
+      "es": "¿Hay descuento para estudiantes?",
+      "fr": "Existe-t-il des réductions pour les étudiants ?",
+      "de": "Gibt es Studentenrabatte?",
+      "vi": "Có giảm giá cho sinh viên không?",
+      "id": "Apakah ada diskon pelajar?"
+    }
+  },
+  {
+    "id": "culture_entertainment_027",
+    "scene": "culture_entertainment",
+    "subScene": "museum_gallery",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "トイレはどこですか？",
+      "en": "Where are the restrooms?",
+      "zh": "洗手间在哪里？",
+      "zh_TW": "洗手間在哪裡？",
+      "ko": "화장실은 어디 있니?",
+      "es": "¿Dónde están los baños?",
+      "fr": "Où sont les toilettes ?",
+      "de": "Wo sind die Toiletten?",
+      "vi": "Nhà vệ sinh ở đâu?",
+      "id": "Di mana toiletnya?"
+    }
+  },
+  {
+    "id": "culture_entertainment_028",
+    "scene": "culture_entertainment",
+    "subScene": "museum_gallery",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "再入場は可能ですか？",
+      "en": "Is re-entry allowed?",
+      "zh": "可以重新入场吗？",
+      "zh_TW": "可以重新入場嗎？",
+      "ko": "재입장이 가능합니까?",
+      "es": "¿Puedo volver a entrar?",
+      "fr": "Puis-je rentrer ?",
+      "de": "Ist ein Wiedereintritt möglich?",
+      "vi": "Có được phép vào lại không?",
+      "id": "Apakah diperbolehkan masuk kembali?"
+    }
+  },
+  {
+    "id": "culture_entertainment_029",
+    "scene": "culture_entertainment",
+    "subScene": "museum_gallery",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "休館日はいつですか？",
+      "en": "When are the museum closed?",
+      "zh": "博物馆什么时候闭馆？",
+      "zh_TW": "博物館什麼時候閉館？",
+      "ko": "휴관일은 언제입니까?",
+      "es": "¿Cuándo cierra el museo?",
+      "fr": "Quand le musée est-il fermé ?",
+      "de": "Wann ist das Museum geschlossen?",
+      "vi": "Bảo tàng đóng cửa khi nào?",
+      "id": "Kapan museum tutup?"
+    }
+  },
+  {
+    "id": "culture_entertainment_030",
+    "scene": "culture_entertainment",
+    "subScene": "museum_gallery",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "目玉展示はどれですか？",
+      "en": "Which exhibits are the highlights?",
+      "zh": "哪些展品是亮点？",
+      "zh_TW": "哪些展覽是亮點？",
+      "ko": "주요 전시는 무엇입니까?",
+      "es": "¿Cuál es la exposición destacada?",
+      "fr": "Quelles sont les principales expositions ?",
+      "de": "Welche Ausstellungen sind die Hauptattraktionen?",
+      "vi": "Những triển lãm nào là điểm thu hút chính?",
+      "id": "Pameran apa saja yang menjadi daya tarik utama?"
+    }
+  },
+  {
+    "id": "culture_entertainment_031",
+    "scene": "culture_entertainment",
+    "subScene": "sports_viewing",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "今日の座席はどのエリアですか？",
+      "en": "Which seating area are available today?",
+      "zh": "今天哪些座位区开放？",
+      "zh_TW": "今天哪些座位區開放？",
+      "ko": "오늘의 좌석은 어느 지역입니까?",
+      "es": "¿Dónde están mis asientos hoy?",
+      "fr": "Où sont mes places aujourd'hui ?",
+      "de": "In welchem Sitzbereich sitzen wir heute?",
+      "vi": "Hôm nay chúng ta ngồi ở khu vực chỗ ngồi nào?",
+      "id": "Di area tempat duduk mana kita duduk hari ini?"
+    }
+  },
+  {
+    "id": "culture_entertainment_032",
+    "scene": "culture_entertainment",
+    "subScene": "sports_viewing",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "応援グッズはどこで買えますか？",
+      "en": "Where can I buy cheering merchandise?",
+      "zh": "我在哪里可以买到助威商品？",
+      "zh_TW": "我可以在哪裡買到助威商品？",
+      "ko": "응원 용품은 어디에서 살 수 있습니까?",
+      "es": "¿Dónde puedo comprar artículos promocionales para animar?",
+      "fr": "Où puis-je acheter des produits dérivés ?",
+      "de": "Wo kann ich Fanartikel kaufen?",
+      "vi": "Tôi có thể mua đồ cổ vũ ở đâu?",
+      "id": "Di mana saya bisa membeli merchandise sorak-sorai?"
+    }
+  },
+  {
+    "id": "culture_entertainment_033",
+    "scene": "culture_entertainment",
+    "subScene": "sports_viewing",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "ビジター席はどちらですか？",
+      "en": "Where are the visitor seats?",
+      "zh": "参观席在哪里？",
+      "zh_TW": "參觀席在哪裡？",
+      "ko": "방문자 좌석은 어느 쪽입니까?",
+      "es": "¿Dónde están los asientos para visitantes?",
+      "fr": "Où sont les places visiteurs ?",
+      "de": "Wo sind die Besucherplätze?",
+      "vi": "Ghế dành cho khách tham quan ở đâu?",
+      "id": "Di mana kursi pengunjung?"
+    }
+  },
+  {
+    "id": "culture_entertainment_034",
+    "scene": "culture_entertainment",
+    "subScene": "sports_viewing",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "試合開始は何時ですか？",
+      "en": "What time does the game start?",
+      "zh": "比赛几点开始？",
+      "zh_TW": "比賽幾點開始？",
+      "ko": "경기 시작은 몇시입니까?",
+      "es": "¿A qué hora empieza el partido?",
+      "fr": "À quelle heure commence le match ?",
+      "de": "Wann beginnt das Spiel?",
+      "vi": "Trận đấu bắt đầu lúc mấy giờ?",
+      "id": "Jam berapa pertandingan dimulai?"
+    }
+  },
+  {
+    "id": "culture_entertainment_035",
+    "scene": "culture_entertainment",
+    "subScene": "sports_viewing",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "雨天中止のとき払い戻しはありますか？",
+      "en": "Are refunds available if the game is cancelled due to rain?",
+      "zh": "如果比赛因下雨取消，可以退款吗？",
+      "zh_TW": "如果比賽因下雨取消，可以退款嗎？",
+      "ko": "우천 중지시 환불이 있습니까?",
+      "es": "¿Hay reembolso si el partido se cancela por lluvia?",
+      "fr": "Y a-t-il un remboursement si le match est annulé pour cause de pluie ?",
+      "de": "Gibt es Rückerstattungen, wenn das Spiel wegen Regen abgesagt wird?",
+      "vi": "Có được hoàn tiền nếu trận đấu bị hủy do mưa không?",
+      "id": "Apakah ada pengembalian uang jika pertandingan dibatalkan karena hujan?"
+    }
+  },
+  {
+    "id": "culture_entertainment_036",
+    "scene": "culture_entertainment",
+    "subScene": "sports_viewing",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "飲食の持ち込みはできますか？",
+      "en": "Can I bring in food and drinks?",
+      "zh": "我可以携带食物和饮料入场吗？",
+      "zh_TW": "我可以攜帶食物和飲料入場嗎？",
+      "ko": "음식을 반입할 수 있습니까?",
+      "es": "¿Puedo llevar comida y bebida?",
+      "fr": "Puis-je apporter de la nourriture et des boissons ?",
+      "de": "Darf ich Essen und Getränke mitbringen?",
+      "vi": "Tôi có thể mang đồ ăn và thức uống vào không?",
+      "id": "Bisakah saya membawa makanan dan minuman?"
+    }
+  },
+  {
+    "id": "culture_entertainment_037",
+    "scene": "culture_entertainment",
+    "subScene": "sports_viewing",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "ハーフタイムショーはありますか？",
+      "en": "Is there a halftime show?",
+      "zh": "有中场表演吗？",
+      "zh_TW": "有中場表演嗎？",
+      "ko": "하프 타임 쇼가 있습니까?",
+      "es": "¿Hay espectáculo de medio tiempo?",
+      "fr": "Y a-t-il un spectacle à la mi-temps ?",
+      "de": "Gibt es eine Halbzeitshow?",
+      "vi": "Có chương trình biểu diễn giữa giờ không?",
+      "id": "Apakah ada pertunjukan paruh waktu?"
+    }
+  },
+  {
+    "id": "culture_entertainment_038",
+    "scene": "culture_entertainment",
+    "subScene": "sports_viewing",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "公式アプリはありますか？",
+      "en": "Is there an official app?",
+      "zh": "有官方应用程序吗？",
+      "zh_TW": "有官方應用程式嗎？",
+      "ko": "공식 앱이 있나요?",
+      "es": "¿Hay una aplicación oficial?",
+      "fr": "Existe-t-il une application officielle ?",
+      "de": "Gibt es eine offizielle App?",
+      "vi": "Có ứng dụng chính thức không?",
+      "id": "Apakah ada aplikasi resmi?"
+    }
+  },
+  {
+    "id": "culture_entertainment_039",
+    "scene": "culture_entertainment",
+    "subScene": "sports_viewing",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "途中入場できますか？",
+      "en": "Can I enter at any time?",
+      "zh": "我可以随时入场吗？",
+      "zh_TW": "我可以隨時入場嗎？",
+      "ko": "도중에 입장할 수 있습니까?",
+      "es": "¿Puedo entrar a cualquier hora?",
+      "fr": "Puis-je entrer à tout moment ?",
+      "de": "Kann ich jederzeit eintreten?",
+      "vi": "Tôi có thể vào bất cứ lúc nào?",
+      "id": "Bisakah saya masuk kapan saja?"
+    }
+  },
+  {
+    "id": "culture_entertainment_040",
+    "scene": "culture_entertainment",
+    "subScene": "sports_viewing",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "ベストなアクセス方法は何ですか？",
+      "en": "What is the best way to get there?",
+      "zh": "到达那里的最佳方式是什么？",
+      "zh_TW": "到達那裡的最佳方式是什麼？",
+      "ko": "최고의 액세스 방법은 무엇입니까?",
+      "es": "¿Cuál es la mejor manera de llegar al recinto?",
+      "fr": "Quel est le meilleur moyen de se rendre sur place ?",
+      "de": "Wie komme ich am besten dorthin?",
+      "vi": "Cách tốt nhất để đến đó là gì?",
+      "id": "Apa cara terbaik untuk sampai ke sana?"
+    }
+  },
+  {
+    "id": "culture_entertainment_041",
+    "scene": "culture_entertainment",
+    "subScene": "ticket_booking",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "チケットを予約したいです。",
+      "en": "I'd like to reserve tickets.",
+      "zh": "我想预订门票。",
+      "zh_TW": "我想預訂門票。",
+      "ko": "티켓을 예약하고 싶습니다.",
+      "es": "Me gustaría reservar entradas.",
+      "fr": "Je souhaite réserver des billets.",
+      "de": "Ich möchte Tickets reservieren.",
+      "vi": "Tôi muốn đặt vé.",
+      "id": "Saya ingin memesan tiket."
+    }
+  },
+  {
+    "id": "culture_entertainment_042",
+    "scene": "culture_entertainment",
+    "subScene": "ticket_booking",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "予約の取り消しはできますか？",
+      "en": "Can I cancel my reservation?",
+      "zh": "我可以取消预订吗？",
+      "zh_TW": "我可以取消預訂嗎？",
+      "ko": "예약을 취소할 수 있습니까?",
+      "es": "¿Puedo cancelar mi reserva?",
+      "fr": "Puis-je annuler ma réservation ?",
+      "de": "Kann ich meine Reservierung stornieren?",
+      "vi": "Tôi có thể hủy đặt chỗ không?",
+      "id": "Bisakah saya membatalkan reservasi saya?"
+    }
+  },
+  {
+    "id": "culture_entertainment_043",
+    "scene": "culture_entertainment",
+    "subScene": "ticket_booking",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "座席指定は可能ですか？",
+      "en": "Can I reserve seats?",
+      "zh": "我可以预订座位吗？",
+      "zh_TW": "我可以預訂座位嗎？",
+      "ko": "좌석 지정은 가능합니까?",
+      "es": "¿Puedo reservar un asiento?",
+      "fr": "Puis-je réserver une place ?",
+      "de": "Kann ich Sitzplätze reservieren?",
+      "vi": "Tôi có thể đặt chỗ không?",
+      "id": "Bisakah saya memesan tempat duduk?"
+    }
+  },
+  {
+    "id": "culture_entertainment_044",
+    "scene": "culture_entertainment",
+    "subScene": "ticket_booking",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "一番安いチケットはどれですか？",
+      "en": "What are the cheapest tickets?",
+      "zh": "哪些票最便宜？",
+      "zh_TW": "哪些票最便宜？",
+      "ko": "가장 저렴한 티켓은 무엇입니까?",
+      "es": "¿Cuál es la entrada más barata?",
+      "fr": "Quel est le billet le moins cher ?",
+      "de": "Welche Tickets sind am günstigsten?",
+      "vi": "Loại vé nào rẻ nhất?",
+      "id": "Apa tiket termurah?"
+    }
+  },
+  {
+    "id": "culture_entertainment_045",
+    "scene": "culture_entertainment",
+    "subScene": "ticket_booking",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "追加料金はありますか？",
+      "en": "Are there any additional fees?",
+      "zh": "需要额外付费吗？",
+      "zh_TW": "需要額外付費嗎？",
+      "ko": "추가 요금이 있나요?",
+      "es": "¿Hay algún cargo adicional?",
+      "fr": "Y a-t-il des frais supplémentaires ?",
+      "de": "Fällen zusätzliche Gebühren an?",
+      "vi": "Có bất kỳ khoản phí bổ sung nào không?",
+      "id": "Apakah ada biaya tambahan?"
+    }
+  },
+  {
+    "id": "culture_entertainment_046",
+    "scene": "culture_entertainment",
+    "subScene": "ticket_booking",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "支払い方法を教えてください。",
+      "en": "How do I pay?",
+      "zh": "我如何付款？",
+      "zh_TW": "我該如何付款？",
+      "ko": "지불 방법을 알려주세요.",
+      "es": "¿Cómo pago?",
+      "fr": "Comment payer ?",
+      "de": "Wie bezahle ich?",
+      "vi": "Tôi phải thanh toán như thế nào?",
+      "id": "Bagaimana cara saya membayar?"
+    }
+  },
+  {
+    "id": "culture_entertainment_047",
+    "scene": "culture_entertainment",
+    "subScene": "ticket_booking",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "予約番号を忘れました。",
+      "en": "I forgot my reservation number.",
+      "zh": "我忘记了我的预订号。",
+      "zh_TW": "我忘記了我的預訂號碼。",
+      "ko": "예약 번호를 잊었습니다.",
+      "es": "Olvidé mi número de reserva.",
+      "fr": "J'ai oublié mon numéro de réservation.",
+      "de": "Ich habe meine Reservierungsnummer vergessen.",
+      "vi": "Tôi quên mã đặt chỗ của mình.",
+      "id": "Saya lupa nomor reservasi saya."
+    }
+  },
+  {
+    "id": "culture_entertainment_048",
+    "scene": "culture_entertainment",
+    "subScene": "ticket_booking",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "日程変更はできますか？",
+      "en": "Can I change my date?",
+      "zh": "我可以更改日期吗？",
+      "zh_TW": "我可以更改日期嗎？",
+      "ko": "일정을 변경할 수 있습니까?",
+      "es": "¿Puedo cambiar la fecha?",
+      "fr": "Puis-je modifier la date ?",
+      "de": "Kann ich das Datum ändern?",
+      "vi": "Tôi có thể thay đổi ngày không?",
+      "id": "Bisakah saya mengubah tanggal?"
+    }
+  },
+  {
+    "id": "culture_entertainment_049",
+    "scene": "culture_entertainment",
+    "subScene": "ticket_booking",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "子供料金はありますか？",
+      "en": "Are there children's rates?",
+      "zh": "有儿童票吗？",
+      "zh_TW": "有兒童票嗎？",
+      "ko": "어린이 요금이 있나요?",
+      "es": "¿Hay tarifas para niños?",
+      "fr": "Existe-t-il des tarifs enfants ?",
+      "de": "Gibt es Kindertarife?",
+      "vi": "Có giá vé trẻ em không?",
+      "id": "Apakah ada tiket anak-anak?"
+    }
+  },
+  {
+    "id": "culture_entertainment_050",
+    "scene": "culture_entertainment",
+    "subScene": "ticket_booking",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "団体割引はありますか？",
+      "en": "Are there group discounts?",
+      "zh": "有团体折扣吗？",
+      "zh_TW": "有團體折扣嗎？",
+      "ko": "단체 할인이 있습니까?",
+      "es": "¿Hay descuentos para grupos?",
+      "fr": "Existe-t-il des réductions de groupe ?",
+      "de": "Gibt es Gruppenrabatte?",
+      "vi": "Có giảm giá cho nhóm không?",
+      "id": "Apakah ada diskon rombongan?"
+    }
+  },
+  {
+    "id": "culture_entertainment_051",
+    "scene": "culture_entertainment",
+    "subScene": "art_exhibition",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "この美術館は何時まで開館していますか？",
+      "en": "What time is the museum open until?",
+      "zh": "博物馆开放到几点？",
+      "zh_TW": "博物館開放到幾點？",
+      "ko": "이 박물관은 몇 시까지 개관하고 있습니까?",
+      "es": "¿Hasta qué hora abre este museo?",
+      "fr": "Jusqu'à quelle heure le musée est-il ouvert ?",
+      "de": "Bis wann ist das Museum geöffnet?",
+      "vi": "Bảo tàng này mở cửa đến mấy giờ?",
+      "id": "Museum ini buka sampai jam berapa?"
+    }
+  },
+  {
+    "id": "culture_entertainment_052",
+    "scene": "culture_entertainment",
+    "subScene": "art_exhibition",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "入場料はいくらですか？",
+      "en": "How much is the admission fee?",
+      "zh": "门票多少钱？",
+      "zh_TW": "門票多少錢？",
+      "ko": "입장료는 얼마입니까?",
+      "es": "¿Cuánto cuesta la entrada?",
+      "fr": "Quel est le prix de l'entrée ?",
+      "de": "Wie viel kostet der Eintritt?",
+      "vi": "Giá vé vào cửa là bao nhiêu?",
+      "id": "Berapa harga tiket masuknya?"
+    }
+  },
+  {
+    "id": "culture_entertainment_053",
+    "scene": "culture_entertainment",
+    "subScene": "art_exhibition",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "写真撮影は可能ですか？",
+      "en": "Can I take photos?",
+      "zh": "可以拍照吗？",
+      "zh_TW": "可以拍照嗎？",
+      "ko": "사진 촬영이 가능합니까?",
+      "es": "¿Puedo tomar fotos?",
+      "fr": "Puis-je prendre des photos ?",
+      "de": "Darf ich fotografieren?",
+      "vi": "Tôi có thể chụp ảnh không?",
+      "id": "Bolehkah saya mengambil foto?"
+    }
+  },
+  {
+    "id": "culture_entertainment_054",
+    "scene": "culture_entertainment",
+    "subScene": "art_exhibition",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "館内にカフェはありますか？",
+      "en": "Is there a cafe on site? Are there guided tours?",
+      "zh": "现场有咖啡馆吗？有导游服务吗？",
+      "zh_TW": "現場有咖啡館嗎？有導遊服務嗎？",
+      "ko": "구내에 카페가 있습니까?",
+      "es": "¿Hay cafetería en el museo?",
+      "fr": "Y a-t-il un café sur place ?",
+      "de": "Gibt es vor Ort ein Café?",
+      "vi": "Có quán cà phê trong khuôn viên không?",
+      "id": "Apakah ada kafe di lokasi?"
+    }
+  },
+  {
+    "id": "culture_entertainment_055",
+    "scene": "culture_entertainment",
+    "subScene": "art_exhibition",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "ガイドツアーはありますか？",
+      "en": "Are guided tours available?",
+      "zh": "有导游陪同吗？",
+      "zh_TW": "有導遊陪同嗎？",
+      "ko": "가이드 투어가 있습니까?",
+      "es": "¿Hay visitas guiadas?",
+      "fr": "Y a-t-il une visite guidée ?",
+      "de": "Gibt es Führungen?",
+      "vi": "Có tour tham quan có hướng dẫn viên không?",
+      "id": "Apakah ada tur berpemandu?"
+    }
+  },
+  {
+    "id": "culture_entertainment_056",
+    "scene": "culture_entertainment",
+    "subScene": "art_exhibition",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "展示品は購入できますか？",
+      "en": "Can I purchase exhibits?",
+      "zh": "可以购买展品吗？",
+      "zh_TW": "可以購買展品嗎？",
+      "ko": "전시품을 구입할 수 있습니까?",
+      "es": "¿Puedo comprar exhibiciones?",
+      "fr": "Puis-je acheter les expositions ?",
+      "de": "Kann ich Ausstellungsstücke kaufen?",
+      "vi": "Tôi có thể mua các hiện vật không?",
+      "id": "Bolehkah saya membeli pameran?"
+    }
+  },
+  {
+    "id": "culture_entertainment_057",
+    "scene": "culture_entertainment",
+    "subScene": "art_exhibition",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "展示の説明は日本語以外でもありますか？",
+      "en": "Are the exhibit explanations available in languages other than Japanese?",
+      "zh": "展览解说提供日语以外的语言版本吗？",
+      "zh_TW": "展覽解說提供日語以外的語言版本嗎？",
+      "ko": "전시의 설명은 일본어 이외이기도 합니까?",
+      "es": "¿Las explicaciones de las exhibiciones están disponibles en otros idiomas además del japonés?",
+      "fr": "Les expositions sont-elles expliquées dans d'autres langues que le japonais ?",
+      "de": "Sind die Ausstellungserklärungen auch in anderen Sprachen als Japanisch verfügbar?",
+      "vi": "Có hướng dẫn bằng ngôn ngữ khác ngoài tiếng Nhật không?",
+      "id": "Apakah penjelasan pameran tersedia dalam bahasa selain bahasa Jepang?"
+    }
+  },
+  {
+    "id": "culture_entertainment_058",
+    "scene": "culture_entertainment",
+    "subScene": "art_exhibition",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "館内での飲食は可能ですか？",
+      "en": "Can I eat and drink inside the museum?",
+      "zh": "馆内可以饮食吗？",
+      "zh_TW": "館內可以飲食嗎？",
+      "ko": "관내에서 음식을 먹을 수 있습니까?",
+      "es": "¿Puedo comer y beber dentro del museo?",
+      "fr": "Est-il permis de manger et de boire à l'intérieur du musée ?",
+      "de": "Kann ich im Museum essen und trinken?",
+      "vi": "Tôi có thể ăn uống trong bảo tàng không?",
+      "id": "Bolehkah saya makan dan minum di dalam museum?"
+    }
+  },
+  {
+    "id": "culture_entertainment_059",
+    "scene": "culture_entertainment",
+    "subScene": "art_exhibition",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "入場券は事前に予約が必要ですか？",
+      "en": "Do I need to reserve tickets in advance?",
+      "zh": "需要提前预订门票吗？",
+      "zh_TW": "需要提前預訂門票嗎？",
+      "ko": "입장권은 사전에 예약이 필요합니까?",
+      "es": "¿Necesito reservar entradas con antelación?",
+      "fr": "Dois-je réserver mes billets à l'avance ?",
+      "de": "Muss ich Tickets im Voraus reservieren?",
+      "vi": "Tôi có cần đặt vé trước không?",
+      "id": "Apakah saya perlu memesan tiket terlebih dahulu?"
+    }
+  },
+  {
+    "id": "culture_entertainment_060",
+    "scene": "culture_entertainment",
+    "subScene": "art_exhibition",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "展示替えはいつ行われますか？",
+      "en": "When do exhibits change?",
+      "zh": "展品什么时候更换？",
+      "zh_TW": "展品什麼時候更換？",
+      "ko": "전시 교체는 언제 진행됩니까?",
+      "es": "¿Cuándo cambian las exhibiciones?",
+      "fr": "Quand les expositions changent-elles ?",
+      "de": "Wann wechseln die Ausstellungen?",
+      "vi": "Các hiện vật thay đổi khi nào?",
+      "id": "Kapan pameran berubah?"
+    }
+  },
+  {
+    "id": "culture_entertainment_061",
+    "scene": "culture_entertainment",
+    "subScene": "sports_event",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "この試合は何時から始まりますか？",
+      "en": "What time does this match start?",
+      "zh": "比赛几点开始？",
+      "zh_TW": "比賽幾點開始？",
+      "ko": "이 경기는 몇시부터 시작됩니까?",
+      "es": "¿A qué hora empieza el partido?",
+      "fr": "À quelle heure commence le match ?",
+      "de": "Um wie viel Uhr beginnt das Spiel?",
+      "vi": "Trận đấu bắt đầu lúc mấy giờ?",
+      "id": "Jam berapa pertandingan dimulai?"
+    }
+  },
+  {
+    "id": "culture_entertainment_062",
+    "scene": "culture_entertainment",
+    "subScene": "sports_event",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "座席指定は可能ですか？",
+      "en": "Can I reserve seats?",
+      "zh": "可以预订座位吗？",
+      "zh_TW": "可以預約座位嗎？",
+      "ko": "좌석 지정은 가능합니까?",
+      "es": "¿Puedo reservar asientos?",
+      "fr": "Puis-je réserver des places ?",
+      "de": "Kann ich Sitzplätze reservieren?",
+      "vi": "Tôi có thể đặt chỗ trước không?",
+      "id": "Bolehkah saya memesan tempat duduk?"
+    }
+  },
+  {
+    "id": "culture_entertainment_063",
+    "scene": "culture_entertainment",
+    "subScene": "sports_event",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "飲食物の持ち込みはできますか？",
+      "en": "Can I bring in food and drinks?",
+      "zh": "可以携带食物和饮料入场吗？",
+      "zh_TW": "可以攜帶食物和飲料入場嗎？",
+      "ko": "음식물 반입은 가능합니까?",
+      "es": "¿Puedo llevar comida y bebida?",
+      "fr": "Puis-je apporter de la nourriture et des boissons ?",
+      "de": "Darf ich Essen und Getränke mitbringen?",
+      "vi": "Tôi có thể mang đồ ăn và thức uống vào không?",
+      "id": "Bolehkah saya membawa makanan dan minuman?"
+    }
+  },
+  {
+    "id": "culture_entertainment_064",
+    "scene": "culture_entertainment",
+    "subScene": "sports_event",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "会場へのアクセス方法を教えてください。",
+      "en": "How do I get to the venue?",
+      "zh": "如何到达会场？",
+      "zh_TW": "如何到達會場？",
+      "ko": "장소에 액세스하는 방법을 알려주십시오.",
+      "es": "¿Cómo llego al recinto?",
+      "fr": "Comment puis-je me rendre sur le site ?",
+      "de": "Wie komme ich zum Veranstaltungsort?",
+      "vi": "Tôi đến địa điểm bằng cách nào?",
+      "id": "Bagaimana cara menuju ke lokasi?"
+    }
+  },
+  {
+    "id": "culture_entertainment_065",
+    "scene": "culture_entertainment",
+    "subScene": "sports_event",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "応援グッズはどこで買えますか？",
+      "en": "Where can I buy cheering merchandise?",
+      "zh": "在哪里可以买到应援周边商品？",
+      "zh_TW": "哪裡可以買到應援週邊商品？",
+      "ko": "응원 용품은 어디에서 살 수 있습니까?",
+      "es": "¿Dónde puedo comprar artículos de animación?",
+      "fr": "Où puis-je acheter des produits dérivés ?",
+      "de": "Wo kann ich Fanartikel kaufen?",
+      "vi": "Tôi có thể mua đồ cổ vũ ở đâu?",
+      "id": "Di mana saya bisa membeli merchandise pendukung?"
+    }
+  },
+  {
+    "id": "culture_entertainment_066",
+    "scene": "culture_entertainment",
+    "subScene": "sports_event",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "雨天の場合はどうなりますか？",
+      "en": "What happens if it rains?",
+      "zh": "下雨怎么办？",
+      "zh_TW": "下雨怎麼辦？",
+      "ko": "우천의 경우에는 어떻게 됩니까?",
+      "es": "¿Qué pasa si llueve?",
+      "fr": "Que se passe-t-il en cas de pluie ?",
+      "de": "Was ist bei Regen?",
+      "vi": "Nếu trời mưa thì sao?",
+      "id": "Bagaimana jika hujan?"
+    }
+  },
+  {
+    "id": "culture_entertainment_067",
+    "scene": "culture_entertainment",
+    "subScene": "sports_event",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "試合結果はどこで確認できますか？",
+      "en": "Where can I check the match results?",
+      "zh": "在哪里可以查看比赛结果？",
+      "zh_TW": "在哪裡可以查看比賽結果？",
+      "ko": "경기 결과는 어디에서 확인할 수 있습니까?",
+      "es": "¿Dónde puedo consultar los resultados del partido?",
+      "fr": "Où puis-je consulter les résultats du match ?",
+      "de": "Wo kann ich die Spielergebnisse einsehen?",
+      "vi": "Tôi có thể xem kết quả trận đấu ở đâu?",
+      "id": "Di mana saya bisa memeriksa hasil pertandingan?"
+    }
+  },
+  {
+    "id": "culture_entertainment_068",
+    "scene": "culture_entertainment",
+    "subScene": "sports_event",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "再入場は可能ですか？",
+      "en": "Is re-entry allowed?",
+      "zh": "可以再次入场吗？",
+      "zh_TW": "可以再入場嗎？",
+      "ko": "재입장이 가능합니까?",
+      "es": "¿Puedo volver a entrar?",
+      "fr": "La réentrée est-elle autorisée ?",
+      "de": "Kann ich das Museum erneut betreten?",
+      "vi": "Tôi có thể vào lại không?",
+      "id": "Bolehkah saya masuk kembali?"
+    }
+  },
+  {
+    "id": "culture_entertainment_069",
+    "scene": "culture_entertainment",
+    "subScene": "sports_event",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "チケットは当日でも購入できますか？",
+      "en": "Can tickets be purchased on the day?",
+      "zh": "当天可以买票吗？",
+      "zh_TW": "當天可以買票嗎？",
+      "ko": "티켓은 당일에도 구입할 수 있습니까?",
+      "es": "¿Puedo comprar entradas el mismo día del partido?",
+      "fr": "Peut-on acheter des billets le jour même ?",
+      "de": "Kann ich am Spieltag Tickets kaufen?",
+      "vi": "Tôi có thể mua vé vào ngày hôm đó không?",
+      "id": "Bolehkah saya membeli tiket pada hari pertandingan?"
+    }
+  },
+  {
+    "id": "culture_entertainment_070",
+    "scene": "culture_entertainment",
+    "subScene": "sports_event",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "選手との交流イベントはありますか？",
+      "en": "Are there any meet-and-greet events with players?",
+      "zh": "有球员见面会吗？",
+      "zh_TW": "有球員見面會嗎？",
+      "ko": "선수와의 교류 이벤트가 있습니까?",
+      "es": "¿Hay algún evento donde pueda conocer y saludar a los jugadores?",
+      "fr": "Y a-t-il des rencontres avec les joueurs ?",
+      "de": "Gibt es Veranstaltungen, bei denen ich Spieler treffen und begrüßen kann?",
+      "vi": "Có sự kiện nào để tôi có thể gặp gỡ và chào hỏi các cầu thủ không?",
+      "id": "Apakah ada acara di mana saya bisa bertemu dan menyapa pemain?"
+    }
+  },
+  {
+    "id": "culture_entertainment_071",
+    "scene": "culture_entertainment",
+    "subScene": "theme_park",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "このアトラクションの待ち時間はどれくらいですか？",
+      "en": "How long is the wait time for this attraction?",
+      "zh": "这个景点的等待时间是多久？",
+      "zh_TW": "這個景點的等待時間是多久？",
+      "ko": "이 관광 명소의 대기 시간은 얼마입니까?",
+      "es": "¿Cuánto tiempo hay que esperar para esta atracción?",
+      "fr": "Combien de temps faut-il attendre pour cette attraction ?",
+      "de": "Wie lange muss man für diese Attraktion warten?",
+      "vi": "Phải chờ bao lâu để tham gia điểm tham quan này?",
+      "id": "Berapa lama waktu tunggu untuk atraksi ini?"
+    }
+  },
+  {
+    "id": "culture_entertainment_072",
+    "scene": "culture_entertainment",
+    "subScene": "theme_park",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "フリーパスはありますか？",
+      "en": "Are there free passes?",
+      "zh": "有免费通行证吗？",
+      "zh_TW": "有免費通行證嗎？",
+      "ko": "무료 패스가 있습니까?",
+      "es": "¿Hay pases gratuitos disponibles?",
+      "fr": "Y a-t-il des entrées gratuites ?",
+      "de": "Gibt es Freikarten?",
+      "vi": "Có vé miễn phí không?",
+      "id": "Apakah ada tiket masuk gratis?"
+    }
+  },
+  {
+    "id": "culture_entertainment_073",
+    "scene": "culture_entertainment",
+    "subScene": "theme_park",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "ショーの開始時間を教えてください。",
+      "en": "What time does the show start?",
+      "zh": "演出几点开始？",
+      "zh_TW": "演出幾點開始？",
+      "ko": "쇼 시작 시간을 알려주세요.",
+      "es": "¿A qué hora empiezan los espectáculos?",
+      "fr": "À quelle heure commence le spectacle ?",
+      "de": "Wann beginnen die Shows?",
+      "vi": "Các chương trình bắt đầu lúc mấy giờ?",
+      "id": "Pukul berapa pertunjukan dimulai?"
+    }
+  },
+  {
+    "id": "culture_entertainment_074",
+    "scene": "culture_entertainment",
+    "subScene": "theme_park",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "園内にロッカーはありますか？",
+      "en": "Are there lockers in the park?",
+      "zh": "公园里有储物柜吗？",
+      "zh_TW": "園區有置物櫃嗎？",
+      "ko": "원내에 사물함이 있습니까?",
+      "es": "¿Hay taquillas en el parque?",
+      "fr": "Y a-t-il des casiers dans le parc ?",
+      "de": "Gibt es Schließfächer im Park?",
+      "vi": "Có tủ đựng đồ trong công viên không?",
+      "id": "Apakah ada loker di taman?"
+    }
+  },
+  {
+    "id": "culture_entertainment_075",
+    "scene": "culture_entertainment",
+    "subScene": "theme_park",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "お土産ショップはどこにありますか？",
+      "en": "Where is the souvenir shop?",
+      "zh": "纪念品商店在哪里？",
+      "zh_TW": "紀念品商店在哪裡？",
+      "ko": "기념품 가게는 어디에 있습니까?",
+      "es": "¿Dónde están las tiendas de recuerdos?",
+      "fr": "Où se trouve la boutique de souvenirs ?",
+      "de": "Wo ist der Souvenirladen?",
+      "vi": "Cửa hàng lưu niệm ở đâu?",
+      "id": "Di mana toko suvenir?"
+    }
+  },
+  {
+    "id": "culture_entertainment_076",
+    "scene": "culture_entertainment",
+    "subScene": "theme_park",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "雨の日でも楽しめるアトラクションはありますか？",
+      "en": "Are there any attractions that can be enjoyed on rainy days?",
+      "zh": "有什么可以在雨天玩的景点吗？",
+      "zh_TW": "有什麼可以在下雨天玩的景點嗎？",
+      "ko": "비오는 날에도 즐길 수있는 명소가 있습니까?",
+      "es": "¿Hay atracciones que se puedan disfrutar en días de lluvia?",
+      "fr": "Y a-t-il des attractions accessibles les jours de pluie ?",
+      "de": "Gibt es Attraktionen, die man auch bei Regen genießen kann?",
+      "vi": "Có điểm tham quan nào có thể tham gia vào những ngày mưa không?",
+      "id": "Apakah ada atraksi yang bisa dinikmati saat hujan?"
+    }
+  },
+  {
+    "id": "culture_entertainment_077",
+    "scene": "culture_entertainment",
+    "subScene": "theme_park",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "園内マップはどこで入手できますか？",
+      "en": "Where can I get a park map?",
+      "zh": "哪里可以拿到公园地图？",
+      "zh_TW": "哪裡可以拿到公園地圖？",
+      "ko": "원내 지도는 어디에서 구할 수 있나요?",
+      "es": "¿Dónde puedo conseguir un mapa del parque?",
+      "fr": "Où puis-je me procurer un plan du parc ?",
+      "de": "Wo bekomme ich einen Parkplan?",
+      "vi": "Tôi có thể lấy bản đồ công viên ở đâu?",
+      "id": "Di mana saya bisa mendapatkan peta taman?"
+    }
+  },
+  {
+    "id": "culture_entertainment_078",
+    "scene": "culture_entertainment",
+    "subScene": "theme_park",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "ベビーカーの貸し出しはありますか？",
+      "en": "Do I rent strollers?",
+      "zh": "可以租婴儿车吗？",
+      "zh_TW": "可以租嬰兒車嗎？",
+      "ko": "유모차 대여가 있습니까?",
+      "es": "¿Se alquilan cochecitos de bebé?",
+      "fr": "Puis-je louer des poussettes ?",
+      "de": "Kann ich Kinderwagen mieten?",
+      "vi": "Tôi có thuê xe đẩy không?",
+      "id": "Apakah saya bisa menyewa kereta dorong bayi?"
+    }
+  },
+  {
+    "id": "culture_entertainment_079",
+    "scene": "culture_entertainment",
+    "subScene": "theme_park",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "再入場は可能ですか？",
+      "en": "Is re-entry allowed?",
+      "zh": "可以重复入场吗？",
+      "zh_TW": "可以重複入場嗎？",
+      "ko": "재입장이 가능합니까?",
+      "es": "¿Se permite volver a entrar?",
+      "fr": "La réentrée est-elle autorisée ?",
+      "de": "Ist ein Wiedereintritt möglich?",
+      "vi": "Có được phép vào lại không?",
+      "id": "Apakah diperbolehkan masuk kembali?"
+    }
+  },
+  {
+    "id": "culture_entertainment_080",
+    "scene": "culture_entertainment",
+    "subScene": "theme_park",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "誕生日特典はありますか？",
+      "en": "Are there any birthday benefits?",
+      "zh": "有生日福利吗？",
+      "zh_TW": "有生日福利嗎？",
+      "ko": "생일 혜택이 있습니까?",
+      "es": "¿Hay ofertas especiales de cumpleaños?",
+      "fr": "Y a-t-il des avantages pour les anniversaires ?",
+      "de": "Gibt es Geburtstagsvorteile?",
+      "vi": "Có ưu đãi sinh nhật nào không?",
+      "id": "Apakah ada keuntungan khusus ulang tahun?"
+    }
+  },
+  {
+    "id": "culture_entertainment_081",
+    "scene": "culture_entertainment",
+    "subScene": "traditional_festival",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "この祭りは毎年いつ開催されますか？",
+      "en": "When does this festival take place each year?",
+      "zh": "这个节日每年什么时候举行？",
+      "zh_TW": "這個節日每年什麼時候舉辦？",
+      "ko": "이 축제는 매년 언제 개최됩니까?",
+      "es": "¿Cuándo se celebra este festival cada año?",
+      "fr": "Quand ce festival a-t-il lieu chaque année ?",
+      "de": "Wann findet dieses Festival jedes Jahr statt?",
+      "vi": "Lễ hội này diễn ra khi nào hàng năm?",
+      "id": "Kapan festival ini berlangsung setiap tahun?"
+    }
+  },
+  {
+    "id": "culture_entertainment_082",
+    "scene": "culture_entertainment",
+    "subScene": "traditional_festival",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "出店は何時まで営業していますか？",
+      "en": "What time do the stalls stay open?",
+      "zh": "摊位开放时间是几点？",
+      "zh_TW": "攤位開放時間是幾點？",
+      "ko": "출점은 몇시까지 영업하고 있습니까?",
+      "es": "¿Hasta qué hora abren los puestos?",
+      "fr": "À quelle heure les stands restent-ils ouverts ?",
+      "de": "Bis wann sind die Stände geöffnet?",
+      "vi": "Các quầy hàng mở cửa đến mấy giờ?",
+      "id": "Sampai pukul berapa kios buka?"
+    }
+  },
+  {
+    "id": "culture_entertainment_083",
+    "scene": "culture_entertainment",
+    "subScene": "traditional_festival",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "祭りの由来を教えてください。",
+      "en": "What is the origin of this festival?",
+      "zh": "这个节日的起源是什么？",
+      "zh_TW": "這個節日的起源是什麼？",
+      "ko": "축제의 기원을 말해주십시오.",
+      "es": "¿Cuál es el origen del festival?",
+      "fr": "Quelle est l'origine de ce festival ?",
+      "de": "Woher kommt das Festival?",
+      "vi": "Nguồn gốc của lễ hội là gì?",
+      "id": "Apa asal usul festival ini?"
+    }
+  },
+  {
+    "id": "culture_entertainment_084",
+    "scene": "culture_entertainment",
+    "subScene": "traditional_festival",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "花火大会は何時からですか？",
+      "en": "What time does the fireworks display start?",
+      "zh": "烟花表演什么时候开始？",
+      "zh_TW": "煙火表演什麼時候開始？",
+      "ko": "불꽃놀이는 몇시부터입니까?",
+      "es": "¿A qué hora empieza el espectáculo de fuegos artificiales?",
+      "fr": "À quelle heure commence le feu d'artifice ?",
+      "de": "Wann beginnt das Feuerwerk?",
+      "vi": "Màn bắn pháo hoa bắt đầu lúc mấy giờ?",
+      "id": "Pukul berapa pertunjukan kembang api dimulai?"
+    }
+  },
+  {
+    "id": "culture_entertainment_085",
+    "scene": "culture_entertainment",
+    "subScene": "traditional_festival",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "浴衣のレンタルはありますか？",
+      "en": "Do you offer yukata rentals?",
+      "zh": "有浴衣租赁服务吗？",
+      "zh_TW": "有浴衣租賃服務嗎？",
+      "ko": "유카타 대여가 있습니까?",
+      "es": "¿Se alquilan yukatas?",
+      "fr": "Proposez-vous la location de yukatas ?",
+      "de": "Muss ich einen Yukata mieten?",
+      "vi": "Tôi có thuê yukata không?",
+      "id": "Apakah saya bisa menyewa yukata?"
+    }
+  },
+  {
+    "id": "culture_entertainment_086",
+    "scene": "culture_entertainment",
+    "subScene": "traditional_festival",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "ステージイベントはどこで行われますか？",
+      "en": "Where are the stage events held?",
+      "zh": "舞台活动在哪里举行？",
+      "zh_TW": "舞台活動在哪裡舉行？",
+      "ko": "무대 이벤트는 어디에서 진행됩니까?",
+      "es": "¿Dónde se celebran los eventos en el escenario?",
+      "fr": "Où se déroulent les spectacles ?",
+      "de": "Wo finden die Bühnenveranstaltungen statt?",
+      "vi": "Các sự kiện sân khấu được tổ chức ở đâu?",
+      "id": "Di mana acara panggung diadakan?"
+    }
+  },
+  {
+    "id": "culture_entertainment_087",
+    "scene": "culture_entertainment",
+    "subScene": "traditional_festival",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "混雑を避けるには何時に行けばいいですか？",
+      "en": "What time should I go to avoid the crowds?",
+      "zh": "我应该什么时候去避开人群？",
+      "zh_TW": "我該什麼時候避開人群？",
+      "ko": "혼잡을 피하려면 몇시에 가야합니까?",
+      "es": "¿A qué hora debo ir para evitar las multitudes?",
+      "fr": "À quelle heure dois-je y aller pour éviter la foule ?",
+      "de": "Wann sollte ich kommen, um den Menschenmassen zu entgehen?",
+      "vi": "Tôi nên đến vào lúc mấy giờ để tránh đám đông?",
+      "id": "Pukul berapa saya harus pergi untuk menghindari keramaian?"
+    }
+  },
+  {
+    "id": "culture_entertainment_088",
+    "scene": "culture_entertainment",
+    "subScene": "traditional_festival",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "雨天の場合はどうなりますか？",
+      "en": "What happens if it rains?",
+      "zh": "如果下雨怎么办？",
+      "zh_TW": "如果下雨怎麼辦？",
+      "ko": "우천의 경우에는 어떻게 됩니까?",
+      "es": "¿Qué pasa si llueve?",
+      "fr": "Que se passe-t-il en cas de pluie ?",
+      "de": "Was passiert bei Regen?",
+      "vi": "Điều gì sẽ xảy ra nếu trời mưa?",
+      "id": "Apa yang terjadi jika hujan?"
+    }
+  },
+  {
+    "id": "culture_entertainment_089",
+    "scene": "culture_entertainment",
+    "subScene": "traditional_festival",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "駐車場はありますか？",
+      "en": "Is there parking available?",
+      "zh": "有停车位吗？",
+      "zh_TW": "有停車位嗎？",
+      "ko": "주차장이 있습니까?",
+      "es": "¿Hay aparcamiento disponible?",
+      "fr": "Y a-t-il un parking ?",
+      "de": "Gibt es Parkplätze?",
+      "vi": "Có chỗ đậu xe không?",
+      "id": "Apakah tersedia tempat parkir?"
+    }
+  },
+  {
+    "id": "culture_entertainment_090",
+    "scene": "culture_entertainment",
+    "subScene": "traditional_festival",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "子供向けのイベントはありますか？",
+      "en": "Are there any events for children?",
+      "zh": "有儿童活动吗？",
+      "zh_TW": "有兒童活動嗎？",
+      "ko": "어린이를 위한 이벤트가 있습니까?",
+      "es": "¿Hay eventos para niños?",
+      "fr": "Y a-t-il des animations pour les enfants ?",
+      "de": "Gibt es Veranstaltungen für Kinder?",
+      "vi": "Có sự kiện nào dành cho trẻ em không?",
+      "id": "Apakah ada acara untuk anak-anak?"
+    }
+  },
+  {
+    "id": "culture_entertainment_091",
+    "scene": "culture_entertainment",
+    "subScene": "nightlife",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "このバーは何時まで営業していますか？",
+      "en": "What time does this bar stay open?",
+      "zh": "这家酒吧营业时间是几点？",
+      "zh_TW": "這家酒吧營業時間是幾點？",
+      "ko": "이 바는 몇시까지 영업하나요?",
+      "es": "¿A qué hora abre este bar?",
+      "fr": "À quelle heure ce bar est-il ouvert ?",
+      "de": "Bis wann ist die Bar geöffnet?",
+      "vi": "Quán bar này mở cửa đến mấy giờ?",
+      "id": "Sampai pukul berapa bar ini buka?"
+    }
+  },
+  {
+    "id": "culture_entertainment_092",
+    "scene": "culture_entertainment",
+    "subScene": "nightlife",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "おすすめのカクテルは何ですか？",
+      "en": "What cocktails do they offer?",
+      "zh": "提供什么鸡尾酒？",
+      "zh_TW": "提供什麼雞尾酒？",
+      "ko": "추천 칵테일은 무엇입니까?",
+      "es": "¿Qué cócteles recomiendan?",
+      "fr": "Quels cocktails propose-t-il ?",
+      "de": "Welche Cocktails werden empfohlen?",
+      "vi": "Họ gợi ý những loại cocktail nào?",
+      "id": "Koktail apa yang mereka rekomendasikan?"
+    }
+  },
+  {
+    "id": "culture_entertainment_093",
+    "scene": "culture_entertainment",
+    "subScene": "nightlife",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "ライブ演奏はありますか？",
+      "en": "Do they have live music?",
+      "zh": "有现场音乐表演吗？",
+      "zh_TW": "有現場音樂表演嗎？",
+      "ko": "라이브 연주가 있습니까?",
+      "es": "¿Hay música en vivo?",
+      "fr": "Propose-t-il des concerts ?",
+      "de": "Gibt es Live-Musik?",
+      "vi": "Có nhạc sống không?",
+      "id": "Apakah ada musik live?"
+    }
+  },
+  {
+    "id": "culture_entertainment_094",
+    "scene": "culture_entertainment",
+    "subScene": "nightlife",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "ドレスコードはありますか？",
+      "en": "Is there a dress code?",
+      "zh": "有着装要求吗？",
+      "zh_TW": "有著裝要求嗎？",
+      "ko": "드레스 코드가 있습니까?",
+      "es": "¿Hay código de vestimenta?",
+      "fr": "Y a-t-il un code vestimentaire ?",
+      "de": "Gibt es eine Kleiderordnung?",
+      "vi": "Có quy định về trang phục không?",
+      "id": "Apakah ada aturan berpakaian?"
+    }
+  },
+  {
+    "id": "culture_entertainment_095",
+    "scene": "culture_entertainment",
+    "subScene": "nightlife",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "チャージ料金はかかりますか？",
+      "en": "Is there a cover charge?",
+      "zh": "需要入场费吗？",
+      "zh_TW": "需要入場費嗎？",
+      "ko": "요금이 부과됩니까?",
+      "es": "¿Hay que pagar entrada?",
+      "fr": "Y a-t-il un droit d'entrée ?",
+      "de": "Gibt es Eintritt?",
+      "vi": "Có tính phí vào cửa không?",
+      "id": "Apakah ada biaya masuk?"
+    }
+  },
+  {
+    "id": "culture_entertainment_096",
+    "scene": "culture_entertainment",
+    "subScene": "nightlife",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "予約は必要ですか？",
+      "en": "Do I need to make a reservation?",
+      "zh": "需要提前预订吗？",
+      "zh_TW": "需要提前預訂嗎？",
+      "ko": "예약이 필요하십니까?",
+      "es": "¿Necesito reservar?",
+      "fr": "Dois-je réserver ?",
+      "de": "Muss ich reservieren?",
+      "vi": "Tôi có cần đặt chỗ trước không?",
+      "id": "Apakah saya perlu melakukan reservasi?"
+    }
+  },
+  {
+    "id": "culture_entertainment_097",
+    "scene": "culture_entertainment",
+    "subScene": "nightlife",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "喫煙席はありますか？",
+      "en": "Is there smoking available?",
+      "zh": "可以吸烟吗？",
+      "zh_TW": "可以吸煙嗎？",
+      "ko": "흡연석이 있습니까?",
+      "es": "¿Hay zona para fumadores?",
+      "fr": "Est-il possible de fumer ?",
+      "de": "Gibt es Raucherplätze?",
+      "vi": "Có chỗ ngồi hút thuốc không?",
+      "id": "Apakah ada tempat duduk untuk merokok?"
+    }
+  },
+  {
+    "id": "culture_entertainment_098",
+    "scene": "culture_entertainment",
+    "subScene": "nightlife",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "店内は騒がしいですか？",
+      "en": "Is it noisy inside?",
+      "zh": "里面吵吗？",
+      "zh_TW": "裡面吵嗎？",
+      "ko": "점내는 시끄럽습니까?",
+      "es": "¿Hay ruido dentro?",
+      "fr": "Y a-t-il du bruit à l'intérieur ?",
+      "de": "Ist es drinnen laut?",
+      "vi": "Bên trong có ồn không?",
+      "id": "Apakah di dalam berisik?"
+    }
+  },
+  {
+    "id": "culture_entertainment_099",
+    "scene": "culture_entertainment",
+    "subScene": "nightlife",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "ハッピーアワーはありますか？",
+      "en": "Do you have a happy hour?",
+      "zh": "有欢乐时光吗？",
+      "zh_TW": "有歡樂時光嗎？",
+      "ko": "해피 아워가 있습니까?",
+      "es": "¿Tiene happy hour?",
+      "fr": "Proposez-vous un happy hour ?",
+      "de": "Gibt es eine Happy Hour?",
+      "vi": "Quán có giờ vàng không?",
+      "id": "Apakah ada happy hour?"
+    }
+  },
+  {
+    "id": "culture_entertainment_100",
+    "scene": "culture_entertainment",
+    "subScene": "nightlife",
+    "level": "beginner",
+    "tags": ["culture_entertainment"],
+    "translations": {
+      "ja": "グループ向けの個室はありますか？",
+      "en": "Do you have private rooms for groups?",
+      "zh": "有团体包间吗？",
+      "zh_TW": "有團體包廂嗎？",
+      "ko": "그룹을 위한 개인실이 있습니까?",
+      "es": "¿Disponen de salones privados para grupos?",
+      "fr": "Disposez-vous de salles privées pour les groupes ?",
+      "de": "Haben Sie private Räume für Gruppen?",
+      "vi": "Quán có phòng riêng cho nhóm không?",
+      "id": "Apakah ada ruangan pribadi untuk rombongan?"
+    }
+  }
+]

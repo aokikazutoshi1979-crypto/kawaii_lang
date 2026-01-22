@@ -1,0 +1,1822 @@
+[
+  {
+    "id": "community_life_001",
+    "scene": "community_life",
+    "subScene": "neighborhood_events",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "このイベントは毎年開催されていますか？",
+      "en": "Is this event held every year?",
+      "zh": "这个活动每年都会举办吗？",
+      "zh_TW": "這個活動每年都會舉辦嗎？",
+      "ko": "이 행사는 매년 개최됩니까?",
+      "es": "¿Este evento se celebra todos los años?",
+      "fr": "Cet événement a-t-il lieu chaque année ?",
+      "de": "Findet diese Veranstaltung jedes Jahr statt?",
+      "vi": "Sự kiện này được tổ chức hàng năm phải không?",
+      "id": "Apakah acara ini diadakan setiap tahun?"
+    }
+  },
+  {
+    "id": "community_life_002",
+    "scene": "community_life",
+    "subScene": "neighborhood_events",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "参加費はいくらですか？",
+      "en": "How much does it cost to participate?",
+      "zh": "参加费用是多少？",
+      "zh_TW": "參加費用是多少？",
+      "ko": "참가비는 얼마입니까?",
+      "es": "¿Cuánto cuesta participar?",
+      "fr": "Combien coûte la participation ?",
+      "de": "Wie viel kostet die Teilnahme?",
+      "vi": "Chi phí tham gia là bao nhiêu?",
+      "id": "Berapa biaya untuk berpartisipasi?"
+    }
+  },
+  {
+    "id": "community_life_003",
+    "scene": "community_life",
+    "subScene": "neighborhood_events",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "事前申し込みは必要ですか？",
+      "en": "Do I need to register in advance?",
+      "zh": "需要提前报名吗？",
+      "zh_TW": "需要提前報名嗎？",
+      "ko": "사전 신청이 필요합니까?",
+      "es": "¿Necesito registrarme con antelación?",
+      "fr": "Dois-je m'inscrire à l'avance ?",
+      "de": "Muss ich mich im Voraus anmelden?",
+      "vi": "Tôi có cần đăng ký trước không?",
+      "id": "Apakah saya perlu mendaftar terlebih dahulu?"
+    }
+  },
+  {
+    "id": "community_life_004",
+    "scene": "community_life",
+    "subScene": "neighborhood_events",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "会場へのアクセス方法を教えてください。",
+      "en": "How do I get to the venue?",
+      "zh": "如何前往会场？",
+      "zh_TW": "如何前往會場？",
+      "ko": "장소에 액세스하는 방법을 알려주십시오.",
+      "es": "¿Cómo llego al lugar?",
+      "fr": "Comment me rendre sur place ?",
+      "de": "Wie komme ich zum Veranstaltungsort?",
+      "vi": "Tôi đến địa điểm bằng cách nào?",
+      "id": "Bagaimana cara menuju ke lokasi?"
+    }
+  },
+  {
+    "id": "community_life_005",
+    "scene": "community_life",
+    "subScene": "neighborhood_events",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "駐車場はありますか？",
+      "en": "Is parking available?",
+      "zh": "有停车位吗？",
+      "zh_TW": "有停車位嗎？",
+      "ko": "주차장이 있습니까?",
+      "es": "¿Hay aparcamiento?",
+      "fr": "Y a-t-il un parking ?",
+      "de": "Gibt es Parkplätze?",
+      "vi": "Có chỗ đậu xe không?",
+      "id": "Apakah tersedia tempat parkir?"
+    }
+  },
+  {
+    "id": "community_life_006",
+    "scene": "community_life",
+    "subScene": "neighborhood_events",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "子供向けのアクティビティはありますか？",
+      "en": "Are there activities for children?",
+      "zh": "有儿童活动吗？",
+      "zh_TW": "有兒童活動嗎？",
+      "ko": "어린이를 위한 활동이 있습니까?",
+      "es": "¿Hay actividades para niños?",
+      "fr": "Y a-t-il des activités pour les enfants ?",
+      "de": "Gibt es Aktivitäten für Kinder?",
+      "vi": "Có hoạt động nào dành cho trẻ em không?",
+      "id": "Apakah ada kegiatan untuk anak-anak?"
+    }
+  },
+  {
+    "id": "community_life_007",
+    "scene": "community_life",
+    "subScene": "neighborhood_events",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "雨天の場合はどうなりますか？",
+      "en": "What if it rains?",
+      "zh": "如果下雨怎么办？",
+      "zh_TW": "如果下雨怎麼辦？",
+      "ko": "우천의 경우에는 어떻게 됩니까?",
+      "es": "¿Qué pasa si llueve?",
+      "fr": "Que se passe-t-il en cas de pluie ?",
+      "de": "Was ist bei Regen?",
+      "vi": "Nếu trời mưa thì sao?",
+      "id": "Bagaimana jika hujan?"
+    }
+  },
+  {
+    "id": "community_life_008",
+    "scene": "community_life",
+    "subScene": "neighborhood_events",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "ボランティア募集はありますか？",
+      "en": "Are volunteers available?",
+      "zh": "有志愿者吗？",
+      "zh_TW": "有志工嗎？",
+      "ko": "자원 봉사 모집이 있습니까?",
+      "es": "¿Hay voluntarios disponibles?",
+      "fr": "Y a-t-il des bénévoles disponibles ?",
+      "de": "Sind ehrenamtliche Helfer verfügbar?",
+      "vi": "Có tình nguyện viên không?",
+      "id": "Apakah ada sukarelawan?"
+    }
+  },
+  {
+    "id": "community_life_009",
+    "scene": "community_life",
+    "subScene": "neighborhood_events",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "イベントのスケジュールはどこで確認できますか？",
+      "en": "Where can I find the event schedule?",
+      "zh": "在哪里可以找到活动日程？",
+      "zh_TW": "在哪裡可以找到活動行程？",
+      "ko": "이벤트 일정은 어디에서 확인할 수 있나요?",
+      "es": "¿Dónde puedo encontrar el programa del evento?",
+      "fr": "Où puis-je trouver le programme de l'événement ?",
+      "de": "Wo finde ich den Veranstaltungsplan?",
+      "vi": "Tôi có thể tìm lịch trình sự kiện ở đâu?",
+      "id": "Di mana saya bisa menemukan jadwal acara?"
+    }
+  },
+  {
+    "id": "community_life_010",
+    "scene": "community_life",
+    "subScene": "neighborhood_events",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "飲食物の販売はありますか？",
+      "en": "Are food and drink available for purchase?",
+      "zh": "有食物和饮料出售吗？",
+      "zh_TW": "有食物和飲料出售嗎？",
+      "ko": "식음료 판매가 있습니까?",
+      "es": "¿Se puede comprar comida y bebida?",
+      "fr": "Peut-on acheter de la nourriture et des boissons ?",
+      "de": "Kann man Essen und Getränke kaufen?",
+      "vi": "Có bán đồ ăn và thức uống không?",
+      "id": "Apakah makanan dan minuman tersedia untuk dibeli?"
+    }
+  },
+  {
+    "id": "community_life_011",
+    "scene": "community_life",
+    "subScene": "neighborhood_meetings",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "次回の自治会ミーティングはいつですか？",
+      "en": "When is the next neighborhood association meeting?",
+      "zh": "下次社区协会会议什么时候举行？",
+      "zh_TW": "下次社區協會會議什麼時候舉行？",
+      "ko": "다음 번 자치회 미팅은 언제입니까?",
+      "es": "¿Cuándo es la próxima reunión de la asociación de vecinos?",
+      "fr": "Quand a lieu la prochaine réunion de l'association de quartier ?",
+      "de": "Wann findet die nächste Sitzung des Nachbarschaftsvereins statt?",
+      "vi": "Khi nào cuộc họp tiếp theo của hội khu phố diễn ra?",
+      "id": "Kapan pertemuan RT berikutnya?"
+    }
+  },
+  {
+    "id": "community_life_012",
+    "scene": "community_life",
+    "subScene": "neighborhood_meetings",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "議題はどこで確認できますか？",
+      "en": "Where can I find the agenda?",
+      "zh": "在哪里可以找到议程？",
+      "zh_TW": "在哪裡可以找到議程？",
+      "ko": "의제는 어디서 확인할 수 있습니까?",
+      "es": "¿Dónde puedo encontrar la agenda?",
+      "fr": "Où puis-je trouver l'ordre du jour ?",
+      "de": "Wo finde ich die Tagesordnung?",
+      "vi": "Tôi có thể tìm chương trình nghị sự ở đâu?",
+      "id": "Di mana saya bisa menemukan agendanya?"
+    }
+  },
+  {
+    "id": "community_life_013",
+    "scene": "community_life",
+    "subScene": "neighborhood_meetings",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "会議は誰でも参加できますか？",
+      "en": "Can anyone attend meetings?",
+      "zh": "任何人都可以参加会议吗？",
+      "zh_TW": "任何人都可以參加會議嗎？",
+      "ko": "회의는 누구나 참여할 수 있습니까?",
+      "es": "¿Está abierto al público?",
+      "fr": "Ouvert au public ?",
+      "de": "Kann jeder an den Sitzungen teilnehmen?",
+      "vi": "Bất kỳ ai cũng có thể tham dự các cuộc họp?",
+      "id": "Apakah siapa pun dapat menghadiri pertemuan?"
+    }
+  },
+  {
+    "id": "community_life_014",
+    "scene": "community_life",
+    "subScene": "neighborhood_meetings",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "オンライン参加は可能ですか？",
+      "en": "Can I participate online?",
+      "zh": "我可以在线参与吗？",
+      "zh_TW": "我可以在線上參與嗎？",
+      "ko": "온라인 참여가 가능합니까?",
+      "es": "¿Puedo participar en línea?",
+      "fr": "Puis-je participer en ligne ?",
+      "de": "Kann ich online teilnehmen?",
+      "vi": "Tôi có thể tham gia trực tuyến không?",
+      "id": "Bisakah saya berpartisipasi secara daring?"
+    }
+  },
+  {
+    "id": "community_life_015",
+    "scene": "community_life",
+    "subScene": "neighborhood_meetings",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "会議はどこで開催されますか？",
+      "en": "Where are meetings held?",
+      "zh": "会议在哪里举行？",
+      "zh_TW": "會議在哪裡舉行？",
+      "ko": "회의는 어디에서 개최됩니까?",
+      "es": "¿Dónde se celebran las reuniones?",
+      "fr": "Où ont lieu les réunions ?",
+      "de": "Wo finden die Sitzungen statt?",
+      "vi": "Các cuộc họp được tổ chức ở đâu?",
+      "id": "Di mana pertemuan diadakan?"
+    }
+  },
+  {
+    "id": "community_life_016",
+    "scene": "community_life",
+    "subScene": "neighborhood_meetings",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "議事録は配布されますか？",
+      "en": "Are minutes distributed?",
+      "zh": "会议记录会分发吗？",
+      "zh_TW": "會議記錄會分發嗎？",
+      "ko": "회의록은 배포됩니까?",
+      "es": "¿Se distribuyen las actas?",
+      "fr": "Les procès-verbaux sont-ils distribués ?",
+      "de": "Werden Protokolle verteilt?",
+      "vi": "Có biên bản không?",
+      "id": "Apakah notulen rapat dibagikan?"
+    }
+  },
+  {
+    "id": "community_life_017",
+    "scene": "community_life",
+    "subScene": "neighborhood_meetings",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "発言するには事前申し込みが必要ですか？",
+      "en": "Do I need to register in advance to speak?",
+      "zh": "我需要提前报名才能发言吗？",
+      "zh_TW": "我需要提前報名才能發言嗎？",
+      "ko": "발언하려면 사전 신청이 필요합니까?",
+      "es": "¿Necesito registrarme con antelación para participar como ponente?",
+      "fr": "Dois-je m'inscrire à l'avance pour prendre la parole ?",
+      "de": "Muss ich mich im Voraus anmelden, um sprechen zu können?",
+      "vi": "Tôi có cần đăng ký trước để phát biểu không?",
+      "id": "Apakah saya perlu mendaftar terlebih dahulu untuk berbicara?"
+    }
+  },
+  {
+    "id": "community_life_018",
+    "scene": "community_life",
+    "subScene": "neighborhood_meetings",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "会費は必要ですか？",
+      "en": "Is there a membership fee?",
+      "zh": "需要会员费吗？",
+      "zh_TW": "需要會費嗎？",
+      "ko": "회비가 필요합니까?",
+      "es": "¿Hay que pagar una cuota de socio?",
+      "fr": "Y a-t-il une cotisation ?",
+      "de": "Fällt ein Mitgliedsbeitrag an?",
+      "vi": "Có phí thành viên không?",
+      "id": "Apakah ada biaya keanggotaan?"
+    }
+  },
+  {
+    "id": "community_life_019",
+    "scene": "community_life",
+    "subScene": "neighborhood_meetings",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "会長はどなたですか？",
+      "en": "Who is the chairman?",
+      "zh": "主席是谁？",
+      "zh_TW": "主席是誰？",
+      "ko": "회장은 누구입니까?",
+      "es": "¿Quién preside?",
+      "fr": "Qui est le président ?",
+      "de": "Wer ist der Vorsitzende?",
+      "vi": "Ai là chủ tịch?",
+      "id": "Siapa ketuanya?"
+    }
+  },
+  {
+    "id": "community_life_020",
+    "scene": "community_life",
+    "subScene": "neighborhood_meetings",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "会議の所要時間はどれくらいですか？",
+      "en": "How long do meetings last?",
+      "zh": "会议持续多长时间？",
+      "zh_TW": "會議持續多久？",
+      "ko": "회의 소요 시간은 얼마입니까?",
+      "es": "¿Cuánto duran las reuniones?",
+      "fr": "Combien de temps durent les réunions ?",
+      "de": "Wie lange dauern die Sitzungen?",
+      "vi": "Các cuộc họp kéo dài bao lâu?",
+      "id": "Berapa lama pertemuan berlangsung?"
+    }
+  },
+  {
+    "id": "community_life_021",
+    "scene": "community_life",
+    "subScene": "community_center",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "この施設の利用時間はいつですか？",
+      "en": "What hours can this facility be used?",
+      "zh": "这个设施可以在什么时间使用？",
+      "zh_TW": "這個設施可以在什麼時間使用？",
+      "ko": "이 시설의 이용 시간은 언제입니까?",
+      "es": "¿Cuál es el horario de apertura de estas instalaciones?",
+      "fr": "Quels sont les horaires d'ouverture de cet établissement ?",
+      "de": "Zu welchen Zeiten kann die Einrichtung genutzt werden?",
+      "vi": "Cơ sở này có thể được sử dụng trong bao lâu?",
+      "id": "Jam berapa fasilitas ini dapat digunakan?"
+    }
+  },
+  {
+    "id": "community_life_022",
+    "scene": "community_life",
+    "subScene": "community_center",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "利用料金はいくらですか？",
+      "en": "How much does it cost?",
+      "zh": "费用是多少？",
+      "zh_TW": "費用是多少？",
+      "ko": "이용 요금은 얼마입니까?",
+      "es": "¿Cuánto cuesta?",
+      "fr": "Quel est son coût ?",
+      "de": "Was kostet es?",
+      "vi": "Chi phí là bao nhiêu?",
+      "id": "Berapa biayanya?"
+    }
+  },
+  {
+    "id": "community_life_023",
+    "scene": "community_life",
+    "subScene": "community_center",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "予約は必要ですか？",
+      "en": "Do I need to make a reservation?",
+      "zh": "需要预约吗？",
+      "zh_TW": "需要預約嗎？",
+      "ko": "예약이 필요하십니까?",
+      "es": "¿Es necesario reservar?",
+      "fr": "Faut-il réserver ?",
+      "de": "Muss ich reservieren?",
+      "vi": "Tôi có cần đặt chỗ trước không?",
+      "id": "Apakah saya perlu melakukan reservasi?"
+    }
+  },
+  {
+    "id": "community_life_024",
+    "scene": "community_life",
+    "subScene": "community_center",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "どのような設備がありますか？",
+      "en": "What kind of facilities are available?",
+      "zh": "有哪些设施？",
+      "zh_TW": "有哪些設施？",
+      "ko": "어떤 시설이 있습니까?",
+      "es": "¿Qué tipo de equipo hay disponible?",
+      "fr": "Quel type d'équipement est disponible ?",
+      "de": "Welche Einrichtungen stehen zur Verfügung?",
+      "vi": "Có những loại cơ sở nào?",
+      "id": "Fasilitas apa saja yang tersedia?"
+    }
+  },
+  {
+    "id": "community_life_025",
+    "scene": "community_life",
+    "subScene": "community_center",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "イベントの開催予定はありますか？",
+      "en": "Are there any upcoming events?",
+      "zh": "有什么即将举行的活动吗？",
+      "zh_TW": "有什麼即將舉行的活動嗎？",
+      "ko": "이벤트 개최 예정이 있나요?",
+      "es": "¿Hay próximos eventos?",
+      "fr": "Y a-t-il des événements à venir ?",
+      "de": "Finden Sie demnächst Veranstaltungen?",
+      "vi": "Có sự kiện nào sắp tới không?",
+      "id": "Apakah ada acara mendatang?"
+    }
+  },
+  {
+    "id": "community_life_026",
+    "scene": "community_life",
+    "subScene": "community_center",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "子供向けの教室はありますか？",
+      "en": "Are there any children's classes available?",
+      "zh": "有儿童课程吗？",
+      "zh_TW": "有兒童課程嗎？",
+      "ko": "어린이를 위한 교실이 있습니까?",
+      "es": "¿Hay clases para niños?",
+      "fr": "Y a-t-il des cours pour enfants ?",
+      "de": "Gibt es Kinderkurse?",
+      "vi": "Có lớp học nào dành cho trẻ em không?",
+      "id": "Apakah ada kelas anak-anak yang tersedia?"
+    }
+  },
+  {
+    "id": "community_life_027",
+    "scene": "community_life",
+    "subScene": "community_center",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "駐車場はありますか？",
+      "en": "Is parking available?",
+      "zh": "有停车位吗？",
+      "zh_TW": "有停車位嗎？",
+      "ko": "주차장이 있습니까?",
+      "es": "¿Hay aparcamiento?",
+      "fr": "Un parking est-il disponible ?",
+      "de": "Gibt es Parkplätze?",
+      "vi": "Có chỗ đậu xe không?",
+      "id": "Apakah tersedia tempat parkir?"
+    }
+  },
+  {
+    "id": "community_life_028",
+    "scene": "community_life",
+    "subScene": "community_center",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "飲食物の持ち込みは可能ですか？",
+      "en": "Can I bring in food and drinks?",
+      "zh": "我可以带食物和饮料进去吗？",
+      "zh_TW": "我可以帶食物和飲料進去嗎？",
+      "ko": "음식물 반입은 가능합니까?",
+      "es": "¿Puedo llevar comida y bebida?",
+      "fr": "Puis-je apporter de la nourriture et des boissons ?",
+      "de": "Kann ich Essen und Getränke mitbringen?",
+      "vi": "Tôi có thể mang đồ ăn và thức uống vào không?",
+      "id": "Bisakah saya membawa makanan dan minuman?"
+    }
+  },
+  {
+    "id": "community_life_029",
+    "scene": "community_life",
+    "subScene": "community_center",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "バリアフリー対応はしていますか？",
+      "en": "Is the venue barrier-free?",
+      "zh": "场地是否无障碍？",
+      "zh_TW": "場地是否無障礙？",
+      "ko": "배리어 프리 대응은 하고 있습니까?",
+      "es": "¿Las instalaciones son accesibles?",
+      "fr": "L'établissement est-il accessible aux personnes à mobilité réduite ?",
+      "de": "Ist der Veranstaltungsort barrierefrei?",
+      "vi": "Địa điểm có rào chắn không?",
+      "id": "Apakah tempatnya bebas hambatan?"
+    }
+  },
+  {
+    "id": "community_life_030",
+    "scene": "community_life",
+    "subScene": "community_center",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "Wi-Fiは使えますか？",
+      "en": "Is Wi-Fi available?",
+      "zh": "有无线网络吗？",
+      "zh_TW": "有無線網路嗎？",
+      "ko": "Wi-Fi를 사용할 수 있습니까?",
+      "es": "¿Hay wifi?",
+      "fr": "Le Wi-Fi est-il disponible ?",
+      "de": "Ist WLAN verfügbar?",
+      "vi": "Có Wi-Fi không?",
+      "id": "Apakah Wi-Fi tersedia?"
+    }
+  },
+  {
+    "id": "community_life_031",
+    "scene": "community_life",
+    "subScene": "volunteer_activities",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "ボランティア募集はありますか？",
+      "en": "Are volunteers being recruited?",
+      "zh": "有志愿者招募吗？",
+      "zh_TW": "有志工招募嗎？",
+      "ko": "자원 봉사 모집이 있습니까?",
+      "es": "¿Se están reclutando voluntarios?",
+      "fr": "Des bénévoles sont-ils recrutés ?",
+      "de": "Werden Freiwillige gesucht?",
+      "vi": "Có tuyển tình nguyện viên không?",
+      "id": "Apakah ada relawan yang direkrut?"
+    }
+  },
+  {
+    "id": "community_life_032",
+    "scene": "community_life",
+    "subScene": "volunteer_activities",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "応募条件はありますか？",
+      "en": "Are there any application requirements?",
+      "zh": "有什么申请要求吗？",
+      "zh_TW": "有什麼申請要求嗎？",
+      "ko": "응모 조건이 있습니까?",
+      "es": "¿Hay requisitos de solicitud?",
+      "fr": "Y a-t-il des conditions d'inscription ?",
+      "de": "Gibt es Bewerbungsvoraussetzungen?",
+      "vi": "Có yêu cầu đăng ký nào không?",
+      "id": "Apakah ada persyaratan pendaftaran?"
+    }
+  },
+  {
+    "id": "community_life_033",
+    "scene": "community_life",
+    "subScene": "volunteer_activities",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "活動場所はどこですか？",
+      "en": "Where will the activities take place?",
+      "zh": "活动在哪里举行？",
+      "zh_TW": "活動在哪裡舉行？",
+      "ko": "활동 장소는 어디입니까?",
+      "es": "¿Dónde se realizarán las actividades?",
+      "fr": "Où auront lieu les activités ?",
+      "de": "Wo finden die Aktivitäten statt?",
+      "vi": "Các hoạt động sẽ diễn ra ở đâu?",
+      "id": "Di mana kegiatan akan berlangsung?"
+    }
+  },
+  {
+    "id": "community_life_034",
+    "scene": "community_life",
+    "subScene": "volunteer_activities",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "活動時間はどれくらいですか？",
+      "en": "How long will the activities last?",
+      "zh": "活动持续多久？",
+      "zh_TW": "活動持續多久？",
+      "ko": "활동 시간은 얼마입니까?",
+      "es": "¿Cuánto duran?",
+      "fr": "Quelle sera leur durée ?",
+      "de": "Wie lange dauern die Aktivitäten?",
+      "vi": "Các hoạt động sẽ kéo dài trong bao lâu?",
+      "id": "Berapa lama kegiatan akan berlangsung?"
+    }
+  },
+  {
+    "id": "community_life_035",
+    "scene": "community_life",
+    "subScene": "volunteer_activities",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "交通費は支給されますか？",
+      "en": "Are transportation expenses reimbursed?",
+      "zh": "交通费用可以报销吗？",
+      "zh_TW": "交通費用可以報銷嗎？",
+      "ko": "교통비는 지급됩니까?",
+      "es": "¿Está cubierto el transporte?",
+      "fr": "Le transport est-il pris en charge ?",
+      "de": "Werden Fahrtkosten erstattet?",
+      "vi": "Chi phí đi lại có được hoàn trả không?",
+      "id": "Apakah biaya transportasi akan diganti?"
+    }
+  },
+  {
+    "id": "community_life_036",
+    "scene": "community_life",
+    "subScene": "volunteer_activities",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "どのような活動内容ですか？",
+      "en": "What kind of activities will they involve?",
+      "zh": "活动内容是什么？",
+      "zh_TW": "活動內容是什麼？",
+      "ko": "어떤 활동 내용입니까?",
+      "es": "¿Qué tipo de actividades se realizarán?",
+      "fr": "Quel type d'activités seront proposées ?",
+      "de": "Welche Aktivitäten werden angeboten?",
+      "vi": "Các hoạt động này bao gồm những loại hình hoạt động nào?",
+      "id": "Apa saja jenis kegiatan yang akan dilakukan?"
+    }
+  },
+  {
+    "id": "community_life_037",
+    "scene": "community_life",
+    "subScene": "volunteer_activities",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "必要なスキルはありますか？",
+      "en": "Are there any skills required?",
+      "zh": "需要什么技能？",
+      "zh_TW": "需要什麼技能？",
+      "ko": "필요한 기술이 있습니까?",
+      "es": "¿Se requieren habilidades?",
+      "fr": "Des compétences sont-elles requises ?",
+      "de": "Sind bestimmte Vorkenntnisse erforderlich?",
+      "vi": "Có yêu cầu kỹ năng nào không?",
+      "id": "Apakah ada keterampilan yang dibutuhkan?"
+    }
+  },
+  {
+    "id": "community_life_038",
+    "scene": "community_life",
+    "subScene": "volunteer_activities",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "参加人数に制限はありますか？",
+      "en": "Is there a limit to the number of participants?",
+      "zh": "参加人数有限制吗？",
+      "zh_TW": "參加人數有限制嗎？",
+      "ko": "참가 인원수에 제한이 있습니까?",
+      "es": "¿Hay límite en el número de participantes?",
+      "fr": "Le nombre de participants est-il limité ?",
+      "de": "Gibt es eine Teilnehmerbegrenzung?",
+      "vi": "Có giới hạn số lượng người tham gia không?",
+      "id": "Apakah ada batasan jumlah peserta?"
+    }
+  },
+  {
+    "id": "community_life_039",
+    "scene": "community_life",
+    "subScene": "volunteer_activities",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "服装の指定はありますか？",
+      "en": "Is there a dress code?",
+      "zh": "着装要求是什么？",
+      "zh_TW": "著裝要求是什麼？",
+      "ko": "복장 지정이 있나요?",
+      "es": "¿Hay algún código de vestimenta?",
+      "fr": "Y a-t-il une tenue vestimentaire obligatoire ?",
+      "de": "Gibt es eine Kleiderordnung?",
+      "vi": "Có quy định về trang phục không?",
+      "id": "Apakah ada aturan berpakaian?"
+    }
+  },
+  {
+    "id": "community_life_040",
+    "scene": "community_life",
+    "subScene": "volunteer_activities",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "保険は加入できますか？",
+      "en": "Can I purchase insurance?",
+      "zh": "我可以购买保险吗？",
+      "zh_TW": "我可以購買保險嗎？",
+      "ko": "보험은 가입할 수 있습니까?",
+      "es": "¿Hay seguro disponible?",
+      "fr": "Une assurance est-elle disponible ?",
+      "de": "Kann ich eine Versicherung abschließen?",
+      "vi": "Tôi có thể mua bảo hiểm không?",
+      "id": "Bisakah saya membeli asuransi?"
+    }
+  },
+  {
+    "id": "community_life_041",
+    "scene": "community_life",
+    "subScene": "local_festivals",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "この祭りはいつ開催されますか？",
+      "en": "When is this festival held?",
+      "zh": "这个节日什么时候举行？",
+      "zh_TW": "這個節日什麼時候舉辦？",
+      "ko": "이 축제는 언제 개최됩니까?",
+      "es": "¿Cuándo se celebra este festival?",
+      "fr": "Quand a lieu ce festival ?",
+      "de": "Wann findet das Festival statt?",
+      "vi": "Lễ hội này được tổ chức khi nào?",
+      "id": "Kapan festival ini diadakan?"
+    }
+  },
+  {
+    "id": "community_life_042",
+    "scene": "community_life",
+    "subScene": "local_festivals",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "入場料はかかりますか？",
+      "en": "Is there an admission fee?",
+      "zh": "需要门票吗？",
+      "zh_TW": "需要門票嗎？",
+      "ko": "입장료는 걸립니까?",
+      "es": "¿Hay que pagar entrada?",
+      "fr": "L'entrée est-elle payante ?",
+      "de": "Fällt Eintritt an?",
+      "vi": "Có thu phí vào cửa không?",
+      "id": "Apakah ada biaya masuk?"
+    }
+  },
+  {
+    "id": "community_life_043",
+    "scene": "community_life",
+    "subScene": "local_festivals",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "会場の場所を教えてください。",
+      "en": "Where is the venue located?",
+      "zh": "场地在哪里？",
+      "zh_TW": "場地在哪裡？",
+      "ko": "장소의 장소를 말해주십시오.",
+      "es": "¿Dónde está el recinto?",
+      "fr": "Où se trouve le lieu ?",
+      "de": "Wo befindet sich der Veranstaltungsort?",
+      "vi": "Địa điểm tổ chức ở đâu?",
+      "id": "Di mana lokasi tempatnya?"
+    }
+  },
+  {
+    "id": "community_life_044",
+    "scene": "community_life",
+    "subScene": "local_festivals",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "雨天でも開催されますか？",
+      "en": "Will the festival be held even if it rains?",
+      "zh": "即使下雨，节日也会举行吗？",
+      "zh_TW": "即使下雨，節慶也會舉行嗎？",
+      "ko": "우천에서도 개최됩니까?",
+      "es": "¿Se celebrará el festival aunque llueva?",
+      "fr": "Le festival aura-t-il lieu même en cas de pluie ?",
+      "de": "Findet das Festival auch bei Regen statt?",
+      "vi": "Lễ hội có được tổ chức ngay cả khi trời mưa không?",
+      "id": "Apakah festival akan tetap diadakan meskipun hujan?"
+    }
+  },
+  {
+    "id": "community_life_045",
+    "scene": "community_life",
+    "subScene": "local_festivals",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "屋台は出ますか？",
+      "en": "Will there be food stalls?",
+      "zh": "会有小吃摊吗？",
+      "zh_TW": "會有小吃攤嗎？",
+      "ko": "포장마차가 나오나요?",
+      "es": "¿Habrá puestos de comida?",
+      "fr": "Y aura-t-il des stands de restauration ?",
+      "de": "Gibt es Essensstände?",
+      "vi": "Có quầy hàng ăn uống không?",
+      "id": "Apakah akan ada kios makanan?"
+    }
+  },
+  {
+    "id": "community_life_046",
+    "scene": "community_life",
+    "subScene": "local_festivals",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "ステージイベントはありますか？",
+      "en": "Are there any stage events?",
+      "zh": "有舞台活动吗？",
+      "zh_TW": "有舞台活動嗎？",
+      "ko": "무대 이벤트가 있나요?",
+      "es": "¿Hay eventos en el escenario?",
+      "fr": "Y aura-t-il des spectacles ?",
+      "de": "Gibt es Bühnenveranstaltungen?",
+      "vi": "Có sự kiện sân khấu nào không?",
+      "id": "Apakah ada acara panggung?"
+    }
+  },
+  {
+    "id": "community_life_047",
+    "scene": "community_life",
+    "subScene": "local_festivals",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "混雑する時間帯はいつですか？",
+      "en": "What are the busiest times?",
+      "zh": "最繁忙的时段是什么时候？",
+      "zh_TW": "最繁忙的時段是什麼時候？",
+      "ko": "붐비는 시간대는 언제입니까?",
+      "es": "¿Cuáles son las horas de mayor afluencia?",
+      "fr": "Quelles sont les heures de pointe ?",
+      "de": "Wann ist der Andrang am größten?",
+      "vi": "Thời gian nào đông đúc nhất?",
+      "id": "Kapan saja waktu-waktu tersibuk?"
+    }
+  },
+  {
+    "id": "community_life_048",
+    "scene": "community_life",
+    "subScene": "local_festivals",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "交通規制はありますか？",
+      "en": "Are there traffic restrictions?",
+      "zh": "有交通限制吗？",
+      "zh_TW": "有交通限制嗎？",
+      "ko": "교통 규제가 있습니까?",
+      "es": "¿Hay restricciones de tráfico?",
+      "fr": "Y a-t-il des restrictions de circulation ?",
+      "de": "Gibt es Verkehrsbeschränkungen?",
+      "vi": "Có hạn chế giao thông không?",
+      "id": "Apakah ada pembatasan lalu lintas?"
+    }
+  },
+  {
+    "id": "community_life_049",
+    "scene": "community_life",
+    "subScene": "local_festivals",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "記念品の販売はありますか？",
+      "en": "Are souvenirs for sale?",
+      "zh": "有纪念品出售吗？",
+      "zh_TW": "有紀念品出售嗎？",
+      "ko": "기념품 판매가 있습니까?",
+      "es": "¿Se venden souvenirs?",
+      "fr": "Des souvenirs sont-ils en vente ?",
+      "de": "Gibt es Souvenirs zum Verkauf?",
+      "vi": "Có bán đồ lưu niệm không?",
+      "id": "Apakah tersedia suvenir untuk dijual?"
+    }
+  },
+  {
+    "id": "community_life_050",
+    "scene": "community_life",
+    "subScene": "local_festivals",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "ペット同伴は可能ですか？",
+      "en": "Are pets allowed?",
+      "zh": "可以携带宠物吗？",
+      "zh_TW": "可以攜帶寵物嗎？",
+      "ko": "애완동물 동반은 가능합니까?",
+      "es": "¿Se admiten mascotas?",
+      "fr": "Les animaux de compagnie sont-ils autorisés ?",
+      "de": "Sind Haustiere erlaubt?",
+      "vi": "Có cho phép mang theo thú cưng không?",
+      "id": "Apakah hewan peliharaan diperbolehkan?"
+    }
+  },
+  {
+    "id": "community_life_051",
+    "scene": "community_life",
+    "subScene": "public_services",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "ゴミの収集日はいつですか？",
+      "en": "When is garbage collection day?",
+      "zh": "垃圾收集日是什么时候？",
+      "zh_TW": "垃圾收集日是什麼時候？",
+      "ko": "쓰레기 수거일은 언제입니까?",
+      "es": "¿Cuándo es el día de recogida de basura?",
+      "fr": "Quel est le jour de la collecte des ordures ?",
+      "de": "Wann findet die Müllabfuhr statt?",
+      "vi": "Khi nào thì thu gom rác?",
+      "id": "Kapan pengumpulan sampah dilakukan?"
+    }
+  },
+  {
+    "id": "community_life_052",
+    "scene": "community_life",
+    "subScene": "public_services",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "粗大ゴミはどうやって出しますか？",
+      "en": "How do I dispose of oversized garbage?",
+      "zh": "如何处理超大垃圾？",
+      "zh_TW": "如何處理超大垃圾？",
+      "ko": "대형 쓰레기는 어떻게 꺼내나요?",
+      "es": "¿Cómo desecho la basura de gran tamaño?",
+      "fr": "Comment puis-je me débarrasser des déchets encombrants ?",
+      "de": "Wie entsorge ich Sperrmüll?",
+      "vi": "Làm thế nào để xử lý rác thải quá khổ?",
+      "id": "Bagaimana cara membuang sampah berukuran besar?"
+    }
+  },
+  {
+    "id": "community_life_053",
+    "scene": "community_life",
+    "subScene": "public_services",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "水道の利用開始手続きはどこで行いますか？",
+      "en": "Where do I apply for water service?",
+      "zh": "在哪里申请供水？",
+      "zh_TW": "在哪裡申請供水？",
+      "ko": "수도의 이용 개시 수속은 어디에서 실시합니까?",
+      "es": "¿Dónde solicito el servicio de agua?",
+      "fr": "Où puis-je m'inscrire pour utiliser le service d'eau ?",
+      "de": "Wo melde ich mich für die Wasserversorgung an?",
+      "vi": "Tôi đăng ký sử dụng dịch vụ nước ở đâu?",
+      "id": "Di mana saya bisa mendaftar untuk mulai menggunakan layanan air?"
+    }
+  },
+  {
+    "id": "community_life_054",
+    "scene": "community_life",
+    "subScene": "public_services",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "停電時の連絡先はどこですか？",
+      "en": "Who do I contact in the event of a power outage?",
+      "zh": "停电时该联系谁？",
+      "zh_TW": "停電時該聯絡誰？",
+      "ko": "정전시 연락처는 어디입니까?",
+      "es": "¿Con quién debo contactar en caso de un corte de luz?",
+      "fr": "Qui dois-je contacter en cas de panne de courant ?",
+      "de": "An wen wende ich mich bei einem Stromausfall?",
+      "vi": "Tôi liên hệ với ai trong trường hợp mất điện?",
+      "id": "Siapa yang harus saya hubungi jika terjadi pemadaman listrik?"
+    }
+  },
+  {
+    "id": "community_life_055",
+    "scene": "community_life",
+    "subScene": "public_services",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "防災情報はどこで入手できますか？",
+      "en": "Where can I get disaster prevention information?",
+      "zh": "哪里可以获取防灾信息？",
+      "zh_TW": "哪裡可以取得防災資訊？",
+      "ko": "방재 정보는 어디에서 얻을 수 있습니까?",
+      "es": "¿Dónde puedo obtener información sobre prevención de desastres?",
+      "fr": "Où puis-je obtenir des informations sur la prévention des catastrophes ?",
+      "de": "Wo erhalte ich Informationen zum Katastrophenschutz?",
+      "vi": "Tôi có thể tìm thông tin phòng chống thiên tai ở đâu?",
+      "id": "Di mana saya bisa mendapatkan informasi pencegahan bencana?"
+    }
+  },
+  {
+    "id": "community_life_056",
+    "scene": "community_life",
+    "subScene": "public_services",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "地域の医療機関リストはありますか？",
+      "en": "Is there a list of local medical facilities?",
+      "zh": "有没有当地医疗机构的列表？",
+      "zh_TW": "有沒有當地醫療機構的清單？",
+      "ko": "지역 의료 기관 목록이 있습니까?",
+      "es": "¿Hay una lista de instituciones médicas locales?",
+      "fr": "Existe-t-il une liste des établissements médicaux locaux ?",
+      "de": "Gibt es eine Liste der örtlichen medizinischen Einrichtungen?",
+      "vi": "Có danh sách các cơ sở y tế địa phương không?",
+      "id": "Apakah ada daftar institusi medis setempat?"
+    }
+  },
+  {
+    "id": "community_life_057",
+    "scene": "community_life",
+    "subScene": "public_services",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "公共交通の時刻表はどこで見られますか？",
+      "en": "Where can I find public transportation timetables?",
+      "zh": "哪里可以找到公共交通时刻表？",
+      "zh_TW": "哪裡可以找到公共交通時刻表？",
+      "ko": "대중 교통 시간표는 어디에서 볼 수 있습니까?",
+      "es": "¿Dónde puedo consultar los horarios del transporte público?",
+      "fr": "Où puis-je trouver les horaires des transports en commun ?",
+      "de": "Wo finde ich Fahrpläne für öffentliche Verkehrsmittel?",
+      "vi": "Tôi có thể tìm lịch trình giao thông công cộng ở đâu?",
+      "id": "Di mana saya bisa menemukan jadwal transportasi umum?"
+    }
+  },
+  {
+    "id": "community_life_058",
+    "scene": "community_life",
+    "subScene": "public_services",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "公園の利用ルールはありますか？",
+      "en": "What are the park usage rules?",
+      "zh": "公园的使用规则是什么？",
+      "zh_TW": "園區的使用規則是什麼？",
+      "ko": "공원 이용 규칙이 있습니까?",
+      "es": "¿Cuáles son las normas de uso del parque?",
+      "fr": "Quelles sont les règles d'utilisation du parc ?",
+      "de": "Welche Parkregeln gelten?",
+      "vi": "Quy định sử dụng công viên là gì?",
+      "id": "Apa saja aturan penggunaan taman?"
+    }
+  },
+  {
+    "id": "community_life_059",
+    "scene": "community_life",
+    "subScene": "public_services",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "道路工事の予定はどこで確認できますか？",
+      "en": "Where can I check for scheduled road construction?",
+      "zh": "哪里可以查看道路施工计划？",
+      "zh_TW": "哪裡可以查看道路施工計畫？",
+      "ko": "도로 공사의 예정은 어디에서 확인할 수 있습니까?",
+      "es": "¿Dónde puedo consultar el calendario de obras de la carretera?",
+      "fr": "Où puis-je consulter le calendrier des travaux routiers ?",
+      "de": "Wo kann ich mich über geplante Straßenbauarbeiten informieren?",
+      "vi": "Tôi có thể kiểm tra lịch thi công đường ở đâu?",
+      "id": "Di mana saya bisa memeriksa jadwal pembangunan jalan?"
+    }
+  },
+  {
+    "id": "community_life_060",
+    "scene": "community_life",
+    "subScene": "public_services",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "図書館の利用カードはどうやって作りますか？",
+      "en": "How do I get a library card?",
+      "zh": "如何获得图书证？",
+      "zh_TW": "如何取得圖書證？",
+      "ko": "도서관 이용 카드는 어떻게 만들 수 있습니까?",
+      "es": "¿Cómo obtengo una tarjeta de biblioteca?",
+      "fr": "Comment obtenir une carte de bibliothèque ?",
+      "de": "Wie bekomme ich einen Bibliotheksausweis?",
+      "vi": "Làm thế nào để tôi có được thẻ thư viện?",
+      "id": "Bagaimana cara mendapatkan kartu perpustakaan?"
+    }
+  },
+  {
+    "id": "community_life_061",
+    "scene": "community_life",
+    "subScene": "local_market",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "この市場は何曜日に開かれますか？",
+      "en": "What days of the week is this market held?",
+      "zh": "这个市场每周哪几天举行？",
+      "zh_TW": "這個市場每週哪幾天舉行？",
+      "ko": "이 시장은 몇요일에 열릴까요?",
+      "es": "¿Qué día se celebra este mercado?",
+      "fr": "Quel jour a lieu ce marché ?",
+      "de": "An welchen Wochentagen findet dieser Markt statt?",
+      "vi": "Chợ này họp vào những ngày nào trong tuần?",
+      "id": "Hari apa saja pasar ini diadakan?"
+    }
+  },
+  {
+    "id": "community_life_062",
+    "scene": "community_life",
+    "subScene": "local_market",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "営業時間は何時から何時までですか？",
+      "en": "What are the opening hours?",
+      "zh": "开放时间是几点？",
+      "zh_TW": "開放時間是幾點？",
+      "ko": "영업시간은 몇시부터 몇시까지입니까?",
+      "es": "¿Cuál es el horario?",
+      "fr": "Quels sont les horaires d'ouverture ?",
+      "de": "Wie sind die Öffnungszeiten?",
+      "vi": "Giờ mở cửa là mấy giờ?",
+      "id": "Jam berapa saja?"
+    }
+  },
+  {
+    "id": "community_life_063",
+    "scene": "community_life",
+    "subScene": "local_market",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "駐車場はありますか？",
+      "en": "Is parking available?",
+      "zh": "可以停车吗？",
+      "zh_TW": "可以停車嗎？",
+      "ko": "주차장이 있습니까?",
+      "es": "¿Hay aparcamiento?",
+      "fr": "Un parking est-il disponible ?",
+      "de": "Gibt es Parkplätze?",
+      "vi": "Có chỗ đậu xe không?",
+      "id": "Apakah tersedia tempat parkir?"
+    }
+  },
+  {
+    "id": "community_life_064",
+    "scene": "community_life",
+    "subScene": "local_market",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "地元の特産品は何ですか？",
+      "en": "What local specialties are there?",
+      "zh": "有哪些当地特产？",
+      "zh_TW": "有哪些當地特產？",
+      "ko": "현지 특산품은 무엇입니까?",
+      "es": "¿Qué especialidades locales hay?",
+      "fr": "Quelles spécialités locales y a-t-il ?",
+      "de": "Welche lokalen Spezialitäten gibt es?",
+      "vi": "Có những đặc sản địa phương nào?",
+      "id": "Apa saja makanan khas setempat yang tersedia?"
+    }
+  },
+  {
+    "id": "community_life_065",
+    "scene": "community_life",
+    "subScene": "local_market",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "クレジットカードは使えますか？",
+      "en": "Do credit cards accepted?",
+      "zh": "可以使用信用卡吗？",
+      "zh_TW": "可以使用信用卡嗎？",
+      "ko": "신용 카드를 사용할 수 있습니까?",
+      "es": "¿Aceptan tarjetas de crédito?",
+      "fr": "Acceptez-vous les cartes de crédit ?",
+      "de": "Kann ich mit Kreditkarte bezahlen?",
+      "vi": "Chợ có chấp nhận thẻ tín dụng không?",
+      "id": "Apakah menerima kartu kredit?"
+    }
+  },
+  {
+    "id": "community_life_066",
+    "scene": "community_life",
+    "subScene": "local_market",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "試食はできますか？",
+      "en": "Can I sample food?",
+      "zh": "可以品尝美食吗？",
+      "zh_TW": "可以品嚐美食嗎？",
+      "ko": "시식을 할 수 있습니까?",
+      "es": "¿Ofrecen degustaciones?",
+      "fr": "Proposez-vous des dégustations ?",
+      "de": "Kann ich Speisen probieren?",
+      "vi": "Tôi có thể nếm thử đồ ăn không?",
+      "id": "Bisakah saya mencicipi makanan?"
+    }
+  },
+  {
+    "id": "community_life_067",
+    "scene": "community_life",
+    "subScene": "local_market",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "雨天時も開催されますか？",
+      "en": "Will the market be held even if it rains?",
+      "zh": "即使下雨，市场也会开放吗？",
+      "zh_TW": "即使下雨，市場也會開放嗎？",
+      "ko": "우천시도 개최됩니까?",
+      "es": "¿El mercado funciona incluso si llueve?",
+      "fr": "Le marché fonctionne-t-il même en cas de pluie ?",
+      "de": "Findet die Veranstaltung auch bei Regen statt?",
+      "vi": "Sự kiện có được tổ chức ngay cả khi trời mưa không?",
+      "id": "Apakah acara tetap diadakan meskipun hujan?"
+    }
+  },
+  {
+    "id": "community_life_068",
+    "scene": "community_life",
+    "subScene": "local_market",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "出店者の一覧はありますか？",
+      "en": "Does a list of vendors exist?",
+      "zh": "有摊位名单吗？",
+      "zh_TW": "有攤位名單嗎？",
+      "ko": "출점자 목록이 있습니까?",
+      "es": "¿Tienen una lista de vendedores?",
+      "fr": "Avez-vous une liste de vendeurs ?",
+      "de": "Gibt es eine Liste mit Anbietern?",
+      "vi": "Có danh sách các nhà cung cấp không?",
+      "id": "Apakah ada daftar vendor?"
+    }
+  },
+  {
+    "id": "community_life_069",
+    "scene": "community_life",
+    "subScene": "local_market",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "値引き交渉は可能ですか？",
+      "en": "Can I negotiate prices?",
+      "zh": "可以协商价格吗？",
+      "zh_TW": "可以協商價格嗎？",
+      "ko": "할인 협상이 가능합니까?",
+      "es": "¿Puedo negociar precios?",
+      "fr": "Puis-je négocier les prix ?",
+      "de": "Kann ich Preise aushandeln?",
+      "vi": "Tôi có thể thương lượng giá không?",
+      "id": "Bisakah saya menegosiasikan harga?"
+    }
+  },
+  {
+    "id": "community_life_070",
+    "scene": "community_life",
+    "subScene": "local_market",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "ペット同伴はできますか？",
+      "en": "Can pets be brought in?",
+      "zh": "可以携带宠物入场吗？",
+      "zh_TW": "可以攜帶寵物入場嗎？",
+      "ko": "애완동물 동반은 가능합니까?",
+      "es": "¿Se admiten mascotas?",
+      "fr": "Les animaux de compagnie sont-ils autorisés ?",
+      "de": "Darf ich Haustiere mitbringen?",
+      "vi": "Tôi có thể mang theo thú cưng không?",
+      "id": "Bisakah saya membawa hewan peliharaan?"
+    }
+  },
+  {
+    "id": "community_life_071",
+    "scene": "community_life",
+    "subScene": "park_events",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "次のイベントはいつですか？",
+      "en": "When is the next event?",
+      "zh": "下次活动什么时候举行？",
+      "zh_TW": "下次活動什麼時候舉行？",
+      "ko": "다음 이벤트는 언제입니까?",
+      "es": "¿Cuándo es el próximo evento?",
+      "fr": "Quand a lieu le prochain événement ?",
+      "de": "Wann findet die nächste Veranstaltung statt?",
+      "vi": "Sự kiện tiếp theo diễn ra khi nào?",
+      "id": "Kapan acara berikutnya?"
+    }
+  },
+  {
+    "id": "community_life_072",
+    "scene": "community_life",
+    "subScene": "park_events",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "参加費はかかりますか？",
+      "en": "Is there a participation fee?",
+      "zh": "需要参加费吗？",
+      "zh_TW": "需要參加費嗎？",
+      "ko": "참가비는 걸립니까?",
+      "es": "¿Hay que pagar para participar?",
+      "fr": "Y a-t-il des frais de participation ?",
+      "de": "Fällt eine Teilnahmegebühr an?",
+      "vi": "Có phí tham gia không?",
+      "id": "Apakah ada biaya partisipasi?"
+    }
+  },
+  {
+    "id": "community_life_073",
+    "scene": "community_life",
+    "subScene": "park_events",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "事前予約は必要ですか？",
+      "en": "Do I need to book in advance?",
+      "zh": "需要提前预订吗？",
+      "zh_TW": "需要提前預訂嗎？",
+      "ko": "사전 예약이 필요합니까?",
+      "es": "¿Necesito reservar con antelación?",
+      "fr": "Dois-je réserver à l'avance ?",
+      "de": "Muss ich im Voraus reservieren?",
+      "vi": "Tôi có cần đặt chỗ trước không?",
+      "id": "Apakah saya perlu melakukan reservasi terlebih dahulu?"
+    }
+  },
+  {
+    "id": "community_life_074",
+    "scene": "community_life",
+    "subScene": "park_events",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "どこで開催されますか？",
+      "en": "Where will it be held?",
+      "zh": "在哪里举行？",
+      "zh_TW": "在哪裡舉行？",
+      "ko": "어디에서 개최됩니까?",
+      "es": "¿Dónde se celebrará?",
+      "fr": "Où aura-t-il lieu ?",
+      "de": "Wo findet die Veranstaltung statt?",
+      "vi": "Sự kiện sẽ được tổ chức ở đâu?",
+      "id": "Di mana acara akan diadakan?"
+    }
+  },
+  {
+    "id": "community_life_075",
+    "scene": "community_life",
+    "subScene": "park_events",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "雨天時は中止ですか？",
+      "en": "Will the event be cancelled if it rains?",
+      "zh": "如果下雨，活动会取消吗？",
+      "zh_TW": "如果下雨，活動會取消嗎？",
+      "ko": "우천시는 중지입니까?",
+      "es": "¿Se cancelará el evento si llueve?",
+      "fr": "L'événement sera-t-il annulé en cas de pluie ?",
+      "de": "Fällt die Veranstaltung bei Regen aus?",
+      "vi": "Sự kiện có bị hủy nếu trời mưa không?",
+      "id": "Apakah acara akan dibatalkan jika hujan?"
+    }
+  },
+  {
+    "id": "community_life_076",
+    "scene": "community_life",
+    "subScene": "park_events",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "飲食の販売はありますか？",
+      "en": "Will food and drinks be sold?",
+      "zh": "会出售食物和饮料吗？",
+      "zh_TW": "會出售食物和飲料嗎？",
+      "ko": "음식의 판매가 있습니까?",
+      "es": "¿Hay servicio de comida y bebida?",
+      "fr": "Un service de restauration est-il disponible ?",
+      "de": "Werden Speisen und Getränke verkauft?",
+      "vi": "Có bán đồ ăn và thức uống không?",
+      "id": "Apakah akan ada penjualan makanan dan minuman?"
+    }
+  },
+  {
+    "id": "community_life_077",
+    "scene": "community_life",
+    "subScene": "park_events",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "持ち込みは可能ですか？",
+      "en": "Can I bring my own food?",
+      "zh": "可以自带食物吗？",
+      "zh_TW": "可以自備食物嗎？",
+      "ko": "반입이 가능합니까?",
+      "es": "¿Puedo llevar mi propia comida y bebida?",
+      "fr": "Puis-je apporter ma propre nourriture et mes boissons ?",
+      "de": "Kann ich mein eigenes Essen mitbringen?",
+      "vi": "Tôi có thể mang theo đồ ăn riêng không?",
+      "id": "Bolehkah saya membawa bekal sendiri?"
+    }
+  },
+  {
+    "id": "community_life_078",
+    "scene": "community_life",
+    "subScene": "park_events",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "イベントの所要時間はどれくらいですか？",
+      "en": "How long will the event last?",
+      "zh": "活动持续多长时间？",
+      "zh_TW": "活動持續多久？",
+      "ko": "이벤트 소요 시간은 얼마입니까?",
+      "es": "¿Cuánto dura el evento?",
+      "fr": "Quelle est la durée de l'événement ?",
+      "de": "Wie lange dauert die Veranstaltung?",
+      "vi": "Sự kiện kéo dài bao lâu?",
+      "id": "Berapa lama acara berlangsung?"
+    }
+  },
+  {
+    "id": "community_life_079",
+    "scene": "community_life",
+    "subScene": "park_events",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "子供向けプログラムはありますか？",
+      "en": "Is there a children's program?",
+      "zh": "有儿童项目吗？",
+      "zh_TW": "有兒童項目嗎？",
+      "ko": "아동용 프로그램이 있습니까?",
+      "es": "¿Hay programa infantil?",
+      "fr": "Y a-t-il un programme pour les enfants ?",
+      "de": "Gibt es Programme für Kinder?",
+      "vi": "Có chương trình nào dành cho trẻ em không?",
+      "id": "Apakah ada program untuk anak-anak?"
+    }
+  },
+  {
+    "id": "community_life_080",
+    "scene": "community_life",
+    "subScene": "park_events",
+    "level": "beginner",
+    "tags": ["community_life"],    "translations": {
+      "ja": "駐車場はありますか？",
+      "en": "Is parking available?",
+      "zh": "可以停车吗？",
+      "zh_TW": "可以停車嗎？",
+      "ko": "주차장이 있습니까?",
+      "es": "¿Hay aparcamiento?",
+      "fr": "Un parking est-il disponible ?",
+      "de": "Gibt es Parkplätze?",
+      "vi": "Có chỗ đậu xe không?",
+      "id": "Apakah tersedia tempat parkir?"
+    }
+  },
+  {
+    "id": "community_life_081",
+    "scene": "community_life",
+    "subScene": "school_activities",
+    "level": "beginner",
+    "tags": ["community_life"],
+    "translations": {
+      "ja": "学校の運動会はいつですか？",
+      "en": "When is the school sports day?",
+      "zh": "学校运动会什么时候举行？",
+      "zh_TW": "學校運動會什麼時候舉辦？",
+      "ko": "학교 운동회는 언제입니까?",
+      "es": "¿Cuándo es el día de deportes escolares?",
+      "fr": "Quand a lieu la journée sportive scolaire ?",
+      "de": "Wann ist der Schulsporttag?",
+      "vi": "Ngày hội thể thao của trường diễn ra khi nào?",
+      "id": "Kapan hari olahraga sekolah diadakan?"
+    }
+  },
+  {
+    "id": "community_life_082",
+    "scene": "community_life",
+    "subScene": "school_activities",
+    "level": "beginner",
+    "tags": ["community_life"],
+    "translations": {
+      "ja": "保護者は参加できますか？",
+      "en": "Can parents attend?",
+      "zh": "家长可以参加吗？",
+      "zh_TW": "家長可以參加嗎？",
+      "ko": "학부모가 참여할 수 있습니까?",
+      "es": "¿Pueden asistir los padres?",
+      "fr": "Les parents peuvent-ils y assister ?",
+      "de": "Können Eltern teilnehmen?",
+      "vi": "Phụ huynh có thể tham dự không?",
+      "id": "Bolehkah orang tua hadir?"
+    }
+  },
+  {
+    "id": "community_life_083",
+    "scene": "community_life",
+    "subScene": "school_activities",
+    "level": "beginner",
+    "tags": ["community_life"],
+    "translations": {
+      "ja": "観覧席はどこですか？",
+      "en": "Where are the spectator seats?",
+      "zh": "观众席在哪里？",
+      "zh_TW": "觀眾席在哪裡？",
+      "ko": "관람석은 어디 있습니까?",
+      "es": "¿Dónde están los asientos para los espectadores?",
+      "fr": "Où sont les places pour les spectateurs ?",
+      "de": "Wo sind die Zuschauerplätze?",
+      "vi": "Ghế khán giả ở đâu?",
+      "id": "Di mana kursi penonton?"
+    }
+  },
+  {
+    "id": "community_life_084",
+    "scene": "community_life",
+    "subScene": "school_activities",
+    "level": "beginner",
+    "tags": ["community_life"],
+    "translations": {
+      "ja": "写真撮影は可能ですか？",
+      "en": "Can I take photos?",
+      "zh": "我可以拍照吗？",
+      "zh_TW": "我可以拍照嗎？",
+      "ko": "사진 촬영이 가능합니까?",
+      "es": "¿Puedo tomar fotos?",
+      "fr": "Puis-je prendre des photos ?",
+      "de": "Darf ich Fotos machen?",
+      "vi": "Tôi có thể chụp ảnh không?",
+      "id": "Bolehkah saya mengambil foto?"
+    }
+  },
+  {
+    "id": "community_life_085",
+    "scene": "community_life",
+    "subScene": "school_activities",
+    "level": "beginner",
+    "tags": ["community_life"],
+    "translations": {
+      "ja": "お弁当の持ち込みはできますか？",
+      "en": "Can I bring a packed lunch?",
+      "zh": "我可以自带午餐吗？",
+      "zh_TW": "我可以自備午餐嗎？",
+      "ko": "도시락 반입은 가능합니까?",
+      "es": "¿Puedo llevar almuerzo?",
+      "fr": "Puis-je apporter un panier-repas ?",
+      "de": "Kann ich ein Lunchpaket mitbringen?",
+      "vi": "Tôi có thể mang theo bữa trưa đóng hộp không?",
+      "id": "Bolehkah saya membawa bekal makan siang?"
+    }
+  },
+  {
+    "id": "community_life_086",
+    "scene": "community_life",
+    "subScene": "school_activities",
+    "level": "beginner",
+    "tags": ["community_life"],
+    "translations": {
+      "ja": "競技のスケジュールはどこで見られますか？",
+      "en": "Where can I see the competition schedule?",
+      "zh": "我在哪里可以看到比赛日程？",
+      "zh_TW": "我在哪裡可以看到比賽行程？",
+      "ko": "대회 일정은 어디서 볼 수 있나요?",
+      "es": "¿Dónde puedo ver el programa de la competencia?",
+      "fr": "Où puis-je consulter le programme des compétitions ?",
+      "de": "Wo kann ich den Wettkampfplan einsehen?",
+      "vi": "Tôi có thể xem lịch thi đấu ở đâu?",
+      "id": "Di mana saya bisa melihat jadwal pertandingan?"
+    }
+  },
+  {
+    "id": "community_life_087",
+    "scene": "community_life",
+    "subScene": "school_activities",
+    "level": "beginner",
+    "tags": ["community_life"],
+    "translations": {
+      "ja": "雨天時の対応はどうなりますか？",
+      "en": "What happens if it rains?",
+      "zh": "如果下雨怎么办？",
+      "zh_TW": "如果下雨怎麼辦？",
+      "ko": "우천시의 대응은 어떻게됩니까?",
+      "es": "¿Qué pasa si llueve?",
+      "fr": "Que se passe-t-il en cas de pluie ?",
+      "de": "Was passiert bei Regen?",
+      "vi": "Điều gì sẽ xảy ra nếu trời mưa?",
+      "id": "Apa yang terjadi jika hujan?"
+    }
+  },
+  {
+    "id": "community_life_088",
+    "scene": "community_life",
+    "subScene": "school_activities",
+    "level": "beginner",
+    "tags": ["community_life"],
+    "translations": {
+      "ja": "ボランティア募集はありますか？",
+      "en": "Are volunteers available?",
+      "zh": "有志愿者吗？",
+      "zh_TW": "有志工嗎？",
+      "ko": "자원 봉사 모집이 있습니까?",
+      "es": "¿Hay voluntarios disponibles?",
+      "fr": "Y a-t-il des bénévoles disponibles ?",
+      "de": "Gibt es Möglichkeiten, Freiwillige zu gewinnen?",
+      "vi": "Có cơ hội tuyển dụng tình nguyện viên không?",
+      "id": "Apakah ada kesempatan rekrutmen sukarelawan?"
+    }
+  },
+  {
+    "id": "community_life_089",
+    "scene": "community_life",
+    "subScene": "school_activities",
+    "level": "beginner",
+    "tags": ["community_life"],
+    "translations": {
+      "ja": "記念品はもらえますか？",
+      "en": "Can I receive a souvenir?",
+      "zh": "我可以收到纪念品吗？",
+      "zh_TW": "我可以收到紀念品嗎？",
+      "ko": "기념품을 받을 수 있습니까?",
+      "es": "¿Puedo recibir un recuerdo?",
+      "fr": "Puis-je recevoir un souvenir ?",
+      "de": "Gibt es Erinnerungsgeschenke?",
+      "vi": "Có quà lưu niệm không?",
+      "id": "Apakah tersedia cenderamata?"
+    }
+  },
+  {
+    "id": "community_life_090",
+    "scene": "community_life",
+    "subScene": "school_activities",
+    "level": "beginner",
+    "tags": ["community_life"],
+    "translations": {
+      "ja": "駐車場は利用できますか？",
+      "en": "Is parking available?",
+      "zh": "有停车位吗？",
+      "zh_TW": "有停車位嗎？",
+      "ko": "주차장을 이용할 수 있습니까?",
+      "es": "¿Hay estacionamiento?",
+      "fr": "Un parking est-il disponible ?",
+      "de": "Gibt es Parkplätze?",
+      "vi": "Có chỗ đậu xe không?",
+      "id": "Apakah tersedia tempat parkir?"
+    }
+  },
+  {
+    "id": "community_life_091",
+    "scene": "community_life",
+    "subScene": "senior_programs",
+    "level": "beginner",
+    "tags": ["community_life"],
+    "translations": {
+      "ja": "高齢者向け教室はありますか？",
+      "en": "Are there classes for seniors?",
+      "zh": "有老年人课程吗？",
+      "zh_TW": "有老人課程嗎？",
+      "ko": "노인용 교실이 있습니까?",
+      "es": "¿Hay clases para personas mayores?",
+      "fr": "Y a-t-il des cours pour les seniors ?",
+      "de": "Gibt es Kurse für Senioren?",
+      "vi": "Có lớp học dành cho người cao tuổi không?",
+      "id": "Apakah ada kelas untuk lansia?"
+    }
+  },
+  {
+    "id": "community_life_092",
+    "scene": "community_life",
+    "subScene": "senior_programs",
+    "level": "beginner",
+    "tags": ["community_life"],
+    "translations": {
+      "ja": "参加費はいくらですか？",
+      "en": "How much does it cost to participate?",
+      "zh": "参加费用是多少？",
+      "zh_TW": "參加費用是多少？",
+      "ko": "참가비는 얼마입니까?",
+      "es": "¿Cuánto cuesta participar?",
+      "fr": "Combien coûte la participation ?",
+      "de": "Wie hoch ist die Teilnahmegebühr?",
+      "vi": "Phí tham gia là bao nhiêu?",
+      "id": "Berapa biaya partisipasinya?"
+    }
+  },
+  {
+    "id": "community_life_093",
+    "scene": "community_life",
+    "subScene": "senior_programs",
+    "level": "beginner",
+    "tags": ["community_life"],
+    "translations": {
+      "ja": "事前申し込みは必要ですか？",
+      "en": "Do I need to register in advance?",
+      "zh": "我需要提前报名吗？",
+      "zh_TW": "我需要提早報名嗎？",
+      "ko": "사전 신청이 필요합니까?",
+      "es": "¿Necesito inscribirme con anticipación?",
+      "fr": "Dois-je m'inscrire à l'avance ?",
+      "de": "Muss ich mich im Voraus anmelden?",
+      "vi": "Tôi có cần đăng ký trước không?",
+      "id": "Apakah saya perlu mendaftar terlebih dahulu?"
+    }
+  },
+  {
+    "id": "community_life_094",
+    "scene": "community_life",
+    "subScene": "senior_programs",
+    "level": "beginner",
+    "tags": ["community_life"],
+    "translations": {
+      "ja": "送迎サービスはありますか？",
+      "en": "Is there a shuttle service?",
+      "zh": "有班车服务吗？",
+      "zh_TW": "有接駁車服務嗎？",
+      "ko": "픽업 서비스가 있습니까?",
+      "es": "¿Hay servicio de transporte?",
+      "fr": "Y a-t-il un service de navette ?",
+      "de": "Gibt es einen Shuttle-Service?",
+      "vi": "Có dịch vụ đưa đón không?",
+      "id": "Apakah tersedia layanan antar-jemput?"
+    }
+  },
+  {
+    "id": "community_life_095",
+    "scene": "community_life",
+    "subScene": "senior_programs",
+    "level": "beginner",
+    "tags": ["community_life"],
+    "translations": {
+      "ja": "どのような内容の講座ですか？",
+      "en": "What kind of classes are offered?",
+      "zh": "提供哪些课程？",
+      "zh_TW": "提供哪些課程？",
+      "ko": "어떤 내용의 강좌입니까?",
+      "es": "¿Qué tipo de clases se ofrecen?",
+      "fr": "Quels types de cours sont proposés ?",
+      "de": "Welche Kurse werden angeboten?",
+      "vi": "Có những loại lớp học nào được cung cấp?",
+      "id": "Apa saja jenis kelas yang ditawarkan?"
+    }
+  },
+  {
+    "id": "community_life_096",
+    "scene": "community_life",
+    "subScene": "senior_programs",
+    "level": "beginner",
+    "tags": ["community_life"],
+    "translations": {
+      "ja": "運動プログラムはありますか？",
+      "en": "Are there exercise programs?",
+      "zh": "有健身项目吗？",
+      "zh_TW": "有健身項目嗎？",
+      "ko": "운동 프로그램이 있습니까?",
+      "es": "¿Hay programas de ejercicios?",
+      "fr": "Y a-t-il des programmes d'exercices ?",
+      "de": "Gibt es Übungsprogramme?",
+      "vi": "Có chương trình tập luyện nào không?",
+      "id": "Apakah ada program olahraga?"
+    }
+  },
+  {
+    "id": "community_life_097",
+    "scene": "community_life",
+    "subScene": "senior_programs",
+    "level": "beginner",
+    "tags": ["community_life"],
+    "translations": {
+      "ja": "開催場所はどこですか？",
+      "en": "Where is the event held?",
+      "zh": "活动在哪里举行？",
+      "zh_TW": "活動在哪裡舉行？",
+      "ko": "개최 장소는 어디입니까?",
+      "es": "¿Dónde se realiza el evento?",
+      "fr": "Où se déroule l'événement ?",
+      "de": "Wo findet die Veranstaltung statt?",
+      "vi": "Sự kiện được tổ chức ở đâu?",
+      "id": "Di mana acara diadakan?"
+    }
+  },
+  {
+    "id": "community_life_098",
+    "scene": "community_life",
+    "subScene": "senior_programs",
+    "level": "beginner",
+    "tags": ["community_life"],
+    "translations": {
+      "ja": "開催時間は何時からですか？",
+      "en": "What time does the event start?",
+      "zh": "活动什么时候开始？",
+      "zh_TW": "活動什麼時候開始？",
+      "ko": "개최 시간은 몇시부터입니까?",
+      "es": "¿A qué hora comienza?",
+      "fr": "À quelle heure commence-t-il ?",
+      "de": "Um wie viel Uhr beginnt die Veranstaltung?",
+      "vi": "Sự kiện bắt đầu lúc mấy giờ?",
+      "id": "Jam berapa acara dimulai?"
+    }
+  },
+  {
+    "id": "community_life_099",
+    "scene": "community_life",
+    "subScene": "senior_programs",
+    "level": "beginner",
+    "tags": ["community_life"],
+    "translations": {
+      "ja": "持ち物はありますか？",
+      "en": "What should I bring with me?",
+      "zh": "我应该带什么？",
+      "zh_TW": "我該帶什麼？",
+      "ko": "소지품이 있습니까?",
+      "es": "¿Qué debo llevar?",
+      "fr": "Que dois-je apporter ?",
+      "de": "Was muss ich mitbringen?",
+      "vi": "Tôi cần mang theo những gì?",
+      "id": "Apa saja yang perlu saya bawa?"
+    }
+  },
+  {
+    "id": "community_life_100",
+    "scene": "community_life",
+    "subScene": "senior_programs",
+    "level": "beginner",
+    "tags": ["community_life"],
+    "translations": {
+      "ja": "参加者の年齢制限はありますか？",
+      "en": "Are there any age restrictions for participants?",
+      "zh": "参与者有年龄限制吗？",
+      "zh_TW": "參與者有年齡限制嗎？",
+      "ko": "참가자의 연령 제한이 있습니까?",
+      "es": "¿Hay restricciones de edad para los participantes?",
+      "fr": "Y a-t-il une limite d'âge pour les participants ?",
+      "de": "Gibt es Altersbeschränkungen für die Teilnehmer?",
+      "vi": "Có giới hạn độ tuổi nào cho người tham gia không?",
+      "id": "Apakah ada batasan usia untuk peserta?"
+    }
+  }
+]

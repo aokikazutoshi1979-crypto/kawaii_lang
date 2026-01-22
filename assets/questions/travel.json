@@ -1,0 +1,1883 @@
+[
+  {
+    "id": "travel_001",
+    "scene": "travel",
+    "subScene": "Arrival",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "私の渡航目的は旅行です。",
+      "en": "I'm traveling for leisure.",
+      "zh": "我的旅行目的是旅游。",
+      "zh_TW": "我正在旅行。",
+      "ko": "내 여행 목적은 여행입니다.",
+      "es": "El propósito de mi viaje es viajar.",
+      "fr": "Le but de mon voyage est de voyager.",
+      "de": "Der Zweck meiner Reise ist Reisen.",
+      "vi": "Mục đích chuyến đi của tôi là du lịch.",
+      "id": "Tujuan perjalanan saya adalah untuk berwisata."
+    }
+  },
+  {
+    "id": "travel_002",
+    "scene": "travel",
+    "subScene": "Arrival",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "5日間、滞在する予定です。",
+      "en": "I plan to stay for 5 days.",
+      "zh": "我计划停留5天。",
+      "zh_TW": "我計劃停留5天。",
+      "ko": "5일간 체류할 예정입니다.",
+      "es": "Planeo quedarme 5 días.",
+      "fr": "Je prévois de rester 5 jours.",
+      "de": "Ich plane einen 5-tägigen Aufenthalt.",
+      "vi": "Tôi dự định ở lại 5 ngày.",
+      "id": "Saya berencana untuk tinggal selama 5 hari."
+    }
+  },
+  {
+    "id": "travel_003",
+    "scene": "travel",
+    "subScene": "Arrival",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ホテルに泊まるつもりです。",
+      "en": "I intend to stay at a hotel.",
+      "zh": "我打算住在酒店。",
+      "zh_TW": "我打算住在飯店。",
+      "ko": "호텔에 머무를 것입니다.",
+      "es": "Planeo alojarme en un hotel.",
+      "fr": "Je prévois de séjourner dans un hôtel.",
+      "de": "Ich plane, in einem Hotel zu übernachten.",
+      "vi": "Tôi dự định ở khách sạn.",
+      "id": "Saya berencana untuk menginap di hotel."
+    }
+  },
+  {
+    "id": "travel_004",
+    "scene": "travel",
+    "subScene": "Accommodation",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "電話で予約した者です。",
+      "en": "I have a reservation by phone.",
+      "zh": "我通过电话预订的。",
+      "zh_TW": "我透過電話預訂的。",
+      "ko": "전화로 예약했습니다.",
+      "es": "He reservado por teléfono.",
+      "fr": "J'ai une réservation par téléphone.",
+      "de": "Ich habe telefonisch reserviert.",
+      "vi": "Tôi đã đặt chỗ qua điện thoại.",
+      "id": "Saya telah memesan melalui telepon."
+    }
+  },
+  {
+    "id": "travel_005",
+    "scene": "travel",
+    "subScene": "Accommodation",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "出かけるので荷物を預かってください。",
+      "en": "I'm going out, so please hold my luggage.",
+      "zh": "我要出门，请帮我保管行李。",
+      "zh_TW": "我要出門，請幫我保管行李。",
+      "ko": "외출할 것이니 짐을 맡아주세요.",
+      "es": "Voy a salir, así que por favor guarde mi equipaje.",
+      "fr": "Je vais sortir, veuillez garder mes bagages.",
+      "de": "Ich gehe raus, bitte bewahren Sie mein Gepäck auf.",
+      "vi": "Tôi sắp ra ngoài, xin vui lòng giữ hành lý của tôi.",
+      "id": "Saya akan keluar, tolong simpan bagasi saya."
+    }
+  },
+  {
+    "id": "travel_006",
+    "scene": "travel",
+    "subScene": "Accommodation",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "チェックインしたいです。",
+      "en": "I would like to check in.",
+      "zh": "我想办理入住。",
+      "zh_TW": "我想辦理入住。",
+      "ko": "체크인하고 싶습니다.",
+      "es": "Me gustaría registrarme.",
+      "fr": "Je voudrais m'enregistrer.",
+      "de": "Ich möchte einchecken.",
+      "vi": "Tôi muốn làm thủ tục nhận phòng.",
+      "id": "Saya ingin check-in."
+    }
+  },
+  {
+    "id": "travel_007",
+    "scene": "travel",
+    "subScene": "Transportation",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "バス停はどこですか？",
+      "en": "Where is the bus stop?",
+      "zh": "公交车站在哪里？",
+      "zh_TW": "公車站在哪裡？",
+      "ko": "버스 정류장은 어디에 있나요?",
+      "es": "¿Dónde está la parada de autobús?",
+      "fr": "Où est l'arrêt de bus ?",
+      "de": "Wo ist die Bushaltestelle?",
+      "vi": "Trạm xe buýt ở đâu?",
+      "id": "Di mana halte bus?"
+    }
+  },
+  {
+    "id": "travel_008",
+    "scene": "travel",
+    "subScene": "Transportation",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "この電車は東京へ行きますか？",
+      "en": "Does this train go to Tokyo?",
+      "zh": "这班火车开往东京吗？",
+      "zh_TW": "這班火車開往東京嗎？",
+      "ko": "이 열차는 도쿄로 가나요?",
+      "es": "¿Este tren va a Tokio?",
+      "fr": "Ce train va-t-il à Tokyo ?",
+      "de": "Fährt dieser Zug nach Tokio?",
+      "vi": "Chuyến tàu này có đi đến Tokyo không?",
+      "id": "Apakah kereta ini menuju Tokyo?"
+    }
+  },
+  {
+    "id": "travel_009",
+    "scene": "travel",
+    "subScene": "Transportation",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "チケットはどこで買えばいいですか？",
+      "en": "Where can I buy tickets?",
+      "zh": "我应该在哪里买票？",
+      "zh_TW": "我應該在哪裡買票？",
+      "ko": "어디에서 티켓을 사면 되나요?",
+      "es": "¿Dónde puedo comprar los boletos?",
+      "fr": "Où puis-je acheter des billets ?",
+      "de": "Wo kann ich Tickets kaufen?",
+      "vi": "Tôi nên mua vé ở đâu?",
+      "id": "Di mana saya bisa membeli tiket?"
+    }
+  },
+  {
+    "id": "travel_010",
+    "scene": "travel",
+    "subScene": "Sightseeing",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "この近くに人気の観光スポットはどこですか？",
+      "en": "Which popular tourist spots are nearby?",
+      "zh": "附近有哪些热门景点？",
+      "zh_TW": "附近有哪些熱門景點？",
+      "ko": "이 근처에 인기 있는 관광 명소가 어디인가요?",
+      "es": "¿Qué atracciones turísticas populares hay por aquí?",
+      "fr": "Quels sites touristiques populaires y a-t-il à proximité ?",
+      "de": "Welche beliebten Sehenswürdigkeiten gibt es hier in der Nähe?",
+      "vi": "Có những điểm du lịch nổi tiếng nào gần đây không?",
+      "id": "Apa saja tempat wisata populer di sekitar sini?"
+    }
+  },
+  {
+    "id": "travel_011",
+    "scene": "travel",
+    "subScene": "Sightseeing",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "美術館の開館時間を教えてください。",
+      "en": "What are the opening hours of the art museum?",
+      "zh": "请告诉我美术馆的开放时间。",
+      "zh_TW": "請告訴我美術館的開放時間。",
+      "ko": "미술관 개관 시간을 알려주세요.",
+      "es": "¿Cuál es el horario de apertura del museo de arte?",
+      "fr": "Quelles sont les heures d'ouverture du musée d'art ?",
+      "de": "Wie sind die Öffnungszeiten des Kunstmuseums?",
+      "vi": "Giờ mở cửa của bảo tàng nghệ thuật là bao nhiêu?",
+      "id": "Jam buka museum seni berapa?"
+    }
+  },
+  {
+    "id": "travel_012",
+    "scene": "travel",
+    "subScene": "Sightseeing",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "英語の音声ガイドは利用できますか？",
+      "en": "Is an English audio guide available?",
+      "zh": "有英文语音导览吗？",
+      "zh_TW": "有英文語音導覽嗎？",
+      "ko": "영어 오디오 가이드를 이용할 수 있나요?",
+      "es": "¿Está disponible la audioguía en inglés?",
+      "fr": "Y a-t-il un guide audio en anglais ?",
+      "de": "Gibt es einen Audioguide auf Englisch?",
+      "vi": "Có hướng dẫn âm thanh tiếng Anh không?",
+      "id": "Apakah tersedia panduan audio berbahasa Inggris?"
+    }
+  },
+  {
+    "id": "travel_013",
+    "scene": "travel",
+    "subScene": "Sightseeing",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "入場料はいくらですか？",
+      "en": "How much is the entrance fee?",
+      "zh": "入场费是多少？",
+      "zh_TW": "入場費是多少？",
+      "ko": "입장료는 얼마인가요?",
+      "es": "¿Cuánto cuesta la entrada?",
+      "fr": "Quel est le prix d'entrée ?",
+      "de": "Wie viel kostet der Eintritt?",
+      "vi": "Phí vào cổng là bao nhiêu?",
+      "id": "Berapa harga tiket masuk?"
+    }
+  },
+  {
+    "id": "travel_014",
+    "scene": "travel",
+    "subScene": "Sightseeing",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "博物館の写真撮影は許可されていますか？",
+      "en": "Is photography allowed in the museum?",
+      "zh": "博物馆允许拍照吗？",
+      "zh_TW": "博物館允許拍照嗎？",
+      "ko": "박물관에서 사진 촬영이 허용되나요?",
+      "es": "¿Se permite tomar fotos en el museo?",
+      "fr": "La photographie est‑elle autorisée dans le musée ?",
+      "de": "Ist das Fotografieren im Museum erlaubt?",
+      "vi": "Có được phép chụp ảnh trong bảo tàng không?",
+      "id": "Apakah diperbolehkan mengambil foto di museum?"
+    }
+  },
+  {
+    "id": "travel_015",
+    "scene": "travel",
+    "subScene": "Sightseeing",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ガイドツアーの予約をしたいです。",
+      "en": "I would like to book a guided tour.",
+      "zh": "我想预订导览团。",
+      "zh_TW": "我想預訂導覽團。",
+      "ko": "가이드 투어를 예약하고 싶습니다.",
+      "es": "Me gustaría reservar una visita guiada.",
+      "fr": "Je voudrais réserver une visite guidée.",
+      "de": "Ich möchte eine Führung buchen.",
+      "vi": "Tôi muốn đặt tour có hướng dẫn viên.",
+      "id": "Saya ingin memesan tur berpemandu."
+    }
+  },
+  {
+    "id": "travel_016",
+    "scene": "travel",
+    "subScene": "Sightseeing",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "おすすめの展望台はどこですか？",
+      "en": "Which lookout point do you recommend?",
+      "zh": "推荐哪个观景台？",
+      "zh_TW": "推薦哪個觀景台？",
+      "ko": "추천할 만한 전망대가 어디인가요?",
+      "es": "¿Qué mirador recomienda?",
+      "fr": "Quel belvédère recommandez‑vous ?",
+      "de": "Welchen Aussichtspunkt empfehlen Sie?",
+      "vi": "Bạn khuyên đài quan sát nào?",
+      "id": "Anda merekomendasikan titik pandang mana?"
+    }
+  },
+  {
+    "id": "travel_017",
+    "scene": "travel",
+    "subScene": "Sightseeing",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "所要時間はどれくらいですか？",
+      "en": "How long does it take?",
+      "zh": "所需时间大概多久？",
+      "zh_TW": "所需時間大概多久？",
+      "ko": "소요 시간은 얼마나 걸리나요?",
+      "es": "¿Cuánto tiempo se tarda?",
+      "fr": "Combien de temps cela prend‑il ?",
+      "de": "Wie lange dauert es?",
+      "vi": "Mất bao lâu?",
+      "id": "Butuh waktu berapa lama?"
+    }
+  },
+  {
+    "id": "travel_018",
+    "scene": "travel",
+    "subScene": "Sightseeing",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "次の観光バスは何時に出発しますか？",
+      "en": "What time does the next tour bus depart?",
+      "zh": "下一班观光巴士什么时候出发？",
+      "zh_TW": "下一班觀光巴士何時出發？",
+      "ko": "다음 관광 버스는 몇 시에 출발하나요?",
+      "es": "¿A qué hora sale el próximo autobús turístico?",
+      "fr": "À quelle heure part le prochain bus touristique ?",
+      "de": "Wann fährt der nächste Sightseeing‑Bus ab?",
+      "vi": "Xe buýt du lịch tiếp theo khởi hành lúc mấy giờ?",
+      "id": "Jam berapa bus wisata berikutnya berangkat?"
+    }
+  },
+  {
+    "id": "travel_019",
+    "scene": "travel",
+    "subScene": "Sightseeing",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "オープンエアツアーに参加したいです。",
+      "en": "I would like to join the open‑air tour.",
+      "zh": "我想参加露天游览。",
+      "zh_TW": "我想參加露天遊覽。",
+      "ko": "오픈 에어 투어에 참여하고 싶습니다.",
+      "es": "Me gustaría unirme al tour al aire libre.",
+      "fr": "Je voudrais participer à la visite en plein air.",
+      "de": "Ich möchte an der Open‑Air‑Tour teilnehmen.",
+      "vi": "Tôi muốn tham gia tour ngoài trời.",
+      "id": "Saya ingin ikut tur terbuka."
+    }
+  },
+  {
+    "id": "travel_020",
+    "scene": "travel",
+    "subScene": "Meals",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "こちらのレストランのおすすめ料理は何ですか？",
+      "en": "What is the recommended dish at this restaurant?",
+      "zh": "这家餐厅的推荐菜是什么？",
+      "zh_TW": "這家餐廳的推薦菜是什麼？",
+      "ko": "이 레스토랑의 추천 요리는 무엇인가요?",
+      "es": "¿Cuál es el plato recomendado de este restaurante?",
+      "fr": "Quel est le plat recommandé de ce restaurant ?",
+      "de": "Welches Gericht empfehlen Sie in diesem Restaurant?",
+      "vi": "Món được đề xuất ở nhà hàng này là gì?",
+      "id": "Apa hidangan yang direkomendasikan di restoran ini?"
+    }
+  },
+  {
+    "id": "travel_021",
+    "scene": "travel",
+    "subScene": "Meals",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ベジタリアンメニューはありますか？",
+      "en": "Do you have vegetarian options?",
+      "zh": "有素食菜单吗？",
+      "zh_TW": "有素食菜單嗎？",
+      "ko": "채식 메뉴가 있나요?",
+      "es": "¿Tienen menú vegetariano?",
+      "fr": "Avez‑vous un menu végétarien ?",
+      "de": "Haben Sie vegetarische Gerichte?",
+      "vi": "Có thực đơn chay không?",
+      "id": "Apakah ada menu vegetarian?"
+    }
+  },
+  {
+    "id": "travel_022",
+    "scene": "travel",
+    "subScene": "Meals",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "２名で予約を取りたいです。",
+      "en": "I would like to make a reservation for two.",
+      "zh": "我想预订两位。",
+      "zh_TW": "我想預訂兩位。",
+      "ko": "두 명 예약하고 싶습니다.",
+      "es": "Quisiera hacer una reserva para dos.",
+      "fr": "Je voudrais réserver pour deux personnes.",
+      "de": "Ich möchte für zwei Personen reservieren.",
+      "vi": "Tôi muốn đặt chỗ cho hai người.",
+      "id": "Saya ingin memesan untuk dua orang."
+    }
+  },
+  {
+    "id": "travel_023",
+    "scene": "travel",
+    "subScene": "Meals",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "喫煙席と禁煙席はありますか？",
+      "en": "Do you have smoking and non‑smoking sections?",
+      "zh": "有吸烟区和非吸烟区吗？",
+      "zh_TW": "有吸菸區和非吸菸區嗎？",
+      "ko": "흡연 구역과 금연 구역이 있나요?",
+      "es": "¿Tienen zonas de fumadores y no fumadores?",
+      "fr": "Avez‑vous des sections fumeurs et non‑fumeurs ?",
+      "de": "Haben Sie Raucher‑ und Nichtraucherbereiche?",
+      "vi": "Có khu vực cho người hút thuốc và không hút thuốc không?",
+      "id": "Apakah ada area merokok dan bebas rokok?"
+    }
+  },
+  {
+    "id": "travel_024",
+    "scene": "travel",
+    "subScene": "Meals",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "英語のメニューをお願いします。",
+      "en": "Could I have the menu in English, please?",
+      "zh": "请给我英文菜单。",
+      "zh_TW": "請給我英文菜單。",
+      "ko": "영어 메뉴 부탁드립니다.",
+      "es": "¿Podría darme the menú en inglés, por favor?",
+      "fr": "Puis‑je avoir le menu en anglais s'il vous plaît ?",
+      "de": "Könnte ich bitte die Speisekarte auf Englisch bekommen?",
+      "vi": "Cho tôi thực đơn bằng tiếng Anh, làm ơn.",
+      "id": "Bisakah saya mendapatkan menu dalam bahasa Inggris?"
+    }
+  },
+  {
+    "id": "travel_025",
+    "scene": "travel",
+    "subScene": "Meals",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "デザートメニューを見せてください。",
+      "en": "Please show me the dessert menu.",
+      "zh": "请给我看甜品菜单。",
+      "zh_TW": "請給我看甜點菜單。",
+      "ko": "디저트 메뉴를 보여주세요.",
+      "es": "Por favor, muéstreme el menú de postres.",
+      "fr": "Montrez‑moi le menu des desserts, s'il vous plaît.",
+      "de": "Bitte zeigen Sie mir die Dessertkarte.",
+      "vi": "Làm ơn cho tôi xem thực đơn tráng miệng.",
+      "id": "Tolong tunjukkan menu pencuci mulut."
+    }
+  },
+  {
+    "id": "travel_026",
+    "scene": "travel",
+    "subScene": "Meals",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "アレルギー情報を教えてください。",
+      "en": "Please tell me about allergy information.",
+      "zh": "请告诉我过敏信息。",
+      "zh_TW": "請告訴我過敏資訊。",
+      "ko": "알레르기 정보를 알려주세요.",
+      "es": "Por favor, infórmeme sobre la información de alergias.",
+      "fr": "Veuillez m'informer des informations sur les allergies.",
+      "de": "Bitte informieren Sie mich über Allergieinformationen.",
+      "vi": "Xin vui lòng cho tôi biết thông tin về dị ứng.",
+      "id": "Tolong beri tahu saya informasi alergi."
+    }
+  },
+  {
+    "id": "travel_027",
+    "scene": "travel",
+    "subScene": "Meals",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "テイクアウトは可能ですか？",
+      "en": "Is takeout available?",
+      "zh": "可以外带吗？",
+      "zh_TW": "可以外帶嗎？",
+      "ko": "포장(테이크아웃)이 가능한가요?",
+      "es": "¿Se puede pedir para llevar?",
+      "fr": "Les plats sont‑ils disponibles à emporter ?",
+      "de": "Kann man das zum Mitnehmen bekommen?",
+      "vi": "Có thể mang đi được không?",
+      "id": "Apakah tersedia layanan bawa pulang?"
+    }
+  },
+  {
+    "id": "travel_028",
+    "scene": "travel",
+    "subScene": "Meals",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "お会計を別々にできますか？",
+      "en": "Can we have separate bills?",
+      "zh": "可以分别结账吗？",
+      "zh_TW": "可以分開結帳嗎？",
+      "ko": "계산을 따로 할 수 있나요?",
+      "es": "¿Podemos pagar por separado?",
+      "fr": "Pouvons‑nous avoir des additions séparées ?",
+      "de": "Können wir getrennt bezahlen?",
+      "vi": "Chúng tôi có thể tính riêng không?",
+      "id": "Bisakah kami membayar terpisah?"
+    }
+  },
+  {
+    "id": "travel_029",
+    "scene": "travel",
+    "subScene": "Meals",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ランチセットを注文したいです。",
+      "en": "I would like to order the lunch set.",
+      "zh": "我想点午餐套餐。",
+      "zh_TW": "我想點午餐套餐。",
+      "ko": "런치 세트를 주문하고 싶습니다.",
+      "es": "Me gustaría pedir el menú de almuerzo.",
+      "fr": "Je voudrais commander le menu du déjeuner.",
+      "de": "Ich würde gern das Mittagsmenü bestellen.",
+      "vi": "Tôi muốn gọi phần ăn trưa.",
+      "id": "Saya ingin memesan paket makan siang."
+    }
+  },
+  {
+    "id": "travel_030",
+    "scene": "travel",
+    "subScene": "Shopping",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "このお土産品はいくらですか？",
+      "en": "How much is this souvenir?",
+      "zh": "这个纪念品多少钱？",
+      "zh_TW": "這個紀念品多少錢？",
+      "ko": "이 기념품은 얼마인가요?",
+      "es": "¿Cuánto cuesta este recuerdo?",
+      "fr": "Combien coûte ce souvenir ?",
+      "de": "Wie viel kostet dieses Souvenir?",
+      "vi": "Quà lưu niệm này giá bao nhiêu?",
+      "id": "Berapa harga oleh‑oleh ini?"
+    }
+  },
+  {
+    "id": "travel_031",
+    "scene": "travel",
+    "subScene": "Shopping",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "値引きは可能ですか？",
+      "en": "Is a discount possible?",
+      "zh": "可以打折吗？",
+      "zh_TW": "可以打折嗎？",
+      "ko": "할인 가능합니까?",
+      "es": "¿Es posible un descuento?",
+      "fr": "Un rabais est‑il possible ?",
+      "de": "Ist ein Rabatt möglich?",
+      "vi": "Có thể giảm giá không?",
+      "id": "Apakah diskon dimungkinkan?"
+    }
+  },
+  {
+    "id": "travel_032",
+    "scene": "travel",
+    "subScene": "Shopping",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "クレジットカードで支払えますか？",
+      "en": "Can I pay by credit card?",
+      "zh": "可以用信用卡支付吗？",
+      "zh_TW": "可以用信用卡支付嗎？",
+      "ko": "신용카드로 결제할 수 있나요?",
+      "es": "¿Puedo pagar con tarjeta de crédito?",
+      "fr": "Puis‑je payer par carte de crédit ?",
+      "de": "Kann ich mit Kreditkarte bezahlen?",
+      "vi": "Tôi có thể thanh toán bằng thẻ tín dụng không?",
+      "id": "Apakah saya bisa membayar dengan kartu kredit?"
+    }
+  },
+  {
+    "id": "travel_033",
+    "scene": "travel",
+    "subScene": "Shopping",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "免税手続きの方法を教えてください。",
+      "en": "Please tell me how to complete the tax refund procedure.",
+      "zh": "请告诉我退税手续的办理方法。",
+      "zh_TW": "請告訴我退稅手續的辦理方法。",
+      "ko": "면세 절차를 알려주세요.",
+      "es": "Por favor, indíqueme cómo realizar el trámite de devolución de impuestos.",
+      "fr": "Veuillez me dire comment effectuer la procédure de détaxe.",
+      "de": "Bitte erklären Sie mir, wie ich den Steuererstattungsprozess durchführe.",
+      "vi": "Xin vui lòng cho tôi biết cách làm thủ tục hoàn thuế.",
+      "id": "Tolong beri tahu saya cara mengurus prosedur pengembalian pajak."
+    }
+  },
+  {
+    "id": "travel_034",
+    "scene": "travel",
+    "subScene": "Shopping",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "試着したいのですが、何号がありますか？",
+      "en": "I would like to try this on; what sizes do you have?",
+      "zh": "我想试穿，请问有哪些尺码？",
+      "zh_TW": "我想試穿，請問有哪些尺寸？",
+      "ko": "착용해 보고 싶은데, 어떤 사이즈가 있나요?",
+      "es": "Quisiera probármelo; ¿qué tallas tienen?",
+      "fr": "Je voudrais l'essayer ; quelles tailles avez‑vous ?",
+      "de": "Ich möchte das anprobieren; welche Größen haben Sie?",
+      "vi": "Tôi muốn thử; cửa hàng có những cỡ nào?",
+      "id": "Saya ingin mencoba ini; ukuran apa saja yang Anda miliki?"
+    }
+  },
+  {
+    "id": "travel_035",
+    "scene": "travel",
+    "subScene": "Shopping",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "サイズ交換はできますか？",
+      "en": "Can I exchange for a different size?",
+      "zh": "可以换尺寸吗？",
+      "zh_TW": "可以換尺寸嗎？",
+      "ko": "사이즈 교환이 가능한가요?",
+      "es": "¿Puedo cambiar a otra talla?",
+      "fr": "Puis‑je échanger contre une autre taille ?",
+      "de": "Kann ich die Größe umtauschen?",
+      "vi": "Tôi có thể đổi kích cỡ không?",
+      "id": "Bisakah saya menukar ukuran?"
+    }
+  },
+  {
+    "id": "travel_036",
+    "scene": "travel",
+    "subScene": "Shopping",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "包装をお願いしたいです。",
+      "en": "I would like this gift wrapped, please.",
+      "zh": "请帮我包装。",
+      "zh_TW": "請幫我包裝。",
+      "ko": "포장해주세요.",
+      "es": "Me gustaría que lo envolvieran, por favor.",
+      "fr": "Je voudrais un paquet cadeau, s'il vous plaît.",
+      "de": "Bitte verpacken Sie es als Geschenk.",
+      "vi": "Xin vui lòng gói quà cho tôi.",
+      "id": "Tolong bungkus ini sebagai kado."
+    }
+  },
+  {
+    "id": "travel_037",
+    "scene": "travel",
+    "subScene": "Shopping",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "レシートを英語で発行できますか？",
+      "en": "Can I get the receipt in English?",
+      "zh": "可以开英文收据吗？",
+      "zh_TW": "可以開英文收據嗎？",
+      "ko": "영문 영수증을 받을 수 있나요?",
+      "es": "¿Puedo obtener el recibo en inglés?",
+      "fr": "Puis‑je avoir le reçu en anglais ?",
+      "de": "Kann ich die Quittung auf Englisch bekommen?",
+      "vi": "Tôi có thể lấy hóa đơn bằng tiếng Anh không?",
+      "id": "Bisakah saya mendapatkan struk berbahasa Inggris?"
+    }
+  },
+  {
+    "id": "travel_038",
+    "scene": "travel",
+    "subScene": "Shopping",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "この商品は在庫がありますか？",
+      "en": "Is this item in stock?",
+      "zh": "这件商品有库存吗？",
+      "zh_TW": "這件商品有庫存嗎？",
+      "ko": "이 상품 재고가 있나요?",
+      "es": "¿Está este artículo en stock?",
+      "fr": "Cet article est‑il en stock ?",
+      "de": "Ist dieser Artikel auf Lager?",
+      "vi": "Món hàng này còn hàng không?",
+      "id": "Apakah barang ini tersedia?"
+    }
+  },
+  {
+    "id": "travel_039",
+    "scene": "travel",
+    "subScene": "Shopping",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "おすすめのお土産を教えてください。",
+      "en": "Please recommend some souvenirs.",
+      "zh": "请推荐一些纪念品。",
+      "zh_TW": "請推薦一些紀念品。",
+      "ko": "추천할 만한 기념품을 알려주세요.",
+      "es": "Por favor, recomiéndeme algunos recuerdos.",
+      "fr": "Veuillez me recommander des souvenirs.",
+      "de": "Bitte empfehlen Sie mir einige Souvenirs.",
+      "vi": "Xin vui lòng giới thiệu một số quà lưu niệm.",
+      "id": "Tolong rekomendasikan beberapa cendera mata."
+    }
+  },
+  {
+    "id": "travel_040",
+    "scene": "travel",
+    "subScene": "Communications_Internet",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "この国で使えるSIMカードはどこで買えますか？",
+      "en": "Where can I buy a SIM card usable in this country?",
+      "zh": "在哪可以购买本国可用的SIM卡？",
+      "zh_TW": "在哪可以購買本國可用的SIM卡？",
+      "ko": "이 나라에서 사용할 수 있는 SIM 카드는 어디에서 살 수 있나요?",
+      "es": "¿Dónde puedo comprar una tarjeta SIM válida en este país?",
+      "fr": "Où puis‑je acheter une carte SIM utilisable dans ce pays ?",
+      "de": "Wo kann ich eine in diesem Land nutzbare SIM‑Karte kaufen?",
+      "vi": "Tôi có thể mua SIM card sử dụng được ở nước này ở đâu?",
+      "id": "Di mana saya bisa membeli kartu SIM yang dapat digunakan di negara ini?"
+    }
+  },
+  {
+    "id": "travel_041",
+    "scene": "travel",
+    "subScene": "Communications_Internet",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "プリペイドSIMのチャージ方法を教えてください。",
+      "en": "Please tell me how to recharge the prepaid SIM.",
+      "zh": "请告诉我如何给预付费SIM卡充值。",
+      "zh_TW": "請告訴我如何給預付費SIM卡充值。",
+      "ko": "프리페이드 SIM 충전 방법을 알려주세요.",
+      "es": "Por favor, indíqueme cómo recargar la SIM prepago.",
+      "fr": "Veuillez me dire comment recharger la carte SIM prépayée.",
+      "de": "Bitte sagen Sie mir, wie ich die Prepaid‑SIM auflade.",
+      "vi": "Xin vui lòng cho tôi biết cách nạp thẻ SIM trả trước.",
+      "id": "Tolong beri tahu saya cara mengisi ulang SIM prabayar."
+    }
+  },
+  {
+    "id": "travel_042",
+    "scene": "travel",
+    "subScene": "Communications_Internet",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "Wi‑Fiのパスワードを教えていただけますか？",
+      "en": "Could you tell me the Wi‑Fi password?",
+      "zh": "能告诉我Wi‑Fi密码吗？",
+      "zh_TW": "能告訴我Wi‑Fi密碼嗎？",
+      "ko": "Wi‑Fi 비밀번호를 알려주실 수 있나요?",
+      "es": "¿Podría decirme la contraseña de Wi‑Fi?",
+      "fr": "Pourriez‑vous me donner le mot de passe Wi‑Fi ?",
+      "de": "Könnten Sie mir das WLAN‑Passwort sagen?",
+      "vi": "Bạn có thể cho tôi biết mật khẩu Wi‑Fi không?",
+      "id": "Bisakah Anda memberi tahu saya kata sandi Wi‑Fi?"
+    }
+  },
+  {
+    "id": "travel_043",
+    "scene": "travel",
+    "subScene": "Communications_Internet",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ホテルのWi‑Fiは無料で使えますか？",
+      "en": "Is the hotel Wi‑Fi free to use?",
+      "zh": "酒店的Wi‑Fi免费吗？",
+      "zh_TW": "飯店的Wi‑Fi免費嗎？",
+      "ko": "호텔 Wi‑Fi는 무료로 사용 가능한가요?",
+      "es": "¿El Wi‑Fi del hotel es gratuito?",
+      "fr": "Le Wi‑Fi de l'hôtel est‑il gratuit ?",
+      "de": "Ist das Hotel‑WLAN kostenlos?",
+      "vi": "Wi‑Fi khách sạn có miễn phí không?",
+      "id": "Apakah Wi‑Fi hotel gratis digunakan?"
+    }
+  },
+  {
+    "id": "travel_044",
+    "scene": "travel",
+    "subScene": "Communications_Internet",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "インターネットカフェは近くにありますか？",
+      "en": "Is there an internet café nearby?",
+      "zh": "附近有网吧吗？",
+      "zh_TW": "附近有網咖嗎？",
+      "ko": "근처에 인터넷 카페가 있나요?",
+      "es": "¿Hay un cibercafé cerca?",
+      "fr": "Y a‑t‑il un cybercafé à proximité ?",
+      "de": "Gibt es ein Internetcafé in der Nähe?",
+      "vi": "Có quán internet gần đây không?",
+      "id": "Apakah ada warung internet di dekat sini?"
+    }
+  },
+  {
+    "id": "travel_045",
+    "scene": "travel",
+    "subScene": "Communications_Internet",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "国際電話をかけるにはどうすればいいですか？",
+      "en": "How do I make an international call?",
+      "zh": "如何拨打国际电话？",
+      "zh_TW": "如何撥打國際電話？",
+      "ko": "국제 전화를 걸려면 어떻게 해야 하나요?",
+      "es": "¿Cómo hago una llamada internacional?",  
+      "fr": "Comment passer un appel international ?",
+      "de": "Wie tätige ich einen internationalen Anruf?",
+      "vi": "Làm thế nào để gọi điện quốc tế?",
+      "id": "Bagaimana cara melakukan panggilan internasional?"
+    }
+  },
+  {  
+    "id": "travel_046",
+    "scene": "travel",
+    "subScene": "Communications_Internet",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "公衆Wi‑Fiの安全性は大丈夫ですか？",
+      "en": "Is public Wi‑Fi safe?",
+      "zh": "公共Wi‑Fi安全吗？",
+      "zh_TW": "公共Wi‑Fi安全嗎？",
+      "ko": "공공 Wi‑Fi는 안전한가요?",
+      "es": "¿Es segura la Wi‑Fi pública?",
+      "fr": "Le Wi‑Fi public est‑il sécurisé ?",
+      "de": "Ist öffentliches WLAN sicher?",
+      "vi": "Wi‑Fi công cộng có an toàn không?",
+      "id": "Apakah Wi‑Fi publik aman?"
+    }
+  },
+  {
+    "id": "travel_047",
+    "scene": "travel",
+    "subScene": "Communications_Internet",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "SIMカードの挿入方法がわかりません。",
+      "en": "I don't know how to insert the SIM card.",
+      "zh": "我不知道如何插入SIM卡。",
+      "zh_TW": "我不知道如何插入SIM卡。",
+      "ko": "SIM 카드를 삽입하는 방법을 모르겠습니다.",
+      "es": "No sé cómo insertar la tarjeta SIM.",
+      "fr": "Je ne sais pas comment insérer la carte SIM.",
+      "de": "Ich weiß nicht, wie man die SIM‑Karte einlegt.",
+      "vi": "Tôi không biết cách lắp thẻ SIM.",
+      "id": "Saya tidak tahu cara memasang kartu SIM."
+    }
+  },
+  {
+    "id": "travel_048",
+    "scene": "travel",
+    "subScene": "Communications_Internet",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "モバイルバッテリーを貸してもらえますか？",
+      "en": "Could I borrow a mobile battery?",
+      "zh": "能借我一个移动电源吗？",
+      "zh_TW": "能借我一個行動電源嗎？",
+      "ko": "보조 배터리를 빌릴 수 있나요?",
+      "es": "¿Podría prestarme una batería portátil?",
+      "fr": "Pourrais‑je emprunter une batterie externe ?",
+      "de": "Könnte ich ein mobiles Ladegerät leihen?",
+      "vi": "Tôi có thể mượn pin dự phòng không?",
+      "id": "Bolehkah saya meminjam baterai portabel?"
+    }
+  },
+  {
+    "id": "travel_049",
+    "scene": "travel",
+    "subScene": "Communications_Internet",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "電源プラグの形状は何ですか？",
+      "en": "What type of power plug does it use?",
+      "zh": "电源插头是什么类型？",
+      "zh_TW": "電源插頭是什麼類型？",
+      "ko": "전원 플러그 모양은 어떻게 되나요?",
+      "es": "¿Qué tipo de enchufe se utiliza?",
+      "fr": "Quel type de prise électrique utilise‑t‑on ?",
+      "de": "Welchen Steckdosentyp verwendet man?",
+      "vi": "Hình dạng phích cắm điện là gì?",
+      "id": "Bentuk colokan listriknya seperti apa?"
+    }
+  },
+  {
+    "id": "travel_050",
+    "scene": "travel",
+    "subScene": "Exchange_Banking",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "両替所はどこにありますか？",
+      "en": "Where is the currency exchange?",
+      "zh": "兑换处在哪里？",
+      "zh_TW": "兌換處在哪裡？",
+      "ko": "환전소는 어디에 있나요?",
+      "es": "¿Dónde está la casa de cambio?",
+      "fr": "Où se trouve le bureau de change ?",
+      "de": "Wo ist die Wechselstube?",
+      "vi": "Quầy đổi tiền ở đâu?",
+      "id": "Di mana penukaran mata uang?"
+    }
+  },
+  {
+    "id": "travel_051",
+    "scene": "travel",
+    "subScene": "Exchange_Banking",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "何時まで両替できますか？",
+      "en": "Until what time can I exchange money?",
+      "zh": "可以兑换到几点？",
+      "zh_TW": "可以兌換到幾點？",
+      "ko": "언제까지 환전할 수 있나요?",
+      "es": "¿Hasta qué hora puedo cambiar dinero?",
+      "fr": "Jusqu'à quelle heure peut‑on échanger de l'argent ?",
+      "de": "Bis wann kann man Geld wechseln?",
+      "vi": "Đổi tiền đến mấy giờ?",
+      "id": "Sampai jam berapa bisa menukar uang?"
+    }
+  },
+  {
+    "id": "travel_052",
+    "scene": "travel",
+    "subScene": "Exchange_Banking",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "両替手数料はいくらですか？",
+      "en": "What are the exchange fees?",
+      "zh": "兑换手续费是多少？",
+      "zh_TW": "兌換手續費是多少？",
+      "ko": "환전 수수료는 얼마인가요?",
+      "es": "¿Cuáles son las comisiones por el cambio?",
+      "fr": "Quels sont les frais de change ?",
+      "de": "Wie hoch sind die Wechselgebühren?",
+      "vi": "Phí đổi tiền là bao nhiêu?",
+      "id": "Berapa biaya penukaran uang?"
+    }
+  },
+  {
+    "id": "travel_053",
+    "scene": "travel",
+    "subScene": "Exchange_Banking",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "パスポートが必要ですか？",
+      "en": "Do I need a passport?",
+      "zh": "需要护照吗？",
+      "zh_TW": "需要護照嗎？",
+      "ko": "여권이 필요합니까?",
+      "es": "¿Necesito pasaporte?",
+      "fr": "Ai‑je besoin d'un passeport ?",
+      "de": "Brauche ich einen Reisepass?",
+      "vi": "Tôi có cần hộ chiếu không?",
+      "id": "Apakah saya perlu paspor?"
+    }
+  },
+  {
+    "id": "travel_054",
+    "scene": "travel",
+    "subScene": "Exchange_Banking",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ATMで現地通貨を引き出せますか？",
+      "en": "Can I withdraw local currency from an ATM?",
+      "zh": "我能从ATM提取当地货币吗？",
+      "zh_TW": "我可以從ATM提取當地貨幣嗎？",
+      "ko": "ATM에서 현지 통화를 인출할 수 있나요?",
+      "es": "¿Puedo retirar moneda local de un cajero automático?",
+      "fr": "Puis‑je retirer la monnaie locale à un distributeur ?",
+      "de": "Kann ich lokale Währung am Geldautomaten abheben?",
+      "vi": "Tôi có thể rút tiền địa phương từ ATM không?",
+      "id": "Apakah saya bisa menarik mata uang lokal dari ATM?"
+    }
+  },
+  {
+    "id": "travel_055",
+    "scene": "travel",
+    "subScene": "Exchange_Banking",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "１万円をドルに両替するといくらになりますか？",
+      "en": "How much is ¥10,000 in dollars?",
+      "zh": "一万日元兑换成美元是多少？",
+      "zh_TW": "一萬日圓兌換成美元是多少？",
+      "ko": "1만 엔을 달러로 환전하면 얼마인가요?",
+      "es": "¿Cuánto es 10.000 yenes en dólares?",
+      "fr": "Combien font 10 000 yens en dollars ?",
+      "de": "Wie viel sind 10.000 Yen in Dollar?",
+      "vi": "10.000 yên đổi ra đô la là bao nhiêu?",
+      "id": "Berapa 10.000 yen dalam dolar?"
+    }
+  },
+  {
+    "id": "travel_056",
+    "scene": "travel",
+    "subScene": "Exchange_Banking",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "クレジットカードで現金引き出しは可能ですか？",
+      "en": "Can I withdraw cash with a credit card?",
+      "zh": "可以用信用卡提取现金吗？",
+      "zh_TW": "可以用信用卡提取現金嗎？",
+      "ko": "신용카드로 현금 인출이 가능한가요?",
+      "es": "¿Puedo retirar efectivo con tarjeta de crédito?",
+      "fr": "Puis‑je retirer des espèces avec une carte de crédit ?",
+      "de": "Kann ich mit Kreditkarte Bargeld abheben?",
+      "vi": "Tôi có thể rút tiền mặt bằng thẻ tín dụng không?",
+      "id": "Bisakah saya menarik tunai dengan kartu kredit?"
+    }
+  },
+  {
+    "id": "travel_057",
+    "scene": "travel",
+    "subScene": "Exchange_Banking",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "手数料なしの両替所はありますか？",
+      "en": "Is there an exchange with no fees?",
+      "zh": "有无免手续费的兑换所？",
+      "zh_TW": "有無免手續費的兌換處？",
+      "ko": "수수료 없는 환전소가 있나요?",
+      "es": "¿Hay una casa de cambio sin comisiones?",
+      "fr": "Y a‑t‑il un bureau de change sans frais ?",
+      "de": "Gibt es eine Wechselstube ohne Gebühren?",
+      "vi": "Có quầy đổi tiền nào không mất phí không?",
+      "id": "Adakah tempat penukaran tanpa biaya?"
+    }
+  },
+  {
+    "id": "travel_058",
+    "scene": "travel",
+    "subScene": "Exchange_Banking",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "銀行の営業時間を教えてください。",
+      "en": "What are the bank's business hours?",
+      "zh": "请告诉我银行的营业时间。",
+      "zh_TW": "請告訴我銀行的營業時間。",
+      "ko": "은행 영업 시간을 알려주세요.",
+      "es": "¿Cuáles son el horario de atención del banco?",
+      "fr": "Quels sont les horaires d'ouverture de la banque ?",
+      "de": "Wie sind die Öffnungszeiten der Bank?",
+      "vi": "Giờ làm việc của ngân hàng là bao nhiêu?",
+      "id": "Jam operasional bank berapa?"
+    }
+  },
+  {
+    "id": "travel_059",
+    "scene": "travel",
+    "subScene": "Exchange_Banking",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "海外送金をしたいのですが、手順を教えてください。",
+      "en": "I would like to send an international transfer; please tell me the procedure.",
+      "zh": "我想进行海外汇款，请告诉我流程。",
+      "zh_TW": "我想進行海外匯款，請告訴我流程。",
+      "ko": "해외 송금을 하고 싶은데, 절차를 알려주세요.",
+      "es": "Quiero hacer una transferencia internacional; por favor indíqueme el procedimiento.",
+      "fr": "Je souhaite effectuer un virement international ; veuillez m'expliquer la procédure.",
+      "de": "Ich möchte eine Auslandsüberweisung tätigen; bitte erklären Sie mir das Verfahren.",
+      "vi": "Tôi muốn gửi chuyển khoản quốc tế; xin cho tôi biết quy trình.",
+      "id": "Saya ingin melakukan transfer internasional; tolong beri tahu prosedurnya."
+    }
+  },
+  {
+    "id": "travel_060",
+    "scene": "travel",
+    "subScene": "Emergencies",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "病院はどこですか？",
+      "en": "Where is the hospital?",
+      "zh": "医院在哪里？",
+      "zh_TW": "醫院在哪裡？",
+      "ko": "병원이 어디에 있나요?",
+      "es": "¿Dónde está el hospital?",
+      "fr": "Où se trouve l'hôpital ?",
+      "de": "Wo ist das Krankenhaus?",
+      "vi": "Bệnh viện ở đâu?",
+      "id": "Di mana rumah sakit?"
+    }
+  },
+  {
+    "id": "travel_061",
+    "scene": "travel",
+    "subScene": "Emergencies",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "緊急連絡先を教えてください。",
+      "en": "Please tell me the emergency contact number.",
+      "zh": "请告诉我紧急联系电话。",
+      "zh_TW": "請告訴我緊急聯絡電話。",
+      "ko": "긴급 연락처를 알려주세요.",
+      "es": "Por favor, indíqueme el número de contacto de emergencia.",
+      "fr": "Veuillez me communiquer le numéro de contact d'urgence.",
+      "de": "Bitte nennen Sie mir die Notfallnummer.",
+      "vi": "Xin vui lòng cho tôi biết số liên lạc khẩn cấp.",
+      "id": "Tolong beri tahu saya nomor kontak darurat."
+    }
+  },
+  {
+    "id": "travel_062",
+    "scene": "travel",
+    "subScene": "Emergencies",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "薬局は近くにありますか？",
+      "en": "Is there a pharmacy nearby?",
+      "zh": "附近有药店吗？",
+      "zh_TW": "附近有藥局嗎？",
+      "ko": "근처에 약국이 있나요?",
+      "es": "¿Hay una farmacia cerca?",
+      "fr": "Y a‑t‑il une pharmacie à proximité ?",
+      "de": "Gibt es eine Apotheke in der Nähe?",
+      "vi": "Có hiệu thuốc nào gần đây không?",
+      "id": "Apakah ada apotek di dekat sini?"
+    }
+  },
+  {
+    "id": "travel_063",
+    "scene": "travel",
+    "subScene": "Emergencies",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "警察を呼びたいのですが。",
+      "en": "I would like to call the police.",
+      "zh": "我想报警。",
+      "zh_TW": "我想報警。",
+      "ko": "경찰을 호출하고 싶습니다.",
+      "es": "Quisiera llamar a la policía.",
+      "fr": "Je voudrais appeler la police.",
+      "de": "Ich möchte die Polizei rufen.",
+      "vi": "Tôi muốn gọi cảnh sát.",
+      "id": "Saya ingin memanggil polisi."
+    }
+  },
+  {
+    "id": "travel_064",
+    "scene": "travel",
+    "subScene": "Emergencies",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "事故が起きました、助けてください。",
+      "en": "There's been an accident; please help.",
+      "zh": "发生事故了，请帮忙。",
+      "zh_TW": "發生事故了，請幫忙。",
+      "ko": "사고가 발생했습니다. 도와주세요.",
+      "es": "Ha ocurrido un accidente; por favor, ayúdeme.",
+      "fr": "Il y a eu un accident ; s'il vous plaît, aidez‑moi.",
+      "de": "Es gab einen Unfall; bitte helfen Sie mir.",
+      "vi": "Có tai nạn xảy ra; xin hãy giúp đỡ.",
+      "id": "Terjadi kecelakaan; tolong bantu saya."
+    }
+  },
+  {
+    "id": "travel_065",
+    "scene": "travel",
+    "subScene": "Emergencies",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "道に迷いました、助けを呼びたいです。",
+      "en": "I'm lost; I'd like to ask for help.",
+      "zh": "我迷路了，想寻求帮助。",
+      "zh_TW": "我迷路了，想尋求幫助。",
+      "ko": "길을 잃었습니다. 도움을 요청하고 싶습니다.",
+      "es": "Estoy perdido; me gustaría pedir ayuda.",
+      "fr": "Je suis perdu ; je voudrais demander de l'aide.",
+      "de": "Ich habe mich verlaufen; ich möchte um Hilfe bitten.",
+      "vi": "Tôi bị lạc; tôi muốn gọi giúp đỡ.",
+      "id": "Saya tersesat; saya ingin minta bantuan."
+    }
+  },
+  {
+    "id": "travel_066",
+    "scene": "travel",
+    "subScene": "Emergencies",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "救急車を呼んでください。",
+      "en": "Please call an ambulance.",
+      "zh": "请叫救护车。",
+      "zh_TW": "請叫救護車。",
+      "ko": "구급차를 불러주세요.",
+      "es": "Por favor, llame a una ambulancia.",
+      "fr": "S'il vous plaît, appelez une ambulance.",
+      "de": "Bitte rufen Sie einen Krankenwagen.",
+      "vi": "Xin vui lòng gọi xe cứu thương.",
+      "id": "Tolong panggil ambulans."
+    }
+  },
+  {
+    "id": "travel_067",
+    "scene": "travel",
+    "subScene": "Emergencies",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "財布を落としてしまいました。",
+      "en": "I've lost my wallet.",
+      "zh": "我丢了钱包。",
+      "zh_TW": "我丟了錢包。",
+      "ko": "지갑을 잃어버렸습니다.",
+      "es": "He perdido mi billetera.",
+      "fr": "J'ai perdu mon portefeuille.",
+      "de": "Ich habe meine Brieftasche verloren.",
+      "vi": "Tôi đã làm mất ví.",
+      "id": "Saya kehilangan dompet."
+    }
+  },
+  {
+    "id": "travel_068",
+    "scene": "travel",
+    "subScene": "Emergencies",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "パスポートを紛失しました。",
+      "en": "I've lost my passport.",
+      "zh": "我丢失了护照。",
+      "zh_TW": "我丟失了護照。",
+      "ko": "여권을 분실했습니다.",
+      "es": "He perdido mi pasaporte.",
+      "fr": "J'ai perdu mon passeport.",
+      "de": "Ich habe meinen Reisepass verloren.",
+      "vi": "Tôi đã mất hộ chiếu.",
+      "id": "Saya kehilangan paspor."
+    }
+  },
+  {
+    "id": "travel_069",
+    "scene": "travel",
+    "subScene": "Emergencies",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "火事が発生しました、どうすればいいですか？",
+      "en": "There's a fire; what should I do?",
+      "zh": "发生火灾了，我该怎么办？",
+      "zh_TW": "發生火災了，我該怎麼辦？",
+      "ko": "화재가 발생했습니다. 어떻게 해야 하나요?",
+      "es": "Hay un incendio; ¿qué debo hacer?",
+      "fr": "Il y a un incendie ; que dois‑je faire ?",
+      "de": "Es brennt; was soll ich tun?",
+      "vi": "Có hỏa hoạn; tôi nên làm gì?",
+      "id": "Terjadi kebakaran; apa yang harus saya lakukan?"
+    }
+  },
+  {
+    "id": "travel_070",
+    "scene": "travel",
+    "subScene": "Guide_Map",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "この地図の見方を教えてください。",
+      "en": "Please explain how to read this map.",
+      "zh": "请告诉我如何看这张地图。",
+      "zh_TW": "請告訴我如何看這張地圖。",
+      "ko": "이 지도를 읽는 방법을 알려주세요.",
+      "es": "Por favor, explíqueme cómo leer este mapa.",
+      "fr": "Veuillez m'expliquer comment lire cette carte.",
+      "de": "Bitte erklären Sie mir, wie ich diese Karte lese.",
+      "vi": "Xin vui lòng giải thích cách đọc bản đồ này.",
+      "id": "Tolong jelaskan cara membaca peta ini."
+    }
+  },
+  {
+    "id": "travel_071",
+    "scene": "travel",
+    "subScene": "Guide_Map",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ここから駅までどう行けばいいですか？",
+      "en": "How do I get to the station from here?",
+      "zh": "从这里到车站怎么走？",
+      "zh_TW": "從這裡到車站怎麼走？",
+      "ko": "여기서 역까지 어떻게 가나요?",
+      "es": "¿Cómo llego a la estación desde aquí?",
+      "fr": "Comment aller à la gare d'ici ?",
+      "de": "Wie komme ich von hier zum Bahnhof?",
+      "vi": "Từ đây đến ga đi như thế nào?",
+      "id": "Bagaimana cara ke stasiun dari sini?"
+    }
+  },
+  {
+    "id": "travel_072",
+    "scene": "travel",
+    "subScene": "Guide_Map",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "次の角を右に曲がるとどこに出ますか？",
+      "en": "If I turn right at the next corner, where will I end up?",
+      "zh": "在下一个路口右转会到哪里？",
+      "zh_TW": "在下一個路口右轉會到哪裡？",
+      "ko": "다음 모퉁이에서 우회전하면 어디에 도착하나요?",
+      "es": "Si giro a la derecha en la próxima esquina, ¿a dónde llegaré?",
+      "fr": "Si je tourne à droite au prochain virage, où arriverai‑je ?",
+      "de": "Wohin komme ich, wenn ich an der nächsten Ecke rechts abbiege?",
+      "vi": "Nếu rẽ phải ở ngã rẽ tiếp theo, tôi sẽ đến đâu?",
+      "id": "Jika saya belok kanan di tikungan berikutnya, saya akan sampai di mana?"
+    }
+  },
+  {
+    "id": "travel_073",
+    "scene": "travel",
+    "subScene": "Guide_Map",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "徒歩でどれくらいかかりますか？",
+      "en": "How long does it take on foot?",
+      "zh": "步行需要多长时间？",
+      "zh_TW": "步行需要多長時間？",
+      "ko": "도보로 얼마나 걸리나요?",
+      "es": "¿Cuánto se tarda a pie?",
+      "fr": "Combien de temps cela prend‑il à pied ?",
+      "de": "Wie lange dauert es zu Fuß?",
+      "vi": "Đi bộ mất bao lâu?",
+      "id": "Berapa lama waktu berjalan kaki?"
+    }
+  },
+  {
+    "id": "travel_074",
+    "scene": "travel",
+    "subScene": "Guide_Map",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "タクシー乗り場はどこですか？",
+      "en": "Where is the taxi stand?",
+      "zh": "出租车站在哪里？",
+      "zh_TW": "計程車站在哪裡？",
+      "ko": "택시 승강장은 어디인가요?",
+      "es": "¿Dónde está la parada de taxis?",
+      "fr": "Où se trouve la station de taxis ?",
+      "de": "Wo ist der Taxistand?",
+      "vi": "Bến taxi ở đâu?",
+      "id": "Di mana pangkalan taksi?"
+    }
+  },
+  {
+    "id": "travel_075",
+    "scene": "travel",
+    "subScene": "Guide_Map",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "近くにバス停はありますか？",
+      "en": "Is there a bus stop nearby?",
+      "zh": "附近有公交车站吗？",
+      "zh_TW": "附近有公車站嗎？",
+      "ko": "근처에 버스 정류장이 있나요?",
+      "es": "¿Hay una parada de autobús cerca?",
+      "fr": "Y a‑t‑il un arrêt de bus à proximité ?",
+      "de": "Gibt es eine Bushaltestelle in der Nähe?",
+      "vi": "Có trạm xe buýt gần đây không?",
+      "id": "Apakah ada halte bus di dekat sini?"
+    }
+  },
+  {
+    "id": "travel_076",
+    "scene": "travel",
+    "subScene": "Guide_Map",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "地下鉄の路線図をいただけますか？",
+      "en": "Could you give me a subway map?",
+      "zh": "能给我一张地铁线路图吗？",
+      "zh_TW": "能給我一張地鐵路線圖嗎？",
+      "ko": "지하철 노선도를 주시겠어요?",
+      "es": "¿Podría darme un mapa del metro?",
+      "fr": "Pourriez‑vous me donner un plan du métro ?",
+      "de": "Könnten Sie mir einen U‑Bahn‑Plan geben?",
+      "vi": "Bạn có thể cho tôi bản đồ tàu điện ngầm không?",
+      "id": "Bisakah Anda memberi saya peta kereta bawah tanah?"
+    }
+  },
+  {
+    "id": "travel_077",
+    "scene": "travel",
+    "subScene": "Guide_Map",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "道に迷ったとき、どうすればいいですか？",
+      "en": "What should I do if I get lost?",
+      "zh": "迷路时我该怎么办？",
+      "zh_TW": "迷路時我該怎麼辦？",
+      "ko": "길을 잃었을 때 어떻게 해야 하나요?",
+      "es": "¿Qué debería hacer si me pierdo?",
+      "fr": "Que dois‑je faire si je me perds ?",
+      "de": "Was soll ich tun, wenn ich mich verlaufe?",
+      "vi": "Nếu tôi bị lạc, tôi nên làm gì?",
+      "id": "Apa yang harus saya lakukan jika tersesat?"
+    }
+  },
+  {
+    "id": "travel_078",
+    "scene": "travel",
+    "subScene": "Guide_Map",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "GPSがうまく動かないのですが、どうしたらいいですか？",
+      "en": "My GPS isn't working well; what should I do?",
+      "zh": "GPS无法正常工作，我该怎么办？",
+      "zh_TW": "GPS無法正常運作，我該怎麼辦？",
+      "ko": "GPS가 제대로 작동하지 않는데 어떻게 해야 하나요?",
+      "es": "Mi GPS no funciona bien; ¿qué debo hacer?",
+      "fr": "Mon GPS ne fonctionne pas bien; que dois‑je faire ?",
+      "de": "Mein GPS funktioniert nicht richtig; was soll ich tun?",
+      "vi": "GPS của tôi không hoạt động tốt; tôi phải làm gì?",
+      "id": "GPS saya tidak berfungsi dengan baik; apa yang harus saya lakukan?"
+    }
+  },
+  {
+    "id": "travel_079",
+    "scene": "travel",
+    "subScene": "Guide_Map",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "最寄りのランドマークを教えてください。",
+      "en": "Please tell me the nearest landmark.",
+      "zh": "请告诉我最近的地标。",
+      "zh_TW": "請告訴我最近的地標。",
+      "ko": "가장 가까운 랜드마크를 알려주세요.",
+      "es": "Por favor, indíqueme el punto de referencia más cercano.",
+      "fr": "Veuillez me dire quel est le repère le plus proche.",
+      "de": "Bitte nennen Sie mir das nächstgelegene Wahrzeichen.",
+      "vi": "Xin vui lòng cho tôi biết mốc địa lý gần nhất.",
+      "id": "Tolong beri tahu saya landmark terdekat."
+    }
+  },
+  {
+    "id": "travel_080",
+    "scene": "travel",
+    "subScene": "Culture_Customs",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "写真を撮ってもいいですか？",
+      "en": "May I take a photo?",
+      "zh": "可以拍照吗？",
+      "zh_TW": "可以拍照嗎？",
+      "ko": "사진을 찍어도 될까요?",
+      "es": "¿Puedo tomar una foto?",
+      "fr": "Puis‑je prendre une photo ?",
+      "de": "Darf ich ein Foto machen?",
+      "vi": "Tôi có thể chụp ảnh không?",
+      "id": "Bolehkah saya mengambil foto?"
+    }
+  },
+  {
+    "id": "travel_081",
+    "scene": "travel",
+    "subScene": "Culture_Customs",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "挨拶の仕方はどのようにしますか？",
+      "en": "How do I greet people?",
+      "zh": "我该如何打招呼？",
+      "zh_TW": "我該如何打招呼？",
+      "ko": "인사하는 방법은 어떻게 하나요?",
+      "es": "¿Cómo saludo a la gente?",
+      "fr": "Comment dois‑je saluer les gens ?",  
+      "de": "Wie grüßt man die Leute?",
+      "vi": "Tôi chào hỏi mọi người như thế nào?",
+      "id": "Bagaimana saya menyapa orang?"
+    }
+  },
+  {
+    "id": "travel_082",
+    "scene": "travel",
+    "subScene": "Culture_Customs",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "レストランでチップは必要ですか？",
+      "en": "Is tipping required in restaurants?",
+      "zh": "在餐厅需要付小费吗？",
+      "zh_TW": "在餐廳需要付小費嗎？",
+      "ko": "식당에서 팁을 줘야 하나요?",
+      "es": "¿Se requiere propina en los restaurantes?",
+      "fr": "Le pourboire est‑il obligatoire dans les restaurants ?",
+      "de": "Ist Trinkgeld in Restaurants erforderlich?",
+      "vi": "Có cần bo tiền tại nhà hàng không?",
+      "id": "Apakah perlu memberi tip di restoran?"
+    }
+  },
+  {
+    "id": "travel_083",
+    "scene": "travel",
+    "subScene": "Culture_Customs",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "靴を脱ぐ必要はありますか？",
+      "en": "Do I need to remove my shoes?",
+      "zh": "我需要脱鞋吗？",
+      "zh_TW": "我需要脫鞋嗎？",
+      "ko": "신발을 벗어야 하나요?",
+      "es": "¿Necesito quitarme los zapatos?",
+      "fr": "Dois‑je enlever mes chaussures ?",
+      "de": "Muss ich meine Schuhe ausziehen?",
+      "vi": "Tôi có cần cởi giày không?",
+      "id": "Apakah saya perlu melepas sepatu?"
+    }
+  },
+  {
+    "id": "travel_084",
+    "scene": "travel",
+    "subScene": "Culture_Customs",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "お辞儀の仕方を教えてください。",
+      "en": "Please teach me how to bow.",
+      "zh": "请教我如何鞠躬。",
+      "zh_TW": "請教我如何鞠躬。",
+      "ko": "인사법(절)을 알려주세요.",
+      "es": "Por favor, enséñeme cómo hacer una reverencia.",
+      "fr": "Veuillez m'apprendre comment faire une révérence.",
+      "de": "Bitte lehren Sie mich, wie man sich verbeugt.",
+      "vi": "Xin vui lòng dạy tôi cách cúi chào.",
+      "id": "Tolong ajari saya cara membungkuk."
+    }
+  },
+  {
+    "id": "travel_085",
+    "scene": "travel",
+    "subScene": "Culture_Customs",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "お酒の場でのマナーは何ですか？",
+      "en": "What are the etiquette rules when drinking?",
+      "zh": "在喝酒场合的礼仪是什么？",
+      "zh_TW": "在喝酒場合的禮儀是什麼？",
+      "ko": "술자리 예절은 무엇인가요?",
+      "es": "¿Cuáles son las normas de etiqueta al beber?",
+      "fr": "Quelles sont les règles d'étiquette lors de la consommation d'alcool ?",
+      "de": "Was sind die Etikette‑Regeln beim Trinken?",
+      "vi": "Quy tắc ứng xử khi uống rượu là gì?",
+      "id": "Apa etiket saat minum alkohol?"
+    }
+  },
+  {
+    "id": "travel_086",
+    "scene": "travel",
+    "subScene": "Culture_Customs",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "公共の場で大声で話してもいいですか？",
+      "en": "Is it okay to speak loudly in public spaces?",
+      "zh": "在公共场所大声讲话可以吗？",
+      "zh_TW": "在公共場所大聲講話可以嗎？",
+      "ko": "공공장소에서 큰소리로 말해도 되나요?",
+      "es": "¿Está bien hablar en voz alta en lugares públicos?",
+      "fr": "Est‑il acceptable de parler fort dans les lieux publics ?",
+      "de": "Ist es in öffentlichen Räumen in Ordnung, laut zu sprechen?",
+      "vi": "Có được nói lớn tiếng ở nơi công cộng không?",
+      "id": "Apakah boleh berbicara keras di tempat umum?"
+    }
+  },
+  {
+    "id": "travel_087",
+    "scene": "travel",
+    "subScene": "Culture_Customs",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "お祭りに参加する際のルールは？",
+      "en": "What are the rules for participating in festivals?",
+      "zh": "参加节日活动的规则是什么？",
+      "zh_TW": "參加節慶活動的規則是什麼？",
+      "ko": "축제 참여 시 지켜야 할 규칙은 무엇인가요?",
+      "es": "¿Cuáles son las reglas para participar en festivales?",
+      "fr": "Quelles sont les règles pour participer aux festivals ?",
+      "de": "Was sind die Regeln für die Teilnahme an Festen?",
+      "vi": "Quy tắc khi tham gia lễ hội là gì?",
+      "id": "Apa aturan untuk berpartisipasi dalam festival?"
+    }
+  },
+  {
+    "id": "travel_088",
+    "scene": "travel",
+    "subScene": "Culture_Customs",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "寺院での服装や振る舞いで注意すべきことは？",
+      "en": "What should I be mindful of regarding attire and behavior at temples?",
+      "zh": "在寺庙应注意的着装和行为有哪些？",
+      "zh_TW": "在寺廟應注意的服裝和行為有哪些？",
+      "ko": "사원에서 복장 및 행동 시 주의할 점은 무엇인가요?",
+      "es": "¿Qué debo tener en cuenta sobre vestimenta y comportamiento en los templos?",
+      "fr": "Que dois‑je surveiller concernant la tenue et le comportement dans les temples ?",
+      "de": "Worauf sollte ich in Bezug auf Kleidung und Verhalten in Tempeln achten?",
+      "vi": "Tôi nên chú ý điều gì về trang phục và hành vi trong đền chùa?",
+      "id": "Apa yang perlu diperhatikan mengenai pakaian dan perilaku di kuil?"
+    }
+  },
+  {
+    "id": "travel_089",
+    "scene": "travel",
+    "subScene": "Culture_Customs",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "祝日や休日の営業日はどうなっていますか？",
+      "en": "What are the business hours on holidays?",
+      "zh": "节假日营业时间如何？",
+      "zh_TW": "假日營業時間如何？",
+      "ko": "공휴일 영업 시간은 어떻게 되나요?",
+      "es": "¿Cuál es el horario de atención en días festivos?",
+      "fr": "Quelles sont les heures d'ouverture pendant les jours fériés ?",
+      "de": "Wie sind die Öffnungszeiten an Feiertagen?",
+      "vi": "Giờ làm việc vào ngày lễ như thế nào?",
+      "id": "Jam operasional saat hari libur bagaimana?"
+    }
+  },
+  {
+    "id": "travel_090",
+    "scene": "travel",
+    "subScene": "Experiences_Activities",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "料理教室に参加したいです。",
+      "en": "I would like to join a cooking class.",
+      "zh": "我想参加烹饪课程。",
+      "zh_TW": "我想參加烹飪課程。",
+      "ko": "요리 교실에 참여하고 싶습니다.",
+      "es": "Me gustaría unirme a una clase de cocina.",
+      "fr": "Je voudrais participer à un cours de cuisine.",
+      "de": "Ich möchte an einem Kochkurs teilnehmen.",
+      "vi": "Tôi muốn tham gia lớp học nấu ăn.",
+      "id": "Saya ingin mengikuti kelas memasak."
+    }
+  },
+  {
+    "id": "travel_091",
+    "scene": "travel",
+    "subScene": "Experiences_Activities",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "現地の伝統工芸体験はありますか？",
+      "en": "Is there a local traditional craft experience?",
+      "zh": "当地有传统工艺体验吗？",
+      "zh_TW": "當地有傳統工藝體驗嗎？",
+      "ko": "현지 전통 공예 체험이 있나요?",
+      "es": "¿Hay una experiencia de artesanía tradicional local?",
+      "fr": "Y a‑t‑il une expérience d'artisanat traditionnel sur place ?",
+      "de": "Gibt es eine traditionelle Handwerkserfahrung vor Ort?",
+      "vi": "Có trải nghiệm thủ công truyền thống tại đây không?",
+      "id": "Apakah ada pengalaman kerajinan tradisional setempat?"
+    }
+  },
+  {
+    "id": "travel_092",
+    "scene": "travel",
+    "subScene": "Experiences_Activities",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "日帰りツアーを予約したいです。",
+      "en": "I would like to book a day tour.",
+      "zh": "我想预订一日游。",
+      "zh_TW": "我想預訂一日遊。",
+      "ko": "당일치기 투어를 예약하고 싶습니다.",
+      "es": "Me gustaría reservar un tour de un día.",
+      "fr": "Je voudrais réserver une excursion d'une journée.",
+      "de": "Ich möchte eine Tagestour buchen.",
+      "vi": "Tôi muốn đặt tour trong ngày.",
+      "id": "Saya ingin memesan tur sehari."
+    }
+  },
+  {
+    "id": "travel_093",
+    "scene": "travel",
+    "subScene": "Experiences_Activities",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ダイビングツアーの申し込みはどこでできますか？",
+      "en": "Where can I sign up for a diving tour?",
+      "zh": "我在哪里可以报名潜水之旅？",
+      "zh_TW": "我在哪裡可以報名潛水之旅？",
+      "ko": "다이빙 투어 신청은 어디에서 하나요?",
+      "es": "¿Dónde puedo inscribirme para un tour de buceo?",
+      "fr": "Où puis‑je m'inscrire pour un tour de plongée ?",
+      "de": "Wo kann ich mich für eine Tauchtour anmelden?",
+      "vi": "Tôi có thể đăng ký tour lặn ở đâu?",
+      "id": "Di mana saya bisa mendaftar tur menyelam?"
+    }
+  },
+  {
+    "id": "travel_094",
+    "scene": "travel",
+    "subScene": "Experiences_Activities",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "マウンテンバイクを借りたいです。",
+      "en": "I would like to rent a mountain bike.",
+      "zh": "我想租一辆山地自行车。",
+      "zh_TW": "我想租一輛山地自行車。",
+      "ko": "산악 자전거를 대여하고 싶습니다.",
+      "es": "Me gustaría alquilar una bicicleta de montaña.",
+      "fr": "Je voudrais louer un VTT.",
+      "de": "Ich möchte ein Mountainbike mieten.",
+      "vi": "Tôi muốn thuê một chiếc xe đạp leo núi.",
+      "id": "Saya ingin menyewa sepeda gunung."
+    }
+  },
+  {
+    "id": "travel_095",
+    "scene": "travel",
+    "subScene": "Experiences_Activities",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ワイナリーツアーの時間を教えてください。",
+      "en": "Please tell me the time of the winery tour.",
+      "zh": "请告诉我酒庄之旅的时间。",
+      "zh_TW": "請告訴我酒莊之旅的時間。",
+      "ko": "와이너리 투어 시간을 알려주세요.",
+      "es": "Por favor, dígame la hora del tour de la bodega.",
+      "fr": "Veuillez me dire l'heure de la visite du domaine viticole.",
+      "de": "Bitte teilen Sie mir die Uhrzeit der Weingut‑Tour mit.",
+      "vi": "Xin vui lòng cho tôi biết thời gian của tour tham quan nhà máy rượu.",
+      "id": "Tolong beri tahu saya waktu tur pabrik anggur."
+    }
+  },
+  {
+    "id": "travel_096",
+    "scene": "travel",
+    "subScene": "Experiences_Activities",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "おすすめのナイトクルーズは何ですか？",
+      "en": "What night cruise do you recommend?",
+      "zh": "您推荐哪个夜游？",
+      "zh_TW": "您推薦哪個夜遊？",
+      "ko": "추천하는 야간 크루즈는 무엇인가요?",
+      "es": "¿Qué crucero nocturno recomienda?",
+      "fr": "Quel croisière nocturne recommandez‑vous ?",
+      "de": "Welche Nachtrundfahrt empfehlen Sie?",
+      "vi": "Bạn khuyên tour du lịch đêm nào?",
+      "id": "Anda merekomendasikan pelayaran malam yang mana?"
+    }
+  },
+  {
+    "id": "travel_097",
+    "scene": "travel",
+    "subScene": "Experiences_Activities",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ワークショップの予約状況を確認したいです。",
+      "en": "I want to check the reservation status of the workshop.",
+      "zh": "我想确认研讨会的预订情况。",
+      "zh_TW": "我想確認研討會的預訂情況。",
+      "ko": "워크숍 예약 상황을 확인하고 싶습니다.",
+      "es": "Quiero comprobar el estado de la reserva del taller.",
+      "fr": "Je veux vérifier le statut de réservation de l'atelier.",
+      "de": "Ich möchte den Reservierungsstatus des Workshops prüfen.",
+      "vi": "Tôi muốn kiểm tra tình trạng đặt chỗ của hội thảo.",
+      "id": "Saya ingin memeriksa status reservasi lokakarya."
+    }
+  },
+  {
+    "id": "travel_098",
+    "scene": "travel",
+    "subScene": "Experiences_Activities",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "写真撮影ツアーに参加したいです。",
+      "en": "I would like to join a photo tour.",
+      "zh": "我想参加摄影旅游。",
+      "zh_TW": "我想參加攝影旅遊。",
+      "ko": "사진 촬영 투어에 참여하고 싶습니다.",
+      "es": "Me gustaría unirme a un tour fotográfico.",
+      "fr": "Je voudrais participer à une visite photographique.",
+      "de": "Ich möchte an einer Fototour teilnehmen.",
+      "vi": "Tôi muốn tham gia tour chụp ảnh.",
+      "id": "Saya ingin bergabung dengan tur fotografi."
+    }
+  },
+  {
+    "id": "travel_099",
+    "scene": "travel",
+    "subScene": "Experiences_Activities",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "海外音楽フェスのチケットを購入したいです。",
+      "en": "I would like to purchase tickets for an international music festival.",
+      "zh": "我想购买海外音乐节的门票。",
+      "zh_TW": "我想購買海外音樂節的門票。",
+      "ko": "해외 음악 페스티벌 티켓을 구매하고 싶습니다.",
+      "es": "Me gustaría comprar entradas para un festival de música internacional.",
+      "fr": "Je voudrais acheter des billets pour un festival de musique international.",
+      "de": "Ich möchte Tickets für ein internationales Musikfestival kaufen.",
+      "vi": "Tôi muốn mua vé cho lễ hội âm nhạc quốc tế.",
+      "id": "Saya ingin membeli tiket untuk festival musik internasional."
+    }
+  }
+]

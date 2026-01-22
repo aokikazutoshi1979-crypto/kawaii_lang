@@ -1,0 +1,230 @@
+[
+  {
+    "id": "trial_greeting_001",
+    "scene": "trial",
+    "subScene": "greeting",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "はじめまして。",
+      "en": "Nice to meet you.",
+      "zh": "很高兴见到你。",
+      "zh_TW": "很高興見到你。",
+      "ko": "만나서 반갑습니다.",
+      "es": "Mucho gusto.",
+      "fr": "Enchanté.",
+      "de": "Freut mich, dich kennenzulernen.",
+      "vi": "Rất vui được gặp bạn.",
+      "id": "Senang bertemu denganmu."
+    }
+  },
+  {
+    "id": "trial_greeting_002",
+    "scene": "trial",
+    "subScene": "greeting",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "調子はどうですか？",
+      "en": "How are you?",
+      "zh": "你好吗？",
+      "zh_TW": "你好嗎？",
+      "ko": "어떻게 지내세요?",
+      "es": "¿Cómo estás?",
+      "fr": "Comment ça va?",
+      "de": "Wie geht es dir?",
+      "vi": "Bạn khỏe không?",
+      "id": "Apa kabar?"
+    }
+  },
+  {
+    "id": "trial_greeting_003",
+    "scene": "trial",
+    "subScene": "greeting",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "またね。",
+      "en": "See you later.",
+      "zh": "再见。",
+      "zh_TW": "待會見。",
+      "ko": "나중에 봐요.",
+      "es": "Hasta luego.",
+      "fr": "À plus tard.",
+      "de": "Bis später.",
+      "vi": "Hẹn gặp lại.",
+      "id": "Sampai jumpa."
+    }
+  },
+  {
+    "id": "trial_aizuchi_001",
+    "scene": "trial",
+    "subScene": "aizuchi",
+    "level": "beginner",
+    "tags": ["aizuchi"],
+    "translations": {
+      "ja": "本当ですか。",
+      "en": "Is that true?",
+      "zh": "真的吗？",
+      "zh_TW": "真的嗎？",
+      "ko": "정말인가요?",
+      "es": "¿Es eso cierto?",
+      "fr": "Est-ce vrai ?",
+      "de": "Ist das wahr?",
+      "vi": "Có thật không?",
+      "id": "Apakah itu benar?"
+    }
+  },
+  {
+    "id": "trial_aizuchi_002",
+    "scene": "trial",
+    "subScene": "aizuchi",
+    "level": "beginner",
+    "tags": ["aizuchi"],
+    "translations": {
+      "ja": "まさにその通り。",
+      "en": "Exactly!",
+      "zh": "正是如此。",
+      "zh_TW": "正是如此！",
+      "ko": "정확해요!",
+      "es": "¡Exactamente!",
+      "fr": "Exactement !",
+      "de": "Genau!",
+      "vi": "Chính xác!",
+      "id": "Tepat sekali!"
+    }
+  },
+  {
+    "id": "trial_aizuchi_003",
+    "scene": "trial",
+    "subScene": "aizuchi",
+    "level": "beginner",
+    "tags": ["aizuchi"],
+    "translations": {
+      "ja": "いいね！",
+      "en": "Nice!",
+      "zh": "太棒了！",
+      "zh_TW": "太棒了！",
+      "ko": "좋아요!",
+      "es": "¡Genial!",
+      "fr": "Super !",
+      "de": "Schön!",
+      "vi": "Tuyệt!",
+      "id": "Bagus!"
+    }
+  },
+  {
+    "id": "trial_thanks_sorry_001",
+    "scene": "trial",
+    "subScene": "thanks_sorry",
+    "level": "beginner",
+    "tags": ["thanks_sorry"],
+    "translations": {
+      "ja": "どうもありがとう。",
+      "en": "Thank you very much.",
+      "zh": "非常感谢。",
+      "zh_TW": "非常感謝。",
+      "ko": "정말 감사합니다.",
+      "es": "Muchas gracias.",
+      "fr": "Merci beaucoup.",
+      "de": "Vielen Dank.",
+      "vi": "Cảm ơn rất nhiều.",
+      "id": "Terima kasih banyak."
+    }
+  },
+  {
+    "id": "trial_thanks_sorry_002",
+    "scene": "trial",
+    "subScene": "thanks_sorry",
+    "level": "beginner",
+    "tags": ["thanks_sorry"],
+    "translations": {
+      "ja": "本当に感謝しています",
+      "en": "I really appreciate it.",
+      "zh": "我真的很感激。",
+      "zh_TW": "我真的很感激。",
+      "ko": "정말 감사해요.",
+      "es": "Se lo agradezco mucho.",
+      "fr": "Je vous suis vraiment reconnaissant(e).",
+      "de": "Ich weiß das wirklich zu schätzen.",
+      "vi": "Tôi thực sự trân trọng điều đó.",
+      "id": "Saya sangat menghargainya."
+    }
+  },
+  {
+    "id": "trial_thanks_sorry_003",
+    "scene": "trial",
+    "subScene": "thanks_sorry",
+    "level": "beginner",
+    "tags": ["thanks_sorry"],
+    "translations": {
+      "ja": "ごめんなさい。",
+      "en": "I’m sorry.",
+      "zh": "对不起。",
+      "zh_TW": "對不起。",
+      "ko": "죄송합니다.",
+      "es": "Lo siento.",
+      "fr": "Je suis désolé(e).",
+      "de": "Es tut mir leid.",
+      "vi": "Tôi xin lỗi.",
+      "id": "Maaf."
+    }
+  },
+  {
+    "id": "trial_phrases_001",
+    "scene": "trial",
+    "subScene": "phrases",
+    "level": "beginner",
+    "tags": ["phrases"],
+    "translations": {
+      "ja": "すみません、トイレはどこですか？",
+      "en": "Excuse me, where is the bathroom?",
+      "zh": "请问，洗手间在哪里？",
+      "zh_TW": "請問，洗手間在哪裡？",
+      "ko": "실례합니다, 화장실이 어디에 있나요?",
+      "es": "Disculpe, ¿dónde está el baño?",
+      "fr": "Excusez-moi, où sont les toilettes ?",
+      "de": "Entschuldigung, wo ist die Toilette?",
+      "vi": "Xin hỏi, nhà vệ sinh ở đâu?",
+      "id": "Permisi, di mana kamar mandi?"
+    }
+  },
+  {
+    "id": "trial_phrases_002",
+    "scene": "trial",
+    "subScene": "phrases",
+    "level": "beginner",
+    "tags": ["phrases"],
+    "translations": {
+      "ja": "分かりません。",
+      "en": "I don’t understand.",
+      "zh": "我不明白。",
+      "zh_TW": "我不明白。",
+      "ko": "잘 모르겠습니다.",
+      "es": "No entiendo.",
+      "fr": "Je ne comprends pas.",
+      "de": "Ich verstehe nicht.",
+      "vi": "Tôi không hiểu.",
+      "id": "Saya tidak mengerti."
+    }
+  },
+  {
+    "id": "trial_phrases_003",
+    "scene": "trial",
+    "subScene": "phrases",
+    "level": "beginner",
+    "tags": ["phrases"],
+    "translations": {
+      "ja": "これはどういう意味ですか？",
+      "en": "What does this mean?",
+      "zh": "这是什么意思？",
+      "zh_TW": "這是什麼意思？",
+      "ko": "이건 무슨 뜻인가요?",
+      "es": "¿Qué significa esto?",
+      "fr": "Qu’est-ce que cela signifie ?",
+      "de": "Was bedeutet das?",
+      "vi": "Điều này có nghĩa là gì?",
+      "id": "Apa arti ini?"
+    }
+  }
+]

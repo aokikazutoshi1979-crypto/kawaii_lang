@@ -1,0 +1,4 @@
+"CFBundleDisplayName" = "Kawaii Lang";
+"NSMicrophoneUsageDescription" = "用于发音练习的麦克风权限。录音仅保存在本机。";
+"NSSpeechRecognitionUsageDescription" = "语音识别会将你的语音转换为文本用于练习，AI 将提供反馈。";
+

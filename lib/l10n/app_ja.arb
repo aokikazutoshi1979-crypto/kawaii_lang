@@ -1,0 +1,266 @@
+{
+  "@@locale": "ja",
+  "categoryTitle": "カテゴリ選択",
+  "targetLanguage": "学びたい言語",
+  "level": "レベル",
+  "scene": "学習場面",
+  "start": "はじめる",
+  "selectPrompt": "すべての項目を選択してください。",
+  "langJapanese": "日本語",
+  "langEnglish": "英語",
+  "langChineseSimplified": "中国語(簡体)",
+  "langChineseTraditional": "台湾中国語",
+  "langKorean": "韓国語",
+  "langSpanish": "スペイン語",
+  "langFrench": "フランス語",
+  "langGerman": "ドイツ語",
+  "langVietnamese": "ベトナム語",
+  "langIndonesian": "インドネシア語",
+  "languageJapanese": "日本語",
+  "languageEnglish": "英語",
+  "languageChineseSimplified": "中国語(簡体)",
+  "languageChineseTraditional": "台湾中国語",
+  "languageKorean": "韓国語",
+  "languageSpanish": "スペイン語",
+  "languageFrench": "フランス語",
+  "languageGerman": "ドイツ語",
+  "languageVietnamese": "ベトナム語",
+  "languageIndonesian": "インドネシア語",
+  "levelBeginner": "初級",
+  "levelIntermediate": "中級",
+  "levelAdvanced": "上級",
+  "sceneTravel": "旅行",
+  "sceneGreeting": "あいさつ",
+  "sceneDating": "デート",
+  "sceneRestaurant": "レストラン",
+  "sceneShopping": "買い物",
+  "sceneBusiness": "ビジネス",
+  "selectQuestion": "出題を選んでください",
+  "translatePrompt": "翻訳してみましょう！",
+  "termsOfService": "利用規約",
+  "privacyPolicy": "プライバシーポリシー",
+  "termsContent": "このアプリをご利用いただく前に、以下の利用規約をご確認ください。本アプリを利用することにより、すべての条件に同意したものとみなされます。",
+  "privacyContent": "本アプリは、ユーザーの個人情報を尊重します。取得した情報は、学習支援およびアプリの改善のためのみに使用されます。",
+  "termsOfServiceContent": "本アプリは、言語学習を支援する目的で提供されています。\n\n【利用対象】\n本アプリは全年齢を対象としています。13歳未満の未成年者は、保護者の同意を得た上でご利用ください。\n\n【免責事項】\nアプリの利用により生じた不利益・損害について、運営者は一切の責任を負いません。\n\n【将来的な課金要素について】\n現在は無料でご利用いただけますが、将来的に一部機能に課金が発生する場合があります。課金要素については事前にお知らせいたします。\n\n【利用の中止】\n利用者が本規約に違反した場合、運営者は通知なく利用を制限または停止できるものとします。",
+  "privacyPolicyContent": "本アプリは、ユーザーのプライバシーを尊重し、以下の方針に基づいて運営されます。\n\n【収集する情報】\nユーザーの言語設定やアプリの利用履歴など、個人を特定しない範囲の情報を収集することがあります。\n\n【利用目的】\nアプリの品質向上、機能改善のために情報を活用します。無断で第三者に提供することはありません。\n\n【外部サービス】\n今後のアップデートで課金機能を導入する際、外部決済サービスを利用する場合があります。\n\n【情報の管理】\n取得した情報は適切に管理され、安全に保管されます。",
+  "errorTooLong": "メッセージが長すぎます。約100文字以内で入力してください。",
+  "errorRateLimit": "アクセスが多いため、少し時間をおいて再試行してください（1分に最大5回まで）",
+  "errorNoMessage": "メッセージが入力されていません。",
+  "errorServerError": "サーバーエラーが発生しました。もう一度お試しください。",
+  "keyboardGuideButton": "🌐を押しても学びたい言語のキーボードが表示されない場合はこちら",
+  "keyboardGuideIos": "iOSで学びたい言語のキーボードが表示されない場合：「設定」>「一般」>「キーボード」>「新しいキーボードを追加」から目的の言語を追加してください。",
+  "keyboardGuideAndroid": "Androidで学びたい言語のキーボードが表示されない場合：「設定」>「システム」>「言語と入力」>「キーボード」>「キーボードを追加」から目的の言語を選択してください。",
+  "keyboardGuideBody": "お使いのスマートフォンに学びたい言語のキーボードがインストールされていない場合、チャット画面で入力できません。以下の手順で追加してください。\n\niOS:\n設定 > 一般 > キーボード > 新しいキーボードを追加\n\nAndroid:\n設定 > 言語と入力 > キーボード > キーボードを追加",
+  "keyboardGuideTitle": "キーボード追加ガイド",
+  "ok": "OK",
+  "correct": "正解です！",
+  "incorrect": "修正が必要です！",
+  "answerMeaningPrefix": "あなたの回答の意味はこちらです。:「{translation}」",
+  "answerTranslationPrefix": "修正例",
+  "invalidMeaning": "「{userAnswer}」:学習言語として意味が通じません。",
+  "@invalidMeaning": {
+    "description": "ユーザーの回答が日本語として意味不明だったときのメッセージ",
+    "placeholders": {
+      "userAnswer": {}
+    }
+  },
+  "errorBrokenGpt": "申し訳ありません。システムエラーが発生しました。もう一度お試しください。",
+  "@errorBrokenGpt": {
+    "description": "GPTの応答が壊れていたときに表示するメッセージ",
+    "placeholders": {}
+  },
+  "grammarCorrect": "{userAnswer}：文法的には合っています。",
+  "grammarIncorrect": "{userAnswer}：文法的に間違っています。",
+  "@grammarCorrect": {
+    "description": "文法的に正しいときの応答",
+    "placeholders": {
+      "userAnswer": {}
+    }
+  },
+  "@grammarIncorrect": {
+    "description": "文法的に誤っているときの応答",
+    "placeholders": {
+      "userAnswer": {}
+    }
+  },
+  "errorSessionMismatch": "他の端末でログインされました。再ログインしてください。",
+  "errorPunctuationFailed": "⚠️ 句読点付きの文が取得できませんでした。",
+  "sceneTrial": "無料プレビュー",
+  "lockedMessage": "プラン加入でご利用いただけます。",
+  "resetPassword": "パスワードをリセット",
+  "enterEmailForReset": "パスワードをリセットするためにメールアドレスを入力してください。",
+  "sendResetEmail": "リセットメールを送信",
+  "passwordResetSent": "パスワードリセット用のメールを送信しました。",
+  "passwordResetError": "リセットメールの送信に失敗しました。",
+  "settingsTitle": "設定",
+  "welcomeUser": "ようこそ、{name} さん",
+  "registeredDate": "登録日: {date}",
+  "userFetchFailed": "ユーザー情報の取得に失敗しました（エラー: {error}）",
+  "@userFetchFailed": {
+    "description": "ユーザー取得エラー時の表示メッセージ",
+    "placeholders": {
+      "error": {}
+    }
+  },
+  "languageUpdated": "言語設定を更新しました",
+  "registerAccount": "アカウント登録",
+  "registerSubtitle": "端末変更やアプリ削除で学習履歴が失われます。データ保存のために、こちらからアカウント登録をしてください。",
+  "loginTitle": "ログイン",
+  "loginSubtitle": "すでに登録済みの方はこちら",
+  "logout": "ログアウト",
+  "login": "ログイン",
+  "email": "メールアドレス",
+  "password": "パスワード",
+  "invalidEmail": "正しいメールアドレスを入力してください",
+  "passwordTooShort": "パスワードは6文字以上で入力してください",
+  "loginFailed": "ログインに失敗しました",
+  "loginError": "ログインエラー",
+  "noAccountRegister": "アカウントをお持ちでない方はこちら",
+  "resetPassword": "パスワードを忘れた方はこちら",
+  "register": "登録",
+  "registerFailed": "登録に失敗しました",
+  "purchaseSuccess": "ご購入ありがとうございます！",
+  "subscribe": "加入する",
+  "subscribeNow": "7日間無料お試し期間あり,ベーシックプランに加入する",
+  "lockedTitle": "ロック中",
+  "@lockedTitle": {
+    "description": "ロック中アラートのタイトル"
+  },
+  "lockedMessage": "この問題はサブスクリプション加入者のみ利用できます。",
+  "@lockedMessage": {
+    "description": "ロック中アラートの本文"
+  },
+  "sceneTitle": "{sceneKey}",
+  "@sceneTitle": {
+    "description": "シーン名をそのままタイトルに表示します",
+    "placeholders": {
+      "sceneKey": {}
+    }
+  },
+  "restorePurchase": "購入を復元",
+  "restorePurchaseSubtitle": "以前の購入状態を復元します",
+  "restoringPurchase": "購入履歴を確認中...",
+  "restoreSubscription": "サブスクリプションを復元",
+  "@restoreSubscription": {
+    "description": "以前購入したサブスクリプションを復元するボタンのラベル"
+  },
+  "subscriptionTitle": "サブスクリプション",
+  "subscriptionPlanTitle": "<サブスクリプション詳細>",
+  "subscriptionPlanMonthly": "• プラン名：ベーシックプラン",
+
+  "subscriptionPlanPeriod": "• 期間：1ヶ月",
+  "subscriptionPlanPrice": "• 価格：¥1,500（税込）",
+
+  "subscriptionPlanTrial": "• 未加入の場合：無料プレビューのみ体験可能です。",
+  "subscriptionCurrentStatusTitle": "現在の状態",
+  "subscriptionStatusSubscribed": "• 加入済みの場合：無料プレビューを含むすべての学習場面が開放され、何度でも利用可能。",
+  "subscriptionStatus": "• 加入済み：無料プレビューだけでなく、全3種類の学習場面が全て開放され、全ての場面を何度でも利用可能。",
+  "subscriptionStatusTrial": "未加入：無料プレビューのみ体験可能です。",
+  "subscriptionManageButton": "Apple でサブスクリプション管理を開く",
+  "subscriptionManageNote": "※月額プランの解約・再加入は上記から行えます。",
+  "subscriptionManageTitle": "サブスクリプション詳細",
+  "subscriptionManageSubtitle": "プランの確認、加入はこちら",
+  "subscriptionPriceTaxSuffix": "（税込）",
+  "languageSelectionTitle": "母語を選択",
+  "languageSelectionDescription": "ご利用の言語を選んでください",
+  "similarExpressionPrefix": "別の表現：",
+  "guest": "ゲスト",
+  "@guest": {
+    "description": "匿名ユーザーの場合に表示する名前"
+  },
+  "viewTerms": "利用規約（EULA）を読む",
+  "viewPrivacyPolicy": "プライバシーポリシーを読む",
+  "invalidPassword": "パスワードは6文字以上で入力してください",
+  "@invalidPassword": {
+    "description": "ログイン時のパスワードバリデーションエラーメッセージ（6文字未満の場合）"
+  },
+  "subscriptionStatusUnsubscribed": "未加入",
+  "@subscriptionStatusUnsubscribed": {
+    "description": "ユーザーがサブスクに加入していないときに表示するラベル"
+  },
+  "settings_deleteAccount": "アカウントを削除する",
+  "@settings_deleteAccount": {
+    "description": "メール登録ユーザー向けの「アカウントを削除する」ボタンラベル"
+  },
+
+  "settings_resetData": "データを初期化する",
+  "@settings_resetData": {
+    "description": "匿名ユーザー向けの「データを初期化する」ボタンラベル"
+  },
+
+  "settings_confirmDeleteAccount": "本当にアカウントとすべてのデータを削除しますか？\nこの操作は取り消せません。",
+  "@settings_confirmDeleteAccount": {
+    "description": "アカウント削除時の確認ダイアログメッセージ"
+  },
+
+  "settings_confirmResetData": "本当にデータを初期化しますか？\nこれまでの進捗がすべて消えます。",
+  "@settings_confirmResetData": {
+    "description": "匿名データ初期化時の確認ダイアログメッセージ"
+  },
+  "enterPassword": "パスワードを入力",
+  "@enterPassword": { "description": "アカウント削除時にパスワード再入力を促すダイアログタイトル" },
+
+  "password": "パスワード",
+  "@password": { "description": "パスワード入力フィールドのプレースホルダー" },
+  "cancel": "キャンセル",
+  "@cancel": { "description": "ダイアログのキャンセルボタンラベル" },
+  "ok": "OK",
+  "@ok": { "description": "ダイアログのOKボタンラベル" },
+  "logoutConfirmation": "本当にログアウトしますか？",
+  "viewFaq": "よくある質問",
+  "checking": "判定中です…",
+  "sceneVocabulary": "短文",
+  "subsceneAll": "すべて",
+  "@subsceneAll": {
+    "description": "subSceneフィルタの「すべて」ボタン表示"
+  },
+  "recordingAutoStopped": "録音は10秒で自動停止しました。",
+  "readingLabel": "リーディング",
+  "listeningLabel": "リスニング",
+  "listeningPrompt": "何と言っているでしょうか？",
+  "@sceneWork": {
+    "description": "Scene label for Work"
+  },
+  "sceneWork": "仕事",
+
+  "@sceneSocial_interactions_hobbies": {
+    "description": "Scene label for Social interactions and hobbies"
+  },
+  "sceneSocial_interactions_hobbies": "交流・趣味",
+  "@sceneculture_entertainment": {
+    "description": "Scene label for Culture and Entertainment"
+  },
+  "sceneculture_entertainment": "文化・エンタメ",
+
+  "@scenecommunity_life": {
+    "description": "Scene label for Community life"
+  },
+  "scenecommunity_life": "地域生活",
+  "userAnswerHeader": "あなたの回答",
+  "@userAnswerHeader": { "description": "ユーザーの回答見出し" },
+  "badgeCorrect": "正解",
+  "@badgeCorrect": { "description": "正解ラベル" },
+  "badgeNeedsImprovement": "改善点があります",
+  "@badgeNeedsImprovement": { "description": "不正解ラベル／改善が必要" },
+  "originalTranslationHeader": "オリジナルの翻訳",
+  "@originalTranslationHeader": {"description": "オリジナル文の翻訳の見出し"},
+  "originalTranscriptionHeader": "オリジナルの音声転写",
+  "@originalTranscriptionHeader": {"description": "オリジナル文の音声転写の見出し"},
+  "originalExplanationHeader": "オリジナルの解説",
+  "@originalExplanationHeader": {"description": "オリジナル文の解説の見出し"},
+  "similarExpressionHeader": "フレンドリーな類似表現",
+  "@similarExpressionHeader": {"description": "類似表現の見出し"},
+  "incorrectMessageWithRaw": "{raw} \nこちらの回答は、文法的や意味的に正しくありません。",
+  "@incorrectMessageWithRaw": {
+    "description": "誤答メッセージ。raw はユーザーの回答文字列",
+    "placeholders": {
+      "raw": { "type": "String" }
+    }
+  },
+  "answerMeaningAccurate": "この回答は出題の意味ついて的確に表しています。",
+  "@answerMeaningAccurate": {
+    "description": "ユーザーの回答が出題の意味を的確に表している場合に表示されるメッセージ"
+  },
+  "subscriptionUpsellTitle": "ベーシックプランで学習を続けましょう！",
+  "subscriptionUpsellMessage": "無料プランは体験だけ。本気で話せるようになるなら、今すぐ全シーン解放！"
+}

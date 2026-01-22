@@ -1,0 +1,247 @@
+{
+  "@@locale": "en",
+  "categoryTitle": "Select Category",
+  "targetLanguage": "Target Language",
+  "level": "Level",
+  "scene": "Scene",
+  "start": "Start",
+  "selectPrompt": "Please select all items.",
+  "langJapanese": "Japanese",
+  "langEnglish": "English",
+  "langChineseSimplified": "Chinese (Simplified)",
+  "langChineseTraditional": "Taiwan",
+  "langKorean": "Korean",
+  "langSpanish": "Spanish",
+  "langFrench": "French",
+  "langGerman": "German",
+  "langVietnamese": "Vietnamese",
+  "langIndonesian": "Indonesian",
+  "languageJapanese": "Japanese",
+  "languageEnglish": "English",
+  "languageChineseSimplified": "Chinese (Simplified)",
+  "languageChineseTraditional": "Taiwan",
+  "languageKorean": "Korean",
+  "languageSpanish": "Spanish",
+  "languageFrench": "French",
+  "languageGerman": "German",
+  "languageVietnamese": "Vietnamese",
+  "languageIndonesian": "Indonesian",
+  "levelBeginner": "Beginner",
+  "levelIntermediate": "Intermediate",
+  "levelAdvanced": "Advanced",
+  "sceneTravel": "Travel",
+  "sceneGreeting": "Greeting",
+  "sceneDating": "Dating",
+  "sceneRestaurant": "Restaurant",
+  "sceneShopping": "Shopping",
+  "sceneBusiness": "Business",
+  "selectQuestion": "Please select a question",
+  "translatePrompt": "Let's translate it!",
+  "termsOfService": "Terms of Service",
+  "privacyPolicy": "Privacy Policy",
+  "termsContent": "Before using this app, please read the terms of service below. By using this app, you agree to all terms and conditions.",
+  "privacyContent": "We respect your privacy. Any information collected will only be used to support your learning and improve the app experience.",
+  "termsOfServiceContent": "This app is provided to support language learning.\n\n[Eligibility]\nThis app is intended for all ages. Users under the age of 13 must obtain parental consent before using the app.\n\n[Disclaimer]\nThe app developer shall not be held responsible for any damages or disadvantages resulting from the use of this app.\n\n[Future monetization]\nThe app is currently free, but paid features may be introduced in the future. Any such changes will be announced in advance.\n\n[Termination of Use]\nIf a user violates these terms, the developer may suspend or restrict access without notice.",
+  "privacyPolicyContent": "This app respects user privacy and operates under the following policy:\n\n[Collected Information]\nThe app may collect non-personally identifiable information such as language preferences and usage history.\n\n[Purpose of Use]\nCollected information is used to improve app performance and user experience. It will not be shared with third parties without consent.\n\n[Third-Party Services]\nIf paid features are added in future updates, third-party payment services may be used.\n\n[Data Management]\nAll collected information will be securely managed and stored.",
+  "errorTooLong": "Your message is too long. Please keep it within about 100 characters.",
+  "errorRateLimit": "Too many requests. Please try again in a moment (up to 5 times per minute).",
+  "errorNoMessage": "No message was provided.",
+  "errorServerError": "A server error occurred. Please try again.",
+  "keyboardGuideButton": "If 🌐 doesn't show your target language keyboard, tap here",
+  "keyboardGuideIos": "If the keyboard for your target language does not appear on iOS: Go to Settings > General > Keyboard > Add New Keyboard and select the desired language.",
+  "keyboardGuideAndroid": "If the keyboard for your target language does not appear on Android: Go to Settings > System > Languages & input > Keyboard > Add keyboard and select the desired language.",
+  "keyboardGuideBody": "If the keyboard for your target language is not installed on your smartphone, you won't be able to type in the chat screen. Please follow the steps below to add it:\n\niOS:\nSettings > General > Keyboard > Add New Keyboard\n\nAndroid:\nSettings > Languages & input > Keyboard > Add keyboard",
+  "keyboardGuideTitle": "Keyboard Setup Guide",
+  "ok": "OK",
+  "correct": "That's correct!",
+  "incorrect": "A correction is needed.",
+  "answerMeaningPrefix": "Here's what your answer means.:{translation}",
+  "answerTranslationPrefix": "Correction Example",
+  "invalidMeaning": "{userAnswer}: It doesn't make sense as a learning language.",
+  "@invalidMeaning": {
+    "description": "ユーザーの回答が日本語として意味不明だったときのメッセージ",
+    "placeholders": {
+      "userAnswer": {}
+    }
+  },
+  "errorBrokenGpt": "Sorry, a system error occurred. Please try again.",
+  "@errorBrokenGpt": {
+    "description": "GPTの応答が壊れていたときに表示するメッセージ",
+    "placeholders": {}
+  },
+  "grammarCorrect": "{userAnswer}：It is grammatically correct.",
+  "grammarIncorrect": "{userAnswer}：This is grammatically incorrect.",
+  "@grammarCorrect": {
+    "description": "文法的に正しいときの応答",
+    "placeholders": {
+      "userAnswer": {}
+    }
+  },
+  "@grammarIncorrect": {
+    "description": "文法的に誤っているときの応答",
+    "placeholders": {
+      "userAnswer": {}
+    }
+  },
+  "errorSessionMismatch": "You have been logged in from another device. Please log in again.",
+  "errorPunctuationFailed": "⚠️ Failed to retrieve the punctuated sentence.",
+  "sceneTrial": "Free Preview",
+  "lockedMessage": "Available for subscription to the plan.",
+  "resetPassword": "Reset Password",
+  "enterEmailForReset": "Enter your email address to reset your password.",
+  "sendResetEmail": "Send Reset Email",
+  "passwordResetSent": "A password reset email has been sent.",
+  "passwordResetError": "Failed to send the reset email.",
+  "settingsTitle": "Settings",
+  "welcomeUser": "Welcome, {name}",
+  "registeredDate": "Registered on: {date}",
+  "userFetchFailed": "Failed to fetch user info (Error: {error})",
+  "@userFetchFailed": {
+    "description": "Error message when fetching user info fails",
+    "placeholders": {
+      "error": {}
+    }
+  },
+  "languageUpdated": "Language updated",
+  "registerAccount": "Register Account",
+  "registerSubtitle": "If you change devices or delete the app, your learning history will be lost. Register an account here to save your data.",
+  "loginTitle": "Login",
+  "loginSubtitle": "Already have an account?",
+  "logout": "Log out",
+  "login": "Login",
+  "email": "Email",
+  "password": "Password",
+  "invalidEmail": "Please enter a valid email address",
+  "passwordTooShort": "Password must be at least 6 characters",
+  "loginFailed": "Login failed",
+  "loginError": "Login error",
+  "noAccountRegister": "Don't have an account? Register here",
+  "resetPassword": "Forgot your password?",
+  "register": "Register",
+  "registerFailed": "Registration failed",
+  "purchaseSuccess": "Thank you for your purchase!",
+  "subscribe": "Subscribe",
+  "subscribeNow": "Enjoy a 7-day Free Preview, then join the Basic Plan",
+  "lockedTitle": "Locked",
+  "@lockedTitle": {
+    "description": "Title for locked question alert"
+  },
+  "lockedMessage": "This question is for subscribers only.",
+  "@lockedMessage": {
+    "description": "Body text for locked question alert"
+  },
+  "sceneTitle": "{sceneKey}",
+  "@sceneTitle": {
+    "description": "Displays the scene key as the title",
+    "placeholders": {
+      "sceneKey": {}
+    }
+  },
+  "restorePurchase": "Restore Purchase",
+  "restorePurchaseSubtitle": "Restore your previous subscription status",
+  "restoringPurchase": "Restoring your purchase...",
+  "restoreSubscription": "Restore Subscription",
+  "@restoreSubscription": {
+    "description": "Label for the button that restores a previous subscription purchase"
+  },
+  "subscriptionTitle": "Subscription",
+  "subscriptionPlanTitle": "<Subscription details>",
+  "subscriptionPlanMonthly": "• Plan name: Basic Plan",
+
+  "subscriptionPlanPeriod": "• Duration: 1 month",
+  "subscriptionPlanPrice": "• Price: ¥1,500 (tax included)",
+
+  "subscriptionPlanTrial": "• If you are not a member, you can only try the Free Preview.",
+  "subscriptionCurrentStatusTitle": "Current Status",
+  "subscriptionStatusSubscribed": "• Subscribed: Unlocks all learning scenarios, including the Free Preview, with unlimited use.",
+  "subscriptionStatus": "• Already subscribed: All learning scenarios are open and available.",
+  "subscriptionStatusTrial": "Not a member: Only the Free Preview is available.",
+  "subscriptionManageButton": "Manage Subscription in Apple",
+  "subscriptionManageNote": "※ Cancel or re-subscribe from the link above.",
+  "subscriptionManageTitle": "Subscription Details",
+  "subscriptionManageSubtitle": "Check out the plans and sign up here",
+  "subscriptionPriceTaxSuffix": "(tax included)",
+  "languageSelectionTitle": "Select your native language",
+  "languageSelectionDescription": "Please choose your language",
+  "similarExpressionPrefix": "Alternative expression:",
+  "@@locale": "en",
+  "guest": "GUEST",
+  "@guest": {
+    "description": "Display name for anonymous users in welcome message"
+  },
+  "viewTerms": "Read Terms of Service (EULA)",
+  "viewPrivacyPolicy": "Read Privacy Policy",
+  "invalidPassword": "Password must be at least 6 characters",
+  "@invalidPassword": {
+    "description": "Validation error shown when the password is shorter than 6 characters"
+  },
+  "subscriptionStatusUnsubscribed": "Not subscribed",
+  "@subscriptionStatusUnsubscribed": {
+    "description": "Label shown when the user is not currently subscribed"
+  },
+  "settings_deleteAccount": "Delete Account",
+  "@settings_deleteAccount": {
+    "description": "Label for the delete-account button (registered users)"
+  },
+
+  "settings_resetData": "Reset Data",
+  "@settings_resetData": {
+    "description": "Label for the reset-data button (anonymous users)"
+  },
+
+  "settings_confirmDeleteAccount": "Are you sure you want to delete your account and all data? This action cannot be undone.",
+  "@settings_confirmDeleteAccount": {
+    "description": "Confirmation dialog message when deleting account"
+  },
+
+  "settings_confirmResetData": "Are you sure you want to reset your data? All progress will be lost.",
+  "@settings_confirmResetData": {
+    "description": "Confirmation dialog message when resetting anonymous data"
+  },
+  "enterPassword": "Enter password",
+  "@enterPassword": {
+    "description": "Dialog title prompting user to re-enter password when deleting account"
+  },
+
+  "password": "Password",
+  "@password": {
+    "description": "Placeholder for password input field"
+  },
+  "cancel": "Cancel",
+  "@cancel": { "description": "Dialog cancel button label" },
+  "ok": "OK",
+  "@ok": { "description": "Dialog OK button label" },
+  "logoutConfirmation": "Are you sure you want to log out?",
+  "viewFaq": "Frequently Asked Questions",
+  "checking": "Checking…",
+  "sceneVocabulary": "Short Sentences",
+  "subsceneAll": "All",
+  "@subsceneAll": {
+    "description": "Label for 'All' filter button"
+  },
+  "recordingAutoStopped": "Recording stopped automatically at 10 seconds.",
+  "@recordingAutoStopped": {
+    "description": "Shown when the mic auto-stops after 10 seconds."
+  },
+  "readingLabel": "Reading",
+  "listeningLabel": "Listening",
+  "listeningPrompt": "What is being said?",
+  "sceneWork": "Work",
+  "sceneSocial_interactions_hobbies": "Exchange and hobbies",
+  "sceneculture_entertainment": "Culture & Entertainment",
+  "scenecommunity_life": "Community Life",
+  "userAnswerHeader": "Your answer",
+  "@userAnswerHeader": { "description": "Header before user's answer" },
+  "badgeCorrect": "Correct",
+  "@badgeCorrect": { "description": "Correct badge" },
+  "badgeNeedsImprovement": "Needs improvement",
+  "@badgeNeedsImprovement": { "description": "Incorrect badge / needs improvement" },
+  "originalTranslationHeader": "Original translation",
+  "originalTranscriptionHeader": "Original transcription",
+  "originalExplanationHeader": "Original explanation",
+  "similarExpressionHeader": "Friendly Similar Expression",
+  "incorrectMessageWithRaw": "{raw} \nThis answer is not grammatically or semantically correct.",
+  "answerMeaningAccurate": "This answer accurately reflects the meaning of the question.",
+  "subscriptionUpsellTitle": "Keep learning with the Basic Plan!",
+  "subscriptionUpsellMessage": "The free plan is just a trial. If you truly want to speak, unlock all scenes now!"
+}

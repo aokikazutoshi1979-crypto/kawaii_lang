@@ -1,0 +1,4 @@
+"CFBundleDisplayName" = "Kawaii Lang";
+"NSMicrophoneUsageDescription" = "Sử dụng micro để luyện phát âm. Bản ghi chỉ lưu trên thiết bị.";
+"NSSpeechRecognitionUsageDescription" = "Nhận dạng giọng nói chuyển lời nói thành văn bản để luyện tập. AI cung cấp phản hồi.";
+

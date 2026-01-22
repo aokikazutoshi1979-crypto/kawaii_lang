@@ -1,0 +1,1902 @@
+[
+  {
+    "id": "work_001",
+    "scene": "work",
+    "subScene": "Interviews_JobHunting",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "はじめまして、よろしくお願いします。",
+      "en": "Nice to meet you, nice to meet you.",
+      "zh": "很高兴认识你，很高兴认识你。",
+      "zh_TW": "很高興認識你，很高興認識你。",
+      "ko": "만나서 반갑습니다, 잘 부탁드립니다.",
+      "es": "Encantado de conocerle.",
+      "fr": "Enchanté(e) de vous rencontrer.",
+      "de": "Schön, Sie kennenzulernen.",
+      "vi": "Rất vui được gặp anh/chị.",
+      "id": "Senang bertemu Anda."
+    }
+  },
+  {
+    "id": "work_002",
+    "scene": "work",
+    "subScene": "Interviews_JobHunting",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "自己紹介をさせていただきます。",
+      "en": "I'd like to introduce myself.",
+      "zh": "我想自我介绍一下。",
+      "zh_TW": "我想自我介紹一下。",
+      "ko": "자기 소개를하겠습니다.",
+      "es": "Me gustaría presentarme.",
+      "fr": "Je me présente.",
+      "de": "Ich möchte mich vorstellen.",
+      "vi": "Tôi xin tự giới thiệu.",
+      "id": "Saya ingin memperkenalkan diri."
+    }
+  },
+  {
+    "id": "work_003",
+    "scene": "work",
+    "subScene": "Interviews_JobHunting",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "志望動機をお話しします。",
+      "en": "I'd like to explain my reasons for applying.",
+      "zh": "我想解释一下我申请的原因。",
+      "zh_TW": "我想解釋一下我申請的原因。",
+      "ko": "지망 동기를 말씀드립니다.",
+      "es": "Quisiera explicarle los motivos de mi solicitud.",
+      "fr": "J'aimerais vous expliquer les raisons de ma candidature.",
+      "de": "Ich möchte meine Gründe für meine Bewerbung erläutern.",
+      "vi": "Tôi xin giải thích lý do tôi ứng tuyển.",
+      "id": "Saya ingin menjelaskan alasan saya melamar."
+    }
+  },
+  {
+    "id": "work_004",
+    "scene": "work",
+    "subScene": "Interviews_JobHunting",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "前職では事務を担当していました。",
+      "en": "I was in charge of administrative work in my previous job.",
+      "zh": "我之前的工作是负责行政工作。",
+      "zh_TW": "我之前的工作是負責行政工作。",
+      "ko": "전직에서는 사무를 담당하고 있었습니다.",
+      "es": "En mi anterior trabajo, me encargaba de tareas administrativas.",
+      "fr": "J'étais responsable du travail administratif dans mon précédent emploi.",
+      "de": "In meinem vorherigen Job war ich für die Verwaltung zuständig.",
+      "vi": "Tôi đã phụ trách công việc hành chính ở công việc trước đây.",
+      "id": "Saya bertanggung jawab atas pekerjaan administratif di pekerjaan saya sebelumnya."
+    }
+  },
+  {
+    "id": "work_005",
+    "scene": "work",
+    "subScene": "Interviews_JobHunting",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "強みはコミュニケーション能力です。",
+      "en": "My strength is communication skills.",
+      "zh": "我的优势是沟通能力。",
+      "zh_TW": "我的優勢是溝通能力。",
+      "ko": "강점은 커뮤니케이션 능력입니다.",
+      "es": "Mi punto fuerte son las habilidades de comunicación.",
+      "fr": "Mon point fort est mon sens de la communication.",
+      "de": "Meine Stärke ist die Kommunikationsfähigkeit.",
+      "vi": "Điểm mạnh của tôi là kỹ năng giao tiếp.",
+      "id": "Kekuatan saya adalah kemampuan komunikasi."
+    }
+  },
+  {
+    "id": "work_006",
+    "scene": "work",
+    "subScene": "Interviews_JobHunting",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "弱みは完璧を求めすぎる点です。",
+      "en": "My weakness is that I strive for perfection too much.",
+      "zh": "我的劣势是过于追求完美。",
+      "zh_TW": "我的劣勢是過於追求完美。",
+      "ko": "약점은 완벽을 추구하는 것입니다.",
+      "es": "Mi punto débil es que busco demasiado la perfección.",
+      "fr": "Mon point faible est ma recherche excessive de la perfection.",
+      "de": "Meine Schwäche ist mein übermäßiges Streben nach Perfektion.",
+      "vi": "Điểm yếu của tôi là tôi quá cầu toàn.",
+      "id": "Kelemahan saya adalah saya terlalu mengejar kesempurnaan."
+    }
+  },
+  {
+    "id": "work_007",
+    "scene": "work",
+    "subScene": "Interviews_JobHunting",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "チームで協力した経験についてお話しします。",
+      "en": "I'd like to talk about my experience working on a team.",
+      "zh": "我想谈谈我在团队合作中的经历。",
+      "zh_TW": "我想談談我在團隊合作中的經驗。",
+      "ko": "팀에서 협조한 경험에 대해 이야기합니다.",
+      "es": "Me gustaría hablar de mi experiencia trabajando en equipo.",
+      "fr": "J'aimerais parler de mon expérience de travail en équipe.",
+      "de": "Ich möchte über meine Erfahrungen in der Teamarbeit sprechen.",
+      "vi": "Tôi muốn chia sẻ về kinh nghiệm làm việc nhóm của mình.",
+      "id": "Saya ingin bercerita tentang pengalaman saya bekerja dalam tim."
+    }
+  },
+  {
+    "id": "work_008",
+    "scene": "work",
+    "subScene": "Interviews_JobHunting",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "5年後のキャリア目標はマネージャーになることです。",
+      "en": "My career goal in five years is to become a manager.",
+      "zh": "我五年后的职业目标是成为一名经理。",
+      "zh_TW": "我五年後的職業目標是成為經理。",
+      "ko": "5년 후 경력 목표는 매니저가 되는 것입니다.",
+      "es": "Mi objetivo profesional en cinco años es convertirme en gerente.",
+      "fr": "Mon objectif de carrière dans cinq ans est de devenir manager.",
+      "de": "Mein Karriereziel in fünf Jahren ist es, eine Führungsposition zu übernehmen.",
+      "vi": "Mục tiêu nghề nghiệp của tôi trong 5 năm tới là trở thành quản lý.",
+      "id": "Tujuan karier saya dalam lima tahun ke depan adalah menjadi seorang manajer."
+    }
+  },
+  {
+    "id": "work_009",
+    "scene": "work",
+    "subScene": "Interviews_JobHunting",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "御社に入社できたら、どのように貢献できますか？",
+      "en": "How can I contribute if I join your company?",
+      "zh": "如果我加入贵公司，我能为贵公司做出什么贡献？",
+      "zh_TW": "如果我加入貴公司，我能為貴公司做出什麼貢獻？",
+      "ko": "귀사에 입사할 수 있다면 어떻게 기여할 수 있습니까?",
+      "es": "¿Cómo puedo aportar si me uno a su empresa?",
+      "fr": "Comment puis-je contribuer à votre entreprise ?",
+      "de": "Wie kann ich mich in Ihrem Unternehmen einbringen?",
+      "vi": "Tôi có thể đóng góp gì nếu gia nhập công ty anh/chị?",
+      "id": "Apa kontribusi saya jika saya bergabung dengan perusahaan Anda?"
+    }
+  },
+  {
+    "id": "work_010",
+    "scene": "work",
+    "subScene": "Interviews_JobHunting",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "最後に質問してもよろしいでしょうか？",
+      "en": "May I ask a final question?",
+      "zh": "我可以问最后一个问题吗？",
+      "zh_TW": "我可以問最後一個問題嗎？",
+      "ko": "마지막으로 질문해 주시겠습니까?",
+      "es": "¿Puedo hacerle una última pregunta?",
+      "fr": "Puis-je poser une dernière question ?",
+      "de": "Darf ich eine letzte Frage stellen?",
+      "vi": "Tôi có thể hỏi một câu hỏi cuối cùng được không?",
+      "id": "Bolehkah saya mengajukan pertanyaan terakhir?"
+    }
+  },
+  {
+    "id": "work_011",
+    "scene": "work",
+    "subScene": "BusinessMeetings",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "本日の議題をご確認ください。",
+      "en": "Please review today's agenda.",
+      "zh": "请回顾一下今天的议程。",
+      "zh_TW": "請回顧一下今天的議程。",
+      "ko": "오늘의 의제를 확인해 주세요.",
+      "es": "Por favor, revise la agenda de hoy.",
+      "fr": "Veuillez consulter l'ordre du jour.",
+      "de": "Bitte werfen Sie einen Blick auf die Tagesordnung.",
+      "vi": "Vui lòng xem lại chương trình nghị sự hôm nay.",
+      "id": "Mohon tinjau agenda hari ini."
+    }
+  },
+  {
+    "id": "work_012",
+    "scene": "work",
+    "subScene": "BusinessMeetings",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "まずは現状の報告をお願いします。",
+      "en": "First, please report on the current situation.",
+      "zh": "首先，请汇报一下目前的情况。",
+      "zh_TW": "首先，請報告一下目前的情況。",
+      "ko": "우선은 현상의 보고를 부탁합니다.",
+      "es": "Primero, por favor, infórmeme sobre la situación actual.",
+      "fr": "Veuillez d'abord faire le point sur la situation actuelle.",
+      "de": "Zunächst möchte ich über die aktuelle Situation berichten.",
+      "vi": "Trước tiên, vui lòng báo cáo về tình hình hiện tại.",
+      "id": "Pertama, mohon laporkan situasi terkini."
+    }
+  },
+  {
+    "id": "work_013",
+    "scene": "work",
+    "subScene": "BusinessMeetings",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "この案についてご意見はありますか？",
+      "en": "Do you have any opinions on this proposal?",
+      "zh": "你对这个提议有什么意见吗？",
+      "zh_TW": "你對這個提議有什麼意見嗎？",
+      "ko": "이 제안에 대한 의견이 있습니까?",
+      "es": "¿Tiene alguna opinión sobre esta propuesta?",
+      "fr": "Avez-vous un avis sur cette proposition ?",
+      "de": "Haben Sie Anmerkungen zu diesem Vorschlag?",
+      "vi": "Anh/chị có ý kiến ​​gì về đề xuất này không?",
+      "id": "Apakah Anda memiliki pendapat tentang proposal ini?"
+    }
+  },
+  {
+    "id": "work_014",
+    "scene": "work",
+    "subScene": "BusinessMeetings",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "賛成の方はいらっしゃいますか？",
+      "en": "Is there anyone in favor?",
+      "zh": "有人赞成吗？",
+      "zh_TW": "有人贊成嗎？",
+      "ko": "찬성하는 분은 계십니까?",
+      "es": "¿Alguien está a favor?",
+      "fr": "Y a-t-il quelqu'un pour ?",
+      "de": "Ist jemand dafür?",
+      "vi": "Có ai ủng hộ không?",
+      "id": "Apakah ada yang setuju?"
+    }
+  },
+  {
+    "id": "work_015",
+    "scene": "work",
+    "subScene": "BusinessMeetings",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "反対意見をお持ちの方は？",
+      "en": "Is there anyone opposed?",
+      "zh": "有人反对吗？",
+      "zh_TW": "有人反對嗎？",
+      "ko": "반대 의견을 가지고 계신 분은?",
+      "es": "¿Alguien estaría en desacuerdo?",
+      "fr": "Y a-t-il quelqu'un contre ?",
+      "de": "Ist jemand anderer Meinung?",
+      "vi": "Có ai phản đối không?",
+      "id": "Apakah ada yang tidak setuju?"
+    }
+  },
+  {
+    "id": "work_016",
+    "scene": "work",
+    "subScene": "BusinessMeetings",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "追加の提案をしてもよろしいですか？",
+      "en": "May I make an additional suggestion?",
+      "zh": "我可以提一个补充建议吗？",
+      "zh_TW": "我可以提一個補充建議嗎？",
+      "ko": "추가 제안을 하시겠습니까?",
+      "es": "¿Puedo hacer una sugerencia adicional?",
+      "fr": "Puis-je faire une suggestion supplémentaire ?",
+      "de": "Darf ich einen zusätzlichen Vorschlag machen?",
+      "vi": "Tôi có thể đưa ra thêm đề xuất không?",
+      "id": "Bolehkah saya memberikan saran tambahan?"
+    }
+  },
+  {
+    "id": "work_017",
+    "scene": "work",
+    "subScene": "BusinessMeetings",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "詳細については後日検討しましょう。",
+      "en": "Let's discuss the details later.",
+      "zh": "我们稍后再讨论细节。",
+      "zh_TW": "我們稍後再討論細節。",
+      "ko": "자세한 내용은 나중에 검토합시다.",
+      "es": "Hablaremos de los detalles más adelante.",
+      "fr": "Nous discuterons des détails plus tard.",
+      "de": "Lassen Sie uns die Details zu einem späteren Zeitpunkt besprechen.",
+      "vi": "Chúng ta sẽ thảo luận chi tiết sau.",
+      "id": "Mari kita bahas detailnya nanti."
+    }
+  },
+  {
+    "id": "work_018",
+    "scene": "work",
+    "subScene": "BusinessMeetings",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "本日の会議の結論をまとめます。",
+      "en": "I'd like to summarize the conclusions of today's meeting.",
+      "zh": "我想总结一下今天会议的结论。",
+      "zh_TW": "我想總結一下今天會議的結論。",
+      "ko": "오늘의 회의의 결론을 정리합니다.",
+      "es": "Resumiré las conclusiones de la reunión de hoy.",
+      "fr": "Je voudrais résumer les conclusions de la réunion d'aujourd'hui.",
+      "de": "Ich möchte die Ergebnisse des heutigen Meetings zusammenfassen.",
+      "vi": "Tôi muốn tóm tắt kết luận của cuộc họp hôm nay.",
+      "id": "Saya akan merangkum kesimpulan dari rapat hari ini."
+    }
+  },
+  {
+    "id": "work_019",
+    "scene": "work",
+    "subScene": "BusinessMeetings",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "次回の会議は来週に設定しましょう。",
+      "en": "Let's schedule the next meeting for next week.",
+      "zh": "我们安排下周举行下一次会议。",
+      "zh_TW": "我們安排下週舉行下一次會議。",
+      "ko": "다음 회의는 다음 주에 설정합시다.",
+      "es": "Programaremos la próxima reunión para la semana que viene.",
+      "fr": "Nous fixons la prochaine réunion pour la semaine prochaine.",
+      "de": "Lassen Sie uns das nächste Meeting für nächste Woche planen.",
+      "vi": "Chúng ta hãy lên lịch cuộc họp tiếp theo vào tuần tới.",
+      "id": "Mari kita jadwalkan rapat berikutnya untuk minggu depan."
+    }
+  },
+  {
+    "id": "work_020",
+    "scene": "work",
+    "subScene": "BusinessMeetings",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "会議に参加いただきありがとうございました。",
+      "en": "Thank you for attending this meeting.",
+      "zh": "感谢您参加这次会议。",
+      "zh_TW": "感謝您參加這次會議。",
+      "ko": "회의에 참석해 주셔서 감사합니다.",
+      "es": "Gracias por participar en esta reunión.",
+      "fr": "Merci de votre présence.",
+      "de": "Vielen Dank für Ihre Teilnahme.",
+      "vi": "Cảm ơn anh/chị đã tham dự cuộc họp này.",
+      "id": "Terima kasih telah berpartisipasi dalam rapat ini."
+    }
+  },
+  {
+    "id": "work_021",
+    "scene": "work",
+    "subScene": "Career_HumanResources",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "昇進についての面談を始めます。",
+      "en": "I'll begin the promotion interview.",
+      "zh": "我现在开始晋升面试。",
+      "zh_TW": "我現在開始晉升面試。",
+      "ko": "승진에 ​​대한 면담을 시작합니다.",
+      "es": "Comenzaremos nuestra entrevista de ascenso.",
+      "fr": "Je vais commencer l'entretien de promotion.",
+      "de": "Wir beginnen nun mit dem Beförderungsgespräch.",
+      "vi": "Tôi sẽ bắt đầu buổi phỏng vấn thăng chức.",
+      "id": "Kita akan memulai wawancara promosi."
+    }
+  },
+  {
+    "id": "work_022",
+    "scene": "work",
+    "subScene": "Career_HumanResources",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "あなたの今期の成果を振り返りましょう。",
+      "en": "Let's review your achievements this quarter.",
+      "zh": "让我们回顾一下您本季度的业绩。",
+      "zh_TW": "讓我們回顧一下您本季的業績。",
+      "ko": "이번 시즌의 성과를 되돌아보자.",
+      "es": "Repasemos tus logros de este trimestre.",
+      "fr": "Passons en revue vos réalisations de ce trimestre.",
+      "de": "Lassen Sie uns Ihre Erfolge in diesem Quartal Revue passieren lassen.",
+      "vi": "Chúng ta hãy cùng xem lại những thành tích của anh/chị trong quý này.",
+      "id": "Mari kita tinjau pencapaian Anda di kuartal ini."
+    }
+  },
+  {
+    "id": "work_023",
+    "scene": "work",
+    "subScene": "Career_HumanResources",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "強みはどの部分にあると思いますか？",
+      "en": "What areas do you think are your strengths?",
+      "zh": "您认为自己的优势是什么？",
+      "zh_TW": "您認為自己的優勢是什麼？",
+      "ko": "강점은 어느 부분에 있다고 생각하십니까?",
+      "es": "¿Cuáles consideras que son tus fortalezas?",
+      "fr": "Quels sont, selon vous, vos points forts ?",
+      "de": "Was sind Ihrer Meinung nach Ihre Stärken?",
+      "vi": "Bạn nghĩ mình có điểm mạnh nào?",
+      "id": "Apa saja kekuatan Anda?"
+    }
+  },
+  {
+    "id": "work_024",
+    "scene": "work",
+    "subScene": "Career_HumanResources",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "改善すべき点は何だと考えていますか？",
+      "en": "What do you think are areas for improvement?",
+      "zh": "您认为哪些方面需要改进？",
+      "zh_TW": "您認為哪些方面需要改進？",
+      "ko": "개선해야 할 점은 무엇이라고 생각합니까?",
+      "es": "¿Qué áreas crees que necesitan mejorar?",
+      "fr": "Quels sont, selon vous, vos points à améliorer ?",
+      "de": "In welchen Bereichen besteht Ihrer Meinung nach Verbesserungsbedarf?",
+      "vi": "Bạn nghĩ mình cần cải thiện những điểm nào?",
+      "id": "Area apa yang menurut Anda perlu ditingkatkan?"
+    }
+  },
+  {
+    "id": "work_025",
+    "scene": "work",
+    "subScene": "Career_HumanResources",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "次の目標を一緒に設定しましょう。",
+      "en": "Let's set your next goal together.",
+      "zh": "让我们一起设定您的下一个目标。",
+      "zh_TW": "讓我們一起設定您的下一個目標。",
+      "ko": "다음 목표를 함께 설정합시다.",
+      "es": "Definamos juntos tus próximos objetivos.",
+      "fr": "Définissons ensemble votre prochain objectif.",
+      "de": "Lassen Sie uns gemeinsam Ihre nächsten Ziele festlegen.",
+      "vi": "Chúng ta hãy cùng nhau đặt ra mục tiêu tiếp theo.",
+      "id": "Mari kita tetapkan tujuan Anda selanjutnya bersama-sama."
+    }
+  },
+  {
+    "id": "work_026",
+    "scene": "work",
+    "subScene": "Career_HumanResources",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "異動の希望はありますか？",
+      "en": "Are you interested in moving?",
+      "zh": "您有兴趣搬家吗？",
+      "zh_TW": "您有興趣搬家嗎？",
+      "ko": "이동의 희망이 있습니까?",
+      "es": "¿Te gustaría que te transfirieran?",
+      "fr": "Souhaitez-vous évoluer ?",
+      "de": "Sind Sie an einer Versetzung interessiert?",
+      "vi": "Bạn có muốn chuyển việc không?",
+      "id": "Apakah Anda ingin dipindahkan?"
+    }
+  },
+  {
+    "id": "work_027",
+    "scene": "work",
+    "subScene": "Career_HumanResources",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ワークライフバランスはどうですか？",
+      "en": "How is your work-life balance?",
+      "zh": "您的工作与生活平衡如何？",
+      "zh_TW": "您的工作與生活平衡如何？",
+      "ko": "일생활 균형은 어떻습니까?",
+      "es": "¿Cómo es tu equilibrio entre vida laboral y personal?",
+      "fr": "Comment conciliez-vous vie professionnelle et vie privée ?",
+      "de": "Wie ist Ihre Work-Life-Balance?",
+      "vi": "Bạn cân bằng công việc và cuộc sống như thế nào?",
+      "id": "Bagaimana keseimbangan kehidupan kerja Anda?"
+    }
+  },
+  {
+    "id": "work_028",
+    "scene": "work",
+    "subScene": "Career_HumanResources",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "給与や待遇について質問はありますか？",
+      "en": "Do you have any questions about salary or benefits?",
+      "zh": "您对薪资或福利有什么疑问吗？",
+      "zh_TW": "您對薪資或福利有什麼疑問嗎？",
+      "ko": "급여나 대우에 대한 질문이 있나요?",
+      "es": "¿Tienes alguna pregunta sobre salario o beneficios?",
+      "fr": "Avez-vous des questions concernant votre salaire ou vos avantages sociaux ?",
+      "de": "Haben Sie Fragen zu Gehalt oder Zusatzleistungen?",
+      "vi": "Bạn có thắc mắc nào về lương hoặc phúc lợi không?",
+      "id": "Apakah Anda memiliki pertanyaan tentang gaji atau tunjangan?"
+    }
+  },
+  {
+    "id": "work_029",
+    "scene": "work",
+    "subScene": "Career_HumanResources",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "フィードバックを受けてどう感じましたか？",
+      "en": "How did you feel about receiving the feedback?",
+      "zh": "收到反馈后您有何感想？",
+      "zh_TW": "收到回饋後有何感想？",
+      "ko": "피드백을 받고 어떻게 느꼈습니까?",
+      "es": "¿Cómo te sentiste al recibir la retroalimentación?",
+      "fr": "Qu'avez-vous pensé de nos commentaires ?",
+      "de": "Wie haben Sie das Feedback empfunden?",
+      "vi": "Bạn cảm thấy thế nào khi nhận được phản hồi?",
+      "id": "Bagaimana perasaan Anda setelah menerima umpan balik ini?"
+    }
+  },
+  {
+    "id": "work_030",
+    "scene": "work",
+    "subScene": "Career_HumanResources",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "今後のキャリアプランを教えてください。",
+      "en": "What are your future career plans?",
+      "zh": "您未来的职业规划是什么？",
+      "zh_TW": "您未來的職涯規劃是什麼？",
+      "ko": "향후 경력 계획을 알려주십시오.",
+      "es": "Cuéntanos sobre tus planes de carrera para el futuro.",
+      "fr": "Quels sont vos projets de carrière ?",
+      "de": "Wie sehen Ihre zukünftigen Karrierepläne aus?",
+      "vi": "Kế hoạch nghề nghiệp tương lai của bạn là gì?",
+      "id": "Ceritakan tentang rencana karier Anda di masa mendatang."
+    }
+  },
+  {
+    "id": "work_031",
+    "scene": "work",
+    "subScene": "ClientRelations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "本日はご来社いただきありがとうございます。",
+      "en": "Thank you for visiting us today.",
+      "zh": "感谢您今天的光临。",
+      "zh_TW": "感謝您今天的光臨。",
+      "ko": "오늘은 내사해 주셔서 감사합니다.",
+      "es": "Gracias por visitarnos hoy.",
+      "fr": "Merci de votre visite aujourd'hui.",
+      "de": "Vielen Dank für Ihren heutigen Besuch.",
+      "vi": "Cảm ơn bạn đã ghé thăm chúng tôi hôm nay.",
+      "id": "Terima kasih telah mengunjungi kami hari ini."
+    }
+  },
+  {
+    "id": "work_032",
+    "scene": "work",
+    "subScene": "ClientRelations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "どのような商品・サービスをお探しですか？",
+      "en": "What products or services are you looking for?",
+      "zh": "您正在寻找哪些产品或服务？",
+      "zh_TW": "您正在尋找哪些產品或服務？",
+      "ko": "어떤 제품과 서비스를 찾고 계십니까?",
+      "es": "¿Qué productos o servicios buscas?",
+      "fr": "Quels produits ou services recherchez-vous ?",
+      "de": "Welche Produkte oder Dienstleistungen suchen Sie?",
+      "vi": "Bạn đang tìm kiếm sản phẩm hoặc dịch vụ nào?",
+      "id": "Produk atau layanan apa yang Anda cari?"
+    }
+  },
+  {
+    "id": "work_033",
+    "scene": "work",
+    "subScene": "ClientRelations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ご要望を詳しくお聞かせください。",
+      "en": "Please tell us in detail about your requests.",
+      "zh": "请详细告诉我们您的需求。",
+      "zh_TW": "請詳細告訴我們您的需求。",
+      "ko": "요청을 자세히 알려주십시오.",
+      "es": "Por favor, cuéntanos en detalle tus solicitudes.",
+      "fr": "Veuillez nous détailler vos demandes.",
+      "de": "Bitte beschreiben Sie uns Ihre Wünsche detailliert.",
+      "vi": "Vui lòng cho chúng tôi biết chi tiết về yêu cầu của bạn.",
+      "id": "Mohon beri tahu kami secara detail tentang permintaan Anda."
+    }
+  },
+  {
+    "id": "work_034",
+    "scene": "work",
+    "subScene": "ClientRelations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "このプランの特徴をご説明します。",
+      "en": "We will explain the features of this plan.",
+      "zh": "我们将为您解释该计划的特点。",
+      "zh_TW": "我們將為您解釋該計劃的特點。",
+      "ko": "이 플랜의 특징을 설명합니다.",
+      "es": "Te explicaré las características de este plan.",
+      "fr": "Nous vous expliquerons les caractéristiques de ce plan.",
+      "de": "Wir erläutern Ihnen die Merkmale dieses Plans.",
+      "vi": "Chúng tôi sẽ giải thích các tính năng của gói dịch vụ này.",
+      "id": "Saya akan menjelaskan fitur-fitur dari paket ini."
+    }
+  },
+  {
+    "id": "work_035",
+    "scene": "work",
+    "subScene": "ClientRelations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "他社との違いは品質です。",
+      "en": "What sets us apart from other companies is quality.",
+      "zh": "我们与其他公司的不同之处在于质量。",
+      "zh_TW": "我們與其他公司的不同之處在於品質。",
+      "ko": "타사와의 차이는 품질입니다.",
+      "es": "La calidad es lo que nos diferencia de otras empresas.",
+      "fr": "Ce qui nous distingue des autres entreprises, c'est la qualité.",
+      "de": "Was uns von anderen Unternehmen unterscheidet, ist Qualität.",
+      "vi": "Chất lượng là yếu tố tạo nên sự khác biệt của chúng tôi so với các công ty khác.",
+      "id": "Kualitaslah yang membedakan kami dari perusahaan lain."
+    }
+  },
+  {
+    "id": "work_036",
+    "scene": "work",
+    "subScene": "ClientRelations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ご不明点はございますか？",
+      "en": "Do you have any questions?",
+      "zh": "您有什么问题吗？",
+      "zh_TW": "您有什麼問題嗎？",
+      "ko": "궁금한 점이 있습니까?",
+      "es": "¿Tienes alguna pregunta?",
+      "fr": "Avez-vous des questions ?",
+      "de": "Haben Sie Fragen?",
+      "vi": "Bạn có thắc mắc nào không?",
+      "id": "Apakah Anda memiliki pertanyaan?"
+    }
+  },
+  {
+    "id": "work_037",
+    "scene": "work",
+    "subScene": "ClientRelations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ご提案にご満足いただけましたか？",
+      "en": "Are you satisfied with our proposal?",
+      "zh": "您对我们的方案满意吗？",
+      "zh_TW": "您對我們的方案滿意嗎？",
+      "ko": "제안에 만족하셨습니까?",
+      "es": "¿Estás satisfecho con nuestra propuesta?",
+      "fr": "Êtes-vous satisfait de notre proposition ?",
+      "de": "Sind Sie mit unserem Angebot zufrieden?",
+      "vi": "Bạn có hài lòng với đề xuất của chúng tôi không?",
+      "id": "Apakah Anda puas dengan proposal kami?"
+    }
+  },
+  {
+    "id": "work_038",
+    "scene": "work",
+    "subScene": "ClientRelations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "修正や追加のご希望はありますか？",
+      "en": "Are there any revisions or additions you would like to make?",
+      "zh": "您想修改或补充哪些内容？",
+      "zh_TW": "您想修改或補充哪些內容？",
+      "ko": "수정 또는 추가 희망이 있습니까?",
+      "es": "¿Hay alguna revisión o adición que te gustaría hacer?",
+      "fr": "Souhaitez-vous apporter des modifications ou des ajouts ?",
+      "de": "Möchten Sie Änderungen oder Ergänzungen vornehmen?",
+      "vi": "Bạn có muốn sửa đổi hoặc bổ sung điều khoản nào không?",
+      "id": "Apakah ada revisi atau tambahan yang ingin Anda buat?"
+    }
+  },
+  {
+    "id": "work_039",
+    "scene": "work",
+    "subScene": "ClientRelations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "今回はこの条件で進めてもよろしいでしょうか？",
+      "en": "Is it okay to proceed with these terms this time?",
+      "zh": "这次可以继续执行这些条款吗？",
+      "zh_TW": "這次可以繼續執行這些條款嗎？",
+      "ko": "이번은 이 조건으로 진행해도 좋을까요?",
+      "es": "¿Te parece bien continuar con estos términos esta vez?",
+      "fr": "Acceptez-vous ces conditions cette fois-ci ?",
+      "de": "Können wir dieses Mal mit diesen Bedingungen fortfahren?",
+      "vi": "Lần này chúng tôi có thể tiếp tục với những điều khoản này không?",
+      "id": "Apakah Anda setuju untuk melanjutkan dengan persyaratan ini kali ini?"
+    }
+  },
+  {
+    "id": "work_040",
+    "scene": "work",
+    "subScene": "ClientRelations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "今後ともよろしくお願いいたします。",
+      "en": "We look forward to working with you in the future.",
+      "zh": "我们期待着未来与您合作。",
+      "zh_TW": "我們期待未來與您合作。",
+      "ko": "앞으로도 잘 부탁드립니다.",
+      "es": "Esperamos trabajar contigo en el futuro.",
+      "fr": "Nous nous réjouissons de collaborer avec vous.",
+      "de": "Wir freuen uns auf die zukünftige Zusammenarbeit mit Ihnen.",
+      "vi": "Chúng tôi mong muốn được hợp tác với bạn trong tương lai.",
+      "id": "Kami berharap dapat bekerja sama dengan Anda di masa mendatang."
+    }
+  },
+  {
+    "id": "work_041",
+    "scene": "work",
+    "subScene": "Email_BusinessDocuments",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "先日の会議の資料を送付いたします。",
+      "en": "I have sent you the materials from the recent meeting.",
+      "zh": "我已将最近会议的材料发送给您。",
+      "zh_TW": "我已將最近會議的資料發送給您。",
+      "ko": "요 전날 회의 자료를 보내드립니다.",
+      "es": "Le envío los materiales de la reciente reunión.",
+      "fr": "Je vous ai envoyé les documents de la récente réunion.",
+      "de": "Ich habe Ihnen die Unterlagen vom letzten Meeting zugesandt.",
+      "vi": "Tôi đã gửi cho bạn tài liệu từ cuộc họp gần đây.",
+      "id": "Saya mengirimkan materi dari rapat baru-baru ini."
+    }
+  },
+  {
+    "id": "work_042",
+    "scene": "work",
+    "subScene": "Email_BusinessDocuments",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ご依頼いただいた件について回答いたします。",
+      "en": "I will respond to your request.",
+      "zh": "我会回复您的请求。",
+      "zh_TW": "我會回覆您的請求。",
+      "ko": "의뢰해 주신 건에 대해 대답하겠습니다.",
+      "es": "Estoy respondiendo a su solicitud.",
+      "fr": "Je répondrai à votre demande.",
+      "de": "Ich werde auf Ihre Anfrage antworten.",
+      "vi": "Tôi sẽ phản hồi yêu cầu của bạn.",
+      "id": "Saya menanggapi permintaan Anda."
+    }
+  },
+  {
+    "id": "work_043",
+    "scene": "work",
+    "subScene": "Email_BusinessDocuments",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "お忙しいところ恐れ入りますが、ご確認ください。",
+      "en": "I apologize for bothering you during your busy schedule, but please check them.",
+      "zh": "很抱歉在您百忙之中打扰您，请您查看。",
+      "zh_TW": "很抱歉在您百忙之中打擾您，請您查看。",
+      "ko": "바쁜 곳에 죄송하지만 확인하십시오.",
+      "es": "Disculpe la molestia, pero por favor, revíselos.",
+      "fr": "Veuillez nous excuser pour le dérangement dû à votre emploi du temps chargé, mais veuillez les consulter.",
+      "de": "Ich entschuldige mich für die Unannehmlichkeiten, aber bitte überprüfen Sie sie.",
+      "vi": "Tôi xin lỗi vì đã làm phiền bạn trong thời gian bận rộn, nhưng vui lòng kiểm tra lại.",
+      "id": "Mohon maaf telah mengganggu Anda, tetapi mohon periksa kembali."
+    }
+  },
+  {
+    "id": "work_044",
+    "scene": "work",
+    "subScene": "Email_BusinessDocuments",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ご不明点がありましたらお知らせください。",
+      "en": "Please let us know if you have any questions.",
+      "zh": "如有任何疑问，请告知我们。",
+      "zh_TW": "如有任何疑問，請告知我們。",
+      "ko": "문의 사항이 있으시면 알려주십시오.",
+      "es": "Si tiene alguna pregunta, por favor, avíseme.",
+      "fr": "N'hésitez pas à nous contacter si vous avez des questions.",
+      "de": "Bitte lassen Sie uns wissen, wenn Sie Fragen haben.",
+      "vi": "Vui lòng cho chúng tôi biết nếu bạn có bất kỳ câu hỏi nào.",
+      "id": "Mohon beri tahu saya jika Anda memiliki pertanyaan."
+    }
+  },
+  {
+    "id": "work_045",
+    "scene": "work",
+    "subScene": "Email_BusinessDocuments",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "期限までにご返信いただけますでしょうか。",
+      "en": "Could you please respond by the deadline?",
+      "zh": "您能在截止日期前回复吗？",
+      "zh_TW": "您能在截止日期前回覆嗎？",
+      "ko": "기한까지 회신해 주시겠습니까?",
+      "es": "¿Podría responder antes de la fecha límite?",
+      "fr": "Pourriez-vous répondre avant la date limite ?",
+      "de": "Könnten Sie bitte innerhalb der Frist antworten?",
+      "vi": "Bạn có thể phản hồi trước thời hạn không?",
+      "id": "Bisakah Anda merespons sebelum batas waktu?"
+    }
+  },
+  {
+    "id": "work_046",
+    "scene": "work",
+    "subScene": "Email_BusinessDocuments",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "添付ファイルをご参照ください。",
+      "en": "Please refer to the attached file.",
+      "zh": "请参阅附件。",
+      "zh_TW": "請參閱附件。",
+      "ko": "첨부 파일을 참조하십시오.",
+      "es": "Consulte el archivo adjunto.",
+      "fr": "Veuillez consulter le fichier joint.",
+      "de": "Bitte beachten Sie die angehängte Datei.",
+      "vi": "Vui lòng tham khảo tệp đính kèm.",
+      "id": "Silakan lihat berkas terlampir."
+    }
+  },
+  {
+    "id": "work_047",
+    "scene": "work",
+    "subScene": "Email_BusinessDocuments",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ご対応いただき、誠にありがとうございます。",
+      "en": "Thank you very much for your response.",
+      "zh": "非常感谢您的回复。",
+      "zh_TW": "非常感謝您的回覆。",
+      "ko": "대응해 주셔서 감사합니다.",
+      "es": "Muchas gracias por su respuesta.",
+      "fr": "Merci beaucoup pour votre réponse.",
+      "de": "Vielen Dank für Ihre Antwort.",
+      "vi": "Cảm ơn bạn rất nhiều vì đã phản hồi.",
+      "id": "Terima kasih banyak atas tanggapan Anda."
+    }
+  },
+  {
+    "id": "work_048",
+    "scene": "work",
+    "subScene": "Email_BusinessDocuments",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "申し訳ございませんが、再度ご確認をお願いいたします。",
+      "en": "We apologize for the inconvenience, but please check again.",
+      "zh": "不便之处，敬请谅解，请再次查看。",
+      "zh_TW": "不便之處，敬請諒解，請再次查看。",
+      "ko": "죄송합니다, 다시 확인을 부탁드립니다.",
+      "es": "Disculpe las molestias, pero por favor, revíselos de nuevo.",
+      "fr": "Nous vous prions de nous excuser pour la gêne occasionnée, mais veuillez vérifier à nouveau.",
+      "de": "Es tut mir leid, aber bitte bestätigen Sie es noch einmal.",
+      "vi": "Chúng tôi xin lỗi vì sự bất tiện này, nhưng vui lòng kiểm tra lại.",
+      "id": "Mohon maaf atas ketidaknyamanan ini, tetapi mohon periksa kembali."
+    }
+  },
+  {
+    "id": "work_049",
+    "scene": "work",
+    "subScene": "Email_BusinessDocuments",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ご提案についてご検討いただけますでしょうか。",
+      "en": "Would you consider our proposal?",
+      "zh": "您会考虑我们的建议吗？",
+      "zh_TW": "您會考慮我們的建議嗎？",
+      "ko": "제안에 대해 고려해 주시겠습니까?",
+      "es": "¿Consideraría mi propuesta?",
+      "fr": "Considéreriez-vous notre proposition ?",
+      "de": "Würden Sie meinen Vorschlag berücksichtigen?",
+      "vi": "Bạn có thể xem xét đề xuất của chúng tôi không?",
+      "id": "Maukah Anda mempertimbangkan proposal saya?"
+    }
+  },
+  {
+    "id": "work_050",
+    "scene": "work",
+    "subScene": "Email_BusinessDocuments",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "引き続きよろしくお願いいたします。",
+      "en": "Thank you for your continued support.",
+      "zh": "感谢您一直以来的支持。",
+      "zh_TW": "感謝您一直以來的支持。",
+      "ko": "계속해서 잘 부탁드립니다.",
+      "es": "Gracias por su continuo apoyo.",
+      "fr": "Merci pour votre soutien continu.",
+      "de": "Vielen Dank für Ihre anhaltende Unterstützung.",
+      "vi": "Cảm ơn sự ủng hộ liên tục của bạn.",
+      "id": "Terima kasih atas dukungan Anda yang berkelanjutan."
+    }
+  },
+  {
+    "id": "work_051",
+    "scene": "work",
+    "subScene": "Negotiations_Transactions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "本日の交渉を始めさせていただきます。",
+      "en": "We will begin our negotiations today.",
+      "zh": "让我们开始今天的谈判吧。",
+      "zh_TW": "讓我們開始今天的談判。",
+      "ko": "오늘의 협상을 시작하겠습니다.",
+      "es": "Comenzaremos las negociaciones hoy.",
+      "fr": "Commençons les négociations d'aujourd'hui.",
+      "de": "Wir beginnen heute mit unseren Verhandlungen.",
+      "vi": "Chúng ta hãy bắt đầu cuộc đàm phán hôm nay.",
+      "id": "Kita akan memulai negosiasi hari ini."
+    }
+  },
+  {
+    "id": "work_052",
+    "scene": "work",
+    "subScene": "Negotiations_Transactions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "この条件についてどのようにお考えですか？",
+      "en": "What do you think about these terms?",
+      "zh": "您觉得这些条款怎么样？",
+      "zh_TW": "您覺得這些條款怎麼樣？",
+      "ko": "이 조건에 대해 어떻게 생각하십니까?",
+      "es": "¿Qué opina de estas condiciones?",
+      "fr": "Que pensez-vous de ces conditions ?",
+      "de": "Was halten Sie von diesen Bedingungen?",
+      "vi": "Ông/bà nghĩ gì về những điều khoản này?",
+      "id": "Bagaimana pendapat Anda tentang persyaratan ini?"
+    }
+  },
+  {
+    "id": "work_053",
+    "scene": "work",
+    "subScene": "Negotiations_Transactions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "値下げの余地はございますか？",
+      "en": "Is there room for price reduction?",
+      "zh": "价格还有降价空间吗？",
+      "zh_TW": "價格還有降價空間嗎？",
+      "ko": "가격 인하의 여지가 있습니까?",
+      "es": "¿Hay margen para una reducción de precio?",
+      "fr": "Une réduction de prix est-elle envisageable ?",
+      "de": "Gibt es Spielraum für Preissenkungen?",
+      "vi": "Liệu có thể giảm giá không?",
+      "id": "Apakah ada ruang untuk penurunan harga?"
+    }
+  },
+  {
+    "id": "work_054",
+    "scene": "work",
+    "subScene": "Negotiations_Transactions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "支払い条件についてご相談させてください。",
+      "en": "Let me discuss payment terms.",
+      "zh": "我们来讨论一下付款条件。",
+      "zh_TW": "讓我們來討論一下付款條件。",
+      "ko": "지불 조건에 대해 상담하십시오.",
+      "es": "Hablemos de las condiciones de pago.",
+      "fr": "Discutons des conditions de paiement.",
+      "de": "Lassen Sie uns die Zahlungsbedingungen besprechen.",
+      "vi": "Chúng ta hãy thảo luận về các điều khoản thanh toán.",
+      "id": "Mari kita bahas persyaratan pembayaran."
+    }
+  },
+  {
+    "id": "work_055",
+    "scene": "work",
+    "subScene": "Negotiations_Transactions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "納期を短縮することは可能ですか？",
+      "en": "Is it possible to shorten the delivery time?",
+      "zh": "可以缩短交货时间吗？",
+      "zh_TW": "可以縮短交貨時間嗎？",
+      "ko": "납기를 단축할 수 있습니까?",
+      "es": "¿Es posible acortar el plazo de entrega?",
+      "fr": "Est-il possible de raccourcir le délai de livraison ?",
+      "de": "Ist es möglich, die Lieferzeit zu verkürzen?",
+      "vi": "Liệu có thể rút ngắn thời gian giao hàng không?",
+      "id": "Apakah mungkin untuk mempersingkat waktu pengiriman?"
+    }
+  },
+  {
+    "id": "work_056",
+    "scene": "work",
+    "subScene": "Negotiations_Transactions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "他の選択肢をご提案いただけますか？",
+      "en": "Can you suggest other options?",
+      "zh": "您能建议其他方案吗？",
+      "zh_TW": "您能建議其他方案嗎？",
+      "ko": "다른 옵션을 제안할 수 있나요?",
+      "es": "¿Puede sugerir otras opciones?",
+      "fr": "Pouvez-vous suggérer d'autres options ?",
+      "de": "Können Sie andere Optionen vorschlagen?",
+      "vi": "Ông/bà có thể đề xuất các phương án khác không?",
+      "id": "Bisakah Anda menyarankan opsi lain?"
+    }
+  },
+  {
+    "id": "work_057",
+    "scene": "work",
+    "subScene": "Negotiations_Transactions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "双方にとって有益な形を目指しましょう。",
+      "en": "Let's aim for a mutually beneficial agreement.",
+      "zh": "让我们努力实现双赢。",
+      "zh_TW": "讓我們努力實現雙贏。",
+      "ko": "양쪽 모두에게 유익한 형태를 목표로 합시다.",
+      "es": "Busquemos un acuerdo mutuamente beneficioso.",
+      "fr": "Travaillons ensemble pour une solution mutuellement avantageuse.",
+      "de": "Lassen Sie uns eine für beide Seiten vorteilhafte Vereinbarung anstreben.",
+      "vi": "Chúng ta hãy cùng hướng tới một thỏa thuận đôi bên cùng có lợi.",
+      "id": "Mari kita upayakan kesepakatan yang saling menguntungkan."
+    }
+  },
+  {
+    "id": "work_058",
+    "scene": "work",
+    "subScene": "Negotiations_Transactions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "この条件で合意いただけますか？",
+      "en": "Are you willing to accept these terms?",
+      "zh": "您对这些条款满意吗？",
+      "zh_TW": "您對這些條款滿意嗎？",
+      "ko": "이 조건에서 합의할 수 있습니까?",
+      "es": "¿Está satisfecho con estas condiciones?",
+      "fr": "Êtes-vous satisfait de ces conditions ?",
+      "de": "Sind Sie mit diesen Bedingungen zufrieden?",
+      "vi": "Ông/bà có hài lòng với những điều khoản này không?",
+      "id": "Apakah Anda puas dengan persyaratan ini?"
+    }
+  },
+  {
+    "id": "work_059",
+    "scene": "work",
+    "subScene": "Negotiations_Transactions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "最終的な契約内容を確認させてください。",
+      "en": "Let me confirm the final contract terms.",
+      "zh": "我们来审查一下最终合同。",
+      "zh_TW": "我們來審查一下最終合約。",
+      "ko": "최종 계약 내용을 확인하십시오.",
+      "es": "Permítame confirmar los términos finales del contrato.",
+      "fr": "Examinons le contrat final.",
+      "de": "Lassen Sie uns die endgültigen Vertragsbedingungen bestätigen.",
+      "vi": "Chúng ta hãy cùng xem xét lại hợp đồng cuối cùng.",
+      "id": "Izinkan saya mengonfirmasi persyaratan kontrak final."
+    }
+  },
+  {
+    "id": "work_060",
+    "scene": "work",
+    "subScene": "Negotiations_Transactions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "本日の交渉に感謝いたします。",
+      "en": "Thank you for negotiating today.",
+      "zh": "感谢您今天的谈判。",
+      "zh_TW": "感謝您今天的談判。",
+      "ko": "오늘의 협상에 감사드립니다.",
+      "es": "Gracias por la negociación de hoy.",
+      "fr": "Merci pour les négociations d'aujourd'hui.",
+      "de": "Vielen Dank für die heutigen Verhandlungen.",
+      "vi": "Cảm ơn ông/bà đã đàm phán hôm nay.",
+      "id": "Terima kasih telah bernegosiasi hari ini."
+    }
+  },
+  {
+    "id": "work_061",
+    "scene": "work",
+    "subScene": "OfficeConversations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "おはようございます。",
+      "en": "Good morning.",
+      "zh": "早上好。",
+      "zh_TW": "早安.",
+      "ko": "안녕하세요.",
+      "es": "Buenos días.",
+      "fr": "Bonjour.",
+      "de": "Guten Morgen.",
+      "vi": "Chào buổi sáng.",
+      "id": "Selamat pagi."
+    }
+  },
+  {
+    "id": "work_062",
+    "scene": "work",
+    "subScene": "OfficeConversations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "今日の予定は何ですか？",
+      "en": "What's on the agenda for today?",
+      "zh": "您今天有什么计划？",
+      "zh_TW": "您今天有什麼計劃？",
+      "ko": "오늘의 일정은 무엇입니까?",
+      "es": "¿Qué hay en la agenda para hoy?",
+      "fr": "Quels sont vos projets pour aujourd'hui ?",
+      "de": "Was steht heute auf der Tagesordnung?",
+      "vi": "Ông/bà có kế hoạch gì cho hôm nay?",
+      "id": "Apa rencana Anda hari ini?"
+    }
+  },
+  {
+    "id": "work_063",
+    "scene": "work",
+    "subScene": "OfficeConversations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "この資料をコピーしていただけますか？",
+      "en": "Can I make a copy of this document?",
+      "zh": "您能复印一下这些文件吗？",
+      "zh_TW": "您能複印一下這些文件嗎？",
+      "ko": "이 문서를 복사할 수 있습니까?",
+      "es": "¿Puedo hacer una copia de este documento?",
+      "fr": "Pourriez-vous faire des copies de ces documents ?",
+      "de": "Kann ich eine Kopie dieses Dokuments machen?",
+      "vi": "Ông/bà có thể sao chép một số tài liệu này không?",
+      "id": "Bisakah Anda membuat beberapa salinan materi ini?"
+    }
+  },
+  {
+    "id": "work_064",
+    "scene": "work",
+    "subScene": "OfficeConversations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ちょっとお時間よろしいでしょうか。",
+      "en": "Do you have a moment?",
+      "zh": "您有时间吗？",
+      "zh_TW": "您有時間嗎？",
+      "ko": "조금 시간이 맞습니까?",
+      "es": "¿Tiene un momento?",
+      "fr": "Avez-vous un moment ?",
+      "de": "Hätten Sie kurz Zeit?",
+      "vi": "Ông/bà có rảnh không?",
+      "id": "Apakah Anda punya waktu sebentar?"
+    }
+  },
+  {
+    "id": "work_065",
+    "scene": "work",
+    "subScene": "OfficeConversations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "会議室を予約していただけますか？",
+      "en": "Can you reserve a conference room?",
+      "zh": "您能预订会议室吗？",
+      "zh_TW": "您能預約會議室嗎？",
+      "ko": "회의실을 예약할 수 있습니까?",
+      "es": "¿Puede reservar una sala de conferencias?",
+      "fr": "Pouvez-vous réserver une salle de conférence ?",
+      "de": "Können Sie einen Konferenzraum reservieren?",
+      "vi": "Ông/bà có thể đặt phòng họp được không?",
+      "id": "Bisakah Anda memesan ruang konferensi untuk saya?"
+    }
+  },
+  {
+    "id": "work_066",
+    "scene": "work",
+    "subScene": "OfficeConversations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "昼食をご一緒しませんか？",
+      "en": "Would you like to join us for lunch?",
+      "zh": "您想和我们一起吃午饭吗？",
+      "zh_TW": "您想和我們一起吃午餐嗎？",
+      "ko": "점심을 함께하지 않겠습니까?",
+      "es": "¿Le gustaría almorzar con nosotros?",
+      "fr": "Souhaitez-vous nous rejoindre pour le déjeuner ?",
+      "de": "Möchten Sie mit uns zu Mittag essen?",
+      "vi": "Bạn có muốn cùng chúng tôi dùng bữa trưa không?",
+      "id": "Maukah Anda bergabung dengan kami untuk makan siang?"
+    }
+  },
+  {
+    "id": "work_067",
+    "scene": "work",
+    "subScene": "OfficeConversations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "手伝っていただけると助かります。",
+      "en": "Your help would be greatly appreciated.",
+      "zh": "非常感谢您的帮助。",
+      "zh_TW": "非常感謝您的幫忙。",
+      "ko": "도와 주시면 도움이됩니다.",
+      "es": "Agradeceríamos mucho su ayuda.",
+      "fr": "Votre aide serait grandement appréciée.",
+      "de": "Wir wären Ihnen für Ihre Hilfe sehr dankbar.",
+      "vi": "Tôi rất cảm kích sự giúp đỡ của bạn.",
+      "id": "Saya sangat menghargai bantuan Anda."
+    }
+  },
+  {
+    "id": "work_068",
+    "scene": "work",
+    "subScene": "OfficeConversations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "こちらの案件はもう完了しましたか？",
+      "en": "Have you completed this project yet?",
+      "zh": "您完成这个项目了吗？",
+      "zh_TW": "您完成這個專案了嗎？",
+      "ko": "이 문제는 이미 완료 되었습니까?",
+      "es": "¿Ya ha completado este proyecto?",
+      "fr": "Avez-vous terminé ce projet ?",
+      "de": "Haben Sie dieses Projekt schon abgeschlossen?",
+      "vi": "Bạn đã hoàn thành dự án này chưa?",
+      "id": "Sudahkah Anda menyelesaikan proyek ini?"
+    }
+  },
+  {
+    "id": "work_069",
+    "scene": "work",
+    "subScene": "OfficeConversations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "帰宅前に確認していただけますか？",
+      "en": "Can you take a look before you go home?",
+      "zh": "您回家之前能检查一下吗？",
+      "zh_TW": "您回家之前能檢查一下嗎？",
+      "ko": "귀가하기 전에 확인해 주시겠습니까?",
+      "es": "¿Podría revisarlo antes de irse a casa?",
+      "fr": "Pourriez-vous le vérifier avant de rentrer ?",
+      "de": "Können Sie einen Blick darauf werfen, bevor Sie nach Hause gehen?",
+      "vi": "Bạn có thể kiểm tra trước khi về nhà không?",
+      "id": "Bisakah Anda memeriksanya sebelum pulang?"
+    }
+  },
+  {
+    "id": "work_070",
+    "scene": "work",
+    "subScene": "OfficeConversations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "お疲れさまでした、また明日。",
+      "en": "Thank you for your hard work, and see you tomorrow.",
+      "zh": "感谢您的辛勤工作，明天见。",
+      "zh_TW": "感謝您的辛勤工作，明天見。",
+      "ko": "수고하셨습니다, 또 내일.",
+      "es": "Gracias por su esfuerzo y nos vemos mañana.",
+      "fr": "Merci pour votre travail, à demain.",
+      "de": "Vielen Dank für Ihre harte Arbeit und bis morgen.",
+      "vi": "Cảm ơn bạn đã làm việc chăm chỉ, hẹn gặp lại vào ngày mai.",
+      "id": "Terima kasih atas kerja keras Anda, sampai jumpa besok."
+    }
+  },
+  {
+    "id": "work_071",
+    "scene": "work",
+    "subScene": "Presentations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "本日はお時間をいただきありがとうございます。",
+      "en": "Thank you for your time today.",
+      "zh": "感谢您今天抽出时间。",
+      "zh_TW": "感謝您今天抽出時間。",
+      "ko": "오늘은 시간을 가져 주셔서 감사합니다.",
+      "es": "Gracias por su tiempo.",
+      "fr": "Merci pour votre temps aujourd'hui.",
+      "de": "Vielen Dank für Ihre Zeit heute.",
+      "vi": "Cảm ơn bạn đã dành thời gian hôm nay.",
+      "id": "Terima kasih atas waktu Anda hari ini."
+    }
+  },
+  {
+    "id": "work_072",
+    "scene": "work",
+    "subScene": "Presentations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "まずは概要をご説明いたします。",
+      "en": "First, I'd like to give you an overview.",
+      "zh": "首先，我先给大家做一个概述。",
+      "zh_TW": "首先，我先給大家做一個概述。",
+      "ko": "우선은 개요를 설명하겠습니다.",
+      "es": "Primero, les daré un resumen.",
+      "fr": "Je vais d'abord vous donner un aperçu.",
+      "de": "Zuerst möchte ich Ihnen einen Überblick geben.",
+      "vi": "Trước tiên, tôi muốn cung cấp cho bạn một cái nhìn tổng quan.",
+      "id": "Pertama, saya ingin memberikan gambaran umum."
+    }
+  },
+  {
+    "id": "work_073",
+    "scene": "work",
+    "subScene": "Presentations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "このグラフをご覧ください。",
+      "en": "Look at this graph.",
+      "zh": "请看一下这张图。",
+      "zh_TW": "請看一下這張圖。",
+      "ko": "이 그래프를 참조하십시오.",
+      "es": "Observen este gráfico.",
+      "fr": "Jetez un œil à ce graphique.",
+      "de": "Sehen Sie sich diese Grafik an.",
+      "vi": "Hãy xem biểu đồ này.",
+      "id": "Lihatlah grafik ini."
+    }
+  },
+  {
+    "id": "work_074",
+    "scene": "work",
+    "subScene": "Presentations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ここで強調したい点がございます。",
+      "en": "There's a point I'd like to emphasize here.",
+      "zh": "我想强调一点。",
+      "zh_TW": "我想強調一點。",
+      "ko": "여기서 강조하고 싶은 점이 있습니다.",
+      "es": "Hay un punto que me gustaría destacar.",
+      "fr": "J'aimerais souligner un point.",
+      "de": "Es gibt einen Punkt, den ich hier hervorheben möchte.",
+      "vi": "Có một điểm tôi muốn nhấn mạnh ở đây.",
+      "id": "Ada poin yang ingin saya tekankan di sini."
+    }
+  },
+  {
+    "id": "work_075",
+    "scene": "work",
+    "subScene": "Presentations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "具体的な事例をご紹介します。",
+      "en": "I'll give you a specific example.",
+      "zh": "我会举一个具体的例子。",
+      "zh_TW": "我會舉一個具體的例子。",
+      "ko": "구체적인 사례를 소개합니다.",
+      "es": "Les daré un ejemplo específico.",
+      "fr": "Je vais vous donner un exemple précis.",
+      "de": "Ich gebe Ihnen ein konkretes Beispiel.",
+      "vi": "Tôi sẽ cho bạn xem một ví dụ cụ thể.",
+      "id": "Saya akan memberikan contoh spesifik."
+    }
+  },
+  {
+    "id": "work_076",
+    "scene": "work",
+    "subScene": "Presentations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "次に、課題についてご説明します。",
+      "en": "Next, I'll explain the challenges.",
+      "zh": "接下来，我会解释一下面临的挑战。",
+      "zh_TW": "接下來，我會解釋一下面臨的挑戰。",
+      "ko": "다음으로 과제에 대해 설명합니다.",
+      "es": "A continuación, explicaré el desafío.",
+      "fr": "Ensuite, j'expliquerai les défis.",
+      "de": "Als Nächstes erläutere ich die Herausforderungen.",
+      "vi": "Tiếp theo, tôi sẽ giải thích những thách thức.",
+      "id": "Selanjutnya, saya akan menjelaskan tantangannya."
+    }
+  },
+  {
+    "id": "work_077",
+    "scene": "work",
+    "subScene": "Presentations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "この提案のメリットは改良です。",
+      "en": "The benefit of this proposal is improvement.",
+      "zh": "这项提案的好处在于改进。",
+      "zh_TW": "這項提案的好處在於改進。",
+      "ko": "이 제안의 장점은 개선입니다.",
+      "es": "El beneficio de esta propuesta es la mejora.",
+      "fr": "L'avantage de cette proposition est l'amélioration.",
+      "de": "Der Nutzen dieses Vorschlags liegt in der Verbesserung.",
+      "vi": "Lợi ích của đề xuất này là cải thiện.",
+      "id": "Manfaat dari proposal ini adalah peningkatan."
+    }
+  },
+  {
+    "id": "work_078",
+    "scene": "work",
+    "subScene": "Presentations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ご不明点はございますか？",
+      "en": "Do you have any questions?",
+      "zh": "您还有什么问题吗？",
+      "zh_TW": "您還有什麼問題嗎？",
+      "ko": "궁금한 점이 있습니까?",
+      "es": "¿Tienen alguna pregunta?",
+      "fr": "Avez-vous des questions ?",
+      "de": "Haben Sie Fragen?",
+      "vi": "Bạn có câu hỏi nào không?",
+      "id": "Ada pertanyaan?"
+    }
+  },
+  {
+    "id": "work_079",
+    "scene": "work",
+    "subScene": "Presentations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ご清聴ありがとうございました。",
+      "en": "Thank you for listening.",
+      "zh": "感谢您的聆听。",
+      "zh_TW": "感謝您的聆聽。",
+      "ko": "청취 해 주셔서 감사합니다.",
+      "es": "Gracias por su atención.",
+      "fr": "Merci de votre écoute.",
+      "de": "Vielen Dank fürs Zuhören.",
+      "vi": "Cảm ơn bạn đã lắng nghe.",
+      "id": "Terima kasih telah mendengarkan."
+    }
+  },
+  {
+    "id": "work_080",
+    "scene": "work",
+    "subScene": "Presentations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ご質問があればお受けいたします。",
+      "en": "I'm happy to answer any questions you may have.",
+      "zh": "我们很乐意回答您的任何问题。",
+      "zh_TW": "我們很樂意回答您的任何問題。",
+      "ko": "질문이 있으면 받습니다.",
+      "es": "Con gusto responderé cualquier pregunta que tengan.",
+      "fr": "Nous serons ravis de répondre à vos questions.",
+      "de": "Ich beantworte gerne alle Ihre Fragen.",
+      "vi": "Chúng tôi rất vui lòng trả lời bất kỳ câu hỏi nào của bạn.",
+      "id": "Kami dengan senang hati akan menjawab pertanyaan apa pun yang Anda miliki."
+    }
+  },
+  {
+    "id": "work_081",
+    "scene": "work",
+    "subScene": "Telephone_OnlineMeetings",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "お電話ありがとうございます、Tarouでございます。",
+      "en": "Thank you for calling, this is Tarou.",
+      "zh": "感谢您的来电。我是Tarou。",
+      "zh_TW": "感謝您的來電。我是Tarou。",
+      "ko": "전화 주셔서 감사합니다, 타루입니다.",
+      "es": "Gracias por llamar, soy Tarou.",
+      "fr": "Merci de votre appel, je suis Tarou.",
+      "de": "Danke für Ihren Anruf, hier ist Tarou.",
+      "vi": "Cảm ơn bạn đã gọi, tôi là Tarou.",
+      "id": "Terima kasih telah menghubungi saya, saya Tarou."
+    }
+  },
+  {
+    "id": "work_082",
+    "scene": "work",
+    "subScene": "Telephone_OnlineMeetings",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "担当者におつなぎいたします。",
+      "en": "I'll connect you to someone on the team.",
+      "zh": "我会帮您接通其他人的电话。",
+      "zh_TW": "我會幫您接通其他人的電話。",
+      "ko": "담당자와 연결합니다.",
+      "es": "Lo comunicaré con nuestro representante.",
+      "fr": "Je vais vous mettre en contact avec un membre de l'équipe.",
+      "de": "Ich verbinde Sie mit jemandem aus dem Team.",
+      "vi": "Tôi sẽ kết nối bạn với một người trong nhóm.",
+      "id": "Saya akan menghubungkan Anda dengan seseorang di tim."
+    }
+  },
+  {
+    "id": "work_083",
+    "scene": "work",
+    "subScene": "Telephone_OnlineMeetings",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "少々お待ちいただけますか？",
+      "en": "Would you mind holding on for a moment?",
+      "zh": "您稍等片刻吗？",
+      "zh_TW": "您稍等片刻嗎？",
+      "ko": "조금 기다릴 수 있습니까?",
+      "es": "¿Podría esperar un momento?",
+      "fr": "Pourriez-vous patienter un instant ?",
+      "de": "Würden Sie einen Moment warten?",
+      "vi": "Bạn vui lòng đợi một lát nhé?",
+      "id": "Maukah Anda menunggu sebentar?"
+    }
+  },
+  {
+    "id": "work_084",
+    "scene": "work",
+    "subScene": "Telephone_OnlineMeetings",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "回線が不安定のようです。",
+      "en": "The connection seems unstable.",
+      "zh": "连接似乎不稳定。",
+      "zh_TW": "連接似乎不穩定。",
+      "ko": "회선이 불안정한 것 같습니다.",
+      "es": "La conexión parece inestable.",
+      "fr": "La connexion semble instable.",
+      "de": "Die Verbindung scheint instabil zu sein.",
+      "vi": "Kết nối có vẻ không ổn định.",
+      "id": "Koneksinya sepertinya tidak stabil."
+    }
+  },
+  {
+    "id": "work_085",
+    "scene": "work",
+    "subScene": "Telephone_OnlineMeetings",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "音声が聞こえにくいのですが、大丈夫でしょうか？",
+      "en": "I'm having trouble hearing you, is that okay?",
+      "zh": "我听不清楚您的声音，可以吗？",
+      "zh_TW": "我聽不清楚您的聲音，可以嗎？",
+      "ko": "음성이 들리기 어렵지만 괜찮습니까?",
+      "es": "No le escucho bien.",
+      "fr": "J'ai du mal à vous entendre, est-ce que ça vous convient ?",
+      "de": "Ich kann Sie schlecht verstehen, ist das in Ordnung?",
+      "vi": "Tôi gặp khó khăn khi nghe bạn nói, bạn có thể cho tôi biết được không?",
+      "id": "Saya kesulitan mendengar Anda, bolehkah?"
+    }
+  },
+  {
+    "id": "work_086",
+    "scene": "work",
+    "subScene": "Telephone_OnlineMeetings",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "画面を共有してもよろしいですか？",
+      "en": "May I share my screen?",
+      "zh": "您想分享您的屏幕吗？",
+      "zh_TW": "您想分享您的螢幕嗎？",
+      "ko": "화면을 공유하시겠습니까?",
+      "es": "¿Puedo compartir mi pantalla?",
+      "fr": "Pourriez-vous partager votre écran ?",
+      "de": "Darf ich meinen Bildschirm freigeben?",
+      "vi": "Bạn có muốn chia sẻ màn hình không?",
+      "id": "Maukah Anda berbagi layar Anda?"
+    }
+  },
+  {
+    "id": "work_087",
+    "scene": "work",
+    "subScene": "Telephone_OnlineMeetings",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "次のアジェンダに移りましょう。",
+      "en": "Let's move on to the next item on the agenda.",
+      "zh": "我们继续讨论议程上的下一个项目。",
+      "zh_TW": "我們繼續討論議程上的下一個項目。",
+      "ko": "다음 의제로 이동합시다.",
+      "es": "Pasemos al siguiente punto del orden del día.",
+      "fr": "Passons au point suivant de l'ordre du jour.",
+      "de": "Kommen wir zum nächsten Tagesordnungspunkt.",
+      "vi": "Chúng ta hãy chuyển sang mục tiếp theo trong chương trình nghị sự.",
+      "id": "Mari kita lanjutkan ke agenda berikutnya."
+    }
+  },
+  {
+    "id": "work_088",
+    "scene": "work",
+    "subScene": "Telephone_OnlineMeetings",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "本日の会議を録画してもよろしいですか？",
+      "en": "May I record today's meeting?",
+      "zh": "我们可以录制今天的会议吗？",
+      "zh_TW": "我們可以錄製今天的會議嗎？",
+      "ko": "오늘 회의를 녹화하시겠습니까?",
+      "es": "¿Puedo grabar la reunión de hoy?",
+      "fr": "Pourriez-vous enregistrer la réunion d'aujourd'hui ?",
+      "de": "Darf ich die heutige Besprechung aufzeichnen?",
+      "vi": "Tôi có thể ghi âm cuộc họp hôm nay được không?",
+      "id": "Bisakah kita merekam rapat hari ini?"
+    }
+  },
+  {
+    "id": "work_089",
+    "scene": "work",
+    "subScene": "Telephone_OnlineMeetings",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "本日はご参加いただきありがとうございました。",
+      "en": "Thank you for participating today.",
+      "zh": "感谢您今天加入我们。",
+      "zh_TW": "感謝您今天加入我們。",
+      "ko": "오늘은 참가해 주셔서 감사합니다.",
+      "es": "Gracias por acompañarnos.",
+      "fr": "Merci de votre présence.",
+      "de": "Vielen Dank für Ihre Teilnahme.",
+      "vi": "Cảm ơn bạn đã tham gia hôm nay.",
+      "id": "Terima kasih telah bergabung dengan kami hari ini."
+    }
+  },
+  {
+    "id": "work_090",
+    "scene": "work",
+    "subScene": "Telephone_OnlineMeetings",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "また改めてご連絡いたします。",
+      "en": "I will get back to you.",
+      "zh": "我们会尽快回复您。",
+      "zh_TW": "我們會盡快回覆您。",
+      "ko": "다시 연락 드리겠습니다.",
+      "es": "Me pondré en contacto con usted.",
+      "fr": "Nous vous recontacterons.",
+      "de": "Ich melde mich bei Ihnen.",
+      "vi": "Tôi sẽ liên hệ lại với bạn.",
+      "id": "Kami akan segera menghubungi Anda kembali."
+    }
+  },
+  {
+    "id": "work_091",
+    "scene": "work",
+    "subScene": "Troubleshooting",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ご迷惑をおかけして申し訳ございません。",
+      "en": "We apologize for any inconvenience.",
+      "zh": "对于由此造成的不便，我们深表歉意。",
+      "zh_TW": "對於由此造成的不便，我們深表歉意。",
+      "ko": "불편을 끼쳐 드려 죄송합니다.",
+      "es": "Disculpe las molestias.",
+      "fr": "Nous vous prions de nous excuser pour la gêne occasionnée.",
+      "de": "Wir entschuldigen uns für etwaige Unannehmlichkeiten.",
+      "vi": "Tôi xin lỗi vì sự bất tiện này.",
+      "id": "Kami mohon maaf atas ketidaknyamanan yang ditimbulkan."
+    }
+  },
+  {
+    "id": "work_092",
+    "scene": "work",
+    "subScene": "Troubleshooting",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "詳細をもう少し教えていただけますか？",
+      "en": "Could you please provide more details?",
+      "zh": "您能提供更多详细信息吗？",
+      "zh_TW": "能提供更多詳細資訊嗎？",
+      "ko": "자세한 내용을 좀 더 알려 주시겠습니까?",
+      "es": "¿Podría proporcionarnos más detalles?",
+      "fr": "Pourriez-vous nous fournir plus de détails ?",
+      "de": "Könnten Sie bitte weitere Einzelheiten mitteilen?",
+      "vi": "Bạn vui lòng cung cấp thêm thông tin chi tiết được không?",
+      "id": "Bisakah Anda memberikan detail lebih lanjut?"
+    }
+  },
+  {
+    "id": "work_093",
+    "scene": "work",
+    "subScene": "Troubleshooting",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "こちらで状況を確認いたします。",
+      "en": "We will check the situation here.",
+      "zh": "我们会持续关注情况。",
+      "zh_TW": "我們會持續關注情況。",
+      "ko": "여기에서 상황을 확인합니다.",
+      "es": "Estaremos atentos a la situación.",
+      "fr": "Nous suivrons la situation de près.",
+      "de": "Wir werden die Situation hier prüfen.",
+      "vi": "Chúng tôi sẽ theo dõi tình hình.",
+      "id": "Kami akan memantau situasi."
+    }
+  },
+  {
+    "id": "work_094",
+    "scene": "work",
+    "subScene": "Troubleshooting",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "修理には7日ほどかかる見込みです。",
+      "en": "Repairs are expected to take approximately 7 days.",
+      "zh": "预计维修大约需要7天。",
+      "zh_TW": "預計維修約需7天。",
+      "ko": "수리에는 7일 정도 걸릴 전망입니다.",
+      "es": "Se espera que las reparaciones tarden aproximadamente 7 días.",
+      "fr": "Les réparations devraient prendre environ 7 jours.",
+      "de": "Die Reparatur wird voraussichtlich etwa 7 Tage dauern.",
+      "vi": "Việc sửa chữa dự kiến ​​mất khoảng 7 ngày.",
+      "id": "Perbaikan diperkirakan akan memakan waktu sekitar 7 hari."
+    }
+  },
+  {
+    "id": "work_095",
+    "scene": "work",
+    "subScene": "Troubleshooting",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "代替案をご提案させていただきます。",
+      "en": "We will propose an alternative solution.",
+      "zh": "我们将提出替代方案。",
+      "zh_TW": "我們將提出替代方案。",
+      "ko": "대체안을 제안하겠습니다.",
+      "es": "Propondremos una solución alternativa.",
+      "fr": "Nous vous proposerons une solution alternative.",
+      "de": "Wir werden eine alternative Lösung vorschlagen.",
+      "vi": "Chúng tôi sẽ đề xuất một giải pháp thay thế.",
+      "id": "Kami akan mengusulkan solusi alternatif."
+    }
+  },
+  {
+    "id": "work_096",
+    "scene": "work",
+    "subScene": "Troubleshooting",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "至急対応いたしますのでご安心ください。",
+      "en": "Please rest assured that we will respond as soon as possible.",
+      "zh": "请放心，我们会尽快回复您。",
+      "zh_TW": "請放心，我們會盡快回覆您。",
+      "ko": "긴급 대응하므로 안심하십시오.",
+      "es": "Le responderemos lo antes posible.",
+      "fr": "Soyez assuré(e) que nous vous répondrons dans les plus brefs délais.",
+      "de": "Wir werden uns so schnell wie möglich bei Ihnen melden.",
+      "vi": "Hãy yên tâm, chúng tôi sẽ phản hồi sớm nhất có thể.",
+      "id": "Yakinlah, kami akan merespons sesegera mungkin."
+    }
+  },
+  {
+    "id": "work_097",
+    "scene": "work",
+    "subScene": "Troubleshooting",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "今回の原因についてご説明します。",
+      "en": "We will explain the cause of this issue.",
+      "zh": "我们想解释一下此问题的原因。",
+      "zh_TW": "我們想解釋一下這個問題的原因。",
+      "ko": "이번 원인에 대해 설명합니다.",
+      "es": "Le explicaré la causa de este problema.",
+      "fr": "Nous vous expliquerons la cause du problème.",
+      "de": "Wir werden die Ursache des Problems erläutern.",
+      "vi": "Tôi sẽ giải thích nguyên nhân gây ra sự cố này.",
+      "id": "Kami akan menjelaskan penyebab masalah ini."
+    }
+  },
+  {
+    "id": "work_098",
+    "scene": "work",
+    "subScene": "Troubleshooting",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "同様の問題が再発しないように対策します。",
+      "en": "We will take measures to prevent a similar problem from recurring.",
+      "zh": "我们将采取措施，防止类似问题再次发生。",
+      "zh_TW": "我們將採取措施，防止類似問題再次發生。",
+      "ko": "비슷한 문제가 재발하지 않도록 조치하십시오.",
+      "es": "Tomaremos medidas para evitar que se repitan problemas similares.",
+      "fr": "Nous prendrons des mesures pour éviter qu'un problème similaire ne se reproduise.",
+      "de": "Wir werden Maßnahmen ergreifen, um ein ähnliches Problem in Zukunft zu verhindern.",
+      "vi": "Chúng tôi sẽ thực hiện các biện pháp để ngăn chặn các sự cố tương tự xảy ra lần nữa.",
+      "id": "Kami akan mengambil langkah-langkah untuk mencegah masalah serupa terulang kembali."
+    }
+  },
+  {
+    "id": "work_099",
+    "scene": "work",
+    "subScene": "Troubleshooting",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "本件は上司に報告させていただきます。",
+      "en": "I will report this matter to my supervisor.",
+      "zh": "我们会将此事报告给您的主管。",
+      "zh_TW": "我們會將此事報告給您的主管。",
+      "ko": "본건은 상사에게 보고하겠습니다.",
+      "es": "Informaré de este asunto a mi supervisor.",
+      "fr": "Je signalerai ce problème à mon supérieur.",
+      "de": "Ich werde die Angelegenheit meinem Vorgesetzten melden.",
+      "vi": "Tôi sẽ báo cáo điều này với quản lý của tôi.",
+      "id": "Saya akan melaporkan masalah ini kepada atasan saya."
+    }
+  },
+  {
+    "id": "work_100",
+    "scene": "work",
+    "subScene": "Troubleshooting",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "改めてお詫び申し上げます。",
+      "en": "Once again, I apologize.",
+      "zh": "再次向您致歉。",
+      "zh_TW": "再次向您致歉。",
+      "ko": "다시 한번 사과드립니다.",
+      "es": "Una vez más, le pido disculpas.",
+      "fr": "Nous vous prions à nouveau de nous excuser.",
+      "de": "Ich entschuldige mich noch einmal.",
+      "vi": "Một lần nữa, tôi xin lỗi.",
+      "id": "Sekali lagi, kami mohon maaf."
+    }
+  }
+]

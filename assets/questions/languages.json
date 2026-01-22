@@ -1,0 +1,152 @@
+[
+  {
+    "id": "ja",
+    "label": {
+      "ja": "日本語",
+      "en": "Japanese",
+      "zh": "日语",
+      "zh_TW": "日語",
+      "ko": "일본어",
+      "es": "japonés",
+      "fr": "japonais",
+      "de": "Japanisch",
+      "vi": "tiếng Nhật",
+      "id": "bahasa Jepang"
+    }
+  },
+  {
+    "id": "en",
+    "label": {
+      "ja": "英語",
+      "en": "English",
+      "zh": "英语",
+      "zh_TW": "英語",
+      "ko": "영어",
+      "es": "inglés",
+      "fr": "anglais",
+      "de": "Englisch",
+      "vi": "tiếng Anh",
+      "id": "bahasa Inggris"
+    }
+  },
+  {
+    "id": "zh",
+    "label": {
+      "ja": "中国語（簡体字）",
+      "en": "Chinese (Simplified)",
+      "zh": "中文（简体）",
+      "zh_TW": "中文（簡體）",
+      "ko": "중국어(간체)",
+      "es": "chino (simplificado)",
+      "fr": "chinois (simplifié)",
+      "de": "Chinesisch (vereinfacht)",
+      "vi": "tiếng Trung (giản thể)",
+      "id": "Mandarin (Sederhana)"
+    }
+  },
+  {
+    "id": "zh_TW",
+    "label": {
+      "ja": "台湾(繁体)",
+      "en": "Taiwan",
+      "zh": "台湾",
+      "zh_TW": "臺灣",
+      "ko": "대만",
+      "es": "Taiwán",
+      "fr": "Taïwan",
+      "de": "Taiwan",
+      "vi": "Đài Loan",
+      "id": "Taiwan"
+    }
+  },
+  {
+    "id": "ko",
+    "label": {
+      "ja": "韓国語",
+      "en": "Korean",
+      "zh": "韩语",
+      "zh_TW": "韓語",
+      "ko": "한국어",
+      "es": "coreano",
+      "fr": "coréen",
+      "de": "Koreanisch",
+      "vi": "tiếng Hàn",
+      "id": "bahasa Korea"
+    }
+  },
+  {
+    "id": "es",
+    "label": {
+      "ja": "スペイン語",
+      "en": "Spanish",
+      "zh": "西班牙语",
+      "zh_TW": "西班牙語",
+      "ko": "스페인어",
+      "es": "español",
+      "fr": "espagnol",
+      "de": "Spanisch",
+      "vi": "tiếng Tây Ban Nha",
+      "id": "bahasa Spanyol"
+    }
+  },
+  {
+    "id": "fr",
+    "label": {
+      "ja": "フランス語",
+      "en": "French",
+      "zh": "法语",
+      "zh_TW": "法語",
+      "ko": "프랑스어",
+      "es": "francés",
+      "fr": "français",
+      "de": "Französisch",
+      "vi": "tiếng Pháp",
+      "id": "bahasa Perancis"
+    }
+  },
+  {
+    "id": "de",
+    "label": {
+      "ja": "ドイツ語",
+      "en": "German",
+      "zh": "德语",
+      "zh_TW": "德語",
+      "ko": "독일어",
+      "es": "alemán",
+      "fr": "allemand",
+      "de": "Deutsch",
+      "vi": "tiếng Đức",
+      "id": "bahasa Jerman"
+    }
+  },
+  {
+    "id": "vi",
+    "label": {
+      "ja": "ベトナム語",
+      "en": "Vietnamese",
+      "zh": "越南语",
+      "zh_TW": "越南語",
+      "ko": "베트남어",
+      "es": "vietnamita",
+      "fr": "vietnamien",
+      "de": "Vietnamesisch",
+      "vi": "Tiếng Việt",
+      "id": "bahasa Vietnam"
+    }
+  },
+  {
+    "id": "id",
+    "label": {
+      "ja": "インドネシア語",
+      "en": "Indonesian",
+      "zh": "印尼语",
+      "zh_TW": "印尼語",
+      "ko": "인도네시아어",
+      "es": "indonesio",
+      "fr": "indonésien",
+      "de": "Indonesisch",
+      "vi": "tiếng Indonesia",
+      "id": "bahasa Indonesia"
+    }
+  }
+]

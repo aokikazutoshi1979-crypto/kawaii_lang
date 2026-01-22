@@ -1,0 +1,2149 @@
+[
+  {
+    "id": "restaurant_001",
+    "scene": "restaurant",
+    "subScene": "Check-in",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "４名です。",
+      "en": "We are a party of four.",
+      "zh": "我们有四位。",
+      "zh_TW": "我們有四位。",
+      "ko": "네 명입니다.",
+      "es": "Somos cuatro.",
+      "fr": "Nous sommes quatre.",
+      "de": "Wir sind zu viert.",
+      "vi": "Chúng tôi có bốn người.",
+      "id": "Kami berempat."
+    }
+  },
+  {
+    "id": "restaurant_002",
+    "scene": "restaurant",
+    "subScene": "Check-in",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "待ち時間はどれくらいですか？",
+      "en": "How long is the wait?",
+      "zh": "等待时间大概多久？",
+      "zh_TW": "等待時間大概多久？",
+      "ko": "대기 시간은 얼마나 걸리나요?",
+      "es": "¿Cuánto tiempo de espera hay?",
+      "fr": "Quel est le temps d'attente ?",
+      "de": "Wie lange ist die Wartezeit?",
+      "vi": "Thời gian chờ là bao lâu?",
+      "id": "Berapa lama waktu tunggunya?"
+    }
+  },
+  {
+    "id": "restaurant_003",
+    "scene": "restaurant",
+    "subScene": "Check-in",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ラストオーダーは何時ですか？",
+      "en": "What time is last order?",
+      "zh": "最后点餐时间是几点？",
+      "zh_TW": "最後點餐時間是幾點？",
+      "ko": "라스트 오더는 몇 시인가요?",
+      "es": "¿A qué hora es la última orden?",
+      "fr": "À quelle heure se fait la dernière commande ?",
+      "de": "Wann ist die letzte Bestellung?",
+      "vi": "Giờ gọi món cuối là mấy giờ?",
+      "id": "Jam berapa pesanan terakhir?"
+    }
+  },
+  {
+    "id": "restaurant_004",
+    "scene": "restaurant",
+    "subScene": "Check-in",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "禁煙席をお願いします。",
+      "en": "A non‑smoking table, please.",
+      "zh": "请给我一个无烟区的座位。",
+      "zh_TW": "請給我一個無菸區的座位。",
+      "ko": "금연석으로 부탁드립니다.",
+      "es": "Una mesa para no fumadores, por favor.",
+      "fr": "Une table non‑fumeur, s'il vous plaît.",
+      "de": "Einen Nichtraucherplatz, bitte.",
+      "vi": "Cho tôi một bàn không hút thuốc.",
+      "id": "Tolong meja untuk non‑perokok."
+    }
+  },
+  {
+    "id": "restaurant_005",
+    "scene": "restaurant",
+    "subScene": "Ordering",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ベジタリアンメニューはありますか？",
+      "en": "Do you have a vegetarian menu?",
+      "zh": "有素食菜单吗？",
+      "zh_TW": "有素食菜單嗎？",
+      "ko": "채식 메뉴가 있나요?",
+      "es": "¿Tienen menú vegetariano?",
+      "fr": "Avez‑vous un menu végétarien ?",
+      "de": "Haben Sie vegetarische Gerichte?",
+      "vi": "Có thực đơn chay không?",
+      "id": "Apakah ada menu vegetarian?"
+    }
+  },
+  {
+    "id": "restaurant_006",
+    "scene": "restaurant",
+    "subScene": "Ordering",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "同行者が牛乳アレルギーです。",
+      "en": "My companion is allergic to milk.",
+      "zh": "我的同伴对牛奶过敏。",
+      "zh_TW": "我的同伴對牛奶過敏。",
+      "ko": "동행인이 우유 알레르기가 있습니다.",
+      "es": "Mi acompañante es alérgico a la leche.",
+      "fr": "Mon/ma compagnon(e) est allergique au lait.",
+      "de": "Meine Begleitperson ist gegen Milch allergisch.",
+      "vi": "Bạn đồng hành của tôi bị dị ứng sữa.",
+      "id": "Teman saya alergi susu."
+    }
+  },
+  {
+    "id": "restaurant_007",
+    "scene": "restaurant",
+    "subScene": "Ordering",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "おすすめのメニューはなんですか？",
+      "en": "What dishes do you recommend?",
+      "zh": "有什么推荐的菜吗？",
+      "zh_TW": "有什麼推薦的菜嗎？",
+      "ko": "추천 메뉴가 무엇인가요?",
+      "es": "¿Qué platos recomienda?",
+      "fr": "Quels plats recommandez‑vous ?",
+      "de": "Welche Gerichte empfehlen Sie?",
+      "vi": "Bạn gợi ý món gì?",
+      "id": "Anda merekomendasikan hidangan apa?"
+    }
+  },
+  {
+    "id": "restaurant_008",
+    "scene": "restaurant",
+    "subScene": "Ordering",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "これはどのくらい大きいですか？",
+      "en": "How big is this?",
+      "zh": "这个有多大？",
+      "zh_TW": "這個有多大？",
+      "ko": "이것은 얼마나 큰가요?",
+      "es": "¿Qué tamaño tiene esto?",
+      "fr": "Quelle est la taille de celui‑ci ?",
+      "de": "Wie groß ist das?",
+      "vi": "Cái này lớn cỡ nào?",
+      "id": "Ini berukuran seberapa besar?"
+    }
+  },
+  {
+    "id": "restaurant_009",
+    "scene": "restaurant",
+    "subScene": "Ordering",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "エビを抜いてくれますか？",
+      "en": "Could you remove the shrimp, please?",
+      "zh": "能去掉虾吗？",
+      "zh_TW": "能去掉蝦嗎？",
+      "ko": "새우를 빼주실 수 있나요?",
+      "es": "¿Podría quitar los camarones, por favor?",
+      "fr": "Pourriez-vous retirer les crevettes, s'il vous plaît ?",
+      "de": "Könnten Sie die Garnelen bitte weglassen?",
+      "vi": "Có thể bỏ tôm ra không?",
+      "id": "Bisakah Anda menghilangkan udangnya?"
+    }
+  },
+  {
+    "id": "restaurant_010",
+    "scene": "restaurant",
+    "subScene": "Ordering",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "この料理をお願いします。",
+      "en": "I would like to have this dish.",
+      "zh": "我要点这道菜。",
+      "zh_TW": "我要點這道菜。",
+      "ko": "이 요리를 부탁합니다.",
+      "es": "Quisiera este plato, por favor.",
+      "fr": "Je voudrais ce plat, s'il vous plaît.",
+      "de": "Ich hätte gerne dieses Gericht.",
+      "vi": "Tôi muốn gọi món này.",
+      "id": "Saya ingin memesan hidangan ini."
+    }
+  },
+  {
+    "id": "restaurant_011",
+    "scene": "restaurant",
+    "subScene": "Ordering",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "お水をください。",
+      "en": "Could I have some water, please?",
+      "zh": "请给我一杯水。",
+      "zh_TW": "請給我一杯水。",
+      "ko": "물 좀 주세요.",
+      "es": "¿Me puede traer agua, por favor?",
+      "fr": "De l'eau, s'il vous plaît.",
+      "de": "Wasser, bitte.",
+      "vi": "Cho tôi một ly nước.",
+      "id": "Tolong beri saya air."
+    }
+  },
+  {
+    "id": "restaurant_012",
+    "scene": "restaurant",
+    "subScene": "Ordering",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "頼んだ料理がまだ来ていません。",
+      "en": "The order hasn't arrived yet.",
+      "zh": "点的菜还没来。",
+      "zh_TW": "點的菜還沒來。",
+      "ko": "주문한 음식이 아직 나오지 않았습니다.",
+      "es": "El pedido aún no ha llegado.",
+      "fr": "La commande n'est pas encore arrivée.",
+      "de": "Die Bestellung ist noch nicht angekommen.",
+      "vi": "Món đặt vẫn chưa đến.",
+      "id": "Pesanan belum datang."
+    }
+  },
+  {
+    "id": "restaurant_013",
+    "scene": "restaurant",
+    "subScene": "Ordering",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "紙ナプキンをもらえますか？",
+      "en": "Could I get a paper napkin?",
+      "zh": "能给我一张纸巾吗？",
+      "zh_TW": "能給我一張紙巾嗎？",
+      "ko": "종이 냅킨을 받을 수 있을까요?",
+      "es": "¿Podría darme una servilleta de papel?",
+      "fr": "Pourrais-je avoir une serviette en papier ?",
+      "de": "Könnte ich eine Papierserviette bekommen?",
+      "vi": "Có thể cho tôi khăn giấy không?",
+      "id": "Bisakah saya mendapat serbet kertas?"
+    }
+  },
+  {
+    "id": "restaurant_014",
+    "scene": "restaurant",
+    "subScene": "Checkout",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "お会計をお願いします。",
+      "en": "Could I have the check, please?",
+      "zh": "请结账。",
+      "zh_TW": "請結帳。",
+      "ko": "계산서 부탁드립니다.",
+      "es": "La cuenta, por favor.",
+      "fr": "L'addition, s'il vous plaît.",
+      "de": "Die Rechnung, bitte.",
+      "vi": "Tính tiền cho tôi.",
+      "id": "Tolong hitung tagihannya."
+    }
+  },
+  {
+    "id": "restaurant_015",
+    "scene": "restaurant",
+    "subScene": "Checkout",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "現金で支払えますか？",
+      "en": "Can I pay in cash?",
+      "zh": "可以用现金支付吗？",
+      "zh_TW": "可以用現金支付嗎？",
+      "ko": "현금으로 지불할 수 있나요?",
+      "es": "¿Puedo pagar en efectivo?",
+      "fr": "Puis-je payer en espèces ?",
+      "de": "Kann ich bar bezahlen?",
+      "vi": "Tôi có thể trả bằng tiền mặt không?",
+      "id": "Bisakah saya bayar tunai?"
+    }
+  },
+  {
+    "id": "restaurant_016",
+    "scene": "restaurant",
+    "subScene": "Checkout",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "クレジットカードで支払えますか？",
+      "en": "Can I pay by credit card?",
+      "zh": "可以用信用卡支付吗？",
+      "zh_TW": "可以用信用卡支付嗎？",
+      "ko": "신용카드로 결제할 수 있나요?",
+      "es": "¿Puedo pagar con tarjeta de crédito?",
+      "fr": "Puis-je payer par carte de crédit ?",
+      "de": "Kann ich mit Kreditkarte bezahlen?",
+      "vi": "Tôi có thể thanh toán bằng thẻ tín dụng không?",
+      "id": "Bisakah saya bayar dengan kartu kredit?"
+    }
+  },
+  {
+    "id": "restaurant_017",
+    "scene": "restaurant",
+    "subScene": "Reservations",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "予約をしたいのですが。",
+      "en": "I'd like to make a reservation.",
+      "zh": "我想要预订。",
+      "zh_TW": "我想要預訂。",
+      "ko": "예약을 하고 싶습니다.",
+      "es": "Me gustaría hacer una reserva.",
+      "fr": "J'aimerais faire une réservation.",
+      "de": "Ich möchte eine Reservierung vornehmen.",
+      "vi": "Tôi muốn đặt chỗ.",
+      "id": "Saya ingin membuat reservasi."
+    }
+  },
+  {
+    "id": "restaurant_018",
+    "scene": "restaurant",
+    "subScene": "Reservations",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "明日20時に予約できますか？",
+      "en": "Can I reserve for tomorrow at 8 PM?",
+      "zh": "我可以预订明天晚上八点吗？",
+      "zh_TW": "我可以預訂明天晚上八點嗎？",
+      "ko": "내일 20시에 예약할 수 있나요?",
+      "es": "¿Puedo reservar para mañana a las 20:00?",
+      "fr": "Puis-je réserver pour demain à 20 h ?",
+      "de": "Kann ich für morgen um 20 Uhr reservieren?",
+      "vi": "Tôi có thể đặt cho 20h ngày mai không?",
+      "id": "Bisakah saya reservasi untuk besok jam 20.00?"
+    }
+  },
+  {
+    "id": "restaurant_019",
+    "scene": "restaurant",
+    "subScene": "Reservations",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "テラス席を予約したいです。",
+      "en": "I would like to reserve a terrace table.",
+      "zh": "我想预订露台座位。",
+      "zh_TW": "我想預訂露台座位。",
+      "ko": "테라스 좌석을 예약하고 싶습니다.",
+      "es": "Quisiera reservar una mesa en la terraza.",
+      "fr": "Je voudrais réserver une table en terrasse.",
+      "de": "Ich möchte einen Tisch auf der Terrasse reservieren.",
+      "vi": "Tôi muốn đặt bàn trên sân hiên.",
+      "id": "Saya ingin memesan meja di teras."
+    }
+  },
+  {
+    "id": "restaurant_020",
+    "scene": "restaurant",
+    "subScene": "Reservations",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ベビーチェアは必要です。",
+      "en": "We need a high chair.",
+      "zh": "我们需要婴儿椅。",
+      "zh_TW": "我們需要嬰兒椅。",
+      "ko": "유아용 의자가 필요합니다.",
+      "es": "Necesitamos una silla para bebé.",
+      "fr": "Nous avons besoin d'une chaise haute.",
+      "de": "Wir benötigen einen Hochstuhl.",
+      "vi": "Chúng tôi cần ghế cao cho em bé.",
+      "id": "Kami membutuhkan kursi bayi."
+    }
+  },
+  {
+    "id": "restaurant_021",
+    "scene": "restaurant",
+    "subScene": "Reservations",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "予約のキャンセルはいつまで可能ですか？",
+      "en": "Until when can I cancel the reservation?",
+      "zh": "预订最晚可以什么时候取消？",
+      "zh_TW": "預訂最晚可以何時取消？",
+      "ko": "예약은 언제까지 취소할 수 있나요?",
+      "es": "¿Hasta cuándo puedo cancelar la reserva?",
+      "fr": "Jusqu'à quand puis-je annuler la réservation ?",
+      "de": "Bis wann kann ich die Reservierung stornieren?",
+      "vi": "Tôi có thể hủy đặt chỗ cho đến khi nào?",
+      "id": "Sampai kapan saya bisa membatalkan reservasi?"
+    }
+  },
+  {
+    "id": "restaurant_022",
+    "scene": "restaurant",
+    "subScene": "Reservations",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "予約確認メールを再送してください。",
+      "en": "Please resend the reservation confirmation email.",
+      "zh": "请重新发送预订确认邮件。",
+      "zh_TW": "請重新發送預訂確認郵件。",
+      "ko": "예약 확인 이메일을 다시 보내주세요.",
+      "es": "Por favor, reenvíe el correo de confirmación de reserva.",
+      "fr": "Veuillez renvoyer l'email de confirmation de réservation.",
+      "de": "Bitte senden Sie die Reservierungsbestätigung erneut.",
+      "vi": "Vui lòng gửi lại email xác nhận đặt chỗ.",
+      "id": "Tolong kirim ulang email konfirmasi reservasi."
+    }
+  },
+  {
+    "id": "restaurant_023",
+    "scene": "restaurant",
+    "subScene": "Reservations",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "名前は田中で予約しています。",
+      "en": "The reservation is under the name Tanaka.",
+      "zh": "预订是以田中为名。",
+      "zh_TW": "預訂是以田中為名。",
+      "ko": "예약은 다나카라는 이름으로 되어 있습니다.",
+      "es": "La reserva está a nombre de Tanaka.",
+      "fr": "La réservation est au nom de Tanaka.",
+      "de": "Die Reservierung läuft auf den Namen Tanaka.",
+      "vi": "Đặt chỗ mang tên Tanaka.",
+      "id": "Reservasi atas nama Tanaka."
+    }
+  },
+  {
+    "id": "restaurant_024",
+    "scene": "restaurant",
+    "subScene": "Reservations",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "予約時間に遅れそうです。",
+      "en": "We might be late for the reservation.",
+      "zh": "我们可能会迟到。",
+      "zh_TW": "我們可能會遲到。",
+      "ko": "예약 시간에 늦을 것 같습니다.",
+      "es": "Es posible que lleguemos tarde a la reserva.",
+      "fr": "Nous risquons d'être en retard pour notre réservation.",
+      "de": "Wir könnten uns für unsere Reservierung verspäten.",
+      "vi": "Chúng tôi có thể đến trễ giờ đặt chỗ.",
+      "id": "Kami mungkin akan terlambat untuk reservasi."
+    }
+  },
+  {
+    "id": "restaurant_025",
+    "scene": "restaurant",
+    "subScene": "Reservations",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "2名から4名に変更できますか？",
+      "en": "Can we change the reservation from two to four people?",
+      "zh": "我们能把预订从2人改到4人吗？",
+      "zh_TW": "我們能把預訂從2人改到4人嗎？",
+      "ko": "예약 인원을 두 명에서 네 명으로 변경할 수 있나요?",
+      "es": "¿Podemos cambiar la reserva de dos a cuatro personas?",
+      "fr": "Pouvons-nous modifier la réservation de deux à quatre personnes ?",
+      "de": "Können wir die Reservierung von zwei auf vier Personen ändern?",
+      "vi": "Chúng tôi có thể đổi đặt chỗ từ 2 thành 4 người không?",
+      "id": "Bisakah kami mengubah reservasi dari dua menjadi empat orang?"
+    }
+  },
+  {
+    "id": "restaurant_026",
+    "scene": "restaurant",
+    "subScene": "Reservations",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "犬連れですが大丈夫ですか？",
+      "en": "Is it okay if we bring our dog?",
+      "zh": "可以带狗吗？",
+      "zh_TW": "可以帶狗嗎？",
+      "ko": "개를 데려가도 되나요?",
+      "es": "¿Está bien si traemos nuestro perro?",
+      "fr": "Est‑ce possible d'amener notre chien ?",
+      "de": "Ist es in Ordnung, wenn wir unseren Hund mitbringen?",
+      "vi": "Chúng tôi có thể mang theo con chó không?",
+      "id": "Apakah boleh membawa anjing?"
+    }
+  },
+  {
+    "id": "restaurant_027",
+    "scene": "restaurant",
+    "subScene": "Drinks",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "メニューにないドリンクはありますか？",
+      "en": "Do you have drinks not listed on the menu?",
+      "zh": "有菜单上没有的饮料吗？",
+      "zh_TW": "有菜單上沒有的飲料嗎？",
+      "ko": "메뉴에 없는 음료가 있나요?",
+      "es": "¿Tienen bebidas que no estén en el menú?",
+      "fr": "Avez‑vous des boissons qui ne figurent pas sur le menu ?",
+      "de": "Haben Sie Getränke, die nicht auf der Karte stehen?",
+      "vi": "Có đồ uống nào không có trong menu không?",
+      "id": "Apakah ada minuman yang tidak tertera di menu?"
+    }
+  },
+  {
+    "id": "restaurant_028",
+    "scene": "restaurant",
+    "subScene": "Drinks",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ビールを一杯ください。",
+      "en": "I'll have a beer, please.",
+      "zh": "请给我一杯啤酒。",
+      "zh_TW": "請給我一杯啤酒。",
+      "ko": "맥주 한 잔 주세요.",
+      "es": "Una cerveza, por favor.",
+      "fr": "Une bière, s'il vous plaît.",
+      "de": "Ein Bier, bitte.",
+      "vi": "Cho tôi một ly bia.",
+      "id": "Saya pesan satu bir."
+    }
+  },
+  {
+    "id": "restaurant_029",
+    "scene": "restaurant",
+    "subScene": "Drinks",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ノンアルコールカクテルはありますか？",
+      "en": "Do you have non‑alcoholic cocktails?",
+      "zh": "有无酒精鸡尾酒吗？",
+      "zh_TW": "有無酒精雞尾酒嗎？",
+      "ko": "논알코올 칵테일이 있나요?",
+      "es": "¿Tienen cócteles sin alcohol?",
+      "fr": "Avez‑vous des cocktails sans alcool ?",
+      "de": "Haben Sie alkoholfreie Cocktails?",
+      "vi": "Có cocktail không cồn không?",
+      "id": "Apakah ada koktail non-alkohol?"
+    }
+  },
+  {
+    "id": "restaurant_030",
+    "scene": "restaurant",
+    "subScene": "Drinks",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "日本酒のおすすめはありますか？",
+      "en": "Which sake do you recommend?",
+      "zh": "您推荐哪种日本酒？",
+      "zh_TW": "您推薦哪種日本酒？",
+      "ko": "추천하는 사케가 있나요?",
+      "es": "¿Qué sake recomienda?",
+      "fr": "Quel saké recommandez-vous ?",
+      "de": "Welchen Sake empfehlen Sie?",
+      "vi": "Bạn gợi ý loại sake nào?",
+      "id": "Anda merekomendasikan sake apa?"
+    }
+  },
+  {
+    "id": "restaurant_031",
+    "scene": "restaurant",
+    "subScene": "Drinks",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "グラスワインを赤白でお願いします。",
+      "en": "A glass of red and a glass of white wine, please.",
+      "zh": "请给我一杯红酒和一杯白酒。",
+      "zh_TW": "請給我一杯紅酒和一杯白酒。",
+      "ko": "레드 와인 한 잔, 화이트 와인 한 잔 주세요.",
+      "es": "Una copa de tinto y una de blanco, por favor.",
+      "fr": "Un verre de rouge et un verre de blanc, s'il vous plaît.",
+      "de": "Ein Glas Rot‑ und ein Glas Weißwein, bitte.",
+      "vi": "Cho tôi một ly rượu đỏ và một ly rượu trắng.",
+      "id": "Satu gelas anggur merah dan satu gelas anggur putih, tolong."
+    }
+  },
+  {
+    "id": "restaurant_032",
+    "scene": "restaurant",
+    "subScene": "Drinks",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ドリンクのサイズは何種類ありますか？",
+      "en": "How many sizes of drinks are there?",
+      "zh": "饮料有几种大小？",
+      "zh_TW": "飲料有幾種大小？",
+      "ko": "음료 크기는 몇 가지가 있나요?",
+      "es": "¿Cuántos tamaños de bebidas hay?",
+      "fr": "Combien de tailles de boissons proposez‑vous ?",
+      "de": "Wie viele Größen von Getränken gibt es?",
+      "vi": "Có bao nhiêu kích cỡ đồ uống?",
+      "id": "Ada berapa ukuran minuman?"
+    }
+  },
+  {
+    "id": "restaurant_033",
+    "scene": "restaurant",
+    "subScene": "Drinks",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "おすすめのカクテルを教えてください。",
+      "en": "Please recommend a cocktail.",
+      "zh": "请推荐一款鸡尾酒。",
+      "zh_TW": "請推薦一款雞尾酒。",
+      "ko": "추천할 칵테일을 알려주세요.",
+      "es": "Por favor, recomiéndeme un cóctel.",
+      "fr": "Veuillez me recommander un cocktail.",
+      "de": "Bitte empfehlen Sie mir einen Cocktail.",
+      "vi": "Xin vui lòng đề xuất cocktail.",
+      "id": "Silakan rekomendasikan koktail."
+    }
+  },
+  {
+    "id": "restaurant_034",
+    "scene": "restaurant",
+    "subScene": "Drinks",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ミネラルウォーターはスパークリングですか？",
+      "en": "Is the mineral water sparkling?",
+      "zh": "矿泉水是气泡水吗？",
+      "zh_TW": "礦泉水是氣泡水嗎？",
+      "ko": "생수는 탄산수인가요?",
+      "es": "¿El agua mineral es con gas?",
+      "fr": "L'eau minérale est‑elle pétillante ?",
+      "de": "Ist das Mineralwasser kohlensäurehaltig?",
+      "vi": "Nước khoáng có gas không?",
+      "id": "Apakah air mineral berkarbonasi?"
+    }
+  },
+  {
+    "id": "restaurant_035",
+    "scene": "restaurant",
+    "subScene": "Drinks",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "飲み放題プランはありますか？",
+      "en": "Do you have an all‑you‑can‑drink plan?",
+      "zh": "有无限畅饮套餐吗？",
+      "zh_TW": "有無限暢飲套餐嗎？",
+      "ko": "음료 무제한 플랜이 있나요?",
+      "es": "¿Tienen plan de barra libre?",
+      "fr": "Avez‑vous un forfait boisson à volonté ?",
+      "de": "Haben Sie ein All-you-can-drink-Angebot?",
+      "vi": "Có gói uống không giới hạn không?",
+      "id": "Apakah Anda memiliki paket minum sepuasnya?"
+    }
+  },
+  {
+    "id": "restaurant_036",
+    "scene": "restaurant",
+    "subScene": "Drinks",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "お茶のおかわりは無料ですか？",
+      "en": "Is refilling tea free?",
+      "zh": "再来一杯茶免费吗？",
+      "zh_TW": "再來一杯茶免費嗎？",
+      "ko": "차 리필은 무료인가요?",
+      "es": "¿Las recargas de té son gratuitas?",
+      "fr": "Le refill de thé est‑il gratuit ?",
+      "de": "Ist das Nachfüllen von Tee kostenlos?",
+      "vi": "Thêm trà có miễn phí không?",
+      "id": "Apakah isi ulang teh gratis?"
+    }
+  },
+  {
+    "id": "restaurant_037",
+    "scene": "restaurant",
+    "subScene": "Desserts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "デザートメニューをください。",
+      "en": "Could I have the dessert menu?",
+      "zh": "请给我甜点菜单。",
+      "zh_TW": "請給我甜點菜單。",
+      "ko": "디저트 메뉴를 주시겠어요?",
+      "es": "Quisiera el menú de postres.",
+      "fr": "Pourrais‑je avoir le menu des desserts ?",
+      "de": "Könnte ich die Dessertkarte bekommen?",
+      "vi": "Cho tôi thực đơn tráng miệng.",
+      "id": "Bisakah saya melihat menu pencuci mulut?"
+    }
+  },
+  {
+    "id": "restaurant_038",
+    "scene": "restaurant",
+    "subScene": "Desserts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "本日のデザートは何ですか？",
+      "en": "What is today's dessert?",
+      "zh": "今天的甜点是什么？",
+      "zh_TW": "今天的甜點是什麼？",
+      "ko": "오늘의 디저트는 무엇인가요?",
+      "es": "¿Cuál es el postre del día?",
+      "fr": "Quel est le dessert du jour ?",
+      "de": "Was ist das Dessert des Tages?",
+      "vi": "Món tráng miệng hôm nay là gì?",
+      "id": "Apa pencuci mulut hari ini?"
+    }
+  },
+  {
+    "id": "restaurant_039",
+    "scene": "restaurant",
+    "subScene": "Desserts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "チーズケーキをください。",
+      "en": "I'll have the cheesecake, please.",
+      "zh": "请给我芝士蛋糕。",
+      "zh_TW": "請給我起司蛋糕。",
+      "ko": "치즈케이크를 주세요.",
+      "es": "Quisiera la tarta de queso.",
+      "fr": "Je prendrai le cheesecake, s'il vous plaît.",
+      "de": "Ich nehme den Käsekuchen, bitte.",
+      "vi": "Cho tôi bánh phô mai.",
+      "id": "Tolong beri tôi kue keju."
+    }
+  },
+  {
+    "id": "restaurant_040",
+    "scene": "restaurant",
+    "subScene": "Desserts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "アイスクリームは何味がありますか？",
+      "en": "What flavors of ice cream do you have?",
+      "zh": "冰淇淋有哪些口味？",
+      "zh_TW": "冰淇淋有哪些口味？",
+      "ko": "아이스크림은 어떤 맛이 있나요?",
+      "es": "¿Qué sabores de helado tienen?",
+      "fr": "Quelles sont les saveurs de glace ?",
+      "de": "Welche Eissorten haben Sie?",
+      "vi": "Kem có những vị nào?",
+      "id": "Es krim memiliki rasa apa saja?"
+    }
+  },
+  {
+    "id": "restaurant_041",
+    "scene": "restaurant",
+    "subScene": "Desserts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "甘さ控えめにできますか？",
+      "en": "Can you make it less sweet?",
+      "zh": "可以少放糖吗？",
+      "zh_TW": "可以少放糖嗎？",
+      "ko": "달게 덜 만들어 주실 수 있나요?",
+      "es": "¿Podría hacerlo menos dulce?",
+      "fr": "Pouvez‑vous le rendre moins sucré ?",
+      "de": "Können Sie es weniger süß machen?",
+      "vi": "Có thể làm ngọt ít hơn không?",
+      "id": "Bisakah dibuat kurang manis?"
+    }
+  },
+  {
+    "id": "restaurant_042",
+    "scene": "restaurant",
+    "subScene": "Desserts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ケーキの盛り合わせをお願いします。",
+      "en": "I’d like a cake assortment, please.",
+      "zh": "请给我一个蛋糕拼盘。",
+      "zh_TW": "請給我一個蛋糕拼盤。",
+      "ko": "케이크 모둠을 부탁드립니다.",
+      "es": "Me gustaría un surtido de pasteles, por favor.",
+      "fr": "Je voudrais un assortiment de gâteaux, s'il vous plaît.",
+      "de": "Ich hätte gerne eine Kuchenplatte, bitte.",
+      "vi": "Cho tôi một đĩa bánh ngọt hỗn hợp, làm ơn.",
+      "id": "Tolong berikan saya sepiring kue campuran."
+    }
+  },
+  {
+    "id": "restaurant_043",
+    "scene": "restaurant",
+    "subScene": "Desserts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "フルーツタルトを一つください。",
+      "en": "I’d like one fruit tart, please.",
+      "zh": "请给我一份水果挞。",
+      "zh_TW": "請給我一份水果塔。",
+      "ko": "과일 타르트를 하나 주세요.",
+      "es": "Quisiera una tarta de frutas, por favor.",
+      "fr": "Je voudrais une tarte aux fruits, s'il vous plaît.",
+      "de": "Ich hätte gerne eine Obsttorte, bitte.",
+      "vi": "Cho tôi một chiếc bánh tart trái cây, làm ơn.",
+      "id": "Tolong beri saya satu tart buah."
+    }
+  },
+  {
+    "id": "restaurant_044",
+    "scene": "restaurant",
+    "subScene": "Desserts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "コーヒーと一緒におすすめのデザートは？",
+      "en": "What dessert do you recommend with coffee?",
+      "zh": "有什么甜点推荐搭配咖啡吗？",
+      "zh_TW": "有什麼甜點推薦搭配咖啡嗎？",
+      "ko": "커피와 함께 추천하는 디저트는 무엇인가요?",
+      "es": "¿Qué postre recomienda con el café?",
+      "fr": "Quel dessert recommandez‑vous avec le café ?",
+      "de": "Welches Dessert empfehlen Sie zum Kaffee?",
+      "vi": "Bạn gợi ý món tráng miệng nào cùng cà phê?",
+      "id": "Dessert apa yang Anda rekomendasikan dengan kopi?"
+    }
+  },
+  {
+    "id": "restaurant_045",
+    "scene": "restaurant",
+    "subScene": "Desserts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "小さめサイズのデザートはありますか？",
+      "en": "Do you have smaller dessert portions?",
+      "zh": "有小份量的甜点吗？",
+      "zh_TW": "有小份量的甜點嗎？",
+      "ko": "작은 사이즈의 디저트가 있나요?",
+      "es": "¿Tienen postres en porciones más pequeñas?",
+      "fr": "Avez‑vous des desserts en plus petites portions ?",
+      "de": "Haben Sie Desserts in kleineren Portionen?",
+      "vi": "Có khẩu phần tráng miệng nhỏ hơn không?",
+      "id": "Apakah ada porsi dessert yang lebih kecil?"
+    }
+  },
+  {
+    "id": "restaurant_046",
+    "scene": "restaurant",
+    "subScene": "Desserts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "デザートを後で追加できますか？",
+      "en": "Can I add a dessert later?",
+      "zh": "可以稍后再加点甜点吗？",
+      "zh_TW": "可以稍後再加點甜點嗎？",
+      "ko": "나중에 디저트를 추가할 수 있나요?",
+      "es": "¿Puedo añadir un postre más tarde?",
+      "fr": "Puis‑je ajouter un dessert plus tard ?",
+      "de": "Kann ich später noch ein Dessert hinzufügen?",
+      "vi": "Tôi có thể thêm món tráng miệng sau không?",
+      "id": "Bisakah saya menambah dessert nanti?"
+    }
+  },
+  {
+    "id": "restaurant_047",
+    "scene": "restaurant",
+    "subScene": "Services&Facilities",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "トイレはどこにありますか？",
+      "en": "Where is the restroom?",
+      "zh": "洗手间在哪里？",
+      "zh_TW": "洗手間在哪裡？",
+      "ko": "화장실은 어디에 있나요?",
+      "es": "¿Dónde está el baño?",
+      "fr": "Où sont les toilettes ?",
+      "de": "Wo ist die Toilette?",
+      "vi": "Nhà vệ sinh ở đâu?",
+      "id": "Di mana toilet?"
+    }
+  },
+  {
+    "id": "restaurant_048",
+    "scene": "restaurant",
+    "subScene": "Services&Facilities",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "無料Wi‑Fiはありますか？",
+      "en": "Do you have free Wi‑Fi?",
+      "zh": "有免费Wi‑Fi吗？",
+      "zh_TW": "有免費Wi‑Fi嗎？",
+      "ko": "무료 Wi‑Fi가 있나요?",
+      "es": "¿Tienen Wi‑Fi gratis?",
+      "fr": "Avez‑vous du Wi‑Fi gratuit ?",
+      "de": "Haben Sie kostenloses WLAN?",
+      "vi": "Có Wi‑Fi miễn phí không?",
+      "id": "Apakah ada Wi‑Fi gratis?"
+    }
+  },
+  {
+    "id": "restaurant_049",
+    "scene": "restaurant",
+    "subScene": "Services&Facilities",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "喫煙ルームはありますか？",
+      "en": "Is there a smoking room?",
+      "zh": "有吸烟室吗？",
+      "zh_TW": "有吸菸室嗎？",
+      "ko": "흡연실이 있나요?",
+      "es": "¿Hay una sala de fumadores?",
+      "fr": "Y a‑t‑il une salle fumeurs ?",
+      "de": "Gibt es einen Raucherraum?",
+      "vi": "Có phòng hút thuốc không?",
+      "id": "Apakah ada ruang merokok?"
+    }
+  },
+  {
+    "id": "restaurant_050",
+    "scene": "restaurant",
+    "subScene": "Services&Facilities",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ベビールームはありますか？",
+      "en": "Is there a baby room?",
+      "zh": "有婴儿房吗？",
+      "zh_TW": "有嬰兒室嗎？",
+      "ko": "베이비룸이 있나요?",
+      "es": "¿Hay un cuarto para bebés?",
+      "fr": "Y a‑t‑il une salle pour bébé ?",
+      "de": "Gibt es einen Babyraum?",
+      "vi": "Có phòng cho em bé không?",
+      "id": "Apakah ada ruang bayi?"
+    }
+  },
+  {
+    "id": "restaurant_051",
+    "scene": "restaurant",
+    "subScene": "Services&Facilities",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "お祝い用のプレートを用意できますか？",
+      "en": "Can you prepare a celebratory plate?",
+      "zh": "可以准备庆祝用的盘子吗？",
+      "zh_TW": "可以準備慶祝用的盤子嗎？",
+      "ko": "축하용 접시를 준비해 주실 수 있나요?",
+      "es": "¿Puede preparar un plato de celebración?",
+      "fr": "Pouvez‑vous préparer une assiette de célébration ?",
+      "de": "Können Sie einen Festteller vorbereiten?",
+      "vi": "Bạn có thể chuẩn bị đĩa chúc mừng không?",
+      "id": "Bisakah Anda menyiapkan piring perayaan?"
+    }
+  },
+  {
+    "id": "restaurant_052",
+    "scene": "restaurant",
+    "subScene": "Services&Facilities",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "英語のメニューはありますか？",
+      "en": "Do you have a menu in English?",
+      "zh": "有英文菜单吗？",
+      "zh_TW": "有英文菜單嗎？",
+      "ko": "영어 메뉴가 있나요?",
+      "es": "¿Tienen menú en inglés?",
+      "fr": "Avez‑vous un menu en anglais ?",
+      "de": "Haben Sie eine Speisekarte auf Englisch?",
+      "vi": "Có thực đơn tiếng Anh không?",
+      "id": "Apakah ada menu bahasa Inggris?"
+    }
+  },
+  {
+    "id": "restaurant_053",
+    "scene": "restaurant",
+    "subScene": "Services&Facilities",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "店内に電源はありますか？",
+      "en": "Is there a power outlet in the restaurant?",
+      "zh": "店内有电源插座吗？",
+      "zh_TW": "店內有電源插座嗎？",
+      "ko": "매장에 전원 콘센트가 있나요?",
+      "es": "¿Hay enchufes en el local?",
+      "fr": "Y a‑t‑il des prises électriques dans le restaurant ?",
+      "de": "Gibt es Steckdosen im Restaurant?",
+      "vi": "Có ổ cắm điện trong quán không?",
+      "id": "Apakah ada stopkontak di dalam restoran?"
+    }
+  },
+  {
+    "id": "restaurant_054",
+    "scene": "restaurant",
+    "subScene": "Services&Facilities",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "スタッフを呼ぶにはどうすればいいですか？",
+      "en": "How can I call the staff?",
+      "zh": "怎么呼叫服务员？",
+      "zh_TW": "怎麼呼叫服務員？",
+      "ko": "직원을 부르려면 어떻게 해야 하나요?",
+      "es": "¿Cómo puedo llamar al personal?",
+      "fr": "Comment puis‑je appeler le personnel ?",
+      "de": "Wie kann ich das Personal rufen?",
+      "vi": "Làm sao để gọi nhân viên?",
+      "id": "Bagaimana cara memanggil staf?"
+    }
+  },
+  {
+    "id": "restaurant_055",
+    "scene": "restaurant",
+    "subScene": "Services&Facilities",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "傘を貸してもらえますか？",
+      "en": "Could I borrow an umbrella?",
+      "zh": "能借我一把伞吗？",
+      "zh_TW": "能借我一把傘嗎？",
+      "ko": "우산을 빌릴 수 있나요?",
+      "es": "¿Podría prestarme un paraguas?",
+      "fr": "Pourrais‑je emprunter un parapluie ?",
+      "de": "Könnte ich einen Regenschirm ausleihen?",
+      "vi": "Tôi có thể mượn một chiếc ô không?",
+      "id": "Bolehkah saya meminjam payung?"
+    }
+  },
+  {
+    "id": "restaurant_056",
+    "scene": "restaurant",
+    "subScene": "Services&Facilities",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "静かな席に移動できますか？",
+      "en": "Can we move to a quieter table?",
+      "zh": "可以换到安静的座位吗？",
+      "zh_TW": "可以換到安靜的座位嗎？",
+      "ko": "조용한 자리로 옮길 수 있나요?",
+      "es": "¿Podemos movernos a una mesa más tranquila?",
+      "fr": "Pouvons‑nous aller à une table plus calme ?",
+      "de": "Können wir an einen ruhigeren Tisch wechseln?",
+      "vi": "Chúng tôi có thể chuyển sang bàn yên tĩnh hơn không?",
+      "id": "Bisakah kami pindah ke meja yang lebih tenang?"
+    }
+  },
+  {
+    "id": "restaurant_057",
+    "scene": "restaurant",
+    "subScene": "Take-out",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "テイクアウトは可能ですか？",
+      "en": "Is takeout available?",
+      "zh": "可以外带吗？",
+      "zh_TW": "可以外帶嗎？",
+      "ko": "테이크아웃이 가능한가요?",
+      "es": "¿Se puede pedir para llevar?",
+      "fr": "Les plats sont‑ils disponibles à emporter ?",
+      "de": "Gibt es Essen zum Mitnehmen?",
+      "vi": "Có thể mang về được không?",
+      "id": "Apakah tersedia layanan bawa pulang?"
+    }
+  },
+  {
+    "id": "restaurant_058",
+    "scene": "restaurant",
+    "subScene": "Take-out",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "持ち帰り用の容器をお願いします。",
+      "en": "I’d like a container for takeout, please.",
+      "zh": "请给我外带用的容器。",
+      "zh_TW": "請給我外帶用的容器。",
+      "ko": "테이크아웃용 용기를 주세요.",
+      "es": "Quisiera un recipiente para llevar, por favor.",
+      "fr": "Je voudrais un contenant à emporter, s'il vous plaît.",
+      "de": "Ich hätte gerne einen Behälter zum Mitnehmen, bitte.",
+      "vi": "Cho tôi hộp đựng mang về, làm ơn.",
+      "id": "Tolong beri saya wadah untuk dibawa pulang."
+    }
+  },
+  {
+    "id": "restaurant_059",
+    "scene": "restaurant",
+    "subScene": "Take-out",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "注文を電話でできますか？",
+      "en": "Can I place an order by phone?",
+      "zh": "可以用电话点餐吗？",
+      "zh_TW": "可以用電話點餐嗎？",
+      "ko": "전화로 주문할 수 있나요?",
+      "es": "¿Puedo hacer un pedido por teléfono?",
+      "fr": "Puis‑je passer une commande par téléphone ?",
+      "de": "Kann ich telefonisch bestellen?",
+      "vi": "Tôi có thể đặt hàng qua điện thoại không?",
+      "id": "Bisakah saya memesan lewat telepon?"
+    }
+  },
+  {
+    "id": "restaurant_060",
+    "scene": "restaurant",
+    "subScene": "Take-out",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "オンラインで予約できますか？",
+      "en": "Can I make a reservation online?",
+      "zh": "可以在线预订吗？",
+      "zh_TW": "可以在線預訂嗎？",
+      "ko": "온라인으로 예약할 수 있나요?",
+      "es": "¿Puedo reservar en línea?",
+      "fr": "Puis‑je réserver en ligne ?",
+      "de": "Kann ich online reservieren?",
+      "vi": "Tôi có thể đặt chỗ trực tuyến không?",
+      "id": "Bisakah saya memesan secara online?"
+    }
+  },
+  {
+    "id": "restaurant_061",
+    "scene": "restaurant",
+    "subScene": "Take-out",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "テイクアウト用のメニューをください。",
+      "en": "Could I have the takeout menu?",
+      "zh": "请给我外带菜单。",
+      "zh_TW": "請給我外帶菜單。",
+      "ko": "테이크아웃 메뉴를 주시겠어요?",
+      "es": "¿Me puede dar el menú para llevar?",
+      "fr": "Pourrais‑je avoir le menu à emporter ?",
+      "de": "Könnte ich die Speisekarte zum Mitnehmen bekommen?",
+      "vi": "Cho tôi thực đơn mang về.",
+      "id": "Bisakah saya mendapat menu untuk dibawa pulang?"
+    }
+  },
+  {
+    "id": "restaurant_062",
+    "scene": "restaurant",
+    "subScene": "Take-out",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "いつ受け取りに行けばいいですか？",
+      "en": "When should I pick it up?",
+      "zh": "我什么时候来取？",
+      "zh_TW": "我什麼時候來取？",
+      "ko": "언제 가지러 오면 되나요?",
+      "es": "¿Cuándo debería pasar a recogerlo?",
+      "fr": "Quand devrais‑je venir le récupérer ?",
+      "de": "Wann soll ich es abholen?",
+      "vi": "Khi nào tôi nên đến nhận?",
+      "id": "Kapan saya harus mengambilnya?"
+    }
+  },
+  {
+    "id": "restaurant_063",
+    "scene": "restaurant",
+    "subScene": "Take-out",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "保冷バッグを用意できますか？",
+      "en": "Could you provide an insulated bag?",
+      "zh": "可以提供保冷袋吗？",
+      "zh_TW": "可以提供保冷袋嗎？",
+      "ko": "보냉 가방을 준비해 주실 수 있나요?",
+      "es": "¿Puede proporcionar una bolsa térmica?",
+      "fr": "Pourriez‑vous fournir un sac isotherme ?",
+      "de": "Können Sie eine Kühltasche bereitstellen?",
+      "vi": "Bạn có thể cho tôi túi giữ lạnh không?",
+      "id": "Bisakah Anda menyediakan tas insulasi?"
+    }
+  },
+  {
+    "id": "restaurant_064",
+    "scene": "restaurant",
+    "subScene": "Take-out",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "数量を増やしたいのですが。",
+      "en": "I’d like to increase the quantity.",
+      "zh": "我想增加数量。",
+      "zh_TW": "我想增加數量。",
+      "ko": "수량을 늘리고 싶습니다.",
+      "es": "Quisiera aumentar la cantidad.",
+      "fr": "Je voudrais augmenter la quantité.",
+      "de": "Ich möchte die Menge erhöhen.",
+      "vi": "Tôi muốn tăng số lượng.",
+      "id": "Saya ingin menambah jumlah."
+    }
+  },
+  {
+    "id": "restaurant_065",
+    "scene": "restaurant",
+    "subScene": "Take-out",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "アレルギー表示付きでお願いします。",
+      "en": "Please include allergy information.",
+      "zh": "请注明过敏原。",
+      "zh_TW": "請註明過敏原。",
+      "ko": "알레르기 정보를 표시해 주세요.",
+      "es": "Por favor, incluya información sobre alérgenos.",
+      "fr": "Veuillez inclure les informations sur les allergènes.",
+      "de": "Bitte geben Sie Allergene an.",
+      "vi": "Vui lòng bao gồm thông tin dị ứng.",
+      "id": "Harap sertakan informasi alergen."
+    }
+  },
+  {
+    "id": "restaurant_066",
+    "scene": "restaurant",
+    "subScene": "Take-out",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ホテルまで配達はできますか？",
+      "en": "Can you deliver to the hotel?",
+      "zh": "可以送到酒店吗？",
+      "zh_TW": "可以送到飯店嗎？",  
+      "ko": "호텔로 배달할 수 있나요?",
+      "es": "¿Puede entregar en el hotel?",
+      "fr": "Pouvez‑vous livrer à l'hôtel ?",
+      "de": "Können Sie zum Hotel liefern?",
+      "vi": "Có thể giao đến khách sạn không?",
+      "id": "Bisakah mengantarkan ke hotel?"
+    }
+  },
+  {
+    "id": "restaurant_067",
+    "scene": "restaurant",
+    "subScene": "Fooddetails",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "この料理には何が入っていますか？",
+      "en": "What’s in this dish?",
+      "zh": "这道菜里有什么？",
+      "zh_TW": "這道菜裡有什麼？",
+      "ko": "이 요리에 무엇이 들어 있나요?",
+      "es": "¿Qué lleva este plato?",
+      "fr": "Qu'y a‑t‑il dans ce plat ?",
+      "de": "Was ist in diesem Gericht enthalten?",
+      "vi": "Món này có những gì?",
+      "id": "Apa saja bahan dalam hidangan ini?"
+    }
+  },
+  {
+    "id": "restaurant_068",
+    "scene": "restaurant",
+    "subScene": "Fooddetails",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "これはスパイシーですか？",
+      "en": "Is this spicy?",
+      "zh": "这个辣吗？",
+      "zh_TW": "這個辣嗎？",
+      "ko": "이것은 매운가요?",
+      "es": "¿Esto es picante?",
+      "fr": "Est‑ce épicé ?",
+      "de": "Ist das scharf?",
+      "vi": "Cái này cay không?",
+      "id": "Apakah ini pedas?"
+    }
+  },
+  {
+    "id": "restaurant_069",
+    "scene": "restaurant",
+    "subScene": "Fooddetails",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "グルテンフリーの料理はありますか？",
+      "en": "Do you have gluten‑free dishes?",
+      "zh": "有无麸质食品？",
+      "zh_TW": "有無麩質食品？",
+      "ko": "글루텐 프리 요리가 있나요?",
+      "es": "¿Tienen platos sin gluten?",
+      "fr": "Avez‑vous des plats sans gluten ?",
+      "de": "Haben Sie glutenfreie Gerichte?",
+      "vi": "Có món ăn không có gluten không?",
+      "id": "Apakah ada hidangan bebas gluten?"
+    }
+  },
+  {
+    "id": "restaurant_070",
+    "scene": "restaurant",
+    "subScene": "Fooddetails",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ベジタリアン用にアレンジできますか？",
+      "en": "Can you make it vegetarian?",
+      "zh": "可以做成素食吗？",
+      "zh_TW": "可以做成素食嗎？",
+      "ko": "채식용으로 변경해 주실 수 있나요?",
+      "es": "¿Pueden hacerlo vegetariano?",
+      "fr": "Pouvez‑vous le préparer en version végétarienne ?",
+      "de": "Können Sie das vegetarisch zubereiten?",
+      "vi": "Có thể làm món chay không?",
+      "id": "Bisakah dibuat versi vegetarian?"
+    }
+  },
+  {
+    "id": "restaurant_071",
+    "scene": "restaurant",
+    "subScene": "Fooddetails",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "こちらのソースは手作りですか？",
+      "en": "Is this sauce homemade?",
+      "zh": "这个酱是自制的吗？",
+      "zh_TW": "這個醬是手工做的嗎？",
+      "ko": "이 소스는 집에서 만든 것인가요?",
+      "es": "¿Esta salsa es casera?",
+      "fr": "Cette sauce est‑elle faite maison ?",
+      "de": "Ist diese Soße hausgemacht?",
+      "vi": "Nước sốt này có phải tự làm không?",
+      "id": "Apakah saus ini buatan sendiri?"
+    }
+  },
+  {
+    "id": "restaurant_072",
+    "scene": "restaurant",
+    "subScene": "Fooddetails",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "料理の辛さは何段階ありますか？",
+      "en": "How many spice levels are there?",
+      "zh": "有几种辣度？",
+      "zh_TW": "有幾種辣度？",
+      "ko": "매운 정도가 몇 단계로 나누어져 있나요?",
+      "es": "¿Cuántos niveles de picante ofrecen?",
+      "fr": "Combien de niveaux de piquant proposez‑vous ?",
+      "de": "Wie viele Schärfegrade gibt es?",
+      "vi": "Có bao nhiêu cấp độ cay?",
+      "id": "Ada berapa tingkat kepedasan?"
+    }
+  },
+  {
+    "id": "restaurant_073",
+    "scene": "restaurant",
+    "subScene": "Fooddetails",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "魚料理は新鮮ですか？",
+      "en": "Is the fish dish fresh?",
+      "zh": "这道鱼菜新鲜吗？",
+      "zh_TW": "這道魚菜新鮮嗎？",
+      "ko": "생선 요리가 신선한가요?",
+      "es": "¿El plato de pescado está fresco?",
+      "fr": "Le plat de poisson est‑il frais ?",
+      "de": "Ist das Fischgericht frisch?",
+      "vi": "Món cá này có tươi không?",
+      "id": "Apakah hidangan ikan ini segar?"
+    }
+  },
+  {
+    "id": "restaurant_074",
+    "scene": "restaurant",
+    "subScene": "Fooddetails",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "この魚はどこ産ですか？",
+      "en": "Where is this fish from?",
+      "zh": "这条鱼产自哪里？",
+      "zh_TW": "這條魚產自哪裡？",
+      "ko": "이 생선은 어디산인가요?",
+      "es": "¿De dónde proviene este pescado?",
+      "fr": "D'où vient ce poisson ?",
+      "de": "Woher stammt dieser Fisch?",
+      "vi": "Cá này xuất xứ từ đâu?",
+      "id": "Ikan ini berasal dari mana?"
+    }
+  },
+  {
+    "id": "restaurant_075",
+    "scene": "restaurant",
+    "subScene": "Fooddetails",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "シェフのおすすめ料理は何ですか？",
+      "en": "What is the chef’s recommendation?",
+      "zh": "厨师推荐哪道菜？",
+      "zh_TW": "廚師推薦哪道菜？",
+      "ko": "셰프 추천 요리는 무엇인가요?",
+      "es": "¿Cuál es la recomendación del chef?",
+      "fr": "Quelle est la recommandation du chef ?",
+      "de": "Was empfiehlt der Chefkoch?",
+      "vi": "Món đề xuất của đầu bếp là gì?",
+      "id": "Apa rekomendasi chef?"
+    }
+  },
+  {
+    "id": "restaurant_076",
+    "scene": "restaurant",
+    "subScene": "Fooddetails",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "この料理はどのくらいで提供されますか？",
+      "en": "How long will this dish take to be served?",
+      "zh": "这道菜需要多久才能上桌？",
+      "zh_TW": "這道菜需要多久才能上桌？",
+      "ko": "이 요리는 제공되기까지 얼마나 걸리나요?",
+      "es": "¿Cuánto tardará este plato en servirse?",
+      "fr": "Combien de temps faudra‑t‑il pour servir ce plat ?",
+      "de": "Wie lange dauert es, bis dieses Gericht serviert wird?",
+      "vi": "Món này bao lâu sẽ được mang ra?",
+      "id": "Berapa lama hidangan ini akan disajikan?"
+    }
+  },
+  {
+    "id": "restaurant_077",
+    "scene": "restaurant",
+    "subScene": "Paymentoptions",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "分割払いはできますか？",
+      "en": "Can I pay in installments?",
+      "zh": "可以分期付款吗？",
+      "zh_TW": "可以分期付款嗎？",
+      "ko": "분할로 결제할 수 있나요?",
+      "es": "¿Puedo pagar en cuotas?",
+      "fr": "Puis‑je payer en plusieurs versements ?",
+      "de": "Kann ich in Raten zahlen?",
+      "vi": "Tôi có thể trả góp không?",
+      "id": "Bisakah saya membayar dengan angsuran?"
+    }
+  },
+  {
+    "id": "restaurant_078",
+    "scene": "restaurant",
+    "subScene": "Paymentoptions",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "QRコード決済は利用できますか？",
+      "en": "Do you accept QR code payments?",
+      "zh": "可以使用二维码支付吗？",
+      "zh_TW": "可以使用二維碼支付嗎？",
+      "ko": "QR코드 결제가 가능한가요?",
+      "es": "¿Aceptan pagos con código QR?",
+      "fr": "Acceptez‑vous les paiements par QR code ?",
+      "de": "Akzeptieren Sie QR‑Code‑Zahlungen?",
+      "vi": "Có chấp nhận thanh toán mã QR không?",
+      "id": "Apakah Anda menerima pembayaran kode QR?"
+    }
+  },
+  {
+    "id": "restaurant_079",
+    "scene": "restaurant",
+    "subScene": "Paymentoptions",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ポイントカードは使えますか？",
+      "en": "Can I use a loyalty card?",
+      "zh": "可以使用积分卡吗？",
+      "zh_TW": "可以使用積分卡嗎？",
+      "ko": "포인트 카드를 사용할 수 있나요?",
+      "es": "¿Puedo usar una tarjeta de puntos?",
+      "fr": "Puis‑je utiliser une carte de fidélité ?",
+      "de": "Kann ich eine Punktekarte verwenden?",
+      "vi": "Tôi có thể sử dụng thẻ tích điểm không?",
+      "id": "Bisakah saya menggunakan kartu poin?"
+    }
+  },
+  {
+    "id": "restaurant_080",
+    "scene": "restaurant",
+    "subScene": "Paymentoptions",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ギフトカードは使えますか？",
+      "en": "Do you accept gift cards?",
+      "zh": "可以使用礼品卡吗？",
+      "zh_TW": "可以使用禮品卡嗎？",
+      "ko": "기프트 카드를 사용할 수 있나요?",
+      "es": "¿Aceptan tarjetas de regalo?",
+      "fr": "Acceptez‑vous les cartes‑cadeaux ?",
+      "de": "Akzeptieren Sie Geschenkkarten?",
+      "vi": "Có chấp nhận thẻ quà tặng không?",
+      "id": "Apakah Anda menerima kartu hadiah?"
+    }
+  },
+  {
+    "id": "restaurant_081",
+    "scene": "restaurant",
+    "subScene": "Paymentoptions",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "チャージ式カードは対応していますか？",
+      "en": "Do you accept rechargeable cards?",
+      "zh": "是否支持充值卡？",
+      "zh_TW": "是否支援儲值卡？",
+      "ko": "충전식 카드를 지원하나요?",
+      "es": "¿Aceptan tarjetas recargables?",
+      "fr": "Acceptez-vous les cartes rechargeables ?",
+      "de": "Akzeptieren Sie aufladbare Karten?",
+      "vi": "Bạn có chấp nhận thẻ nạp tiền không?",
+      "id": "Apakah Anda menerima kartu isi ulang?"
+    }
+  },
+  {
+    "id": "restaurant_082",
+    "scene": "restaurant",
+    "subScene": "Paymentoptions",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "タッチ決済は可能ですか？",
+      "en": "Is contactless payment available?",
+      "zh": "是否可以使用非接触支付？",
+      "zh_TW": "是否可以使用感應支付？",
+      "ko": "터치 결제가 가능한가요?",
+      "es": "¿Se puede pagar sin contacto?",
+      "fr": "Le paiement sans contact est-il possible ?",
+      "de": "Ist kontaktloses Bezahlen möglich?",
+      "vi": "Có thể thanh toán không tiếp xúc không?",
+      "id": "Apakah pembayaran nirsentuh tersedia?"
+    }
+  },
+  {
+    "id": "restaurant_083",
+    "scene": "restaurant",
+    "subScene": "Paymentoptions",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "記念日に無料ドリンク券は使えますか？",
+      "en": "Can I use a free drink voucher on anniversaries?",
+      "zh": "纪念日可以使用免费饮料券吗？",
+      "zh_TW": "紀念日可以使用免費飲料券嗎？",
+      "ko": "기념일에 무료 음료권을 사용할 수 있나요?",
+      "es": "¿Puedo usar un cupón de bebida gratis en un aniversario?",
+      "fr": "Puis-je utiliser un coupon pour une boisson gratuite lors d'un anniversaire ?",
+      "de": "Kann ich an einem Jubiläum einen Gutschein für ein kostenloses Getränk einlösen?",
+      "vi": "Tôi có thể sử dụng phiếu đồ uống miễn phí vào ngày kỷ niệm không?",
+      "id": "Bisakah saya menggunakan kupon minuman gratis pada hari jadi?"
+    }
+  },
+  {
+    "id": "restaurant_084",
+    "scene": "restaurant",
+    "subScene": "Paymentoptions",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "学割はありますか？",
+      "en": "Do you offer a student discount?",
+      "zh": "有没有学生优惠？",
+      "zh_TW": "有學生優惠嗎？",
+      "ko": "학생 할인이 있나요?",
+      "es": "¿Ofrecen descuento para estudiantes?",
+      "fr": "Proposez-vous une réduction étudiante ?",
+      "de": "Bieten Sie einen Studentenrabatt an?",
+      "vi": "Có giảm giá cho sinh viên không?",
+      "id": "Apakah Anda menawarkan diskon pelajar?"
+    }
+  },
+  {
+    "id": "restaurant_085",
+    "scene": "restaurant",
+    "subScene": "Paymentoptions",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "社員証割引は適用できますか？",
+      "en": "Can I use an employee ID discount?",
+      "zh": "可以使用员工证折扣吗？",
+      "zh_TW": "可以使用員工證折扣嗎？",
+      "ko": "사원증 할인을 받을 수 있나요?",
+      "es": "¿Puedo aplicar el descuento de identificación de empleado?",
+      "fr": "Puis-je bénéficier de la réduction avec une carte d'employé ?",
+      "de": "Kann ich den Mitarbeiterausweisrabatt nutzen?",
+      "vi": "Tôi có thể sử dụng giảm giá bằng thẻ nhân viên không?",
+      "id": "Bisakah saya menggunakan diskon kartu karyawan?"
+    }
+  },
+  {
+    "id": "restaurant_086",
+    "scene": "restaurant",
+    "subScene": "Promotions&Events",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "期間限定メニューはありますか？",
+      "en": "Do you have a limited-time menu?",
+      "zh": "有限时菜单吗？",
+      "zh_TW": "有限時菜單嗎？",
+      "ko": "기간 한정 메뉴가 있나요?",
+      "es": "¿Tienen un menú por tiempo limitado?",
+      "fr": "Avez-vous un menu à durée limitée ?",
+      "de": "Haben Sie ein zeitlich begrenztes Menü?",
+      "vi": "Có thực đơn giới hạn thời gian không?",
+      "id": "Apakah Anda memiliki menu terbatas waktu?"
+    }
+  },
+  {
+    "id": "restaurant_087",
+    "scene": "restaurant",
+    "subScene": "Promotions&Events",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ハッピーアワーは何時からですか？",
+      "en": "What time does happy hour start?",
+      "zh": "欢乐时光从几点开始？",
+      "zh_TW": "快樂時光從幾點開始？",
+      "ko": "해피 아워는 몇 시부터인가요?",
+      "es": "¿A qué hora comienza la hora feliz?",
+      "fr": "À quelle heure commence l'happy hour ?",
+      "de": "Um wie viel Uhr beginnt die Happy Hour?",
+      "vi": "Giờ khuyến mãi (happy hour) bắt đầu từ mấy giờ?",
+      "id": "Jam berapa happy hour dimulai?"
+    }
+  },
+  {
+    "id": "restaurant_088",
+    "scene": "restaurant",
+    "subScene": "Promotions&Events",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "誕生日特典はありますか？",
+      "en": "Do you offer birthday perks?",
+      "zh": "有没有生日优惠？",
+      "zh_TW": "有沒有生日優惠？",
+      "ko": "생일 특전이 있나요?",
+      "es": "¿Ofrecen beneficios de cumpleaños?",
+      "fr": "Proposez-vous des avantages pour l'anniversaire ?",
+      "de": "Bieten Sie Geburtstagsvorteile an?",
+      "vi": "Có ưu đãi nhân dịp sinh nhật không?",
+      "id": "Apakah Anda menawarkan keuntungan ulang tahun?"
+    }
+  },
+  {
+    "id": "restaurant_089",
+    "scene": "restaurant",
+    "subScene": "Promotions&Events",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "料理教室イベントの詳細を教えてください。",
+      "en": "Please tell me the details of the cooking class event.",
+      "zh": "请告诉我料理教室活动的详细信息。",
+      "zh_TW": "請告訴我烹飪教室活動的詳細資訊。",
+      "ko": "요리 교실 이벤트의 세부 사항을 알려주세요.",
+      "es": "Por favor, indíqueme los detalles del evento de clase de cocina.",
+      "fr": "Veuillez me donner les détails de l'événement d'atelier de cuisine.",
+      "de": "Bitte teilen Sie mir die Details der Kochkursveranstaltung mit.",
+      "vi": "Vui lòng cho tôi biết chi tiết về sự kiện lớp dạy nấu ăn.",
+      "id": "Tolong beri tahu saya detail acara kelas memasak."
+    }
+  },
+  {
+    "id": "restaurant_090",
+    "scene": "restaurant",
+    "subScene": "Promotions&Events",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ワインテイスティングイベントに参加できますか？",
+      "en": "Can I participate in the wine tasting event?",
+      "zh": "我可以参加品酒活动吗？",
+      "zh_TW": "我可以參加品酒活動嗎？",
+      "ko": "와인 테이스팅 이벤트에 참여할 수 있나요?",
+      "es": "¿Puedo participar en el evento de degustación de vinos?",
+      "fr": "Puis-je participer à l'événement de dégustation de vins ?",
+      "de": "Kann ich an der Weinverkostungsveranstaltung teilnehmen?",
+      "vi": "Tôi có thể tham gia sự kiện thử rượu vang không?",
+      "id": "Bisakah saya ikut acara mencicipi anggur?"
+    }
+  },
+  {
+    "id": "restaurant_091",
+    "scene": "restaurant",
+    "subScene": "Promotions&Events",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "クーポンコードはどこで入手できますか？",
+      "en": "Where can I get a coupon code?",
+      "zh": "我在哪里可以获得优惠券代码？",
+      "zh_TW": "我在哪裡可以獲得優惠券代碼？",
+      "ko": "쿠폰 코드는 어디에서 얻을 수 있나요?",
+      "es": "¿Dónde puedo conseguir un código de cupón?",
+      "fr": "Où puis-je obtenir un code promo ?",
+      "de": "Wo kann ich einen Gutscheincode erhalten?",
+      "vi": "Tôi có thể lấy mã giảm giá ở đâu?",
+      "id": "Di mana saya bisa mendapatkan kode kupon?"
+    }
+  },
+  {
+    "id": "restaurant_092",
+    "scene": "restaurant",
+    "subScene": "Promotions&Events",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "メンバーズカードの特典は何ですか？",
+      "en": "What are the benefits of the membership card?",
+      "zh": "会员卡有哪些优惠？",
+      "zh_TW": "會員卡有哪些優惠？",
+      "ko": "멤버십 카드의 혜택은 무엇인가요?",
+      "es": "¿Cuáles son los beneficios de la tarjeta de membresía?",
+      "fr": "Quels sont les avantages de la carte de membre ?",
+      "de": "Welche Vorteile bietet die Mitgliedskarte?",
+      "vi": "Thẻ thành viên có những ưu đãi gì?",
+      "id": "Apa saja manfaat kartu anggota?"
+    }
+  },
+  {
+    "id": "restaurant_093",
+    "scene": "restaurant",
+    "subScene": "Promotions&Events",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "SNSフォローで割引は受けられますか？",
+      "en": "Can I get a discount by following on social media?",
+      "zh": "关注社交媒体可以享受折扣吗？",
+      "zh_TW": "追蹤社交媒體可以獲得折扣嗎？",
+      "ko": "SNS 팔로우로 할인을 받을 수 있나요?",
+      "es": "¿Puedo obtener un descuento siguiendo en redes sociales?",
+      "fr": "Puis-je obtenir une réduction en suivant sur les réseaux sociaux ?",
+      "de": "Kann ich einen Rabatt erhalten, indem ich auf sozialen Netzwerken folge?",
+      "vi": "Tôi có thể được giảm giá khi theo dõi trên mạng xã hội không?",
+      "id": "Bisakah saya mendapatkan diskon dengan mengikuti di media sosial?"
+    }
+  },
+  {
+    "id": "restaurant_094",
+    "scene": "restaurant",
+    "subScene": "Health&Safety",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "アレルギー対応について教えてください。",
+      "en": "Please tell me about allergy accommodations.",
+      "zh": "请告诉我如何应对过敏？",
+      "zh_TW": "請告訴我如何應對過敏問題？",
+      "ko": "알레르기 대응에 대해 알려주세요.",
+      "es": "Por favor, infórmeme sobre el manejo de alergias.",
+      "fr": "Veuillez m'informer sur la prise en charge des allergies.",
+      "de": "Bitte informieren Sie mich über den Umgang mit Allergien.",
+      "vi": "Vui lòng cho tôi biết cách xử lý trường hợp dị ứng.",
+      "id": "Tolong beri tahu saya tentang penanganan alergi."
+    }
+  },
+  {
+    "id": "restaurant_095",
+    "scene": "restaurant",
+    "subScene": "Health&Safety",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "手袋を着用していますか？",
+      "en": "Do you wear gloves?",
+      "zh": "您戴手套吗？",
+      "zh_TW": "您戴手套嗎？",
+      "ko": "장갑을 착용하나요?",
+      "es": "¿Usan guantes?",
+      "fr": "Portez-vous des gants ?",
+      "de": "Tragen Sie Handschuhe?",
+      "vi": "Bạn có đeo găng tay không?",
+      "id": "Apakah Anda memakai sarung tangan?"
+    }
+  },
+  {
+    "id": "restaurant_096",
+    "scene": "restaurant",
+    "subScene": "Health&Safety",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "食品の消費期限はどのように管理していますか？",
+      "en": "How do you manage food expiration dates?",
+      "zh": "食品的保质期如何管理？",
+      "zh_TW": "食品的保存期限如何管理？",
+      "ko": "식품의 유통기한은 어떻게 관리하나요?",
+      "es": "¿Cómo gestionan las fechas de caducidad de los alimentos?",
+      "fr": "Comment gérez-vous les dates de péremption des aliments ?",
+      "de": "Wie verwalten Sie Haltbarkeitsdaten für Lebensmittel?",
+      "vi": "Bạn quản lý ngày hết hạn thực phẩm như thế nào?",
+      "id": "Bagaimana Anda mengelola tanggal kedaluwarsa makanan?"
+    }
+  },
+  {
+    "id": "restaurant_097",
+    "scene": "restaurant",
+    "subScene": "Health&Safety",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "コロナ対策はされていますか？",
+      "en": "Are COVID-19 measures in place?",
+      "zh": "是否采取了新冠防控措施？",
+      "zh_TW": "是否採取了新冠防疫措施？",
+      "ko": "코로나 대책을 시행하고 있나요?",
+      "es": "¿Tienen medidas contra el COVID-19?",
+      "fr": "Avez-vous mis en place des mesures contre la COVID-19 ?",
+      "de": "Gibt es Maßnahmen gegen COVID-19?",
+      "vi": "Có biện pháp phòng chống COVID-19 không?",
+      "id": "Apakah ada langkah-langkah pencegahan COVID-19?"
+    }
+  },
+  {
+    "id": "restaurant_098",
+    "scene": "restaurant",
+    "subScene": "Health&Safety",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "アルコール消毒はどこにありますか？",
+      "en": "Where can I find the alcohol sanitizer?",
+      "zh": "酒精消毒剂放在哪里？",
+      "zh_TW": "酒精消毒劑放在哪裡？",
+      "ko": "알코올 소독제는 어디에 있나요?",
+      "es": "¿Dónde está el desinfectante de alcohol?",
+      "fr": "Où se trouve le désinfectant à l'alcool ?",
+      "de": "Wo befindet sich das alkoholbasierte Desinfektionsmittel?",
+      "vi": "Cồn rửa tay ở đâu?",
+      "id": "Di mana hand sanitizer alkohol berada?"
+    }
+  },
+  {
+    "id": "restaurant_099",
+    "scene": "restaurant",
+    "subScene": "Health&Safety",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "調理場を見学できますか？",
+      "en": "Can I tour the kitchen?",
+      "zh": "我可以参观厨房吗？",
+      "zh_TW": "我可以參觀廚房嗎？",
+      "ko": "조리장을 견학할 수 있나요?",
+      "es": "¿Puedo visitar la cocina?",
+      "fr": "Puis-je visiter la cuisine ?",
+      "de": "Kann ich die Küche besichtigen?",
+      "vi": "Tôi có thể tham quan bếp không?",
+      "id": "Bisakah saya melihat-lihat dapur?"
+    }
+  },
+  {
+    "id": "restaurant_100",
+    "scene": "restaurant",
+    "subScene": "Health&Safety",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "食材は毎日検品していますか？",
+      "en": "Do you inspect ingredients daily?",
+      "zh": "食材每天都进行检验吗？",
+      "zh_TW": "食材每天都進行檢驗嗎？",
+      "ko": "식재료를 매일 검사하나요?",
+      "es": "¿Inspeccionan los ingredientes todos los días?",
+      "fr": "Inspectez-vous les ingrédients quotidiennement ?",
+      "de": "Prüfen Sie die Zutaten täglich?",
+      "vi": "Bạn có kiểm tra nguyên liệu hàng ngày không?",
+      "id": "Apakah Anda memeriksa bahan setiap hari?"
+    }
+  },
+  {
+    "id": "restaurant_101",
+    "scene": "restaurant",
+    "subScene": "Health&Safety",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "食품サンプルは衛生的ですか？",
+      "en": "Are the food samples hygienic?",
+      "zh": "食品样品卫生吗？",
+      "zh_TW": "食품樣品衛生嗎？",
+      "ko": "음식 샘플은 위생적인가요?",
+      "es": "¿Las muestras de comida son higiénicas?",
+      "fr": "Les échantillons alimentaires sont-ils hygiéniques ?",
+      "de": "Sind die Lebensmittelproben hygienisch?",
+      "vi": "Mẫu thực phẩm có vệ sinh không?",
+      "id": "Apakah sampel makanan higienis?"
+    }
+  },
+  {
+    "id": "restaurant_102",
+    "scene": "restaurant",
+    "subScene": "Health&Safety",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ペット同伴時の衛生ルールはありますか？",
+      "en": "Are there hygiene rules when accompanied by pets?",
+      "zh": "带宠物时有卫生规定吗？",
+      "zh_TW": "陪同寵物時有衛生規定嗎？",
+      "ko": "반려동물 동반 시 위생 규칙이 있나요?",
+      "es": "¿Hay reglas de higiene cuando se acompaña con mascotas?",
+      "fr": "Existe-t-il des règles d'hygiène pour l'accompagnement des animaux ?",
+      "de": "Gibt es Hygieneregeln, wenn Haustiere mitgebracht werden?",
+      "vi": "Có quy định vệ sinh khi có thú cưng đi cùng không?",
+      "id": "Adakah aturan kebersihan saat membawa hewan peliharaan?"
+    }
+  },
+  {
+    "id": "restaurant_103",
+    "scene": "restaurant",
+    "subScene": "Health&Safety",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "店内の換気状況を教えてください。",
+      "en": "Please tell me about the ventilation inside the store.",
+      "zh": "请告诉我店内的通风情况。",  
+      "zh_TW": "請告訴我店內的通風狀況。",
+      "ko": "매장 내 환기 상황을 알려주세요.",
+      "es": "Por favor, infórmeme sobre la ventilación en el interior de la tienda.",
+      "fr": "Veuillez me renseigner sur la ventilation à l'intérieur du magasin.",
+      "de": "Bitte informieren Sie mich über die Lüftung im Geschäft.",
+      "vi": "Xin vui lòng cho tôi biết về hệ thống thông gió trong cửa hàng.",
+      "id": "Tolong beri tahu saya tentang ventilasi di dalam toko."
+    }
+  },
+  {
+    "id": "restaurant_104",
+    "scene": "restaurant",
+    "subScene": "Access&Parking",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "駐車場はありますか？",
+      "en": "Is there parking available?",
+      "zh": "有停车场吗？",
+      "zh_TW": "有停車場嗎？",
+      "ko": "주차장이 있나요?",  
+      "es": "¿Hay estacionamiento?",
+      "fr": "Y a-t-il un parking ?",
+      "de": "Gibt es Parkplätze?",
+      "vi": "Có chỗ đậu xe không?",
+      "id": "Apakah ada tempat parkir?"
+    }
+  },
+  {
+    "id": "restaurant_105",
+    "scene": "restaurant",
+    "subScene": "Access&Parking",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "近くの駅から徒歩何分ですか？",
+      "en": "How many minutes on foot from the nearest station?",
+      "zh": "从最近的车站步行需要几分钟？",
+      "zh_TW": "從最近的車站步行需要幾分鐘？",
+      "ko": "가장 가까운 역에서 도보로 몇 분 걸리나요?",
+      "es": "¿Cuántos minutos a pie se tarda desde la estación más cercana?",
+      "fr": "Combien de minutes à pied depuis la gare la plus proche ?",  
+      "de": "Wie viele Minuten sind es zu Fuß vom nächstgelegenen Bahnhof?",
+      "vi": "Từ ga gần nhất mất bao nhiêu phút đi bộ?",
+      "id": "Berapa menit berjalan kaki dari stasiun terdekat?"
+    }
+  },
+  {
+    "id": "restaurant_106",
+    "scene": "restaurant",
+    "subScene": "Access&Parking",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "車椅子で入店できますか？",
+      "en": "Is the store wheelchair accessible?",
+      "zh": "可以使用轮椅进入吗？",
+      "zh_TW": "可以使用輪椅進入嗎？",
+      "ko": "휠체어로 들어갈 수 있나요?",
+      "es": "¿Se puede acceder en silla de ruedas?",  
+      "fr": "Le lieu est-il accessible en fauteuil roulant ?",
+      "de": "Ist der Zutritt mit einem Rollstuhl möglich?",
+      "vi": "Có thể vào bằng xe lăn không?",
+      "id": "Apakah dapat diakses dengan kursi roda?"
+    }
+  },
+  {
+    "id": "restaurant_107",
+    "scene": "restaurant",
+    "subScene": "Access&Parking",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "自転車置き場はありますか？",
+      "en": "Do you have bicycle parking?",
+      "zh": "有自行车停放区吗？",
+      "zh_TW": "有自行車停放區嗎？",
+      "ko": "자전거 주차장이 있나요?",
+      "es": "¿Hay aparcamiento para bicicletas?",
+      "fr": "Y a-t-il un parking à vélos ?",
+      "de": "Gibt es einen Fahrradabstellplatz?",
+      "vi": "Có chỗ đậu xe đạp không?",
+      "id": "Apakah ada tempat parkir sepeda?"
+    }
+  },
+  {
+    "id": "restaurant_108",
+    "scene": "restaurant",
+    "subScene": "Access&Parking",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "タクシー乗り場はどこですか？",
+      "en": "Where is the taxi stand?",
+      "zh": "出租车站在哪里？",
+      "zh_TW": "計程車乘車站在哪裡？",
+      "ko": "택시 승강장은 어디인가요?",
+      "es": "¿Dónde está la parada de taxis?",
+      "fr": "Où se trouve la station de taxis ?",
+      "de": "Wo befindet sich der Taxistand?",
+      "vi": "Trạm taxi ở đâu?",
+      "id": "Di mana halte taksi?"
+    }
+  },
+  {
+    "id": "restaurant_109",
+    "scene": "restaurant",
+    "subScene": "Access&Parking",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "お店の入口はどこにありますか？",
+      "en": "Where is the entrance to the store?",
+      "zh": "店铺入口在哪里？",
+      "zh_TW": "店鋪入口在哪裡？",
+      "ko": "매장 입구는 어디에 있나요?",
+      "es": "¿Dónde está la entrada de la tienda?",
+      "fr": "Où se trouve l'entrée du magasin ?",
+      "de": "Wo ist der Eingang zum Geschäft?",
+      "vi": "Lối vào cửa hàng ở đâu?",
+      "id": "Di mana pintu masuk toko?"
+    }
+  },
+  {
+    "id": "restaurant_110",
+    "scene": "restaurant",
+    "subScene": "Access&Parking",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "バリアフリー対応はありますか？",
+      "en": "Is there barrier-free accessibility?",
+      "zh": "有没有无障碍设施？",
+      "zh_TW": "是否有無障礙設施？",
+      "ko": "무장애 시설이 있나요?",
+      "es": "¿Hay accesibilidad sin barreras?",
+      "fr": "Y a-t-il une accessibilité sans obstacles ?",
+      "de": "Gibt es barrierefreien Zugang?",
+      "vi": "Có hỗ trợ tiếp cận không rào cản không?",
+      "id": "Apakah ada akses tanpa hambatan?"
+    }
+  },
+  {
+    "id": "restaurant_111",
+    "scene": "restaurant",
+    "subScene": "Access&Parking",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "近くのバス停の名前を教えてください。",
+      "en": "Please tell me the name of the nearest bus stop.",
+      "zh": "请告诉我最近的公交车站名称。",
+      "zh_TW": "請告訴我最近的公車站名稱。",
+      "ko": "가장 가까운 버스 정류장 이름을 알려주세요.",
+      "es": "Por favor, dígame el nombre de la parada de autobús más cercana.",
+      "fr": "Veuillez me donner le nom de l'arrêt de bus le plus proche ?",
+      "de": "Bitte nennen Sie mir den Namen der nächstgelegenen Bushaltestelle.",
+      "vi": "Vui lòng cho tôi biết tên trạm xe buýt gần nhất.",
+      "id": "Tolong beri tahu saya nama pemberhentian bus terdekat?"
+    }
+  },
+  {
+    "id": "restaurant_112",
+    "scene": "restaurant",
+    "subScene": "Access&Parking",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "地下鉄の最寄り出口は何番ですか？",
+      "en": "Which subway exit number is the nearest?",
+      "zh": "最近的地铁出口是几号？",
+      "zh_TW": "最近的地鐵出口是幾號？",
+      "ko": "가장 가까운 지하철 출구는 몇 번인가요?",
+      "es": "¿Qué número de salida del metro está más cerca?",
+      "fr": "Quel numéro de sortie du métro est le plus proche ?",
+      "de": "Welche U-Bahn-Ausgangsnummer ist die nächste?",
+      "vi": "Lối ra tàu điện ngầm gần nhất là số mấy?",
+      "id": "Nomor pintu keluar stasiun metro terdekat berapa?"
+    }
+  },
+  {
+    "id": "restaurant_113",
+    "scene": "restaurant",
+    "subScene": "Access&Parking",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "お店の外観の特徴は何ですか？",
+      "en": "What are the distinguishing features of the store's exterior?",
+      "zh": "店面外观有哪些特色？",
+      "zh_TW": "店面外觀有什麼特色？",
+      "ko": "가게 외관의 특징은 무엇인가요?",
+      "es": "¿Cuáles son las características distintivas del exterior de la tienda?",
+      "fr": "Quelles sont les caractéristiques distinctives de la façade du magasin ?",
+      "de": "Was sind die Besonderheiten der Außenansicht des Geschäfts?",
+      "vi": "Những đặc điểm nổi bật bên ngoài cửa hàng là gì?",
+      "id": "Apa saja ciri khas tampilan luar toko?"
+    }
+  }
+]

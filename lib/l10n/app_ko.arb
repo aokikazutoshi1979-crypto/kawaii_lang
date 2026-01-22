@@ -1,0 +1,241 @@
+{
+  "@@locale": "ko",
+  "categoryTitle": "카테고리 선택",
+  "targetLanguage": "학습할 언어",
+  "level": "레벨",
+  "scene": "학습 장면",
+  "start": "시작",
+  "selectPrompt": "모든 항목을 선택하세요.",
+  "langJapanese": "일본어",
+  "langEnglish": "영어",
+  "langChineseSimplified": "중국어(간체)",
+  "langChineseTraditional": "대만",
+  "langKorean": "한국어",
+  "langSpanish": "스페인어",
+  "langFrench": "프랑스어",
+  "langGerman": "독일어",
+  "langVietnamese": "베트남어",
+  "langIndonesian": "인도네시아어",
+  "languageJapanese": "일본어",
+  "languageEnglish": "영어",
+  "languageChineseSimplified": "중국어(간체)",
+  "languageChineseTraditional": "대만",
+  "languageKorean": "한국어",
+  "languageSpanish": "스페인어",
+  "languageFrench": "프랑스어",
+  "languageGerman": "독일어",
+  "languageVietnamese": "베트남어",
+  "languageIndonesian": "인도네시아어",
+  "levelBeginner": "초급",
+  "levelIntermediate": "중급",
+  "levelAdvanced": "고급",
+  "sceneTravel": "여행",
+  "sceneGreeting": "인사",
+  "sceneDating": "데이트",
+  "sceneRestaurant": "레스토랑",
+  "sceneShopping": "쇼핑",
+  "sceneBusiness": "비즈니스",
+  "selectQuestion": "문제를 선택해주세요",
+  "translatePrompt": "번역해봅시다!",
+  "termsOfService": "서비스 약관",
+  "privacyPolicy": "개인정보 처리방침",
+  "termsContent": "이 앱을 사용하기 전에 다음 서비스 약관을 검토해주세요. 이 앱을 사용함으로써 모든 조건에 동의한 것으로 간주됩니다.",
+    "privacyContent": "본 앱은 사용자의 개인 정보를 존중합니다. 수집된 정보는 학습 지원 및 앱 개선을 위해서만 사용됩니다.",
+  "termsOfServiceContent": "본 앱은 언어 학습을 지원하기 위해 제공됩니다.\n\n【사용 대상】\n본 앱은 모든 연령을 대상으로 합니다. 만 13세 미만의 사용자는 보호자 동의 하에 이용해주세요。\n\n【면책 조항】\n앱 사용으로 발생하는 불이익 또는 손해에 대해 운영자는 어떠한 책임도 지지 않습니다。\n\n【향후 유료 기능에 대하여】\n현재는 무료로 이용할 수 있지만, 향후 일부 기능에 요금이 부과될 수 있습니다。유료 기능 도입 시 사전에 안내드리겠습니다。\n\n【이용 중지】\n이용자가 본 약관을 위반할 경우 운영자는 사전 통지 없이 이용을 제한하거나 중지할 수 있습니다。",
+  "privacyPolicyContent": "본 앱은 사용자의 프라이버시를 존중하며, 다음 정책에 따라 운영됩니다。\n\n【수집하는 정보】\n사용자의 언어 설정 및 앱 사용 기록 등 개인을 식별할 수 없는 범위의 정보를 수집할 수 있습니다。\n\n【이용 목적】\n앱 품질 향상 및 기능 개선을 위해 정보를 활용하며, 무단으로 제3자에게 제공하지 않습니다。\n\n【외부 서비스】\n향후 업데이트에서 유료 기능을 도입할 경우 외부 결제 서비스를 이용할 수 있습니다。\n\n【정보 관리】\n수집된 정보는 적절히 관리되어 안전하게 보관됩니다。",
+  "errorTooLong": "메시지가 너무 깁니다. 약 100자 이내로 입력해주세요。",
+  "errorRateLimit": "접속이 많아 잠시 후 다시 시도해주세요(1분에 최대 5회)。",
+  "errorNoMessage": "메시지가 입력되지 않았습니다。",
+  "errorServerError": "서버 오류가 발생했습니다. 다시 시도해주세요。",
+  "keyboardGuideButton": "🌐을 눌러도 학습할 언어의 키보드가 표시되지 않으면 여기를 눌러주세요",
+  "keyboardGuideIos": "iOS에서 학습할 언어의 키보드가 표시되지 않을 경우: 설정 > 일반 > 키보드 > 키보드 추가에서 원하는 언어를 추가하세요。",
+  "keyboardGuideAndroid": "Android에서 학습할 언어의 키보드가 표시되지 않을 경우: 설정 > 시스템 > 언어 및 입력 > 키보드 > 키보드 추가에서 원하는 언어를 선택하세요。",
+  "keyboardGuideBody": "사용 중인 스마트폰에 학습할 언어의 키보드가 설치되어 있지 않으면 채팅 화면에서 입력할 수 없습니다. 다음 절차에 따라 추가해주세요。\n\niOS:\n설정 > 일반 > 키보드 > 키보드 추가\n\nAndroid:\n설정 > 언어 및 입력 > 키보드 > 키보드 추가",
+  "keyboardGuideTitle": "키보드 추가 가이드",
+  "ok": "확인",
+  "correct": "정답입니다！",
+  "incorrect": "수정이 필요합니다！",
+  "answerMeaningPrefix": "당신의 답변 의미: 「{translation}」",
+  "answerTranslationPrefix": "수정 예시",
+  "invalidMeaning": "「{userAnswer}」: 학습 언어로서는 의미가 통하지 않습니다。",
+  "@invalidMeaning": {
+    "description": "ユーザーの回答が日本語として意味不明だったときのメッセージ",
+    "placeholders": {
+      "userAnswer": {}
+    }
+  },
+  "errorBrokenGpt": "죄송합니다. 시스템 오류가 발생했습니다. 다시 시도해주세요.",
+  "@errorBrokenGpt": {
+    "description": "GPTの応答が壊れていたときに表示するメッセージ",
+    "placeholders": {}
+  },
+  "grammarCorrect": "{userAnswer}：문법적으로 맞습니다.",
+  "grammarIncorrect": "{userAnswer}：문법적으로 틀렸습니다.",
+  "@grammarCorrect": {
+    "description": "文法的に正しいときの応答",
+    "placeholders": {
+      "userAnswer": {}
+    }
+  },
+  "@grammarIncorrect": {
+    "description": "文法的に誤っているときの応答",
+    "placeholders": {
+      "userAnswer": {}
+    }
+  },
+  "errorSessionMismatch": "다른 기기에서 로그인되었습니다. 다시 로그인해주세요.",
+  "errorPunctuationFailed": "⚠️ 구두점이 포함된 문장을 가져올 수 없습니다.",
+  "sceneTrial": "무료 미리보기",
+  "lockedMessage": "구독 플랜에 가입해야 이용할 수 있습니다.",
+  "resetPassword": "비밀번호 재설정",
+  "enterEmailForReset": "비밀번호를 재설정하려면 이메일 주소를 입력하세요.",
+  "sendResetEmail": "재설정 이메일 보내기",
+  "passwordResetSent": "비밀번호 재설정 이메일을 발송했습니다.",
+  "passwordResetError": "재설정 이메일 전송에 실패했습니다.",
+  "settingsTitle": "설정",
+  "welcomeUser": "환영합니다, {name}님",
+  "registeredDate": "등록일: {date}",
+  "userFetchFailed": "사용자 정보 가져오기에 실패했습니다 (오류: {error})",
+  "@userFetchFailed": {
+    "description": "ユーザー取得エラー時の表示メッセージ",
+    "placeholders": {
+      "error": {}
+    }
+  },
+  "languageUpdated": "언어 설정이 업데이트되었습니다.",
+  "registerAccount": "계정 등록",
+  "registerSubtitle": "기기를 변경하거나 앱을 삭제하면 학습 기록이 사라집니다. 데이터를 저장하려면 여기에서 계정을 등록하세요.",
+  "loginTitle": "로그인",
+  "loginSubtitle": "이미 등록하셨다면 여기를 클릭하세요.",
+  "logout": "로그아웃",
+  "login": "로그인",
+  "email": "이메일 주소",
+  "password": "비밀번호",
+  "invalidEmail": "유효한 이메일 주소를 입력하세요",
+  "passwordTooShort": "비밀번호는 최소 6자 이상이어야 합니다",
+  "loginFailed": "로그인에 실패했습니다",
+  "loginError": "로그인 오류",
+  "noAccountRegister": "계정이 없으신가요? 여기를 클릭하세요",
+  "resetPassword": "비밀번호를 잊으셨나요?",
+  "register": "등록",
+  "registerFailed": "등록에 실패했습니다",
+  "purchaseSuccess": "구매해 주셔서 감사합니다!",
+  "subscribe": "구독하기",
+  "subscribeNow": "7일간 무료 미리보기 후 베이직 플랜에 가입하기",
+  "lockedTitle": "잠금됨",
+  "@lockedTitle": {
+    "description": "ロック中アラートのタイトル"
+  },
+  "lockedMessage": "이 문제는 구독자만 이용할 수 있습니다。",
+  "@lockedMessage": {
+    "description": "ロック中アラートの本文"
+  },
+  "sceneTitle": "{sceneKey}",
+  "@sceneTitle": {
+    "description": "シーン名をそのままタイトルに表示します",
+    "placeholders": {
+      "sceneKey": {}
+    }
+  },
+  "restorePurchase": "구매 복원",
+  "restorePurchaseSubtitle": "이전 구매 상태를 복원합니다",
+  "restoringPurchase": "구매 내역을 확인 중...",
+  "restoreSubscription": "구독 복원",
+  "@restoreSubscription": {
+    "description": "以前購入したサブスクリプションを復元するボタンのラベル"
+  },
+  "subscriptionTitle": "구독",
+  "subscriptionPlanTitle": "<구독 상세>",
+  "subscriptionPlanMonthly": "• 요금제 이름：기본 요금제",
+  "subscriptionPlanPeriod": "• 기간：1개월",
+  "subscriptionPlanPrice": "• 가격：₩1,500(부가세 포함)",
+  "subscriptionPlanTrial": "• 미가입 시：무료 미리보기만 이용 가능。",
+  "subscriptionCurrentStatusTitle": "현재 상태",
+  "subscriptionStatusSubscribed": "• 구독 중: 무료 미리보기을 포함한 모든 학습 장면이 잠금 해제되어 무제한 사용이 가능합니다.",
+  "subscriptionStatus": "• 구독 중：무료 미리보기 외에도 세 가지 학습 장면이 모두 해제되어 무제한 이용 가능。",
+  "subscriptionStatusTrial": "미가입：무료 미리보기만 이용 가능。",
+  "subscriptionManageButton": "Apple에서 구독 관리 열기",
+  "subscriptionManageNote": "※ 월간 요금제 해지・재가입은 위에서 가능합니다。",
+  "subscriptionManageTitle": "구독 상세",
+  "subscriptionManageSubtitle": "요금제 확인 및 가입하기",
+  "subscriptionPriceTaxSuffix": "(부가세 포함)",
+  "languageSelectionTitle": "모국어 선택",
+  "languageSelectionDescription": "사용할 언어를 선택하세요",
+  "similarExpressionPrefix": "다른 표현：",
+  "guest": "게스트",
+  "@guest": {
+    "description": "匿名ユーザーの場合に表示する名前"
+  },
+  "viewTerms": "이용 약관(EULA) 읽기",
+  "viewPrivacyPolicy": "개인정보 처리방침 읽기",
+  "invalidPassword": "비밀번호는 6자 이상이어야 합니다",
+  "@invalidPassword": {
+    "description": "ログイン時のパスワードバリデーションエラーメッセージ（6文字未満の場合）"
+  },
+  "subscriptionStatusUnsubscribed": "미가입",
+  "@subscriptionStatusUnsubscribed": {
+    "description": "ユーザーがサブスクに加入していないときに表示するラベル"
+  },
+  "settings_deleteAccount": "계정 삭제",
+  "@settings_deleteAccount": {
+    "description": "メール登録ユーザー向けの「アカウントを削除する」ボタンラベル"
+  },
+  "settings_resetData": "데이터 초기화",
+  "@settings_resetData": {
+    "description": "匿名ユーザー向けの「データを初期化する」ボタンラベル"
+  },
+  "settings_confirmDeleteAccount": "정말로 계정과 모든 데이터를 삭제하시겠습니까?\n이 작업은 취소할 수 없습니다.",
+  "@settings_confirmDeleteAccount": {
+    "description": "アカウント削除時の確認ダイアログメッセージ"
+  },
+  "settings_confirmResetData": "정말로 데이터를 초기화하시겠습니까?\n지금까지의 진행 상황이 모두 삭제됩니다.",
+  "@settings_confirmResetData": {
+    "description": "匿名データ初期化時の確認ダイアログメッセージ"
+  },
+  "enterPassword": "비밀번호를 입력하세요",
+  "@enterPassword": {
+    "description": "アカウント削除時にパスワード再入力を促すダイアログタイトル"
+  },
+  "password": "비밀번호",
+  "@password": {
+    "description": "パスワード入力フィールドのプレースホルダー"
+  },
+  "cancel": "취소",
+  "@cancel": {
+    "description": "ダイアログのキャンセルボタンラベル"
+  },
+  "ok": "확인",
+  "@ok": {
+    "description": "ダイアログのOKボタンラベル"
+  },
+  "logoutConfirmation": "정말로 로그아웃하시겠습니까?",
+  "viewFaq": "자주 묻는 질문",
+  "checking": "확인 중…",
+  "sceneVocabulary": "짧은 문장",
+  "subsceneAll": "전체",
+  "@subsceneAll": {
+    "description": "필터 버튼: 전체"
+  },
+  "recordingAutoStopped": "녹음이 10초 후 자동으로 중지되었습니다.",
+  "readingLabel": "리딩",
+  "listeningLabel": "리스닝",
+  "listeningPrompt": "무엇을 말하고 있나요?",
+  "sceneWork": "일하다",
+  "sceneSocial_interactions_hobbies": "교환 및 취미",
+  "sceneculture_entertainment": "문화 및 엔터테인먼트",
+  "scenecommunity_life": "지역 생활",
+  "userAnswerHeader": "당신의 답변",
+  "@userAnswerHeader": { "description": "사용자 답변 헤더" },
+  "badgeCorrect": "정답",
+  "@badgeCorrect": { "description": "정답 배지" },
+  "badgeNeedsImprovement": "개선 필요",
+  "@badgeNeedsImprovement": { "description": "오답/개선 필요 배지" },
+  "originalTranslationHeader": "원문 번역",
+  "originalTranscriptionHeader": "원문 음성 전사",
+  "originalExplanationHeader": "원문 설명",
+  "similarExpressionHeader": "친근한 유사 표현",
+  "incorrectMessageWithRaw": "{raw} \n이 답변은 문법적으로나 의미적으로 올바르지 않습니다.",
+  "answerMeaningAccurate": "이 답변은 출제의 의미를 정확하게 반영합니다.",
+  "subscriptionUpsellTitle": "베이식 플랜으로 학습을 이어가세요!",
+  "subscriptionUpsellMessage": "무료 플랜은 체험일 뿐입니다. 정말 말하고 싶다면 지금 모든 장면을 해제하세요!"
+}

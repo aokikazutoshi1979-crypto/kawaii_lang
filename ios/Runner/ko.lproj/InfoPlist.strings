@@ -1,0 +1,4 @@
+"CFBundleDisplayName" = "Kawaii Lang";
+"NSMicrophoneUsageDescription" = "발음 연습을 위해 마이크를 사용합니다. 녹음은 기기 내에만 저장됩니다.";
+"NSSpeechRecognitionUsageDescription" = "음성 인식은 연습을 위해 음성을 텍스트로 변환합니다. AI가 피드백을 제공합니다.";
+

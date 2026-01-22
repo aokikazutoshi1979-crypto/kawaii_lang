@@ -1,0 +1,2130 @@
+[
+  {
+    "id": "shopping_001",
+    "scene": "shopping",
+    "subScene": "Searchforproducts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "水を探しています。",
+      "en": "I'm looking for water.",
+      "zh": "我在找水。",
+      "zh_TW": "我在找水。",
+      "ko": "물을 찾고 있어요.",
+      "es": "Estoy buscando agua.",
+      "fr": "Je cherche de l’eau.",
+      "de": "Ich suche Wasser.",
+      "vi": "Tôi đang tìm nước.",
+      "id": "Saya mencari air."
+    }
+  },
+  {
+    "id": "shopping_002",
+    "scene": "shopping",
+    "subScene": "Searchforproducts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ジュースはどこですか？",
+      "en": "Where is the juice?",
+      "zh": "果汁在哪里？",
+      "zh_TW": "果汁在哪裡？",
+      "ko": "주스는 어디에 있나요?",
+      "es": "¿Dónde está el jugo?",
+      "fr": "Où est le jus ?",
+      "de": "Wo ist der Saft?",
+      "vi": "Nước ép ở đâu?",
+      "id": "Jus berada di mana?"
+    }
+  },
+  {
+    "id": "shopping_003",
+    "scene": "shopping",
+    "subScene": "Searchforproducts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "これを見せてください。",
+      "en": "Please show me this.",
+      "zh": "请给我看这个。",
+      "zh_TW": "請給我看這個。",
+      "ko": "이것을 보여주세요.",
+      "es": "Muéstreme esto, por favor.",
+      "fr": "Montrez‑moi ceci, s’il vous plaît.",
+      "de": "Zeigen Sie mir das bitte.",
+      "vi": "Xin vui lòng cho tôi xem cái này.",
+      "id": "Tolong tunjukkan ini kepada saya."
+    }
+  },
+  {
+    "id": "shopping_004",
+    "scene": "shopping",
+    "subScene": "Searchforproducts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "この商品の他のサイズはありますか？",
+      "en": "Do you have other sizes of this item?",
+      "zh": "这件商品有其他尺寸吗？",
+      "zh_TW": "這件商品有其他尺寸嗎？",
+      "ko": "이 상품의 다른 사이즈가 있나요?",
+      "es": "¿Tienen otras tallas de este producto?",
+      "fr": "Avez‑vous d’autres tailles pour cet article ?",
+      "de": "Haben Sie andere Größen von diesem Produkt?",
+      "vi": "Sản phẩm này có kích cỡ khác không?",
+      "id": "Apakah produk ini tersedia dalam ukuran lain?"
+    }
+  },
+  {
+    "id": "shopping_005",
+    "scene": "shopping",
+    "subScene": "Searchforproducts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "この商品の他の色はありますか？",
+      "en": "Do you have other colors of this item?",
+      "zh": "这件商品有其他颜色吗？",
+      "zh_TW": "這件商品有其他顏色嗎？",
+      "ko": "이 상품의 다른 색상이 있나요?",
+      "es": "¿Tienen otros colores de este producto?",
+      "fr": "Avez‑vous d’autres couleurs pour cet article ?",
+      "de": "Haben Sie andere Farben von diesem Produkt?",
+      "vi": "Sản phẩm này có màu khác không?",
+      "id": "Apakah produk ini tersedia dalam warna lain?"
+    }
+  },
+  {
+    "id": "shopping_006",
+    "scene": "shopping",
+    "subScene": "Searchforproducts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "他に何かありますか？",
+      "en": "Do you have anything else?",
+      "zh": "还有其他的吗？",
+      "zh_TW": "還有其他的嗎？",
+      "ko": "다른 것은 있나요?",
+      "es": "¿Tienen algo más?",
+      "fr": "Avez‑vous autre chose ?",
+      "de": "Haben Sie sonst noch etwas?",
+      "vi": "Còn gì khác không?",
+      "id": "Apakah ada yang lain?"
+    }
+  },
+  {
+    "id": "shopping_007",
+    "scene": "shopping",
+    "subScene": "Searchforproducts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "試着できますか？",
+      "en": "Can I try this on?",
+      "zh": "我能试穿吗？",
+      "zh_TW": "我可以試穿嗎？",
+      "ko": "입어봐도 되나요?",
+      "es": "¿Puedo probármelo?",
+      "fr": "Puis‑je l’essayer ?",
+      "de": "Kann ich das anprobieren?",
+      "vi": "Tôi có thể thử cái này được không?",
+      "id": "Bolehkah saya mencobanya?"
+    }
+  },
+  {
+    "id": "shopping_008",
+    "scene": "shopping",
+    "subScene": "Searchforproducts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "これを買います。",
+      "en": "I’ll buy this.",
+      "zh": "我要买这个。",
+      "zh_TW": "我要買這個。",
+      "ko": "이거 살게요.",
+      "es": "Voy a comprar esto.",
+      "fr": "Je vais acheter ceci.",
+      "de": "Ich kaufe das.",
+      "vi": "Tôi sẽ mua cái này.",
+      "id": "Saya akan membeli ini."
+    }
+  },
+  {
+    "id": "shopping_009",
+    "scene": "shopping",
+    "subScene": "Purchase",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "この商品をラッピングしてもらえますか？",
+      "en": "Can you gift-wrap this item?",
+      "zh": "能帮我把这个商品包装成礼品吗？",
+      "zh_TW": "能幫我把這件商品做成禮品包裝嗎？",
+      "ko": "이 상품을 선물 포장해 주실 수 있나요?",
+      "es": "¿Puede envolver este producto para regalo?",
+      "fr": "Pouvez‑vous emballer cet article en cadeau ?",
+      "de": "Können Sie diesen Artikel als Geschenk verpacken?",
+      "vi": "Bạn có thể gói quà cho sản phẩm này không?",
+      "id": "Bisakah Anda membungkus produk ini sebagai hadiah?"
+    }
+  },
+  {
+    "id": "shopping_010",
+    "scene": "shopping",
+    "subScene": "Purchase",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "合計金額はいくらですか？",
+      "en": "What is the total amount?",
+      "zh": "总金额是多少？",
+      "zh_TW": "總金額是多少？",
+      "ko": "총 금액이 얼마인가요?",
+      "es": "¿Cuál es el importe total?",
+      "fr": "Quel est le montant total ?",
+      "de": "Wie hoch ist der Gesamtbetrag?",
+      "vi": "Tổng cộng bao nhiêu tiền?",
+      "id": "Berapa jumlah totalnya?"
+    }
+  },
+  {
+    "id": "shopping_011",
+    "scene": "shopping",
+    "subScene": "Purchase",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "現金で支払えますか？",
+      "en": "Can I pay in cash?",
+      "zh": "可以用现金支付吗？",
+      "zh_TW": "可以用現金支付嗎？",
+      "ko": "현금으로 결제할 수 있나요?",
+      "es": "¿Puedo pagar en efectivo?",
+      "fr": "Puis‑je payer en espèces ?",
+      "de": "Kann ich bar bezahlen?",
+      "vi": "Tôi có thể trả bằng tiền mặt không?",
+      "id": "Bisakah saya membayar tunai?"
+    }
+  },
+  {
+    "id": "shopping_012",
+    "scene": "shopping",
+    "subScene": "Purchase",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "クレジットカードで支払えますか？",
+      "en": "Can I pay by credit card?",
+      "zh": "可以用信用卡支付吗？",
+      "zh_TW": "可以用信用卡支付嗎？",
+      "ko": "신용카드로 결제할 수 있나요?",
+      "es": "¿Puedo pagar con tarjeta de crédito?",
+      "fr": "Puis‑je payer par carte de crédit ?",
+      "de": "Kann ich mit Kreditkarte bezahlen?",
+      "vi": "Tôi có thể trả bằng thẻ tín dụng không?",
+      "id": "Bisakah saya membayar dengan kartu kredit?"
+    }
+  },
+  {
+    "id": "shopping_013",
+    "scene": "shopping",
+    "subScene": "Paymentmethods",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ポイントは使えますか？",
+      "en": "Can I use points?",
+      "zh": "可以使用积分吗？",
+      "zh_TW": "可以使用積分嗎？",
+      "ko": "포인트를 사용할 수 있나요?",
+      "es": "¿Puedo usar puntos?",
+      "fr": "Puis‑je utiliser des points ?",
+      "de": "Kann ich Punkte verwenden?",
+      "vi": "Tôi có thể sử dụng điểm không?",
+      "id": "Bisakah saya menggunakan poin?"
+    }
+  },
+  {
+    "id": "shopping_014",
+    "scene": "shopping",
+    "subScene": "Paymentmethods",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "電子マネー（Suica、Pasmoなど）は使えますか？",
+      "en": "Can I use electronic money (Suica, Pasmo, etc.)?",
+      "zh": "可以使用电子货币（Suica、Pasmo等）吗？",
+      "zh_TW": "可以使用電子票證（Suica、Pasmo等）嗎？",
+      "ko": "전자 화폐(Suica, Pasmo 등)를 사용할 수 있나요?",
+      "es": "¿Puedo usar dinero electrónico (Suica, Pasmo, etc.)?",
+      "fr": "Puis‑je utiliser de l’argent électronique (Suica, Pasmo, etc.) ?",
+      "de": "Kann ich elektronische Zahlungsmittel (Suica, Pasmo usw.) verwenden?",
+      "vi": "Tôi có thể dùng tiền điện tử (Suica, Pasmo, v.v.) không?",
+      "id": "Bisakah saya menggunakan uang elektronik (Suica, Pasmo, dll.)?"
+    }
+  },
+  {
+    "id": "shopping_015",
+    "scene": "shopping",
+    "subScene": "Paymentmethods",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "QRコード決済に対応していますか？",
+      "en": "Do you support QR code payments?",
+      "zh": "支持二维码支付吗？",
+      "zh_TW": "支援 QR 碼支付嗎？",
+      "ko": "QR 코드 결제 지원하나요?",
+      "es": "¿Aceptan pagos con código QR?",
+      "fr": "Acceptez‑vous les paiements par code QR ?",
+      "de": "Unterstützen Sie QR‑Code‑Zahlungen?",
+      "vi": "Có hỗ trợ thanh toán bằng mã QR không?",
+      "id": "Apakah mendukung pembayaran kode QR?"
+    }
+  },
+  {
+    "id": "shopping_016",
+    "scene": "shopping",
+    "subScene": "Paymentmethods",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "分割払いは可能ですか？",
+      "en": "Is installment payment available?",
+      "zh": "可以分期付款吗？",
+      "zh_TW": "可以分期付款嗎？",
+      "ko": "할부 결제 가능한가요?",
+      "es": "¿Se puede pagar a plazos?",
+      "fr": "Les paiements en plusieurs fois sont‑ils possibles ?",
+      "de": "Ist Ratenzahlung möglich?",
+      "vi": "Có thể trả góp không?",
+      "id": "Apakah pembayaran cicilan tersedia?"
+    }
+  },
+  {
+    "id": "shopping_017",
+    "scene": "shopping",
+    "subScene": "Paymentmethods",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "後払いサービスはありますか？",
+      "en": "Do you offer a buy now, pay later service?",
+      "zh": "有先买后付服务吗？",
+      "zh_TW": "有先買後付服務嗎？",
+      "ko": "후불 서비스가 있나요?",
+      "es": "¿Tienen servicio de pago posterior?",
+      "fr": "Proposez‑vous un service de paiement différé ?",
+      "de": "Bieten Sie einen Kauf-auf-Rechnung-Service an?",
+      "vi": "Có dịch vụ trả sau không?",
+      "id": "Apakah ada layanan bayar belakangan?"
+    }
+  },
+  {
+    "id": "shopping_018",
+    "scene": "shopping",
+    "subScene": "Paymentmethods",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ギフトカードは使えますか？",
+      "en": "Can I use a gift card?",
+      "zh": "可以使用礼品卡吗？",
+      "zh_TW": "可以使用禮品卡嗎？",
+      "ko": "기프트 카드를 사용할 수 있나요?",
+      "es": "¿Puedo usar tarjetas de regalo?",
+      "fr": "Puis‑je utiliser une carte‑cadeau ?",
+      "de": "Kann ich eine Geschenkkarte verwenden?",
+      "vi": "Tôi có thể dùng thẻ quà tặng không?",
+      "id": "Bisakah saya menggunakan kartu hadiah?"
+    }
+  },
+  {
+    "id": "shopping_019",
+    "scene": "shopping",
+    "subScene": "Paymentmethods",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "会員ポイントは貯まりますか？",
+      "en": "Do I earn membership points?",
+      "zh": "可以累计会员积分吗？",
+      "zh_TW": "會員點數可以累積嗎？",
+      "ko": "멤버십 포인트가 적립되나요?",  
+      "es": "¿Se acumulan puntos de miembro?",
+      "fr": "Les points de fidélité sont‑ils cumulables ?",
+      "de": "Sammle ich Mitgliedspunkte?",
+      "vi": "Tôi có tích lũy điểm thành viên không?",
+      "id": "Apakah poin keanggotaan dapat dikumpulkan?"
+    }
+  },
+  {
+    "id": "shopping_020",
+    "scene": "shopping",
+    "subScene": "Paymentmethods",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "外国通貨で支払えますか？",
+      "en": "Can I pay with foreign currency?",
+      "zh": "可以用外币支付吗？",
+      "zh_TW": "可以用外幣支付嗎？",
+      "ko": "외국 통화로 결제할 수 있나요?",
+      "es": "¿Puedo pagar con moneda extranjera?",
+      "fr": "Puis‑je payer en devise étrangère ?",
+      "de": "Kann ich mit Fremdwährung bezahlen?",
+      "vi": "Tôi có thể trả bằng ngoại tệ không?",
+      "id": "Bisakah saya membayar dengan mata uang asing?"
+    }
+  },
+  {
+    "id": "shopping_021",
+    "scene": "shopping",
+    "subScene": "Paymentmethods",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "タッチレス決済は利用できますか？",
+      "en": "Is contactless payment available?",
+      "zh": "可以使用非接触支付吗？",
+      "zh_TW": "可以使用非接觸式支付嗎？",
+      "ko": "터치리스 결제가 가능하나요?",
+      "es": "¿Está disponible el pago sin contacto?",
+      "fr": "Le paiement sans contact est‑il disponible ?",
+      "de": "Ist kontaktloses Bezahlen verfügbar?",
+      "vi": "Có thể thanh toán không chạm không?",
+      "id": "Apakah pembayaran tanpa sentuhan tersedia?"
+    }
+  },
+  {
+    "id": "shopping_022",
+    "scene": "shopping",
+    "subScene": "Paymentmethods",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "店頭での支払いオプションは何がありますか？",
+      "en": "What payment options do you have in store?",
+      "zh": "店内有哪些支付选项？",
+      "zh_TW": "店內有哪些付款選項？",
+      "ko": "매장 내 결제 옵션에는 무엇이 있나요?",
+      "es": "¿Qué opciones de pago tienen en la tienda?",
+      "fr": "Quelles options de paiement avez‑vous en magasin ?",
+      "de": "Welche Zahlungsoptionen gibt es im Geschäft?",
+      "vi": "Các tùy chọn thanh toán tại cửa hàng gồm những gì?",
+      "id": "Opsi pembayaran apa saja yang tersedia di toko?"
+    }
+  },
+  {
+    "id": "shopping_023",
+    "scene": "shopping",
+    "subScene": "Returnsandexchanges",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "サイズが合わなかったら交換できますか？",
+      "en": "If the size doesn’t fit, can I exchange it?",
+      "zh": "如果尺寸不合适，可以换货吗？",
+      "zh_TW": "如果尺寸不合適，可以交換嗎？",
+      "ko": "사이즈가 맞지 않으면 교환할 수 있나요?",
+      "es": "¿Puedo cambiarlo si la talla no me queda bien?",
+      "fr": "Si la taille ne convient pas, puis‑je l’échanger ?",
+      "de": "Kann ich es umtauschen, wenn die Größe nicht passt?",
+      "vi": "Nếu kích thước không vừa, tôi có thể đổi không?",
+      "id": "Jika ukuran tidak cocok, bisakah saya menukarnya?"
+    }
+  },
+  {
+    "id": "shopping_024",
+    "scene": "shopping",
+    "subScene": "Returnsandexchanges",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "購入後何日以内に返品できますか？",
+      "en": "How many days after purchase can I return it?",
+      "zh": "购买后多少天内可以退货？",
+      "zh_TW": "購買後多少天內可以退貨？",
+      "ko": "구매 후 며칠 이내에 반품할 수 있나요?",
+      "es": "¿En cuántos días puedo devolverlo después de la compra?",
+      "fr": "Dans combien de jours puis‑je retourner l’article après achat ?",
+      "de": "Innerhalb wie vieler Tage kann ich nach dem Kauf zurückgeben?",
+      "vi": "Sau khi mua bao nhiêu ngày thì có thể trả lại?",
+      "id": "Dalam berapa hari setelah pembelian saya bisa mengembalikannya?"
+    }
+  },
+  {
+    "id": "shopping_025",
+    "scene": "shopping",
+    "subScene": "Returnsandexchanges",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "レシートがなくても返品できますか？",
+      "en": "Can I return it without a receipt?",
+      "zh": "即使没有收据也可以退货吗？",
+      "zh_TW": "沒有收據也可以退貨嗎？",
+      "ko": "영수증 없이도 반품할 수 있나요?",
+      "es": "¿Puedo devolverlo sin recibo?",
+      "fr": "Puis‑je retourner sans reçu ?",
+      "de": "Kann ich ohne Kassenbon zurückgeben?",
+      "vi": "Không có hóa đơn vẫn có thể trả lại không?",
+      "id": "Bisakah saya mengembalikan tanpa struk?"
+    }
+  },
+  {
+    "id": "shopping_026",
+    "scene": "shopping",
+    "subScene": "Returnsandexchanges",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "不良品の場合はどうすればいいですか？",
+      "en": "What should I do if the product is defective?",
+      "zh": "如果是次品，我应该怎么办？",
+      "zh_TW": "若商品有瑕疵，我該怎麼辦？",
+      "ko": "불량품인 경우 어떻게 해야 하나요?",
+      "es": "¿Qué debo hacer si el producto está defectuoso?",
+      "fr": "Que faire en cas de produit défectueux ?",
+      "de": "Was soll ich tun, wenn das Produkt defekt ist?",
+      "vi": "Nếu hàng bị lỗi thì tôi phải làm sao?",
+      "id": "Apa yang harus saya lakukan jika produknya cacat?"
+    }
+  },
+  {
+    "id": "shopping_027",
+    "scene": "shopping",
+    "subScene": "Returnsandexchanges",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "返品の際の手数料はいくらですか？",
+      "en": "How much is the handling fee for returns?",
+      "zh": "退货手续费是多少？",
+      "zh_TW": "退貨手續費是多少？",
+      "ko": "반품 시 수수료가 얼마인가요?",
+      "es": "¿Cuánto cuesta la comisión de devolución?",
+      "fr": "Quel est le frais de retour ?",
+      "de": "Wie hoch ist die Rücksendegebühr?",
+      "vi": "Phí xử lý trả hàng là bao nhiêu?",
+      "id": "Berapa biaya penanganan untuk pengembalian?"
+    }
+  },
+  {
+    "id": "shopping_028",
+    "scene": "shopping",
+    "subScene": "Returnsandexchanges",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "オンライン購入品の返品方法を教えてください。",
+      "en": "Please tell me how to return items purchased online.",
+      "zh": "请告诉我在线购买商品的退货方法。",
+      "zh_TW": "請告訴我線上購買品的退貨方式。",
+      "ko": "온라인 구매 상품 반품 방법을 알려주세요.",
+      "es": "Dígame cómo devolver artículos comprados en línea.",
+      "fr": "Indiquez‑moi la procédure pour retourner un achat en ligne.",
+      "de": "Bitte sagen Sie mir, wie ich online gekaufte Artikel zurückgeben kann?",
+      "vi": "Hãy cho tôi biết cách trả lại hàng mua trực tuyến.",
+      "id": "Tolong beri tahu saya cara mengembalikan barang yang dibeli online?"
+    }
+  },
+  {
+    "id": "shopping_029",
+    "scene": "shopping",
+    "subScene": "Returnsandexchanges",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "返品したら返金はいつされますか？",
+      "en": "When will I be refunded after returning?",
+      "zh": "退货后何时退款？",
+      "zh_TW": "退貨後何時退款？",
+      "ko": "반품 후 언제 환불되나요?",
+      "es": "¿Cuándo recibiré el reembolso después de la devolución?",
+      "fr": "Quand serai‑je remboursé après le retour ?",
+      "de": "Wann werde ich nach der Rücksendung erstattet?",
+      "vi": "Trả hàng xong khi nào tôi được hoàn tiền?",
+      "id": "Kapan saya akan menerima pengembalian dana setelah pengembalian?"
+    }
+  },
+  {
+    "id": "shopping_030",
+    "scene": "shopping",
+    "subScene": "Returnsandexchanges",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ギフト包装品の返品は可能ですか？",
+      "en": "Can I return gift-wrapped items?",
+      "zh": "礼品包装商品可以退货吗？",
+      "zh_TW": "禮品包裝品可以退貨嗎？",
+      "ko": "선물 포장 상품도 반품 가능한가요?",
+      "es": "¿Puedo devolver productos con envoltorio de regalo?",
+      "fr": "Puis‑je retourner un article emballé comme cadeau ?",
+      "de": "Kann ich geschenkverpackte Artikel zurückgeben?",
+      "vi": "Có thể trả lại hàng đã đóng gói quà không?",
+      "id": "Bisakah saya mengembalikan barang yang dibungkus kado?"
+    }
+  },
+  {
+    "id": "shopping_031",
+    "scene": "shopping",
+    "subScene": "Returnsandexchanges",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "交換の場合、差額の支払い方法は？",
+      "en": "For exchanges, how do I pay the price difference?",
+      "zh": "如果换货，差价如何支付？",
+      "zh_TW": "交換時，如何支付差額？",
+      "ko": "교환 시 차액은 어떻게 결제하나요?",
+      "es": "En caso de cambio, ¿cómo se paga la diferencia?",
+      "fr": "En cas d’échange, comment régler la différence ?",
+      "de": "Wie bezahle ich den Preisunterschied bei einem Umtausch?",
+      "vi": "Trường hợp đổi hàng, tôi thanh toán phần chênh lệch như thế nào?",
+      "id": "Untuk penukaran, bagaimana saya membayar selisihnya?"
+    }
+  },
+  {
+    "id": "shopping_032",
+    "scene": "shopping",
+    "subScene": "Returnsandexchanges",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "返品手続きはどこで行いますか？",
+      "en": "Where do I complete the return procedure?",
+      "zh": "在哪里办理退货手续？",
+      "zh_TW": "在哪裡辦理退貨手續？",
+      "ko": "반품 절차는 어디에서 하나요?",
+      "es": "¿Dónde realizo el trámite de devolución?",
+      "fr": "Où effectuer la procédure de retour ?",
+      "de": "Wo kann ich den Rückgabevorgang durchführen?",
+      "vi": "Quy trình trả hàng được thực hiện ở đâu?",
+      "id": "Di mana prosedur pengembalian dilakukan?"
+    }
+  },
+  {
+    "id": "shopping_033",
+    "scene": "shopping",
+    "subScene": "Productdetails",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "この商品の素材は何ですか？",
+      "en": "What is the material of this product?",
+      "zh": "这件商品的材质是什么？",
+      "zh_TW": "這件商品的材質是什麼？",
+      "ko": "이 상품의 소재가 무엇인가요?",
+      "es": "¿De qué material es este producto?",
+      "fr": "De quel matériau est ce produit ?",
+      "de": "Aus welchem Material besteht dieses Produkt?",
+      "vi": "Sản phẩm này làm từ chất liệu gì?",
+      "id": "Bahan apa produk ini terbuat?"
+    }
+  },
+  {
+    "id": "shopping_034",
+    "scene": "shopping",
+    "subScene": "Productdetails",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "この商品は防水機能がありますか？",
+      "en": "Does this product have waterproof functionality?",
+      "zh": "这件商品有防水功能吗？",
+      "zh_TW": "這件商品有防水功能嗎？",
+      "ko": "이 상품은 방수 기능이 있나요?",
+      "es": "¿Este producto es impermeable?",
+      "fr": "Ce produit est‑il étanche ?",
+      "de": "Ist dieses Produkt wasserdicht?",
+      "vi": "Sản phẩm này có khả năng chống nước không?",
+      "id": "Apakah produk ini tahan air?"
+    }
+  },
+  {
+    "id": "shopping_035",
+    "scene": "shopping",
+    "subScene": "Productdetails",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "サイズチャートを見せてください。",
+      "en": "Please show me the size chart.",
+      "zh": "请给我看一下尺寸表。",
+      "zh_TW": "請給我看尺寸表。",
+      "ko": "사이즈 차트를 보여주세요.",
+      "es": "Muéstreme la tabla de tallas, por favor.",
+      "fr": "Montrez‑moi le guide des tailles, s’il vous plaît.",
+      "de": "Zeigen Sie mir bitte die Größentabelle.",
+      "vi": "Cho tôi xem bảng kích thước.",
+      "id": "Tolong tunjukkan tabel ukuran."
+    }
+  },
+  {
+    "id": "shopping_036",
+    "scene": "shopping",
+    "subScene": "Productdetails",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "重量はどれくらいですか？",
+      "en": "How much does it weigh?",
+      "zh": "重量是多少？",
+      "zh_TW": "重量是多少？",
+      "ko": "무게가 얼마인가요?",
+      "es": "¿Cuánto pesa?",
+      "fr": "Quel est son poids ?",
+      "de": "Wie viel wiegt es?",
+      "vi": "Nó nặng bao nhiêu?",
+      "id": "Beratnya berapa?"
+    }
+  },
+  {
+    "id": "shopping_037",
+    "scene": "shopping",
+    "subScene": "Productdetails",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "メーカー保証は付いていますか？",
+      "en": "Is a manufacturer’s warranty included?",
+      "zh": "是否附带厂商保修？",
+      "zh_TW": "是否附帶廠商保固？",
+      "ko": "제조사 보증이 포함되어 있나요?",
+      "es": "¿Incluye garantía del fabricante?",
+      "fr": "La garantie du fabricant est‑elle incluse ?",
+      "de": "Ist eine Herstellergarantie enthalten?",
+      "vi": "Có kèm bảo hành của nhà sản xuất không?",
+      "id": "Apakah garansi pabrik disertakan?"
+    }
+  },
+  {
+    "id": "shopping_038",
+    "scene": "shopping",
+    "subScene": "Productdetails",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "電源が必要ですか？",
+      "en": "Does it require power?",
+      "zh": "需要电源吗？",
+      "zh_TW": "需要電源嗎？",
+      "ko": "전원이 필요한가요?",
+      "es": "¿Necesita electricidad?",
+      "fr": "A‑t‑il besoin d’électricité ?",
+      "de": "Benötigt es Strom?",
+      "vi": "Cần nguồn điện không?",
+      "id": "Apakah membutuhkan daya listrik?"
+    }
+  },
+  {
+    "id": "shopping_039",
+    "scene": "shopping",
+    "subScene": "Productdetails",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "これはオーガニック素材ですか？",
+      "en": "Is this an organic material?",
+      "zh": "这是有机材料吗？",
+      "zh_TW": "這是有機材質嗎？",
+      "ko": "이거 유기농 소재인가요?",
+      "es": "¿Es este material orgánico?",
+      "fr": "Ce matériau est‑il organique ?",
+      "de": "Ist dieses Material biologisch?",
+      "vi": "Đây có phải là chất liệu hữu cơ không?",
+      "id": "Apakah ini bahan organik?"
+    }
+  },
+  {
+    "id": "shopping_040",
+    "scene": "shopping",
+    "subScene": "Productdetails",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "使い方の説明書はありますか？",
+      "en": "Do you have an instruction manual?",
+      "zh": "有使用说明书吗？",
+      "zh_TW": "有使用說明書嗎？",
+      "ko": "사용 설명서가 있나요?",
+      "es": "¿Tienen un manual de instrucciones?",
+      "fr": "Avez‑vous un mode d’emploi ?",
+      "de": "Haben Sie eine Bedienungsanleitung?",
+      "vi": "Có sách hướng dẫn sử dụng không?",
+      "id": "Apakah ada manual petunjuk penggunaan?"
+    }
+  },
+  {
+    "id": "shopping_041",
+    "scene": "shopping",
+    "subScene": "Productdetails",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "バッテリーの持ちはどれくらいですか？",
+      "en": "How long does the battery last?",
+      "zh": "电池续航时间大约是多久？",
+      "zh_TW": "電池續航時間大約是多久？",
+      "ko": "배터리 사용 시간이 얼마나 되나요?",
+      "es": "¿Cuánto dura la batería?",
+      "fr": "Quelle est l’autonomie de la batterie ?",
+      "de": "Wie lange hält der Akku?",
+      "vi": "Pin dùng được bao lâu?",
+      "id": "Berapa lama daya tahan baterainya?"
+    }
+  },
+  {
+    "id": "shopping_042",
+    "scene": "shopping",
+    "subScene": "Productdetails",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "アレルギー情報を教えてください。",
+      "en": "Please tell me the allergy information.",
+      "zh": "请告诉我过敏信息。",
+      "zh_TW": "請告訴我過敏資訊。",
+      "ko": "알레르기 정보를 알려주세요.",
+      "es": "Por favor, infórmeme sobre la información de alérgenos.",
+      "fr": "Veuillez me donner les informations sur les allergies.",
+      "de": "Bitte informieren Sie mich über die Allergieinformationen.",
+      "vi": "Xin vui lòng cho tôi biết thông tin dị ứng.",
+      "id": "Tolong beri tahu saya informasi alergi."
+    }
+  },
+  {
+    "id": "shopping_043",
+    "scene": "shopping",
+    "subScene": "Campaignsanddiscounts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "今セール中の商品はありますか？",
+      "en": "Are there any items on sale now?",
+      "zh": "现在有促销商品吗？",
+      "zh_TW": "現在有促銷商品嗎？",
+      "ko": "현재 세일 중인 상품이 있나요?",
+      "es": "¿Hay artículos en oferta ahora?",
+      "fr": "Y a‑t‑il des articles en promotion en ce moment ?",
+      "de": "Gibt es derzeit reduzierte Artikel?",
+      "vi": "Hiện có mặt hàng nào đang giảm giá không?",
+      "id": "Apakah ada produk yang sedang diskon sekarang?"
+    }
+  },
+  {
+    "id": "shopping_044",
+    "scene": "shopping",
+    "subScene": "Campaignsanddiscounts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "割引クーポンは使えますか？",
+      "en": "Can I use a discount coupon?",
+      "zh": "可以使用折扣券吗？",
+      "zh_TW": "可以使用折扣券嗎？",
+      "ko": "할인 쿠폰을 사용할 수 있나요?",
+      "es": "¿Puedo usar un cupón de descuento?",
+      "fr": "Puis‑je utiliser un coupon de réduction ?",
+      "de": "Kann ich einen Rabattgutschein verwenden?",
+      "vi": "Tôi có thể sử dụng phiếu giảm giá không?",
+      "id": "Bisakah saya menggunakan kupon diskon?"
+    }
+  },
+  {
+    "id": "shopping_045",
+    "scene": "shopping",
+    "subScene": "Campaignsanddiscounts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "会員限定セールの詳細を教えてください。",
+      "en": "Please tell me the details of the members-only sale.",
+      "zh": "请告诉我会员专属促销的详细信息。",
+      "zh_TW": "請告訴我會員專屬促銷的詳細資訊。",
+      "ko": "회원 전용 세일의 세부 정보를 알려주세요.",
+      "es": "Por favor, indíqueme los detalles de la venta exclusiva para miembros.",
+      "fr": "Veuillez me donner les détails de la vente réservée aux membres.",
+      "de": "Bitte teilen Sie mir die Details des exklusiven Verkaufs für Mitglieder mit.",
+      "vi": "Vui lòng cho tôi biết chi tiết về chương trình giảm giá dành riêng cho thành viên.",
+      "id": "Tolong beri tahu saya detail penjualan khusus anggota."
+    }
+  },
+  {
+    "id": "shopping_046",
+    "scene": "shopping",
+    "subScene": "Campaignsanddiscounts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "まとめ買い割引はありますか？",
+      "en": "Is there a bulk purchase discount?",
+      "zh": "有批量购买折扣吗？",
+      "zh_TW": "有批量購買折扣嗎？",
+      "ko": "대량 구매 할인은 있나요?",
+      "es": "¿Hay descuento por compra en volumen?",
+      "fr": "Existe‑t‑il une réduction pour achat en gros ?",
+      "de": "Gibt es einen Mengenrabatt?",
+      "vi": "Có giảm giá khi mua số lượng lớn không?",
+      "id": "Apakah ada diskon pembelian dalam jumlah banyak?"
+    }
+  },
+  {
+    "id": "shopping_047",
+    "scene": "shopping",
+    "subScene": "Campaignsanddiscounts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "学生割引は適用できますか？",
+      "en": "Can I apply a student discount?",
+      "zh": "可以使用学生折扣吗？",
+      "zh_TW": "可以使用學生折扣嗎？",
+      "ko": "학생 할인을 적용할 수 있나요?",
+      "es": "¿Puedo aplicar el descuento para estudiantes?",
+      "fr": "Puis‑je bénéficier de la réduction étudiante ?",
+      "de": "Kann ich den Studententarif nutzen?",
+      "vi": "Tôi có thể áp dụng giảm giá cho sinh viên không?",
+      "id": "Bisakah saya menggunakan diskon pelajar?"
+    }
+  },
+  {
+    "id": "shopping_048",
+    "scene": "shopping",
+    "subScene": "Campaignsanddiscounts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ポイントアップキャンペーンはいつですか？",
+      "en": "When is the points-up campaign?",
+      "zh": "积分加倍活动什么时候进行？",
+      "zh_TW": "積分加倍活動何時舉行？",
+      "ko": "포인트 업 캠페인은 언제인가요?",
+      "es": "¿Cuándo es la campaña de aumento de puntos?",
+      "fr": "Quand a lieu la campagne de points bonus ?",
+      "de": "Wann findet die Punkte-Aktion statt?",
+      "vi": "Chiến dịch tăng điểm diễn ra khi nào?",
+      "id": "Kapan kampanye peningkatan poin?"
+    }
+  },
+  {
+    "id": "shopping_049",
+    "scene": "shopping",
+    "subScene": "Campaignsanddiscounts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "期間限定クーポンコードを教えてください。",
+      "en": "Please tell me the limited-time coupon code.",
+      "zh": "请告诉我限时优惠券代码。",
+      "zh_TW": "請告訴我限時優惠券代碼。",
+      "ko": "기간 한정 쿠폰 코드를 알려주세요.",
+      "es": "Por favor, indíqueme el código de cupón por tiempo limitado.",
+      "fr": "Veuillez me donner le code promo à durée limitée.",
+      "de": "Bitte teilen Sie mir den zeitlich begrenzten Gutscheincode mit.",
+      "vi": "Xin vui lòng cho tôi biết mã phiếu giảm giá có thời hạn.",
+      "id": "Tolong beri tahu saya kode kupon terbatas waktu."
+    }
+  },
+  {
+    "id": "shopping_050",
+    "scene": "shopping",
+    "subScene": "Campaignsanddiscounts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ブランドデー割引はありますか？",
+      "en": "Is there a brand day discount?",
+      "zh": "有品牌日折扣吗？",
+      "zh_TW": "有品牌日折扣嗎？",
+      "ko": "브랜드 데이 할인은 있나요?",
+      "es": "¿Hay descuento por el día de la marca?",
+      "fr": "Y a‑t‑il une réduction pour la journée de la marque ?",
+      "de": "Gibt es einen Markenaktionstag‑Rabatt?",
+      "vi": "Có giảm giá cho ngày thương hiệu không?",
+      "id": "Apakah ada diskon hari merek?"
+    }
+  },
+  {
+    "id": "shopping_051",
+    "scene": "shopping",
+    "subScene": "Campaignsanddiscounts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "前回購入者限定割引は利用可能ですか？",
+      "en": "Is the returning customer discount available?",
+      "zh": "上次购买者专属折扣可以使用吗？",
+      "zh_TW": "上次購買者專屬折扣可以使用嗎？",
+      "ko": "재구매 고객 한정 할인을 이용할 수 있나요?",
+      "es": "¿Está disponible el descuento exclusivo para compradores anteriores?",
+      "fr": "La réduction réservée aux clients fidèles est‑elle disponible ?",
+      "de": "Ist der Rabatt für wiederkehrende Kunden verfügbar?",
+      "vi": "Giảm giá dành cho khách mua trước có áp dụng được không?",
+      "id": "Apakah diskon khusus pembeli sebelumnya tersedia?"
+    }
+  },
+  {
+    "id": "shopping_052",
+    "scene": "shopping",
+    "subScene": "Campaignsanddiscounts",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "二点目半額キャンペーンは実施中ですか？",
+      "en": "Is the second-item-half-price campaign ongoing?",
+      "zh": "第二件半价活动正在进行吗？",
+      "zh_TW": "第二件半價活動正在進行嗎？",
+      "ko": "두 번째 상품 50% 할인 캠페인이 진행 중인가요?",
+      "es": "¿La campaña del segundo artículo a mitad de precio está en marcha?",
+      "fr": "La campagne « deuxième article à moitié prix » est‑elle en cours ?",
+      "de": "Läuft die Aktion „zweiter Artikel zum halben Preis“?",
+      "vi": "Chiến dịch mua món thứ hai nửa giá có đang diễn ra không?",
+      "id": "Apakah kampanye potongan 50% untuk produk kedua sedang berlangsung?"
+    }
+  },
+  {
+    "id": "shopping_053",
+    "scene": "shopping",
+    "subScene": "Deliveryandhomedelivery",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "自宅まで配送できますか？",
+      "en": "Can you deliver to my home?",
+      "zh": "可以送货到家吗？",
+      "zh_TW": "可以送貨到家嗎？",
+      "ko": "집까지 배송해 주시나요?",
+      "es": "¿Pueden entregar a mi domicilio?",
+      "fr": "Pouvez‑vous livrer à mon domicile ?",
+      "de": "Können Sie bis zu mir nach Hause liefern?",
+      "vi": "Có thể giao hàng đến nhà tôi không?",
+      "id": "Bisakah dikirim ke rumah saya?"
+    }
+  },
+  {
+    "id": "shopping_054",
+    "scene": "shopping",
+    "subScene": "Deliveryandhomedelivery",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "送料はいくらかかりますか？",
+      "en": "How much is the shipping fee?",
+      "zh": "运费是多少？",
+      "zh_TW": "運費是多少？",
+      "ko": "배송비는 얼마인가요?",
+      "es": "¿Cuánto cuesta el envío?",
+      "fr": "Quel est le coût de la livraison ?",
+      "de": "Wie hoch sind die Versandkosten?",
+      "vi": "Phí vận chuyển là bao nhiêu?",
+      "id": "Berapa biaya pengirimannya?"
+    }
+  },
+  {
+    "id": "shopping_055",
+    "scene": "shopping",
+    "subScene": "Deliveryandhomedelivery",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "配送にかかる日数はどれくらいですか？",
+      "en": "How many days will delivery take?",
+      "zh": "送货需要几天？",
+      "zh_TW": "送貨需要幾天？",
+      "ko": "배송에 며칠 걸리나요?",
+      "es": "¿Cuántos días tarda la entrega?",
+      "fr": "Combien de jours la livraison prend‑elle ?",
+      "de": "Wie viele Tage dauert die Lieferung?",
+      "vi": "Giao hàng mất bao nhiêu ngày?",
+      "id": "Berapa hari pengiriman akan selesai?"
+    }
+  },
+  {
+    "id": "shopping_056",
+    "scene": "shopping",
+    "subScene": "Deliveryandhomedelivery",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "即日配送は可能ですか？",
+      "en": "Is same-day delivery available?",
+      "zh": "可以当天送达吗？",
+      "zh_TW": "可以當日送達嗎？",
+      "ko": "당일 배송이 가능한가요?",
+      "es": "¿Es posible la entrega el mismo día?",
+      "fr": "La livraison le jour même est‑elle disponible ?",
+      "de": "Ist eine Lieferung am selben Tag möglich?",
+      "vi": "Có giao hàng trong ngày không?",
+      "id": "Apakah pengiriman hari yang sama tersedia?"
+    }
+  },
+  {
+    "id": "shopping_057",
+    "scene": "shopping",
+    "subScene": "Deliveryandhomedelivery",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "配送状況を追跡する方法を教えてください。",
+      "en": "Please tell me how to track the delivery status.",
+      "zh": "请告诉我如何追踪配送状态。",
+      "zh_TW": "請告訴我如何追蹤配送狀態。",
+      "ko": "배송 상태를 확인하는 방법을 알려주세요.",
+      "es": "Por favor, indíqueme cómo rastrear el estado de la entrega.",
+      "fr": "Veuillez me dire comment suivre l’état de la livraison.",
+      "de": "Bitte sagen Sie mir, wie ich den Lieferstatus verfolgen kann.",
+      "vi": "Xin vui lòng cho tôi biết cách theo dõi trạng thái giao hàng.",
+      "id": "Tolong beri tahu saya cara melacak status pengiriman."
+    }
+  },
+  {
+    "id": "shopping_058",
+    "scene": "shopping",
+    "subScene": "Deliveryandhomedelivery",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "コンビニ受取はできますか？",
+      "en": "Can I pick it up at a convenience store?",
+      "zh": "可以在便利店取货吗？",
+      "zh_TW": "可以在便利商店取貨嗎？",
+      "ko": "편의점에서 수령할 수 있나요?",
+      "es": "¿Puedo recogerlo en una tienda de conveniencia?",
+      "fr": "Puis‑je retirer ma commande en magasin de proximité ?",
+      "de": "Kann ich es in einem Convenience Store abholen?",
+      "vi": "Tôi có thể nhận hàng tại cửa hàng tiện lợi không?",
+      "id": "Bisakah saya mengambilnya di toko serba ada?"
+    }
+  },
+  {
+    "id": "shopping_059",
+    "scene": "shopping",
+    "subScene": "Deliveryandhomedelivery",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "海外配送に対応していますか？",
+      "en": "Do you offer international shipping?",
+      "zh": "支持国际配送吗？",
+      "zh_TW": "支援海外配送嗎？",
+      "ko": "해외 배송이 가능한가요?",
+      "es": "¿Ofrecen envío internacional?",
+      "fr": "Proposez‑vous une livraison à l’étranger ?",
+      "de": "Bieten Sie internationalen Versand an?",
+      "vi": "Có hỗ trợ giao hàng quốc tế không?",
+      "id": "Apakah Anda melayani pengiriman internasional?"
+    }
+  },
+  {
+    "id": "shopping_060",
+    "scene": "shopping",
+    "subScene": "Deliveryandhomedelivery",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "配送日時の指定はできますか？",
+      "en": "Can I specify the delivery date and time?",
+      "zh": "可以指定配送日期和时间吗？",
+      "zh_TW": "可以指定配送日期和時間嗎？",
+      "ko": "배송 날짜와 시간을 지정할 수 있나요?",
+      "es": "¿Puedo especificar la fecha y hora de entrega?",
+      "fr": "Puis‑je préciser la date et l’heure de livraison ?",
+      "de": "Kann ich Lieferdatum und -zeit angeben?",
+      "vi": "Tôi có thể chỉ định ngày và giờ giao hàng không?",
+      "id": "Bisakah saya menentukan tanggal dan waktu pengiriman?"
+    }
+  },
+  {
+    "id": "shopping_061",
+    "scene": "shopping",
+    "subScene": "Deliveryandhomedelivery",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "不在時の再配達はどのように頼めますか？",
+      "en": "How can I request a re-delivery if I’m not home?",
+      "zh": "我不在时如何申请重新配送？",
+      "zh_TW": "我不在時如何申請重新配送？",
+      "ko": "부재중일 때 재배송을 어떻게 요청하나요?",
+      "es": "¿Cómo puedo solicitar una nueva entrega si no estoy en casa?",
+      "fr": "Comment puis‑je demander une nouvelle livraison en cas d’absence ?",
+      "de": "Wie kann ich eine erneute Lieferung anfordern, wenn ich nicht zu Hause bin?",
+      "vi": "Tôi làm sao để yêu cầu giao lại khi tôi vắng mặt?",
+      "id": "Bagaimana saya meminta pengiriman ulang jika tidak ada di rumah?"
+    }
+  },
+  {
+    "id": "shopping_062",
+    "scene": "shopping",
+    "subScene": "Deliveryandhomedelivery",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "梱包を丁寧にお願いできますか？",
+      "en": "Could you please pack it carefully?",
+      "zh": "请您小心地包装好吗？",
+      "zh_TW": "請您小心包裝嗎？",
+      "ko": "상품을 정성스럽게 포장해 주시겠어요?",
+      "es": "¿Podría empaquetarlo con cuidado, por favor?",
+      "fr": "Pourriez‑vous l’emballer soigneusement, s’il vous plaît ?",
+      "de": "Könnten Sie es bitte sorgfältig verpacken?",
+      "vi": "Bạn có thể đóng gói cẩn thận được không?",
+      "id": "Bisakah Anda membungkusnya dengan hati-hati?"
+    }
+  },
+  {
+    "id": "shopping_063",
+    "scene": "shopping",
+    "subScene": "Membershipregistrationandpoints",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "新規会員登録をしたいです。",
+      "en": "I’d like to register as a new member.",
+      "zh": "我想注册成为新会员。",
+      "zh_TW": "我想註冊成為新會員。",
+      "ko": "신규 회원 가입을 하고 싶습니다.",
+      "es": "Me gustaría registrarme como nuevo miembro.",
+      "fr": "Je souhaiterais m’inscrire en tant que nouveau membre.",
+      "de": "Ich möchte mich als neues Mitglied registrieren.",
+      "vi": "Tôi muốn đăng ký làm thành viên mới.",
+      "id": "Saya ingin mendaftar sebagai anggota baru."
+    }
+  },
+  {
+    "id": "shopping_064",
+    "scene": "shopping",
+    "subScene": "Membershipregistrationandpoints",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "会員カードはどこでもらえますか？",
+      "en": "Where can I get a membership card?",
+      "zh": "在哪里可以领取会员卡？",
+      "zh_TW": "在哪裡可以領取會員卡？",
+      "ko": "회원 카드는 어디서 받을 수 있나요?",
+      "es": "¿Dónde puedo obtener la tarjeta de membresía?",
+      "fr": "Où puis‑je obtenir ma carte de membre ?",
+      "de": "Wo bekomme ich meine Mitgliedskarte?",
+      "vi": "Tôi có thể nhận thẻ thành viên ở đâu?",
+      "id": "Di mana saya bisa mendapatkan kartu anggota?"
+    }
+  },
+  {
+    "id": "shopping_065",
+    "scene": "shopping",
+    "subScene": "Membershipregistrationandpoints",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ポイントは何ポイントから使えますか？",
+      "en": "What is the minimum number of points required to use them?",
+      "zh": "最少需要多少积分才能使用？",
+      "zh_TW": "最少需要多少點積分才能使用？",
+      "ko": "포인트는 몇 포인트부터 사용할 수 있나요?",
+      "es": "¿Desde cuántos puntos puedo usarlos?",
+      "fr": "À partir de combien de points puis‑je les utiliser ?",
+      "de": "Ab wie vielen Punkten kann ich sie verwenden?",
+      "vi": "Tôi có thể sử dụng từ bao nhiêu điểm trở lên?",
+      "id": "Dari berapa poin saya bisa menggunakannya?"
+    }
+  },
+  {
+    "id": "shopping_066",
+    "scene": "shopping",
+    "subScene": "Membershipregistrationandpoints",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ポイント残高を確認できますか？",
+      "en": "Can I check my points balance?",
+      "zh": "我可以查看积分余额吗？",
+      "zh_TW": "我可以查看點數餘額嗎？",
+      "ko": "포인트 잔액을 확인할 수 있나요?",
+      "es": "¿Puedo comprobar mi saldo de puntos?",
+      "fr": "Puis‑je vérifier mon solde de points ?",
+      "de": "Kann ich mein Punktekonto abrufen?",
+      "vi": "Tôi có thể kiểm tra số dư điểm không?",
+      "id": "Bisakah saya memeriksa saldo poin saya?"
+    }
+  },
+  {
+    "id": "shopping_067",
+    "scene": "shopping",
+    "subScene": "Membershipregistrationandpoints",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "会員特典の内容を教えてください。",
+      "en": "Please tell me the member benefits.",
+      "zh": "请告诉我会员优惠的内容。",
+      "zh_TW": "請告訴我會員優惠的內容。",
+      "ko": "회원 혜택의 내용을 알려주세요.",
+      "es": "Por favor, dígame cuáles son los beneficios para miembros.",
+      "fr": "Veuillez me donner le détail des avantages réservés aux membres.",
+      "de": "Bitte teilen Sie mir die Details der Mitgliedervergünstigungen mit.",
+      "vi": "Xin vui lòng cho tôi biết các đặc quyền thành viên.",
+      "id": "Tolong beri tahu saya manfaat anggota."
+    }
+  },
+  {
+    "id": "shopping_068",
+    "scene": "shopping",
+    "subScene": "Membershipregistrationandpoints",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "年会費はかかりますか？",
+      "en": "Is there an annual membership fee?",
+      "zh": "有年费吗？",
+      "zh_TW": "有年費嗎？",
+      "ko": "연회비가 있나요?",
+      "es": "¿Hay una cuota anual?",
+      "fr": "Y a‑t‑il des frais d’adhésion annuels ?",
+      "de": "Gibt es eine jährliche Mitgliedsgebühr?",
+      "vi": "Có phí thành viên hàng năm không?",
+      "id": "Apakah ada biaya keanggotaan tahunan?"
+    }
+  },
+  {
+    "id": "shopping_069",
+    "scene": "shopping",
+    "subScene": "Membershipregistrationandpoints",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "会員登録に必要なものは何ですか？",
+      "en": "What do I need to register as a member?",
+      "zh": "注册会员需要什么？",
+      "zh_TW": "註冊成為會員需要什麼？",
+      "ko": "회원 가입에 필요한 것은 무엇인가요?",
+      "es": "¿Qué necesito para registrarme como miembro?",
+      "fr": "Que faut‑il pour s’inscrire en tant que membre ?",
+      "de": "Was benötige ich für die Mitgliedsanmeldung?",
+      "vi": "Tôi cần gì để đăng ký làm thành viên?",
+      "id": "Apa yang saya butuhkan untuk mendaftar sebagai anggota?"
+    }
+  },
+  {
+    "id": "shopping_070",
+    "scene": "shopping",
+    "subScene": "Membershipregistrationandpoints",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "ポイントはいつまで有効ですか？",
+      "en": "Until when are the points valid?",
+      "zh": "积分有效期到什么时候？",
+      "zh_TW": "積分有效期到什麼時候？",
+      "ko": "포인트는 언제까지 유효한가요?",
+      "es": "¿Hasta cuándo son válidos los puntos?",
+      "fr": "Jusqu’à quand les points sont‑ils valables ?",
+      "de": "Bis wann sind die Punkte gültig?",
+      "vi": "Điểm có thời hạn đến khi nào?",
+      "id": "Sampai kapan poin berlaku?"
+    }
+  },
+  {
+    "id": "shopping_071",
+    "scene": "shopping",
+    "subScene": "Membershipregistrationandpoints",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "会員ランクはどうやって上がりますか？",
+      "en": "How do I upgrade my membership rank?",
+      "zh": "如何提升会员等级？",
+      "zh_TW": "如何提升會員等級？",
+      "ko": "회원 등급은 어떻게 올리나요?",
+      "es": "¿Cómo aumento mi nivel de membresía?",
+      "fr": "Comment puis‑je augmenter mon niveau de membre ?",
+      "de": "Wie erhöhe ich meinen Mitgliedsstatus?",
+      "vi": "Làm sao tôi nâng cấp hạng thành viên?",
+      "id": "Bagaimana cara menaikkan peringkat keanggotaan saya?"
+    }
+  },
+  {
+    "id": "shopping_072",
+    "scene": "shopping",
+    "subScene": "Membershipregistrationandpoints",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "メールマガジンを解除したいです。",
+      "en": "I want to unsubscribe from the newsletter.",
+      "zh": "我想取消订阅电子报。",
+      "zh_TW": "我想取消訂閱電子報。",
+      "ko": "뉴스레터 구독을 해지하고 싶습니다.",
+      "es": "Quiero darme de baja del boletín.",
+      "fr": "Je souhaite me désinscrire de la newsletter.",
+      "de": "Ich möchte den Newsletter abbestellen.",
+      "vi": "Tôi muốn hủy đăng ký nhận bản tin.",
+      "id": "Saya ingin berhenti berlangganan buletin."
+    }
+  },
+  {
+    "id": "shopping_073",
+    "scene": "shopping",
+    "subScene": "Try-onandfitting",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "試着室はどこですか？",
+      "en": "Where is the fitting room?",
+      "zh": "试衣间在哪里？",
+      "zh_TW": "試衣間在哪裡？",
+      "ko": "탈의실은 어디인가요?",
+      "es": "¿Dónde está el probador?",
+      "fr": "Où est la cabine d’essayage ?",
+      "de": "Wo ist die Umkleidekabine?",
+      "vi": "Phòng thử đồ ở đâu?",
+      "id": "Di mana ruang ganti?"
+    }
+  },
+  {
+    "id": "shopping_074",
+    "scene": "shopping",
+    "subScene": "Try-onandfitting",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "この服を試着してもいいですか？",
+      "en": "May I try on these clothes?",
+      "zh": "我可以试穿这件衣服吗？",
+      "zh_TW": "我可以試穿這件衣服嗎？",
+      "ko": "이 옷을 입어봐도 되나요?",
+      "es": "¿Puedo probarme esta prenda?",
+      "fr": "Puis‑je essayer ce vêtement ?",
+      "de": "Kann ich dieses Kleidungsstück anprobieren?",
+      "vi": "Tôi có thể thử bộ quần áo này không?",
+      "id": "Bolehkah saya mencoba pakaian ini?"
+    }
+  },
+  {
+    "id": "shopping_075",
+    "scene": "shopping",
+    "subScene": "Try-onandfitting",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "大きめのサイズを試着したいです。",
+      "en": "I’d like to try a larger size.",
+      "zh": "我想试穿更大号的。",
+      "zh_TW": "我想試穿更大號的。",
+      "ko": "더 큰 사이즈를 입어보고 싶습니다.",
+      "es": "Me gustaría probar una talla más grande.",
+      "fr": "Je souhaiterais essayer une taille plus grande.",
+      "de": "Ich möchte eine größere Größe anprobieren.",
+      "vi": "Tôi muốn thử size lớn hơn.",
+      "id": "Saya ingin mencoba ukuran yang lebih besar."
+    }
+  },
+  {
+    "id": "shopping_076",
+    "scene": "shopping",
+    "subScene": "Try-onandfitting",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "靴を試着したいのですが、在庫はありますか？",
+      "en": "I’d like to try on these shoes; are they in stock?",
+      "zh": "我想试穿这双鞋，请问有库存吗？",
+      "zh_TW": "我想試穿這雙鞋，請問有庫存嗎？",
+      "ko": "이 신발을 신어보고 싶은데, 재고가 있나요?",
+      "es": "Me gustaría probarme estos zapatos; ¿están en stock?",
+      "fr": "Je voudrais essayer ces chaussures ; sont‑elles en stock ?",
+      "de": "Ich möchte diese Schuhe anprobieren; sind sie vorrätig?",
+      "vi": "Tôi muốn thử đôi giày này; còn hàng không?",
+      "id": "Saya ingin mencoba sepatu ini; apakah masih ada stok?"
+    }
+  },
+  {
+    "id": "shopping_077",
+    "scene": "shopping",
+    "subScene": "Try-onandfitting",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "試着後、他のサイズも持ってきてください。",
+      "en": "After I try it on, please bring me another size as well.",
+      "zh": "试穿后，请再给我拿其他尺码。",
+      "zh_TW": "試穿後，請再給我拿其他尺碼。",
+      "ko": "피팅 후에 다른 사이즈도 가져다주세요.",
+      "es": "Después de probarme, por favor tráigame otra talla también.",
+      "fr": "Après l’essayage, pouvez‑vous m’apporter une autre taille également ?",
+      "de": "Bitte bringen Sie mir nach dem Anprobieren auch eine andere Größe.",
+      "vi": "Sau khi thử, vui lòng mang cho tôi cỡ khác.",
+      "id": "Setelah saya mencoba, tolong bawakan ukuran lain juga."
+    }
+  },
+  {
+    "id": "shopping_078",
+    "scene": "shopping",
+    "subScene": "Try-onandfitting",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "フィッティングルームに鏡はありますか？",
+      "en": "Is there a mirror in the fitting room?",
+      "zh": "试衣间里有镜子吗？",
+      "zh_TW": "試衣間裡有鏡子嗎？",
+      "ko": "피팅룸에 거울이 있나요?",
+      "es": "¿Hay un espejo en el probador?",
+      "fr": "Y a‑t‑il un miroir dans la cabine d’essayage ?",
+      "de": "Gibt es einen Spiegel in der Umkleidekabine?",
+      "vi": "Trong phòng thử đồ có gương không?",
+      "id": "Apakah ada cermin di ruang ganti?"
+    }
+  },
+  {
+    "id": "shopping_079",
+    "scene": "shopping",
+    "subScene": "Try-onandfitting",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "試着後に荷物を預けられますか？",
+      "en": "Can I store my belongings after trying on?",
+      "zh": "试穿后可以寄存行李吗？",
+      "zh_TW": "試穿後可以寄放行李嗎？",
+      "ko": "피팅 후에 짐을 보관할 수 있나요?",
+      "es": "¿Puedo guardar mis pertenencias después de probarme?",
+      "fr": "Puis‑je déposer mes affaires après l’essayage ?",
+      "de": "Kann ich meine Sachen nach dem Anprobieren aufbewahren?",
+      "vi": "Tôi có thể gửi hành lý sau khi thử đồ không?",
+      "id": "Bisakah saya menitipkan barang setelah mencoba pakaian?"
+    }
+  },
+  {
+    "id": "shopping_080",
+    "scene": "shopping",
+    "subScene": "Try-onandfitting",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "試着室の中で写真を撮ってもいいですか？",
+      "en": "May I take photos inside the fitting room?",
+      "zh": "我可以在试衣间里拍照吗？",
+      "zh_TW": "我可以在試衣間裡拍照嗎？",
+      "ko": "피팅룸 안에서 사진을 찍어도 되나요?",
+      "es": "¿Puedo tomar fotos dentro del probador?",
+      "fr": "Puis‑je prendre des photos dans la cabine d’essayage ?",
+      "de": "Darf ich im Umkleideraum Fotos machen?",
+      "vi": "Tôi có thể chụp ảnh trong phòng thử đồ không?",
+      "id": "Bolehkah saya mengambil foto di dalam ruang ganti?"
+    }
+  },
+  {
+    "id": "shopping_081",
+    "scene": "shopping",
+    "subScene": "Try-onandfitting",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "着たままレジに持って行けますか？",
+      "en": "Can I bring it to the checkout while wearing it?",
+      "zh": "穿着它直接带到收银台可以吗？",
+      "zh_TW": "穿著它直接帶到收銀台可以嗎？",
+      "ko": "입은 채로 계산대에 가져가도 되나요?",
+      "es": "¿Puedo llevarlo al mostrador estando puesto?",
+      "fr": "Puis‑je l’apporter à la caisse tout en le portant ?",
+      "de": "Kann ich es angezogen zur Kasse bringen?",
+      "vi": "Tôi có thể mặc nó rồi mang đến quầy thanh toán không?",
+      "id": "Bisakah saya membawanya ke kasir sambil memakainya?"
+    }
+  },
+  {
+    "id": "shopping_082",
+    "scene": "shopping",
+    "subScene": "Try-onandfitting",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "試着済みの商品を購入するときの手続きは？",
+      "en": "What is the procedure for purchasing an item after trying it on?",
+      "zh": "试穿过的商品购买时的流程是什么？",
+      "zh_TW": "試穿過的商品購買時的流程是什麼？",
+      "ko": "피팅한 상품을 구매할 때 절차는 어떻게 되나요?",
+      "es": "¿Cuál es el procedimiento para comprar un artículo que ya he probado?",
+      "fr": "Quelle est la procédure pour acheter un article essayé ?",
+      "de": "Wie ist das Verfahren, um ein anprobiertes Kleidungsstück zu kaufen?",
+      "vi": "Thủ tục mua sản phẩm đã thử là gì?",
+      "id": "Bagaimana prosedur untuk membeli barang yang sudah dicoba?"
+    }
+  },
+  {
+    "id": "shopping_083",
+    "scene": "shopping",
+    "subScene": "After-salesserviceandwarranty",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "この商品の保証期間はどれくらいですか？",
+      "en": "What is the warranty period for this product?",
+      "zh": "该产品的保修期是多久？",
+      "zh_TW": "該產品的保固期是多久？",
+      "ko": "이 제품의 보증 기간은 얼마인가요?",
+      "es": "¿Cuál es el período de garantía de este producto?",
+      "fr": "Quelle est la durée de la garantie de ce produit ?",
+      "de": "Wie lange ist die Garantiezeit für dieses Produkt?",
+      "vi": "Thời gian bảo hành của sản phẩm này là bao lâu?",
+      "id": "Berapa lama masa garansi produk ini?"
+    }
+  },
+  {
+    "id": "shopping_084",
+    "scene": "shopping",
+    "subScene": "After-salesserviceandwarranty",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "保証書は発行されますか？",
+      "en": "Will a warranty certificate be issued?",
+      "zh": "会发放保修证书吗？",
+      "zh_TW": "會發行保固證書嗎？",
+      "ko": "보증서가 발급되나요?",
+      "es": "¿Se emite un certificado de garantía?",
+      "fr": "Un certificat de garantie est‑il délivré ?",
+      "de": "Wird ein Garantiezertifikat ausgestellt?",
+      "vi": "Có cấp chứng nhận bảo hành không?",
+      "id": "Apakah sertifikat garansi akan diterbitkan?"
+    }
+  },
+  {
+    "id": "shopping_085",
+    "scene": "shopping",
+    "subScene": "After-salesserviceandwarranty",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "修理はどこにお願いすればいいですか？",
+      "en": "Where should I request repairs?",
+      "zh": "应该在哪里申请维修？",
+      "zh_TW": "應該在哪裡申請維修？",
+      "ko": "수리는 어디에 의뢰해야 하나요?",
+      "es": "¿Dónde debo solicitar la reparación?",
+      "fr": "Où dois‑je faire réparer ?",
+      "de": "Wo soll ich die Reparatur veranlassen?",
+      "vi": "Tôi nên yêu cầu sửa chữa ở đâu?",
+      "id": "Di mana saya harus meminta perbaikan?"
+    }
+  },
+  {
+    "id": "shopping_086",
+    "scene": "shopping",
+    "subScene": "After-salesserviceandwarranty",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "延長保証はできますか？",
+      "en": "Can I get an extended warranty?",
+      "zh": "可以延长保修吗？",
+      "zh_TW": "可以延長保固嗎？",
+      "ko": "연장 보증이 가능한가요?",
+      "es": "¿Puedo obtener garantía extendida?",
+      "fr": "Puis‑je bénéficier d’une extension de garantie ?",
+      "de": "Kann ich eine Verlängerung der Garantie erhalten?",
+      "vi": "Có thể gia hạn bảo hành không?",
+      "id": "Bisakah saya mendapatkan perpanjangan garansi?"
+    }
+  },
+  {
+    "id": "shopping_087",
+    "scene": "shopping",
+    "subScene": "After-salesserviceandwarranty",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "保証対象外のケースは何ですか？",
+      "en": "What cases are excluded from the warranty?",
+      "zh": "哪些情况不在保修范围内？",
+      "zh_TW": "哪些情況不在保固範圍內？",
+      "ko": "보증 제외 대상은 어떤 경우인가요?",
+      "es": "¿Qué casos están excluidos de la garantía?",
+      "fr": "Quels cas ne sont pas couverts par la garantie ?",
+      "de": "Welche Fälle sind von der Garantie ausgeschlossen?",
+      "vi": "Những trường hợp nào không được bảo hành?",
+      "id": "Kasus apa saja yang tidak termasuk garansi?"
+    }
+  },
+  {
+    "id": "shopping_088",
+    "scene": "shopping",
+    "subScene": "After-salesserviceandwarranty",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "故障した場合の連絡先を教えてください。",
+      "en": "Please tell me the contact information in case of a malfunction.",
+      "zh": "如果故障，请告诉我联系方式。",
+      "zh_TW": "若發生故障，請告訴我聯絡方式。",
+      "ko": "고장 시 연락처를 알려주세요.",
+      "es": "Por favor, indíqueme el contacto en caso de fallo.",
+      "fr": "Veuillez me donner les coordonnées en cas de panne.",
+      "de": "Bitte geben Sie mir die Kontaktdaten für den Störungsfall.",
+      "vi": "Xin cho tôi thông tin liên lạc khi thiết bị bị hỏng.",
+      "id": "Tolong beri tahu kontak jika terjadi kerusakan."
+    }
+  },
+  {
+    "id": "shopping_089",
+    "scene": "shopping",
+    "subScene": "After-salesserviceandwarranty",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "返品ではなく修理を希望します。",
+      "en": "I would like repair instead of a return.",
+      "zh": "我希望维修，而不是退货。",
+      "zh_TW": "我希望維修，而不是退貨。",
+      "ko": "반품 대신 수리를 원합니다.",
+      "es": "Quisiera una reparación en lugar de una devolución.",
+      "fr": "Je souhaite une réparation plutôt qu’un retour.",
+      "de": "Ich möchte eine Reparatur statt einer Rückgabe.",
+      "vi": "Tôi muốn sửa chữa thay vì trả hàng.",
+      "id": "Saya ingin perbaikan, bukan pengembalian."
+    }
+  },
+  {
+    "id": "shopping_090",
+    "scene": "shopping",
+    "subScene": "After-salesserviceandwarranty",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "部品交換は可能ですか？",
+      "en": "Is it possible to replace parts?",
+      "zh": "可以更换零件吗？",
+      "zh_TW": "可以更換零件嗎？",
+      "ko": "부품 교체가 가능한가요?",
+      "es": "¿Es posible cambiar piezas?",
+      "fr": "Est‑il possible de remplacer des pièces ?",
+      "de": "Ist ein Austausch von Teilen möglich?",
+      "vi": "Có thể thay thế linh kiện không?",
+      "id": "Apakah memungkinkan untuk mengganti suku cadang?"
+    }
+  },
+  {
+    "id": "shopping_091",
+    "scene": "shopping",
+    "subScene": "After-salesserviceandwarranty",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "購入後のメンテナンス方法を教えてください。",
+      "en": "Please tell me how to maintain it after purchase.",
+      "zh": "请告诉我购买后的维护方法。",
+      "zh_TW": "請告訴我購買後的維護方法。",
+      "ko": "구매 후 유지보수 방법을 알려주세요.",
+      "es": "Por favor, dígame cómo realizar el mantenimiento tras la compra.",
+      "fr": "Veuillez me dire comment entretenir après l’achat.",
+      "de": "Bitte sagen Sie mir, wie die Wartung nach dem Kauf erfolgt.",
+      "vi": "Xin cho tôi biết cách bảo trì sau khi mua.",
+      "id": "Tolong beri tahu cara perawatan setelah pembelian."
+    }
+  },
+  {
+    "id": "shopping_092",
+    "scene": "shopping",
+    "subScene": "After-salesserviceandwarranty",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "レシートが必要ですか？",
+      "en": "Is a receipt necessary?",
+      "zh": "需要收据吗？",
+      "zh_TW": "需要收據嗎？",
+      "ko": "영수증이 필요하나요?",
+      "es": "¿Se necesita recibo?",
+      "fr": "Un reçu est‑il nécessaire ?",
+      "de": "Ist eine Quittung erforderlich?",
+      "vi": "Có cần hóa đơn không?",
+      "id": "Apakah struk diperlukan?"
+    }
+  },
+  {
+    "id": "shopping_093",
+    "scene": "shopping",
+    "subScene": "Storeinformationandopeninghours",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "この店舗の営業時間を教えてください。",
+      "en": "Please tell me the business hours of this store.",
+      "zh": "请告诉我这家店的营业时间。",
+      "zh_TW": "請告訴我這家店的營業時間。",
+      "ko": "이 매장의 영업시간을 알려주세요.",
+      "es": "Por favor, dígame el horario de atención de esta tienda.",
+      "fr": "Veuillez m’indiquer les heures d’ouverture de ce magasin.",
+      "de": "Bitte teilen Sie mir die Öffnungszeiten dieses Geschäfts mit.",
+      "vi": "Xin cho tôi biết giờ mở cửa của cửa hàng này.",
+      "id": "Tolong beri tahu jam operasional toko ini."
+    }
+  },
+  {
+    "id": "shopping_094",
+    "scene": "shopping",
+    "subScene": "Storeinformationandopeninghours",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "定休日はいつですか？",
+      "en": "What days is the store regularly closed?",
+      "zh": "定休日是星期几？",
+      "zh_TW": "定休日是星期幾？",
+      "ko": "정기 휴무일은 언제인가요?",
+      "es": "¿Qué días cierra regularmente?",
+      "fr": "Quels sont les jours de fermeture réguliers ?",
+      "de": "An welchen Tagen ist das Geschäft regelmäßig geschlossen?",
+      "vi": "Cửa hàng thường đóng cửa vào ngày nào?",
+      "id": "Hari apa toko ini biasanya tutup?"
+    }
+  },
+  {
+    "id": "shopping_095",
+    "scene": "shopping",
+    "subScene": "Storeinformationandopeninghours",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "他の店舗は近くにありますか？",
+      "en": "Are there other stores nearby?",
+      "zh": "附近有其他门店吗？",
+      "zh_TW": "附近有其他店鋪嗎？",
+      "ko": "근처에 다른 매장이 있나요?",
+      "es": "¿Hay otras tiendas cerca?",
+      "fr": "Y a‑t‑il d’autres magasins à proximité ?",
+      "de": "Gibt es weitere Filialen in der Nähe?",
+      "vi": "Có cửa hàng nào khác gần đây không?",
+      "id": "Apakah ada toko lain di dekat sini?"
+    }
+  },
+  {
+    "id": "shopping_096",
+    "scene": "shopping",
+    "subScene": "Storeinformationandopeninghours",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "店舗の電話番号を教えてください。",
+      "en": "Please tell me the store’s phone number.",
+      "zh": "请告诉我店铺的电话号码。",
+      "zh_TW": "請告訴我店鋪的電話號碼。",
+      "ko": "매장의 전화번호를 알려주세요.",
+      "es": "Por favor, indíqueme el número de teléfono de la loja.",
+      "fr": "Veuillez me donner le numéro de téléphone du magasin.",
+      "de": "Bitte teilen Sie mir die Telefonnummer des Geschäfts mit.",
+      "vi": "Xin cho tôi số điện thoại của cửa hàng.",
+      "id": "Tolong beri tahu nomor telepon toko."
+    }
+  },
+  {
+    "id": "shopping_097",
+    "scene": "shopping",
+    "subScene": "Storeinformationandopeninghours",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "駐車場はありますか？",
+      "en": "Is parking available?",
+      "zh": "有停车场吗？",
+      "zh_TW": "有停車場嗎？",
+      "ko": "주차장이 있나요?",
+      "es": "¿Hay estacionamiento?",
+      "fr": "Y a‑t‑il un parking ?",
+      "de": "Gibt es Parkplätze?",
+      "vi": "Có chỗ đậu xe không?",
+      "id": "Apakah ada tempat parkir?"
+    }
+  },
+  {
+    "id": "shopping_098",
+    "scene": "shopping",
+    "subScene": "Storeinformationandopeninghours",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "バリアフリー対応はしていますか？",
+      "en": "Is barrier-free access available?",
+      "zh": "提供无障碍设施吗？",
+      "zh_TW": "是否提供無障礙設施？",
+      "ko": "장애인 편의 시설이 있나요?",
+      "es": "¿Hay acceso sin barreras?",
+      "fr": "L’accès sans obstacles est‑il disponible ?",
+      "de": "Gibt es barrierefreien Zugang?",
+      "vi": "Có tiện ích tiếp cận cho người khuyết tật không?",
+      "id": "Apakah tersedia akses tanpa hambatan?"
+    }
+  },
+  {
+    "id": "shopping_099",
+    "scene": "shopping",
+    "subScene": "Storeinformationandopeninghours",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "トイレはどこにありますか？",
+      "en": "Where is the restroom?",
+      "zh": "洗手间在哪里？",
+      "zh_TW": "廁所在哪裡？",
+      "ko": "화장실은 어디에 있나요?",
+      "es": "¿Dónde está el baño?",
+      "fr": "Où sont les toilettes ?",
+      "de": "Wo ist die Toilette?",
+      "vi": "Nhà vệ sinh ở đâu?",
+      "id": "Di mana toilet?"
+    }
+  },
+  {
+    "id": "shopping_100",
+    "scene": "shopping",
+    "subScene": "Storeinformationandopeninghours",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "店内のレイアウトを教えてください。",
+      "en": "Please tell me the layout of the store.",
+      "zh": "请告诉我店内的布局。",
+      "zh_TW": "請告訴我店內的佈局。",
+      "ko": "매장 내 레이아웃을 알려주세요.",
+      "es": "Por favor, indíqueme la disposición de la tienda.",
+      "fr": "Veuillez me décrire l’agencement du magasin.",
+      "de": "Bitte nennen Sie mir den Grundriss des Geschäfts.",
+      "vi": "Xin cho tôi biết bố trí bên trong cửa hàng.",
+      "id": "Tolong beri tahu tata letak di dalam toko."
+    }
+  },
+  {
+    "id": "shopping_101",
+    "scene": "shopping",
+    "subScene": "Storeinformationandopeninghours",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "本日の混雑状況はどうですか？",
+      "en": "How crowded is it today?",
+      "zh": "今天的拥挤情况怎么样？",
+      "zh_TW": "今天的擁擠情況如何？",
+      "ko": "오늘 혼잡 상태는 어떤가요?",
+      "es": "¿Cómo está de concurrido hoy?",
+      "fr": "Quelle est l’affluence aujourd’hui ?",
+      "de": "Wie ist die Auslastung heute?",
+      "vi": "Hôm nay đông khách như thế nào?",
+      "id": "Seberapa ramai hari ini?"
+    }
+  },
+  {
+    "id": "shopping_102",
+    "scene": "shopping",
+    "subScene": "Storeinformationandopeninghours",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "キッズスペースはありますか？",
+      "en": "Is there a kids’ area?",
+      "zh": "有儿童区吗？",
+      "zh_TW": "有兒童遊樂區嗎？",
+      "ko": "키즈 공간이 있나요?",
+      "es": "¿Hay zona infantil?",
+      "fr": "Y a‑t‑il un espace pour enfants ?",
+      "de": "Gibt es einen Kinderbereich?",
+      "vi": "Có khu vực cho trẻ em không?",
+      "id": "Apakah ada area anak-anak?"
+    }
+  },
+  {
+    "id": "shopping_103",
+    "scene": "shopping",
+    "subScene": "Support",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "商品に不具合があります。",
+      "en": "There is a defect in the product.",
+      "zh": "商品有缺陷。",
+      "zh_TW": "商品有缺陷。",
+      "ko": "상품에 문제가 있습니다.",
+      "es": "El producto tiene un defecto.",
+      "fr": "Le produit présente un défaut.",
+      "de": "Das Produkt hat einen Mangel.",
+      "vi": "Sản phẩm có lỗi.",
+      "id": "Produk ini memiliki cacat."
+    }
+  },
+  {
+    "id": "shopping_104",
+    "scene": "shopping",
+    "subScene": "Support",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "購入後に問題があった場合はどうすればいいですか？",
+      "en": "What should I do if there is a problem after purchase?",
+      "zh": "购买后出现问题时我该怎么办？",
+      "zh_TW": "購買後出現問題時我該怎麼辦？",
+      "ko": "구매 후 문제가 발생하면 어떻게 해야 하나요?",
+      "es": "¿Qué debo hacer si hay un problema después de la compra?",
+      "fr": "Que dois‑je faire en cas de problème après l’achat ?",
+      "de": "Was soll ich tun, wenn nach dem Kauf ein Problem auftritt?",
+      "vi": "Nếu có vấn đề sau khi mua, tôi nên làm gì?",
+      "id": "Apa yang harus saya lakukan jika ada masalah setelah pembelian?"
+    }
+  },
+  {
+    "id": "shopping_105",
+    "scene": "shopping",
+    "subScene": "Support",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "紛失・盗難の対応を教えてください。",
+      "en": "Please tell me how to handle loss or theft.",
+      "zh": "请告诉我如何处理丢失或被盗情况。",
+      "zh_TW": "請告訴我如何處理遺失或被盜情況。",
+      "ko": "분실 및 도난 시 대처 방법을 알려주세요.",
+      "es": "Por favor, indíqueme cómo gestionar la pérdida o el robo.",
+      "fr": "Veuillez me dire comment vous gérez la perte ou le vol.",
+      "de": "Bitte erläutern Sie, wie Sie bei Verlust oder Diebstahl vorgehen.",
+      "vi": "Xin cho tôi biết cách xử lý khi mất hoặc bị trộm.",
+      "id": "Tolong beri tahu bagaimana menangani kehilangan atau pencurian."
+    }
+  },
+  {
+    "id": "shopping_106",
+    "scene": "shopping",
+    "subScene": "Support",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "オンライン注文のサポートはどこに問い合わせればいいですか？",
+      "en": "Where should I contact for online order support?",
+      "zh": "在线订单支持应联系哪里？",
+      "zh_TW": "線上訂單支援應聯繫哪裡？",
+      "ko": "온라인 주문 지원은 어디에 문의해야 하나요?",
+      "es": "¿Dónde debo contactar para soporte de pedidos en línea?",
+      "fr": "Où dois‑je contacter pour le support des commandes en ligne ?",
+      "de": "Wo kann ich mich für Support zu Online‑Bestellungen melden?",
+      "vi": "Tôi nên liên hệ hỗ trợ đơn hàng trực tuyến ở đâu?",
+      "id": "Kemana saya harus menghubungi untuk dukungan pesanan online?"
+    }
+  },
+  {
+    "id": "shopping_107",
+    "scene": "shopping",
+    "subScene": "Support",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "電話サポートは何時まで対応していますか？",
+      "en": "Until what time is phone support available?",
+      "zh": "电话支持服务到几点？",
+      "zh_TW": "電話支援服務到幾點？",
+      "ko": "전화 지원은 몇 시까지 제공되나요?",
+      "es": "¿Hasta qué hora está disponible el soporte telefónico?",
+      "fr": "Jusqu’à quelle heure le support téléphonique est‑il disponible ?",
+      "de": "Bis wann ist der Telefonsupport verfügbar?",
+      "vi": "Hỗ trợ qua điện thoại có đến mấy giờ?",
+      "id": "Hingga jam berapa dukungan telepon tersedia?"
+    }
+  },
+  {
+    "id": "shopping_108",
+    "scene": "shopping",
+    "subScene": "Support",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "メールで問い合わせできますか？",
+      "en": "Can I make an inquiry by email?",
+      "zh": "可以通过邮件咨询吗？",
+      "zh_TW": "可以透過電子郵件詢問嗎？",
+      "ko": "이메일로 문의할 수 있나요?",
+      "es": "¿Puedo realizar consultas por correo electrónico?",
+      "fr": "Puis‑je poser des questions par e‑mail ?",
+      "de": "Kann ich per E‑Mail anfragen?",
+      "vi": "Tôi có thể hỏi qua email không?",
+      "id": "Bisakah saya mengajukan pertanyaan melalui email?"
+    }
+  },
+  {
+    "id": "shopping_109",
+    "scene": "shopping",
+    "subScene": "Support",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "チャットサポートは利用できますか？",
+      "en": "Is chat support available?",
+      "zh": "可以使用聊天支持吗？",
+      "zh_TW": "可以使用線上聊天支援嗎？",
+      "ko": "채팅 지원을 이용할 수 있나요?",
+      "es": "¿Está disponible el soporte por chat?",
+      "fr": "Le support par chat est‑il disponible ?",
+      "de": "Ist Chat‑Support verfügbar?",
+      "vi": "Có hỗ trợ trò chuyện trực tuyến không?",
+      "id": "Apakah dukungan obrolan tersedia?"
+    }
+  },
+  {
+    "id": "shopping_110",
+    "scene": "shopping",
+    "subScene": "Support",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "急ぎの対応をお願いしたいです。",
+      "en": "I need urgent assistance.",
+      "zh": "我需要紧急处理。",
+      "zh_TW": "我需要緊急處理。",
+      "ko": "급한 대응을 부탁드립니다.",
+      "es": "Necesito asistencia urgente.",
+      "fr": "J’ai besoin d’une assistance urgente.",
+      "de": "Ich benötige dringend Unterstützung.",
+      "vi": "Tôi cần hỗ trợ gấp.",
+      "id": "Saya membutuhkan bantuan segera."
+    }
+  },
+  {
+    "id": "shopping_111",
+    "scene": "shopping",
+    "subScene": "Support",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "クレーム窓口の場所を教えてください。",
+      "en": "Please tell me the location of the complaints desk.",
+      "zh": "请告诉我投诉窗口的位置。",
+      "zh_TW": "請告訴我投訴窗口的位置。",
+      "ko": "고객 불만 접수 창구가 어디에 있나요?",
+      "es": "Por favor, indíqueme la ubicación del mostrador de reclamaciones.",
+      "fr": "Veuillez m’indiquer l’emplacement du guichet des réclamations.",
+      "de": "Bitte teilen Sie mir den Standort der Beschwerdestelle mit.",
+      "vi": "Xin cho tôi biết vị trí quầy khiếu nại.",
+      "id": "Tolong beri tahu lokasi meja keluhan."
+    }
+  },
+  {
+    "id": "shopping_112",
+    "scene": "shopping",
+    "subScene": "Support",
+    "level": "beginner",
+    "tags": ["greeting"],
+    "translations": {
+      "ja": "フィードバックを送りたいのですが。",
+      "en": "I would like to send feedback.",
+      "zh": "我想提供反馈。",
+      "zh_TW": "我想提供反饋。",
+      "ko": "피드백을 보내고 싶습니다.",
+      "es": "Me gustaría enviar comentarios.",
+      "fr": "Je souhaiterais envoyer des commentaires.",
+      "de": "Ich möchte Feedback geben.",
+      "vi": "Tôi muốn gửi phản hồi.",
+      "id": "Saya ingin mengirimkan umpan balik."
+    }
+  }
+]

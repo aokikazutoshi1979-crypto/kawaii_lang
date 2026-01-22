@@ -1,0 +1,6804 @@
+[
+  {
+    "id": "vocabulary_001",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "私の服",
+      "en": "My clothes",
+      "zh": "我的衣服",
+      "zh_TW": "我的衣服",
+      "ko": "나의 옷",
+      "es": "Mi ropa",
+      "fr": "Mes vêtements",
+      "de": "Meine Kleidung",
+      "vi": "Quần áo của tôi",
+      "id": "Pakaian saya"
+    }
+  },
+  {
+    "id": "vocabulary_002",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "あなたの本",
+      "en": "Your book",
+      "zh": "你的书",
+      "zh_TW": "你的書",
+      "ko": "당신의 책",
+      "es": "Tu libro",
+      "fr": "Ton livre",
+      "de": "Dein Buch",
+      "vi": "Sách của bạn",
+      "id": "Buku Anda"
+    }
+  },
+  {
+    "id": "vocabulary_003",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "彼の家",
+      "en": "His house",
+      "zh": "他的家",
+      "zh_TW": "他的家",
+      "ko": "그의 집",
+      "es": "Su casa",
+      "fr": "Sa maison",
+      "de": "Sein Haus",
+      "vi": "Nhà của anh ấy",
+      "id": "Rumahnya"
+    }
+  },
+  {
+    "id": "vocabulary_004",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "彼女のかばん",
+      "en": "Her bag",
+      "zh": "她的包",
+      "zh_TW": "她的包",
+      "ko": "그녀의 가방",
+      "es": "Su bolso",
+      "fr": "Son sac",
+      "de": "Ihre Tasche",
+      "vi": "Túi của cô ấy",
+      "id": "Tasnya"
+    }
+  },
+  {
+    "id": "vocabulary_005",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "私たちの部屋",
+      "en": "Our room",
+      "zh": "我们的房间",
+      "zh_TW": "我們的房間",
+      "ko": "우리의 방",
+      "es": "Nuestra habitación",
+      "fr": "Notre chambre",
+      "de": "Unser Zimmer",
+      "vi": "Phòng của chúng tôi",
+      "id": "Kamar kami"
+    }
+  },
+  {
+    "id": "vocabulary_006",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "あなたたちの学校",
+      "en": "Your school",
+      "zh": "你们的学校",
+      "zh_TW": "你們的學校",
+      "ko": "너희의 학교",
+      "es": "Vuestra escuela",
+      "fr": "Votre école",
+      "de": "Eure Schule",
+      "vi": "Trường của các bạn",
+      "id": "Sekolah kalian"
+    }
+  },
+  {
+    "id": "vocabulary_007",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "彼らの友達",
+      "en": "Their friend",
+      "zh": "他们的朋友",
+      "zh_TW": "他們的朋友",
+      "ko": "그들의 친구",
+      "es": "Su amigo",
+      "fr": "Leur ami",
+      "de": "Ihr Freund",
+      "vi": "Bạn của họ",
+      "id": "Teman mereka"
+    }
+  },
+  {
+    "id": "vocabulary_008",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "彼女たちの写真",
+      "en": "Their photo",
+      "zh": "她们的照片",
+      "zh_TW": "她們的照片",
+      "ko": "그녀들의 사진",
+      "es": "Su foto",
+      "fr": "Leur photo",
+      "de": "Ihr Foto",
+      "vi": "Ảnh của họ",
+      "id": "Foto mereka"
+    }
+  },
+  {
+    "id": "vocabulary_009",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "これはペン",
+      "en": "This is a pen",
+      "zh": "这是一支笔",
+      "zh_TW": "這是一支筆",
+      "ko": "이것은 펜입니다",
+      "es": "Esto es un bolígrafo",
+      "fr": "Ceci est un stylo",
+      "de": "Das ist ein Stift",
+      "vi": "Đây là một cây bút",
+      "id": "Ini adalah pena"
+    }
+  },
+  {
+    "id": "vocabulary_010",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "それは椅子",
+      "en": "That is a chair",
+      "zh": "那是一把椅子",
+      "zh_TW": "那是一把椅子",
+      "ko": "저것은 의자입니다",
+      "es": "Eso es una silla",
+      "fr": "C'est une chaise",
+      "de": "Das ist ein Stuhl",
+      "vi": "Đó là một cái ghế",
+      "id": "Itu adalah kursi"
+    }
+  },
+  {
+    "id": "vocabulary_011",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "あれの色",
+      "en": "That color",
+      "zh": "那种颜色",
+      "zh_TW": "那種顏色",
+      "ko": "그 색",
+      "es": "Ese color",
+      "fr": "Cette couleur",
+      "de": "Diese Farbe",
+      "vi": "Màu đó",
+      "id": "Warna itu"
+    }
+  },
+  {
+    "id": "vocabulary_012",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "どれの形",
+      "en": "Which shape",
+      "zh": "哪种形状",
+      "zh_TW": "哪種形狀",
+      "ko": "어느 모양",
+      "es": "Qué forma",
+      "fr": "Quelle forme",
+      "de": "Welche Form",
+      "vi": "Hình nào",
+      "id": "Bentuk yang mana"
+    }
+  },
+  {
+    "id": "vocabulary_013",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "誰の名前",
+      "en": "Whose name",
+      "zh": "谁的名字",
+      "zh_TW": "誰的名字",
+      "ko": "누구의 이름",
+      "es": "De quién es el nombre",
+      "fr": "Quel est le nom",
+      "de": "Wessen Name",
+      "vi": "Tên của ai",
+      "id": "Nama siapa"
+    }
+  },
+  {
+    "id": "vocabulary_014",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "誰かの家",
+      "en": "Someone's house",
+      "zh": "某人的家",
+      "zh_TW": "某人的家",
+      "ko": "누군가의 집",
+      "es": "La casa de alguien",
+      "fr": "La maison de quelqu'un",
+      "de": "Jemandes Haus",
+      "vi": "Nhà của ai đó",
+      "id": "Rumah seseorang"
+    }
+  },
+  {
+    "id": "vocabulary_015",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "誰もの意見",
+      "en": "Everyone's opinion",
+      "zh": "每个人的意见",
+      "zh_TW": "每個人的意見",
+      "ko": "모두의 의견",
+      "es": "Opinión de todos",
+      "fr": "L'opinion de tous",
+      "de": "Die Meinung aller",
+      "vi": "Ý kiến của mọi người",
+      "id": "Pendapat semua orang"
+    }
+  },
+  {
+    "id": "vocabulary_016",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "何の意味",
+      "en": "What meaning",
+      "zh": "什么意思",
+      "zh_TW": "什麼意思",
+      "ko": "무슨 의미",
+      "es": "Qué significado",
+      "fr": "Quelle signification",
+      "de": "Welche Bedeutung",
+      "vi": "Ý nghĩa gì",
+      "id": "Makna apa"
+    }
+  },
+  {
+    "id": "vocabulary_017",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "何かの理由",
+      "en": "Some reason",
+      "zh": "某种原因",
+      "zh_TW": "某種原因",
+      "ko": "어떤 이유",
+      "es": "Alguna razón",
+      "fr": "Une raison",
+      "de": "Ein Grund",
+      "vi": "Một lý do nào đó",
+      "id": "Suatu alasan"
+    }
+  },
+  {
+    "id": "vocabulary_018",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "何もの価値",
+      "en": "Value of something",
+      "zh": "某物的价值",
+      "zh_TW": "某物的價值",
+      "ko": "무엇의 가치",
+      "es": "Valor de algo",
+      "fr": "Valeur de quelque chose",
+      "de": "Wert von etwas",
+      "vi": "Giá trị của một vật",
+      "id": "Nilai sesuatu"
+    }
+  },
+  {
+    "id": "vocabulary_019",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "みんなの声",
+      "en": "Everyone's voice",
+      "zh": "大家的声音",
+      "zh_TW": "大家的聲音",
+      "ko": "모두의 목소리",
+      "es": "La voz de todos",
+      "fr": "La voix de tous",
+      "de": "Die Stimme aller",
+      "vi": "Tiếng nói của mọi người",
+      "id": "Suara semua orang"
+    }
+  },
+  {
+    "id": "vocabulary_020",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "全員の写真",
+      "en": "Photo of everyone",
+      "zh": "所有人的照片",
+      "zh_TW": "所有人的照片",
+      "ko": "모두의 사진",
+      "es": "Foto de todos",
+      "fr": "Photo de tout le monde",
+      "de": "Foto von allen",
+      "vi": "Ảnh của mọi người",
+      "id": "Foto semua orang"
+    }
+  },
+  {
+    "id": "vocabulary_021",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "自分の部屋",
+      "en": "My own room",
+      "zh": "自己的房间",
+      "zh_TW": "自己的房間",
+      "ko": "자기 방",
+      "es": "Mi propia habitación",
+      "fr": "Ma propre chambre",
+      "de": "Mein eigenes Zimmer",
+      "vi": "Phòng riêng của tôi",
+      "id": "Kamar saya sendiri"
+    }
+  },
+  {
+    "id": "vocabulary_022",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "お前の手紙",
+      "en": "Your letter",
+      "zh": "你的信",
+      "zh_TW": "你的信",
+      "ko": "네 편지",
+      "es": "Tu carta",
+      "fr": "Ta lettre",
+      "de": "Dein Brief",
+      "vi": "Thư của bạn",
+      "id": "Suratmu"
+    }
+  },
+  {
+    "id": "vocabulary_023",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "君の友達",
+      "en": "Your friend",
+      "zh": "你的朋友",
+      "zh_TW": "你的朋友",
+      "ko": "네 친구",
+      "es": "Tu amigo",
+      "fr": "Ton ami",
+      "de": "Dein Freund",
+      "vi": "Bạn của bạn",
+      "id": "Temanmu"
+    }
+  },
+  {
+    "id": "vocabulary_024",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "我々の計画",
+      "en": "Our plan",
+      "zh": "我们的计划",
+      "zh_TW": "我們的計劃",
+      "ko": "우리의 계획",
+      "es": "Nuestro plan",
+      "fr": "Notre plan",
+      "de": "Unser Plan",
+      "vi": "Kế hoạch của chúng tôi",
+      "id": "Rencana kami"
+    }
+  },
+  {
+    "id": "vocabulary_025",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "我の信念",
+      "en": "My belief",
+      "zh": "我的信念",
+      "zh_TW": "我的信念",
+      "ko": "나의 신념",
+      "es": "Mi creencia",
+      "fr": "Ma croyance",
+      "de": "Mein Glaube",
+      "vi": "Niềm tin của tôi",
+      "id": "Keyakinan saya"
+    }
+  },
+  {
+    "id": "vocabulary_026",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "彼の本",
+      "en": "His book",
+      "zh": "他的书",
+      "zh_TW": "他的書",
+      "ko": "그의 책",
+      "es": "Su libro",
+      "fr": "Son livre",
+      "de": "Sein Buch",
+      "vi": "Sách của anh ấy",
+      "id": "Bukunya"
+    }
+  },
+  {
+    "id": "vocabulary_027",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "彼女の服",
+      "en": "Her clothes",
+      "zh": "她的衣服",
+      "zh_TW": "她的衣服",
+      "ko": "그녀의 옷",
+      "es": "Su ropa",
+      "fr": "Ses vêtements",
+      "de": "Ihre Kleidung",
+      "vi": "Quần áo của cô ấy",
+      "id": "Pakaiannya"
+    }
+  },
+  {
+    "id": "vocabulary_028",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "あなたの車",
+      "en": "Your car",
+      "zh": "你的车",
+      "zh_TW": "你的車",
+      "ko": "당신의 차",
+      "es": "Tu coche",
+      "fr": "Ta voiture",
+      "de": "Dein Auto",
+      "vi": "Xe của bạn",
+      "id": "Mobilmu"
+    }
+  },
+  {
+    "id": "vocabulary_029",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "誰の鞄",
+      "en": "Whose bag",
+      "zh": "谁的包",
+      "zh_TW": "誰的包",
+      "ko": "누구의 가방",
+      "es": "De quién es el bolso",
+      "fr": "À qui est le sac",
+      "de": "Wessen Tasche",
+      "vi": "Cặp của ai",
+      "id": "Tas siapa"
+    }
+  },
+  {
+    "id": "vocabulary_030",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "こちらの部屋",
+      "en": "This room",
+      "zh": "这间房",
+      "zh_TW": "這間房",
+      "ko": "이 방",
+      "es": "Esta habitación",
+      "fr": "Cette chambre",
+      "de": "Dieses Zimmer",
+      "vi": "Căn phòng này",
+      "id": "Kamar ini"
+    }
+  },
+  {
+    "id": "vocabulary_031",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "そちらの道",
+      "en": "That road",
+      "zh": "那条路",
+      "zh_TW": "那條路",
+      "ko": "그 길",
+      "es": "Ese camino",
+      "fr": "Cette route",
+      "de": "Diese Straße",
+      "vi": "Con đường đó",
+      "id": "Jalan itu"
+    }
+  },
+  {
+    "id": "vocabulary_032",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "あちらの店",
+      "en": "That shop over there",
+      "zh": "那边的店",
+      "zh_TW": "那邊的店",
+      "ko": "저쪽 가게",
+      "es": "Aquella tienda",
+      "fr": "Ce magasin là-bas",
+      "de": "Der Laden dort drüben",
+      "vi": "Cửa hàng kia",
+      "id": "Toko di sana"
+    }
+  },
+  {
+    "id": "vocabulary_033",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "どちらの学校",
+      "en": "Which school",
+      "zh": "哪所学校",
+      "zh_TW": "哪所學校",
+      "ko": "어느 학교",
+      "es": "Qué escuela",
+      "fr": "Quelle école",
+      "de": "Welche Schule",
+      "vi": "Trường nào",
+      "id": "Sekolah yang mana"
+    }
+  },
+  {
+    "id": "vocabulary_034",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "これらの花",
+      "en": "These flowers",
+      "zh": "这些花",
+      "zh_TW": "這些花",
+      "ko": "이 꽃들",
+      "es": "Estas flores",
+      "fr": "Ces fleurs",
+      "de": "Diese Blumen",
+      "vi": "Những bông hoa này",
+      "id": "Bunga-bunga ini"
+    }
+  },
+  {
+    "id": "vocabulary_035",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "それらの靴",
+      "en": "Those shoes",
+      "zh": "那些鞋",
+      "zh_TW": "那些鞋",
+      "ko": "그 신발들",
+      "es": "Esos zapatos",
+      "fr": "Ces chaussures",
+      "de": "Diese Schuhe",
+      "vi": "Những đôi giày đó",
+      "id": "Sepatu-sepatu itu"
+    }
+  },
+  {
+    "id": "vocabulary_036",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "あれらの家",
+      "en": "Those houses over there",
+      "zh": "那边的那些房子",
+      "zh_TW": "那邊的那些房子",
+      "ko": "저쪽 집들",
+      "es": "Aquellas casas",
+      "fr": "Ces maisons là-bas",
+      "de": "Die Häuser dort drüben",
+      "vi": "Những ngôi nhà kia",
+      "id": "Rumah-rumah di sana"
+    }
+  },
+  {
+    "id": "vocabulary_037",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "どれらの本",
+      "en": "Which books",
+      "zh": "哪些书",
+      "zh_TW": "哪些書",
+      "ko": "어느 책들",
+      "es": "Qué libros",
+      "fr": "Quels livres",
+      "de": "Welche Bücher",
+      "vi": "Những cuốn sách nào",
+      "id": "Buku yang mana"
+    }
+  },
+  {
+    "id": "vocabulary_038",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "自分たちの時間",
+      "en": "Our own time",
+      "zh": "我们自己的时间",
+      "zh_TW": "我們自己的時間",
+      "ko": "우리만의 시간",
+      "es": "Nuestro propio tiempo",
+      "fr": "Notre propre temps",
+      "de": "Unsere eigene Zeit",
+      "vi": "Thời gian của riêng chúng tôi",
+      "id": "Waktu kami sendiri"
+    }
+  },
+  {
+    "id": "vocabulary_039",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "あなたたちの国",
+      "en": "Your country",
+      "zh": "你们的国家",
+      "zh_TW": "你們的國家",
+      "ko": "당신들의 나라",
+      "es": "Su país",
+      "fr": "Votre pays",
+      "de": "Euer Land",
+      "vi": "Đất nước của các bạn",
+      "id": "Negara kalian"
+    }
+  },
+  {
+    "id": "vocabulary_040",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "私たちの犬",
+      "en": "Our dog",
+      "zh": "我们的狗",
+      "zh_TW": "我們的狗",
+      "ko": "우리 개",
+      "es": "Nuestro perro",
+      "fr": "Notre chien",
+      "de": "Unser Hund",
+      "vi": "Chó của chúng tôi",
+      "id": "Anjing kami"
+    }
+  },
+  {
+    "id": "vocabulary_041",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "彼らの庭",
+      "en": "Their garden",
+      "zh": "他们的花园",
+      "zh_TW": "他們的花園",
+      "ko": "그들의 정원",
+      "es": "Su jardín",
+      "fr": "Leur jardin",
+      "de": "Ihr Garten",
+      "vi": "Khu vườn của họ",
+      "id": "Taman mereka"
+    }
+  },
+  {
+    "id": "vocabulary_042",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "彼女たちの家",
+      "en": "Their (female) house",
+      "zh": "她们的家",
+      "zh_TW": "她們的家",
+      "ko": "그녀들의 집",
+      "es": "Su casa (ellas)",
+      "fr": "Leur maison (elles)",
+      "de": "Ihr Haus (weiblich)",
+      "vi": "Nhà của họ (nữ)",
+      "id": "Rumah mereka (wanita)"
+    }
+  },
+  {
+    "id": "vocabulary_043",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "こっちの席",
+      "en": "This seat",
+      "zh": "这边的座位",
+      "zh_TW": "這邊的座位",
+      "ko": "이 자리",
+      "es": "Este asiento",
+      "fr": "Ce siège",
+      "de": "Dieser Sitz",
+      "vi": "Chỗ ngồi này",
+      "id": "Kursi ini"
+    }
+  },
+  {
+    "id": "vocabulary_044",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "そっちの部屋",
+      "en": "That room (near you)",
+      "zh": "那边的房间",
+      "zh_TW": "那邊的房間",
+      "ko": "그쪽 방",
+      "es": "Esa habitación",
+      "fr": "Cette chambre-là",
+      "de": "Das Zimmer dort",
+      "vi": "Phòng kia",
+      "id": "Kamar itu"
+    }
+  },
+  {
+    "id": "vocabulary_045",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "あっちの道",
+      "en": "That road over there",
+      "zh": "那边的路",
+      "zh_TW": "那邊的路",
+      "ko": "저쪽 길",
+      "es": "Aquel camino",
+      "fr": "Cette route-là-bas",
+      "de": "Die Straße dort drüben",
+      "vi": "Con đường kia",
+      "id": "Jalan di sana"
+    }
+  },
+  {
+    "id": "vocabulary_046",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "どっちの方向",
+      "en": "Which direction",
+      "zh": "哪个方向",
+      "zh_TW": "哪個方向",
+      "ko": "어느 방향",
+      "es": "Qué dirección",
+      "fr": "Quelle direction",
+      "de": "Welche Richtung",
+      "vi": "Hướng nào",
+      "id": "Arah mana"
+    }
+  },
+  {
+    "id": "vocabulary_047",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "自分の考え",
+      "en": "My idea",
+      "zh": "我的想法",
+      "zh_TW": "我的想法",
+      "ko": "나의 생각",
+      "es": "Mi idea",
+      "fr": "Mon idée",
+      "de": "Meine Idee",
+      "vi": "Ý tưởng của tôi",
+      "id": "Ide saya"
+    }
+  },
+  {
+    "id": "vocabulary_048",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "こちらの景色",
+      "en": "This view",
+      "zh": "这边的景色",
+      "zh_TW": "這邊的景色",
+      "ko": "이쪽 풍경",
+      "es": "Esta vista",
+      "fr": "Cette vue",
+      "de": "Diese Aussicht",
+      "vi": "Cảnh này",
+      "id": "Pemandangan ini"
+    }
+  },
+  {
+    "id": "vocabulary_049",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_pronouns",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "そちらの山",
+      "en": "That mountain",
+      "zh": "那边的山",
+      "zh_TW": "那邊的山",
+      "ko": "그쪽 산",
+      "es": "Esa montaña",
+      "fr": "Cette montagne-là",
+      "de": "Jener Berg",
+      "vi": "Ngọn núi đó",
+      "id": "Gunung itu"
+    }
+  },
+  {
+    "id": "vocabulary_050",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "行く準備",
+      "en": "Prepare to go",
+      "zh": "准备去",
+      "zh_TW": "準備去",
+      "ko": "갈 준비",
+      "es": "Prepararse para ir",
+      "fr": "Se préparer à partir",
+      "de": "Sich vorbereiten zu gehen",
+      "vi": "Chuẩn bị đi",
+      "id": "Bersiap untuk pergi"
+    }
+  },
+  {
+    "id": "vocabulary_051",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "来る日",
+      "en": "Coming day",
+      "zh": "到来的日子",
+      "zh_TW": "到來的日子",
+      "ko": "오는 날",
+      "es": "Día de llegada",
+      "fr": "Jour de venue",
+      "de": "Kommender Tag",
+      "vi": "Ngày đến",
+      "id": "Hari kedatangan"
+    }
+  },
+  {
+    "id": "vocabulary_052",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "帰る時間",
+      "en": "Time to return",
+      "zh": "回去的时间",
+      "zh_TW": "回去的時間",
+      "ko": "돌아갈 시간",
+      "es": "Hora de regresar",
+      "fr": "Heure de retour",
+      "de": "Zeit zurückzukehren",
+      "vi": "Thời gian trở về",
+      "id": "Waktu kembali"
+    }
+  },
+  {
+    "id": "vocabulary_053",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "する練習",
+      "en": "Practice doing",
+      "zh": "练习做",
+      "zh_TW": "練習做",
+      "ko": "하는 연습",
+      "es": "Practicar hacer",
+      "fr": "Pratiquer à faire",
+      "de": "Üben zu tun",
+      "vi": "Luyện tập làm",
+      "id": "Latihan melakukan"
+    }
+  },
+  {
+    "id": "vocabulary_054",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ある方法",
+      "en": "A method",
+      "zh": "一种方法",
+      "zh_TW": "一種方法",
+      "ko": "어떤 방법",
+      "es": "Un método",
+      "fr": "Une méthode",
+      "de": "Eine Methode",
+      "vi": "Một phương pháp",
+      "id": "Sebuah metode"
+    }
+  },
+  {
+    "id": "vocabulary_055",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "いる場所",
+      "en": "Place to be",
+      "zh": "所在的地方",
+      "zh_TW": "所在的地方",
+      "ko": "있는 곳",
+      "es": "Lugar para estar",
+      "fr": "Endroit où être",
+      "de": "Ort zum Sein",
+      "vi": "Nơi để ở",
+      "id": "Tempat untuk berada"
+    }
+  },
+  {
+    "id": "vocabulary_056",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "見る景色",
+      "en": "View to see",
+      "zh": "看到的景色",
+      "zh_TW": "看到的景色",
+      "ko": "보는 경치",
+      "es": "Paisaje para ver",
+      "fr": "Paysage à voir",
+      "de": "Aussicht zum Sehen",
+      "vi": "Cảnh để ngắm",
+      "id": "Pemandangan untuk dilihat"
+    }
+  },
+  {
+    "id": "vocabulary_057",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "聞く話",
+      "en": "Story to hear",
+      "zh": "听到的故事",
+      "zh_TW": "聽到的故事",
+      "ko": "듣는 이야기",
+      "es": "Historia para escuchar",
+      "fr": "Histoire à écouter",
+      "de": "Geschichte zum Hören",
+      "vi": "Câu chuyện để nghe",
+      "id": "Cerita untuk didengar"
+    }
+  },
+  {
+    "id": "vocabulary_058",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "話す内容",
+      "en": "Content to talk",
+      "zh": "要说的内容",
+      "zh_TW": "要說的內容",
+      "ko": "말할 내용",
+      "es": "Contenido para hablar",
+      "fr": "Contenu à dire",
+      "de": "Inhalt zum Sprechen",
+      "vi": "Nội dung để nói",
+      "id": "Konten untuk dibicarakan"
+    }
+  },
+  {
+    "id": "vocabulary_059",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "食べる物",
+      "en": "Food to eat",
+      "zh": "要吃的东西",
+      "zh_TW": "要吃的東西",
+      "ko": "먹을 것",
+      "es": "Comida para comer",
+      "fr": "Nourriture à manger",
+      "de": "Essen zum Essen",
+      "vi": "Đồ ăn để ăn",
+      "id": "Makanan untuk dimakan"
+    }
+  },
+  {
+    "id": "vocabulary_060",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "飲む水",
+      "en": "Water to drink",
+      "zh": "要喝的水",
+      "zh_TW": "要喝的水",
+      "ko": "마실 물",
+      "es": "Agua para beber",
+      "fr": "Eau à boire",
+      "de": "Wasser zum Trinken",
+      "vi": "Nước để uống",
+      "id": "Air untuk diminum"
+    }
+  },
+  {
+    "id": "vocabulary_061",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "買う服",
+      "en": "Clothes to buy",
+      "zh": "要买的衣服",
+      "zh_TW": "要買的衣服",
+      "ko": "살 옷",
+      "es": "Ropa para comprar",
+      "fr": "Vêtements à acheter",
+      "de": "Kleidung zum Kaufen",
+      "vi": "Quần áo để mua",
+      "id": "Pakaian untuk dibeli"
+    }
+  },
+  {
+    "id": "vocabulary_062",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "売る車",
+      "en": "Car to sell",
+      "zh": "要卖的车",
+      "zh_TW": "要賣的車",
+      "ko": "팔 자동차",
+      "es": "Coche para vender",
+      "fr": "Voiture à vendre",
+      "de": "Auto zum Verkaufen",
+      "vi": "Xe để bán",
+      "id": "Mobil untuk dijual"
+    }
+  },
+  {
+    "id": "vocabulary_063",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "使う道具",
+      "en": "Tool to use",
+      "zh": "要用的工具",
+      "zh_TW": "要用的工具",
+      "ko": "쓸 도구",
+      "es": "Herramienta para usar",
+      "fr": "Outil à utiliser",
+      "de": "Werkzeug zum Benutzen",
+      "vi": "Dụng cụ để sử dụng",
+      "id": "Alat untuk digunakan"
+    }
+  },
+  {
+    "id": "vocabulary_064",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "作る料理",
+      "en": "Dish to cook",
+      "zh": "要做的菜",
+      "zh_TW": "要做的菜",
+      "ko": "만들 요리",
+      "es": "Plato para cocinar",
+      "fr": "Plat à cuisiner",
+      "de": "Gericht zum Kochen",
+      "vi": "Món để nấu",
+      "id": "Hidangan untuk dimasak"
+    }
+  },
+  {
+    "id": "vocabulary_065",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "持つ鞄",
+      "en": "Bag to carry",
+      "zh": "要拿的包",
+      "zh_TW": "要拿的包",
+      "ko": "들 가방",
+      "es": "Bolso para llevar",
+      "fr": "Sac à porter",
+      "de": "Tasche zum Tragen",
+      "vi": "Túi để mang",
+      "id": "Tas untuk dibawa"
+    }
+  },
+  {
+    "id": "vocabulary_066",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "待つ時間",
+      "en": "Time to wait",
+      "zh": "等待的时间",
+      "zh_TW": "等待的時間",
+      "ko": "기다릴 시간",
+      "es": "Tiempo para esperar",
+      "fr": "Temps pour attendre",
+      "de": "Zeit zum Warten",
+      "vi": "Thời gian để đợi",
+      "id": "Waktu untuk menunggu"
+    }
+  },
+  {
+    "id": "vocabulary_067",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "歩く道",
+      "en": "Path to walk",
+      "zh": "要走的路",
+      "zh_TW": "要走的路",
+      "ko": "걸을 길",
+      "es": "Camino para caminar",
+      "fr": "Chemin pour marcher",
+      "de": "Weg zum Gehen",
+      "vi": "Con đường để đi bộ",
+      "id": "Jalan untuk berjalan"
+    }
+  },
+  {
+    "id": "vocabulary_068",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "走る速さ",
+      "en": "Running speed",
+      "zh": "跑步的速度",
+      "zh_TW": "跑步的速度",
+      "ko": "달리는 속도",
+      "es": "Velocidad al correr",
+      "fr": "Vitesse de course",
+      "de": "Laufgeschwindigkeit",
+      "vi": "Tốc độ chạy",
+      "id": "Kecepatan berlari"
+    }
+  },
+  {
+    "id": "vocabulary_069",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "乗る電車",
+      "en": "Train to ride",
+      "zh": "要乘坐的火车",
+      "zh_TW": "要乘坐的火車",
+      "ko": "탈 기차",
+      "es": "Tren para tomar",
+      "fr": "Train à prendre",
+      "de": "Zug zum Fahren",
+      "vi": "Tàu để đi",
+      "id": "Kereta untuk dinaiki"
+    }
+  },
+  {
+    "id": "vocabulary_070",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "降りる駅",
+      "en": "Station to get off",
+      "zh": "要下车的车站",
+      "zh_TW": "要下車的車站",
+      "ko": "내릴 역",
+      "es": "Estación para bajar",
+      "fr": "Gare pour descendre",
+      "de": "Bahnhof zum Aussteigen",
+      "vi": "Ga để xuống",
+      "id": "Stasiun untuk turun"
+    }
+  },
+  {
+    "id": "vocabulary_071",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "開けるドア",
+      "en": "Door to open",
+      "zh": "要打开的门",
+      "zh_TW": "要打開的門",
+      "ko": "열 문",
+      "es": "Puerta para abrir",
+      "fr": "Porte à ouvrir",
+      "de": "Tür zum Öffnen",
+      "vi": "Cửa để mở",
+      "id": "Pintu untuk dibuka"
+    }
+  },
+  {
+    "id": "vocabulary_072",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "閉める窓",
+      "en": "Window to close",
+      "zh": "要关上的窗户",
+      "zh_TW": "要關上的窗戶",
+      "ko": "닫을 창문",
+      "es": "Ventana para cerrar",
+      "fr": "Fenêtre à fermer",
+      "de": "Fenster zum Schließen",
+      "vi": "Cửa sổ để đóng",
+      "id": "Jendela untuk ditutup"
+    }
+  },
+  {
+    "id": "vocabulary_073",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "開く花",
+      "en": "Flower to bloom",
+      "zh": "要开的花",
+      "zh_TW": "要開的花",
+      "ko": "피는 꽃",
+      "es": "Flor para florecer",
+      "fr": "Fleur à éclore",
+      "de": "Blume zum Blühen",
+      "vi": "Hoa để nở",
+      "id": "Bunga untuk mekar"
+    }
+  },
+  {
+    "id": "vocabulary_074",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "閉まる扉",
+      "en": "Door to close",
+      "zh": "要关上的门",
+      "zh_TW": "要關上的門",
+      "ko": "닫히는 문",
+      "es": "Puerta para cerrar",
+      "fr": "Porte à fermer",
+      "de": "Tür zum Schließen",
+      "vi": "Cánh cửa để đóng",
+      "id": "Pintu untuk ditutup"
+    }
+  },
+  {
+    "id": "vocabulary_075",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "始める仕事",
+      "en": "Work to start",
+      "zh": "要开始的工作",
+      "zh_TW": "要開始的工作",
+      "ko": "시작할 일",
+      "es": "Trabajo para empezar",
+      "fr": "Travail à commencer",
+      "de": "Arbeit zum Beginnen",
+      "vi": "Công việc để bắt đầu",
+      "id": "Pekerjaan untuk dimulai"
+    }
+  },
+  {
+    "id": "vocabulary_076",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "終わる試合",
+      "en": "Game to finish",
+      "zh": "要结束的比赛",
+      "zh_TW": "要結束的比賽",
+      "ko": "끝날 경기",
+      "es": "Partido para terminar",
+      "fr": "Match à terminer",
+      "de": "Spiel zum Beenden",
+      "vi": "Trận đấu để kết thúc",
+      "id": "Pertandingan untuk diselesaikan"
+    }
+  },
+  {
+    "id": "vocabulary_077",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "教える先生",
+      "en": "Teacher to teach",
+      "zh": "授课的老师",
+      "zh_TW": "授課的老師",
+      "ko": "가르치는 선생님",
+      "es": "Profesor para enseñar",
+      "fr": "Professeur pour enseigner",
+      "de": "Lehrer zum Unterrichten",
+      "vi": "Giáo viên để dạy",
+      "id": "Guru untuk mengajar"
+    }
+  },
+  {
+    "id": "vocabulary_078",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "学ぶ学生",
+      "en": "Student to learn",
+      "zh": "学习的学生",
+      "zh_TW": "學習的學生",
+      "ko": "배우는 학생",
+      "es": "Estudiante para aprender",
+      "fr": "Étudiant pour apprendre",
+      "de": "Student zum Lernen",
+      "vi": "Học sinh để học",
+      "id": "Siswa untuk belajar"
+    }
+  },
+  {
+    "id": "vocabulary_079",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "勉強する時間",
+      "en": "Time to study",
+      "zh": "学习时间",
+      "zh_TW": "學習時間",
+      "ko": "공부할 시간",
+      "es": "Tiempo para estudiar",
+      "fr": "Temps pour étudier",
+      "de": "Zeit zum Lernen",
+      "vi": "Thời gian để học",
+      "id": "Waktu untuk belajar"
+    }
+  },
+  {
+    "id": "vocabulary_080",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "読む本",
+      "en": "Book to read",
+      "zh": "要读的书",
+      "zh_TW": "要讀的書",
+      "ko": "읽을 책",
+      "es": "Libro para leer",
+      "fr": "Livre à lire",
+      "de": "Buch zum Lesen",
+      "vi": "Sách để đọc",
+      "id": "Buku untuk dibaca"
+    }
+  },
+  {
+    "id": "vocabulary_081",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "書く手紙",
+      "en": "Letter to write",
+      "zh": "要写的信",
+      "zh_TW": "要寫的信",
+      "ko": "쓸 편지",
+      "es": "Carta para escribir",
+      "fr": "Lettre à écrire",
+      "de": "Brief zum Schreiben",
+      "vi": "Thư để viết",
+      "id": "Surat untuk ditulis"
+    }
+  },
+  {
+    "id": "vocabulary_082",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "送る荷物",
+      "en": "Package to send",
+      "zh": "要寄的包裹",
+      "zh_TW": "要寄的包裹",
+      "ko": "보낼 짐",
+      "es": "Paquete para enviar",
+      "fr": "Colis à envoyer",
+      "de": "Paket zum Versenden",
+      "vi": "Hàng để gửi",
+      "id": "Paket untuk dikirim"
+    }
+  },
+  {
+    "id": "vocabulary_083",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "もらう手紙",
+      "en": "Letter to receive",
+      "zh": "要收到的信",
+      "zh_TW": "要收到的信",
+      "ko": "받을 편지",
+      "es": "Carta para recibir",
+      "fr": "Lettre à recevoir",
+      "de": "Brief zum Erhalten",
+      "vi": "Thư để nhận",
+      "id": "Surat untuk diterima"
+    }
+  },
+  {
+    "id": "vocabulary_084",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "あげる花",
+      "en": "Flower to give",
+      "zh": "要送的花",
+      "zh_TW": "要送的花",
+      "ko": "줄 꽃",
+      "es": "Flor para regalar",
+      "fr": "Fleur à offrir",
+      "de": "Blume zum Verschenken",
+      "vi": "Hoa để tặng",
+      "id": "Bunga untuk diberikan"
+    }
+  },
+  {
+    "id": "vocabulary_085",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "借りる本",
+      "en": "Book to borrow",
+      "zh": "要借的书",
+      "zh_TW": "要借的書",
+      "ko": "빌릴 책",
+      "es": "Libro para pedir prestado",
+      "fr": "Livre à emprunter",
+      "de": "Buch zum Ausleihen",
+      "vi": "Sách để mượn",
+      "id": "Buku untuk dipinjam"
+    }
+  },
+  {
+    "id": "vocabulary_086",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "貸す傘",
+      "en": "Umbrella to lend",
+      "zh": "要借出的伞",
+      "zh_TW": "要借出的傘",
+      "ko": "빌려줄 우산",
+      "es": "Paraguas para prestar",
+      "fr": "Parapluie à prêter",
+      "de": "Regenschirm zum Verleihen",
+      "vi": "Ô để cho mượn",
+      "id": "Payung untuk dipinjamkan"
+    }
+  },
+  {
+    "id": "vocabulary_087",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "探す鍵",
+      "en": "Key to search",
+      "zh": "要寻找的钥匙",
+      "zh_TW": "要尋找的鑰匙",
+      "ko": "찾을 열쇠",
+      "es": "Llave para buscar",
+      "fr": "Clé à chercher",
+      "de": "Schlüssel zum Suchen",
+      "vi": "Chìa khóa để tìm",
+      "id": "Kunci untuk dicari"
+    }
+  },
+  {
+    "id": "vocabulary_088",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "見つける道",
+      "en": "Road to find",
+      "zh": "要找到的路",
+      "zh_TW": "要找到的路",
+      "ko": "찾을 길",
+      "es": "Camino para encontrar",
+      "fr": "Route à trouver",
+      "de": "Weg zum Finden",
+      "vi": "Đường để tìm",
+      "id": "Jalan untuk ditemukan"
+    }
+  },
+  {
+    "id": "vocabulary_089",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "助ける友達",
+      "en": "Friend to help",
+      "zh": "要帮助的朋友",
+      "zh_TW": "要幫助的朋友",
+      "ko": "도와줄 친구",
+      "es": "Amigo para ayudar",
+      "fr": "Ami à aider",
+      "de": "Freund zum Helfen",
+      "vi": "Bạn để giúp",
+      "id": "Teman untuk dibantu"
+    }
+  },
+  {
+    "id": "vocabulary_090",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "働く場所",
+      "en": "Place to work",
+      "zh": "工作的地方",
+      "zh_TW": "工作的地方",
+      "ko": "일할 곳",
+      "es": "Lugar para trabajar",
+      "fr": "Lieu pour travailler",
+      "de": "Ort zum Arbeiten",
+      "vi": "Nơi để làm việc",
+      "id": "Tempat untuk bekerja"
+    }
+  },
+  {
+    "id": "vocabulary_091",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "休む時間",
+      "en": "Time to rest",
+      "zh": "休息时间",
+      "zh_TW": "休息時間",
+      "ko": "쉴 시간",
+      "es": "Tiempo para descansar",
+      "fr": "Temps pour se reposer",
+      "de": "Zeit zum Ausruhen",
+      "vi": "Thời gian để nghỉ",
+      "id": "Waktu untuk beristirahat"
+    }
+  },
+  {
+    "id": "vocabulary_092",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "起きる朝",
+      "en": "Morning to wake up",
+      "zh": "起床的早晨",
+      "zh_TW": "起床的早晨",
+      "ko": "일어나는 아침",
+      "es": "Mañana para despertarse",
+      "fr": "Matin pour se lever",
+      "de": "Morgen zum Aufstehen",
+      "vi": "Buổi sáng để thức dậy",
+      "id": "Pagi untuk bangun"
+    }
+  },
+  {
+    "id": "vocabulary_093",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "寝る夜",
+      "en": "Night to sleep",
+      "zh": "睡觉的夜晚",
+      "zh_TW": "睡覺的夜晚",
+      "ko": "자는 밤",
+      "es": "Noche para dormir",
+      "fr": "Nuit pour dormir",
+      "de": "Nacht zum Schlafen",
+      "vi": "Đêm để ngủ",
+      "id": "Malam untuk tidur"
+    }
+  },
+  {
+    "id": "vocabulary_094",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "遊ぶ公園",
+      "en": "Park to play",
+      "zh": "玩的公园",
+      "zh_TW": "玩的公園",
+      "ko": "놀 공원",
+      "es": "Parque para jugar",
+      "fr": "Parc pour jouer",
+      "de": "Park zum Spielen",
+      "vi": "Công viên để chơi",
+      "id": "Taman untuk bermain"
+    }
+  },
+  {
+    "id": "vocabulary_095",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "笑う子供",
+      "en": "Child to smile",
+      "zh": "笑的孩子",
+      "zh_TW": "笑的孩子",
+      "ko": "웃는 아이",
+      "es": "Niño para sonreír",
+      "fr": "Enfant pour sourire",
+      "de": "Kind zum Lachen",
+      "vi": "Trẻ để cười",
+      "id": "Anak untuk tersenyum"
+    }
+  },
+  {
+    "id": "vocabulary_096",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "泣く赤ちゃん",
+      "en": "Baby to cry",
+      "zh": "哭的婴儿",
+      "zh_TW": "哭的嬰兒",
+      "ko": "우는 아기",
+      "es": "Bebé para llorar",
+      "fr": "Bébé pour pleurer",
+      "de": "Baby zum Weinen",
+      "vi": "Em bé để khóc",
+      "id": "Bayi untuk menangis"
+    }
+  },
+  {
+    "id": "vocabulary_097",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "洗う皿",
+      "en": "Dish to wash",
+      "zh": "要洗的盘子",
+      "zh_TW": "要洗的盤子",
+      "ko": "씻을 접시",
+      "es": "Plato para lavar",
+      "fr": "Assiette à laver",
+      "de": "Teller zum Waschen",
+      "vi": "Đĩa để rửa",
+      "id": "Piring untuk dicuci"
+    }
+  },
+  {
+    "id": "vocabulary_098",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "使い始める道具",
+      "en": "Tool to start using",
+      "zh": "开始使用的工具",
+      "zh_TW": "開始使用的工具",
+      "ko": "사용 시작할 도구",
+      "es": "Herramienta para empezar a usar",
+      "fr": "Outil pour commencer à utiliser",
+      "de": "Werkzeug zum Benutzen beginnen",
+      "vi": "Dụng cụ để bắt đầu sử dụng",
+      "id": "Alat untuk mulai digunakan"
+    }
+  },
+  {
+    "id": "vocabulary_099",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_verbs",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "終える仕事",
+      "en": "Work to finish",
+      "zh": "要完成的工作",
+      "zh_TW": "要完成的工作",
+      "ko": "끝낼 일",
+      "es": "Trabajo para terminar",
+      "fr": "Travail à terminer",
+      "de": "Arbeit zum Beenden",
+      "vi": "Công việc để hoàn thành",
+      "id": "Pekerjaan untuk diselesaikan"
+    }
+  },
+  {
+    "id": "vocabulary_100",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_adjectives",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "大きい家",
+      "en": "Big house",
+      "zh": "大房子",
+      "zh_TW": "大房子",
+      "ko": "큰 집",
+      "es": "Casa grande",
+      "fr": "Grande maison",
+      "de": "Großes Haus",
+      "vi": "Ngôi nhà lớn",
+      "id": "Rumah besar"
+    }
+  },
+  {
+    "id": "vocabulary_101",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_adjectives",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "小さい店",
+      "en": "Small shop",
+      "zh": "小商店",
+      "zh_TW": "小商店",
+      "ko": "작은 가게",
+      "es": "Tienda pequeña",
+      "fr": "Petite boutique",
+      "de": "Kleiner Laden",
+      "vi": "Cửa hàng nhỏ",
+      "id": "Toko kecil"
+    }
+  },
+  {
+    "id": "vocabulary_102",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_adjectives",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "長い道",
+      "en": "Long road",
+      "zh": "长路",
+      "zh_TW": "長路",
+      "ko": "긴 길",
+      "es": "Camino largo",
+      "fr": "Longue route",
+      "de": "Langer Weg",
+      "vi": "Con đường dài",
+      "id": "Jalan panjang"
+    }
+  },
+  {
+    "id": "vocabulary_103",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_adjectives",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "短い話",
+      "en": "Short story",
+      "zh": "短故事",
+      "zh_TW": "短故事",
+      "ko": "짧은 이야기",
+      "es": "Historia corta",
+      "fr": "Histoire courte",
+      "de": "Kurze Geschichte",
+      "vi": "Câu chuyện ngắn",
+      "id": "Cerita pendek"
+    }
+  },
+  {
+    "id": "vocabulary_104",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_adjectives",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "高い山",
+      "en": "High mountain",
+      "zh": "高山",
+      "zh_TW": "高山",
+      "ko": "높은 산",
+      "es": "Montaña alta",
+      "fr": "Haute montagne",
+      "de": "Hoher Berg",
+      "vi": "Ngọn núi cao",
+      "id": "Gunung tinggi"
+    }
+  },
+  {
+    "id": "vocabulary_105",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_adjectives",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "低い丘",
+      "en": "Low hill",
+      "zh": "低丘",
+      "zh_TW": "低丘",
+      "ko": "낮은 언덕",
+      "es": "Colina baja",
+      "fr": "Colline basse",
+      "de": "Niedriger Hügel",
+      "vi": "Đồi thấp",
+      "id": "Bukit rendah"
+    }
+  },
+  {
+    "id": "vocabulary_106",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_adjectives",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "重い荷物",
+      "en": "Heavy luggage",
+      "zh": "重行李",
+      "zh_TW": "重行李",
+      "ko": "무거운 짐",
+      "es": "Equipaje pesado",
+      "fr": "Bagage lourd",
+      "de": "Schweres Gepäck",
+      "vi": "Hành lý nặng",
+      "id": "Bagasi berat"
+    }
+  },
+  {
+    "id": "vocabulary_107",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_adjectives",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "軽い服",
+      "en": "Light clothes",
+      "zh": "轻便的衣服",
+      "zh_TW": "輕便的衣服",
+      "ko": "가벼운 옷",
+      "es": "Ropa ligera",
+      "fr": "Vêtements légers",
+      "de": "Leichte Kleidung",
+      "vi": "Quần áo nhẹ",
+      "id": "Pakaian ringan"
+    }
+  },
+  {
+    "id": "vocabulary_108",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_adjectives",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "速い車",
+      "en": "Fast car",
+      "zh": "快车",
+      "zh_TW": "快車",
+      "ko": "빠른 차",
+      "es": "Coche rápido",
+      "fr": "Voiture rapide",
+      "de": "Schnelles Auto",
+      "vi": "Xe nhanh",
+      "id": "Mobil cepat"
+    }
+  },
+  {
+    "id": "vocabulary_109",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_adjectives",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "遅い電車",
+      "en": "Slow train",
+      "zh": "慢车",
+      "zh_TW": "慢車",
+      "ko": "느린 기차",
+      "es": "Tren lento",
+      "fr": "Train lent",
+      "de": "Langsamer Zug",
+      "vi": "Tàu chậm",
+      "id": "Kereta lambat"
+    }
+  },
+  {
+    "id": "vocabulary_110",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_adjectives",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "新しい服",
+      "en": "New clothes",
+      "zh": "新衣服",
+      "zh_TW": "新衣服",
+      "ko": "새 옷",
+      "es": "Ropa nueva",
+      "fr": "Vêtements neufs",
+      "de": "Neue Kleidung",
+      "vi": "Quần áo mới",
+      "id": "Pakaian baru"
+    }
+  },
+  {
+    "id": "vocabulary_111",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_adjectives",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "古い本",
+      "en": "Old book",
+      "zh": "旧书",
+      "zh_TW": "舊書",
+      "ko": "오래된 책",
+      "es": "Libro viejo",
+      "fr": "Vieux livre",
+      "de": "Altes Buch",
+      "vi": "Sách cũ",
+      "id": "Buku lama"
+    }
+  },
+  {
+    "id": "vocabulary_112",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_adjectives",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "きれいな景色",
+      "en": "Beautiful scenery",
+      "zh": "美丽的风景",
+      "zh_TW": "美麗的風景",
+      "ko": "아름다운 경치",
+      "es": "Hermoso paisaje",
+      "fr": "Beau paysage",
+      "de": "Schöne Landschaft",
+      "vi": "Phong cảnh đẹp",
+      "id": "Pemandangan indah"
+    }
+  },
+  {
+    "id": "vocabulary_113",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_adjectives",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "汚い部屋",
+      "en": "Dirty room",
+      "zh": "脏房间",
+      "zh_TW": "髒房間",
+      "ko": "더러운 방",
+      "es": "Habitación sucia",
+      "fr": "Chambre sale",
+      "de": "Schmutziges Zimmer",
+      "vi": "Phòng bẩn",
+      "id": "Kamar kotor"
+    }
+  },
+  {
+    "id": "vocabulary_114",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_adjectives",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "明るい窓",
+      "en": "Bright window",
+      "zh": "明亮的窗户",
+      "zh_TW": "明亮的窗戶",
+      "ko": "밝은 창문",
+      "es": "Ventana luminosa",
+      "fr": "Fenêtre lumineuse",
+      "de": "Helles Fenster",
+      "vi": "Cửa sổ sáng",
+      "id": "Jendela terang"
+    }
+  },
+  {
+    "id": "vocabulary_115",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_adjectives",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "暗い道",
+      "en": "Dark road",
+      "zh": "黑暗的路",
+      "zh_TW": "黑暗的路",
+      "ko": "어두운 길",
+      "es": "Camino oscuro",
+      "fr": "Route sombre",
+      "de": "Dunkler Weg",
+      "vi": "Con đường tối",
+      "id": "Jalan gelap"
+    }
+  },
+  {
+    "id": "vocabulary_116",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_adjectives",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "暑い日",
+      "en": "Hot day",
+      "zh": "炎热的日子",
+      "zh_TW": "炎熱的日子",
+      "ko": "더운 날",
+      "es": "Día caluroso",
+      "fr": "Journée chaude",
+      "de": "Heißer Tag",
+      "vi": "Ngày nóng",
+      "id": "Hari panas"
+    }
+  },
+  {
+    "id": "vocabulary_117",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_adjectives",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "寒い夜",
+      "en": "Cold night",
+      "zh": "寒冷的夜晚",
+      "zh_TW": "寒冷的夜晚",
+      "ko": "추운 밤",
+      "es": "Noche fría",
+      "fr": "Nuit froide",
+      "de": "Kalte Nacht",
+      "vi": "Đêm lạnh",
+      "id": "Malam dingin"
+    }
+  },
+  {
+    "id": "vocabulary_118",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_adjectives",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "甘いお菓子",
+      "en": "Sweet candy",
+      "zh": "甜糖果",
+      "zh_TW": "甜糖果",
+      "ko": "달콤한 사탕",
+      "es": "Dulce caramelo",
+      "fr": "Bonbon sucré",
+      "de": "Süßes Bonbon",
+      "vi": "Kẹo ngọt",
+      "id": "Permen manis"
+    }
+  },
+  {
+    "id": "vocabulary_119",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_adjectives",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "辛い料理",
+      "en": "Spicy food",
+      "zh": "辣的食物",
+      "zh_TW": "辣的食物",
+      "ko": "매운 음식",
+      "es": "Comida picante",
+      "fr": "Nourriture épicée",
+      "de": "Scharfes Essen",
+      "vi": "Đồ ăn cay",
+      "id": "Makanan pedas"
+    }
+  },
+  {
+    "id": "vocabulary_120",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_numbers",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "一つの椅子",
+      "en": "One chair",
+      "zh": "一把椅子",
+      "zh_TW": "一把椅子",
+      "ko": "의자 한 개",
+      "es": "Una silla",
+      "fr": "Une chaise",
+      "de": "Ein Stuhl",
+      "vi": "Một cái ghế",
+      "id": "Satu kursi"
+    }
+  },
+  {
+    "id": "vocabulary_121",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_numbers",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "二つのリンゴ",
+      "en": "Two apples",
+      "zh": "两个苹果",
+      "zh_TW": "兩個蘋果",
+      "ko": "사과 두 개",
+      "es": "Dos manzanas",
+      "fr": "Deux pommes",
+      "de": "Zwei Äpfel",
+      "vi": "Hai quả táo",
+      "id": "Dua apel"
+    }
+  },
+  {
+    "id": "vocabulary_122",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_numbers",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "三本のペン",
+      "en": "Three pens",
+      "zh": "三支笔",
+      "zh_TW": "三支筆",
+      "ko": "펜 세 자루",
+      "es": "Tres bolígrafos",
+      "fr": "Trois stylos",
+      "de": "Drei Stifte",
+      "vi": "Ba cây bút",
+      "id": "Tiga pena"
+    }
+  },
+  {
+    "id": "vocabulary_123",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_numbers",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "四枚の紙",
+      "en": "Four sheets of paper",
+      "zh": "四张纸",
+      "zh_TW": "四張紙",
+      "ko": "종이 네 장",
+      "es": "Cuatro hojas de papel",
+      "fr": "Quatre feuilles de papier",
+      "de": "Vier Blatt Papier",
+      "vi": "Bốn tờ giấy",
+      "id": "Empat lembar kertas"
+    }
+  },
+  {
+    "id": "vocabulary_124",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_numbers",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "五冊の本",
+      "en": "Five books",
+      "zh": "五本书",
+      "zh_TW": "五本書",
+      "ko": "책 다섯 권",
+      "es": "Cinco libros",
+      "fr": "Cinq livres",
+      "de": "Fünf Bücher",
+      "vi": "Năm cuốn sách",
+      "id": "Lima buku"
+    }
+  },
+  {
+    "id": "vocabulary_125",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_numbers",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "六匹の猫",
+      "en": "Six cats",
+      "zh": "六只猫",
+      "zh_TW": "六隻貓",
+      "ko": "고양이 여섯 마리",
+      "es": "Seis gatos",
+      "fr": "Six chats",
+      "de": "Sechs Katzen",
+      "vi": "Sáu con mèo",
+      "id": "Enam kucing"
+    }
+  },
+  {
+    "id": "vocabulary_126",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_numbers",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "七羽の鳥",
+      "en": "Seven birds",
+      "zh": "七只鸟",
+      "zh_TW": "七隻鳥",
+      "ko": "새 일곱 마리",
+      "es": "Siete pájaros",
+      "fr": "Sept oiseaux",
+      "de": "Sieben Vögel",
+      "vi": "Bảy con chim",
+      "id": "Tujuh burung"
+    }
+  },
+  {
+    "id": "vocabulary_127",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_numbers",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "八個の卵",
+      "en": "Eight eggs",
+      "zh": "八个鸡蛋",
+      "zh_TW": "八個雞蛋",
+      "ko": "달걀 여덟 개",
+      "es": "Ocho huevos",
+      "fr": "Huit œufs",
+      "de": "Acht Eier",
+      "vi": "Tám quả trứng",
+      "id": "Delapan telur"
+    }
+  },
+  {
+    "id": "vocabulary_128",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_numbers",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "九人の学生",
+      "en": "Nine students",
+      "zh": "九个学生",
+      "zh_TW": "九個學生",
+      "ko": "아홉 명의 학생",
+      "es": "Nueve estudiantes",
+      "fr": "Neuf étudiants",
+      "de": "Neun Studenten",
+      "vi": "Chín sinh viên",
+      "id": "Sembilan siswa"
+    }
+  },
+  {
+    "id": "vocabulary_129",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_numbers",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "十本の木",
+      "en": "Ten trees",
+      "zh": "十棵树",
+      "zh_TW": "十棵樹",
+      "ko": "나무 열 그루",
+      "es": "Diez árboles",
+      "fr": "Dix arbres",
+      "de": "Zehn Bäume",
+      "vi": "Mười cái cây",
+      "id": "Sepuluh pohon"
+    }
+  },
+  {
+    "id": "vocabulary_130",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_numbers",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "百円玉",
+      "en": "One hundred yen coin",
+      "zh": "一百日元硬币",
+      "zh_TW": "一百日圓硬幣",
+      "ko": "백 엔 동전",
+      "es": "Moneda de cien yenes",
+      "fr": "Pièce de cent yens",
+      "de": "Hundert-Yen-Münze",
+      "vi": "Đồng xu 100 yên",
+      "id": "Koin seratus yen"
+    }
+  },
+  {
+    "id": "vocabulary_131",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_numbers",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "千円札",
+      "en": "One thousand yen bill",
+      "zh": "一千日元纸币",
+      "zh_TW": "一千日圓紙鈔",
+      "ko": "천 엔 지폐",
+      "es": "Billete de mil yenes",
+      "fr": "Billet de mille yens",
+      "de": "Tausend-Yen-Schein",
+      "vi": "Tờ 1.000 yên",
+      "id": "Uang kertas seribu yen"
+    }
+  },
+  {
+    "id": "vocabulary_132",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_numbers",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "一万円",
+      "en": "Ten thousand yen",
+      "zh": "一万日元",
+      "zh_TW": "一萬日圓",
+      "ko": "만 엔",
+      "es": "Diez mil yenes",
+      "fr": "Dix mille yens",
+      "de": "Zehntausend Yen",
+      "vi": "Mười nghìn yên",
+      "id": "Sepuluh ribu yen"
+    }
+  },
+  {
+    "id": "vocabulary_133",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_numbers",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ゼロポイント",
+      "en": "Zero point",
+      "zh": "零点",
+      "zh_TW": "零點",
+      "ko": "제로 포인트",
+      "es": "Punto cero",
+      "fr": "Zéro point",
+      "de": "Nullpunkt",
+      "vi": "Điểm không",
+      "id": "Titik nol"
+    }
+  },
+  {
+    "id": "vocabulary_134",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_numbers",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "何色",
+      "en": "What color",
+      "zh": "什么颜色",
+      "zh_TW": "什麼顏色",
+      "ko": "무슨 색",
+      "es": "Qué color",
+      "fr": "Quelle couleur",
+      "de": "Welche Farbe",
+      "vi": "Màu gì",
+      "id": "Warna apa"
+    }
+  },
+  {
+    "id": "vocabulary_135",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_numbers",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "いくつの箱",
+      "en": "How many boxes",
+      "zh": "多少个箱子",
+      "zh_TW": "多少個箱子",
+      "ko": "상자가 몇 개",
+      "es": "Cuántas cajas",
+      "fr": "Combien de boîtes",
+      "de": "Wie viele Kisten",
+      "vi": "Bao nhiêu cái hộp",
+      "id": "Berapa kotak"
+    }
+  },
+  {
+    "id": "vocabulary_136",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_numbers",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "半分のケーキ",
+      "en": "Half cake",
+      "zh": "半个蛋糕",
+      "zh_TW": "半個蛋糕",
+      "ko": "케이크 반쪽",
+      "es": "Media torta",
+      "fr": "Demi-gâteau",
+      "de": "Halber Kuchen",
+      "vi": "Nửa cái bánh",
+      "id": "Setengah kue"
+    }
+  },
+  {
+    "id": "vocabulary_137",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_numbers",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "全部の荷物",
+      "en": "All luggage",
+      "zh": "所有行李",
+      "zh_TW": "所有行李",
+      "ko": "모든 짐",
+      "es": "Todo el equipaje",
+      "fr": "Tous les bagages",
+      "de": "Alles Gepäck",
+      "vi": "Tất cả hành lý",
+      "id": "Semua barang bawaan"
+    }
+  },
+  {
+    "id": "vocabulary_138",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_numbers",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "少しの水",
+      "en": "A little water",
+      "zh": "一点水",
+      "zh_TW": "一點水",
+      "ko": "조금의 물",
+      "es": "Un poco de agua",
+      "fr": "Un peu d'eau",
+      "de": "Ein wenig Wasser",
+      "vi": "Một ít nước",
+      "id": "Sedikit air"
+    }
+  },
+  {
+    "id": "vocabulary_139",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_numbers",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "多い人数",
+      "en": "Many people",
+      "zh": "很多人",
+      "zh_TW": "很多人",
+      "ko": "많은 사람",
+      "es": "Mucha gente",
+      "fr": "Beaucoup de personnes",
+      "de": "Viele Leute",
+      "vi": "Nhiều người",
+      "id": "Banyak orang"
+    }
+  },
+  {
+    "id": "vocabulary_140",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_transportation",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "電車の切符",
+      "en": "Train ticket",
+      "zh": "火车票",
+      "zh_TW": "火車票",
+      "ko": "기차표",
+      "es": "Boleto de tren",
+      "fr": "Billet de train",
+      "de": "Zugticket",
+      "vi": "Vé tàu",
+      "id": "Tiket kereta"
+    }
+  },
+  {
+    "id": "vocabulary_141",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_transportation",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "バスの停留所",
+      "en": "Bus stop",
+      "zh": "公交车站",
+      "zh_TW": "公車站",
+      "ko": "버스 정류장",
+      "es": "Parada de autobús",
+      "fr": "Arrêt de bus",
+      "de": "Bushaltestelle",
+      "vi": "Trạm xe buýt",
+      "id": "Halte bus"
+    }
+  },
+  {
+    "id": "vocabulary_142",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_transportation",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "飛行機の便",
+      "en": "Flight",
+      "zh": "航班",
+      "zh_TW": "航班",
+      "ko": "항공편",
+      "es": "Vuelo",
+      "fr": "Vol",
+      "de": "Flug",
+      "vi": "Chuyến bay",
+      "id": "Penerbangan"
+    }
+  },
+  {
+    "id": "vocabulary_143",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_transportation",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "車の鍵",
+      "en": "Car key",
+      "zh": "车钥匙",
+      "zh_TW": "車鑰匙",
+      "ko": "자동차 열쇠",
+      "es": "Llave del coche",
+      "fr": "Clé de voiture",
+      "de": "Autoschlüssel",
+      "vi": "Chìa khóa xe hơi",
+      "id": "Kunci mobil"
+    }
+  },
+  {
+    "id": "vocabulary_144",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_transportation",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "自転車のタイヤ",
+      "en": "Bicycle tire",
+      "zh": "自行车轮胎",
+      "zh_TW": "自行車輪胎",
+      "ko": "자전거 타이어",
+      "es": "Llanta de bicicleta",
+      "fr": "Pneu de vélo",
+      "de": "Fahrradreifen",
+      "vi": "Lốp xe đạp",
+      "id": "Ban sepeda"
+    }
+  },
+  {
+    "id": "vocabulary_145",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_transportation",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "タクシーの運転手",
+      "en": "Taxi driver",
+      "zh": "出租车司机",
+      "zh_TW": "計程車司機",
+      "ko": "택시 기사",
+      "es": "Conductor de taxi",
+      "fr": "Chauffeur de taxi",
+      "de": "Taxifahrer",
+      "vi": "Tài xế taxi",
+      "id": "Sopir taksi"
+    }
+  },
+  {
+    "id": "vocabulary_146",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_transportation",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "船の旅",
+      "en": "Boat trip",
+      "zh": "船旅",
+      "zh_TW": "船旅",
+      "ko": "배 여행",
+      "es": "Viaje en barco",
+      "fr": "Voyage en bateau",
+      "de": "Schiffsreise",
+      "vi": "Chuyến đi thuyền",
+      "id": "Perjalanan kapal"
+    }
+  },
+  {
+    "id": "vocabulary_147",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_transportation",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "地下鉄の駅",
+      "en": "Subway station",
+      "zh": "地铁站",
+      "zh_TW": "地鐵站",
+      "ko": "지하철역",
+      "es": "Estación de metro",
+      "fr": "Station de métro",
+      "de": "U-Bahn-Station",
+      "vi": "Ga tàu điện ngầm",
+      "id": "Stasiun kereta bawah tanah"
+    }
+  },
+  {
+    "id": "vocabulary_148",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_transportation",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "駅の改札",
+      "en": "Station ticket gate",
+      "zh": "车站检票口",
+      "zh_TW": "車站剪票口",
+      "ko": "역 개찰구",
+      "es": "Torniquete de estación",
+      "fr": "Portique de gare",
+      "de": "Bahnhofsschranke",
+      "vi": "Cổng soát vé ga",
+      "id": "Pintu tiket stasiun"
+    }
+  },
+  {
+    "id": "vocabulary_149",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_transportation",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "空港のロビー",
+      "en": "Airport lobby",
+      "zh": "机场大厅",
+      "zh_TW": "機場大廳",
+      "ko": "공항 로비",
+      "es": "Vestíbulo del aeropuerto",
+      "fr": "Hall de l'aéroport",
+      "de": "Flughafenlobby",
+      "vi": "Sảnh sân bay",
+      "id": "Lobi bandara"
+    }
+  },
+  {
+    "id": "vocabulary_150",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_transportation",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "切符の料金",
+      "en": "Ticket fare",
+      "zh": "票价",
+      "zh_TW": "票價",
+      "ko": "승차권 요금",
+      "es": "Precio del billete",
+      "fr": "Tarif du billet",
+      "de": "Fahrkartenpreis",
+      "vi": "Giá vé",
+      "id": "Harga tiket"
+    }
+  },
+  {
+    "id": "vocabulary_151",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_transportation",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "改札のゲート",
+      "en": "Ticket gate",
+      "zh": "检票闸门",
+      "zh_TW": "檢票閘門",
+      "ko": "개찰구",
+      "es": "Puerta de entrada",
+      "fr": "Portique de contrôle",
+      "de": "Zugangstor",
+      "vi": "Cổng soát vé",
+      "id": "Gerbang tiket"
+    }
+  },
+  {
+    "id": "vocabulary_152",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_transportation",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "停留所の看板",
+      "en": "Bus stop sign",
+      "zh": "车站牌",
+      "zh_TW": "車站牌",
+      "ko": "정류장 표지판",
+      "es": "Cartel de parada",
+      "fr": "Panneau d'arrêt",
+      "de": "Haltestellenschild",
+      "vi": "Biển báo trạm dừng",
+      "id": "Papan halte"
+    }
+  },
+  {
+    "id": "vocabulary_153",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_transportation",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "駐車場の入口",
+      "en": "Parking entrance",
+      "zh": "停车场入口",
+      "zh_TW": "停車場入口",
+      "ko": "주차장 입구",
+      "es": "Entrada del estacionamiento",
+      "fr": "Entrée du parking",
+      "de": "Parkplatzeinfahrt",
+      "vi": "Lối vào bãi đỗ xe",
+      "id": "Pintu masuk parkir"
+    }
+  },
+  {
+    "id": "vocabulary_154",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_transportation",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "信号の色",
+      "en": "Traffic light color",
+      "zh": "信号灯颜色",
+      "zh_TW": "號誌燈顏色",
+      "ko": "신호등 색",
+      "es": "Color del semáforo",
+      "fr": "Couleur du feu",
+      "de": "Ampelfarbe",
+      "vi": "Màu đèn giao thông",
+      "id": "Warna lampu lalu lintas"
+    }
+  },
+  {
+    "id": "vocabulary_155",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_transportation",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "道路の標識",
+      "en": "Road sign",
+      "zh": "道路标志",
+      "zh_TW": "道路標誌",
+      "ko": "도로 표지판",
+      "es": "Señal de tráfico",
+      "fr": "Panneau routier",
+      "de": "Verkehrsschild",
+      "vi": "Biển báo đường",
+      "id": "Rambu jalan"
+    }
+  },
+  {
+    "id": "vocabulary_156",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_transportation",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "橋の下",
+      "en": "Under the bridge",
+      "zh": "桥下",
+      "zh_TW": "橋下",
+      "ko": "다리 아래",
+      "es": "Debajo del puente",
+      "fr": "Sous le pont",
+      "de": "Unter der Brücke",
+      "vi": "Dưới cầu",
+      "id": "Di bawah jembatan"
+    }
+  },
+  {
+    "id": "vocabulary_157",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_transportation",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "高速道路の出口",
+      "en": "Highway exit",
+      "zh": "高速公路出口",
+      "zh_TW": "高速公路出口",
+      "ko": "고속도로 출구",
+      "es": "Salida de la autopista",
+      "fr": "Sortie d'autoroute",
+      "de": "Autobahnausfahrt",
+      "vi": "Lối ra đường cao tốc",
+      "id": "Pintu keluar tol"
+    }
+  },
+  {
+    "id": "vocabulary_158",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_transportation",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "踏切の音",
+      "en": "Railroad crossing sound",
+      "zh": "道口声音",
+      "zh_TW": "平交道聲音",
+      "ko": "건널목 소리",
+      "es": "Sonido del cruce de tren",
+      "fr": "Son de passage à niveau",
+      "de": "Bahnübergangsgeräusch",
+      "vi": "Tiếng chuông chắn tàu",
+      "id": "Suara palang kereta"
+    }
+  },
+  {
+    "id": "vocabulary_159",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_transportation",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "路線図のページ",
+      "en": "Route map page",
+      "zh": "线路图页面",
+      "zh_TW": "路線圖頁面",
+      "ko": "노선도 페이지",
+      "es": "Página del mapa de rutas",
+      "fr": "Page du plan de ligne",
+      "de": "Seite des Streckenplans",
+      "vi": "Trang bản đồ tuyến",
+      "id": "Halaman peta rute"
+    }
+  },
+  {
+    "id": "vocabulary_160",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_food",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ご飯の味",
+      "en": "Taste of rice",
+      "zh": "米饭的味道",
+      "zh_TW": "米飯的味道",
+      "ko": "밥 맛",
+      "es": "Sabor del arroz",
+      "fr": "Goût du riz",
+      "de": "Geschmack des Reises",
+      "vi": "Vị cơm",
+      "id": "Rasa nasi"
+    }
+  },
+  {
+    "id": "vocabulary_161",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_food",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "パンの形",
+      "en": "Shape of bread",
+      "zh": "面包的形状",
+      "zh_TW": "麵包的形狀",
+      "ko": "빵 모양",
+      "es": "Forma del pan",
+      "fr": "Forme du pain",
+      "de": "Brotform",
+      "vi": "Hình dạng bánh mì",
+      "id": "Bentuk roti"
+    }
+  },
+  {
+    "id": "vocabulary_162",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_food",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "麺の種類",
+      "en": "Type of noodles",
+      "zh": "面条的种类",
+      "zh_TW": "麵條的種類",
+      "ko": "면 종류",
+      "es": "Tipo de fideos",
+      "fr": "Type de nouilles",
+      "de": "Nudelart",
+      "vi": "Loại mì",
+      "id": "Jenis mi"
+    }
+  },
+  {
+    "id": "vocabulary_163",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_food",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "肉の料理",
+      "en": "Meat dish",
+      "zh": "肉类料理",
+      "zh_TW": "肉類料理",
+      "ko": "고기 요리",
+      "es": "Plato de carne",
+      "fr": "Plat de viande",
+      "de": "Fleischgericht",
+      "vi": "Món thịt",
+      "id": "Hidangan daging"
+    }
+  },
+  {
+    "id": "vocabulary_164",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_food",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "魚の切り身",
+      "en": "Fish fillet",
+      "zh": "鱼片",
+      "zh_TW": "魚片",
+      "ko": "생선 필레",
+      "es": "Filete de pescado",
+      "fr": "Filet de poisson",
+      "de": "Fischfilet",
+      "vi": "Phi lê cá",
+      "id": "Fillet ikan"
+    }
+  },
+  {
+    "id": "vocabulary_165",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_food",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "野菜の色",
+      "en": "Color of vegetables",
+      "zh": "蔬菜的颜色",
+      "zh_TW": "蔬菜的顏色",
+      "ko": "채소 색깔",
+      "es": "Color de las verduras",
+      "fr": "Couleur des légumes",
+      "de": "Farbe des Gemüses",
+      "vi": "Màu rau",
+      "id": "Warna sayuran"
+    }
+  },
+  {
+    "id": "vocabulary_166",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_food",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "果物の香り",
+      "en": "Scent of fruit",
+      "zh": "水果的香味",
+      "zh_TW": "水果的香味",
+      "ko": "과일 향기",
+      "es": "Aroma de la fruta",
+      "fr": "Parfum du fruit",
+      "de": "Fruchtduft",
+      "vi": "Hương trái cây",
+      "id": "Aroma buah"
+    }
+  },
+  {
+    "id": "vocabulary_167",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_food",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "卵の殻",
+      "en": "Eggshell",
+      "zh": "蛋壳",
+      "zh_TW": "蛋殼",
+      "ko": "달걀 껍질",
+      "es": "Cáscara de huevo",
+      "fr": "Coquille d'œuf",
+      "de": "Eierschale",
+      "vi": "Vỏ trứng",
+      "id": "Cangkang telur"
+    }
+  },
+  {
+    "id": "vocabulary_168",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_food",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "スープの温度",
+      "en": "Temperature of soup",
+      "zh": "汤的温度",
+      "zh_TW": "湯的溫度",
+      "ko": "수프 온도",
+      "es": "Temperatura de la sopa",
+      "fr": "Température de la soupe",
+      "de": "Suppe Temperatur",
+      "vi": "Nhiệt độ súp",
+      "id": "Suhu sup"
+    }
+  },
+  {
+    "id": "vocabulary_169",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_food",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "サラダのドレッシング",
+      "en": "Salad dressing",
+      "zh": "沙拉酱",
+      "zh_TW": "沙拉醬",
+      "ko": "샐러드 드레싱",
+      "es": "Aderezo para ensalada",
+      "fr": "Vinaigrette",
+      "de": "Salatdressing",
+      "vi": "Nước sốt salad",
+      "id": "Saus salad"
+    }
+  },
+  {
+    "id": "vocabulary_170",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_food",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "寿司の種類",
+      "en": "Type of sushi",
+      "zh": "寿司的种类",
+      "zh_TW": "壽司的種類",
+      "ko": "스시 종류",
+      "es": "Tipo de sushi",
+      "fr": "Type de sushi",
+      "de": "Sushi-Art",
+      "vi": "Loại sushi",
+      "id": "Jenis sushi"
+    }
+  },
+  {
+    "id": "vocabulary_171",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_food",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "カレーの香辛料",
+      "en": "Curry spices",
+      "zh": "咖喱香料",
+      "zh_TW": "咖哩香料",
+      "ko": "카레 향신료",
+      "es": "Especias del curry",
+      "fr": "Épices du curry",
+      "de": "Currykraut",
+      "vi": "Gia vị cà ri",
+      "id": "Rempah kari"
+    }
+  },
+  {
+    "id": "vocabulary_172",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_food",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ハンバーガーの具",
+      "en": "Burger fillings",
+      "zh": "汉堡的馅料",
+      "zh_TW": "漢堡的餡料",
+      "ko": "햄버거 속재료",
+      "es": "Relleno de hamburguesa",
+      "fr": "Garniture de hamburger",
+      "de": "Burgerfüllung",
+      "vi": "Nhân bánh hamburger",
+      "id": "Isi burger"
+    }
+  },
+  {
+    "id": "vocabulary_173",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_food",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ピザの生地",
+      "en": "Pizza dough",
+      "zh": "比萨面团",
+      "zh_TW": "比薩麵糰",
+      "ko": "피자 도우",
+      "es": "Masa de pizza",
+      "fr": "Pâte à pizza",
+      "de": "Pizzateig",
+      "vi": "Bột bánh pizza",
+      "id": "Adonan pizza"
+    }
+  },
+  {
+    "id": "vocabulary_174",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_food",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ケーキの甘さ",
+      "en": "Sweetness of cake",
+      "zh": "蛋糕的甜度",
+      "zh_TW": "蛋糕的甜度",
+      "ko": "케이크의 단맛",
+      "es": "Dulzura del pastel",
+      "fr": "Douceur du gâteau",
+      "de": "Süße des Kuchens",
+      "vi": "Độ ngọt của bánh",
+      "id": "Kemanisan kue"
+    }
+  },
+  {
+    "id": "vocabulary_175",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_food",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "お菓子の袋",
+      "en": "Bag of sweets",
+      "zh": "糖果袋",
+      "zh_TW": "糖果袋",
+      "ko": "과자 봉지",
+      "es": "Bolsa de dulces",
+      "fr": "Sac de bonbons",
+      "de": "Tüte Süßigkeiten",
+      "vi": "Túi kẹo",
+      "id": "Tas permen"
+    }
+  },
+  {
+    "id": "vocabulary_176",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_food",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "味噌汁の具",
+      "en": "Miso soup ingredients",
+      "zh": "味噌汤的配料",
+      "zh_TW": "味噌湯的配料",
+      "ko": "된장국 재료",
+      "es": "Ingredientes de la sopa de miso",
+      "fr": "Ingrédients de la soupe miso",
+      "de": "Zutaten für Miso-Suppe",
+      "vi": "Nguyên liệu súp miso",
+      "id": "Bahan sup miso"
+    }
+  },
+  {
+    "id": "vocabulary_177",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_food",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "天ぷらの衣",
+      "en": "Tempura batter",
+      "zh": "天妇罗的面糊",
+      "zh_TW": "天婦羅的麵糊",
+      "ko": "튀김 옷",
+      "es": "Rebozado de tempura",
+      "fr": "Pâte à tempura",
+      "de": "Tempurateig",
+      "vi": "Bột chiên tempura",
+      "id": "Adonan tempura"
+    }
+  },
+  {
+    "id": "vocabulary_178",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_food",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "おにぎりの具",
+      "en": "Rice ball filling",
+      "zh": "饭团的馅料",
+      "zh_TW": "飯糰的餡料",
+      "ko": "주먹밥 속재료",
+      "es": "Relleno de bola de arroz",
+      "fr": "Garniture de boule de riz",
+      "de": "Füllung für Reisbällchen",
+      "vi": "Nhân cơm nắm",
+      "id": "Isi onigiri"
+    }
+  },
+  {
+    "id": "vocabulary_179",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_food",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "刺身の鮮度",
+      "en": "Freshness of sashimi",
+      "zh": "刺身的新鲜度",
+      "zh_TW": "刺身的新鮮度",
+      "ko": "사시미 신선도",
+      "es": "Frescura del sashimi",
+      "fr": "Fraîcheur du sashimi",
+      "de": "Frische des Sashimi",
+      "vi": "Độ tươi của sashimi",
+      "id": "Kesegaran sashimi"
+    }
+  },
+  {
+    "id": "vocabulary_180",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_drinks",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "水の温度",
+      "en": "Water temperature",
+      "zh": "水的温度",
+      "zh_TW": "水的溫度",
+      "ko": "물 온도",
+      "es": "Temperatura del agua",
+      "fr": "Température de l'eau",
+      "de": "Wassertemperatur",
+      "vi": "Nhiệt độ nước",
+      "id": "Suhu air"
+    }
+  },
+  {
+    "id": "vocabulary_181",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_drinks",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "お茶の香り",
+      "en": "Scent of tea",
+      "zh": "茶的香味",
+      "zh_TW": "茶的香味",
+      "ko": "차 향기",
+      "es": "Aroma del té",
+      "fr": "Parfum du thé",
+      "de": "Teeduft",
+      "vi": "Hương trà",
+      "id": "Aroma teh"
+    }
+  },
+  {
+    "id": "vocabulary_182",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_drinks",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "コーヒーの香り",
+      "en": "Aroma of coffee",
+      "zh": "咖啡的香气",
+      "zh_TW": "咖啡的香氣",
+      "ko": "커피 향기",
+      "es": "Aroma del café",
+      "fr": "Arôme du café",
+      "de": "Kaffeearoma",
+      "vi": "Hương cà phê",
+      "id": "Aroma kopi"
+    }
+  },
+  {
+    "id": "vocabulary_183",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_drinks",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "紅茶の種類",
+      "en": "Type of black tea",
+      "zh": "红茶的种类",
+      "zh_TW": "紅茶的種類",
+      "ko": "홍차 종류",
+      "es": "Tipo de té negro",
+      "fr": "Type de thé noir",
+      "de": "Schwarzteeart",
+      "vi": "Loại trà đen",
+      "id": "Jenis teh hitam"
+    }
+  },
+  {
+    "id": "vocabulary_184",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_drinks",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "牛乳の温度",
+      "en": "Milk temperature",
+      "zh": "牛奶的温度",
+      "zh_TW": "牛奶的溫度",
+      "ko": "우유 온도",
+      "es": "Temperatura de la leche",
+      "fr": "Température du lait",
+      "de": "Milchtemperatur",
+      "vi": "Nhiệt độ sữa",
+      "id": "Suhu susu"
+    }
+  },
+  {
+    "id": "vocabulary_185",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_drinks",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ジュースの味",
+      "en": "Taste of juice",
+      "zh": "果汁的味道",
+      "zh_TW": "果汁的味道",
+      "ko": "주스 맛",
+      "es": "Sabor del jugo",
+      "fr": "Goût du jus",
+      "de": "Geschmack des Safts",
+      "vi": "Vị nước ép",
+      "id": "Rasa jus"
+    }
+  },
+  {
+    "id": "vocabulary_186",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_drinks",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ビールの泡",
+      "en": "Beer foam",
+      "zh": "啤酒的泡沫",
+      "zh_TW": "啤酒的泡沫",
+      "ko": "맥주 거품",
+      "es": "Espuma de la cerveza",
+      "fr": "Mousse de bière",
+      "de": "Bierschaum",
+      "vi": "Bọt bia",
+      "id": "Busa bir"
+    }
+  },
+  {
+    "id": "vocabulary_187",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_drinks",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ワインの香り",
+      "en": "Aroma of wine",
+      "zh": "葡萄酒的香气",
+      "zh_TW": "葡萄酒的香氣",
+      "ko": "와인 향기",
+      "es": "Aroma del vino",
+      "fr": "Arôme du vin",
+      "de": "Weinaroma",
+      "vi": "Hương rượu vang",
+      "id": "Aroma anggur"
+    }
+  },
+  {
+    "id": "vocabulary_188",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_drinks",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "お酒の種類",
+      "en": "Type of alcohol",
+      "zh": "酒的种类",
+      "zh_TW": "酒的種類",
+      "ko": "술 종류",
+      "es": "Tipo de alcohol",
+      "fr": "Type d'alcool",
+      "de": "Alkoholart",
+      "vi": "Loại rượu",
+      "id": "Jenis alkohol"
+    }
+  },
+  {
+    "id": "vocabulary_189",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_drinks",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "炭酸水の泡",
+      "en": "Carbonated water bubbles",
+      "zh": "苏打水的气泡",
+      "zh_TW": "蘇打水的氣泡",
+      "ko": "탄산수 거품",
+      "es": "Burbujas de agua con gas",
+      "fr": "Bulles d'eau gazeuse",
+      "de": "Kohlensäureblasen",
+      "vi": "Bọt nước có ga",
+      "id": "Buih air berkarbonat"
+    }
+  },
+  {
+    "id": "vocabulary_190",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_drinks",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "緑茶の香り",
+      "en": "Scent of green tea",
+      "zh": "绿茶的香味",
+      "zh_TW": "綠茶的香味",
+      "ko": "녹차 향기",
+      "es": "Aroma del té verde",
+      "fr": "Parfum du thé vert",
+      "de": "Grünteeduft",
+      "vi": "Hương trà xanh",
+      "id": "Aroma teh hijau"
+    }
+  },
+  {
+    "id": "vocabulary_191",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_drinks",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "麦茶の色",
+      "en": "Color of barley tea",
+      "zh": "麦茶的颜色",
+      "zh_TW": "麥茶的顏色",
+      "ko": "보리차 색깔",
+      "es": "Color del té de cebada",
+      "fr": "Couleur du thé d'orge",
+      "de": "Farbe des Gerstentees",
+      "vi": "Màu trà lúa mạch",
+      "id": "Warna teh barley"
+    }
+  },
+  {
+    "id": "vocabulary_192",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_drinks",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "カフェラテの泡",
+      "en": "Foam of café latte",
+      "zh": "拿铁咖啡的泡沫",
+      "zh_TW": "拿鐵咖啡的泡沫",
+      "ko": "카페라떼 거품",
+      "es": "Espuma del café latte",
+      "fr": "Mousse du café latte",
+      "de": "Schaum des Caffè Latte",
+      "vi": "Bọt cà phê latte",
+      "id": "Buih kopi latte"
+    }
+  },
+  {
+    "id": "vocabulary_193",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_drinks",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "エスプレッソの香り",
+      "en": "Aroma of espresso",
+      "zh": "浓缩咖啡的香气",
+      "zh_TW": "濃縮咖啡的香氣",
+      "ko": "에스프레소 향기",
+      "es": "Aroma del espresso",
+      "fr": "Arôme de l'espresso",
+      "de": "Espressoaroma",
+      "vi": "Hương espresso",
+      "id": "Aroma espresso"
+    }
+  },
+  {
+    "id": "vocabulary_194",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_drinks",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "スムージーの味",
+      "en": "Taste of smoothie",
+      "zh": "冰沙的味道",
+      "zh_TW": "冰沙的味道",
+      "ko": "스무디 맛",
+      "es": "Sabor del batido",
+      "fr": "Goût du smoothie",
+      "de": "Geschmack des Smoothies",
+      "vi": "Vị sinh tố",
+      "id": "Rasa smoothie"
+    }
+  },
+  {
+    "id": "vocabulary_195",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_drinks",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "コーラの炭酸",
+      "en": "Carbonation of cola",
+      "zh": "可乐的碳酸",
+      "zh_TW": "可樂的碳酸",
+      "ko": "콜라의 탄산",
+      "es": "Carbonatación de la cola",
+      "fr": "Carbonatation du cola",
+      "de": "Kohlensäure der Cola",
+      "vi": "Gas của cola",
+      "id": "Karbonasi cola"
+    }
+  },
+  {
+    "id": "vocabulary_196",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_drinks",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "スポーツドリンクの味",
+      "en": "Taste of sports drink",
+      "zh": "运动饮料的味道",
+      "zh_TW": "運動飲料的味道",
+      "ko": "스포츠 음료 맛",
+      "es": "Sabor de la bebida deportiva",
+      "fr": "Goût de la boisson sportive",
+      "de": "Geschmack des Sportgetränks",
+      "vi": "Vị nước uống thể thao",
+      "id": "Rasa minuman olahraga"
+    }
+  },
+  {
+    "id": "vocabulary_197",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_drinks",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ミネラルウォーターの温度",
+      "en": "Temperature of mineral water",
+      "zh": "矿泉水的温度",
+      "zh_TW": "礦泉水的溫度",
+      "ko": "생수 온도",
+      "es": "Temperatura del agua mineral",
+      "fr": "Température de l'eau minérale",
+      "de": "Temperatur des Mineralwassers",
+      "vi": "Nhiệt độ nước khoáng",
+      "id": "Suhu air mineral"
+    }
+  },
+  {
+    "id": "vocabulary_198",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_drinks",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "抹茶の香り",
+      "en": "Scent of matcha",
+      "zh": "抹茶的香味",
+      "zh_TW": "抹茶的香味",
+      "ko": "말차 향기",
+      "es": "Aroma del té matcha",
+      "fr": "Parfum du matcha",
+      "de": "Matcha-Duft",
+      "vi": "Hương trà matcha",
+      "id": "Aroma matcha"
+    }
+  },
+  {
+    "id": "vocabulary_199",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_drinks",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "レモネードの甘さ",
+      "en": "Sweetness of lemonade",
+      "zh": "柠檬水的甜度",
+      "zh_TW": "檸檬水的甜度",
+      "ko": "레모네이드 단맛",
+      "es": "Dulzura de la limonada",
+      "fr": "Douceur de la limonade",
+      "de": "Süße der Limonade",
+      "vi": "Độ ngọt của nước chanh",
+      "id": "Kemanisan limun"
+    }
+  },
+  {
+    "id": "vocabulary_200",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_places",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ホテルの部屋",
+      "en": "Hotel room",
+      "zh": "酒店房间",
+      "zh_TW": "飯店房間",
+      "ko": "호텔 방",
+      "es": "Habitación de hotel",
+      "fr": "Chambre d'hôtel",
+      "de": "Hotelzimmer",
+      "vi": "Phòng khách sạn",
+      "id": "Kamar hotel"
+    }
+  },
+  {
+    "id": "vocabulary_201",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_places",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "レストランの席",
+      "en": "Restaurant seat",
+      "zh": "餐厅座位",
+      "zh_TW": "餐廳座位",
+      "ko": "레스토랑 자리",
+      "es": "Asiento de restaurante",
+      "fr": "Siège de restaurant",
+      "de": "Restaurantplatz",
+      "vi": "Chỗ ngồi nhà hàng",
+      "id": "Tempat duduk restoran"
+    }
+  },
+  {
+    "id": "vocabulary_202",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_places",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "カフェの雰囲気",
+      "en": "Atmosphere of café",
+      "zh": "咖啡馆的氛围",
+      "zh_TW": "咖啡館的氛圍",
+      "ko": "카페 분위기",
+      "es": "Ambiente de la cafetería",
+      "fr": "Ambiance du café",
+      "de": "Atmosphäre des Cafés",
+      "vi": "Bầu không khí quán cà phê",
+      "id": "Suasana kafe"
+    }
+  },
+  {
+    "id": "vocabulary_203",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_places",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "コンビニの入り口",
+      "en": "Entrance of convenience store",
+      "zh": "便利店的入口",
+      "zh_TW": "便利商店的入口",
+      "ko": "편의점 입구",
+      "es": "Entrada de la tienda de conveniencia",
+      "fr": "Entrée du magasin de proximité",
+      "de": "Eingang des Convenience Stores",
+      "vi": "Lối vào cửa hàng tiện lợi",
+      "id": "Pintu masuk minimarket"
+    }
+  },
+  {
+    "id": "vocabulary_204",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_places",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "スーパーの棚",
+      "en": "Supermarket shelf",
+      "zh": "超市的货架",
+      "zh_TW": "超市的貨架",
+      "ko": "슈퍼마켓 선반",
+      "es": "Estante de supermercado",
+      "fr": "Rayon de supermarché",
+      "de": "Supermarktregal",
+      "vi": "Kệ siêu thị",
+      "id": "Rak supermarket"
+    }
+  },
+  {
+    "id": "vocabulary_205",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_places",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "市場の活気",
+      "en": "Liveliness of the market",
+      "zh": "市场的热闹",
+      "zh_TW": "市場的熱鬧",
+      "ko": "시장 활기",
+      "es": "Animación del mercado",
+      "fr": "Animation du marché",
+      "de": "Lebendigkeit des Marktes",
+      "vi": "Sự nhộn nhịp của chợ",
+      "id": "Kemeriahan pasar"
+    }
+  },
+  {
+    "id": "vocabulary_206",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_places",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "病院の入口",
+      "en": "Entrance of hospital",
+      "zh": "医院的入口",
+      "zh_TW": "醫院的入口",
+      "ko": "병원 입구",
+      "es": "Entrada del hospital",
+      "fr": "Entrée de l'hôpital",
+      "de": "Eingang des Krankenhauses",
+      "vi": "Lối vào bệnh viện",
+      "id": "Pintu masuk rumah sakit"
+    }
+  },
+  {
+    "id": "vocabulary_207",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_places",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "薬局の棚",
+      "en": "Shelf of pharmacy",
+      "zh": "药店的货架",
+      "zh_TW": "藥局的貨架",
+      "ko": "약국 선반",
+      "es": "Estante de la farmacia",
+      "fr": "Rayon de la pharmacie",
+      "de": "Regal der Apotheke",
+      "vi": "Kệ thuốc ở hiệu thuốc",
+      "id": "Rak apotek"
+    }
+  },
+  {
+    "id": "vocabulary_208",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_places",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "銀行の窓口",
+      "en": "Bank counter",
+      "zh": "银行柜台",
+      "zh_TW": "銀行櫃檯",
+      "ko": "은행 창구",
+      "es": "Mostrador del banco",
+      "fr": "Guichet de la banque",
+      "de": "Bankschalter",
+      "vi": "Quầy ngân hàng",
+      "id": "Loket bank"
+    }
+  },
+  {
+    "id": "vocabulary_209",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_places",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "郵便局の窓口",
+      "en": "Post office counter",
+      "zh": "邮局柜台",
+      "zh_TW": "郵局櫃檯",
+      "ko": "우체국 창구",
+      "es": "Mostrador de la oficina de correos",
+      "fr": "Guichet de la poste",
+      "de": "Postschalter",
+      "vi": "Quầy bưu điện",
+      "id": "Loket kantor pos"
+    }
+  },
+  {
+    "id": "vocabulary_210",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_places",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "図書館の本",
+      "en": "Library book",
+      "zh": "图书馆的书",
+      "zh_TW": "圖書館的書",
+      "ko": "도서관 책",
+      "es": "Libro de la biblioteca",
+      "fr": "Livre de la bibliothèque",
+      "de": "Buch der Bibliothek",
+      "vi": "Sách của thư viện",
+      "id": "Buku perpustakaan"
+    }
+  },
+  {
+    "id": "vocabulary_211",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_places",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "学校の授業",
+      "en": "School class",
+      "zh": "学校的课程",
+      "zh_TW": "學校的課程",
+      "ko": "학교 수업",
+      "es": "Clase escolar",
+      "fr": "Cours scolaire",
+      "de": "Schulunterricht",
+      "vi": "Buổi học ở trường",
+      "id": "Pelajaran sekolah"
+    }
+  },
+  {
+    "id": "vocabulary_212",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_places",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "警察署の前",
+      "en": "In front of police station",
+      "zh": "警察局前",
+      "zh_TW": "警察局前",
+      "ko": "경찰서 앞",
+      "es": "Frente a la comisaría",
+      "fr": "Devant le commissariat",
+      "de": "Vor der Polizeistation",
+      "vi": "Trước đồn cảnh sát",
+      "id": "Depan kantor polisi"
+    }
+  },
+  {
+    "id": "vocabulary_213",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_places",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "公園のベンチ",
+      "en": "Park bench",
+      "zh": "公园的长椅",
+      "zh_TW": "公園的長椅",
+      "ko": "공원 벤치",
+      "es": "Banco del parque",
+      "fr": "Banc du parc",
+      "de": "Parkbank",
+      "vi": "Ghế dài ở công viên",
+      "id": "Bangku taman"
+    }
+  },
+  {
+    "id": "vocabulary_214",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_places",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "博物館の展示",
+      "en": "Museum exhibit",
+      "zh": "博物馆的展品",
+      "zh_TW": "博物館的展品",
+      "ko": "박물관 전시물",
+      "es": "Exposición del museo",
+      "fr": "Exposition du musée",
+      "de": "Ausstellung im Museum",
+      "vi": "Triển lãm của bảo tàng",
+      "id": "Pameran museum"
+    }
+  },
+  {
+    "id": "vocabulary_215",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_places",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "美術館の絵",
+      "en": "Painting in art museum",
+      "zh": "美术馆的画",
+      "zh_TW": "美術館的畫",
+      "ko": "미술관 그림",
+      "es": "Pintura del museo de arte",
+      "fr": "Tableau du musée d'art",
+      "de": "Gemälde im Kunstmuseum",
+      "vi": "Tranh ở bảo tàng mỹ thuật",
+      "id": "Lukisan di museum seni"
+    }
+  },
+  {
+    "id": "vocabulary_216",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_places",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "映画館の席",
+      "en": "Cinema seat",
+      "zh": "电影院的座位",
+      "zh_TW": "電影院的座位",
+      "ko": "영화관 좌석",
+      "es": "Asiento del cine",
+      "fr": "Siège de cinéma",
+      "de": "Kinositz",
+      "vi": "Ghế rạp chiếu phim",
+      "id": "Kursi bioskop"
+    }
+  },
+  {
+    "id": "vocabulary_217",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_places",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "劇場の舞台",
+      "en": "Theater stage",
+      "zh": "剧场的舞台",
+      "zh_TW": "劇場的舞台",
+      "ko": "극장 무대",
+      "es": "Escenario del teatro",
+      "fr": "Scène du théâtre",
+      "de": "Bühne des Theaters",
+      "vi": "Sân khấu nhà hát",
+      "id": "Panggung teater"
+    }
+  },
+  {
+    "id": "vocabulary_218",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_places",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "神社の鳥居",
+      "en": "Shrine torii gate",
+      "zh": "神社的鸟居",
+      "zh_TW": "神社的鳥居",
+      "ko": "신사의 도리이",
+      "es": "Torii del santuario",
+      "fr": "Torii du sanctuaire",
+      "de": "Torii des Schreins",
+      "vi": "Cổng torii của đền",
+      "id": "Gerbang torii kuil"
+    }
+  },
+  {
+    "id": "vocabulary_219",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_places",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "寺の鐘",
+      "en": "Temple bell",
+      "zh": "寺庙的钟",
+      "zh_TW": "寺廟的鐘",
+      "ko": "절의 종",
+      "es": "Campana del templo",
+      "fr": "Cloche du temple",
+      "de": "Tempelglocke",
+      "vi": "Chuông chùa",
+      "id": "Lonceng kuil"
+    }
+  },
+  {
+    "id": "vocabulary_220",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_directions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "右の道",
+      "en": "Right road",
+      "zh": "右边的路",
+      "zh_TW": "右邊的路",
+      "ko": "오른쪽 길",
+      "es": "Camino a la derecha",
+      "fr": "Route à droite",
+      "de": "Rechte Straße",
+      "vi": "Con đường bên phải",
+      "id": "Jalan kanan"
+    }
+  },
+  {
+    "id": "vocabulary_221",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_directions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "左の道",
+      "en": "Left road",
+      "zh": "左边的路",
+      "zh_TW": "左邊的路",
+      "ko": "왼쪽 길",
+      "es": "Camino a la izquierda",
+      "fr": "Route à gauche",
+      "de": "Linke Straße",
+      "vi": "Con đường bên trái",
+      "id": "Jalan kiri"
+    }
+  },
+  {
+    "id": "vocabulary_222",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_directions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "前の席",
+      "en": "Front seat",
+      "zh": "前排座位",
+      "zh_TW": "前排座位",
+      "ko": "앞좌석",
+      "es": "Asiento delantero",
+      "fr": "Siège avant",
+      "de": "Vordersitz",
+      "vi": "Ghế phía trước",
+      "id": "Kursi depan"
+    }
+  },
+  {
+    "id": "vocabulary_223",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_directions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "後ろの席",
+      "en": "Back seat",
+      "zh": "后排座位",
+      "zh_TW": "後排座位",
+      "ko": "뒷좌석",
+      "es": "Asiento trasero",
+      "fr": "Siège arrière",
+      "de": "Rücksitz",
+      "vi": "Ghế phía sau",
+      "id": "Kursi belakang"
+    }
+  },
+  {
+    "id": "vocabulary_224",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_directions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "上の階",
+      "en": "Upper floor",
+      "zh": "楼上的楼层",
+      "zh_TW": "樓上的樓層",
+      "ko": "윗층",
+      "es": "Piso superior",
+      "fr": "Étage supérieur",
+      "de": "Obergeschoss",
+      "vi": "Tầng trên",
+      "id": "Lantai atas"
+    }
+  },
+  {
+    "id": "vocabulary_225",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_directions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "下の階",
+      "en": "Lower floor",
+      "zh": "楼下的楼层",
+      "zh_TW": "樓下的樓層",
+      "ko": "아랫층",
+      "es": "Piso inferior",
+      "fr": "Étage inférieur",
+      "de": "Untergeschoss",
+      "vi": "Tầng dưới",
+      "id": "Lantai bawah"
+    }
+  },
+  {
+    "id": "vocabulary_226",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_directions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "北の国",
+      "en": "Northern country",
+      "zh": "北方的国家",
+      "zh_TW": "北方的國家",
+      "ko": "북쪽 나라",
+      "es": "País del norte",
+      "fr": "Pays du nord",
+      "de": "Nördliches Land",
+      "vi": "Quốc gia phía bắc",
+      "id": "Negara utara"
+    }
+  },
+  {
+    "id": "vocabulary_227",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_directions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "南の国",
+      "en": "Southern country",
+      "zh": "南方的国家",
+      "zh_TW": "南方的國家",
+      "ko": "남쪽 나라",
+      "es": "País del sur",
+      "fr": "Pays du sud",
+      "de": "Südliches Land",
+      "vi": "Quốc gia phía nam",
+      "id": "Negara selatan"
+    }
+  },
+  {
+    "id": "vocabulary_228",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_directions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "東の空",
+      "en": "Eastern sky",
+      "zh": "东方的天空",
+      "zh_TW": "東方的天空",
+      "ko": "동쪽 하늘",
+      "es": "Cielo del este",
+      "fr": "Ciel de l'est",
+      "de": "Östlicher Himmel",
+      "vi": "Bầu trời phía đông",
+      "id": "Langit timur"
+    }
+  },
+  {
+    "id": "vocabulary_229",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_directions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "西の空",
+      "en": "Western sky",
+      "zh": "西方的天空",
+      "zh_TW": "西方的天空",
+      "ko": "서쪽 하늘",
+      "es": "Cielo del oeste",
+      "fr": "Ciel de l'ouest",
+      "de": "Westlicher Himmel",
+      "vi": "Bầu trời phía tây",
+      "id": "Langit barat"
+    }
+  },
+  {
+    "id": "vocabulary_230",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_directions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "まっすぐ進む",
+      "en": "Go straight",
+      "zh": "直走",
+      "zh_TW": "直走",
+      "ko": "곧장 가다",
+      "es": "Ir recto",
+      "fr": "Aller tout droit",
+      "de": "Geradeaus gehen",
+      "vi": "Đi thẳng",
+      "id": "Jalan lurus"
+    }
+  },
+  {
+    "id": "vocabulary_231",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_directions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "曲がる道",
+      "en": "Curved road",
+      "zh": "弯曲的路",
+      "zh_TW": "彎曲的路",
+      "ko": "굽은 길",
+      "es": "Camino curvo",
+      "fr": "Route courbe",
+      "de": "Kurvige Straße",
+      "vi": "Con đường cong",
+      "id": "Jalan berkelok"
+    }
+  },
+  {
+    "id": "vocabulary_232",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_directions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "近い店",
+      "en": "Nearby shop",
+      "zh": "附近的商店",
+      "zh_TW": "附近的商店",
+      "ko": "근처 가게",
+      "es": "Tienda cercana",
+      "fr": "Magasin proche",
+      "de": "Nahegelegenes Geschäft",
+      "vi": "Cửa hàng gần đây",
+      "id": "Toko terdekat"
+    }
+  },
+  {
+    "id": "vocabulary_233",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_directions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "遠い山",
+      "en": "Distant mountain",
+      "zh": "远方的山",
+      "zh_TW": "遠方的山",
+      "ko": "먼 산",
+      "es": "Montaña lejana",
+      "fr": "Montagne lointaine",
+      "de": "Entfernter Berg",
+      "vi": "Ngọn núi xa",
+      "id": "Gunung jauh"
+    }
+  },
+  {
+    "id": "vocabulary_234",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_directions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "手前の机",
+      "en": "Front desk",
+      "zh": "前面的桌子",
+      "zh_TW": "前面的桌子",
+      "ko": "앞쪽 책상",
+      "es": "Escritorio delantero",
+      "fr": "Bureau à l'avant",
+      "de": "Vorderer Schreibtisch",
+      "vi": "Bàn phía trước",
+      "id": "Meja depan"
+    }
+  },
+  {
+    "id": "vocabulary_235",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_directions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "奥の部屋",
+      "en": "Back room",
+      "zh": "后面的房间",
+      "zh_TW": "後面的房間",
+      "ko": "안쪽 방",
+      "es": "Habitación del fondo",
+      "fr": "Pièce du fond",
+      "de": "Hinteres Zimmer",
+      "vi": "Phòng phía sau",
+      "id": "Ruang belakang"
+    }
+  },
+  {
+    "id": "vocabulary_236",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_directions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "隣の家",
+      "en": "Next house",
+      "zh": "隔壁的房子",
+      "zh_TW": "隔壁的房子",
+      "ko": "옆집",
+      "es": "Casa de al lado",
+      "fr": "Maison voisine",
+      "de": "Nachbarhaus",
+      "vi": "Ngôi nhà bên cạnh",
+      "id": "Rumah sebelah"
+    }
+  },
+  {
+    "id": "vocabulary_237",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_directions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "向かいの店",
+      "en": "Opposite shop",
+      "zh": "对面的商店",
+      "zh_TW": "對面的商店",
+      "ko": "맞은편 가게",
+      "es": "Tienda de enfrente",
+      "fr": "Magasin en face",
+      "de": "Gegenüberliegendes Geschäft",
+      "vi": "Cửa hàng đối diện",
+      "id": "Toko seberang"
+    }
+  },
+  {
+    "id": "vocabulary_238",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_directions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "中央の広場",
+      "en": "Central square",
+      "zh": "中央广场",
+      "zh_TW": "中央廣場",
+      "ko": "중앙 광장",
+      "es": "Plaza central",
+      "fr": "Place centrale",
+      "de": "Zentraler Platz",
+      "vi": "Quảng trường trung tâm",
+      "id": "Alun-alun pusat"
+    }
+  },
+  {
+    "id": "vocabulary_239",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_directions",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "角の店",
+      "en": "Corner shop",
+      "zh": "拐角的商店",
+      "zh_TW": "拐角的商店",
+      "ko": "모퉁이 가게",
+      "es": "Tienda de la esquina",
+      "fr": "Magasin du coin",
+      "de": "Eckladen",
+      "vi": "Cửa hàng góc phố",
+      "id": "Toko pojok"
+    }
+  },
+  {
+    "id": "vocabulary_240",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_people",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "人の集まり",
+      "en": "Gathering of people",
+      "zh": "人群聚会",
+      "zh_TW": "人群聚會",
+      "ko": "사람 모임",
+      "es": "Reunión de personas",
+      "fr": "Rassemblement de personnes",
+      "de": "Menschenversammlung",
+      "vi": "Cuộc tụ tập của mọi người",
+      "id": "Perkumpulan orang"
+    }
+  },
+  {
+    "id": "vocabulary_241",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_people",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "子供の遊び",
+      "en": "Children's play",
+      "zh": "孩子的游戏",
+      "zh_TW": "孩子的遊戲",
+      "ko": "아이들 놀이",
+      "es": "Juego de niños",
+      "fr": "Jeu d'enfants",
+      "de": "Kinderspiel",
+      "vi": "Trò chơi của trẻ em",
+      "id": "Permainan anak-anak"
+    }
+  },
+  {
+    "id": "vocabulary_242",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_people",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "大人の会話",
+      "en": "Adult conversation",
+      "zh": "成人的对话",
+      "zh_TW": "成人的對話",
+      "ko": "어른 대화",
+      "es": "Conversación de adultos",
+      "fr": "Conversation d'adultes",
+      "de": "Erwachsenengespräch",
+      "vi": "Cuộc trò chuyện của người lớn",
+      "id": "Percakapan orang dewasa"
+    }
+  },
+  {
+    "id": "vocabulary_243",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_people",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "男性の声",
+      "en": "Male voice",
+      "zh": "男性的声音",
+      "zh_TW": "男性的聲音",
+      "ko": "남성 목소리",
+      "es": "Voz masculina",
+      "fr": "Voix masculine",
+      "de": "Männliche Stimme",
+      "vi": "Giọng nam",
+      "id": "Suara pria"
+    }
+  },
+  {
+    "id": "vocabulary_244",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_people",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "女性の声",
+      "en": "Female voice",
+      "zh": "女性的声音",
+      "zh_TW": "女性的聲音",
+      "ko": "여성 목소리",
+      "es": "Voz femenina",
+      "fr": "Voix féminine",
+      "de": "Weibliche Stimme",
+      "vi": "Giọng nữ",
+      "id": "Suara wanita"
+    }
+  },
+  {
+    "id": "vocabulary_245",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_people",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "先生の教室",
+      "en": "Teacher's classroom",
+      "zh": "老师的教室",
+      "zh_TW": "老師的教室",
+      "ko": "선생님의 교실",
+      "es": "Aula del profesor",
+      "fr": "Salle de classe du professeur",
+      "de": "Lehrers Klassenzimmer",
+      "vi": "Lớp học của giáo viên",
+      "id": "Kelas guru"
+    }
+  },
+  {
+    "id": "vocabulary_246",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_people",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "学生のノート",
+      "en": "Student's notebook",
+      "zh": "学生的笔记本",
+      "zh_TW": "學生的筆記本",
+      "ko": "학생의 노트",
+      "es": "Cuaderno del estudiante",
+      "fr": "Cahier de l'étudiant",
+      "de": "Schülerheft",
+      "vi": "Vở của học sinh",
+      "id": "Buku catatan siswa"
+    }
+  },
+  {
+    "id": "vocabulary_247",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_people",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "友達の家",
+      "en": "Friend's house",
+      "zh": "朋友的家",
+      "zh_TW": "朋友的家",
+      "ko": "친구 집",
+      "es": "Casa de un amigo",
+      "fr": "Maison d'un ami",
+      "de": "Haus eines Freundes",
+      "vi": "Nhà của bạn",
+      "id": "Rumah teman"
+    }
+  },
+  {
+    "id": "vocabulary_248",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_people",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "店員の制服",
+      "en": "Clerk's uniform",
+      "zh": "店员的制服",
+      "zh_TW": "店員的制服",
+      "ko": "점원의 유니폼",
+      "es": "Uniforme del dependiente",
+      "fr": "Uniforme du vendeur",
+      "de": "Uniform des Verkäufers",
+      "vi": "Đồng phục của nhân viên",
+      "id": "Seragam pegawai"
+    }
+  },
+  {
+    "id": "vocabulary_249",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_people",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "客の注文",
+      "en": "Customer's order",
+      "zh": "顾客的订单",
+      "zh_TW": "顧客的訂單",
+      "ko": "손님의 주문",
+      "es": "Pedido del cliente",
+      "fr": "Commande du client",
+      "de": "Bestellung des Kunden",
+      "vi": "Đơn đặt hàng của khách",
+      "id": "Pesanan pelanggan"
+    }
+  },
+  {
+    "id": "vocabulary_250",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_people",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "医者の診察",
+      "en": "Doctor's examination",
+      "zh": "医生的诊察",
+      "zh_TW": "醫生的診察",
+      "ko": "의사의 진찰",
+      "es": "Examen del médico",
+      "fr": "Examen du médecin",
+      "de": "Untersuchung des Arztes",
+      "vi": "Khám bệnh của bác sĩ",
+      "id": "Pemeriksaan dokter"
+    }
+  },
+  {
+    "id": "vocabulary_251",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_people",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "看護師の手",
+      "en": "Nurse's hand",
+      "zh": "护士的手",
+      "zh_TW": "護士的手",
+      "ko": "간호사의 손",
+      "es": "Mano de la enfermera",
+      "fr": "Main de l'infirmière",
+      "de": "Hand der Krankenschwester",
+      "vi": "Bàn tay y tá",
+      "id": "Tangan perawat"
+    }
+  },
+  {
+    "id": "vocabulary_252",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_people",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "運転手の席",
+      "en": "Driver's seat",
+      "zh": "司机的座位",
+      "zh_TW": "司機的座位",
+      "ko": "운전석",
+      "es": "Asiento del conductor",
+      "fr": "Siège du conducteur",
+      "de": "Fahrersitz",
+      "vi": "Ghế lái xe",
+      "id": "Kursi pengemudi"
+    }
+  },
+  {
+    "id": "vocabulary_253",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_people",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "警察官の制服",
+      "en": "Police officer's uniform",
+      "zh": "警察的制服",
+      "zh_TW": "警察的制服",
+      "ko": "경찰관의 제복",
+      "es": "Uniforme del policía",
+      "fr": "Uniforme du policier",
+      "de": "Uniform des Polizisten",
+      "vi": "Đồng phục cảnh sát",
+      "id": "Seragam polisi"
+    }
+  },
+  {
+    "id": "vocabulary_254",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_people",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "消防士の帽子",
+      "en": "Firefighter's hat",
+      "zh": "消防员的帽子",
+      "zh_TW": "消防員的帽子",
+      "ko": "소방관의 모자",
+      "es": "Sombrero del bombero",
+      "fr": "Chapeau du pompier",
+      "de": "Hut des Feuerwehrmanns",
+      "vi": "Mũ lính cứu hỏa",
+      "id": "Topi pemadam kebakaran"
+    }
+  },
+  {
+    "id": "vocabulary_255",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_people",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "旅行者の荷物",
+      "en": "Traveler's luggage",
+      "zh": "旅行者的行李",
+      "zh_TW": "旅行者的行李",
+      "ko": "여행자의 짐",
+      "es": "Equipaje del viajero",
+      "fr": "Bagages du voyageur",
+      "de": "Gepäck des Reisenden",
+      "vi": "Hành lý của khách du lịch",
+      "id": "Koper pelancong"
+    }
+  },
+  {
+    "id": "vocabulary_256",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_people",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "親の手",
+      "en": "Parent's hand",
+      "zh": "父母的手",
+      "zh_TW": "父母的手",
+      "ko": "부모의 손",
+      "es": "Mano del padre",
+      "fr": "Main du parent",
+      "de": "Hand des Elternteils",
+      "vi": "Bàn tay của cha mẹ",
+      "id": "Tangan orang tua"
+    }
+  },
+  {
+    "id": "vocabulary_257",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_people",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "兄の部屋",
+      "en": "Older brother's room",
+      "zh": "哥哥的房间",
+      "zh_TW": "哥哥的房間",
+      "ko": "형의 방",
+      "es": "Habitación del hermano mayor",
+      "fr": "Chambre du grand frère",
+      "de": "Zimmer des älteren Bruders",
+      "vi": "Phòng của anh trai",
+      "id": "Kamar kakak laki-laki"
+    }
+  },
+  {
+    "id": "vocabulary_258",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_people",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "姉の服",
+      "en": "Older sister's clothes",
+      "zh": "姐姐的衣服",
+      "zh_TW": "姐姐的衣服",
+      "ko": "누나의 옷",
+      "es": "Ropa de la hermana mayor",
+      "fr": "Vêtements de la grande sœur",
+      "de": "Kleidung der älteren Schwester",
+      "vi": "Quần áo của chị gái",
+      "id": "Baju kakak perempuan"
+    }
+  },
+  {
+    "id": "vocabulary_259",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_people",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "家族の写真",
+      "en": "Family photo",
+      "zh": "全家福照片",
+      "zh_TW": "全家福照片",
+      "ko": "가족 사진",
+      "es": "Foto de familia",
+      "fr": "Photo de famille",
+      "de": "Familienfoto",
+      "vi": "Ảnh gia đình",
+      "id": "Foto keluarga"
+    }
+  },
+  {
+    "id": "vocabulary_260",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_relationships",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "父の家",
+      "en": "Father's house",
+      "zh": "父亲的家",
+      "zh_TW": "父親的家",
+      "ko": "아버지의 집",
+      "es": "Casa del padre",
+      "fr": "Maison du père",
+      "de": "Haus des Vaters",
+      "vi": "Nhà của cha",
+      "id": "Rumah ayah"
+    }
+  },
+  {
+    "id": "vocabulary_261",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_relationships",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "母の笑顔",
+      "en": "Mother's smile",
+      "zh": "母亲的笑容",
+      "zh_TW": "母親的笑容",
+      "ko": "어머니의 미소",
+      "es": "Sonrisa de la madre",
+      "fr": "Sourire de la mère",
+      "de": "Lächeln der Mutter",
+      "vi": "Nụ cười của mẹ",
+      "id": "Senyuman ibu"
+    }
+  },
+  {
+    "id": "vocabulary_262",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_relationships",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "兄弟の部屋",
+      "en": "Brothers' room",
+      "zh": "兄弟的房间",
+      "zh_TW": "兄弟的房間",
+      "ko": "형제의 방",
+      "es": "Habitación de los hermanos",
+      "fr": "Chambre des frères",
+      "de": "Zimmer der Brüder",
+      "vi": "Phòng của anh em",
+      "id": "Kamar saudara laki-laki"
+    }
+  },
+  {
+    "id": "vocabulary_263",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_relationships",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "姉妹の服",
+      "en": "Sisters' clothes",
+      "zh": "姐妹的衣服",
+      "zh_TW": "姐妹的衣服",
+      "ko": "자매의 옷",
+      "es": "Ropa de las hermanas",
+      "fr": "Vêtements des sœurs",
+      "de": "Kleidung der Schwestern",
+      "vi": "Quần áo của chị em gái",
+      "id": "Baju saudara perempuan"
+    }
+  },
+  {
+    "id": "vocabulary_264",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_relationships",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "夫の車",
+      "en": "Husband's car",
+      "zh": "丈夫的车",
+      "zh_TW": "丈夫的車",
+      "ko": "남편의 차",
+      "es": "Coche del marido",
+      "fr": "Voiture du mari",
+      "de": "Auto des Ehemanns",
+      "vi": "Xe của chồng",
+      "id": "Mobil suami"
+    }
+  },
+  {
+    "id": "vocabulary_265",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_relationships",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "妻の手紙",
+      "en": "Wife's letter",
+      "zh": "妻子的信",
+      "zh_TW": "妻子的信",
+      "ko": "아내의 편지",
+      "es": "Carta de la esposa",
+      "fr": "Lettre de l'épouse",
+      "de": "Brief der Ehefrau",
+      "vi": "Thư của vợ",
+      "id": "Surat istri"
+    }
+  },
+  {
+    "id": "vocabulary_266",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_relationships",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "息子の友達",
+      "en": "Son's friend",
+      "zh": "儿子的朋友",
+      "zh_TW": "兒子的朋友",
+      "ko": "아들의 친구",
+      "es": "Amigo del hijo",
+      "fr": "Ami du fils",
+      "de": "Freund des Sohnes",
+      "vi": "Bạn của con trai",
+      "id": "Teman anak laki-laki"
+    }
+  },
+  {
+    "id": "vocabulary_267",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_relationships",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "娘の本",
+      "en": "Daughter's book",
+      "zh": "女儿的书",
+      "zh_TW": "女兒的書",
+      "ko": "딸의 책",
+      "es": "Libro de la hija",
+      "fr": "Livre de la fille",
+      "de": "Buch der Tochter",
+      "vi": "Sách của con gái",
+      "id": "Buku anak perempuan"
+    }
+  },
+  {
+    "id": "vocabulary_268",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_relationships",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "親戚の集まり",
+      "en": "Family gathering",
+      "zh": "亲戚聚会",
+      "zh_TW": "親戚聚會",
+      "ko": "친척 모임",
+      "es": "Reunión familiar",
+      "fr": "Réunion de famille",
+      "de": "Familientreffen",
+      "vi": "Buổi họp gia đình",
+      "id": "Acara keluarga"
+    }
+  },
+  {
+    "id": "vocabulary_269",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_relationships",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "祖父の杖",
+      "en": "Grandfather's cane",
+      "zh": "祖父的拐杖",
+      "zh_TW": "祖父的拐杖",
+      "ko": "할아버지의 지팡이",
+      "es": "Bastón del abuelo",
+      "fr": "Canne du grand-père",
+      "de": "Stock des Großvaters",
+      "vi": "Gậy của ông",
+      "id": "Tongkat kakek"
+    }
+  },
+  {
+    "id": "vocabulary_270",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_relationships",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "祖母の料理",
+      "en": "Grandmother's cooking",
+      "zh": "祖母的菜",
+      "zh_TW": "祖母的菜",
+      "ko": "할머니의 요리",
+      "es": "Cocina de la abuela",
+      "fr": "Cuisine de la grand-mère",
+      "de": "Kochen der Großmutter",
+      "vi": "Món ăn của bà",
+      "id": "Masakan nenek"
+    }
+  },
+  {
+    "id": "vocabulary_271",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_relationships",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "孫の写真",
+      "en": "Grandchild's photo",
+      "zh": "孙子的照片",
+      "zh_TW": "孫子的照片",
+      "ko": "손자의 사진",
+      "es": "Foto del nieto",
+      "fr": "Photo du petit-enfant",
+      "de": "Foto des Enkels",
+      "vi": "Ảnh của cháu",
+      "id": "Foto cucu"
+    }
+  },
+  {
+    "id": "vocabulary_272",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_relationships",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "友人の手紙",
+      "en": "Friend's letter",
+      "zh": "朋友的信",
+      "zh_TW": "朋友的信",
+      "ko": "친구의 편지",
+      "es": "Carta del amigo",
+      "fr": "Lettre de l'ami",
+      "de": "Brief des Freundes",
+      "vi": "Thư của bạn",
+      "id": "Surat teman"
+    }
+  },
+  {
+    "id": "vocabulary_273",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_relationships",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "同僚の机",
+      "en": "Colleague's desk",
+      "zh": "同事的桌子",
+      "zh_TW": "同事的桌子",
+      "ko": "동료의 책상",
+      "es": "Escritorio del colega",
+      "fr": "Bureau du collègue",
+      "de": "Schreibtisch des Kollegen",
+      "vi": "Bàn của đồng nghiệp",
+      "id": "Meja rekan kerja"
+    }
+  },
+  {
+    "id": "vocabulary_274",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_relationships",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "上司の話",
+      "en": "Boss's talk",
+      "zh": "上司的话",
+      "zh_TW": "上司的話",
+      "ko": "상사의 이야기",
+      "es": "Charla del jefe",
+      "fr": "Discours du patron",
+      "de": "Rede des Chefs",
+      "vi": "Lời nói của sếp",
+      "id": "Pembicaraan atasan"
+    }
+  },
+  {
+    "id": "vocabulary_275",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_relationships",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "部下の報告",
+      "en": "Subordinate's report",
+      "zh": "下属的报告",
+      "zh_TW": "下屬的報告",
+      "ko": "부하의 보고",
+      "es": "Informe del subordinado",
+      "fr": "Rapport du subordonné",
+      "de": "Bericht des Untergebenen",
+      "vi": "Báo cáo của cấp dưới",
+      "id": "Laporan bawahan"
+    }
+  },
+  {
+    "id": "vocabulary_276",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_relationships",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "恋人の手紙",
+      "en": "Lover's letter",
+      "zh": "恋人的信",
+      "zh_TW": "戀人的信",
+      "ko": "연인의 편지",
+      "es": "Carta del amante",
+      "fr": "Lettre de l'amant",
+      "de": "Brief des Geliebten",
+      "vi": "Thư của người yêu",
+      "id": "Surat kekasih"
+    }
+  },
+  {
+    "id": "vocabulary_277",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_relationships",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "婚約者の指輪",
+      "en": "Fiancé's ring",
+      "zh": "未婚夫的戒指",
+      "zh_TW": "未婚夫的戒指",
+      "ko": "약혼자의 반지",
+      "es": "Anillo del prometido",
+      "fr": "Bague du fiancé",
+      "de": "Ring des Verlobten",
+      "vi": "Nhẫn của hôn phu",
+      "id": "Cincin tunangan"
+    }
+  },
+  {
+    "id": "vocabulary_278",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_relationships",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "夫婦の旅行",
+      "en": "Couple's trip",
+      "zh": "夫妻的旅行",
+      "zh_TW": "夫妻的旅行",
+      "ko": "부부 여행",
+      "es": "Viaje de pareja",
+      "fr": "Voyage du couple",
+      "de": "Reise des Paares",
+      "vi": "Chuyến đi của vợ chồng",
+      "id": "Perjalanan pasangan"
+    }
+  },
+  {
+    "id": "vocabulary_279",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_relationships",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "パートナーの仕事",
+      "en": "Partner's job",
+      "zh": "伴侣的工作",
+      "zh_TW": "伴侶的工作",
+      "ko": "파트너의 일",
+      "es": "Trabajo de la pareja",
+      "fr": "Travail du partenaire",
+      "de": "Arbeit des Partners",
+      "vi": "Công việc của đối tác",
+      "id": "Pekerjaan pasangan"
+    }
+  },
+  {
+    "id": "vocabulary_280",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_nature",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "山の景色",
+      "en": "Mountain view",
+      "zh": "山景",
+      "zh_TW": "山景",
+      "ko": "산 경치",
+      "es": "Vista de la montaña",
+      "fr": "Vue de montagne",
+      "de": "Blick auf die Berge",
+      "vi": "Quang cảnh núi",
+      "id": "Pemandangan gunung"
+    }
+  },
+  {
+    "id": "vocabulary_281",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_nature",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "川の流れ",
+      "en": "River flow",
+      "zh": "河流的流动",
+      "zh_TW": "河流的流動",
+      "ko": "강의 흐름",
+      "es": "Fluir del río",
+      "fr": "Courant de la rivière",
+      "de": "Flussströmung",
+      "vi": "Dòng chảy của sông",
+      "id": "Aliran sungai"
+    }
+  },
+  {
+    "id": "vocabulary_282",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_nature",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "海の波",
+      "en": "Sea waves",
+      "zh": "海浪",
+      "zh_TW": "海浪",
+      "ko": "바다의 파도",
+      "es": "Olas del mar",
+      "fr": "Vagues de la mer",
+      "de": "Meereswellen",
+      "vi": "Sóng biển",
+      "id": "Ombak laut"
+    }
+  },
+  {
+    "id": "vocabulary_283",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_nature",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "湖のほとり",
+      "en": "Lake shore",
+      "zh": "湖畔",
+      "zh_TW": "湖畔",
+      "ko": "호숫가",
+      "es": "Orilla del lago",
+      "fr": "Bord du lac",
+      "de": "Seeufer",
+      "vi": "Bờ hồ",
+      "id": "Tepi danau"
+    }
+  },
+  {
+    "id": "vocabulary_284",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_nature",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "森の中",
+      "en": "In the forest",
+      "zh": "森林中",
+      "zh_TW": "森林中",
+      "ko": "숲속",
+      "es": "En el bosque",
+      "fr": "Dans la forêt",
+      "de": "Im Wald",
+      "vi": "Trong rừng",
+      "id": "Di dalam hutan"
+    }
+  },
+  {
+    "id": "vocabulary_285",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_nature",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "林の道",
+      "en": "Forest path",
+      "zh": "林间小道",
+      "zh_TW": "林間小道",
+      "ko": "숲길",
+      "es": "Sendero del bosque",
+      "fr": "Sentier forestier",
+      "de": "Waldweg",
+      "vi": "Đường rừng",
+      "id": "Jalan hutan"
+    }
+  },
+  {
+    "id": "vocabulary_286",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_nature",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "空の色",
+      "en": "Sky color",
+      "zh": "天空的颜色",
+      "zh_TW": "天空的顏色",
+      "ko": "하늘색",
+      "es": "Color del cielo",
+      "fr": "Couleur du ciel",
+      "de": "Himmelsfarbe",
+      "vi": "Màu của bầu trời",
+      "id": "Warna langit"
+    }
+  },
+  {
+    "id": "vocabulary_287",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_nature",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "雲の形",
+      "en": "Cloud shape",
+      "zh": "云的形状",
+      "zh_TW": "雲的形狀",
+      "ko": "구름 모양",
+      "es": "Forma de la nube",
+      "fr": "Forme des nuages",
+      "de": "Wolkenform",
+      "vi": "Hình dạng của mây",
+      "id": "Bentuk awan"
+    }
+  },
+  {
+    "id": "vocabulary_288",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_nature",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "雨の音",
+      "en": "Sound of rain",
+      "zh": "雨声",
+      "zh_TW": "雨聲",
+      "ko": "빗소리",
+      "es": "Sonido de la lluvia",
+      "fr": "Son de la pluie",
+      "de": "Regengeräusch",
+      "vi": "Tiếng mưa",
+      "id": "Suara hujan"
+    }
+  },
+  {
+    "id": "vocabulary_289",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_nature",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "雪の結晶",
+      "en": "Snowflake",
+      "zh": "雪花",
+      "zh_TW": "雪花",
+      "ko": "눈송이",
+      "es": "Copo de nieve",
+      "fr": "Flocon de neige",
+      "de": "Schneeflocke",
+      "vi": "Bông tuyết",
+      "id": "Kepingan salju"
+    }
+  },
+  {
+    "id": "vocabulary_290",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_nature",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "風の強さ",
+      "en": "Wind strength",
+      "zh": "风的强度",
+      "zh_TW": "風的強度",
+      "ko": "바람의 세기",
+      "es": "Fuerza del viento",
+      "fr": "Force du vent",
+      "de": "Windstärke",
+      "vi": "Cường độ gió",
+      "id": "Kekuatan angin"
+    }
+  },
+  {
+    "id": "vocabulary_291",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_nature",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "太陽の光",
+      "en": "Sunlight",
+      "zh": "阳光",
+      "zh_TW": "陽光",
+      "ko": "햇빛",
+      "es": "Luz del sol",
+      "fr": "Lumière du soleil",
+      "de": "Sonnenlicht",
+      "vi": "Ánh sáng mặt trời",
+      "id": "Cahaya matahari"
+    }
+  },
+  {
+    "id": "vocabulary_292",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_nature",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "月の明かり",
+      "en": "Moonlight",
+      "zh": "月光",
+      "zh_TW": "月光",
+      "ko": "달빛",
+      "es": "Luz de la luna",
+      "fr": "Clair de lune",
+      "de": "Mondlicht",
+      "vi": "Ánh trăng",
+      "id": "Sinar bulan"
+    }
+  },
+  {
+    "id": "vocabulary_293",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_nature",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "星の輝き",
+      "en": "Star's shine",
+      "zh": "星光",
+      "zh_TW": "星光",
+      "ko": "별빛",
+      "es": "Brillo de las estrellas",
+      "fr": "Lueur des étoiles",
+      "de": "Sternenglanz",
+      "vi": "Ánh sáng của sao",
+      "id": "Cahaya bintang"
+    }
+  },
+  {
+    "id": "vocabulary_294",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_nature",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "花の香り",
+      "en": "Flower's fragrance",
+      "zh": "花香",
+      "zh_TW": "花香",
+      "ko": "꽃향기",
+      "es": "Fragancia de las flores",
+      "fr": "Parfum des fleurs",
+      "de": "Blumenduft",
+      "vi": "Hương hoa",
+      "id": "Aroma bunga"
+    }
+  },
+  {
+    "id": "vocabulary_295",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_nature",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "草の匂い",
+      "en": "Smell of grass",
+      "zh": "草香",
+      "zh_TW": "草香",
+      "ko": "풀 냄새",
+      "es": "Olor de la hierba",
+      "fr": "Odeur de l'herbe",
+      "de": "Geruch von Gras",
+      "vi": "Mùi cỏ",
+      "id": "Aroma rumput"
+    }
+  },
+  {
+    "id": "vocabulary_296",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_nature",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "砂の色",
+      "en": "Sand color",
+      "zh": "沙子的颜色",
+      "zh_TW": "沙子的顏色",
+      "ko": "모래색",
+      "es": "Color de la arena",
+      "fr": "Couleur du sable",
+      "de": "Sandfarbe",
+      "vi": "Màu cát",
+      "id": "Warna pasir"
+    }
+  },
+  {
+    "id": "vocabulary_297",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_nature",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "岩の形",
+      "en": "Rock shape",
+      "zh": "岩石的形状",
+      "zh_TW": "岩石的形狀",
+      "ko": "바위 모양",
+      "es": "Forma de la roca",
+      "fr": "Forme de la roche",
+      "de": "Felsform",
+      "vi": "Hình dạng đá",
+      "id": "Bentuk batu"
+    }
+  },
+  {
+    "id": "vocabulary_298",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_nature",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "滝の音",
+      "en": "Sound of waterfall",
+      "zh": "瀑布的声音",
+      "zh_TW": "瀑布的聲音",
+      "ko": "폭포 소리",
+      "es": "Sonido de la cascada",
+      "fr": "Son de la cascade",
+      "de": "Wasserfallgeräusch",
+      "vi": "Tiếng thác nước",
+      "id": "Suara air terjun"
+    }
+  },
+  {
+    "id": "vocabulary_299",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_nature",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "島の海岸",
+      "en": "Island coast",
+      "zh": "岛的海岸",
+      "zh_TW": "島的海岸",
+      "ko": "섬 해안",
+      "es": "Costa de la isla",
+      "fr": "Côte de l'île",
+      "de": "Inselküste",
+      "vi": "Bờ biển đảo",
+      "id": "Pantai pulau"
+    }
+  },
+  {
+    "id": "vocabulary_300",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_animals",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "犬の散歩",
+      "en": "Dog walk",
+      "zh": "遛狗",
+      "zh_TW": "遛狗",
+      "ko": "개 산책",
+      "es": "Paseo del perro",
+      "fr": "Promenade du chien",
+      "de": "Hundeausflug",
+      "vi": "Dắt chó đi dạo",
+      "id": "Jalan-jalan anjing"
+    }
+  },
+  {
+    "id": "vocabulary_301",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_animals",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "猫の鳴き声",
+      "en": "Cat meow",
+      "zh": "猫叫声",
+      "zh_TW": "貓叫聲",
+      "ko": "고양이 울음소리",
+      "es": "Maullido del gato",
+      "fr": "Miaulement du chat",
+      "de": "Katzengemiau",
+      "vi": "Tiếng mèo kêu",
+      "id": "Suara kucing mengeong"
+    }
+  },
+  {
+    "id": "vocabulary_302",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_animals",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "鳥の羽",
+      "en": "Bird feather",
+      "zh": "鸟羽毛",
+      "zh_TW": "鳥羽毛",
+      "ko": "새 깃털",
+      "es": "Pluma de pájaro",
+      "fr": "Plume d'oiseau",
+      "de": "Vogelfeder",
+      "vi": "Lông chim",
+      "id": "Bulu burung"
+    }
+  },
+  {
+    "id": "vocabulary_303",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_animals",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "魚の群れ",
+      "en": "School of fish",
+      "zh": "鱼群",
+      "zh_TW": "魚群",
+      "ko": "물고기 떼",
+      "es": "Banco de peces",
+      "fr": "Banc de poissons",
+      "de": "Fischschwarm",
+      "vi": "Đàn cá",
+      "id": "Sekolah ikan"
+    }
+  },
+  {
+    "id": "vocabulary_304",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_animals",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "馬の蹄",
+      "en": "Horse hoof",
+      "zh": "马蹄",
+      "zh_TW": "馬蹄",
+      "ko": "말발굽",
+      "es": "Pezuña de caballo",
+      "fr": "Sabot de cheval",
+      "de": "Huf des Pferdes",
+      "vi": "Móng ngựa",
+      "id": "Kuku kuda"
+    }
+  },
+  {
+    "id": "vocabulary_305",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_animals",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "牛の乳",
+      "en": "Cow milk",
+      "zh": "牛奶",
+      "zh_TW": "牛奶",
+      "ko": "소젖",
+      "es": "Leche de vaca",
+      "fr": "Lait de vache",
+      "de": "Kuhmilch",
+      "vi": "Sữa bò",
+      "id": "Susu sapi"
+    }
+  },
+  {
+    "id": "vocabulary_306",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_animals",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "羊の毛",
+      "en": "Sheep wool",
+      "zh": "羊毛",
+      "zh_TW": "羊毛",
+      "ko": "양털",
+      "es": "Lana de oveja",
+      "fr": "Laine de mouton",
+      "de": "Schafwolle",
+      "vi": "Lông cừu",
+      "id": "Wol domba"
+    }
+  },
+  {
+    "id": "vocabulary_307",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_animals",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "豚の鳴き声",
+      "en": "Pig oink",
+      "zh": "猪叫声",
+      "zh_TW": "豬叫聲",
+      "ko": "돼지 울음소리",
+      "es": "Gruñido del cerdo",
+      "fr": "Grogne du cochon",
+      "de": "Schweinegrunzen",
+      "vi": "Tiếng lợn kêu",
+      "id": "Suara babi"
+    }
+  },
+  {
+    "id": "vocabulary_308",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_animals",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "鶏の卵",
+      "en": "Chicken egg",
+      "zh": "鸡蛋",
+      "zh_TW": "雞蛋",
+      "ko": "달걀",
+      "es": "Huevo de gallina",
+      "fr": "Œuf de poule",
+      "de": "Hühnerei",
+      "vi": "Trứng gà",
+      "id": "Telur ayam"
+    }
+  },
+  {
+    "id": "vocabulary_309",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_animals",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "象の鼻",
+      "en": "Elephant trunk",
+      "zh": "象鼻",
+      "zh_TW": "象鼻",
+      "ko": "코끼리 코",
+      "es": "Trompa de elefante",
+      "fr": "Trompe d'éléphant",
+      "de": "Elefantenrüssel",
+      "vi": "Vòi voi",
+      "id": "Belalai gajah"
+    }
+  },
+  {
+    "id": "vocabulary_310",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_animals",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ライオンの群れ",
+      "en": "Pride of lions",
+      "zh": "狮群",
+      "zh_TW": "獅群",
+      "ko": "사자 무리",
+      "es": "Manada de leones",
+      "fr": "Troupe de lions",
+      "de": "Löwenrudel",
+      "vi": "Bầy sư tử",
+      "id": "Kawanan singa"
+    }
+  },
+  {
+    "id": "vocabulary_311",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_animals",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "トラの模様",
+      "en": "Tiger pattern",
+      "zh": "老虎的花纹",
+      "zh_TW": "老虎的花紋",
+      "ko": "호랑이 무늬",
+      "es": "Patrón de tigre",
+      "fr": "Motif de tigre",
+      "de": "Tigermuster",
+      "vi": "Hoa văn hổ",
+      "id": "Pola harimau"
+    }
+  },
+  {
+    "id": "vocabulary_312",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_animals",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "くまの手",
+      "en": "Bear paw",
+      "zh": "熊掌",
+      "zh_TW": "熊掌",
+      "ko": "곰 발",
+      "es": "Pata de oso",
+      "fr": "Patte d'ours",
+      "de": "Bärentatze",
+      "vi": "Chân gấu",
+      "id": "Cakar beruang"
+    }
+  },
+  {
+    "id": "vocabulary_313",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_animals",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "さるの顔",
+      "en": "Monkey face",
+      "zh": "猴脸",
+      "zh_TW": "猴臉",
+      "ko": "원숭이 얼굴",
+      "es": "Cara de mono",
+      "fr": "Visage de singe",
+      "de": "Affengesicht",
+      "vi": "Mặt khỉ",
+      "id": "Wajah monyet"
+    }
+  },
+  {
+    "id": "vocabulary_314",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_animals",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "うさぎの耳",
+      "en": "Rabbit ears",
+      "zh": "兔耳朵",
+      "zh_TW": "兔耳朵",
+      "ko": "토끼 귀",
+      "es": "Orejas de conejo",
+      "fr": "Oreilles de lapin",
+      "de": "Hasenohren",
+      "vi": "Tai thỏ",
+      "id": "Telinga kelinci"
+    }
+  },
+  {
+    "id": "vocabulary_315",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_animals",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ねずみのしっぽ",
+      "en": "Mouse tail",
+      "zh": "老鼠尾巴",
+      "zh_TW": "老鼠尾巴",
+      "ko": "쥐 꼬리",
+      "es": "Cola de ratón",
+      "fr": "Queue de souris",
+      "de": "Mäuseschwanz",
+      "vi": "Đuôi chuột",
+      "id": "Ekor tikus"
+    }
+  },
+  {
+    "id": "vocabulary_316",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_animals",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "きつねの毛",
+      "en": "Fox fur",
+      "zh": "狐狸毛",
+      "zh_TW": "狐狸毛",
+      "ko": "여우 털",
+      "es": "Pelo de zorro",
+      "fr": "Fourrure de renard",
+      "de": "Fuchspelz",
+      "vi": "Lông cáo",
+      "id": "Bulu rubah"
+    }
+  },
+  {
+    "id": "vocabulary_317",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_animals",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "りすの木",
+      "en": "Squirrel's tree",
+      "zh": "松鼠的树",
+      "zh_TW": "松鼠的樹",
+      "ko": "다람쥐 나무",
+      "es": "Árbol de ardilla",
+      "fr": "Arbre de l'écureuil",
+      "de": "Baum des Eichhörnchens",
+      "vi": "Cây của sóc",
+      "id": "Pohon tupai"
+    }
+  },
+  {
+    "id": "vocabulary_318",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_animals",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "かめの甲羅",
+      "en": "Turtle shell",
+      "zh": "乌龟壳",
+      "zh_TW": "烏龜殼",
+      "ko": "거북이 등딱지",
+      "es": "Caparazón de tortuga",
+      "fr": "Carapace de tortue",
+      "de": "Schildkrötenpanzer",
+      "vi": "Mai rùa",
+      "id": "Cangkang kura-kura"
+    }
+  },
+  {
+    "id": "vocabulary_319",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_animals",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "へびの皮",
+      "en": "Snake skin",
+      "zh": "蛇皮",
+      "zh_TW": "蛇皮",
+      "ko": "뱀 가죽",
+      "es": "Piel de serpiente",
+      "fr": "Peau de serpent",
+      "de": "Schlangenhaut",
+      "vi": "Da rắn",
+      "id": "Kulit ular"
+    }
+  },
+  {
+    "id": "vocabulary_320",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_essentials",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "お金の袋",
+      "en": "Money bag",
+      "zh": "钱袋",
+      "zh_TW": "錢袋",
+      "ko": "돈주머니",
+      "es": "Bolsa de dinero",
+      "fr": "Sac d'argent",
+      "de": "Geldbeutel",
+      "vi": "Túi tiền",
+      "id": "Tas uang"
+    }
+  },
+  {
+    "id": "vocabulary_321",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_essentials",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "財布の中",
+      "en": "Inside wallet",
+      "zh": "钱包里",
+      "zh_TW": "錢包裡",
+      "ko": "지갑 안",
+      "es": "Dentro de la cartera",
+      "fr": "Dans le portefeuille",
+      "de": "Im Geldbeutel",
+      "vi": "Trong ví",
+      "id": "Di dalam dompet"
+    }
+  },
+  {
+    "id": "vocabulary_322",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_essentials",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "携帯電話の画面",
+      "en": "Mobile phone screen",
+      "zh": "手机屏幕",
+      "zh_TW": "手機螢幕",
+      "ko": "휴대폰 화면",
+      "es": "Pantalla del teléfono móvil",
+      "fr": "Écran de téléphone portable",
+      "de": "Handybildschirm",
+      "vi": "Màn hình điện thoại",
+      "id": "Layar ponsel"
+    }
+  },
+  {
+    "id": "vocabulary_323",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_essentials",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "鍵の束",
+      "en": "Bunch of keys",
+      "zh": "一串钥匙",
+      "zh_TW": "一串鑰匙",
+      "ko": "열쇠 묶음",
+      "es": "Manojo de llaves",
+      "fr": "Trousseau de clés",
+      "de": "Schlüsselbund",
+      "vi": "Chùm chìa khóa",
+      "id": "Gantungan kunci"
+    }
+  },
+  {
+    "id": "vocabulary_324",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_essentials",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "カバンの中",
+      "en": "Inside bag",
+      "zh": "包里",
+      "zh_TW": "包裡",
+      "ko": "가방 안",
+      "es": "Dentro del bolso",
+      "fr": "Dans le sac",
+      "de": "In der Tasche",
+      "vi": "Trong túi",
+      "id": "Di dalam tas"
+    }
+  },
+  {
+    "id": "vocabulary_325",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_essentials",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "服の色",
+      "en": "Clothing color",
+      "zh": "衣服颜色",
+      "zh_TW": "衣服顏色",
+      "ko": "옷 색깔",
+      "es": "Color de la ropa",
+      "fr": "Couleur des vêtements",
+      "de": "Kleidungsfarbe",
+      "vi": "Màu quần áo",
+      "id": "Warna pakaian"
+    }
+  },
+  {
+    "id": "vocabulary_326",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_essentials",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "靴のサイズ",
+      "en": "Shoe size",
+      "zh": "鞋码",
+      "zh_TW": "鞋碼",
+      "ko": "신발 크기",
+      "es": "Talla de zapato",
+      "fr": "Pointure",
+      "de": "Schuhgröße",
+      "vi": "Cỡ giày",
+      "id": "Ukuran sepatu"
+    }
+  },
+  {
+    "id": "vocabulary_327",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_essentials",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "眼鏡の枠",
+      "en": "Glasses frame",
+      "zh": "眼镜框",
+      "zh_TW": "眼鏡框",
+      "ko": "안경테",
+      "es": "Montura de gafas",
+      "fr": "Monture de lunettes",
+      "de": "Brillengestell",
+      "vi": "Gọng kính",
+      "id": "Bingkai kacamata"
+    }
+  },
+  {
+    "id": "vocabulary_328",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_essentials",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "時計の針",
+      "en": "Clock hand",
+      "zh": "钟表指针",
+      "zh_TW": "鐘錶指針",
+      "ko": "시계 바늘",
+      "es": "Manecilla del reloj",
+      "fr": "Aiguille d'horloge",
+      "de": "Uhrzeiger",
+      "vi": "Kim đồng hồ",
+      "id": "Jarum jam"
+    }
+  },
+  {
+    "id": "vocabulary_329",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_essentials",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "地図の場所",
+      "en": "Map location",
+      "zh": "地图位置",
+      "zh_TW": "地圖位置",
+      "ko": "지도 위치",
+      "es": "Ubicación en el mapa",
+      "fr": "Emplacement sur la carte",
+      "de": "Kartenstandort",
+      "vi": "Vị trí bản đồ",
+      "id": "Lokasi peta"
+    }
+  },
+  {
+    "id": "vocabulary_330",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_essentials",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "チケットの番号",
+      "en": "Ticket number",
+      "zh": "票号",
+      "zh_TW": "票號",
+      "ko": "티켓 번호",
+      "es": "Número de boleto",
+      "fr": "Numéro de billet",
+      "de": "Ticketnummer",
+      "vi": "Số vé",
+      "id": "Nomor tiket"
+    }
+  },
+  {
+    "id": "vocabulary_331",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_essentials",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "傘の色",
+      "en": "Umbrella color",
+      "zh": "雨伞颜色",
+      "zh_TW": "雨傘顏色",
+      "ko": "우산 색",
+      "es": "Color del paraguas",
+      "fr": "Couleur du parapluie",
+      "de": "Schirmfarbe",
+      "vi": "Màu ô",
+      "id": "Warna payung"
+    }
+  },
+  {
+    "id": "vocabulary_332",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_essentials",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ノートの表紙",
+      "en": "Notebook cover",
+      "zh": "笔记本封面",
+      "zh_TW": "筆記本封面",
+      "ko": "공책 표지",
+      "es": "Portada de cuaderno",
+      "fr": "Couverture de cahier",
+      "de": "Heftumschlag",
+      "vi": "Bìa vở",
+      "id": "Sampul buku catatan"
+    }
+  },
+  {
+    "id": "vocabulary_333",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_essentials",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ペンの色",
+      "en": "Pen color",
+      "zh": "笔的颜色",
+      "zh_TW": "筆的顏色",
+      "ko": "펜 색깔",
+      "es": "Color del bolígrafo",
+      "fr": "Couleur du stylo",
+      "de": "Stiftfarbe",
+      "vi": "Màu bút",
+      "id": "Warna pena"
+    }
+  },
+  {
+    "id": "vocabulary_334",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_essentials",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "充電器のコード",
+      "en": "Charger cable",
+      "zh": "充电器线",
+      "zh_TW": "充電器線",
+      "ko": "충전기 코드",
+      "es": "Cable del cargador",
+      "fr": "Câble du chargeur",
+      "de": "Ladekabel",
+      "vi": "Dây sạc",
+      "id": "Kabel pengisi daya"
+    }
+  },
+  {
+    "id": "vocabulary_335",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_essentials",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "イヤホンの線",
+      "en": "Earphone cord",
+      "zh": "耳机线",
+      "zh_TW": "耳機線",
+      "ko": "이어폰 줄",
+      "es": "Cable de auriculares",
+      "fr": "Cordon d'écouteurs",
+      "de": "Kopfhörerkabel",
+      "vi": "Dây tai nghe",
+      "id": "Kabel earphone"
+    }
+  },
+  {
+    "id": "vocabulary_336",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_essentials",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "カメラのレンズ",
+      "en": "Camera lens",
+      "zh": "相机镜头",
+      "zh_TW": "相機鏡頭",
+      "ko": "카메라 렌즈",
+      "es": "Lente de cámara",
+      "fr": "Objectif de caméra",
+      "de": "Kameraobjektiv",
+      "vi": "Ống kính máy ảnh",
+      "id": "Lensa kamera"
+    }
+  },
+  {
+    "id": "vocabulary_337",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_essentials",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "パスポートの写真",
+      "en": "Passport photo",
+      "zh": "护照照片",
+      "zh_TW": "護照照片",
+      "ko": "여권 사진",
+      "es": "Foto del pasaporte",
+      "fr": "Photo du passeport",
+      "de": "Reisepassfoto",
+      "vi": "Ảnh hộ chiếu",
+      "id": "Foto paspor"
+    }
+  },
+  {
+    "id": "vocabulary_338",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_essentials",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "タオルの端",
+      "en": "Towel edge",
+      "zh": "毛巾边缘",
+      "zh_TW": "毛巾邊緣",
+      "ko": "수건 끝",
+      "es": "Borde de la toalla",
+      "fr": "Bord de la serviette",
+      "de": "Handtuchkante",
+      "vi": "Cạnh khăn",
+      "id": "Tepi handuk"
+    }
+  },
+  {
+    "id": "vocabulary_339",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_essentials",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "マスクの紐",
+      "en": "Mask strap",
+      "zh": "口罩带",
+      "zh_TW": "口罩帶",
+      "ko": "마스크 끈",
+      "es": "Cinta de la mascarilla",
+      "fr": "Lanière du masque",
+      "de": "Maskenband",
+      "vi": "Dây khẩu trang",
+      "id": "Tali masker"
+    }
+  },
+  {
+    "id": "vocabulary_340",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_emergencies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "警察の車",
+      "en": "Police car",
+      "zh": "警车",
+      "zh_TW": "警車",
+      "ko": "경찰차",
+      "es": "Coche de policía",
+      "fr": "Voiture de police",
+      "de": "Polizeiauto",
+      "vi": "Xe cảnh sát",
+      "id": "Mobil polisi"
+    }
+  },
+  {
+    "id": "vocabulary_341",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_emergencies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "救急車のサイレン",
+      "en": "Ambulance siren",
+      "zh": "救护车警笛",
+      "zh_TW": "救護車警笛",
+      "ko": "구급차 사이렌",
+      "es": "Sirena de ambulancia",
+      "fr": "Sirène d'ambulance",
+      "de": "Krankenwagensirene",
+      "vi": "Còi xe cứu thương",
+      "id": "Sirene ambulans"
+    }
+  },
+  {
+    "id": "vocabulary_342",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_emergencies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "消防車の梯子",
+      "en": "Fire truck ladder",
+      "zh": "消防车梯子",
+      "zh_TW": "消防車梯子",
+      "ko": "소방차 사다리",
+      "es": "Escalera de camión de bomberos",
+      "fr": "Échelle de camion de pompiers",
+      "de": "Feuerwehrleiter",
+      "vi": "Thang xe cứu hỏa",
+      "id": "Tangga mobil pemadam kebakaran"
+    }
+  },
+  {
+    "id": "vocabulary_343",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_emergencies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "助けてください",
+      "en": "Please help me",
+      "zh": "请帮帮我",
+      "zh_TW": "請幫幫我",
+      "ko": "도와주세요",
+      "es": "Por favor, ayúdeme",
+      "fr": "Aidez-moi, s'il vous plaît",
+      "de": "Bitte helfen Sie mir",
+      "vi": "Xin hãy giúp tôi",
+      "id": "Tolong bantu saya"
+    }
+  },
+  {
+    "id": "vocabulary_344",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_emergencies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "危ない場所",
+      "en": "Dangerous place",
+      "zh": "危险的地方",
+      "zh_TW": "危險的地方",
+      "ko": "위험한 장소",
+      "es": "Lugar peligroso",
+      "fr": "Endroit dangereux",
+      "de": "Gefährlicher Ort",
+      "vi": "Nơi nguy hiểm",
+      "id": "Tempat berbahaya"
+    }
+  },
+  {
+    "id": "vocabulary_345",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_emergencies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "避難の道",
+      "en": "Evacuation route",
+      "zh": "疏散路线",
+      "zh_TW": "疏散路線",
+      "ko": "대피 경로",
+      "es": "Ruta de evacuación",
+      "fr": "Itinéraire d'évacuation",
+      "de": "Evakuierungsweg",
+      "vi": "Đường sơ tán",
+      "id": "Jalur evakuasi"
+    }
+  },
+  {
+    "id": "vocabulary_346",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_emergencies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "事故の現場",
+      "en": "Accident scene",
+      "zh": "事故现场",
+      "zh_TW": "事故現場",
+      "ko": "사고 현장",
+      "es": "Lugar del accidente",
+      "fr": "Lieu de l'accident",
+      "de": "Unfallort",
+      "vi": "Hiện trường tai nạn",
+      "id": "TKP kecelakaan"
+    }
+  },
+  {
+    "id": "vocabulary_347",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_emergencies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "火事の煙",
+      "en": "Fire smoke",
+      "zh": "火灾的烟",
+      "zh_TW": "火災的煙",
+      "ko": "화재 연기",
+      "es": "Humo del incendio",
+      "fr": "Fumée d'incendie",
+      "de": "Brandrauch",
+      "vi": "Khói đám cháy",
+      "id": "Asap kebakaran"
+    }
+  },
+  {
+    "id": "vocabulary_348",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_emergencies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "地震の揺れ",
+      "en": "Earthquake shaking",
+      "zh": "地震的摇晃",
+      "zh_TW": "地震的搖晃",
+      "ko": "지진 흔들림",
+      "es": "Sacudida del terremoto",
+      "fr": "Secousse du tremblement de terre",
+      "de": "Erdbebenerschütterung",
+      "vi": "Sự rung lắc của động đất",
+      "id": "Guncangan gempa bumi"
+    }
+  },
+  {
+    "id": "vocabulary_349",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_emergencies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "津波の警報",
+      "en": "Tsunami warning",
+      "zh": "海啸警报",
+      "zh_TW": "海嘯警報",
+      "ko": "쓰나미 경보",
+      "es": "Alerta de tsunami",
+      "fr": "Alerte au tsunami",
+      "de": "Tsunamiwarnung",
+      "vi": "Cảnh báo sóng thần",
+      "id": "Peringatan tsunami"
+    }
+  },
+  {
+    "id": "vocabulary_350",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_emergencies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "台風の風",
+      "en": "Typhoon wind",
+      "zh": "台风的风",
+      "zh_TW": "颱風的風",
+      "ko": "태풍 바람",
+      "es": "Viento de tifón",
+      "fr": "Vent de typhon",
+      "de": "Taifunwind",
+      "vi": "Gió bão",
+      "id": "Angin topan"
+    }
+  },
+  {
+    "id": "vocabulary_351",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_emergencies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "洪水の被害",
+      "en": "Flood damage",
+      "zh": "洪水损害",
+      "zh_TW": "洪水損害",
+      "ko": "홍수 피해",
+      "es": "Daños por inundación",
+      "fr": "Dégâts d'inondation",
+      "de": "Hochwasserschäden",
+      "vi": "Thiệt hại do lũ lụt",
+      "id": "Kerusakan banjir"
+    }
+  },
+  {
+    "id": "vocabulary_352",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_emergencies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "怪我の手当",
+      "en": "First aid for injury",
+      "zh": "受伤的急救",
+      "zh_TW": "受傷的急救",
+      "ko": "부상 응급처치",
+      "es": "Primeros auxilios para lesiones",
+      "fr": "Premiers soins pour blessure",
+      "de": "Erste Hilfe bei Verletzung",
+      "vi": "Sơ cứu chấn thương",
+      "id": "Pertolongan pertama untuk cedera"
+    }
+  },
+  {
+    "id": "vocabulary_353",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_emergencies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "病気の症状",
+      "en": "Symptoms of illness",
+      "zh": "疾病症状",
+      "zh_TW": "疾病症狀",
+      "ko": "질병 증상",
+      "es": "Síntomas de la enfermedad",
+      "fr": "Symptômes de la maladie",
+      "de": "Krankheitssymptome",
+      "vi": "Triệu chứng bệnh",
+      "id": "Gejala penyakit"
+    }
+  },
+  {
+    "id": "vocabulary_354",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_emergencies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "発熱の兆候",
+      "en": "Signs of fever",
+      "zh": "发烧的迹象",
+      "zh_TW": "發燒的跡象",
+      "ko": "발열 징후",
+      "es": "Signos de fiebre",
+      "fr": "Signes de fièvre",
+      "de": "Anzeichen von Fieber",
+      "vi": "Dấu hiệu sốt",
+      "id": "Tanda-tanda demam"
+    }
+  },
+  {
+    "id": "vocabulary_355",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_emergencies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "咳の音",
+      "en": "Cough sound",
+      "zh": "咳嗽声",
+      "zh_TW": "咳嗽聲",
+      "ko": "기침 소리",
+      "es": "Sonido de tos",
+      "fr": "Son de toux",
+      "de": "Hustengeräusch",
+      "vi": "Tiếng ho",
+      "id": "Suara batuk"
+    }
+  },
+  {
+    "id": "vocabulary_356",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_emergencies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "救急箱の中",
+      "en": "Inside the first aid kit",
+      "zh": "急救箱里面",
+      "zh_TW": "急救箱裡面",
+      "ko": "구급상자 안",
+      "es": "Dentro del botiquín",
+      "fr": "À l'intérieur de la trousse de secours",
+      "de": "Im Erste-Hilfe-Kasten",
+      "vi": "Bên trong hộp sơ cứu",
+      "id": "Di dalam kotak P3K"
+    }
+  },
+  {
+    "id": "vocabulary_357",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_emergencies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "薬の袋",
+      "en": "Medicine bag",
+      "zh": "药袋",
+      "zh_TW": "藥袋",
+      "ko": "약 봉투",
+      "es": "Bolsa de medicinas",
+      "fr": "Sac de médicaments",
+      "de": "Medikamententasche",
+      "vi": "Túi thuốc",
+      "id": "Kantong obat"
+    }
+  },
+  {
+    "id": "vocabulary_358",
+    "scene": "vocabulary",
+    "subScene": "vocabulary_emergencies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "非常口の標識",
+      "en": "Emergency exit sign",
+      "zh": "紧急出口标志",
+      "zh_TW": "緊急出口標誌",
+      "ko": "비상구 표지판",
+      "es": "Señal de salida de emergencia",
+      "fr": "Panneau de sortie de secours",
+      "de": "Notausgangsschild",
+      "vi": "Biển báo lối thoát hiểm",
+      "id": "Tanda pintu darurat"
+    }
+  }
+]

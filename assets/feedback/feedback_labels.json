@@ -1,0 +1,17 @@
+{
+  "improvement": {
+    "ja": "判定",
+    "en": "Assessment",
+    "zh": "判定"
+  },
+  "modelAnswer": {
+    "ja": "模範解答",
+    "en": "Model Answer",
+    "zh": "参考答案"
+  },
+  "variation": {
+    "ja": "言い換え例",
+    "en": "Alternative Expression",
+    "zh": "替代表達"
+  }
+}

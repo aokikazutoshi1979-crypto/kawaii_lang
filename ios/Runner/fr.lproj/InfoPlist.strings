@@ -1,0 +1,4 @@
+"CFBundleDisplayName" = "Kawaii Lang";
+"NSMicrophoneUsageDescription" = "Nous utilisons le micro pour l'entraînement de prononciation. Les enregistrements restent sur votre appareil.";
+"NSSpeechRecognitionUsageDescription" = "La reconnaissance vocale convertit votre voix en texte pour la pratique. L'IA fournit des retours.";
+

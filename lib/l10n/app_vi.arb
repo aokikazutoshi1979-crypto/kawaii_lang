@@ -1,0 +1,241 @@
+{
+  "@@locale": "vi",
+  "categoryTitle": "Chọn danh mục",
+  "targetLanguage": "Ngôn ngữ muốn học",
+  "level": "Cấp độ",
+  "scene": "Bối cảnh học tập",
+  "start": "Bắt đầu",
+  "selectPrompt": "Vui lòng chọn tất cả các mục.",
+  "langJapanese": "Tiếng Nhật",
+  "langEnglish": "Tiếng Anh",
+  "langChineseSimplified": "Tiếng Trung (giản thể)",
+  "langChineseTraditional": "Đài Loan",
+  "langKorean": "Tiếng Hàn",
+  "langSpanish": "Tiếng Tây Ban Nha",
+  "langFrench": "Tiếng Pháp",
+  "langGerman": "Tiếng Đức",
+  "langVietnamese": "Tiếng Việt",
+  "langIndonesian": "Tiếng Indonesia",
+  "languageJapanese": "Tiếng Nhật",
+  "languageEnglish": "Tiếng Anh",
+  "languageChineseSimplified": "Tiếng Trung (giản thể)",
+  "languageChineseTraditional": "Đài Loan",
+  "languageKorean": "Tiếng Hàn",
+  "languageSpanish": "Tiếng Tây Ban Nha",
+  "languageFrench": "Tiếng Pháp",
+  "languageGerman": "Tiếng Đức",
+  "languageVietnamese": "Tiếng Việt",
+  "languageIndonesian": "Tiếng Indonesia",
+  "levelBeginner": "Sơ cấp",
+  "levelIntermediate": "Trung cấp",
+  "levelAdvanced": "Cao cấp",
+  "sceneTravel": "Du lịch",
+  "sceneGreeting": "Chào hỏi",
+  "sceneDating": "Hẹn hò",
+  "sceneRestaurant": "Nhà hàng",
+  "sceneShopping": "Mua sắm",
+  "sceneBusiness": "Kinh doanh",
+  "selectQuestion": "Vui lòng chọn một câu hỏi.",
+  "translatePrompt": "Hãy thử dịch!",
+  "termsOfService": "Điều khoản dịch vụ",
+  "privacyPolicy": "Chính sách bảo mật",
+  "termsContent": "Trước khi sử dụng ứng dụng này, vui lòng đọc các điều khoản dịch vụ sau. Bằng cách sử dụng ứng dụng này, bạn đồng ý với tất cả các điều khoản và điều kiện.",
+  "privacyContent": "Ứng dụng này tôn trọng thông tin cá nhân của người dùng. Thông tin thu thập được chỉ được sử dụng để hỗ trợ học tập và cải thiện ứng dụng。",
+  "termsOfServiceContent": "Ứng dụng này được cung cấp nhằm hỗ trợ việc học ngôn ngữ。\n\n【Đối tượng sử dụng】\nỨng dụng dành cho mọi lứa tuổi. Người dưới 13 tuổi phải có sự đồng ý của cha mẹ hoặc người giám hộ để sử dụng。\n\n【Miễn trừ trách nhiệm】\nNhà vận hành không chịu trách nhiệm về bất kỳ thiệt hại hay bất lợi nào phát sinh từ việc sử dụng ứng dụng。\n\n【Về các tính năng trả phí trong tương lai】\nHiện tại miễn phí, nhưng trong tương lai một số tính năng có thể yêu cầu trả phí. Chúng tôi sẽ thông báo trước về các tính năng trả phí。\n\n【Chấm dứt sử dụng】\nNếu người dùng vi phạm điều khoản này, nhà vận hành có quyền giới hạn hoặc ngưng sử dụng mà không cần thông báo trước。",
+  "privacyPolicyContent": "Ứng dụng này tôn trọng quyền riêng tư của người dùng và được vận hành theo chính sách sau：\n\n【Thông tin thu thập】\nCó thể thu thập thông tin không nhận dạng như cài đặt ngôn ngữ và lịch sử sử dụng ứng dụng。\n\n【Mục đích sử dụng】\nThông tin được sử dụng để nâng cao chất lượng và cải thiện tính năng của ứng dụng. Không chia sẻ với bên thứ ba khi chưa có sự đồng ý。\n\n【Dịch vụ bên ngoài】\nKhi thêm tính năng trả phí trong các bản cập nhật tương lai, có thể sử dụng dịch vụ thanh toán bên ngoài。\n\n【Quản lý thông tin】\nThông tin thu thập được sẽ được quản lý phù hợp và lưu trữ an toàn。",
+  "errorTooLong": "Thông điệp quá dài. Vui lòng nhập tối đa khoảng 100 ký tự。",
+  "errorRateLimit": "Quá nhiều yêu cầu. Vui lòng thử lại sau (tối đa 5 lần/phút)。",
+  "errorNoMessage": "Chưa nhập nội dung thông điệp。",
+  "errorServerError": "Đã xảy ra lỗi máy chủ. Vui lòng thử lại。",
+  "keyboardGuideButton": "Nếu nhấn 🌐 mà không hiện bàn phím ngôn ngữ mong muốn, bấm vào đây",
+  "keyboardGuideIos": "Nếu trên iOS không hiện bàn phím ngôn ngữ mong muốn: vào Cài đặt > Cài đặt chung > Bàn phím > Thêm bàn phím mới và chọn ngôn ngữ。",
+  "keyboardGuideAndroid": "Nếu trên Android không hiện bàn phím ngôn ngữ mong muốn: vào Cài đặt > Hệ thống > Ngôn ngữ & nhập liệu > Bàn phím > Thêm bàn phím và chọn ngôn ngữ。",
+  "keyboardGuideBody": "Nếu điện thoại của bạn chưa cài bàn phím ngôn ngữ mong muốn, sẽ không thể nhập trên màn hình chat. Thêm bàn phím theo các bước sau：\n\niOS：\nCài đặt > Cài đặt chung > Bàn phím > Thêm bàn phím mới\n\nAndroid：\nCài đặt > Ngôn ngữ & nhập liệu > Bàn phím > Thêm bàn phím",
+  "keyboardGuideTitle": "Hướng dẫn thêm bàn phím",
+  "ok": "OK",
+  "correct": "Chính xác！",
+  "incorrect": "Cần sửa đổi！",
+  "answerMeaningPrefix": "Ý nghĩa câu trả lời của bạn: \"{translation}\"",
+  "answerTranslationPrefix": "Ví dụ chỉnh sửa",
+  "invalidMeaning": "\"{userAnswer}\": không có nghĩa khi dùng làm ngôn ngữ học。",
+  "@invalidMeaning": {
+    "description": "ユーザーの回答が日本語として意味不明だったときのメッセージ",
+    "placeholders": {
+      "userAnswer": {}
+    }
+  },
+  "errorBrokenGpt": "Xin lỗi, đã xảy ra lỗi hệ thống. Vui lòng thử lại.",
+  "@errorBrokenGpt": {
+    "description": "GPTの応答が壊れていたときに表示するメッセージ",
+    "placeholders": {}
+  },
+  "grammarCorrect": "{userAnswer}: đúng ngữ pháp.",
+  "grammarIncorrect": "{userAnswer}: sai ngữ pháp.",
+  "@grammarCorrect": {
+    "description": "文法的に正しいときの応答",
+    "placeholders": {
+      "userAnswer": {}
+    }
+  },
+  "@grammarIncorrect": {
+    "description": "文法的に誤っているときの応答",
+    "placeholders": {
+      "userAnswer": {}
+    }
+  },
+  "errorSessionMismatch": "Bạn đã đăng nhập từ thiết bị khác. Vui lòng đăng nhập lại.",
+  "errorPunctuationFailed": "⚠️ Không thể lấy câu có dấu câu.",
+  "sceneTrial": "Xem trước miễn phí",
+  "lockedMessage": "Có thể sử dụng khi đăng ký gói.",
+  "resetPassword": "Đặt lại mật khẩu",
+  "enterEmailForReset": "Vui lòng nhập địa chỉ email để đặt lại mật khẩu.",
+  "sendResetEmail": "Gửi email đặt lại",
+  "passwordResetSent": "Đã gửi email đặt lại mật khẩu.",
+  "passwordResetError": "Gửi email đặt lại mật khẩu thất bại.",
+  "settingsTitle": "Cài đặt",
+  "welcomeUser": "Chào mừng, {name}!",
+  "registeredDate": "Ngày đăng ký: {date}",
+  "userFetchFailed": "Không thể lấy thông tin người dùng (lỗi: {error}).",
+  "@userFetchFailed": {
+    "description": "ユーザー取得エラー時の表示メッセージ",
+    "placeholders": {
+      "error": {}
+    }
+  },
+  "languageUpdated": "Cài đặt ngôn ngữ đã được cập nhật.",
+  "registerAccount": "Đăng ký tài khoản",
+  "registerSubtitle": "Nếu bạn đổi thiết bị hoặc xóa ứng dụng, lịch sử học sẽ bị mất. Đăng ký tài khoản tại đây để lưu dữ liệu.",
+  "loginTitle": "Đăng nhập",
+  "loginSubtitle": "Đã có tài khoản? Nhấn vào đây.",
+  "logout": "Đăng xuất",
+  "login": "Đăng nhập",
+  "email": "Địa chỉ email",
+  "password": "Mật khẩu",
+  "invalidEmail": "Vui lòng nhập địa chỉ email hợp lệ",
+  "passwordTooShort": "Mật khẩu phải có ít nhất 6 ký tự",
+  "loginFailed": "Đăng nhập thất bại",
+  "loginError": "Lỗi đăng nhập",
+  "noAccountRegister": "Chưa có tài khoản? Đăng ký tại đây",
+  "resetPassword": "Quên mật khẩu?",
+  "register": "Đăng ký",
+  "registerFailed": "Đăng ký thất bại",
+  "purchaseSuccess": "Cảm ơn bạn đã mua hàng!",
+  "subscribe": "Đăng ký",
+  "subscribeNow": "Xem trước miễn phí 7 ngày, sau đó đăng ký Gói Cơ Bản",
+  "lockedTitle": "Đã khóa",
+  "@lockedTitle": {
+    "description": "ロック中アラートのタイトル"
+  },
+  "lockedMessage": "Câu hỏi này chỉ dành cho người đăng ký.",
+  "@lockedMessage": {
+    "description": "ロック中アラートの本文"
+  },
+  "sceneTitle": "{sceneKey}",
+  "@sceneTitle": {
+    "description": "シーン名をそのままタイトルに表示します",
+    "placeholders": {
+      "sceneKey": {}
+    }
+  },
+  "restorePurchase": "Khôi phục mua hàng",
+  "restorePurchaseSubtitle": "Khôi phục trạng thái mua hàng trước đó",
+  "restoringPurchase": "Đang kiểm tra lịch sử mua hàng...",
+  "restoreSubscription": "Khôi phục đăng ký",
+  "@restoreSubscription": {
+    "description": "以前購入したサブスクリプションを復元するボタンのラベル"
+  },
+  "subscriptionTitle": "Đăng ký",
+  "subscriptionPlanTitle": "<Chi tiết đăng ký>",
+  "subscriptionPlanMonthly": "• Tên gói: Gói cơ bản",
+  "subscriptionPlanPeriod": "• Thời hạn: 1 tháng",
+  "subscriptionPlanPrice": "• Giá: ¥1.500 (đã bao gồm thuế)",
+  "subscriptionPlanTrial": "• Nếu chưa đăng ký: chỉ Xem trước miễn phí.",
+  "subscriptionCurrentStatusTitle": "Trạng thái hiện tại",
+  "subscriptionStatusSubscribed": "• Đã đăng ký: mở khóa tất cả kịch bản học tập, bao gồm bản Xem trước miễn phí, với quyền sử dụng không giới hạn.",
+  "subscriptionStatus": "• Đã đăng ký: không chỉ dùng thử, cả ba kịch bản học tập đều được mở khóa và sử dụng không giới hạn.",
+  "subscriptionStatusTrial": "Chưa đăng ký: chỉ Xem trước miễn phí.",
+  "subscriptionManageButton": "Mở quản lý đăng ký trên Apple",
+  "subscriptionManageNote": "※ Hủy hoặc đăng ký lại gói hàng tháng từ đây.",
+  "subscriptionManageTitle": "Chi tiết đăng ký",
+  "subscriptionManageSubtitle": "Xem gói và đăng ký tại đây",
+  "subscriptionPriceTaxSuffix": "(đã bao gồm thuế)",
+  "languageSelectionTitle": "Chọn ngôn ngữ mẹ đẻ",
+  "languageSelectionDescription": "Chọn ngôn ngữ của bạn",
+  "similarExpressionPrefix": "Cách diễn đạt khác:",
+  "guest": "Khách",
+  "@guest": {
+    "description": "匿名ユーザーの場合に表示する名前"
+  },
+  "viewTerms": "Đọc điều khoản sử dụng (EULA)",
+  "viewPrivacyPolicy": "Đọc chính sách bảo mật",
+  "invalidPassword": "Mật khẩu phải có ít nhất 6 ký tự",
+  "@invalidPassword": {
+    "description": "ログイン時のパスワードバリデーションエラーメッセージ（6文字未満の場合）"
+  },
+  "subscriptionStatusUnsubscribed": "Chưa đăng ký",
+  "@subscriptionStatusUnsubscribed": {
+    "description": "ユーザーがサブスクに加入していないときに表示するラベル"
+  },
+  "settings_deleteAccount": "Xóa tài khoản",
+  "@settings_deleteAccount": {
+    "description": "メール登録ユーザー向けの「アカウントを削除する」ボタンラベル"
+  },
+  "settings_resetData": "Đặt lại dữ liệu",
+  "@settings_resetData": {
+    "description": "匿名ユーザー向けの「データを初期化する」ボタンラベル"
+  },
+  "settings_confirmDeleteAccount": "Bạn có chắc muốn xóa tài khoản và tất cả dữ liệu không?\nHành động này không thể hoàn tác.",
+  "@settings_confirmDeleteAccount": {
+    "description": "アカウント削除時の確認ダイアログメッセージ"
+  },
+  "settings_confirmResetData": "Bạn có chắc muốn đặt lại dữ liệu không?\nTất cả tiến trình sẽ bị xóa.",
+  "@settings_confirmResetData": {
+    "description": "匿名データ初期化時の確認ダイアログメッセージ"
+  },
+  "enterPassword": "Nhập mật khẩu",
+  "@enterPassword": {
+    "description": "アカウント削除時にパスワード再入力を促すダイアログタイトル"
+  },
+  "password": "Mật khẩu",
+  "@password": {
+    "description": "パスワード入力フィールドのプレースホルダー"
+  },
+  "cancel": "Hủy",
+  "@cancel": {
+    "description": "ダイアログのキャンセルボタンラベル"
+  },
+  "ok": "OK",
+  "@ok": {
+    "description": "ダイアログのOKボタンラベル"
+  },
+  "logoutConfirmation": "Bạn có chắc muốn đăng xuất không?",
+  "viewFaq": "Câu hỏi thường gặp",
+  "checking": "Đang kiểm tra…",
+  "sceneVocabulary": "TCâu ngắn",
+  "subsceneAll": "Tất cả",
+  "@subsceneAll": {
+    "description": "Nút lọc: Tất cả"
+  },
+  "recordingAutoStopped": "Ghi âm đã tự dừng sau 10 giây.",
+  "readingLabel": "Đọc hiểu",
+  "listeningLabel": "Nghe hiểu",
+  "listeningPrompt": "Đang nói gì vậy?",
+  "sceneWork": "Công việc",
+  "sceneSocial_interactions_hobbies": "Trao đổi và sở thích",
+  "sceneculture_entertainment": "Văn hóa & Giải trí",
+  "scenecommunity_life": "Đời sống cộng đồng",
+  "userAnswerHeader": "Câu trả lời của bạn",
+  "@userAnswerHeader": { "description": "Tiêu đề câu trả lời của người dùng" },
+  "badgeCorrect": "Đúng",
+  "@badgeCorrect": { "description": "Huy hiệu đúng" },
+  "badgeNeedsImprovement": "Cần cải thiện",
+  "@badgeNeedsImprovement": { "description": "Huy hiệu cần cải thiện" },
+  "originalTranslationHeader": "Bản dịch gốc",
+  "originalTranscriptionHeader": "Phiên âm gốc",
+  "originalExplanationHeader": "Giải thích bản gốc",
+  "similarExpressionHeader": "Cách diễn đạt tương tự thân thiện",
+  "incorrectMessageWithRaw": "{raw} \nCâu trả lời này không đúng về ngữ pháp hoặc ngữ nghĩa.",
+  "answerMeaningAccurate": "Câu trả lời này phản ánh chính xác ý nghĩa của câu hỏi.",
+  "subscriptionUpsellTitle": "Tiếp tục học với Gói Cơ Bản!",
+  "subscriptionUpsellMessage": "Gói miễn phí chỉ là bản dùng thử. Nếu bạn thực sự muốn nói, hãy mở khóa tất cả các tình huống ngay bây giờ!"
+}

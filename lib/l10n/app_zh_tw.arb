@@ -1,0 +1,240 @@
+{
+  "@@locale": "zh_TW",
+  "categoryTitle": "選擇類別",
+  "targetLanguage": "學習語言",
+  "level": "等級",
+  "scene": "學習場景",
+  "start": "開始",
+  "selectPrompt": "請選擇所有項目。",
+  "langJapanese": "日語",
+  "langEnglish": "英語",
+  "langChineseSimplified": "中文（簡體）",
+  "langChineseTraditional": "台灣(繁體)",
+  "langKorean": "韓語",
+  "langSpanish": "西班牙語",
+  "langFrench": "法語",
+  "langGerman": "德語",
+  "langVietnamese": "越南語",
+  "langIndonesian": "印尼語",
+  "languageJapanese": "日語",
+  "languageEnglish": "英語",
+  "languageChineseSimplified": "中文（簡體）",
+  "languageChineseTraditional": "台灣(繁體)",
+  "languageKorean": "韓語",
+  "languageSpanish": "西班牙語",
+  "languageFrench": "法語",
+  "languageGerman": "德語",
+  "languageVietnamese": "越南語",
+  "languageIndonesian": "印尼語",
+  "levelBeginner": "初級",
+  "levelIntermediate": "中級",
+  "levelAdvanced": "高級",
+  "sceneTravel": "旅行",
+  "sceneGreeting": "問候",
+  "sceneDating": "約會",
+  "sceneRestaurant": "餐廳",
+  "sceneShopping": "購物",
+  "sceneBusiness": "商務",
+  "translatePrompt": "來翻譯看看吧！",
+  "termsOfService": "服務條款",
+  "privacyPolicy": "隱私政策",
+  "termsContent": "在使用本應用程式之前，請閱讀以下服務條款。使用本應用程式即表示您同意所有條款和條件。",
+  "privacyContent": "我們尊重您的隱私。所收集的資訊僅用於學習支援和改善應用程式體驗。",
+  "termsOfServiceContent": "本應用旨在支援語言學習。\n\n【適用對象】\n本應用適用於所有年齡層。13 歲以下使用者必須在監護人同意下使用本應用。\n\n【免責聲明】\n因使用本應用所造成的任何損失或不利，開發者不負擔任何責任。\n\n【未來的付費功能】\n目前本應用為免費使用，但未來可能會加入部分付費功能，屆時將提前通知使用者。\n\n【終止使用】\n如使用者違反本條款，開發者有權在不事先通知的情況下暫停或限制使用權限。",
+  "privacyPolicyContent": "本應用尊重使用者的隱私，並根據以下政策進行運營：\n\n【收集的資訊】\n可能會收集不涉及個人身份的資訊，如語言設定和使用紀錄。\n\n【使用目的】\n收集的資訊將用於提升應用品質與使用者體驗，不會在未經同意的情況下提供給第三方。\n\n【第三方服務】\n如未來增加付費功能，可能會使用第三方支付服務。\n\n【資訊管理】\n所收集的資訊將被妥善保管，確保安全。",
+  "errorTooLong": "訊息過長。請將內容控制在大約100個字元以內。",
+  "errorRateLimit": "請求次數過多，請稍後再試（每分鐘最多5次）。",
+  "errorNoMessage": "沒有提供訊息內容。",
+  "errorServerError": "伺服器發生錯誤，請稍後再試。",
+  "keyboardGuideButton": "如果點 🌐 後沒有顯示目標語言的鍵盤，請點此查看",
+  "keyboardGuideIos": "如果在 iOS 上無法顯示目標語言的鍵盤：請前往 設定 > 一般 > 鍵盤 > 新增鍵盤，選擇目標語言。",
+  "keyboardGuideAndroid": "如果在 Android 上無法顯示目標語言的鍵盤：請前往 設定 > 系統 > 語言與輸入法 > 鍵盤 > 新增鍵盤，選擇目標語言。",
+  "keyboardGuideBody": "如果您的手機中未安裝目標語言的鍵盤，您將無法在聊天介面輸入。請按照以下步驟新增：\n\niOS：\n設定 > 一般 > 鍵盤 > 新增鍵盤\n\nAndroid：\n設定 > 語言與輸入法 > 鍵盤 > 新增鍵盤",
+  "keyboardGuideTitle": "鍵盤設定指南",
+  "ok": "好的",
+  "correct": "回答正確！",
+  "incorrect": "需要修改。",
+  "answerMeaningPrefix": "這就是你答案的含義：{translation}",
+  "answerTranslationPrefix": "修改範例",
+  "invalidMeaning": "{userAnswer}：作為一種學習語言，它毫無意義。",
+  "@invalidMeaning": {
+    "description": "ユーザーの回答が日本語として意味不明だったときのメッセージ",
+    "placeholders": {
+      "userAnswer": {}
+    }
+  },
+  "errorBrokenGpt": "抱歉，系統出錯。請重試。",
+  "@errorBrokenGpt": {
+    "description": "GPTの応答が壊れていたときに表示するメッセージ",
+    "placeholders": {}
+  },
+  "grammarCorrect": "{userAnswer}：從語法上來說，這是正確的。",
+  "grammarIncorrect": "{userAnswer}：這在語法上是不正確的。",
+  "@grammarCorrect": {
+    "description": "文法的に正しいときの応答",
+    "placeholders": {
+      "userAnswer": {}
+    }
+  },
+  "@grammarIncorrect": {
+    "description": "文法的に誤っているときの応答",
+    "placeholders": {
+      "userAnswer": {}
+    }
+  },
+  "errorSessionMismatch": "您已從其他裝置登入。請重新登入。",
+  "errorPunctuationFailed": "⚠️ 無法檢索帶標點的句子。",
+  "sceneTrial": "免費預覽",
+  "lockedMessage": "可供訂閱該方案。",
+  "resetPassword": "重設密碼",
+  "enterEmailForReset": "請輸入電子郵件地址以重設密碼。",
+  "sendResetEmail": "發送重設郵件",
+  "passwordResetSent": "已發送密碼重設郵件。",
+  "passwordResetError": "發送重設郵件失敗。",
+  "settingsTitle": "設定",
+  "welcomeUser": "歡迎，{name}",
+  "registeredDate": "註冊日期：{date}",
+  "userFetchFailed": "取得使用者資訊失敗（錯誤：{error}）",
+  "@userFetchFailed": {
+    "description": "获取用户信息失败时的错误提示",
+    "placeholders": {
+      "error": {}
+    }
+  },
+  "languageUpdated": "語言設定已更新",
+  "registerAccount": "註冊帳戶",
+  "registerSubtitle": "更換裝置或刪除 App 時，學習記錄會遺失。為了保存資料，請在此註冊帳號。",
+  "loginTitle": "登入",
+  "loginSubtitle": "已有帳戶？請點擊",
+  "logout": "登出",
+  "login": "登入",
+  "email": "電子郵件",
+  "password": "密碼",
+  "invalidEmail": "請輸入有效的電子郵件地址",
+  "passwordTooShort": "密碼長度必須至少6個字元",
+  "loginFailed": "登入失敗",
+  "loginError": "登入錯誤",
+  "noAccountRegister": "沒有帳戶？點此註冊",
+  "resetPassword": "忘記密碼？",
+  "register": "註冊",
+  "registerFailed": "註冊失敗",
+  "purchaseSuccess": "感謝您的購買！",
+  "subscribe": "訂閱",
+  "subscribeNow": "7天免費預覽，加入基礎方案",
+  "lockedTitle": "已鎖定",
+  "@lockedTitle": {
+    "description": "锁定警报标题"
+  },
+  "lockedMessage": "此內容僅供訂閱者閱讀。",
+  "@lockedMessage": {
+    "description": "锁定警报文本"
+  },
+  "sceneTitle": "{sceneKey}",
+  "@sceneTitle": {
+    "description": "场景名称将显示为标题。",
+    "placeholders": {
+      "sceneKey": {}
+    }
+  },
+  "restorePurchase": "恢復購買",
+  "restorePurchaseSubtitle": "恢復您之前的訂閱狀態",
+  "restoringPurchase": "正在恢復購買記錄...",
+  "restoreSubscription": "恢復訂閱",
+  "@restoreSubscription": {
+    "description": "恢复先前订阅购买的按钮标签"
+  },
+  "subscriptionTitle": "訂閱",
+  "subscriptionPlanTitle": "<訂閱詳情>",
+  "subscriptionPlanMonthly": "• 方案名稱：基本方案",
+  "subscriptionPlanPeriod": "• 持續期間：1 個月",
+  "subscriptionPlanPrice": "• 價格：1,500 日圓（含稅）",
+  "subscriptionPlanTrial": "• 如果您不是會員，您只能嘗試免費預覽。",
+  "subscriptionCurrentStatusTitle": "當前狀態",
+  "subscriptionStatusSubscribed": "• 已訂閱：解鎖所有學習場景（包括免費預覽），可無限次使用。",
+  "subscriptionStatus": "• 已訂閱：所有學習場景均已開放使用。",
+  "subscriptionStatusTrial": "非會員：僅提供免費預覽。",
+  "subscriptionManageButton": "在 Apple 上管理訂閱",
+  "subscriptionManageNote": "※ 可從以上連結取消或重新訂閱。",
+  "subscriptionManageTitle": "訂閱詳情",
+  "subscriptionManageSubtitle": "查看方案並在此訂閱",
+  "subscriptionPriceTaxSuffix": "（含稅）",
+  "languageSelectionTitle": "選擇您的母語",
+  "languageSelectionDescription": "請選擇您的語言",
+  "similarExpressionPrefix": "其他表達：",
+  "guest": "訪客",
+  "@guest": {
+    "description": "匿名用户时显示的名称"
+  },
+  "viewTerms": "閱讀使用條款 (EULA)",
+  "viewPrivacyPolicy": "閱讀隱私政策",
+  "invalidPassword": "密碼長度至少為6個字元",
+  "@invalidPassword": {
+    "description": "当密码少于6个字符时显示的校验错误信息"
+  },
+  "subscriptionStatusUnsubscribed": "不是會員",
+  "@subscriptionStatusUnsubscribed": {
+    "description": "用户取消订阅时显示的标签"
+  },
+  "settings_deleteAccount": "刪除帳戶",
+  "@settings_deleteAccount": {
+    "description": "“删除账户” 按钮标签（注册用户）"
+  },
+  "settings_resetData": "重置資料",
+  "@settings_resetData": {
+    "description": "“重置数据” 按钮标签（匿名用户）"
+  },
+  "settings_confirmDeleteAccount": "您確定要刪除您的帳戶及所有資料嗎？此操作不可撤銷。",
+  "@settings_confirmDeleteAccount": {
+    "description": "删除账户时的确认对话框消息"
+  },
+  "settings_confirmResetData": "您確定要重置資料嗎？所有進度將被刪除。",
+  "@settings_confirmResetData": {
+    "description": "重置匿名数据时的确认对话框消息"
+  },
+  "enterPassword": "請輸入密碼",
+  "@enterPassword": {
+    "description": "在删除账户时提示用户重新输入密码的对话框标题"
+  },
+  "password": "密碼",
+  "@password": {
+    "description": "密码输入字段的占位符"
+  },
+  "cancel": "取消",
+  "@cancel": {
+    "description": "对话框取消按钮标签"
+  },
+  "ok": "確定",
+  "@ok": {
+    "description": "对话框确定按钮标签"
+  },
+  "logoutConfirmation": "您確定要登出嗎？",
+  "viewFaq": "常見問題",
+  "checking": "正在判定…",
+  "sceneVocabulary": "短句",
+  "subsceneAll": "全部",
+  "@subsceneAll": {
+    "description": "篩選按鈕：全部（台灣繁體）"
+  },
+  "recordingAutoStopped": "錄音已於 10 秒時自動停止。",
+  "readingLabel": "閱讀",
+  "listeningLabel": "聽力",
+  "listeningPrompt": "在說什麼？",
+  "sceneWork": "工作",
+  "sceneSocial_interactions_hobbies": "交流和愛好",
+  "sceneculture_entertainment": "文化和娛樂",
+  "scenecommunity_life": "社區生活",
+  "userAnswerHeader": "你的回答",
+  "@userAnswerHeader": { "description": "使用者回答標題" },
+  "badgeCorrect": "正確",
+  "@badgeCorrect": { "description": "正確標籤" },
+  "badgeNeedsImprovement": "需要改進",
+  "@badgeNeedsImprovement": { "description": "需要改進標籤" },
+  "originalTranslationHeader": "原文翻譯",
+  "originalTranscriptionHeader": "原文轉寫",
+  "originalExplanationHeader": "原文說明",
+  "similarExpressionHeader": "友好的相似表達",
+  "incorrectMessageWithRaw": "{raw} \n這個回答在文法或語意上不正確。",
+  "answerMeaningAccurate": "此回答準確地表達了題目的含義。",
+  "subscriptionUpsellTitle": "使用基本方案繼續學習！",
+  "subscriptionUpsellMessage": "免費方案只是體驗。若想真正開口說話，現在就解鎖所有場景！"
+}

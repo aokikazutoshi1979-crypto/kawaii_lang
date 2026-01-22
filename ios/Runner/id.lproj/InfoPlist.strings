@@ -1,0 +1,4 @@
+"CFBundleDisplayName" = "Kawaii Lang";
+"NSMicrophoneUsageDescription" = "Kami menggunakan mikrofon untuk latihan pelafalan. Rekaman hanya disimpan di perangkat.";
+"NSSpeechRecognitionUsageDescription" = "Pengenalan suara mengubah ucapan menjadi teks untuk latihan. AI memberi masukan.";
+

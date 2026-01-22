@@ -1,0 +1,57 @@
+{
+  "functions": {
+    "source": "functions",
+    "codebase": "default"
+  },
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "kawaii-language-chat",
+          "appId": "1:112506097576:android:f003faf5aead3f0ae5d79d",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "kawaii-language-chat",
+          "appId": "1:112506097576:ios:8949d12cf1d7e6dae5d79d",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "macos": {
+        "default": {
+          "projectId": "kawaii-language-chat",
+          "appId": "1:112506097576:ios:16b37a1be295d8dce5d79d",
+          "uploadDebugSymbols": false,
+          "fileOutput": "macos/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "kawaii-language-chat",
+          "configurations": {
+            "android": "1:112506097576:android:f003faf5aead3f0ae5d79d",
+            "ios": "1:112506097576:ios:8949d12cf1d7e6dae5d79d",
+            "macos": "1:112506097576:ios:16b37a1be295d8dce5d79d",
+            "web": "1:112506097576:web:92f699b017e6908fe5d79d",
+            "windows": "1:112506097576:web:1a58e9e619e6f922e5d79d"
+          }
+        }
+      }
+    }
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  }
+}

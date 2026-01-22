@@ -1,0 +1,241 @@
+{
+  "@@locale": "fr",
+  "categoryTitle": "Sélection de catégorie",
+  "targetLanguage": "Langue à apprendre",
+  "level": "Niveau",
+  "scene": "Scène d'apprentissage",
+  "start": "Démarrer",
+  "selectPrompt": "Veuillez sélectionner tous les éléments.",
+  "langJapanese": "Japonais",
+  "langEnglish": "Anglais",
+  "langChineseSimplified": "Chinois (simplifié)",
+  "langChineseTraditional": "Taïwan",
+  "langKorean": "Coréen",
+  "langSpanish": "Espagnol",
+  "langFrench": "Français",
+  "langGerman": "Allemand",
+  "langVietnamese": "Vietnamien",
+  "langIndonesian": "Indonésien",
+  "languageJapanese": "Japonais",
+  "languageEnglish": "Anglais",
+  "languageChineseSimplified": "Chinois (simplifié)",
+  "languageChineseTraditional": "Taïwan",
+  "languageKorean": "Coréen",
+  "languageSpanish": "Espagnol",
+  "languageFrench": "Français",
+  "languageGerman": "Allemand",
+  "languageVietnamese": "Vietnamien",
+  "languageIndonesian": "Indonésien",
+  "levelBeginner": "Débutant",
+  "levelIntermediate": "Intermédiaire",
+  "levelAdvanced": "Avancé",
+  "sceneTravel": "Voyage",
+  "sceneGreeting": "Salutation",
+  "sceneDating": "Rendez-vous",
+  "sceneRestaurant": "Restaurant",
+  "sceneShopping": "Shopping",
+  "sceneBusiness": "Affaires",
+  "selectQuestion": "Veuillez sélectionner une question.",
+  "translatePrompt": "Essayons de traduire !",
+  "termsOfService": "Conditions d'utilisation",
+  "privacyPolicy": "Politique de confidentialité",
+  "termsContent": "Avant d'utiliser cette application, veuillez lire les conditions d'utilisation suivantes. En utilisant cette application, vous acceptez tous les termes et conditions.",
+  "privacyContent": "Cette application respecte les informations personnelles des utilisateurs. Les données collectées sont utilisées uniquement pour soutenir l'apprentissage et améliorer l'application。",
+  "termsOfServiceContent": "Cette application est fournie dans le but de soutenir l'apprentissage des langues。\n\n【Public concerné】\nCette application s'adresse à tous les âges. Les mineurs de moins de 13 ans doivent l'utiliser avec l'accord de leur tuteur。\n\n【Clause de non-responsabilité】\nL'éditeur décline toute responsabilité pour les préjudices ou dommages résultant de l'utilisation de l'application。\n\n【À propos des futures options payantes】\nElle est actuellement gratuite, mais certaines fonctionnalités pourraient devenir payantes à l'avenir. Une annonce préalable sera faite。\n\n【Suspension de l'utilisation】\nEn cas de violation des présentes conditions, l'éditeur peut restreindre ou suspendre l'accès sans préavis。",
+  "privacyPolicyContent": "Cette application respecte la vie privée des utilisateurs et est régie par la politique suivante ：\n\n【Informations collectées】\nDes informations non identifiantes, telles que les paramètres de langue et l'historique d'utilisation, peuvent être collectées。\n\n【Finalité】\nLes données sont utilisées pour améliorer la qualité et les fonctionnalités de l'application. Elles ne sont pas partagées avec des tiers sans consentement。\n\n【Services externes】\nLors de l'ajout de fonctionnalités payantes dans de futures mises à jour, des services de paiement externes peuvent être utilisés。\n\n【Gestion des informations】\nLes informations collectées sont gérées de manière adéquate et stockées en toute sécurité。",
+  "errorTooLong": "Le message est trop long. Veuillez saisir environ 100 caractères maximum。",
+  "errorRateLimit": "Trop de requêtes. Veuillez réessayer plus tard (5 par minute maximum)。",
+  "errorNoMessage": "Aucun message saisi。",
+  "errorServerError": "Erreur du serveur. Veuillez réessayer。",
+  "keyboardGuideButton": "Si après avoir appuyé sur 🌐 le clavier de la langue souhaitée n'apparaît pas, appuyez ici",
+  "keyboardGuideIos": "Si sur iOS le clavier de la langue souhaitée n'apparaît pas : allez dans Réglages > Général > Clavier > Ajouter un nouveau clavier et sélectionnez la langue。",
+  "keyboardGuideAndroid": "Si sur Android le clavier de la langue souhaitée n'apparaît pas : allez dans Paramètres > Système > Langue et saisie > Clavier > Ajouter un clavier et sélectionnez la langue。",
+  "keyboardGuideBody": "Si votre smartphone n'a pas installé le clavier de la langue souhaitée, vous ne pourrez pas taper dans l'interface de chat. Ajoutez-le en suivant ces étapes ：\n\niOS ：\nRéglages > Général > Clavier > Ajouter un nouveau clavier\n\nAndroid ：\nParamètres > Langue et saisie > Clavier > Ajouter un clavier",
+  "keyboardGuideTitle": "Guide du clavier",
+  "ok": "OK",
+  "correct": "Correct ！",
+  "incorrect": "Nécessite une correction ！",
+  "answerMeaningPrefix": "Le sens de votre réponse est : « {translation} »",
+  "answerTranslationPrefix": "Exemple de correction",
+  "invalidMeaning": "« {userAnswer} » : n'a pas de sens comme langue d'apprentissage。",
+  "@invalidMeaning": {
+    "description": "ユーザーの回答が日本語として意味不明だったときのメッセージ",
+    "placeholders": {
+      "userAnswer": {}
+    }
+  },
+  "errorBrokenGpt": "Désolé, une erreur système est survenue. Veuillez réessayer.",
+  "@errorBrokenGpt": {
+    "description": "GPTの応答が壊れていたときに表示するメッセージ",
+    "placeholders": {}
+  },
+  "grammarCorrect": "{userAnswer}: grammaticalement correct.",
+  "grammarIncorrect": "{userAnswer}: grammaticalement incorrect.",
+  "@grammarCorrect": {
+    "description": "文法的に正しいときの応答",
+    "placeholders": {
+      "userAnswer": {}
+    }
+  },
+  "@grammarIncorrect": {
+    "description": "文法的に誤っているときの応答",
+    "placeholders": {
+      "userAnswer": {}
+    }
+  },
+  "errorSessionMismatch": "Vous avez été connecté(e) depuis un autre appareil. Veuillez vous reconnecter.",
+  "errorPunctuationFailed": "⚠️ Impossible de récupérer la phrase avec la ponctuation.",
+  "sceneTrial": "Aperçu gratuit",
+  "lockedMessage": "Disponible avec un abonnement au forfait.",
+  "resetPassword": "Réinitialiser le mot de passe",
+  "enterEmailForReset": "Veuillez entrer votre adresse e-mail pour réinitialiser le mot de passe.",
+  "sendResetEmail": "Envoyer l'e-mail de réinitialisation",
+  "passwordResetSent": "L'e-mail de réinitialisation du mot de passe a été envoyé.",
+  "passwordResetError": "Échec de l'envoi de l'e-mail de réinitialisation.",
+  "settingsTitle": "Paramètres",
+  "welcomeUser": "Bienvenue, {name} !",
+  "registeredDate": "Date d'inscription : {date}",
+  "userFetchFailed": "Échec de la récupération des informations utilisateur (erreur : {error}).",
+  "@userFetchFailed": {
+    "description": "ユーザー取得エラー時の表示メッセージ",
+    "placeholders": {
+      "error": {}
+    }
+  },
+  "languageUpdated": "Les paramètres de langue ont été mis à jour.",
+  "registerAccount": "Créer un compte",
+  "registerSubtitle": "Si vous changez d’appareil ou supprimez l’app, votre historique d’apprentissage sera perdu. Pour sauvegarder vos données, créez un compte ici.",
+  "loginTitle": "Connexion",
+  "loginSubtitle": "Vous avez déjà un compte ? Cliquez ici.",
+  "logout": "Déconnexion",
+  "login": "Connexion",
+  "email": "Adresse e-mail",
+  "password": "Mot de passe",
+  "invalidEmail": "Veuillez saisir une adresse e-mail valide",
+  "passwordTooShort": "Le mot de passe doit comporter au moins 6 caractères",
+  "loginFailed": "Échec de la connexion",
+  "loginError": "Erreur de connexion",
+  "noAccountRegister": "Vous n'avez pas de compte ? Inscrivez-vous ici",
+  "resetPassword": "Mot de passe oublié ?",
+  "register": "S'inscrire",
+  "registerFailed": "Échec de l'inscription",
+  "purchaseSuccess": "Merci pour votre achat !",
+  "subscribe": "S'abonner",
+  "subscribeNow": "Essayez gratuitement pendant 7 jours, puis abonnez-vous au plan de base",
+  "lockedTitle": "Verrouillé",
+  "@lockedTitle": {
+    "description": "ロック中アラートのタイトル"
+  },
+  "lockedMessage": "Cette question est réservée aux abonnés.",
+  "@lockedMessage": {
+    "description": "ロック中アラートの本文"
+  },
+  "sceneTitle": "{sceneKey}",
+  "@sceneTitle": {
+    "description": "シーン名をそのままタイトルに表示します",
+    "placeholders": {
+      "sceneKey": {}
+    }
+  },
+  "restorePurchase": "Restaurer l'achat",
+  "restorePurchaseSubtitle": "Restaurer votre achat précédent",
+  "restoringPurchase": "Vérification de l'historique des achats…",
+  "restoreSubscription": "Restaurer l’abonnement",
+  "@restoreSubscription": {
+    "description": "以前購入したサブスクリプションを復元するボタンのラベル"
+  },
+  "subscriptionTitle": "Abonnement",
+  "subscriptionPlanTitle": "<Détails de l’abonnement>",
+  "subscriptionPlanMonthly": "• Nom du plan : Plan de base",
+  "subscriptionPlanPeriod": "• Durée : 1 mois",
+  "subscriptionPlanPrice": "• Prix : ¥1 500 (TTC)",
+  "subscriptionPlanTrial": "• Si non abonné : seul l’Aperçu gratuit est disponible.",
+  "subscriptionCurrentStatusTitle": "État actuel",
+  "subscriptionStatusSubscribed": "• Abonné : déverrouille tous les scénarios d’apprentissage, y compris la période d’Aperçu gratuite, avec utilisation illimitée.",
+  "subscriptionStatus": "• Abonné : en plus de l’Aperçu gratuit, les trois scénarios d’apprentissage sont débloqués et utilisables sans limite.",
+  "subscriptionStatusTrial": "Non abonné : seul l’Aperçu gratuit est disponible.",
+  "subscriptionManageButton": "Ouvrir la gestion de l’abonnement sur Apple",
+  "subscriptionManageNote": "※ Vous pouvez annuler ou vous réabonner au plan mensuel depuis là.",
+  "subscriptionManageTitle": "Détails de l’abonnement",
+  "subscriptionManageSubtitle": "Consultez les plans et abonnez-vous ici",
+  "subscriptionPriceTaxSuffix": "(TTC)",
+  "languageSelectionTitle": "Sélectionnez votre langue maternelle",
+  "languageSelectionDescription": "Choisissez votre langue",
+  "similarExpressionPrefix": "Autre expression :",
+  "guest": "Invité",
+  "@guest": {
+    "description": "匿名ユーザーの場合に表示する名前"
+  },
+  "viewTerms": "Lire les conditions d’utilisation (EULA)",
+  "viewPrivacyPolicy": "Lire la politique de confidentialité",
+  "invalidPassword": "Le mot de passe doit comporter au moins 6 caractères",
+  "@invalidPassword": {
+    "description": "ログイン時のパスワードバリデーションエラーメッセージ（6文字未満の場合）"
+  },
+  "subscriptionStatusUnsubscribed": "Non abonné",
+  "@subscriptionStatusUnsubscribed": {
+    "description": "ユーザーがサブスクに加入していないときに表示するラベル"
+  },
+  "settings_deleteAccount": "Supprimer le compte",
+  "@settings_deleteAccount": {
+    "description": "メール登録ユーザー向けの「アカウントを削除する」ボタンラベル"
+  },
+  "settings_resetData": "Réinitialiser les données",
+  "@settings_resetData": {
+    "description": "匿名ユーザー向けの「データを初期化する」ボタンラベル"
+  },
+  "settings_confirmDeleteAccount": "Voulez-vous vraiment supprimer votre compte et toutes les données ?\nCette action est irréversible.",
+  "@settings_confirmDeleteAccount": {
+    "description": "アカウント削除時の確認ダイアログメッセージ"
+  },
+  "settings_confirmResetData": "Voulez-vous vraiment réinitialiser les données ?\nTous les progrès seront perdus.",
+  "@settings_confirmResetData": {
+    "description": "匿名データ初期化時の確認ダイアログメッセージ"
+  },
+  "enterPassword": "Entrez le mot de passe",
+  "@enterPassword": {
+    "description": "アカウント削除時にパスワード再入力を促すダイアログタイトル"
+  },
+  "password": "Mot de passe",
+  "@password": {
+    "description": "パスワード入力フィールドのプレースホルダー"
+  },
+  "cancel": "Annuler",
+  "@cancel": {
+    "description": "ダイアログのキャンセルボタンラベル"
+  },
+  "ok": "OK",
+  "@ok": {
+    "description": "ダイアログのOKボタンラベル"
+  },
+  "logoutConfirmation": "Voulez-vous vraiment vous déconnecter ?",
+  "viewFaq": "Foire aux questions",
+  "checking": "Vérification en cours…",
+  "sceneVocabulary": "Phrases courtes",
+  "subsceneAll": "Tous",
+  "@subsceneAll": {
+    "description": "Bouton de filtre : Tous"
+  },
+  "recordingAutoStopped": "L’enregistrement s’est arrêté automatiquement au bout de 10 secondes.",
+  "readingLabel": "Lecture",
+  "listeningLabel": "Écoute",
+  "listeningPrompt": "Qu'est-ce qui est dit ?",
+  "sceneWork": "Travail",
+  "sceneSocial_interactions_hobbies": "Échange et passe-temps",
+  "sceneculture_entertainment": "Culture et divertissement",
+  "scenecommunity_life": "Vie communautaire",
+  "userAnswerHeader": "Votre réponse",
+  "@userAnswerHeader": { "description": "En-tête de la réponse de l'utilisateur" },
+  "badgeCorrect": "Correct",
+  "@badgeCorrect": { "description": "Badge correct" },
+  "badgeNeedsImprovement": "À améliorer",
+  "@badgeNeedsImprovement": { "description": "Badge à améliorer" },
+  "originalTranslationHeader": "Traduction originale",
+  "originalTranscriptionHeader": "Transcription originale",
+  "originalExplanationHeader": "Explication originale",
+  "similarExpressionHeader": "Expression similaire amicale",
+  "incorrectMessageWithRaw": "{raw} \nCette réponse n'est pas correcte sur le plan grammatical ou sémantique.",
+  "answerMeaningAccurate": "Cette réponse reflète fidèlement le sens de la question.",
+  "subscriptionUpsellTitle": "Continuez à apprendre avec le forfait Basic !",
+  "subscriptionUpsellMessage": "Le plan gratuit n’est qu’un essai. Si vous voulez vraiment parler, débloquez toutes les scènes dès maintenant !"
+}

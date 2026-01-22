@@ -1,0 +1,241 @@
+{
+  "@@locale": "id",
+  "categoryTitle": "Pilih kategori",
+  "targetLanguage": "Bahasa yang ingin dipelajari",
+  "level": "Tingkat",
+  "scene": "Skenario pembelajaran",
+  "start": "Mulai",
+  "selectPrompt": "Silakan pilih semua item.",
+  "langJapanese": "Jepang",
+  "langEnglish": "Inggris",
+  "langChineseSimplified": "Cina (sederhana)",
+  "langChineseTraditional": "Taiwan",
+  "langKorean": "Korea",
+  "langSpanish": "Spanyol",
+  "langFrench": "Prancis",
+  "langGerman": "Jerman",
+  "langVietnamese": "Vietnam",
+  "langIndonesian": "Bahasa Indonesia",
+  "languageJapanese": "Jepang",
+  "languageEnglish": "Inggris",
+  "languageChineseSimplified": "Cina (sederhana)",
+  "languageChineseTraditional": "Taiwan",
+  "languageKorean": "Korea",
+  "languageSpanish": "Spanyol",
+  "languageFrench": "Prancis",
+  "languageGerman": "Jerman",
+  "languageVietnamese": "Vietnam",
+  "languageIndonesian": "Indonesia",
+  "levelBeginner": "Pemula",
+  "levelIntermediate": "Menengah",
+  "levelAdvanced": "Lanjutan",
+  "sceneTravel": "Perjalanan",
+  "sceneGreeting": "Salam",
+  "sceneDating": "Kencan",
+  "sceneRestaurant": "Restoran",
+  "sceneShopping": "Belanja",
+  "sceneBusiness": "Bisnis",
+  "selectQuestion": "Silakan pilih pertanyaan.",
+  "translatePrompt": "Mari coba terjemahkan!",
+  "termsOfService": "Ketentuan Layanan",
+  "privacyPolicy": "Kebijakan Privasi",
+  "termsContent": "Sebelum menggunakan aplikasi ini, harap baca ketentuan layanan berikut. Dengan menggunakan aplikasi ini, Anda menyetujui semua syarat dan ketentuan.",
+  "privacyContent": "Aplikasi ini menghormati informasi pribadi pengguna. Informasi yang dikumpulkan hanya digunakan untuk mendukung pembelajaran dan meningkatkan aplikasi。",
+  "termsOfServiceContent": "Aplikasi ini disediakan untuk mendukung pembelajaran bahasa。\n\n【Pengguna】\nAplikasi ini untuk semua usia. Pengguna di bawah 13 tahun harus mendapatkan izin dari orang tua atau wali。\n\n【Penafian】\nOperator tidak bertanggung jawab atas kerugian atau dampak negatif yang timbul dari penggunaan aplikasi。\n\n【Tentang fitur berbayar di masa depan】\nSaat ini gratis, tetapi di masa depan beberapa fitur mungkin berbayar. Kami akan memberi tahu sebelumnya。\n\n【Penghentian penggunaan】\nJika pengguna melanggar ketentuan ini, operator dapat membatasi atau menghentikan penggunaan tanpa pemberitahuan。",
+  "privacyPolicyContent": "Aplikasi ini menghormati privasi pengguna dan dioperasikan sesuai kebijakan berikut：\n\n【Informasi yang dikumpulkan】\nDapat mengumpulkan informasi yang tidak mengidentifikasi pengguna seperti pengaturan bahasa dan riwayat penggunaan aplikasi。\n\n【Tujuan penggunaan】\nInformasi digunakan untuk meningkatkan kualitas dan fitur aplikasi. Tidak dibagikan ke pihak ketiga tanpa izin。\n\n【Layanan eksternal】\nSaat menambahkan fitur berbayar dalam pembaruan mendatang, layanan pembayaran eksternal dapat digunakan。\n\n【Manajemen informasi】\nInformasi yang dikumpulkan akan dikelola dengan tepat dan disimpan dengan aman。",
+  "errorTooLong": "Pesan terlalu panjang. Silakan masukkan maksimal sekitar 100 karakter。",
+  "errorRateLimit": "Terlalu banyak permintaan. Silakan coba lagi nanti (maks 5 per menit)。",
+  "errorNoMessage": "Belum ada pesan yang dimasukkan。",
+  "errorServerError": "Terjadi kesalahan server. Silakan coba lagi。",
+  "keyboardGuideButton": "Jika menekan 🌐 tidak menampilkan keyboard bahasa yang diinginkan, ketuk di sini",
+  "keyboardGuideIos": "Jika di iOS tidak muncul keyboard bahasa yang diinginkan: buka Pengaturan > Umum > Keyboard > Tambah Keyboard Baru dan pilih bahasa。",
+  "keyboardGuideAndroid": "Jika di Android tidak muncul keyboard bahasa yang diinginkan: buka Pengaturan > Sistem > Bahasa & input > Keyboard > Tambah Keyboard dan pilih bahasa。",
+  "keyboardGuideBody": "Jika ponsel Anda belum menginstal keyboard bahasa yang diinginkan, Anda tidak akan bisa mengetik pada layar obrolan. Tambahkan keyboard dengan langkah berikut：\n\niOS：\nPengaturan > Umum > Keyboard > Tambah Keyboard Baru\n\nAndroid：\nPengaturan > Bahasa & input > Keyboard > Tambah Keyboard",
+  "keyboardGuideTitle": "Panduan Tambah Keyboard",
+  "ok": "OK",
+  "correct": "Benar！",
+  "incorrect": "Perlu diperbaiki！",
+  "answerMeaningPrefix": "Arti jawaban Anda: \"{translation}\"",
+  "answerTranslationPrefix": "Contoh koreksi",
+  "invalidMeaning": "\"{userAnswer}\": tidak masuk akal sebagai bahasa pembelajaran。",
+  "@invalidMeaning": {
+    "description": "ユーザーの回答が日本語として意味不明だったときのメッセージ",
+    "placeholders": {
+      "userAnswer": {}
+    }
+  },
+  "errorBrokenGpt": "Maaf, terjadi kesalahan sistem. Silakan coba lagi.",
+  "@errorBrokenGpt": {
+    "description": "GPTの応答が壊れていたときに表示するメッセージ",
+    "placeholders": {}
+  },
+  "grammarCorrect": "{userAnswer}: tata bahasanya benar.",
+  "grammarIncorrect": "{userAnswer}: tata bahasanya salah.",
+  "@grammarCorrect": {
+    "description": "文法的に正しいときの応答",
+    "placeholders": {
+      "userAnswer": {}
+    }
+  },
+  "@grammarIncorrect": {
+    "description": "文法的に誤っているときの応答",
+    "placeholders": {
+      "userAnswer": {}
+    }
+  },
+  "errorSessionMismatch": "Anda telah masuk dari perangkat lain. Silakan masuk kembali.",
+  "errorPunctuationFailed": "⚠️ Gagal mengambil kalimat dengan tanda baca.",
+  "sceneTrial": "Pratinjau gratis",
+  "lockedMessage": "Tersedia dengan berlangganan paket.",
+  "resetPassword": "Atur ulang kata sandi",
+  "enterEmailForReset": "Silakan masukkan alamat email untuk mengatur ulang kata sandi.",
+  "sendResetEmail": "Kirim email reset",
+  "passwordResetSent": "Email reset kata sandi telah dikirim.",
+  "passwordResetError": "Gagal mengirim email reset.",
+  "settingsTitle": "Pengaturan",
+  "welcomeUser": "Selamat datang, {name}!",
+  "registeredDate": "Tanggal terdaftar: {date}",
+  "userFetchFailed": "Gagal mengambil informasi pengguna (kesalahan: {error}).",
+  "@userFetchFailed": {
+    "description": "ユーザー取得エラー時の表示メッセージ",
+    "placeholders": {
+      "error": {}
+    }
+  },
+  "languageUpdated": "Pengaturan bahasa telah diperbarui.",
+  "registerAccount": "Daftar akun",
+  "registerSubtitle": "Jika Anda mengganti perangkat atau menghapus aplikasi, riwayat belajar akan hilang. Daftarkan akun di sini untuk menyimpan data.",
+  "loginTitle": "Masuk",
+  "loginSubtitle": "Sudah terdaftar? Ketuk di sini.",
+  "logout": "Keluar",
+  "login": "Masuk",
+  "email": "Alamat email",
+  "password": "Kata sandi",
+  "invalidEmail": "Silakan masukkan alamat email yang valid",
+  "passwordTooShort": "Kata sandi harus minimal 6 karakter",
+  "loginFailed": "Gagal masuk",
+  "loginError": "Kesalahan masuk",
+  "noAccountRegister": "Belum punya akun? Daftar di sini",
+  "resetPassword": "Lupa kata sandi?",
+  "register": "Daftar",
+  "registerFailed": "Gagal mendaftar",
+  "purchaseSuccess": "Terima kasih atas pembelian Anda!",
+  "subscribe": "Langganan",
+  "subscribeNow": "Coba gratis 7 hari, lalu berlangganan Paket Dasar",
+  "lockedTitle": "Terkunci",
+  "@lockedTitle": {
+    "description": "ロック中アラートのタイトル"
+  },
+  "lockedMessage": "Pertanyaan ini hanya tersedia bagi pelanggan.",
+  "@lockedMessage": {
+    "description": "ロック中アラートの本文"
+  },
+  "sceneTitle": "{sceneKey}",
+  "@sceneTitle": {
+    "description": "シーン名をそのままタイトルに表示します",
+    "placeholders": {
+      "sceneKey": {}
+    }
+  },
+  "restorePurchase": "Pulihkan pembelian",
+  "restorePurchaseSubtitle": "Pulihkan status pembelian Anda sebelumnya",
+  "restoringPurchase": "Memeriksa riwayat pembelian...",
+  "restoreSubscription": "Pulihkan langganan",
+  "@restoreSubscription": {
+    "description": "以前購入したサブスクリプションを復元するボタンのラベル"
+  },
+  "subscriptionTitle": "Langganan",
+  "subscriptionPlanTitle": "<Detail langganan>",
+  "subscriptionPlanMonthly": "• Nama paket: Paket Dasar",
+  "subscriptionPlanPeriod": "• Periode: 1 bulan",
+  "subscriptionPlanPrice": "• Harga: ¥1.500 (termasuk pajak)",
+  "subscriptionPlanTrial": "• Jika belum berlangganan: hanya Pratinjau gratis.",
+  "subscriptionCurrentStatusTitle": "Status saat ini",
+  "subscriptionStatusSubscribed": "• Berlangganan: membuka semua skenario pembelajaran, termasuk Pratinjau gratis, dengan penggunaan tanpa batas.",
+  "subscriptionStatus": "• Berlangganan: selain Pratinjau gratis, ketiga skenario pembelajaran terbuka penuh dan dapat digunakan tanpa batas.",
+  "subscriptionStatusTrial": "Belum berlangganan: hanya Pratinjau gratis.",
+  "subscriptionManageButton": "Buka pengelolaan langganan di Apple",
+  "subscriptionManageNote": "※ Batalkan atau langgan ulang paket bulanan melalui opsi di atas.",
+  "subscriptionManageTitle": "Detail langganan",
+  "subscriptionManageSubtitle": "Lihat paket dan berlangganan di sini",
+  "subscriptionPriceTaxSuffix": "(termasuk pajak)",
+  "languageSelectionTitle": "Pilih bahasa ibu",
+  "languageSelectionDescription": "Pilih bahasa Anda",
+  "similarExpressionPrefix": "Ekspresi lain:",
+  "guest": "Tamu",
+  "@guest": {
+    "description": "匿名ユーザーの場合に表示する名前"
+  },
+  "viewTerms": "Baca Syarat Penggunaan (EULA)",
+  "viewPrivacyPolicy": "Baca Kebijakan Privasi",
+  "invalidPassword": "Kata sandi harus terdiri dari minimal 6 karakter",
+  "@invalidPassword": {
+    "description": "ログイン時のパスワードバリデーションエラーメッセージ（6文字未満の場合）"
+  },
+  "subscriptionStatusUnsubscribed": "Belum berlangganan",
+  "@subscriptionStatusUnsubscribed": {
+    "description": "ユーザーがサブスクに加入していないときに表示するラベル"
+  },
+  "settings_deleteAccount": "Hapus akun",
+  "@settings_deleteAccount": {
+    "description": "メール登録ユーザー向けの「アカウントを削除する」ボタンラベル"
+  },
+  "settings_resetData": "Setel ulang data",
+  "@settings_resetData": {
+    "description": "匿名ユーザー向けの「データを初期化する」ボタンラベル"
+  },
+  "settings_confirmDeleteAccount": "Apakah Anda yakin ingin menghapus akun dan semua data?\nTindakan ini tidak dapat dibatalkan.",
+  "@settings_confirmDeleteAccount": {
+    "description": "アカウント削除時の確認ダイアログメッセージ"
+  },
+  "settings_confirmResetData": "Apakah Anda yakin ingin menyetel ulang data?\nSemua kemajuan akan hilang.",
+  "@settings_confirmResetData": {
+    "description": "匿名データ初期化時の確認ダイアログメッセージ"
+  },
+  "enterPassword": "Masukkan kata sandi",
+  "@enterPassword": {
+    "description": "アカウント削除時にパスワード再入力を促すダイアログタイトル"
+  },
+  "password": "Kata sandi",
+  "@password": {
+    "description": "パスワード入力フィールドのプレースホルダー"
+  },
+  "cancel": "Batal",
+  "@cancel": {
+    "description": "ダイアログのキャンセルボタンラベル"
+  },
+  "ok": "OK",
+  "@ok": {
+    "description": "ダイアログのOKボタンラベル"
+  },
+  "logoutConfirmation": "Apakah Anda yakin ingin keluar?",
+  "viewFaq": "Pertanyaan yang Sering Diajukan",
+  "checking": "Memeriksa…",
+  "sceneVocabulary": "Kalimat pendek",
+  "subsceneAll": "Semua",
+  "@subsceneAll": {
+    "description": "Tombol filter: Semua"
+  },
+  "recordingAutoStopped": "Perekaman dihentikan otomatis pada 10 detik.",
+  "readingLabel": "Membaca",
+  "listeningLabel": "Menyimak",
+  "listeningPrompt": "Sedang mengatakan apa?",
+  "sceneWork": "Bekerja",
+  "sceneSocial_interactions_hobbies": "Pertukaran dan hobi",
+  "sceneculture_entertainment": "Budaya & Hiburan",
+  "scenecommunity_life": "Kehidupan komunitas",
+  "userAnswerHeader": "Jawaban Anda",
+  "@userAnswerHeader": { "description": "Header untuk jawaban pengguna" },
+  "badgeCorrect": "Benar",
+  "@badgeCorrect": { "description": "Lencana benar" },
+  "badgeNeedsImprovement": "Perlu perbaikan",
+  "@badgeNeedsImprovement": { "description": "Lencana perlu perbaikan" },
+  "originalTranslationHeader": "Terjemahan asli",
+  "originalTranscriptionHeader": "Transkripsi asli",
+  "originalExplanationHeader": "Penjelasan asli",
+  "similarExpressionHeader": "Ekspresi serupa yang ramah",
+  "incorrectMessageWithRaw": "{raw} \nJawaban ini tidak benar secara tata bahasa atau makna.",
+  "answerMeaningAccurate": "Jawaban ini secara akurat mencerminkan makna dari pertanyaan.",
+  "subscriptionUpsellTitle": "Lanjut belajar dengan Paket Basic!",
+  "subscriptionUpsellMessage": "Paket gratis hanya percobaan. Jika benar-benar ingin bisa berbicara, buka semua skenario sekarang juga!"
+}

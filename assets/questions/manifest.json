@@ -1,0 +1,26 @@
+[
+  {
+    "id": "trial",
+    "label_key": "sceneTrial",
+    "path": "questions/scenes/trial.json",
+    "access": "free"
+  },
+  {
+    "id": "travel",
+    "label_key": "sceneTravel",
+    "path": "questions/scenes/travel.json",
+    "access": "premium"
+  },
+  {
+    "id": "restaurant",
+    "label_key": "sceneRestaurant",
+    "path": "questions/scenes/restaurant.json",
+    "access": "premium"
+  },
+  {
+    "id": "shopping",
+    "label_key": "sceneShopping",
+    "path": "questions/scenes/shopping.json",
+    "access": "premium"
+  }
+]

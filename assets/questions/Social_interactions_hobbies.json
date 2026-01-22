@@ -1,0 +1,3232 @@
+[
+  {
+    "id": "Social_interactions_hobbies_001",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "MakingFriends",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "はじめまして、よろしくお願いします。",
+      "en": "Nice to meet you, thank you very much.",
+      "zh": "很高兴认识您，非常感谢。",
+      "zh_TW": "很高興認識您，非常感謝。",
+      "ko": "만나서 반가워요, 대단히 감사합니다.",
+      "es": "Encantado de conocerte, muchas gracias.",
+      "fr": "Ravi de vous rencontrer, merci beaucoup.",
+      "de": "Schön dich kennenzulernen, vielen Dank.",
+      "vi": "Rất vui được gặp bạn, cảm ơn bạn rất nhiều.",
+      "id": "Senang bertemu denganmu, terima kasih banyak."
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_002",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "MakingFriends",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "お名前を教えていただけますか？",
+      "en": "Can you tell me your name?",
+      "zh": "你能告诉我你的名字吗？",
+      "zh_TW": "你能告訴我你的名字嗎？",
+      "ko": "당신의 이름을 말해 줄 수 있습니까?",
+      "es": "¿Puedes decirme tu nombre?",
+      "fr": "Pouvez-vous me dire votre nom?",
+      "de": "Kannst du mir deinen Namen sagen?",
+      "vi": "Bạn có thể cho tôi biết tên của bạn?",
+      "id": "Bisakah Anda memberi tahu saya nama Anda?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_003",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "MakingFriends",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "出身はどちらですか？",
+      "en": "where are you from?",
+      "zh": "你从哪来？",
+      "zh_TW": "你從哪來？",
+      "ko": "어디서 오셨나요?",
+      "es": "¿de dónde eres?",
+      "fr": "d'où venez-vous?",
+      "de": "Woher kommst du?",
+      "vi": "Bạn đến từ đâu?",
+      "id": "Dari mana asalmu?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_004",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "MakingFriends",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ご趣味は何ですか？",
+      "en": "What is your hobby?",
+      "zh": "你的爱好是什么？",
+      "zh_TW": "你的愛好是什麼？",
+      "ko": "취미는 무엇입니까?",
+      "es": "¿Cuál es tu pasatiempo?",
+      "fr": "Quel est votre passe-temps?",
+      "de": "Was ist dein Hobby?",
+      "vi": "Sở thích của bạn là gì?",
+      "id": "Apa hobimu?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_005",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "MakingFriends",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "どの学部（部署）に所属していますか？",
+      "en": "Which faculty (department) do you belong to?",
+      "zh": "您属于哪个教师（部门）？",
+      "zh_TW": "您屬於哪個教師（部門）？",
+      "ko": "당신은 어떤 교수 (부서)에 속해 있습니까?",
+      "es": "¿A qué facultad (departamento) pertenece?",
+      "fr": "À quelle faculté (département) appartenez-vous?",
+      "de": "Zu welcher Fakultät (Abteilung) gehören Sie?",
+      "vi": "Bạn thuộc về giảng viên (khoa) nào?",
+      "id": "Fakultas (departemen) mana yang Anda miliki?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_006",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "MakingFriends",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "日本に来てどのくらいですか？",
+      "en": "How long have you been to Japan?",
+      "zh": "您去日本多久了？",
+      "zh_TW": "您去日本多久了？",
+      "ko": "일본에 얼마나 오셨나요?",
+      "es": "¿Cuánto tiempo llevas en Japón?",
+      "fr": "Depuis combien de temps êtes-vous au Japon?",
+      "de": "Wie lange bist du schon in Japan?",
+      "vi": "Bạn đã đến Nhật Bản bao lâu?",
+      "id": "Sudah berapa lama Anda ke Jepang?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_007",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "MakingFriends",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "よく行く場所はありますか？",
+      "en": "Are there places I often go?",
+      "zh": "我经常去吗？",
+      "zh_TW": "我經常去嗎？",
+      "ko": "내가 자주가는 곳이 있습니까?",
+      "es": "¿Hay lugares a los que a menudo voy?",
+      "fr": "Y a-t-il des endroits où je vais souvent?",
+      "de": "Gibt es Orte, die ich oft gehe?",
+      "vi": "Có những nơi tôi thường đến?",
+      "id": "Apakah ada tempat yang sering saya kunjungi?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_008",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "MakingFriends",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "どんな音楽が好きですか？",
+      "en": "What kind of music do you like?",
+      "zh": "你喜欢什么样的音乐？",
+      "zh_TW": "你喜歡什麼樣的音樂？",
+      "ko": "당신은 어떤 종류의 음악을 좋아합니까?",
+      "es": "¿Qué tipo de música te gusta?",
+      "fr": "Quel genre de musique aimez-vous?",
+      "de": "Welche Art von Musik magst du?",
+      "vi": "Bạn thích loại nhạc nào?",
+      "id": "Jenis musik apa yang kamu suka?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_009",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "MakingFriends",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "友達になってもいいですか？",
+      "en": "Can I become friends?",
+      "zh": "我可以成为朋友吗？",
+      "zh_TW": "我可以成為朋友嗎？",
+      "ko": "친구가 될 수 있습니까?",
+      "es": "¿Puedo convertirme en amigos?",
+      "fr": "Puis-je devenir des amis?",
+      "de": "Kann ich Freunde werden?",
+      "vi": "Tôi có thể trở thành bạn bè không?",
+      "id": "Bisakah saya menjadi teman?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_010",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "MakingFriends",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "またお会いできて嬉しいです。",
+      "en": "I'm happy to meet you again.",
+      "zh": "我很高兴再次见到你。",
+      "zh_TW": "我很高興再次見到你。",
+      "ko": "다시 만나서 반갑습니다.",
+      "es": "Estoy feliz de volver a verte.",
+      "fr": "Je suis heureux de vous revoir.",
+      "de": "Ich freue mich, Sie wieder zu treffen.",
+      "vi": "Tôi rất vui được gặp lại bạn.",
+      "id": "Saya senang bertemu dengan Anda lagi."
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_011",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Invitations_Plans",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "今度の週末、空いていますか？",
+      "en": "Are you free this weekend?",
+      "zh": "你这个周末有空吗？",
+      "zh_TW": "你這個週末有空嗎？",
+      "ko": "이번 주말에 무료입니까?",
+      "es": "¿Estás libre este fin de semana?",
+      "fr": "Êtes-vous libre ce week-end?",
+      "de": "Bist du dieses Wochenende frei?",
+      "vi": "Bạn có rảnh vào cuối tuần này không?",
+      "id": "Apakah Anda bebas akhir pekan ini?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_012",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Invitations_Plans",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "一緒に映画を見に行きませんか？",
+      "en": "Would you like to go see a movie together?",
+      "zh": "您想一起去看电影吗？",
+      "zh_TW": "您想一起去看電影嗎？",
+      "ko": "함께 영화를보고 싶습니까?",
+      "es": "¿Te gustaría ir a ver una película juntos?",
+      "fr": "Souhaitez-vous aller voir un film ensemble?",
+      "de": "Möchten Sie gemeinsam einen Film sehen?",
+      "vi": "Bạn có muốn đi xem phim cùng nhau không?",
+      "id": "Apakah Anda ingin menonton film bersama?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_013",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Invitations_Plans",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ランチに行きませんか？",
+      "en": "Would you like to go for lunch?",
+      "zh": "你想去吃午餐吗？",
+      "zh_TW": "你想去吃午餐嗎？",
+      "ko": "점심 먹으시겠습니까?",
+      "es": "¿Le gustaría ir a almorzar?",
+      "fr": "Souhaitez-vous aller déjeuner?",
+      "de": "Möchten Sie zum Mittagessen gehen?",
+      "vi": "Bạn có muốn đi ăn trưa không?",
+      "id": "Apakah Anda ingin makan siang?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_014",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Invitations_Plans",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "明日の午後に予定はありますか？",
+      "en": "Do you have any plans tomorrow afternoon?",
+      "zh": "你明天下午有什么计划吗？",
+      "zh_TW": "你明天下午有什麼計劃嗎？",
+      "ko": "내일 오후에 계획이 있습니까?",
+      "es": "¿Tienes algún plan mañana por la tarde?",
+      "fr": "Avez-vous des plans demain après-midi?",
+      "de": "Hast du morgen Nachmittag Pläne?",
+      "vi": "Bạn có kế hoạch nào vào chiều mai không?",
+      "id": "Apakah Anda punya rencana besok sore?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_015",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Invitations_Plans",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "スポーツを一緒にしませんか？",
+      "en": "Would you like to play sports together?",
+      "zh": "您想一起参加运动吗？",
+      "zh_TW": "您想一起參加運動嗎？",
+      "ko": "함께 스포츠를 하시겠습니까?",
+      "es": "¿Te gustaría practicar deportes juntos?",
+      "fr": "Souhaitez-vous faire du sport ensemble?",
+      "de": "Möchten Sie gemeinsam Sport treiben?",
+      "vi": "Bạn có muốn chơi thể thao cùng nhau không?",
+      "id": "Apakah Anda ingin berolahraga bersama?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_016",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Invitations_Plans",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "このイベントに一緒に行きませんか？",
+      "en": "Would you like to go to this event with me?",
+      "zh": "您想和我一起参加这个活动吗？",
+      "zh_TW": "您想和我一起參加這個活動嗎？",
+      "ko": "나와 함께이 이벤트에 가고 싶습니까?",
+      "es": "¿Te gustaría ir a este evento conmigo?",
+      "fr": "Voudriez-vous aller à cet événement avec moi?",
+      "de": "Möchten Sie mit mir zu dieser Veranstaltung gehen?",
+      "vi": "Bạn có muốn đi đến sự kiện này với tôi không?",
+      "id": "Apakah Anda ingin pergi ke acara ini dengan saya?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_017",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Invitations_Plans",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "何時に集合しましょうか？",
+      "en": "What time shall we meet?",
+      "zh": "我们什么时候见面？",
+      "zh_TW": "我們什麼時候見面？",
+      "ko": "우리는 몇시에 만날 것인가?",
+      "es": "¿A qué hora nos reuniremos?",
+      "fr": "À quelle heure devons-nous nous rencontrer?",
+      "de": "Wann sollen wir uns treffen?",
+      "vi": "Chúng ta sẽ gặp nhau lúc mấy giờ?",
+      "id": "Jam berapa kita akan bertemu?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_018",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Invitations_Plans",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "予定を変更しても大丈夫ですか？",
+      "en": "Is it okay to change the schedule?",
+      "zh": "可以更改时间表吗？",
+      "zh_TW": "可以更改時間表嗎？",
+      "ko": "일정을 변경해도 괜찮습니까?",
+      "es": "¿Está bien cambiar el horario?",
+      "fr": "Est-il normal de modifier le calendrier?",
+      "de": "Ist es in Ordnung, den Zeitplan zu ändern?",
+      "vi": "Thay đổi lịch trình có ổn không?",
+      "id": "Apakah boleh mengubah jadwal?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_019",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Invitations_Plans",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ご都合はいかがですか？",
+      "en": "How is it convenient for you?",
+      "zh": "您如何方便？",
+      "zh_TW": "您如何方便？",
+      "ko": "당신에게 어떻게 편리합니까?",
+      "es": "¿Cómo es conveniente para ti?",
+      "fr": "Comment est-ce pratique pour vous?",
+      "de": "Wie ist es für Sie bequem?",
+      "vi": "Làm thế nào là thuận tiện cho bạn?",
+      "id": "Bagaimana bisa Anda?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_020",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Invitations_Plans",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "また改めて誘ってもいいですか？",
+      "en": "Can I invite you again?",
+      "zh": "我可以再次邀请你吗？",
+      "zh_TW": "我可以再次邀請你嗎？",
+      "ko": "다시 초대 할 수 있습니까?",
+      "es": "¿Puedo invitarte de nuevo?",
+      "fr": "Puis-je vous inviter à nouveau?",
+      "de": "Kann ich dich wieder einladen?",
+      "vi": "Tôi có thể mời bạn một lần nữa không?",
+      "id": "Bisakah saya mengundang Anda lagi?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_021",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "CasualConversations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "今日の天気はいいですね。",
+      "en": "The weather is nice today.",
+      "zh": "今天天气很好。",
+      "zh_TW": "今天天氣很好。",
+      "ko": "오늘 날씨가 좋습니다.",
+      "es": "El clima es agradable hoy.",
+      "fr": "Le temps est beau aujourd'hui.",
+      "de": "Das Wetter ist heute schön.",
+      "vi": "Hôm nay thời tiết đẹp.",
+      "id": "Cuacanya bagus hari ini."
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_022",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "CasualConversations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "最近どうですか？",
+      "en": "How have you been lately?",
+      "zh": "您最近过得怎么样？",
+      "zh_TW": "您最近過得怎麼樣？",
+      "ko": "최근에 어땠어?",
+      "es": "¿Cómo has estado últimamente?",
+      "fr": "Comment avez-vous été récemment?",
+      "de": "Wie geht es dir in letzter Zeit?",
+      "vi": "Bạn đã được gần đây như thế nào?",
+      "id": "Bagaimana kabarmu akhir -akhir ini?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_023",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "CasualConversations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "昨日は何をしていましたか？",
+      "en": "What were you doing yesterday?",
+      "zh": "你昨天在做什么？",
+      "zh_TW": "你昨天在做什麼？",
+      "ko": "어제 뭐해?",
+      "es": "¿Qué estabas haciendo ayer?",
+      "fr": "Que faisais-tu hier?",
+      "de": "Was hast du gestern gemacht?",
+      "vi": "Bạn đã làm gì ngày hôm qua?",
+      "id": "Apa yang kamu lakukan kemarin?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_024",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "CasualConversations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "おすすめのレストランはありますか？",
+      "en": "Are there any restaurants you would like to recommend?",
+      "zh": "您想推荐任何餐馆吗？",
+      "zh_TW": "您想推薦任何餐館嗎？",
+      "ko": "추천하고 싶은 레스토랑이 있습니까?",
+      "es": "¿Hay algún restaurante que le gustaría recomendar?",
+      "fr": "Y a-t-il des restaurants que vous aimeriez recommander?",
+      "de": "Gibt es Restaurants, die Sie empfehlen möchten?",
+      "vi": "Có nhà hàng nào bạn muốn giới thiệu không?",
+      "id": "Apakah ada restoran yang ingin Anda rekomendasikan?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_025",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "CasualConversations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "最近読んだ本はありますか？",
+      "en": "Have you read any books recently?",
+      "zh": "您最近读过任何书籍吗？",
+      "zh_TW": "您最近讀過任何書籍嗎？",
+      "ko": "최근에 책을 읽었습니까?",
+      "es": "¿Has leído algún libro recientemente?",
+      "fr": "Avez-vous lu des livres récemment?",
+      "de": "Haben Sie kürzlich Bücher gelesen?",
+      "vi": "Bạn đã đọc bất kỳ cuốn sách gần đây chưa?",
+      "id": "Sudahkah Anda membaca buku baru -baru ini?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_026",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "CasualConversations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "好きな映画は何ですか？",
+      "en": "What is your favorite movie?",
+      "zh": "你最喜欢的电影是什么？",
+      "zh_TW": "你最喜歡的電影是什麼？",
+      "ko": "가장 좋아하는 영화는 무엇입니까?",
+      "es": "¿Cuál es tu película favorita?",
+      "fr": "Quel est votre film préféré?",
+      "de": "Was ist dein Lieblingsfilm?",
+      "vi": "Bộ phim yêu thích của bạn là gì?",
+      "id": "Apa film favoritmu?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_027",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "CasualConversations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "休日はどう過ごしていますか？",
+      "en": "How do you spend your holidays?",
+      "zh": "您如何度过假期？",
+      "zh_TW": "您如何度過假期？",
+      "ko": "휴일을 어떻게 보내나요?",
+      "es": "¿Cómo pasas tus vacaciones?",
+      "fr": "Comment passez-vous vos vacances?",
+      "de": "Wie verbringst du deine Feiertage?",
+      "vi": "Làm thế nào để bạn dành kỳ nghỉ của bạn?",
+      "id": "Bagaimana Anda menghabiskan liburan Anda?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_028",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "CasualConversations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "旅行に行くとしたらどこに行きたいですか？",
+      "en": "If you were to go on a trip, where would you like to go?",
+      "zh": "如果您要去旅行，您想去哪里？",
+      "zh_TW": "如果您要去旅行，您想去哪裡？",
+      "ko": "여행을 가면 어디로 가고 싶습니까?",
+      "es": "Si tuvieras que ir de viaje, ¿a dónde te gustaría ir?",
+      "fr": "Si vous deviez faire un voyage, où aimeriez-vous aller?",
+      "de": "Wenn Sie eine Reise machen würden, wo möchten Sie dann gehen?",
+      "vi": "Nếu bạn đi trong một chuyến đi, bạn muốn đi đâu?",
+      "id": "Jika Anda melakukan perjalanan, ke mana Anda ingin pergi?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_029",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "CasualConversations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "よく使うアプリは何ですか？",
+      "en": "What apps do you use frequently?",
+      "zh": "您经常使用哪些应用程序？",
+      "zh_TW": "您經常使用哪些應用程序？",
+      "ko": "어떤 앱을 자주 사용하십니까?",
+      "es": "¿Qué aplicaciones usas con frecuencia?",
+      "fr": "Quelles applications utilisez-vous fréquemment?",
+      "de": "Welche Apps verwenden Sie häufig?",
+      "vi": "Bạn thường xuyên sử dụng ứng dụng nào?",
+      "id": "Aplikasi apa yang sering Anda gunakan?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_030",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "CasualConversations",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "将来やってみたいことはありますか？",
+      "en": "Is there anything you would like to try in the future?",
+      "zh": "您将来有什么想尝试的吗？",
+      "zh_TW": "您將來有什麼想嘗試的嗎？",
+      "ko": "앞으로 시도하고 싶은 것이 있습니까?",
+      "es": "¿Hay algo que te gustaría probar en el futuro?",
+      "fr": "Y a-t-il quelque chose que vous aimeriez essayer à l'avenir?",
+      "de": "Gibt es etwas, das Sie in Zukunft ausprobieren möchten?",
+      "vi": "Có điều gì bạn muốn thử trong tương lai không?",
+      "id": "Adakah yang ingin Anda coba di masa depan?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_031",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Hobbies_Leisure",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ご趣味は何ですか？",
+      "en": "What is your hobby?",
+      "zh": "你的爱好是什么？",
+      "zh_TW": "你的愛好是什麼？",
+      "ko": "취미는 무엇입니까?",
+      "es": "¿Cuál es tu pasatiempo?",
+      "fr": "Quel est votre passe-temps?",
+      "de": "Was ist dein Hobby?",
+      "vi": "Sở thích của bạn là gì?",
+      "id": "Apa hobimu?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_032",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Hobbies_Leisure",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "週末は何をして過ごしますか？",
+      "en": "What do you do on the weekend?",
+      "zh": "你周末做什么？",
+      "zh_TW": "你周末做什麼？",
+      "ko": "주말에 무엇을합니까?",
+      "es": "¿Qué haces el fin de semana?",
+      "fr": "Que faites-vous le week-end?",
+      "de": "Was machst du am Wochenende?",
+      "vi": "Bạn làm gì vào cuối tuần?",
+      "id": "Apa yang Anda lakukan di akhir pekan?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_033",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Hobbies_Leisure",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "映画を見るのが好きです。",
+      "en": "I like watching movies.",
+      "zh": "我喜欢看电影。",
+      "zh_TW": "我喜歡看電影。",
+      "ko": "나는 영화를 보는 것을 좋아한다.",
+      "es": "Me gusta ver películas.",
+      "fr": "J'aime regarder des films.",
+      "de": "Ich mag es, Filme zu schauen.",
+      "vi": "Tôi thích xem phim.",
+      "id": "Saya suka menonton film."
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_034",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Hobbies_Leisure",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "音楽を聴くのが楽しみです。",
+      "en": "I'm looking forward to listening to music.",
+      "zh": "我期待着听音乐。",
+      "zh_TW": "我期待著聽音樂。",
+      "ko": "나는 음악을 듣기를 고대하고있다.",
+      "es": "Estoy deseando escuchar música.",
+      "fr": "J'ai hâte d'écouter de la musique.",
+      "de": "Ich freue mich darauf, Musik zu hören.",
+      "vi": "Tôi mong được nghe nhạc.",
+      "id": "Saya menantikan untuk mendengarkan musik."
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_035",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Hobbies_Leisure",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "旅行するのが好きです。",
+      "en": "I like to travel.",
+      "zh": "我喜欢旅行。",
+      "zh_TW": "我喜歡旅行。",
+      "ko": "나는 여행하는 것을 좋아합니다.",
+      "es": "Me gusta viajar.",
+      "fr": "J'aime voyager.",
+      "de": "Ich reise gerne.",
+      "vi": "Tôi thích đi du lịch.",
+      "id": "Saya suka bepergian."
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_036",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Hobbies_Leisure",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "写真を撮るのが趣味です。",
+      "en": "My hobby is taking photos.",
+      "zh": "我的爱好是拍照。",
+      "zh_TW": "我的愛好是拍照。",
+      "ko": "내 취미는 사진을 찍고 있습니다.",
+      "es": "Mi pasatiempo es tomar fotos.",
+      "fr": "Mon passe-temps est de prendre des photos.",
+      "de": "Mein Hobby ist es, Fotos zu machen.",
+      "vi": "Sở thích của tôi là chụp ảnh.",
+      "id": "Hobi saya mengambil foto."
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_037",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Hobbies_Leisure",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "読書が好きです。",
+      "en": "I like reading.",
+      "zh": "我喜欢读书。",
+      "zh_TW": "我喜歡讀書。",
+      "ko": "나는 독서를 좋아한다.",
+      "es": "Me gusta leer.",
+      "fr": "J'aime lire.",
+      "de": "Ich mag es zu lesen.",
+      "vi": "Tôi thích đọc sách.",
+      "id": "Saya suka membaca."
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_038",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Hobbies_Leisure",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ゲームをよくしますか？",
+      "en": "Do you play games more often?",
+      "zh": "您经常玩游戏吗？",
+      "zh_TW": "您經常玩遊戲嗎？",
+      "ko": "게임을 더 자주 플레이합니까?",
+      "es": "¿Juegas juegos con más frecuencia?",
+      "fr": "Jouez-vous à des jeux plus souvent?",
+      "de": "Spielst du öfter Spiele?",
+      "vi": "Bạn có chơi trò chơi thường xuyên hơn không?",
+      "id": "Apakah Anda lebih sering bermain game?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_039",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Hobbies_Leisure",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "新しい趣味を始めたいです。",
+      "en": "I want to start a new hobby.",
+      "zh": "我想开始一个新的爱好。",
+      "zh_TW": "我想開始一個新的愛好。",
+      "ko": "새로운 취미를 시작하고 싶습니다.",
+      "es": "Quiero comenzar un nuevo pasatiempo.",
+      "fr": "Je veux commencer un nouveau passe-temps.",
+      "de": "Ich möchte ein neues Hobby beginnen.",
+      "vi": "Tôi muốn bắt đầu một sở thích mới.",
+      "id": "Saya ingin memulai hobi baru."
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_040",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Hobbies_Leisure",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "どんなことに興味がありますか？",
+      "en": "What are you interested in?",
+      "zh": "您对什么感兴趣？",
+      "zh_TW": "您對什麼感興趣？",
+      "ko": "당신은 무엇에 관심이 있습니까?",
+      "es": "¿En qué te interesa?",
+      "fr": "Qu'est-ce qui vous intéresse?",
+      "de": "Was interessiert Sie?",
+      "vi": "Bạn quan tâm đến điều gì?",
+      "id": "Apa yang Anda minati?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_041",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Sports_Activities",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "どんなスポーツが好きですか？",
+      "en": "What sports do you like?",
+      "zh": "你喜欢什么运动？",
+      "zh_TW": "你喜歡什麼運動？",
+      "ko": "당신은 어떤 스포츠를 좋아합니까?",
+      "es": "¿Qué deportes te gusta?",
+      "fr": "Quels sports aimez-vous?",
+      "de": "Welche Sportarten magst du?",
+      "vi": "Bạn thích môn thể thao nào?",
+      "id": "Olahraga apa yang kamu suka?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_042",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Sports_Activities",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "よく運動をしますか？",
+      "en": "Do you exercise often?",
+      "zh": "你经常运动吗？",
+      "zh_TW": "你經常運動嗎？",
+      "ko": "당신은 자주 운동합니까?",
+      "es": "¿Haces ejercicio a menudo?",
+      "fr": "Faites-vous de l'exercice souvent?",
+      "de": "Sport treibe oft?",
+      "vi": "Bạn có tập thể dục thường xuyên không?",
+      "id": "Apakah Anda sering berolahraga?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_043",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Sports_Activities",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "サッカーをするのが好きです。",
+      "en": "I like to play soccer.",
+      "zh": "我喜欢踢足球。",
+      "zh_TW": "我喜歡踢足球。",
+      "ko": "나는 축구를 좋아합니다.",
+      "es": "Me gusta jugar al fútbol.",
+      "fr": "J'aime jouer au football.",
+      "de": "Ich spiele gerne Fußball.",
+      "vi": "Tôi thích chơi bóng đá.",
+      "id": "Saya suka bermain sepak bola."
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_044",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Sports_Activities",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "野球を観戦しますか？",
+      "en": "Do you want to watch baseball?",
+      "zh": "你想看棒球吗？",
+      "zh_TW": "你想看棒球嗎？",
+      "ko": "야구를보고 싶습니까?",
+      "es": "¿Quieres ver el béisbol?",
+      "fr": "Voulez-vous regarder le baseball?",
+      "de": "Möchten Sie Baseball sehen?",
+      "vi": "Bạn có muốn xem bóng chày không?",
+      "id": "Apakah Anda ingin menonton baseball?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_045",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Sports_Activities",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "テニスをしたことがありますか？",
+      "en": "Have you ever played tennis?",
+      "zh": "你玩过网球吗？",
+      "zh_TW": "你玩過網球嗎？",
+      "ko": "테니스를 한 적이 있습니까?",
+      "es": "¿Alguna vez has jugado tenis?",
+      "fr": "Avez-vous déjà joué au tennis?",
+      "de": "Hast du jemals Tennis gespielt?",
+      "vi": "Bạn đã bao giờ chơi tennis chưa?",
+      "id": "Apakah Anda pernah bermain tenis?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_046",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Sports_Activities",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ジムに通っていますか？",
+      "en": "Do you go to the gym?",
+      "zh": "你去健身房吗？",
+      "zh_TW": "你去健身房嗎？",
+      "ko": "당신은 체육관에 가나 요?",
+      "es": "¿Vas al gimnasio?",
+      "fr": "Allez-vous au gymnase?",
+      "de": "Gehst du ins Fitnessstudio?",
+      "vi": "Bạn có đến phòng tập thể dục không?",
+      "id": "Apakah Anda pergi ke gym?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_047",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Sports_Activities",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "一緒にジョギングしませんか？",
+      "en": "Would you like to jog with us?",
+      "zh": "您想和我们一起慢跑吗？",
+      "zh_TW": "您想和我們一起慢跑嗎？",
+      "ko": "우리와 조깅 하시겠습니까?",
+      "es": "¿Le gustaría trotar con nosotros?",
+      "fr": "Souhaitez-vous faire du jogging avec nous?",
+      "de": "Möchten Sie mit uns joggen?",
+      "vi": "Bạn có muốn chạy bộ với chúng tôi không?",
+      "id": "Apakah Anda ingin berlari dengan kami?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_048",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Sports_Activities",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "バスケットボールをしたいです。",
+      "en": "I want to play basketball.",
+      "zh": "我想打篮球。",
+      "zh_TW": "我想打籃球。",
+      "ko": "나는 농구를하고 싶다.",
+      "es": "Quiero jugar baloncesto.",
+      "fr": "Je veux jouer au basket.",
+      "de": "Ich möchte Basketball spielen.",
+      "vi": "Tôi muốn chơi bóng rổ.",
+      "id": "Saya ingin bermain basket."
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_049",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Sports_Activities",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "水泳は得意ですか？",
+      "en": "Are you good at swimming?",
+      "zh": "你擅长游泳吗？",
+      "zh_TW": "你擅長游泳嗎？",
+      "ko": "당신은 수영을 잘합니까?",
+      "es": "¿Eres bueno nadando?",
+      "fr": "Êtes-vous doué pour la natation?",
+      "de": "Kannst du gut schwimmen?",
+      "vi": "Bạn có giỏi bơi lội không?",
+      "id": "Apakah Anda pandai berenang?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_050",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Sports_Activities",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "健康のために運動しています。",
+      "en": "I exercise for my health.",
+      "zh": "我为健康而运动。",
+      "zh_TW": "我為健康而運動。",
+      "ko": "나는 내 건강을 위해 운동한다.",
+      "es": "Hago ejercicio para mi salud.",
+      "fr": "Je fais de l'exercice pour ma santé.",
+      "de": "Ich trainiere für meine Gesundheit.",
+      "vi": "Tôi tập thể dục cho sức khỏe của mình.",
+      "id": "Saya berolahraga untuk kesehatan saya."
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_051",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Music_Concerts",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "どんな音楽が好きですか？",
+      "en": "What kind of music do you like?",
+      "zh": "你喜欢什么样的音乐？",
+      "zh_TW": "你喜歡什麼樣的音樂？",
+      "ko": "당신은 어떤 종류의 음악을 좋아합니까?",
+      "es": "¿Qué tipo de música te gusta?",
+      "fr": "Quel genre de musique aimez-vous?",
+      "de": "Welche Art von Musik magst du?",
+      "vi": "Bạn thích loại nhạc nào?",
+      "id": "Jenis musik apa yang kamu suka?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_052",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Music_Concerts",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "好きなアーティストは誰ですか？",
+      "en": "Who is your favorite artist?",
+      "zh": "谁是您最喜欢的艺术家？",
+      "zh_TW": "誰是您最喜歡的藝術家？",
+      "ko": "가장 좋아하는 아티스트는 누구입니까?",
+      "es": "¿Quién es tu artista favorito?",
+      "fr": "Qui est votre artiste préféré?",
+      "de": "Wer ist dein Lieblingskünstler?",
+      "vi": "Nghệ sĩ yêu thích của bạn là ai?",
+      "id": "Siapa artis favoritmu?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_053",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Music_Concerts",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "よくコンサートに行きますか？",
+      "en": "Do you often go to concerts?",
+      "zh": "你经常去音乐会吗？",
+      "zh_TW": "你經常去音樂會嗎？",
+      "ko": "당신은 종종 콘서트에 가나 요?",
+      "es": "¿A menudo vas a conciertos?",
+      "fr": "Allez-vous souvent à des concerts?",
+      "de": "Gehst du oft zu Konzerten?",
+      "vi": "Bạn có thường xuyên đi đến các buổi hòa nhạc không?",
+      "id": "Apakah Anda sering pergi ke konser?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_054",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Music_Concerts",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "カラオケは好きですか？",
+      "en": "Do you like karaoke?",
+      "zh": "你喜欢卡拉OK吗？",
+      "zh_TW": "你喜歡卡拉OK嗎？",
+      "ko": "가라오케를 좋아하세요?",
+      "es": "¿Te gusta el karaoke?",
+      "fr": "Aimez-vous le karaoké?",
+      "de": "Magst du Karaoke?",
+      "vi": "Bạn có thích karaoke?",
+      "id": "Apakah Anda suka karaoke?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_055",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Music_Concerts",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "この曲を知っていますか？",
+      "en": "Do you know this song?",
+      "zh": "你知道这首歌吗？",
+      "zh_TW": "你知道這首歌嗎？",
+      "ko": "이 노래를 아십니까?",
+      "es": "¿Conoces esta canción?",
+      "fr": "Connaissez-vous cette chanson?",
+      "de": "Kennst du dieses Lied?",
+      "vi": "Bạn có biết bài hát này không?",
+      "id": "Apakah Anda tahu lagu ini?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_056",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Music_Concerts",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "楽器を演奏できますか？",
+      "en": "Can I play an instrument?",
+      "zh": "我可以弹乐器吗？",
+      "zh_TW": "我可以彈樂器嗎？",
+      "ko": "악기를 연주 할 수 있습니까?",
+      "es": "¿Puedo tocar un instrumento?",
+      "fr": "Puis-je jouer un instrument?",
+      "de": "Kann ich ein Instrument spielen?",
+      "vi": "Tôi có thể chơi một nhạc cụ không?",
+      "id": "Bisakah saya memainkan instrumen?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_057",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Music_Concerts",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "最近のヒット曲を聴きましたか？",
+      "en": "Have you heard of any recent hits?",
+      "zh": "您听说过最近的热门歌曲吗？",
+      "zh_TW": "您聽說過最近的熱門歌曲嗎？",
+      "ko": "최근 히트 곡에 대해 들어 보셨습니까?",
+      "es": "¿Has oído hablar de algún éxito reciente?",
+      "fr": "Avez-vous entendu parler de succès récents?",
+      "de": "Haben Sie von jüngsten Hits gehört?",
+      "vi": "Bạn đã nghe nói về bất kỳ hit gần đây?",
+      "id": "Pernahkah Anda mendengar tentang hit baru -baru ini?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_058",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Music_Concerts",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ライブチケットを予約しました。",
+      "en": "I have booked a live ticket.",
+      "zh": "我已经预订了一张现场票。",
+      "zh_TW": "我已經預訂了一張現場票。",
+      "ko": "나는 라이브 티켓을 예약했다.",
+      "es": "He reservado un boleto en vivo.",
+      "fr": "J'ai réservé un billet en direct.",
+      "de": "Ich habe ein Live -Ticket gebucht.",
+      "vi": "Tôi đã đặt một vé trực tiếp.",
+      "id": "Saya telah memesan tiket langsung."
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_059",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Music_Concerts",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "フェスに行ったことがありますか？",
+      "en": "Been to Festivals?",
+      "zh": "去过节日吗？",
+      "zh_TW": "去過節日嗎？",
+      "ko": "축제에 다녀 왔나요?",
+      "es": "Estuviste en festivales?",
+      "fr": "Vous connaissez des festivals?",
+      "de": "Warst du schon bei Festivals?",
+      "vi": "Đã đến lễ hội?",
+      "id": "Pernah Berkunjung ke Festival?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_060",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Music_Concerts",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "一緒に音楽イベントに行きませんか？",
+      "en": "Would you like to go to a music event together?",
+      "zh": "您想一起参加音乐活动吗？",
+      "zh_TW": "您想一起參加音樂活動嗎？",
+      "ko": "함께 음악 이벤트에 가고 싶습니까?",
+      "es": "¿Te gustaría ir a un evento musical juntos?",
+      "fr": "Souhaitez-vous aller ensemble à un événement musical?",
+      "de": "Möchten Sie gemeinsam zu einem Musikereignis gehen?",
+      "vi": "Bạn có muốn cùng nhau đi đến một sự kiện âm nhạc không?",
+      "id": "Apakah Anda ingin pergi ke acara musik bersama?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_061",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Books_Movies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "最近読んだ本はありますか？",
+      "en": "Have you read any books recently?",
+      "zh": "您最近读过任何书籍吗？",
+      "zh_TW": "您最近讀過任何書籍嗎？",
+      "ko": "최근에 책을 읽었습니까?",
+      "es": "¿Has leído algún libro recientemente?",
+      "fr": "Avez-vous lu des livres récemment?",
+      "de": "Haben Sie kürzlich Bücher gelesen?",
+      "vi": "Bạn đã đọc bất kỳ cuốn sách gần đây chưa?",
+      "id": "Sudahkah Anda membaca buku baru -baru ini?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_062",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Books_Movies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "おすすめの本を教えてください。",
+      "en": "Please tell me any recommended books.",
+      "zh": "请告诉我任何推荐的书。",
+      "zh_TW": "請告訴我任何推薦的書。",
+      "ko": "추천서를 알려주세요.",
+      "es": "Por favor, dígame cualquier libro recomendado.",
+      "fr": "Veuillez me dire tous les livres recommandés.",
+      "de": "Bitte sagen Sie mir alle empfohlenen Bücher.",
+      "vi": "Vui lòng cho tôi biết bất kỳ cuốn sách được đề xuất.",
+      "id": "Tolong beritahu saya buku yang direkomendasikan."
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_063",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Books_Movies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "好きな作家は誰ですか？",
+      "en": "Who is your favourite author?",
+      "zh": "您最喜欢的作者是谁？",
+      "zh_TW": "您最喜歡的作者是誰？",
+      "ko": "가장 좋아하는 작가는 누구입니까?",
+      "es": "¿Quién es tu autor favorito?",
+      "fr": "Quel est votre auteur préféré?",
+      "de": "Wer ist dein Lieblingsautor?",
+      "vi": "Tác giả yêu thích của bạn là ai?",
+      "id": "Siapa penulis favoritmu?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_064",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Books_Movies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "この映画を見たことがありますか？",
+      "en": "Have you ever seen this movie?",
+      "zh": "你看过这部电影吗？",
+      "zh_TW": "你看過這部電影嗎？",
+      "ko": "이 영화를 본 적이 있습니까?",
+      "es": "¿Alguna vez has visto esta película?",
+      "fr": "Avez-vous déjà vu ce film?",
+      "de": "Hast du diesen Film jemals gesehen?",
+      "vi": "Bạn đã bao giờ xem bộ phim này chưa?",
+      "id": "Pernahkah Anda melihat film ini?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_065",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Books_Movies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "最近の映画で面白かったものは何ですか？",
+      "en": "What were some of the most interesting movies you've had?",
+      "zh": "您拍的最有趣的电影是什么？",
+      "zh_TW": "您拍的最有趣的電影是什麼？",
+      "ko": "당신이 가진 가장 흥미로운 영화는 무엇입니까?",
+      "es": "¿Cuáles fueron algunas de las películas más interesantes que has tenido?",
+      "fr": "Quels ont été les films les plus intéressants que vous ayez eu?",
+      "de": "Was waren einige der interessantesten Filme, die Sie hatten?",
+      "vi": "Một số bộ phim thú vị nhất mà bạn đã có là gì?",
+      "id": "Apa beberapa film paling menarik yang Anda miliki?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_066",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Books_Movies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "字幕版と吹き替え版、どちらが好きですか？",
+      "en": "Which do you prefer, the subtitle version or the dubbed version?",
+      "zh": "您更喜欢哪个字幕版本或配音版本？",
+      "zh_TW": "您更喜歡哪個字幕版本或配音版本？",
+      "ko": "자막 버전 또는 더빙 버전을 선호하는 것은 무엇입니까?",
+      "es": "¿Cuál prefieres, la versión de subtítulo o la versión doblada?",
+      "fr": "Lequel préférez-vous, la version sous-titre ou la version doublée?",
+      "de": "Was bevorzugen Sie, die Untertitelversion oder die synchronisierte Version?",
+      "vi": "Bạn thích cái nào, phiên bản phụ đề hoặc phiên bản lồng tiếng?",
+      "id": "Mana yang Anda sukai, versi subtitle atau versi yang dijuluki?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_067",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Books_Movies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "映画館によく行きますか？",
+      "en": "Do you often go to the cinemas?",
+      "zh": "你经常去电影院吗？",
+      "zh_TW": "你經常去電影院嗎？",
+      "ko": "당신은 종종 영화관에 가나 요?",
+      "es": "¿A menudo vas a los cines?",
+      "fr": "Allez-vous souvent dans les cinémas?",
+      "de": "Gehst du oft in die Kinos?",
+      "vi": "Bạn có thường xuyên đến các rạp chiếu phim không?",
+      "id": "Apakah Anda sering pergi ke bioskop?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_068",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Books_Movies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "好きなジャンルは何ですか？",
+      "en": "What genre do you like?",
+      "zh": "您喜欢什么类型？",
+      "zh_TW": "您喜歡什麼類型？",
+      "ko": "당신은 어떤 장르를 좋아합니까?",
+      "es": "¿Qué género te gusta?",
+      "fr": "Quel genre aimez-vous?",
+      "de": "Welches Genre magst du?",
+      "vi": "Bạn thích thể loại nào?",
+      "id": "Genre apa yang kamu suka?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_069",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Books_Movies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "この小説は映画化されていますか？",
+      "en": "Has this novel been made into a film?",
+      "zh": "这本小说被制作成电影吗？",
+      "zh_TW": "這本小說被製作成電影嗎？",
+      "ko": "이 소설은 영화로 만들어 졌습니까?",
+      "es": "¿Se ha convertido esta novela en una película?",
+      "fr": "Ce roman a-t-il été transformé en film?",
+      "de": "Wurde dieser Roman in einen Film gemacht?",
+      "vi": "Cuốn tiểu thuyết này đã được thực hiện thành một bộ phim?",
+      "id": "Apakah novel ini dibuat menjadi film?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_070",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Books_Movies",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "一緒に映画を見に行きませんか？",
+      "en": "Would you like to go see a movie together?",
+      "zh": "您想一起去看电影吗？",
+      "zh_TW": "您想一起去看電影嗎？",
+      "ko": "함께 영화를보고 싶습니까?",
+      "es": "¿Te gustaría ir a ver una película juntos?",
+      "fr": "Souhaitez-vous aller voir un film ensemble?",
+      "de": "Möchten Sie gemeinsam einen Film sehen?",
+      "vi": "Bạn có muốn đi xem phim cùng nhau không?",
+      "id": "Apakah Anda ingin menonton film bersama?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_071",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Travel_Plans",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "次の旅行はどこに行きたいですか？",
+      "en": "Where would you like to go on your next trip?",
+      "zh": "您想去哪里下次旅行？",
+      "zh_TW": "您想去哪裡下次旅行？",
+      "ko": "다음 여행은 어디로 가고 싶습니까?",
+      "es": "¿A dónde te gustaría ir en tu próximo viaje?",
+      "fr": "Où aimeriez-vous faire votre prochain voyage?",
+      "de": "Wohin möchten Sie auf Ihre nächste Reise gehen?",
+      "vi": "Bạn muốn đi đâu trong chuyến đi tiếp theo?",
+      "id": "Kemana Anda ingin melakukan perjalanan berikutnya?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_072",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Travel_Plans",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "国内旅行と海外旅行、どちらが好きですか？",
+      "en": "Do you prefer domestic or international travel?",
+      "zh": "您喜欢国内或国际旅行吗？",
+      "zh_TW": "您喜歡國內或國際旅行嗎？",
+      "ko": "국내 또는 국제 여행을 선호합니까?",
+      "es": "¿Prefieres viajes nacionales o internacionales?",
+      "fr": "Préférez-vous les voyages nationaux ou internationaux?",
+      "de": "Bevorzugen Sie inländische oder internationale Reisen?",
+      "vi": "Bạn thích du lịch trong nước hay quốc tế?",
+      "id": "Apakah Anda lebih suka perjalanan domestik atau internasional?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_073",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Travel_Plans",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "一番印象に残った旅行先はどこですか？",
+      "en": "What travel destination was your most memorable?",
+      "zh": "您最难忘的是哪个旅行目的地？",
+      "zh_TW": "您最難忘的是哪個旅行目的地？",
+      "ko": "가장 기억에 남는 여행 목적지는 무엇입니까?",
+      "es": "¿Qué destino de viaje fue el más memorable?",
+      "fr": "Quelle destination de voyage a été votre plus mémorable?",
+      "de": "Welches Reiseziel war Ihr denkwürdigster?",
+      "vi": "Điểm đến du lịch nào là đáng nhớ nhất của bạn?",
+      "id": "Tujuan perjalanan apa yang paling berkesan?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_074",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Travel_Plans",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "旅行の予定はもう立てましたか？",
+      "en": "Have you made plans for your trip yet?",
+      "zh": "您是否制定了旅行计划？",
+      "zh_TW": "您是否制定了旅行計劃？",
+      "ko": "여행 계획을 세웠습니까?",
+      "es": "¿Ya has hecho planes para tu viaje?",
+      "fr": "Avez-vous déjà fait des plans pour votre voyage?",
+      "de": "Haben Sie schon Pläne für Ihre Reise gemacht?",
+      "vi": "Bạn đã lên kế hoạch cho chuyến đi của mình chưa?",
+      "id": "Apakah Anda sudah membuat rencana untuk perjalanan Anda?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_075",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Travel_Plans",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "どんな交通手段を使いますか？",
+      "en": "What means of transportation do you use?",
+      "zh": "您使用什么手段？",
+      "zh_TW": "您使用什麼手段？",
+      "ko": "어떤 교통 수단을 사용하십니까?",
+      "es": "¿Qué medios de transporte usas?",
+      "fr": "Quels moyens de transport utilisez-vous?",
+      "de": "Welche Transportmittel verwenden Sie?",
+      "vi": "Bạn sử dụng phương tiện giao thông nào?",
+      "id": "Apa sarana transportasi yang Anda gunakan?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_076",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Travel_Plans",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "宿泊はホテルですか？民宿ですか？",
+      "en": "Is the hotel staying at?Is it a guesthouse?",
+      "zh": "酒店住在吗？是旅馆吗？",
+      "zh_TW": "酒店住在嗎？是旅館嗎？",
+      "ko": "호텔이 머무르고 있습니까?게스트 하우스인가요?",
+      "es": "¿Se está alojando el hotel?¿Es una casa de huéspedes?",
+      "fr": "L'hôtel séjourne-t-il?Est-ce une maison d'hôtes?",
+      "de": "Bleibt das Hotel in?Ist es ein Gästehaus?",
+      "vi": "Khách sạn có ở lại không?Nó có phải là một nhà khách?",
+      "id": "Apakah hotel ini tinggal di?Apakah ini wisma?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_077",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Travel_Plans",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "観光スポットを調べましたか？",
+      "en": "Have you looked into tourist attractions?",
+      "zh": "您是否研究过旅游景点？",
+      "zh_TW": "您是否研究過旅遊景點？",
+      "ko": "관광 명소를 살펴 보셨습니까?",
+      "es": "¿Has investigado las atracciones turísticas?",
+      "fr": "Avez-vous examiné les attractions touristiques?",
+      "de": "Haben Sie sich mit Touristenattraktionen angesehen?",
+      "vi": "Bạn đã xem xét các điểm du lịch?",
+      "id": "Sudahkah Anda melihat ke tempat wisata?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_078",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Travel_Plans",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "旅行で一番楽しみにしていることは何ですか？",
+      "en": "What do you look forward to most about your trip?",
+      "zh": "您最期待您的旅行？",
+      "zh_TW": "您最期待您的旅行？",
+      "ko": "여행에 대해 가장 기대하는 것은 무엇입니까?",
+      "es": "¿Qué es lo que más esperas de tu viaje?",
+      "fr": "Qu'attendez-vous le plus sur votre voyage?",
+      "de": "Worauf freuen Sie sich über Ihre Reise am meisten?",
+      "vi": "Bạn mong đợi điều gì nhất về chuyến đi của bạn?",
+      "id": "Apa yang paling Anda nantikan tentang perjalanan Anda?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_079",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Travel_Plans",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "お土産は何を買いますか？",
+      "en": "What souvenirs do you buy?",
+      "zh": "您购买哪些纪念品？",
+      "zh_TW": "您購買哪些紀念品？",
+      "ko": "어떤 기념품을 사십니까?",
+      "es": "¿Qué recuerdos compras?",
+      "fr": "Quels souvenirs achetez-vous?",
+      "de": "Welche Souvenirs kaufen Sie?",
+      "vi": "Bạn mua những món quà lưu niệm nào?",
+      "id": "Souvenir apa yang Anda beli?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_080",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Travel_Plans",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "一緒に旅行を計画しませんか？",
+      "en": "Why not plan a trip together?",
+      "zh": "为什么不计划旅行？",
+      "zh_TW": "為什麼不計劃旅行？",
+      "ko": "함께 여행을 계획하지 않겠습니까?",
+      "es": "¿Por qué no planificar un viaje juntos?",
+      "fr": "Pourquoi ne pas planifier un voyage ensemble?",
+      "de": "Warum nicht zusammen eine Reise planen?",
+      "vi": "Tại sao không lên kế hoạch cho một chuyến đi cùng nhau?",
+      "id": "Mengapa tidak merencanakan perjalanan bersama?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_081",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "SocialEvents_Parties",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "このイベントには参加しますか？",
+      "en": "Would you like to participate in this event?",
+      "zh": "您想参加此活动吗？",
+      "zh_TW": "您想參加此活動嗎？",
+      "ko": "이 행사에 참여 하시겠습니까?",
+      "es": "¿Le gustaría participar en este evento?",
+      "fr": "Souhaitez-vous participer à cet événement?",
+      "de": "Möchten Sie an dieser Veranstaltung teilnehmen?",
+      "vi": "Bạn có muốn tham gia vào sự kiện này không?",
+      "id": "Apakah Anda ingin berpartisipasi dalam acara ini?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_082",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "SocialEvents_Parties",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "パーティーは何時から始まりますか？",
+      "en": "What time does the party start?",
+      "zh": "聚会什么时候开始？",
+      "zh_TW": "聚會什麼時候開始？",
+      "ko": "몇시에 파티는 시작합니까?",
+      "es": "¿A qué hora comienza la fiesta?",
+      "fr": "À quelle heure la fête commence-t-elle?",
+      "de": "Wann beginnt die Party?",
+      "vi": "Bữa tiệc bắt đầu lúc mấy giờ?",
+      "id": "Jam berapa pesta dimulai?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_083",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "SocialEvents_Parties",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "誰が参加する予定ですか？",
+      "en": "Who is planning to participate?",
+      "zh": "谁计划参加？",
+      "zh_TW": "誰計劃參加？",
+      "ko": "누가 참여할 계획입니까?",
+      "es": "¿Quién planea participar?",
+      "fr": "Qui prévoit de participer?",
+      "de": "Wer plant die Teilnahme?",
+      "vi": "Ai đang có kế hoạch tham gia?",
+      "id": "Siapa yang berencana untuk berpartisipasi?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_084",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "SocialEvents_Parties",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ドレスコードはありますか？",
+      "en": "Do they have a dress code?",
+      "zh": "他们有着装要求吗？",
+      "zh_TW": "他們有著裝要求嗎？",
+      "ko": "드레스 코드가 있습니까?",
+      "es": "¿Tienen un código de vestuario?",
+      "fr": "Ont-ils un code vestimentaire?",
+      "de": "Haben sie eine Kleiderkode?",
+      "vi": "Họ có một quy định về trang phục?",
+      "id": "Apakah mereka memiliki kode berpakaian?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_085",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "SocialEvents_Parties",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "料理や飲み物は持参しますか？",
+      "en": "Do you bring food or drinks with you?",
+      "zh": "你带食物或饮料吗？",
+      "zh_TW": "你帶食物或飲料嗎？",
+      "ko": "당신은 당신과 함께 음식이나 음료를 가져 오나요?",
+      "es": "¿Traes comida o bebidas contigo?",
+      "fr": "Apportez-vous de la nourriture ou des boissons avec vous?",
+      "de": "Bringen Sie Essen oder Getränke mit?",
+      "vi": "Bạn có mang theo thức ăn hoặc đồ uống với bạn không?",
+      "id": "Apakah Anda membawa makanan atau minuman?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_086",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "SocialEvents_Parties",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ゲームや余興はありますか？",
+      "en": "Are there any games or entertainment?",
+      "zh": "有游戏或娱乐吗？",
+      "zh_TW": "有遊戲或娛樂嗎？",
+      "ko": "게임이나 엔터테인먼트가 있습니까?",
+      "es": "¿Hay algún juego o entretenimiento?",
+      "fr": "Y a-t-il des jeux ou des divertissements?",
+      "de": "Gibt es Spiele oder Unterhaltung?",
+      "vi": "Có trò chơi hay giải trí nào không?",
+      "id": "Apakah ada permainan atau hiburan?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_087",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "SocialEvents_Parties",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "どこで開催されますか？",
+      "en": "Where will it be held?",
+      "zh": "它将在哪里举行？",
+      "zh_TW": "它將在哪裡舉行？",
+      "ko": "어디에서 개최됩니까?",
+      "es": "¿Dónde se llevará a cabo?",
+      "fr": "Où sera-t-il détenu?",
+      "de": "Wo wird es stattfinden?",
+      "vi": "Nó sẽ được tổ chức ở đâu?",
+      "id": "Di mana itu akan diadakan?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_088",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "SocialEvents_Parties",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "招待してくれてありがとうございます。",
+      "en": "Thank you for inviting me.",
+      "zh": "谢谢你邀请我。",
+      "zh_TW": "謝謝你邀請我。",
+      "ko": "저를 초대해 주셔서 감사합니다.",
+      "es": "Gracias por invitarme.",
+      "fr": "Merci de m'avoir invité.",
+      "de": "Danke, dass du mich eingeladen hast.",
+      "vi": "Cảm ơn bạn đã mời tôi.",
+      "id": "Terima kasih telah mengundang saya."
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_089",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "SocialEvents_Parties",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "とても楽しい時間を過ごしました。",
+      "en": "It was a very fun time.",
+      "zh": "这是一个非常有趣的时刻。",
+      "zh_TW": "這是一個非常有趣的時刻。",
+      "ko": "매우 재미있는 시간이었습니다.",
+      "es": "Fue un momento muy divertido.",
+      "fr": "Ce fut un moment très amusant.",
+      "de": "Es war eine sehr lustige Zeit.",
+      "vi": "Đó là một thời gian rất vui vẻ.",
+      "id": "Itu adalah waktu yang sangat menyenangkan."
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_090",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "SocialEvents_Parties",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "また次のイベントにも参加したいです。",
+      "en": "I would also like to attend the next event.",
+      "zh": "我也想参加下一个活动。",
+      "zh_TW": "我也想參加下一個活動。",
+      "ko": "다음 행사에도 참석하고 싶습니다.",
+      "es": "También me gustaría asistir al próximo evento.",
+      "fr": "Je voudrais également assister au prochain événement.",
+      "de": "Ich möchte auch an der nächsten Veranstaltung teilnehmen.",
+      "vi": "Tôi cũng muốn tham dự sự kiện tiếp theo.",
+      "id": "Saya juga ingin menghadiri acara berikutnya."
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_091",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Dining_Cafes",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "この近くにおすすめのレストランはありますか？",
+      "en": "Are there any restaurants nearby that you would like to visit?",
+      "zh": "您想参观附近有餐馆吗？",
+      "zh_TW": "您想參觀附近有餐館嗎？",
+      "ko": "근처에 방문하고 싶은 레스토랑이 있습니까?",
+      "es": "¿Hay algún restaurante cerca que le gustaría visitar?",
+      "fr": "Y a-t-il des restaurants à proximité que vous aimeriez visiter?",
+      "de": "Gibt es in der Nähe Restaurants, die Sie besuchen möchten?",
+      "vi": "Có nhà hàng nào gần đó mà bạn muốn ghé thăm không?",
+      "id": "Apakah ada restoran di dekatnya yang ingin Anda kunjungi?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_092",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Dining_Cafes",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "席は空いていますか？",
+      "en": "Are there any seats available?",
+      "zh": "有座位吗？",
+      "zh_TW": "有座位嗎？",
+      "ko": "사용 가능한 좌석이 있습니까?",
+      "es": "¿Hay algún asiento disponible?",
+      "fr": "Y a-t-il des sièges disponibles?",
+      "de": "Gibt es Plätze?",
+      "vi": "Có chỗ ngồi nào không?",
+      "id": "Apakah ada kursi yang tersedia?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_093",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Dining_Cafes",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "メニューを見せてください。",
+      "en": "May I see the menu?",
+      "zh": "我可以看一下菜单吗？",
+      "zh_TW": "我可以看一下菜單嗎？",
+      "ko": "메뉴 좀 주시겠어요?",
+      "es": "¿Me trae la carta?",
+      "fr": "Est-il possible de voir le menu ?",
+      "de": "Kann ich die Karte haben?",
+      "vi": "Tôi có thể xem thực đơn không?",
+      "id": "Boleh saya melihat menu?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_094",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Dining_Cafes",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "今日のおすすめは何ですか？",
+      "en": "What do you recommend today?",
+      "zh": "您今天建议什么？",
+      "zh_TW": "您今天建議什麼？",
+      "ko": "오늘 무엇을 추천합니까?",
+      "es": "¿Qué recomiendan hoy?",
+      "fr": "Que recommandez-vous aujourd'hui?",
+      "de": "Was empfehlen Sie heute?",
+      "vi": "Bạn giới thiệu gì hôm nay?",
+      "id": "Apa yang Anda rekomendasikan hari ini?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_095",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Dining_Cafes",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "コーヒーを一杯お願いします。",
+      "en": "A cup of coffee please.",
+      "zh": "请喝一杯咖啡。",
+      "zh_TW": "請喝一杯咖啡。",
+      "ko": "커피 한 잔주세요.",
+      "es": "Una taza de café por favor.",
+      "fr": "Une tasse de café s'il vous plaît.",
+      "de": "Bitte eine Tasse Kaffee.",
+      "vi": "Xin vui lòng một tách cà phê.",
+      "id": "Tolong secangkir kopi."
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_096",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Dining_Cafes",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "砂糖とミルクを付けてください。",
+      "en": "Add sugar and milk.",
+      "zh": "加糖和牛奶。",
+      "zh_TW": "加糖和牛奶。",
+      "ko": "설탕과 우유를 첨가하십시오.",
+      "es": "Agregue azúcar y leche.",
+      "fr": "Ajouter le sucre et le lait.",
+      "de": "Fügen Sie Zucker und Milch hinzu.",
+      "vi": "Thêm đường và sữa.",
+      "id": "Tambahkan gula dan susu."
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_097",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Dining_Cafes",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "この料理は辛いですか？",
+      "en": "Is this dish spicy?",
+      "zh": "这道菜辣吗？",
+      "zh_TW": "這道菜辣嗎？",
+      "ko": "이 요리는 매운가요?",
+      "es": "¿Este plato es picante?",
+      "fr": "Ce plat est-il épicé?",
+      "de": "Ist dieses Gericht würzig?",
+      "vi": "Món ăn này có cay không?",
+      "id": "Apakah hidangan ini pedas?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_098",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Dining_Cafes",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "デザートメニューはありますか？",
+      "en": "Is there a dessert menu?",
+      "zh": "有甜点菜单吗？",
+      "zh_TW": "有甜點菜單嗎？",
+      "ko": "디저트 메뉴가 있습니까?",
+      "es": "¿Hay un menú de postre?",
+      "fr": "Y a-t-il un menu de dessert?",
+      "de": "Gibt es ein Dessertmenü?",
+      "vi": "Có thực đơn món tráng miệng không?",
+      "id": "Apakah ada menu makanan penutup?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_099",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Dining_Cafes",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "お会計をお願いします。",
+      "en": "Please pay the bill.",
+      "zh": "请支付账单。",
+      "zh_TW": "請支付賬單。",
+      "ko": "청구서를 지불하십시오.",
+      "es": "Pague la factura.",
+      "fr": "Veuillez payer la facture.",
+      "de": "Bitte zahlen Sie die Rechnung.",
+      "vi": "Vui lòng thanh toán hóa đơn.",
+      "id": "Harap bayar tagihannya."
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_100",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Dining_Cafes",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "とても美味しかったです、ごちそうさまでした。",
+      "en": "It was very tasty, thank you for the meal.",
+      "zh": "这很美味，谢谢您的饭菜。",
+      "zh_TW": "這很美味，謝謝您的飯菜。",
+      "ko": "매우 맛있었습니다. 식사 감사합니다.",
+      "es": "Fue muy sabroso, gracias por la comida.",
+      "fr": "C'était très savoureux, merci pour le repas.",
+      "de": "Es war sehr lecker, danke für das Essen.",
+      "vi": "Nó rất ngon, cảm ơn bạn cho bữa ăn.",
+      "id": "Itu sangat enak, terima kasih atas makanannya."
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_101",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "好きなアニメは何ですか？",
+      "en": "What is your favorite anime?",
+      "zh": "您最喜欢的动漫是什么？",
+      "zh_TW": "您最喜歡的動漫是什麼？",
+      "ko": "가장 좋아하는 애니메이션은 무엇입니까?",
+      "es": "¿Cuál es tu anime favorito?",
+      "fr": "Quel est votre anime préféré?",
+      "de": "Was ist dein Lieblingsanime?",
+      "vi": "Anime yêu thích của bạn là gì?",
+      "id": "Apa anime favoritmu?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_102",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "漫画はよく読みますか？",
+      "en": "Do you read manga often?",
+      "zh": "你经常读漫画吗？",
+      "zh_TW": "你經常讀漫畫嗎？",
+      "ko": "만화를 자주 읽습니까?",
+      "es": "¿Lees el manga a menudo?",
+      "fr": "Lisez-vous souvent des mangas?",
+      "de": "Lesen Sie Manga oft?",
+      "vi": "Bạn có đọc Manga thường xuyên không?",
+      "id": "Apakah Anda sering membaca manga?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_103",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "推しキャラは誰ですか？",
+      "en": "Who is your favorite character?",
+      "zh": "您最喜欢的角色是谁？",
+      "zh_TW": "您最喜歡的角色是誰？",
+      "ko": "가장 좋아하는 캐릭터는 누구입니까?",
+      "es": "¿Quién es tu personaje favorito?",
+      "fr": "Quel est votre personnage préféré?",
+      "de": "Wer ist dein Lieblingscharakter?",
+      "vi": "Nhân vật yêu thích của bạn là ai?",
+      "id": "Siapa karakter favoritmu?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_104",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "今期のアニメは見ていますか？",
+      "en": "Have you watched this season's anime?",
+      "zh": "您看过本赛季的动漫吗？",
+      "zh_TW": "您看過本賽季的動漫嗎？",
+      "ko": "이번 시즌의 애니메이션을 보셨습니까?",
+      "es": "¿Has visto el anime de esta temporada?",
+      "fr": "Avez-vous regardé l'anime de cette saison?",
+      "de": "Hast du den Anime dieser Saison gesehen?",
+      "vi": "Bạn đã xem anime mùa này chưa?",
+      "id": "Sudahkah Anda menonton anime musim ini?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_105",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "コスプレをしたことがありますか？",
+      "en": "Have you ever cosplayed?",
+      "zh": "你曾经扮演过角色扮演吗？",
+      "zh_TW": "你曾經扮演過角色扮演嗎？",
+      "ko": "코스프레를 한 적이 있습니까?",
+      "es": "¿Alguna vez has cosplay?",
+      "fr": "Avez-vous déjà cosplayé?",
+      "de": "Hast du jemals cosplayed?",
+      "vi": "Bạn đã bao giờ cosplay chưa?",
+      "id": "Pernahkah Anda cosplay?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_106",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "アニメイベントに行ったことがありますか？",
+      "en": "Been to an anime event?",
+      "zh": "去过动漫活动吗？",
+      "zh_TW": "去過動漫活動嗎？",
+      "ko": "애니메이션 이벤트에 다녀 오 셨나요?",
+      "es": "¿Estuviste en un evento de anime?",
+      "fr": "Vous connaissez un événement d'anime?",
+      "de": "Warst du bei einem Anime -Event?",
+      "vi": "Đã đến một sự kiện anime?",
+      "id": "Pernah Berkunjung ke Acara Anime?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_107",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "フィギュアやグッズを集めていますか？",
+      "en": "Do you collect figures and merchandise?",
+      "zh": "您收集数字和商品吗？",
+      "zh_TW": "您收集數字​​和商品嗎？",
+      "ko": "인물과 상품을 수집합니까?",
+      "es": "¿Recoge figuras y mercancías?",
+      "fr": "Collectez-vous des chiffres et des marchandises?",
+      "de": "Sammeln Sie Zahlen und Waren?",
+      "vi": "Bạn có thu thập số liệu và hàng hóa?",
+      "id": "Apakah Anda mengumpulkan angka dan barang dagangan?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_108",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ゲームはどんなジャンルが好きですか？",
+      "en": "What genres do you like in the game?",
+      "zh": "您喜欢游戏中哪些类型？",
+      "zh_TW": "您喜歡游戲中哪些類型？",
+      "ko": "게임에서 어떤 장르를 좋아합니까?",
+      "es": "¿Qué géneros te gustan en el juego?",
+      "fr": "Quels genres aimez-vous dans le jeu?",
+      "de": "Welche Genres magst du im Spiel?",
+      "vi": "Bạn thích thể loại nào trong trò chơi?",
+      "id": "Genre apa yang Anda suka dalam permainan?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_109",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "同人誌を買ったことはありますか？",
+      "en": "Have you ever bought a doujinshi?",
+      "zh": "您曾经买过Doujinshi吗？",
+      "zh_TW": "您曾經買過Doujinshi嗎？",
+      "ko": "Doujinshi를 구입 한 적이 있습니까?",
+      "es": "¿Alguna vez has comprado un Doujinshi?",
+      "fr": "Avez-vous déjà acheté un Doujinshi?",
+      "de": "Haben Sie jemals einen Doujinshi gekauft?",
+      "vi": "Bạn đã bao giờ mua một doujinshi chưa?",
+      "id": "Pernahkah Anda membeli Doujinshi?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_110",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "いつか日本のアニメ聖地を訪れたいです。",
+      "en": "I would like to visit Japan's holy anime site someday.",
+      "zh": "有一天，我想参观日本的圣动漫网站。",
+      "zh_TW": "有一天，我想參觀日本的聖動漫網站。",
+      "ko": "언젠가 일본의 거룩한 애니메이션 사이트를 방문하고 싶습니다.",
+      "es": "Me gustaría visitar el sitio de anime sagrado de Japón algún día.",
+      "fr": "Je voudrais visiter un jour le site d'anime du Japon.",
+      "de": "Ich möchte eines Tages Japans heilige Anime -Stätte besuchen.",
+      "vi": "Tôi muốn ghé thăm trang web anime thánh của Nhật Bản vào một ngày nào đó.",
+      "id": "Saya ingin mengunjungi situs anime suci Jepang suatu hari nanti."
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_111",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "一番好きなアニメは何ですか？",
+      "en": "What is your favorite anime?",
+      "zh": "您最喜欢的动漫是什么？",
+      "zh_TW": "您最喜歡的動漫是什麼？",
+      "ko": "가장 좋아하는 애니메이션은 무엇입니까?",
+      "es": "¿Cuál es tu anime favorito?",
+      "fr": "Quel est votre anime préféré?",
+      "de": "Was ist dein Lieblingsanime?",
+      "vi": "Anime yêu thích của bạn là gì?",
+      "id": "Apa anime favoritmu?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_112",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "漫画を単行本で集めていますか？",
+      "en": "Do you collect manga in hardcover?",
+      "zh": "您在精装书中收集漫画吗？",
+      "zh_TW": "您在精裝書中收集漫畫嗎？",
+      "ko": "하드 커버에서 만화를 수집합니까?",
+      "es": "¿Recoges manga en tapa dura?",
+      "fr": "Collectez-vous des mangas en couverture rigide?",
+      "de": "Sammle du Manga in Hardcover?",
+      "vi": "Bạn có thu thập manga trong bìa cứng không?",
+      "id": "Apakah Anda mengumpulkan manga di hardcover?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_113",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "アニメは字幕派ですか？吹き替え派ですか？",
+      "en": "Do you prefer subtitles in anime?Are you a dubbing fan?",
+      "zh": "您喜欢动漫中的字幕吗？您是配音风扇吗？",
+      "zh_TW": "您喜歡動漫中的字幕嗎？您是配音風扇嗎？",
+      "ko": "애니메이션에서 자막을 선호합니까?당신은 더빙 팬입니까?",
+      "es": "¿Prefieres los subtítulos en el anime?¿Eres un fanático de los doblaje?",
+      "fr": "Préférez-vous les sous-titres dans l'anime?Êtes-vous un fan de doublage?",
+      "de": "Bevorzugen Sie Untertitel im Anime?Bist du ein synchronisierter Fan?",
+      "vi": "Bạn có thích phụ đề trong anime không?Bạn có phải là một người hâm mộ lồng tiếng?",
+      "id": "Apakah Anda lebih suka subtitle di anime?Apakah Anda penggemar dubbing?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_114",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "お気に入りの声優は誰ですか？",
+      "en": "Who is your favorite voice actor?",
+      "zh": "您最喜欢的配音演员是谁？",
+      "zh_TW": "您最喜歡的配音演員是誰？",
+      "ko": "가장 좋아하는 성우는 누구입니까?",
+      "es": "¿Quién es tu actor de voz favorito?",
+      "fr": "Quel est votre acteur de voix préféré?",
+      "de": "Wer ist dein Lieblings -Sprachschauspieler?",
+      "vi": "Diễn viên lồng tiếng yêu thích của bạn là ai?",
+      "id": "Siapa aktor suara favoritmu?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_115",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ライトノベルを読んだことはありますか？",
+      "en": "Have you read a light novel?",
+      "zh": "你读了一本轻便小说吗？",
+      "zh_TW": "你讀了一本輕便小說嗎？",
+      "ko": "가벼운 소설을 읽었습니까?",
+      "es": "¿Has leído una novela ligera?",
+      "fr": "Avez-vous lu un roman léger?",
+      "de": "Hast du einen leichten Roman gelesen?",
+      "vi": "Bạn đã đọc một cuốn tiểu thuyết ánh sáng chưa?",
+      "id": "Sudahkah Anda membaca novel yang ringan?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_116",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "コミケに行ったことがありますか？",
+      "en": "Been to Comiket?",
+      "zh": "去过comiket吗？",
+      "zh_TW": "去過comiket嗎？",
+      "ko": "Comiket에 다녀 오 셨나요?",
+      "es": "Estuviste en Comiket?",
+      "fr": "Vous connaissez Comiket?",
+      "de": "Warst du in Comiket?",
+      "vi": "Bạn đã đến Comiket?",
+      "id": "Pernah Berkunjung ke Comiket?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_117",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "アニメグッズを通販で買いますか？",
+      "en": "Would you like to buy anime goods online?",
+      "zh": "您想在线购买动漫商品吗？",
+      "zh_TW": "您想在線購買動漫商品嗎？",
+      "ko": "온라인으로 애니메이션 제품을 사고 싶습니까?",
+      "es": "¿Le gustaría comprar productos de anime en línea?",
+      "fr": "Souhaitez-vous acheter des produits d'anime en ligne?",
+      "de": "Möchten Sie Anime -Waren online kaufen?",
+      "vi": "Bạn có muốn mua hàng anime trực tuyến không?",
+      "id": "Apakah Anda ingin membeli barang anime secara online?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_118",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ゲームは家庭用とスマホ、どちらが好きですか？",
+      "en": "Do you prefer home games or smartphones?",
+      "zh": "您喜欢家庭游戏或智能手机吗？",
+      "zh_TW": "您喜歡家庭遊戲或智能手機嗎？",
+      "ko": "홈 게임이나 스마트 폰을 선호하십니까?",
+      "es": "¿Prefieres juegos en casa o teléfonos inteligentes?",
+      "fr": "Préférez-vous les jeux à domicile ou les smartphones?",
+      "de": "Bevorzugen Sie Heimspiele oder Smartphones?",
+      "vi": "Bạn thích trò chơi gia đình hoặc điện thoại thông minh?",
+      "id": "Apakah Anda lebih suka game kandang atau smartphone?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_119",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "美少女キャラが好きですか？",
+      "en": "Do you like beautiful girl characters?",
+      "zh": "你喜欢美丽的女孩角色吗？",
+      "zh_TW": "你喜歡美麗的女孩角色嗎？",
+      "ko": "당신은 아름다운 소녀 캐릭터를 좋아합니까?",
+      "es": "¿Te gustan los personajes de chicas hermosas?",
+      "fr": "Aimez-vous les personnages de belles filles?",
+      "de": "Magst du schöne Mädchencharaktere?",
+      "vi": "Bạn có thích những nhân vật cô gái xinh đẹp?",
+      "id": "Apakah Anda menyukai karakter gadis yang cantik?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_120",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ロボットアニメに興味はありますか？",
+      "en": "Are you interested in robot anime?",
+      "zh": "您对机器人动漫感兴趣吗？",
+      "zh_TW": "您對機器人動漫感興趣嗎？",
+      "ko": "로봇 애니메이션에 관심이 있습니까?",
+      "es": "¿Estás interesado en el anime robot?",
+      "fr": "Êtes-vous intéressé par Robot Anime?",
+      "de": "Interessieren Sie sich für Roboteranime?",
+      "vi": "Bạn có quan tâm đến anime robot?",
+      "id": "Apakah Anda tertarik dengan robot anime?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_121",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "少年漫画と少女漫画、どちらが好きですか？",
+      "en": "Which do you prefer, boys' manga or girls' manga?",
+      "zh": "您喜欢哪个男孩漫画或女孩的漫画？",
+      "zh_TW": "您喜歡哪個男孩漫畫或女孩的漫畫？",
+      "ko": "소년 만화 또는 여자 만화를 선호하는 것은 무엇입니까?",
+      "es": "¿Cuál prefieres, manga de niños o manga de niñas?",
+      "fr": "Lequel préférez-vous, les mangas de garçons ou les mangas pour filles?",
+      "de": "Was bevorzugen Sie, Jungen Manga oder Mädchen Manga?",
+      "vi": "Bạn thích cái nào hơn, manga nam hay manga nữ?",
+      "id": "Mana yang Anda sukai, manga manga atau perempuan laki -laki?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_122",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "漫画喫茶に行ったことがありますか？",
+      "en": "Been to Manga Cafe?",
+      "zh": "去过漫画咖啡馆吗？",
+      "zh_TW": "去過漫畫咖啡館嗎？",
+      "ko": "만화 카페에 다녀 오 셨나요?",
+      "es": "Estuviste en Manga Cafe?",
+      "fr": "Vous connaissez Manga Cafe?",
+      "de": "Warst du schon im Manga Cafe?",
+      "vi": "Bạn đã đến Manga Cafe?",
+      "id": "Pernah Berkunjung ke Manga Cafe?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_123",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "同人イベントに参加したことはありますか？",
+      "en": "Have you ever participated in a doujin event?",
+      "zh": "您是否参加过Doujin活动？",
+      "zh_TW": "您是否參加過Doujin活動？",
+      "ko": "Doujin 이벤트에 참여한 적이 있습니까?",
+      "es": "¿Alguna vez ha participado en un evento de Doujin?",
+      "fr": "Avez-vous déjà participé à un événement Doujin?",
+      "de": "Haben Sie jemals an einem Doujin -Event teilgenommen?",
+      "vi": "Bạn đã bao giờ tham gia vào một sự kiện Doujin chưa?",
+      "id": "Pernahkah Anda berpartisipasi dalam acara doujin?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_124",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "推しカップリングはありますか？",
+      "en": "Are there any favourite couplings?",
+      "zh": "有没有喜欢的耦合？",
+      "zh_TW": "有沒有喜歡的耦合？",
+      "ko": "좋아하는 커플 링이 있습니까?",
+      "es": "¿Hay algún acoplamamiento favorito?",
+      "fr": "Y a-t-il des couplages préférés?",
+      "de": "Gibt es Lieblingskopplungen?",
+      "vi": "Có khớp nối yêu thích nào không?",
+      "id": "Apakah ada kopling favorit?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_125",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "アニメを一気見したことはありますか？",
+      "en": "Have you ever watched an anime all at once?",
+      "zh": "您是否曾经观看过一次动漫？",
+      "zh_TW": "您是否曾經觀看過一次動漫？",
+      "ko": "한 번에 애니메이션을 본 적이 있습니까?",
+      "es": "¿Alguna vez has visto un anime a la vez?",
+      "fr": "Avez-vous déjà regardé un anime à la fois?",
+      "de": "Haben Sie jemals einen Anime auf einmal gesehen?",
+      "vi": "Bạn đã bao giờ xem một anime cùng một lúc?",
+      "id": "Pernahkah Anda menonton anime sekaligus?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_126",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "カラオケでアニソンを歌いますか？",
+      "en": "Do you sing anime songs at karaoke?",
+      "zh": "你在卡拉OK唱歌吗？",
+      "zh_TW": "你在卡拉OK唱歌嗎？",
+      "ko": "가라오케에서 애니메이션 노래를 부르나요?",
+      "es": "¿Cantas canciones de anime en Karaoke?",
+      "fr": "Chantez-vous des chansons d'anime au karaoké?",
+      "de": "Singen Sie Anime -Lieder bei Karaoke?",
+      "vi": "Bạn có hát những bài hát anime tại karaoke?",
+      "id": "Apakah Anda menyanyikan lagu -lagu anime di karaoke?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_127",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "Blu-rayやDVDをコレクションしていますか？",
+      "en": "Do you collect Blu-rays and DVDs?",
+      "zh": "您收集蓝光和DVD吗？",
+      "zh_TW": "您收集藍光和DVD嗎？",
+      "ko": "Blu-ray와 DVD를 수집합니까?",
+      "es": "¿Recolectas Blu-Rays y DVD?",
+      "fr": "Collectez-vous des Blu-ray et des DVD?",
+      "de": "Sammeln Sie Blu-rays und DVDs?",
+      "vi": "Bạn có thu thập Blu-ray và DVD không?",
+      "id": "Apakah Anda mengumpulkan Blu-ray dan DVD?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_128",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "特典付きグッズを買ったことがありますか？",
+      "en": "Have you ever bought merchandise with bonuses?",
+      "zh": "您是否曾经用奖金购买商品？",
+      "zh_TW": "您是否曾經用獎金購買商品？",
+      "ko": "보너스로 상품을 구입 한 적이 있습니까?",
+      "es": "¿Alguna vez ha comprado mercancías con bonos?",
+      "fr": "Avez-vous déjà acheté des marchandises avec des bonus?",
+      "de": "Haben Sie jemals Waren mit Boni gekauft?",
+      "vi": "Bạn đã bao giờ mua hàng hóa với tiền thưởng chưa?",
+      "id": "Pernahkah Anda membeli barang dagangan dengan bonus?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_129",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ゲームセンターによく行きますか？",
+      "en": "Do you often go to arcades?",
+      "zh": "你经常去街机吗？",
+      "zh_TW": "你經常去街機嗎？",
+      "ko": "자주 아케이드에 가나 요?",
+      "es": "¿A menudo vas a las arcadas?",
+      "fr": "Allez-vous souvent aux arcades?",
+      "de": "Gehst du oft zu Arkaden?",
+      "vi": "Bạn có thường xuyên đến Arcades không?",
+      "id": "Apakah Anda sering pergi ke arcade?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_130",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "スマホゲームに課金したことはありますか？",
+      "en": "Have you ever paid for a smartphone game?",
+      "zh": "您曾经为智能手机游戏付费吗？",
+      "zh_TW": "您曾經為智能手機遊戲付費嗎？",
+      "ko": "스마트 폰 게임 비용을 지불 한 적이 있습니까?",
+      "es": "¿Alguna vez has pagado por un juego de teléfonos inteligentes?",
+      "fr": "Avez-vous déjà payé un jeu de smartphone?",
+      "de": "Haben Sie jemals ein Smartphone -Spiel bezahlt?",
+      "vi": "Bạn đã bao giờ trả tiền cho một trò chơi điện thoại thông minh?",
+      "id": "Pernahkah Anda membayar untuk game ponsel cerdas?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_131",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "聖地巡礼をしたことはありますか？",
+      "en": "Have you ever made a pilgrimage to the holy land?",
+      "zh": "您是否曾经朝圣土地朝圣？",
+      "zh_TW": "您是否曾經朝聖土地朝聖？",
+      "ko": "성지에 순례를 한 적이 있습니까?",
+      "es": "¿Alguna vez has hecho una peregrinación a Tierra Santa?",
+      "fr": "Avez-vous déjà fait un pèlerinage en Terre Sainte?",
+      "de": "Haben Sie jemals eine Pilgerreise in das Heilige Land gemacht?",
+      "vi": "Bạn đã bao giờ hành hương đến Thánh địa?",
+      "id": "Pernahkah Anda berziarah ke Tanah Suci?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_132",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "秋葉原に行ったことはありますか？",
+      "en": "Have you ever been to Akihabara?",
+      "zh": "您去过Akihabara吗？",
+      "zh_TW": "您去過Akihabara嗎？",
+      "ko": "아키하바라에 가본 적이 있습니까?",
+      "es": "¿Has estado alguna vez en Akihabara?",
+      "fr": "Avez-vous déjà été à Akihabara?",
+      "de": "Waren Sie schon einmal in Akihabara?",
+      "vi": "Bạn đã bao giờ đến Akihabara chưa?",
+      "id": "Apakah Anda pernah ke Akihabara?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_133",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "メイドカフェに行ったことはありますか？",
+      "en": "Have you ever been to a maid cafe?",
+      "zh": "您去过女仆咖啡馆吗？",
+      "zh_TW": "您去過女僕咖啡館嗎？",
+      "ko": "메이드 카페에 가본 적이 있습니까?",
+      "es": "¿Alguna vez has estado en un café de sirvientas?",
+      "fr": "Avez-vous déjà été dans un café de femme de chambre?",
+      "de": "Waren Sie schon einmal in einem Maid Cafe?",
+      "vi": "Bạn đã bao giờ đến một quán cà phê Maid chưa?",
+      "id": "Apakah Anda pernah ke kafe pelayan?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_134",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ガチャガチャを回したことはありますか？",
+      "en": "Have you ever rotated a gacha gacha?",
+      "zh": "您曾经旋转Gacha Gacha吗？",
+      "zh_TW": "您曾經旋轉Gacha Gacha嗎？",
+      "ko": "Gacha Gacha를 회전 한 적이 있습니까?",
+      "es": "¿Alguna vez ha rotado un Gacha Gacha?",
+      "fr": "Avez-vous déjà tourné une gacha gacha?",
+      "de": "Haben Sie jemals einen Gacha Gacha gedreht?",
+      "vi": "Bạn đã bao giờ xoay Gacha Gacha chưa?",
+      "id": "Pernahkah Anda memutar gacha gacha?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_135",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "アニメショップでよく買い物をしますか？",
+      "en": "Do you shop at anime shops often?",
+      "zh": "您经常在动漫商店购物吗？",
+      "zh_TW": "您經常在動漫商店購物嗎？",
+      "ko": "애니메이션 상점에서 자주 쇼핑합니까?",
+      "es": "¿Compras en las tiendas de anime a menudo?",
+      "fr": "Achetez-vous souvent dans les magasins d'anime?",
+      "de": "Kaufen Sie oft in Anime -Läden ein?",
+      "vi": "Bạn có mua sắm tại các cửa hàng anime thường xuyên không?",
+      "id": "Apakah Anda sering berbelanja di toko -toko anime?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_136",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "好きなアニメスタジオはありますか？",
+      "en": "Do you have a favorite anime studio?",
+      "zh": "您有喜欢的动漫工作室吗？",
+      "zh_TW": "您有喜歡的動漫工作室嗎？",
+      "ko": "좋아하는 애니메이션 스튜디오가 있습니까?",
+      "es": "¿Tienes un estudio de anime favorito?",
+      "fr": "Avez-vous un studio d'anime préféré?",
+      "de": "Hast du ein Lieblingsanime -Studio?",
+      "vi": "Bạn có một studio anime yêu thích?",
+      "id": "Apakah Anda memiliki studio anime favorit?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_137",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "声優イベントに参加したことはありますか？",
+      "en": "Have you ever participated in a voice actor event?",
+      "zh": "您是否参加过配音演员活动？",
+      "zh_TW": "您是否參加過配音演員活動？",
+      "ko": "성우 행사에 참여한 적이 있습니까?",
+      "es": "¿Has participado alguna vez en un evento de actor de voz?",
+      "fr": "Avez-vous déjà participé à un événement d'acteur vocal?",
+      "de": "Haben Sie jemals an einem Sprachschauspielerereignis teilgenommen?",
+      "vi": "Bạn đã bao giờ tham gia vào một sự kiện diễn viên lồng tiếng?",
+      "id": "Pernahkah Anda berpartisipasi dalam acara aktor suara?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_138",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "アニメの名言で好きなものはありますか？",
+      "en": "Do you have any favourite anime quotes?",
+      "zh": "您有最喜欢的动漫报价吗？",
+      "zh_TW": "您有最喜歡的動漫報價嗎？",
+      "ko": "좋아하는 애니메이션 따옴표가 있습니까?",
+      "es": "¿Tienes alguna cita de anime favoritas?",
+      "fr": "Avez-vous des citations d'anime préférées?",
+      "de": "Hast du irgendwelche Lieblingsanime -Zitate?",
+      "vi": "Bạn có bất kỳ trích dẫn anime yêu thích?",
+      "id": "Apakah Anda memiliki kutipan anime favorit?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_139",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "SNSでアニメや漫画の感想を投稿しますか？",
+      "en": "Do you post your thoughts on anime and manga on social media?",
+      "zh": "您是否在社交媒体上发布了关于动漫和漫画的想法？",
+      "zh_TW": "您是否在社交媒體上發布了關於動漫和漫畫的想法？",
+      "ko": "소셜 미디어에 애니메이션과 만화에 대한 생각을 게시합니까?",
+      "es": "¿Publicas tus pensamientos sobre el anime y el manga en las redes sociales?",
+      "fr": "Publiez-vous vos réflexions sur l'anime et le manga sur les réseaux sociaux?",
+      "de": "Veröffentlichen Sie Ihre Gedanken zu Anime und Manga in den sozialen Medien?",
+      "vi": "Bạn có đăng suy nghĩ của bạn về anime và manga trên phương tiện truyền thông xã hội không?",
+      "id": "Apakah Anda memposting pemikiran Anda tentang anime dan manga di media sosial?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_140",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "海外の友達に日本のアニメを紹介したことがありますか？",
+      "en": "Have you ever introduced Japanese anime to a friend from overseas?",
+      "zh": "您是否曾经将日本动漫介绍给来自海外的朋友？",
+      "zh_TW": "您是否曾經將日本動漫介紹給來自海外的朋友？",
+      "ko": "해외에서 친구에게 일본 애니메이션을 소개 한 적이 있습니까?",
+      "es": "¿Alguna vez has presentado anime japonés a un amigo del extranjero?",
+      "fr": "Avez-vous déjà présenté un anime japonais à un ami de l'étranger?",
+      "de": "Haben Sie jemals einen japanischen Anime einem Freund aus Übersee vorgestellt?",
+      "vi": "Bạn đã bao giờ giới thiệu anime Nhật Bản cho một người bạn từ nước ngoài?",
+      "id": "Pernahkah Anda memperkenalkan anime Jepang kepada seorang teman dari luar negeri?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_141",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "漫画を電子書籍で読むことはありますか？",
+      "en": "Do you ever read manga as e-books?",
+      "zh": "您曾经读过漫画作为电子书吗？",
+      "zh_TW": "您曾經讀過漫畫作為電子書嗎？",
+      "ko": "만화를 전자 책으로 읽은 적이 있습니까?",
+      "es": "¿Alguna vez leíste el manga como libros electrónicos?",
+      "fr": "Avez-vous déjà lu des mangas comme des livres électroniques?",
+      "de": "Lesen Sie jemals Manga als E-Books?",
+      "vi": "Bạn có bao giờ đọc truyện tranh dưới dạng sách điện tử không?",
+      "id": "Apakah Anda pernah membaca manga sebagai e-book?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_142",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "漫画雑誌を毎週買っていますか？",
+      "en": "Do you buy manga magazines every week?",
+      "zh": "您每周购买漫画杂志吗？",
+      "zh_TW": "您每週購買漫畫雜誌嗎？",
+      "ko": "매주 만화 잡지를 구매합니까?",
+      "es": "¿Compras revistas de manga todas las semanas?",
+      "fr": "Achetez-vous des magazines de mangas chaque semaine?",
+      "de": "Kaufen Sie jede Woche Manga -Magazine?",
+      "vi": "Bạn có mua tạp chí manga mỗi tuần không?",
+      "id": "Apakah Anda membeli majalah manga setiap minggu?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_143",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "キャラクターグッズを自作したことはありますか？",
+      "en": "Have you ever made your own character merchandise?",
+      "zh": "您是否曾经制作过自己的角色商品？",
+      "zh_TW": "您是否曾經製作過自己的角色商品？",
+      "ko": "자신의 캐릭터 상품을 만든 적이 있습니까?",
+      "es": "¿Alguna vez has hecho tu propia mercancía de personajes?",
+      "fr": "Avez-vous déjà fait votre propre marchandise de personnage?",
+      "de": "Haben Sie jemals Ihre eigenen Charakter -Waren gemacht?",
+      "vi": "Bạn đã bao giờ thực hiện hàng hóa nhân vật của riêng mình chưa?",
+      "id": "Pernahkah Anda membuat barang dagangan karakter Anda sendiri?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_144",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "二次創作を描いたことはありますか？",
+      "en": "Have you ever drawn a fan fiction?",
+      "zh": "你曾经画过粉丝小说吗？",
+      "zh_TW": "你曾經畫過粉絲小說嗎？",
+      "ko": "팬 소설을 그린 적이 있습니까?",
+      "es": "¿Alguna vez has dibujado una ficción de fanáticos?",
+      "fr": "Avez-vous déjà dessiné une fan fiction?",
+      "de": "Haben Sie jemals eine Fanfiktion gezeichnet?",
+      "vi": "Bạn đã bao giờ vẽ một tiểu thuyết của người hâm mộ chưa?",
+      "id": "Pernahkah Anda menggambar fiksi penggemar?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_145",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "コスプレイベントに参加したことはありますか？",
+      "en": "Have you ever participated in a cosplay event?",
+      "zh": "您是否参加过角色扮演活动？",
+      "zh_TW": "您是否參加過角色扮演活動？",
+      "ko": "코스프레 이벤트에 참여한 적이 있습니까?",
+      "es": "¿Alguna vez ha participado en un evento de cosplay?",
+      "fr": "Avez-vous déjà participé à un événement de cosplay?",
+      "de": "Haben Sie jemals an einer Cosplay -Veranstaltung teilgenommen?",
+      "vi": "Bạn đã bao giờ tham gia vào một sự kiện cosplay chưa?",
+      "id": "Pernahkah Anda berpartisipasi dalam acara cosplay?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_146",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "コスプレ衣装を手作りしたことはありますか？",
+      "en": "Have you ever made a cosplay costume?",
+      "zh": "您曾经做过角色扮演服装吗？",
+      "zh_TW": "您曾經做過角色扮演服裝嗎？",
+      "ko": "코스프레 의상을 만든 적이 있습니까?",
+      "es": "¿Alguna vez has hecho un disfraz de cosplay?",
+      "fr": "Avez-vous déjà fait un costume de cosplay?",
+      "de": "Haben Sie jemals ein Cosplay -Kostüm gemacht?",
+      "vi": "Bạn đã bao giờ làm một bộ trang phục cosplay chưa?",
+      "id": "Pernahkah Anda membuat kostum cosplay?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_147",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "アニメキャラのセリフを覚えていますか？",
+      "en": "Do you remember the lines of anime characters?",
+      "zh": "您还记得动漫角色的台词吗？",
+      "zh_TW": "您還記得動漫角色的台詞嗎？",
+      "ko": "애니메이션 캐릭터의 라인을 기억하십니까?",
+      "es": "¿Recuerdas las líneas de los personajes de anime?",
+      "fr": "Vous souvenez-vous des lignes des personnages d'anime?",
+      "de": "Erinnerst du dich an die Zeilen der Anime -Charaktere?",
+      "vi": "Bạn có nhớ các dòng của các ký tự anime không?",
+      "id": "Apakah Anda ingat baris karakter anime?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_148",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "アニメのオープニング曲が好きですか？",
+      "en": "Do you like the opening songs of the anime?",
+      "zh": "您喜欢动漫的开场歌曲吗？",
+      "zh_TW": "您喜歡動漫的開場歌曲嗎？",
+      "ko": "애니메이션의 오프닝 노래가 마음에 드십니까?",
+      "es": "¿Te gustan las canciones de apertura del anime?",
+      "fr": "Aimez-vous les chansons d'ouverture de l'anime?",
+      "de": "Magst du die Eröffnungslieder des Anime?",
+      "vi": "Bạn có thích những bài hát mở đầu của anime?",
+      "id": "Apakah Anda suka lagu pembuka anime?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_149",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "アニメのエンディング曲もチェックしますか？",
+      "en": "Would you like to check out the anime's ending songs too?",
+      "zh": "您是否想查看动漫的结局歌曲？",
+      "zh_TW": "您是否想查看動漫的結局歌曲？",
+      "ko": "애니메이션의 끝 노래도 확인 하시겠습니까?",
+      "es": "¿Te gustaría ver las canciones finales del anime también?",
+      "fr": "Souhaitez-vous aussi consulter les chansons de fin de l'anime?",
+      "de": "Möchten Sie auch die Endlieder des Anime ansehen?",
+      "vi": "Bạn có muốn xem các bài hát kết thúc của anime không?",
+      "id": "Apakah Anda ingin melihat lagu -lagu akhir anime juga?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_150",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ゲーム実況をよく見ますか？",
+      "en": "Do you often watch game commentary?",
+      "zh": "您经常看游戏评论吗？",
+      "zh_TW": "您經常看遊戲評論嗎？",
+      "ko": "당신은 종종 게임 해설을 봅니까?",
+      "es": "¿A menudo miras comentarios del juego?",
+      "fr": "Regardez-vous souvent les commentaires du jeu?",
+      "de": "Sehen Sie sich oft Spielkommentare an?",
+      "vi": "Bạn có thường xem bình luận trò chơi không?",
+      "id": "Apakah Anda sering menonton komentar game?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_151",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "VTuberをフォローしていますか？",
+      "en": "Do you follow VTubers?",
+      "zh": "您关注VTubers吗？",
+      "zh_TW": "您關注VTubers嗎？",
+      "ko": "Vtubers를 따르나요?",
+      "es": "¿Sigues VTubers?",
+      "fr": "Suivez-vous les vtubers?",
+      "de": "Folgen Sie Vtubers?",
+      "vi": "Bạn có theo dõi VTubers không?",
+      "id": "Apakah Anda mengikuti vtubers?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_152",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ライブ配信をよく見ますか？",
+      "en": "Do you watch live streams often?",
+      "zh": "您经常观看直播溪流吗？",
+      "zh_TW": "您經常觀看直播溪流嗎？",
+      "ko": "라이브 스트림을 자주 보십니까?",
+      "es": "¿Ves transmisiones en vivo a menudo?",
+      "fr": "Regardez-vous souvent des flux en direct?",
+      "de": "Beobachten Sie oft Live -Streams?",
+      "vi": "Bạn có xem các luồng trực tiếp thường xuyên không?",
+      "id": "Apakah Anda sering menonton streaming langsung?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_153",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "お気に入りの同人作家はいますか？",
+      "en": "Do you have a favorite doujin artist?",
+      "zh": "您有最喜欢的Doujin艺术家吗？",
+      "zh_TW": "您有最喜歡的Doujin藝術家嗎？",
+      "ko": "좋아하는 Doujin 아티스트가 있습니까?",
+      "es": "¿Tienes un artista Doujin favorito?",
+      "fr": "Avez-vous un artiste Doujin préféré?",
+      "de": "Hast du einen Lieblings -Doujin -Künstler?",
+      "vi": "Bạn có một nghệ sĩ doujin yêu thích?",
+      "id": "Apakah Anda memiliki artis doujin favorit?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_154",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ゲームの限定版を買ったことはありますか？",
+      "en": "Have you ever bought a limited edition game?",
+      "zh": "您曾经买过限量版游戏吗？",
+      "zh_TW": "您曾經買過限量版遊戲嗎？",
+      "ko": "한정판 게임을 구입 한 적이 있습니까?",
+      "es": "¿Alguna vez has comprado un juego de edición limitada?",
+      "fr": "Avez-vous déjà acheté un jeu en édition limitée?",
+      "de": "Haben Sie jemals ein limitiertes Spiel gekauft?",
+      "vi": "Bạn đã bao giờ mua một trò chơi phiên bản giới hạn?",
+      "id": "Pernahkah Anda membeli game edisi terbatas?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_155",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "アニメのポスターを部屋に貼っていますか？",
+      "en": "Have you put anime posters in your room?",
+      "zh": "您是否在房间里放了动漫海报？",
+      "zh_TW": "您是否在房間裡放了動漫海報？",
+      "ko": "방에 애니메이션 포스터를 넣었습니까?",
+      "es": "¿Has puesto carteles de anime en tu habitación?",
+      "fr": "Avez-vous mis des affiches d'anime dans votre chambre?",
+      "de": "Haben Sie Anime -Poster in Ihr Zimmer gesteckt?",
+      "vi": "Bạn đã đặt áp phích anime trong phòng của bạn?",
+      "id": "Sudahkah Anda meletakkan poster anime di kamar Anda?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_156",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "キャラクターの抱き枕を持っていますか？",
+      "en": "Do you have a character's body pillow?",
+      "zh": "你有角色的身体枕头吗？",
+      "zh_TW": "你有角色的身體枕頭嗎？",
+      "ko": "캐릭터의 바디 베개가 있습니까?",
+      "es": "¿Tienes la almohada corporal de un personaje?",
+      "fr": "Avez-vous un oreiller corporel d'un personnage?",
+      "de": "Hast du das Körperkissen eines Charakters?",
+      "vi": "Bạn có gối cơ thể của một nhân vật không?",
+      "id": "Apakah Anda memiliki bantal tubuh karakter?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_157",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "アニメの名シーンを語り合ったことはありますか？",
+      "en": "Have you ever talked about famous anime scenes?",
+      "zh": "您曾经谈论过著名的动漫场景吗？",
+      "zh_TW": "您曾經談論過著名的動漫場景嗎？",
+      "ko": "유명한 애니메이션 장면에 대해 이야기 한 적이 있습니까?",
+      "es": "¿Alguna vez has hablado de famosas escenas de anime?",
+      "fr": "Avez-vous déjà parlé de scènes d'anime célèbres?",
+      "de": "Haben Sie jemals über berühmte Anime -Szenen gesprochen?",
+      "vi": "Bạn đã bao giờ nói về những cảnh anime nổi tiếng?",
+      "id": "Pernahkah Anda berbicara tentang adegan anime terkenal?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_158",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "グッズの発売日に並んだことはありますか？",
+      "en": "Have you ever lined up on the day your merchandise was released?",
+      "zh": "您的商品发行的那天，您是否曾经排队？",
+      "zh_TW": "您的商品發行的那天，您是否曾經排隊？",
+      "ko": "상품이 출시 된 날에 줄을 섰습니까?",
+      "es": "¿Alguna vez has alineado el día en que se lanzó tu mercancía?",
+      "fr": "Avez-vous déjà aligné le jour où votre marchandise a été publiée?",
+      "de": "Haben Sie sich jemals an dem Tag aufgestellt, an dem Ihre Waren veröffentlicht wurden?",
+      "vi": "Bạn đã bao giờ xếp hàng vào ngày hàng hóa của bạn được phát hành chưa?",
+      "id": "Pernahkah Anda berbaris pada hari barang dagangan Anda dirilis?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_159",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "アニメカフェに行ったことはありますか？",
+      "en": "Have you ever been to an anime cafe?",
+      "zh": "您去过动漫咖啡馆吗？",
+      "zh_TW": "您去過動漫咖啡館嗎？",
+      "ko": "애니메이션 카페에 가본 적이 있습니까?",
+      "es": "¿Alguna vez has estado en un café de anime?",
+      "fr": "Avez-vous déjà été dans un café d'anime?",
+      "de": "Waren Sie schon einmal in einem Anime -Café?",
+      "vi": "Bạn đã bao giờ đến một quán cà phê anime chưa?",
+      "id": "Apakah Anda pernah ke kafe anime?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_160",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "アニメキャラのフィギュアを改造したことはありますか？",
+      "en": "Have you ever modified an anime character figure?",
+      "zh": "您是否曾经修改过动漫角色人物？",
+      "zh_TW": "您是否曾經修改過動漫角色人物？",
+      "ko": "애니메이션 캐릭터 인물을 수정 한 적이 있습니까?",
+      "es": "¿Alguna vez has modificado una figura de personaje de anime?",
+      "fr": "Avez-vous déjà modifié une figure de caractère anime?",
+      "de": "Haben Sie jemals eine Anime -Charakterfigur geändert?",
+      "vi": "Bạn đã bao giờ sửa đổi một nhân vật nhân vật anime chưa?",
+      "id": "Pernahkah Anda memodifikasi figur karakter anime?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_161",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "プラモデルを作ったことはありますか？",
+      "en": "Have you ever made a plastic model?",
+      "zh": "您曾经制作过塑料模型吗？",
+      "zh_TW": "您曾經製作過塑料模型嗎？",
+      "ko": "플라스틱 모델을 만든 적이 있습니까?",
+      "es": "¿Alguna vez has hecho un modelo de plástico?",
+      "fr": "Avez-vous déjà fait un modèle en plastique?",
+      "de": "Haben Sie jemals ein Plastikmodell gemacht?",
+      "vi": "Bạn đã bao giờ làm một mô hình nhựa?",
+      "id": "Apakah Anda pernah membuat model plastik?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_162",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "トレーディングカードを集めていますか？",
+      "en": "Do you collect trading cards?",
+      "zh": "您收集交易卡吗？",
+      "zh_TW": "您收集交易卡嗎？",
+      "ko": "거래 카드를 수집합니까?",
+      "es": "¿Recolectas tarjetas comerciales?",
+      "fr": "Collectez-vous des cartes à trading?",
+      "de": "Sammeln Sie Handelskarten?",
+      "vi": "Bạn có thu thập thẻ giao dịch không?",
+      "id": "Apakah Anda mengumpulkan kartu perdagangan?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_163",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ゲームの大会に出場したことはありますか？",
+      "en": "Have you ever participated in a game tournament?",
+      "zh": "您是否参加过比赛比赛？",
+      "zh_TW": "您是否參加過比賽比賽？",
+      "ko": "게임 토너먼트에 참여한 적이 있습니까?",
+      "es": "¿Has participado alguna vez en un torneo de juego?",
+      "fr": "Avez-vous déjà participé à un tournoi de jeu?",
+      "de": "Haben Sie jemals an einem Spielturnier teilgenommen?",
+      "vi": "Bạn đã bao giờ tham gia vào một giải đấu trò chơi?",
+      "id": "Pernahkah Anda berpartisipasi dalam turnamen game?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_164",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "アニメの放送時間に合わせて起きていますか？",
+      "en": "Are you awake at the time of the anime airing?",
+      "zh": "动漫播出时您醒了吗？",
+      "zh_TW": "動漫播出時您醒了嗎？",
+      "ko": "애니메이션이 방영 당시에 깨어 있습니까?",
+      "es": "¿Estás despierto en el momento de la transmisión del anime?",
+      "fr": "Êtes-vous éveillé au moment de la diffusion de l'anime?",
+      "de": "Bist du zum Zeitpunkt der Anime -Ausstrahlung wach?",
+      "vi": "Bạn có thức tại thời điểm phát sóng anime không?",
+      "id": "Apakah Anda bangun pada saat anime ditayangkan?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_165",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "声優ラジオを聞いていますか？",
+      "en": "Do you listen to voice actor radio?",
+      "zh": "你听配音演员广播吗？",
+      "zh_TW": "你聽配音演員廣播嗎？",
+      "ko": "성우 라디오를 듣습니까?",
+      "es": "¿Escuchas la radio del actor de voz?",
+      "fr": "Écoutez-vous la radio de l'acteur vocal?",
+      "de": "Hörst du das Sprachschauspieler Radio?",
+      "vi": "Bạn có nghe đài phát thanh diễn viên lồng tiếng không?",
+      "id": "Apakah Anda mendengarkan radio aktor suara?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_166",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "アニメのサウンドトラックを持っていますか？",
+      "en": "Do you have an anime soundtrack?",
+      "zh": "您有动漫配乐吗？",
+      "zh_TW": "您有動漫配樂嗎？",
+      "ko": "애니메이션 사운드 트랙이 있습니까?",
+      "es": "¿Tienes una banda sonora de anime?",
+      "fr": "Avez-vous une bande-son d'anime?",
+      "de": "Hast du einen Anime -Soundtrack?",
+      "vi": "Bạn có nhạc phim anime không?",
+      "id": "Apakah Anda memiliki soundtrack anime?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_167",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "好きなジャンルはバトル系ですか？ラブコメですか？",
+      "en": "Is your favorite genre a battle?Is it a romantic comedy?",
+      "zh": "您最喜欢的类型是一场战斗吗？这是一部浪漫喜剧吗？",
+      "zh_TW": "您最喜歡的類型是一場戰鬥嗎？這是一部浪漫喜劇嗎？",
+      "ko": "가장 좋아하는 장르는 전투입니까?로맨틱 코미디인가요?",
+      "es": "¿Tu género favorito es una batalla?¿Es una comedia romántica?",
+      "fr": "Votre genre préféré est-il une bataille?Est-ce une comédie romantique?",
+      "de": "Ist dein Lieblingsgenre ein Kampf?Ist es eine romantische Komödie?",
+      "vi": "Thể loại yêu thích của bạn có phải là một trận chiến không?Nó có phải là một bộ phim hài lãng mạn?",
+      "id": "Apakah genre favoritmu pertempuran?Apakah ini komedi romantis?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_168",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "ゲームで徹夜したことはありますか？",
+      "en": "Have you ever stayed up all night in a game?",
+      "zh": "您是否曾经整夜熬夜？",
+      "zh_TW": "您是否曾經整夜熬夜？",
+      "ko": "게임에서 밤새 머물렀습니까?",
+      "es": "¿Alguna vez te has quedado despierto toda la noche en un juego?",
+      "fr": "Êtes-vous déjà resté debout toute la nuit dans un match?",
+      "de": "Bist du jemals die ganze Nacht in einem Spiel aufgeblieben?",
+      "vi": "Bạn đã bao giờ thức cả đêm trong một trò chơi?",
+      "id": "Pernahkah Anda begadang sepanjang malam dalam permainan?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_169",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "海外のアニメイベントに参加したいですか？",
+      "en": "Want to participate in an anime event overseas?",
+      "zh": "想参加海外的动漫活动吗？",
+      "zh_TW": "想參加海外的動漫活動嗎？",
+      "ko": "해외 애니메이션 이벤트에 참여하고 싶습니까?",
+      "es": "¿Quieres participar en un evento de anime en el extranjero?",
+      "fr": "Vous voulez participer à un événement d'anime à l'étranger?",
+      "de": "Möchten Sie an einem Anime -Event in Übersee teilnehmen?",
+      "vi": "Bạn muốn tham gia vào một sự kiện anime ở nước ngoài?",
+      "id": "Ingin berpartisipasi dalam acara anime di luar negeri?"
+    }
+  },
+  {
+    "id": "Social_interactions_hobbies_170",
+    "scene": "Social_interactions_hobbies",
+    "subScene": "Otaku",
+    "level": "beginner",
+    "tags": [],
+    "translations": {
+      "ja": "将来アニメ関連の仕事をしたいですか？",
+      "en": "Do you want to work in anime related jobs in the future?",
+      "zh": "您是否想在将来从事与动漫有关的工作？",
+      "zh_TW": "您是否想在將來從事與動漫有關的工作？",
+      "ko": "앞으로 애니메이션 관련 작업에서 일하고 싶습니까?",
+      "es": "¿Quieres trabajar en trabajos relacionados con el anime en el futuro?",
+      "fr": "Voulez-vous travailler dans des emplois liés à l'anime à l'avenir?",
+      "de": "Möchten Sie in Zukunft in Anime -bezogenen Jobs arbeiten?",
+      "vi": "Bạn có muốn làm việc trong các công việc liên quan đến anime trong tương lai?",
+      "id": "Apakah Anda ingin bekerja di pekerjaan terkait anime di masa depan?"
+    }
+  }
+]
