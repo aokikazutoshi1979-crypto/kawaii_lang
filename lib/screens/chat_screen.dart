@@ -1400,12 +1400,19 @@ class _ChatScreenState extends State<ChatScreen> {
 
       body: Stack(
         children: [
+          Positioned.fill(
+            child: SceneBackgroundWithCharacter(
+              langName: widget.targetLang,
+              sceneName: widget.scene,
+            ),
+          ),
+          Positioned.fill(
+            child: Container(
+              color: Colors.black.withOpacity(0.15),
+            ),
+          ),
           Column(
             children: [
-              SceneBackgroundWithCharacter(
-                langName: widget.targetLang,
-                sceneName: widget.scene,
-              ),
 
               // ★ 出題テキストを中央寄せ＆太字で表示（Readingモードのときだけ）
               if (_mode == QuizMode.reading && _currentNativeText.isNotEmpty)

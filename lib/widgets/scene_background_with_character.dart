@@ -69,9 +69,7 @@ class SceneBackgroundWithCharacter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: double.infinity,
-      height: 60,
+    return SizedBox.expand(
       child: Stack(
         fit: StackFit.expand,
         children: [
