@@ -1380,6 +1380,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
     final topInset = MediaQuery.of(context).padding.top + kToolbarHeight;
     return Scaffold(
       extendBodyBehindAppBar: true,
@@ -1388,17 +1389,25 @@ class _ChatScreenState extends State<ChatScreen> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         scrolledUnderElevation: 0,
-        title: FittedBox(
-          fit: BoxFit.scaleDown,
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              _langPill(context, _displayLangName(widget.nativeLang)), // 例: 日本語 / English
-              const SizedBox(width: 8),
-              const Icon(Icons.east_rounded, size: 20, color: Colors.grey),
-              const SizedBox(width: 8),
-              _langPill(context, _displayLangName(widget.targetLang)), // 例: 英語 / Korean
-            ],
+        title: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+          decoration: BoxDecoration(
+            color: scheme.surface.withOpacity(0.8),
+            borderRadius: BorderRadius.circular(16),
+            border: Border.all(color: scheme.outlineVariant.withOpacity(0.4)),
+          ),
+          child: FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                _langPill(context, _displayLangName(widget.nativeLang)), // 例: 日本語 / English
+                const SizedBox(width: 8),
+                const Icon(Icons.east_rounded, size: 20, color: Colors.grey),
+                const SizedBox(width: 8),
+                _langPill(context, _displayLangName(widget.targetLang)), // 例: 英語 / Korean
+              ],
+            ),
           ),
         ),
       ),
@@ -1425,12 +1434,21 @@ class _ChatScreenState extends State<ChatScreen> {
                 if (_mode == QuizMode.reading && _currentNativeText.isNotEmpty)
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 12.0),
-                    child: Text(
-                      _currentNativeText, // ← 出題文を表示
-                      textAlign: TextAlign.center,
-                      style: const TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
+                    child: Container(
+                      margin: const EdgeInsets.symmetric(horizontal: 16),
+                      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                      decoration: BoxDecoration(
+                        color: scheme.surface.withOpacity(0.85),
+                        borderRadius: BorderRadius.circular(14),
+                        border: Border.all(color: scheme.outlineVariant.withOpacity(0.4)),
+                      ),
+                      child: Text(
+                        _currentNativeText, // ← 出題文を表示
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ),
