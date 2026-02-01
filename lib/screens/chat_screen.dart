@@ -1380,9 +1380,14 @@ class _ChatScreenState extends State<ChatScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final topInset = MediaQuery.of(context).padding.top + kToolbarHeight;
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
         centerTitle: true,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        scrolledUnderElevation: 0,
         title: FittedBox(
           fit: BoxFit.scaleDown,
           child: Row(
@@ -1411,94 +1416,97 @@ class _ChatScreenState extends State<ChatScreen> {
               color: Colors.black.withOpacity(0.15),
             ),
           ),
-          Column(
-            children: [
+          Padding(
+            padding: EdgeInsets.only(top: topInset),
+            child: Column(
+              children: [
 
-              // ★ 出題テキストを中央寄せ＆太字で表示（Readingモードのときだけ）
-              if (_mode == QuizMode.reading && _currentNativeText.isNotEmpty)
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 12.0),
-                  child: Text(
-                    _currentNativeText, // ← 出題文を表示
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
+                // ★ 出題テキストを中央寄せ＆太字で表示（Readingモードのときだけ）
+                if (_mode == QuizMode.reading && _currentNativeText.isNotEmpty)
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 12.0),
+                    child: Text(
+                      _currentNativeText, // ← 出題文を表示
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
-                ),
 
-              // Listening 見出し＋カード（Listeningのみ）
-              if (_mode == QuizMode.listening) ...[
-                // 見出し
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),  // ★必須
-                  child: Text(
-                    loc.listeningPrompt,
-                    style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                // Listening 見出し＋カード（Listeningのみ）
+                if (_mode == QuizMode.listening) ...[
+                  // 見出し
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),  // ★必須
+                    child: Text(
+                      loc.listeningPrompt,
+                      style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                    ),
                   ),
-                ),
-                // ぼかし＋大きい再生ボタン
-                _listeningQuestionCard(),
-              ],
+                  // ぼかし＋大きい再生ボタン
+                  _listeningQuestionCard(),
+                ],
 
-              Expanded(child: MessageList(messages: _messages)),
+                Expanded(child: MessageList(messages: _messages)),
 
-              if (_isLoading)
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 16),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      const SizedBox(
-                        width: 32,
-                        height: 32,
-                        child: CircularProgressIndicator(strokeWidth: 2),
-                      ),
-                      const SizedBox(height: 8),
-                      Text(
-                        AppLocalizations.of(context)!.checking,
-                        style: TextStyle(fontSize: 16, color: Colors.grey[700]),
-                      ),
-                    ],
+                if (_isLoading)
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        const SizedBox(
+                          width: 32,
+                          height: 32,
+                          child: CircularProgressIndicator(strokeWidth: 2),
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          AppLocalizations.of(context)!.checking,
+                          style: TextStyle(fontSize: 16, color: Colors.grey[700]),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
 
-              MicArea(
-                isListening: _isListening,
-                isKeyboardMode: _isKeyboardMode,
-                hasInput: _hasInput,
-                hasSubmitted: _hasSubmitted,
-                controller: _controller,
-                onMicTap: _isListening ? _stopListening : _startListening,
-                onKeyboardTap: _activateKeyboardMode,
-                onSend: () {
-                  setState(() => _revealListeningText = true); // ★ここで解除
-                  _sendMessage();
-                },
-                onCancel: _cancelInput,
-                onReset: _resetChat,          // ← リロード時に再生も入れてある版
-                onNext: _loadNextQuestion,    // ← 次へで再生も入れてある版
-                onTextChanged: (text) => setState(() {
-                  _hasInput = text.trim().isNotEmpty;
-                }),
-                focusNode: _inputFocusNode,
-                onDone: () {
-                  if (_controller.text.trim().isEmpty) {
-                    _cancelInput();
-                  } else {
-                    _speechService.stop(); // 念のためマイク停止
-                    setState(() {
-                      _isKeyboardMode = false;
-                      _isListening    = false;
-                    });
-                  }
-                },
-              ),
+                MicArea(
+                  isListening: _isListening,
+                  isKeyboardMode: _isKeyboardMode,
+                  hasInput: _hasInput,
+                  hasSubmitted: _hasSubmitted,
+                  controller: _controller,
+                  onMicTap: _isListening ? _stopListening : _startListening,
+                  onKeyboardTap: _activateKeyboardMode,
+                  onSend: () {
+                    setState(() => _revealListeningText = true); // ★ここで解除
+                    _sendMessage();
+                  },
+                  onCancel: _cancelInput,
+                  onReset: _resetChat,          // ← リロード時に再生も入れてある版
+                  onNext: _loadNextQuestion,    // ← 次へで再生も入れてある版
+                  onTextChanged: (text) => setState(() {
+                    _hasInput = text.trim().isNotEmpty;
+                  }),
+                  focusNode: _inputFocusNode,
+                  onDone: () {
+                    if (_controller.text.trim().isEmpty) {
+                      _cancelInput();
+                    } else {
+                      _speechService.stop(); // 念のためマイク停止
+                      setState(() {
+                        _isKeyboardMode = false;
+                        _isListening    = false;
+                      });
+                    }
+                  },
+                ),
 
               KeyboardGuideButton(targetLanguage: widget.targetLang),
             ],
           ),
+        ),
         ],
       ),
     );
