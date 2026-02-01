@@ -16,60 +16,10 @@ import 'services/subscription_service.dart';  // ← 追加
 import 'screens/register_screen.dart'; // ← 追加
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:kawaii_lang/config.dart';
-import 'dart:io';
-import 'package:facebook_app_events/facebook_app_events.dart';
-import 'package:http/http.dart' as http;
-import 'dart:math' as math;
 import 'dart:async';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'dart:ui'; // PlatformDispatcher を使う場合
-
-final fbEvents = FacebookAppEvents();
-
-Future<void> sendFbSignalsOnLaunch() async {
-  if (!Platform.isIOS) return;
-  await Future.delayed(const Duration(seconds: 2)); // ネイティブ初期化の完了待ち
-  try {
-    // ① AutoLogを先にON（保険）
-    await fbEvents.setAutoLogAppEventsEnabled(true);
-
-    // ② 任意: 匿名IDを出しておくとテストイベント側で照合しやすい
-    final anonId = await fbEvents.getAnonymousId();
-    debugPrint('FB: anonymousId=$anonId');
-
-    debugPrint('FB: sending activate');
-    await fbEvents.logEvent(name: 'fb_mobile_activate_app');
-    debugPrint('FB: sending debug ping');
-    await fbEvents.logEvent(
-      name: 'kawaiilang_debug_ping',
-      parameters: {'ts': DateTime.now().toIso8601String()},
-    );
-    await fbEvents.flush(); // ← これを追加（即時送信）
-
-    // 念のため（Dart側でもAT無効を明示）
-    await fbEvents.setAdvertiserTracking(enabled: false);
-  } catch (e) {
-    debugPrint('FB events send error: $e');
-  }
-}
-
-Future<void> debugCheckEp2Reachability() async {
-  try {
-    print('DBG: DNS lookup ep2.facebook.com...');
-    final addrs = await InternetAddress.lookup('ep2.facebook.com');
-    print('DBG: DNS result -> $addrs'); // ここで1個でも返ればDNSは通ってます
-
-    print('DBG: HTTPS GET to https://ep2.facebook.com ...');
-    final resp = await http
-        .get(Uri.parse('https://ep2.facebook.com'))
-        .timeout(const Duration(seconds: 8));
-    print('DBG: HTTPS status=${resp.statusCode}, len=${resp.body.length}');
-    print('DBG BODY (first 120): ${resp.body.substring(0, math.min(resp.body.length, 120))}');
-  } catch (e) {
-    print('DBG: ep2 check error: $e');
-  }
-}
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -112,12 +62,6 @@ void main() async {
     runApp(MyApp(initialLocale: initialLocale));
   }, (error, stack) {
     FirebaseCrashlytics.instance.recordError(error, stack);
-  });
-
-  // 以降は post-frame のタスクでOK
-  debugCheckEp2Reachability();
-  WidgetsBinding.instance.addPostFrameCallback((_) {
-    sendFbSignalsOnLaunch();
   });
 }
 

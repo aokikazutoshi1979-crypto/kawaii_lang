@@ -34,10 +34,6 @@
 	<array>
 		<string>itms-apps</string>
 		<string>app-settings</string>
-		<string>fbapi</string>
-		<string>fbauth2</string>
-		<string>fb-messenger-share-api</string>
-		<string>fbshareextension</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
@@ -76,25 +72,6 @@
 		<string>de</string>
 		<string>vi</string>
 		<string>id</string>
-	</array>
-	<key>FacebookAppID</key>
-	<string>1809518206605279</string>
-	<key>FacebookDisplayName</key>
-	<string>Kawaii Lang</string>
-	<key>FacebookAutoLogAppEventsEnabled</key>
-	<true/>
-	<key>FacebookAutoInitEnabled</key>
-	<true/>
-	<key>FacebookClientToken</key>
-	<string>137d642d5223b7854391314192d3617a</string>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>fb1809518206605279</string>
-			</array>
-		</dict>
 	</array>
 	<key>SKAdNetworkItems</key>
 	<array>
