@@ -75,7 +75,8 @@ class SceneBackgroundWithCharacter extends StatelessWidget {
         children: [
           Image.asset(
             getBackgroundPath(sceneName),
-            fit: BoxFit.cover,
+            fit: BoxFit.fitWidth,
+            alignment: Alignment.topCenter,
           ),
           // Image.asset(
           //   getCharacterPath(langName),
