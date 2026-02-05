@@ -16,6 +16,8 @@ import 'package:kawaii_lang/config/quiz_mode_config.dart';
 import '../models/quiz_mode.dart';
 import 'package:flutter/foundation.dart'; // kReleaseMode
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
+import '../services/subscription_state.dart';
+import 'chat_screen.dart';
 
 class CategorySelectionScreen extends StatefulWidget {
   const CategorySelectionScreen({Key? key}) : super(key: key);
@@ -24,7 +26,7 @@ class CategorySelectionScreen extends StatefulWidget {
   _CategorySelectionScreenState createState() => _CategorySelectionScreenState();
 }
 
-class _CategorySelectionScreenState extends State<CategorySelectionScreen> {
+class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionScreen> {
   String? selectedTargetLang;
   String? selectedSceneKey;
   String? selectedNativeLang;
@@ -35,10 +37,12 @@ class _CategorySelectionScreenState extends State<CategorySelectionScreen> {
   Map<String, int> _counts = {};
 
   QuizMode selectedMode = QuizMode.reading;
+  static const String _quickStartPrefKey = 'has_used_quick_start';
 
   @override
   void initState() {
     super.initState();
+    selectedSceneKey = 'trial';
     _loadLanguage();
     _loadTargetLanguage();
     _loadScenesJson();   // ← 追加
@@ -119,7 +123,7 @@ class _CategorySelectionScreenState extends State<CategorySelectionScreen> {
     });
   }
 
-  void _onSubmit() {
+  Future<void> _onSubmit() async {
     final loc = AppLocalizations.of(context)!;
 
     // ① 未選択チェック
@@ -138,17 +142,17 @@ class _CategorySelectionScreenState extends State<CategorySelectionScreen> {
       return;
     }
 
-    // ③ OKなら画面遷移
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (_) => QuestionListScreen(
-          selectedScene: selectedSceneKey!,
-          targetLang: selectedTargetLang!,
-          mode: selectedMode, // ★追加
-        ),
-      ),
-    );
+    final prefs = await SharedPreferences.getInstance();
+    final hasUsedQuickStart = prefs.getBool(_quickStartPrefKey) ?? false;
+
+    if (!hasUsedQuickStart) {
+      await prefs.setBool(_quickStartPrefKey, true);
+      await _goToRecommendedChat();
+      return;
+    }
+
+    // ③ OKなら通常の出題選択画面へ
+    _goToQuestionList();
   }
 
   // ① 強制クラッシュ（致命的クラッシュを送る）
@@ -177,6 +181,83 @@ class _CategorySelectionScreenState extends State<CategorySelectionScreen> {
   }
 
   String _getSceneImagePath(String key) => 'assets/images/backgrounds/$key.png';
+
+  void _goToQuestionList() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => QuestionListScreen(
+          selectedScene: selectedSceneKey!,
+          targetLang: selectedTargetLang!,
+          mode: selectedMode, // ★追加
+        ),
+      ),
+    );
+  }
+
+  Future<void> _goToRecommendedChat() async {
+    final nativeLang = selectedNativeLang;
+    final targetLang = selectedTargetLang;
+    if (nativeLang == null || targetLang == null) return;
+
+    try {
+      final raw = await rootBundle.loadString('assets/questions/trial.json');
+      final arr = jsonDecode(raw) as List<dynamic>;
+      final questions = arr
+          .map((e) => Question.fromJson(e as Map<String, dynamic>))
+          .toList();
+
+      if (questions.isEmpty) {
+        _goToQuestionList();
+        return;
+      }
+
+      const previewId = 'trial_greeting_001';
+      var selectedIndex = questions.indexWhere((q) => q.id == previewId);
+      if (selectedIndex == -1) {
+        selectedIndex = questions.indexWhere(
+          (q) => q.getText('ja').contains('はじめまして'),
+        );
+        if (selectedIndex == -1) selectedIndex = 0;
+      }
+
+      final questionList = questions.map((qq) {
+        return {
+          'id': qq.id,
+          'scene': qq.scene,
+          'subScene': qq.subScene,
+          'level': qq.level,
+          nativeLang: qq.getText(nativeLang),
+          targetLang: qq.getText(targetLang),
+        };
+      }).toList();
+
+      if (!mounted) return;
+
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (_) => ChatScreen(
+            nativeLang: nativeLang,
+            targetLang: targetLang,
+            scene: 'trial',
+            promptLang: nativeLang,
+            isNativePrompt: true,
+            selectedQuestionText: questions[selectedIndex].getText(nativeLang),
+            correctAnswerText: questions[selectedIndex].getText(targetLang),
+            questionList: questionList,
+            selectedIndex: selectedIndex,
+            mode: selectedMode,
+            showRecommendedStartLink: true,
+            recommendedReturnScene: selectedSceneKey,
+          ),
+        ),
+      );
+    } catch (e) {
+      debugPrint('recommended chat load failed: $e');
+      _goToQuestionList();
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -239,11 +320,14 @@ class _CategorySelectionScreenState extends State<CategorySelectionScreen> {
                 final label  = item['label']!;
                 final count  = _counts[key];
                 final active = selectedSceneKey == key;
+                final isFree = key == 'trial';
+                final showLock = !hasSubOnDevice && !isFree;
 
                 return GestureDetector(
                   onTap: () => setState(() => selectedSceneKey = key),
                   child: Card(
                     color: Colors.white,
+                    clipBehavior: Clip.hardEdge,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(16),
                       side: BorderSide(
@@ -251,36 +335,79 @@ class _CategorySelectionScreenState extends State<CategorySelectionScreen> {
                         width: 2,
                       ),
                     ),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Image.asset(
-                            _getSceneImagePath(key),
-                            height: 70,
-                            fit: BoxFit.contain,
-                            errorBuilder: (_, __, ___) => const Icon(Icons.image_not_supported),
+                    child: Stack(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Image.asset(
+                                _getSceneImagePath(key),
+                                height: 70,
+                                fit: BoxFit.contain,
+                                errorBuilder: (_, __, ___) => const Icon(Icons.image_not_supported),
+                              ),
+                              const SizedBox(height: 8),
+                              Text(
+                                label,
+                                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                                textAlign: TextAlign.center,
+                                maxLines: 2,
+                                overflow: TextOverflow.ellipsis,
+                              ),
+                              const SizedBox(height: 4),
+                              if (count == null)
+                                const SizedBox(height: 14, width: 14, child: CircularProgressIndicator(strokeWidth: 2))
+                              else
+                                Text(
+                                  '($count)',
+                                  style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey[600]),
+                                  textAlign: TextAlign.center,
+                                ),
+                            ],
                           ),
-                          const SizedBox(height: 8),
-                          Text(
-                            label,
-                            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-                            textAlign: TextAlign.center,
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                          const SizedBox(height: 4),
-                          if (count == null)
-                            const SizedBox(height: 14, width: 14, child: CircularProgressIndicator(strokeWidth: 2))
-                          else
-                            Text(
-                              '($count)',
-                              style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey[600]),
-                              textAlign: TextAlign.center,
+                        ),
+                        if (isFree)
+                          Positioned(
+                            top: 8,
+                            left: 8,
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                              decoration: BoxDecoration(
+                                color: Colors.pink.shade300,
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: const Text(
+                                'FREE',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.bold,
+                                  letterSpacing: 0.4,
+                                ),
+                              ),
                             ),
-                        ],
-                      ),
+                          ),
+                        if (showLock)
+                          Positioned(
+                            top: 8,
+                            right: 8,
+                            child: Container(
+                              padding: const EdgeInsets.all(6),
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade200,
+                                borderRadius: BorderRadius.circular(10),
+                                border: Border.all(color: Colors.grey.shade300),
+                              ),
+                              child: Icon(
+                                Icons.lock_rounded,
+                                size: 16,
+                                color: Colors.grey.shade600,
+                              ),
+                            ),
+                          ),
+                      ],
                     ),
                   ),
                 ).animate().fade(duration: 300.ms).slideX(begin: 0.1);
@@ -300,7 +427,14 @@ class _CategorySelectionScreenState extends State<CategorySelectionScreen> {
             const SizedBox(height: 12),
 
             ElevatedButton(
-              style: ElevatedButton.styleFrom(padding: const EdgeInsets.symmetric(vertical: 16)),
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                backgroundColor: Colors.pink.shade500,
+                foregroundColor: Colors.white,
+                elevation: 2,
+                shadowColor: Colors.pink.shade200,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+              ),
               onPressed: () {
                 addBreadcrumb();
                 // 実機テスト時だけ手動で切り替え

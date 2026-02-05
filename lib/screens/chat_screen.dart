@@ -25,6 +25,7 @@ import 'dart:ui';
 import 'dart:io' show Platform;
 import '../common/scene_label.dart';
 import 'package:kawaii_lang/services/language_catalog.dart';
+import 'question_list_screen.dart';
 
 
 class ChatScreen extends StatefulWidget {
@@ -38,6 +39,8 @@ class ChatScreen extends StatefulWidget {
   final List<Map<String, String>> questionList;
   final int selectedIndex;
   final QuizMode mode; // ★追加
+  final bool showRecommendedStartLink;
+  final String? recommendedReturnScene;
 
   const ChatScreen({
     required this.nativeLang,
@@ -50,6 +53,8 @@ class ChatScreen extends StatefulWidget {
     required this.questionList,
     required this.selectedIndex,
     required this.mode,
+    this.showRecommendedStartLink = false,
+    this.recommendedReturnScene,
     Key? key,
   }) : super(key: key);
 
@@ -1378,6 +1383,20 @@ class _ChatScreenState extends State<ChatScreen> {
     // _speakIfListeningAfterBuild(); // ← 追加
   }
 
+  void _openQuestionListFromRecommend() {
+    final scene = widget.recommendedReturnScene ?? widget.scene;
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => QuestionListScreen(
+          selectedScene: scene,
+          targetLang: widget.targetLang,
+          mode: _mode,
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
@@ -1434,6 +1453,30 @@ class _ChatScreenState extends State<ChatScreen> {
             padding: EdgeInsets.only(top: topInset),
             child: Column(
               children: [
+                if (widget.showRecommendedStartLink)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 8, bottom: 4),
+                    child: Align(
+                      alignment: Alignment.center,
+                      child: TextButton(
+                        onPressed: _openQuestionListFromRecommend,
+                        style: TextButton.styleFrom(
+                          padding: EdgeInsets.zero,
+                          minimumSize: Size.zero,
+                          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                          visualDensity: VisualDensity.compact,
+                        ),
+                        child: Text(
+                          'おすすめから開始しました（問題を選び直す）',
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.pink.shade400,
+                            decoration: TextDecoration.underline,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
 
                 // ★ 出題テキストを中央寄せ＆太字で表示（Readingモードのときだけ）
                 if (_mode == QuizMode.reading && _currentNativeText.isNotEmpty)

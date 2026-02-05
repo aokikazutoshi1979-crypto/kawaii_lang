@@ -26,13 +26,22 @@ class ModeToggleBar extends StatelessWidget {
     final isReading   = value == QuizMode.reading;
     final isListening = value == QuizMode.listening;
 
+    final activeBorder = Colors.pink.shade300;
+    final inactiveBorder = Colors.grey.shade300;
+
     final btnStyle = ElevatedButton.styleFrom(
       elevation: 0,
       padding: EdgeInsets.symmetric(
         vertical: compact ? 10 : 14,
         horizontal: 12,
       ),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+        side: BorderSide(
+          color: inactiveBorder,
+          width: 2,
+        ),
+      ),
     );
 
     Widget buildBtn(String label, IconData icon, bool active, QuizMode mode) {
@@ -43,10 +52,16 @@ class ModeToggleBar extends StatelessWidget {
           style: btnStyle.copyWith(
             // Flutter のバージョンによっては MaterialStateProperty を使ってください
             backgroundColor: WidgetStateProperty.resolveWith(
-              (_) => active ? Colors.pink[300] : Colors.white,
+              (_) => Colors.white,
             ),
             foregroundColor: WidgetStateProperty.resolveWith(
-              (_) => active ? Colors.white : Colors.black87,
+              (_) => Colors.black87,
+            ),
+            side: WidgetStateProperty.resolveWith(
+              (_) => BorderSide(
+                color: active ? activeBorder : inactiveBorder,
+                width: 2,
+              ),
             ),
           ),
           onPressed: () => onChanged(mode),
