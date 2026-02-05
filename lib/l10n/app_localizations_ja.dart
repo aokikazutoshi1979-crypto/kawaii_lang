@@ -435,6 +435,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get subsceneAll => 'すべて';
 
   @override
+  String get questionListGuide => '下から1つ選ぶと練習が始まります';
+
+  @override
+  String get tapToPractice => 'タップして練習';
+
+  @override
   String get recordingAutoStopped => '録音は10秒で自動停止しました。';
 
   @override

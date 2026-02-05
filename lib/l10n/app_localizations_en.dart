@@ -449,6 +449,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get subsceneAll => 'All';
 
   @override
+  String get questionListGuide => 'Choose one below to start practicing.';
+
+  @override
+  String get tapToPractice => 'Tap to practice';
+
+  @override
   String get recordingAutoStopped =>
       'Recording stopped automatically at 10 seconds.';
 

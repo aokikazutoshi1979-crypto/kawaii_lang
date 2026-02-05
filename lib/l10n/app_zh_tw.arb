@@ -215,6 +215,14 @@
   "@subsceneAll": {
     "description": "篩選按鈕：全部（台灣繁體）"
   },
+  "questionListGuide": "下方選擇一項即可開始練習。",
+  "@questionListGuide": {
+    "description": "題目列表上方的提示文案"
+  },
+  "tapToPractice": "點擊練習",
+  "@tapToPractice": {
+    "description": "每個題目卡片的副標題"
+  },
   "recordingAutoStopped": "錄音已於 10 秒時自動停止。",
   "readingLabel": "閱讀",
   "listeningLabel": "聽力",

@@ -219,6 +219,14 @@
   "@subsceneAll": {
     "description": "Label for 'All' filter button"
   },
+  "questionListGuide": "Choose one below to start practicing.",
+  "@questionListGuide": {
+    "description": "Guide text shown above the question list"
+  },
+  "tapToPractice": "Tap to practice",
+  "@tapToPractice": {
+    "description": "Sub-label for each question card"
+  },
   "recordingAutoStopped": "Recording stopped automatically at 10 seconds.",
   "@recordingAutoStopped": {
     "description": "Shown when the mic auto-stops after 10 seconds."

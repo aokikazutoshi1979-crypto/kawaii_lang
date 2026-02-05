@@ -217,6 +217,14 @@
   "@subsceneAll": {
     "description": "筛选按钮：全部"
   },
+  "questionListGuide": "下方选择一项即可开始练习。",
+  "@questionListGuide": {
+    "description": "题目列表上方的提示文案"
+  },
+  "tapToPractice": "点击练习",
+  "@tapToPractice": {
+    "description": "每个题目卡片的副标题"
+  },
   "recordingAutoStopped": "录音已在 10 秒时自动停止。",
   "readingLabel": "阅读",
   "listeningLabel": "听力",

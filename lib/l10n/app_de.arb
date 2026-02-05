@@ -216,6 +216,14 @@
   "@subsceneAll": {
     "description": "Filter-Schaltfläche: Alle"
   },
+  "questionListGuide": "Wähle unten eine aus, um mit dem Üben zu beginnen.",
+  "@questionListGuide": {
+    "description": "Hinweistext über der Frageliste"
+  },
+  "tapToPractice": "Tippen zum Üben",
+  "@tapToPractice": {
+    "description": "Untertitel für jede Fragenkarte"
+  },
   "recordingAutoStopped": "Die Aufnahme wurde nach 10 Sekunden automatisch beendet.",
   "readingLabel": "Lesen",
   "listeningLabel": "Hören",

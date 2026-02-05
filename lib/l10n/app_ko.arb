@@ -216,6 +216,14 @@
   "@subsceneAll": {
     "description": "필터 버튼: 전체"
   },
+  "questionListGuide": "아래에서 하나를 선택하면 연습이 시작됩니다.",
+  "@questionListGuide": {
+    "description": "문제 목록 위에 표시되는 안내 문구"
+  },
+  "tapToPractice": "탭하여 연습",
+  "@tapToPractice": {
+    "description": "각 문제 카드의 서브 라벨"
+  },
   "recordingAutoStopped": "녹음이 10초 후 자동으로 중지되었습니다.",
   "readingLabel": "리딩",
   "listeningLabel": "리스닝",

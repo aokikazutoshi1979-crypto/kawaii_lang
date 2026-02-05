@@ -436,6 +436,12 @@ class AppLocalizationsKo extends AppLocalizations {
   String get subsceneAll => '전체';
 
   @override
+  String get questionListGuide => '아래에서 하나를 선택하면 연습이 시작됩니다.';
+
+  @override
+  String get tapToPractice => '탭하여 연습';
+
+  @override
   String get recordingAutoStopped => '녹음이 10초 후 자동으로 중지되었습니다.';
 
   @override

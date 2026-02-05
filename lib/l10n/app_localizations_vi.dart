@@ -446,6 +446,12 @@ class AppLocalizationsVi extends AppLocalizations {
   String get subsceneAll => 'Tất cả';
 
   @override
+  String get questionListGuide => 'Chọn một mục bên dưới để bắt đầu luyện tập.';
+
+  @override
+  String get tapToPractice => 'Chạm để luyện tập';
+
+  @override
   String get recordingAutoStopped => 'Ghi âm đã tự dừng sau 10 giây.';
 
   @override

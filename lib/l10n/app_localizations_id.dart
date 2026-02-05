@@ -450,6 +450,13 @@ class AppLocalizationsId extends AppLocalizations {
   String get subsceneAll => 'Semua';
 
   @override
+  String get questionListGuide =>
+      'Pilih salah satu di bawah untuk mulai berlatih.';
+
+  @override
+  String get tapToPractice => 'Ketuk untuk berlatih';
+
+  @override
   String get recordingAutoStopped =>
       'Perekaman dihentikan otomatis pada 10 detik.';
 

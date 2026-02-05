@@ -216,6 +216,14 @@
   "@subsceneAll": {
     "description": "Nút lọc: Tất cả"
   },
+  "questionListGuide": "Chọn một mục bên dưới để bắt đầu luyện tập.",
+  "@questionListGuide": {
+    "description": "Dòng hướng dẫn phía trên danh sách câu hỏi"
+  },
+  "tapToPractice": "Chạm để luyện tập",
+  "@tapToPractice": {
+    "description": "Nhãn phụ cho mỗi thẻ câu hỏi"
+  },
   "recordingAutoStopped": "Ghi âm đã tự dừng sau 10 giây.",
   "readingLabel": "Đọc hiểu",
   "listeningLabel": "Nghe hiểu",

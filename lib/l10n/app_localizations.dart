@@ -911,6 +911,18 @@ abstract class AppLocalizations {
   /// **'すべて'**
   String get subsceneAll;
 
+  /// 出題リストのガイド文
+  ///
+  /// In ja, this message translates to:
+  /// **'下から1つ選ぶと練習が始まります'**
+  String get questionListGuide;
+
+  /// 出題カードのサブラベル
+  ///
+  /// In ja, this message translates to:
+  /// **'タップして練習'**
+  String get tapToPractice;
+
   /// No description provided for @recordingAutoStopped.
   ///
   /// In ja, this message translates to:

@@ -216,6 +216,14 @@
   "@subsceneAll": {
     "description": "Tombol filter: Semua"
   },
+  "questionListGuide": "Pilih salah satu di bawah untuk mulai berlatih.",
+  "@questionListGuide": {
+    "description": "Teks panduan di atas daftar soal"
+  },
+  "tapToPractice": "Ketuk untuk berlatih",
+  "@tapToPractice": {
+    "description": "Subjudul untuk setiap kartu soal"
+  },
   "recordingAutoStopped": "Perekaman dihentikan otomatis pada 10 detik.",
   "readingLabel": "Membaca",
   "listeningLabel": "Menyimak",

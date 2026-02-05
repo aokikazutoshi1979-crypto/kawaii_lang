@@ -429,6 +429,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get subsceneAll => '全部';
 
   @override
+  String get questionListGuide => '下方选择一项即可开始练习。';
+
+  @override
+  String get tapToPractice => '点击练习';
+
+  @override
   String get recordingAutoStopped => '录音已在 10 秒时自动停止。';
 
   @override
@@ -908,6 +914,12 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get subsceneAll => '全部';
+
+  @override
+  String get questionListGuide => '下方選擇一項即可開始練習。';
+
+  @override
+  String get tapToPractice => '點擊練習';
 
   @override
   String get recordingAutoStopped => '錄音已於 10 秒時自動停止。';

@@ -216,6 +216,14 @@
   "@subsceneAll": {
     "description": "Bouton de filtre : Tous"
   },
+  "questionListGuide": "Choisissez-en une ci-dessous pour commencer à pratiquer.",
+  "@questionListGuide": {
+    "description": "Texte guide au-dessus de la liste des questions"
+  },
+  "tapToPractice": "Appuyez pour pratiquer",
+  "@tapToPractice": {
+    "description": "Sous-libellé pour chaque carte de question"
+  },
   "recordingAutoStopped": "L’enregistrement s’est arrêté automatiquement au bout de 10 secondes.",
   "readingLabel": "Lecture",
   "listeningLabel": "Écoute",

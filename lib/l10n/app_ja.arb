@@ -214,6 +214,14 @@
   "@subsceneAll": {
     "description": "subSceneフィルタの「すべて」ボタン表示"
   },
+  "questionListGuide": "下から1つ選ぶと練習が始まります",
+  "@questionListGuide": {
+    "description": "出題リストのガイド文"
+  },
+  "tapToPractice": "タップして練習",
+  "@tapToPractice": {
+    "description": "出題カードのサブラベル"
+  },
   "recordingAutoStopped": "録音は10秒で自動停止しました。",
   "readingLabel": "リーディング",
   "listeningLabel": "リスニング",

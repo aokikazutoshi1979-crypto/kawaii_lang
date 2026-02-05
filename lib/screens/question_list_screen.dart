@@ -541,7 +541,7 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                         Padding(
                           padding: const EdgeInsets.only(bottom: 6),
                           child: Text(
-                            '下から1つ選ぶと練習が始まります',
+                            loc.questionListGuide,
                             style: TextStyle(
                               fontSize: 12,
                               color: Colors.grey.shade600,
@@ -579,7 +579,7 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                                           ),
                                           const SizedBox(height: 4),
                                           Text(
-                                            'タップして練習',
+                                            loc.tapToPractice,
                                             style: TextStyle(
                                               fontSize: 12,
                                               color: Colors.grey.shade600,
