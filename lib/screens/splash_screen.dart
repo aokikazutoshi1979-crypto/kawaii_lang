@@ -5,6 +5,7 @@ import 'package:purchases_flutter/purchases_flutter.dart';
 import '../services/auth_service.dart';
 import '../services/idle_service.dart';
 import 'language_selection_screen.dart';
+import 'target_language_selection_screen.dart';
 import 'category_selection_screen.dart';
 import 'package:kawaii_lang/config.dart';
 
@@ -72,12 +73,20 @@ class _SplashScreenState extends State<SplashScreen> {
     // 5) 次の画面へ
     final prefs = await SharedPreferences.getInstance();
     final savedLang = prefs.getString('user_language');
+    final savedTarget = prefs.getString('target_language');
 
     if (savedLang == null) {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
           builder: (_) => LanguageSelectionScreen(),
+        ),
+      );
+    } else if (savedTarget == null) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (_) => const TargetLanguageSelectionScreen(),
         ),
       );
     } else {

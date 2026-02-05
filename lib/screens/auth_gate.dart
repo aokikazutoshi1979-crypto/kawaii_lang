@@ -7,6 +7,7 @@ import '../services/subscription_service.dart';
 import 'splash_screen.dart';
 import 'login_screen.dart';
 import 'language_selection_screen.dart';
+import 'target_language_selection_screen.dart';
 import 'category_selection_screen.dart';
 
 class AuthGate extends StatefulWidget {
@@ -51,15 +52,21 @@ class _AuthGateState extends State<AuthGate> {
         if (user == null) {
           return LoginScreen();
         }
-        return FutureBuilder<String?>(
-          future: SharedPreferences.getInstance()
-              .then((prefs) => prefs.getString('user_language')),
-          builder: (context, langSnap) {
-            if (langSnap.connectionState != ConnectionState.done) {
+        return FutureBuilder<SharedPreferences>(
+          future: SharedPreferences.getInstance(),
+          builder: (context, prefsSnap) {
+            if (prefsSnap.connectionState != ConnectionState.done) {
               return SplashScreen();
             }
-            if (langSnap.data == null) {
+            final prefs = prefsSnap.data;
+            if (prefs == null) return SplashScreen();
+            final native = prefs.getString('user_language');
+            final target = prefs.getString('target_language');
+            if (native == null) {
               return LanguageSelectionScreen();
+            }
+            if (target == null) {
+              return const TargetLanguageSelectionScreen();
             }
             return CategorySelectionScreen();
           },

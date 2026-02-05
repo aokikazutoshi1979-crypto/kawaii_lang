@@ -36,6 +36,7 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
   UserModel? _user;
   bool _isLoadingUser = false;
   String? selectedLang;
+  String? selectedTargetLang;
   final String _faqUrl = 'https://kawaiilang.com/faq.html';
 
   final List<Map<String, String>> languages = [
@@ -75,6 +76,7 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
 
     // １）言語設定のロード（既存）
     _loadLanguage();
+    _loadTargetLanguage();
 
     // ２）RevenueCat の初期化＆オファー取得
     SubscriptionService.instance.init();
@@ -100,6 +102,13 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     final prefs = await SharedPreferences.getInstance();
     setState(() {
       selectedLang = prefs.getString('user_language') ?? 'ja';
+    });
+  }
+
+  Future<void> _loadTargetLanguage() async {
+    final prefs = await SharedPreferences.getInstance();
+    setState(() {
+      selectedTargetLang = prefs.getString('target_language');
     });
   }
 
@@ -139,6 +148,22 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(content: Text(AppLocalizations.of(context)!.languageUpdated)),
     );
+  }
+
+  Future<void> _saveTargetLanguage(String code) async {
+    final native = selectedLang;
+    if (native != null && code == native) {
+      final loc = AppLocalizations.of(context)!;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(loc.selectPrompt)),
+      );
+      return;
+    }
+
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString('target_language', code);
+
+    setState(() => selectedTargetLang = code);
   }
 
   Future<void> _handleLogout() async {
@@ -322,7 +347,7 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
               Padding(
                 padding: const EdgeInsets.only(bottom: 16),
                 child: KeyboardGuideButton(
-                  targetLanguage: selectedLang!,
+                  targetLanguage: selectedTargetLang ?? selectedLang!,
                   alwaysVisible: true,
                 ),
               ),
@@ -369,6 +394,30 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                       ? const Icon(Icons.check, color: Colors.green)
                       : null,
                   onTap: () => _saveLanguage(lang['code']!),
+                ),
+              );
+            }).toList(),
+            const Divider(height: 32),
+
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 16.0),
+              child: Text(
+                loc.targetLanguage,
+                style: Theme.of(context).textTheme.titleLarge,
+                textAlign: TextAlign.center,
+              ),
+            ),
+            ...((selectedLang == null)
+                    ? languages
+                    : languages.where((lang) => lang['code'] != selectedLang))
+                .map((lang) {
+              return Card(
+                child: ListTile(
+                  title: Text(lang['label']!),
+                  trailing: selectedTargetLang == lang['code']
+                      ? const Icon(Icons.check, color: Colors.green)
+                      : null,
+                  onTap: () => _saveTargetLanguage(lang['code']!),
                 ),
               );
             }).toList(),

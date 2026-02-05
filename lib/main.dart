@@ -15,6 +15,7 @@ import 'screens/splash_screen.dart';
 import 'screens/idle_gate_screen.dart';
 import 'services/subscription_service.dart';  // ← 追加
 import 'screens/register_screen.dart'; // ← 追加
+import 'screens/target_language_selection_screen.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:kawaii_lang/config.dart';
 import 'dart:async';
@@ -137,6 +138,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
         '/login': (_) => LoginScreen(),
         '/register': (_) => RegisterScreen(), // ← 追加済み
         '/category': (_) => CategorySelectionScreen(),
+        '/target-language': (_) => const TargetLanguageSelectionScreen(),
         '/settings': (_) => SettingsScreen(),
         '/splash': (_) => SplashScreen(),  // ← 追加
       },

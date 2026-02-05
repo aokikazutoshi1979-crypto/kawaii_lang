@@ -9,7 +9,6 @@ import 'settings_screen.dart';
 import '../services/subscription_service.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:kawaii_lang/models/language.dart';
-import 'package:kawaii_lang/models/country_flags.dart';
 import 'dart:convert';                     // jsonDecode
 import 'package:flutter/services.dart';    // rootBundle
 import 'package:kawaii_lang/widgets/mode_toggle_bar.dart';
@@ -30,17 +29,10 @@ class _CategorySelectionScreenState extends State<CategorySelectionScreen> {
   String? selectedSceneKey;
   String? selectedNativeLang;
 
-  // ① すべての言語を保持するリスト
-  List<Language> _allLanguages = [];
   List<Scene> _allScenes = [];
 
   // シーンごとの問題数を保存
   Map<String, int> _counts = {};
-
-  // ① カードサイズをコンパクトにする
-  //    viewportFraction: 0.6 → 横幅は画面幅の 60%
-  final PageController _scenePageController = PageController(viewportFraction: 0.6);
-  final PageController _languagePageController = PageController(viewportFraction: 0.6);
 
   QuizMode selectedMode = QuizMode.reading;
 
@@ -48,22 +40,11 @@ class _CategorySelectionScreenState extends State<CategorySelectionScreen> {
   void initState() {
     super.initState();
     _loadLanguage();
-    _loadLanguagesJson(); // ← 追加：JSONロード
+    _loadTargetLanguage();
     _loadScenesJson();   // ← 追加
     
     // 🔑 サブスク検証サービスを初期化
     // maybeInitSubscription(); // 🔑 追加：サブスク状態を1日1回だけ確認
-  }
-
-  // JSON をパースして _allLanguages にセット
-  Future<void> _loadLanguagesJson() async {
-    final jsonStr = await rootBundle.loadString('assets/questions/languages.json');
-    final List<dynamic> jsonList = jsonDecode(jsonStr);
-    final loaded = jsonList.map((e) => Language.fromJson(e)).toList();
-    print('▶ loaded languages: ${loaded.map((l) => l.id).toList()}');
-    setState(() {
-      _allLanguages = loaded;
-    });
   }
 
   // scenes.json をパースして _allScenes にセット
@@ -131,6 +112,13 @@ class _CategorySelectionScreenState extends State<CategorySelectionScreen> {
     });
   }
 
+  Future<void> _loadTargetLanguage() async {
+    final prefs = await SharedPreferences.getInstance();
+    setState(() {
+      selectedTargetLang = prefs.getString('target_language');
+    });
+  }
+
   void _onSubmit() {
     final loc = AppLocalizations.of(context)!;
 
@@ -190,101 +178,9 @@ class _CategorySelectionScreenState extends State<CategorySelectionScreen> {
 
   String _getSceneImagePath(String key) => 'assets/images/backgrounds/$key.png';
 
-  Widget _buildHorizontalSelector({
-    required String title,
-    required List<Map<String, String>> items,
-    required String? selectedKey,
-    required void Function(String) onSelected,
-    required PageController controller,
-    bool pageSnapping = false,                        // ← 追加
-    ScrollPhysics physics = const BouncingScrollPhysics(), // ← 追加
-  }) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 8.0),
-          child: Text(title, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-        ),
-        SizedBox(
-          height: 120,
-          child: PageView.builder(
-            controller: controller,
-            itemCount: items.length,
-            pageSnapping: pageSnapping,   // ← 反映
-            physics: physics,             // ← 反映
-            itemBuilder: (context, index) {
-              final item  = items[index];
-              final key   = item['key']!;
-              final label = item['label']!;
-              return GestureDetector(
-                onTap: () => onSelected(key),               // ← setStateしない
-                child: Card(
-                  color: selectedKey == key ? Colors.pink[100] : Colors.white,
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-                  margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
-                  child: Center(  // ← ここで中央揃え
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Text(
-                          countryFlags[key] ?? '🌐',
-                          style: const TextStyle(fontSize: 32),
-                        ),
-                        const SizedBox(height: 4),
-                        Text(
-                          label,
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              )
-              .animate()
-              .fade(duration: 300.ms)
-              .slideX(begin: 0.2);
-            },
-          ),
-        ),
-      ],
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
-
-    // 母語の判定
-    final localeCode = Localizations.localeOf(context).languageCode;
-    final nativeKey = {
-      'ja':   'Japanese',
-      'en':   'English',
-      'zh':   'Chinese (Simplified)',
-      'zh_TW':'Chinese (Traditional, Taiwan)',
-      'ko':   'Korean',
-      'es':   'Spanish',
-      'fr':   'French',
-      'de':   'German',
-      'vi':   'Vietnamese',
-      'id':   'Indonesian'
-    }[localeCode];
-
-    // 現在の母語コード（SharedPreferences から保存している selectedNativeLang か、
-    // fallback で端末ロケールを使う）
-    final nativeCode = selectedNativeLang ?? Localizations.localeOf(context).languageCode;
-    // print('▶ nativeCode: $nativeCode, locale: ${loc.localeName}');
-
-    // 画面表示用にフィルタ＆マップ
-    final languageItems = _allLanguages
-      .where((lang) => lang.id != nativeCode)
-      .map((lang) => {
-        'key': lang.id,                                       // 'ja','en','zh'
-        'label': lang.label[loc.localeName] ?? lang.id,       // ロケールに応じた文字列
-      })
-      .toList();
-    // print('▶ languageItems: $languageItems');
 
     // JSON読込み後の動的リストを作成
     final sceneItems = _allScenes.map((scene) => {
@@ -308,7 +204,8 @@ class _CategorySelectionScreenState extends State<CategorySelectionScreen> {
                 MaterialPageRoute(builder: (_) => const SettingsScreen()),
               ).then((_) {
                 // 設定画面から戻ってきたときに母語を再読み込み
-                _loadLanguage();  
+                _loadLanguage();
+                _loadTargetLanguage();
               });
             },
           ),
@@ -319,15 +216,6 @@ class _CategorySelectionScreenState extends State<CategorySelectionScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            _buildHorizontalSelector(
-              title:       loc.targetLanguage,
-              items:       languageItems,
-              selectedKey: selectedTargetLang,
-              onSelected:  (val) => setState(() => selectedTargetLang = val),
-              controller:  _languagePageController,  // ← viewportFraction付きでinit
-              pageSnapping: false,                   // ← 連続スクロールに
-              physics: const BouncingScrollPhysics(),
-            ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 8.0),
             child: Text(loc.scene, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),

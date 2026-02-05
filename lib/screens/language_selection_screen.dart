@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../main.dart'; // MyApp.setLocale を使うため
 import 'package:kawaii_lang/l10n/app_localizations.dart';
+import 'target_language_selection_screen.dart';
 
 class LanguageSelectionScreen extends StatefulWidget {
   @override
@@ -47,6 +48,7 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
   Future<void> _selectLanguage(String code) async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString('user_language', code);
+    await prefs.remove('target_language');
 
     setState(() {
       selectedLang = code;
@@ -55,8 +57,13 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
     // アプリ全体に新しい言語を適用
     MyApp.setLocale(context, Locale(code));
 
-    // 次の画面へ（カテゴリ選択画面へ）
-    Navigator.pushReplacementNamed(context, '/category');
+    // 次の画面へ（学びたい言語の選択画面）
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(
+        builder: (_) => const TargetLanguageSelectionScreen(),
+      ),
+    );
   }
 
   @override
