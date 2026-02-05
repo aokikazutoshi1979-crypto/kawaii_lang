@@ -191,6 +191,12 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
     _loadSubscriptionOfferings();
   }
 
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
   Future<void> _loadCleared() async {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) return;
@@ -215,12 +221,20 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
   String? _selectedSubScene;            // null = ALL
   List<String> _availableSubScenes = []; // JSONから抽出した subScene 一覧
   List<Question> _filtered = [];         // 表示用（questions のフィルタ結果）
+  String _searchQuery = '';
+  final TextEditingController _searchController = TextEditingController();
 
   void _applyFilter() {
     final base = questions;
-    final next = (_selectedSubScene == null)
+    final filteredBySub = (_selectedSubScene == null)
         ? base
         : base.where((q) => q.subScene == _selectedSubScene).toList();
+    final q = _searchQuery.trim();
+    final next = q.isEmpty
+        ? filteredBySub
+        : filteredBySub
+            .where((item) => item.getText(nativeLang).toLowerCase().contains(q.toLowerCase()))
+            .toList();
     setState(() {
       _filtered = next;
     });
@@ -408,6 +422,45 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
           // ▼▼ ここから subScene フィルタ ▼▼
           if (_availableSubScenes.isNotEmpty) ...[
             const SizedBox(height: 12),
+            TextField(
+              controller: _searchController,
+              onChanged: (value) {
+                _searchQuery = value;
+                _applyFilter();
+              },
+              decoration: InputDecoration(
+                hintText: 'フレーズを検索',
+                prefixIcon: const Icon(Icons.search),
+                filled: true,
+                fillColor: Colors.white,
+                contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                  borderSide: BorderSide(color: Colors.grey.shade300),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                  borderSide: BorderSide(color: Colors.grey.shade300),
+                ),
+              ),
+            ),
+            const SizedBox(height: 10),
+            Row(
+              children: [
+                Text(
+                  '絞り込み：',
+                  style: TextStyle(fontSize: 13, color: Colors.grey.shade700),
+                ),
+                const Spacer(),
+                Text(
+                  _filtered.length == questions.length
+                      ? '${questions.length}問'
+                      : '${questions.length}問（絞り込み後 ${_filtered.length}問）',
+                  style: TextStyle(fontSize: 12, color: Colors.grey.shade600),
+                ),
+              ],
+            ),
+            const SizedBox(height: 6),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
@@ -415,15 +468,20 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                   // ALL ボタン
                   Padding(
                     padding: const EdgeInsets.only(right: 8),
-                    child: OutlinedButton(
-                      onPressed: () {
+                    child: ChoiceChip(
+                      label: Text(loc.subsceneAll),
+                      selected: _selectedSubScene == null,
+                      onSelected: (_) {
                         _selectedSubScene = null;
                         _applyFilter();
                       },
-                      style: OutlinedButton.styleFrom(
-                        backgroundColor: _selectedSubScene == null ? Colors.pink[50] : null,
+                      selectedColor: Colors.pink[100],
+                      backgroundColor: Colors.white,
+                      shape: StadiumBorder(side: BorderSide(color: Colors.pink.shade200)),
+                      labelStyle: TextStyle(
+                        color: _selectedSubScene == null ? Colors.pink.shade700 : Colors.black87,
+                        fontWeight: FontWeight.w600,
                       ),
-                      child: Text(loc.subsceneAll), // ← ARB
                     ),
                   ),
                   // subScene ごとのボタン
@@ -431,15 +489,20 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                     final selected = _selectedSubScene == key;
                     return Padding(
                       padding: const EdgeInsets.only(right: 8),
-                      child: OutlinedButton(
-                        onPressed: () {
+                      child: ChoiceChip(
+                        label: Text(_subSceneLabel(key, loc)),
+                        selected: selected,
+                        onSelected: (_) {
                           _selectedSubScene = key;
                           _applyFilter();
                         },
-                        style: OutlinedButton.styleFrom(
-                          backgroundColor: selected ? Colors.pink[50] : null,
+                        selectedColor: Colors.pink[100],
+                        backgroundColor: Colors.white,
+                        shape: StadiumBorder(side: BorderSide(color: Colors.pink.shade200)),
+                        labelStyle: TextStyle(
+                          color: selected ? Colors.pink.shade700 : Colors.black87,
+                          fontWeight: FontWeight.w600,
                         ),
-                        child: Text(_subSceneLabel(key, loc)),
                       ),
                     );
                   }),
@@ -471,70 +534,107 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                 //     : text;
 
                 return Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 4),
-                  child: Stack(
+                  padding: const EdgeInsets.symmetric(vertical: 6),
+                  child: Column(
                     children: [
-                      // 見た目はこれまで通り、ロック時は押せないボタン
-                      ElevatedButton(
-                        onPressed: locked ? null : () => _onQuestionTap(q, idx),
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: locked ? Colors.grey[200] : null,
-                          foregroundColor: locked ? Colors.grey : null,
-                          padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 12),
-                        ),
-                        child: Row(
-                          children: [
-                            // 左側：ロックアイコン（必要なときだけ）
-                            if (locked) ...[
-                              const Icon(Icons.lock),
-                              const SizedBox(width: 8),
-                            ],
-
-                            // 中央：テキスト（✅は付けない）
-                            Expanded(
-                              child: Text(
-                                text,
-                                style: locked ? const TextStyle(color: Colors.grey) : null,
-                                overflow: TextOverflow.ellipsis,
-                              ),
-                            ),
-
-                            // 右端：レ点（完了時のみ）
-                            if (done)
-                              const Icon(
-                                Icons.task_alt_rounded, // レ点っぽい洗練アイコン
-                                size: 20,
-                                color: Colors.green,
-                              ),
-                          ],
-                        ),
-                      ),
-
-                      // ロック時だけポップアップを表示する透明レイヤー
-                      if (locked)
-                        Positioned.fill(
-                          child: Material(
-                            color: Colors.transparent,
-                            child: InkWell(
-                              splashColor: Colors.transparent,
-                              highlightColor: Colors.transparent,
-                              onTap: () {
-                                final loc = AppLocalizations.of(context)!;
-                                showDialog<void>(
-                                  context: context,
-                                  barrierDismissible: true, // 外側タップで閉じられる
-                                  builder: (context) {
-                                    return AlertDialog(
-                                      title: Text(loc.subscriptionUpsellTitle),
-                                      content: Text(loc.subscriptionUpsellMessage),
-                                      // actions は無し
-                                    );
-                                  },
-                                );
-                              },
+                      if (entry.key == 0)
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 6),
+                          child: Text(
+                            '下から1つ選ぶと練習が始まります',
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Colors.grey.shade600,
                             ),
                           ),
                         ),
+                      Stack(
+                        children: [
+                          Card(
+                            elevation: 0,
+                            color: locked ? Colors.grey[100] : Colors.white,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                              side: BorderSide(color: Colors.grey.shade200),
+                            ),
+                            child: InkWell(
+                              borderRadius: BorderRadius.circular(12),
+                              onTap: locked ? null : () => _onQuestionTap(q, idx),
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 12),
+                                child: Row(
+                                  children: [
+                                    Expanded(
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            text,
+                                            maxLines: 2,
+                                            overflow: TextOverflow.ellipsis,
+                                            style: TextStyle(
+                                              fontSize: 16,
+                                              color: locked ? Colors.grey : Colors.black87,
+                                            ),
+                                          ),
+                                          const SizedBox(height: 4),
+                                          Text(
+                                            'タップして練習',
+                                            style: TextStyle(
+                                              fontSize: 12,
+                                              color: Colors.grey.shade600,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    const SizedBox(width: 8),
+                                    if (locked)
+                                      const Icon(Icons.lock, color: Colors.grey)
+                                    else
+                                      const Icon(Icons.chevron_right_rounded, color: Colors.grey),
+                                    if (done)
+                                      const Padding(
+                                        padding: EdgeInsets.only(left: 6),
+                                        child: Icon(
+                                          Icons.task_alt_rounded,
+                                          size: 20,
+                                          color: Colors.green,
+                                        ),
+                                      ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+
+                          // ロック時だけポップアップを表示する透明レイヤー
+                          if (locked)
+                            Positioned.fill(
+                              child: Material(
+                                color: Colors.transparent,
+                                child: InkWell(
+                                  splashColor: Colors.transparent,
+                                  highlightColor: Colors.transparent,
+                                  onTap: () {
+                                    final loc = AppLocalizations.of(context)!;
+                                    showDialog<void>(
+                                      context: context,
+                                      barrierDismissible: true, // 外側タップで閉じられる
+                                      builder: (context) {
+                                        return AlertDialog(
+                                          title: Text(loc.subscriptionUpsellTitle),
+                                          content: Text(loc.subscriptionUpsellMessage),
+                                          // actions は無し
+                                        );
+                                      },
+                                    );
+                                  },
+                                ),
+                              ),
+                            ),
+                        ],
+                      ),
                     ],
                   ),
                 );
