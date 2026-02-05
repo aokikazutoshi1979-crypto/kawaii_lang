@@ -1381,35 +1381,40 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
-    final topInset = MediaQuery.of(context).padding.top + kToolbarHeight;
+    final isListening = _mode == QuizMode.listening;
+    final topInset = MediaQuery.of(context).padding.top + (isListening ? 0 : kToolbarHeight);
     return Scaffold(
+      backgroundColor: const Color(0xFFFFF7F9),
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
         scrolledUnderElevation: 0,
-        title: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-          decoration: BoxDecoration(
-            color: scheme.surface.withOpacity(0.8),
-            borderRadius: BorderRadius.circular(16),
-            border: Border.all(color: scheme.outlineVariant.withOpacity(0.4)),
-          ),
-          child: FittedBox(
-            fit: BoxFit.scaleDown,
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                _langPill(context, _displayLangName(widget.nativeLang)), // 例: 日本語 / English
-                const SizedBox(width: 8),
-                const Icon(Icons.east_rounded, size: 20, color: Colors.grey),
-                const SizedBox(width: 8),
-                _langPill(context, _displayLangName(widget.targetLang)), // 例: 英語 / Korean
-              ],
-            ),
-          ),
-        ),
+        toolbarHeight: isListening ? 0 : kToolbarHeight,
+        title: isListening
+            ? null
+            : Container(
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                decoration: BoxDecoration(
+                  color: scheme.surface.withOpacity(0.8),
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(color: scheme.outlineVariant.withOpacity(0.4)),
+                ),
+                child: FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      _langPill(context, _displayLangName(widget.nativeLang)), // 例: 日本語 / English
+                      const SizedBox(width: 8),
+                      const Icon(Icons.east_rounded, size: 20, color: Colors.grey),
+                      const SizedBox(width: 8),
+                      _langPill(context, _displayLangName(widget.targetLang)), // 例: 英語 / Korean
+                    ],
+                  ),
+                ),
+              ),
       ),
 
       body: Stack(
@@ -1422,7 +1427,7 @@ class _ChatScreenState extends State<ChatScreen> {
           ),
           Positioned.fill(
             child: Container(
-              color: Colors.black.withOpacity(0.15),
+              color: const Color(0xFFFFF7F9).withOpacity(0.35),
             ),
           ),
           Padding(
@@ -1521,10 +1526,23 @@ class _ChatScreenState extends State<ChatScreen> {
                   },
                 ),
 
-              KeyboardGuideButton(targetLanguage: widget.targetLang),
-            ],
+                KeyboardGuideButton(targetLanguage: widget.targetLang),
+              ],
+            ),
           ),
-        ),
+          if (isListening)
+            Positioned(
+              top: 0,
+              left: 0,
+              child: SafeArea(
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 4),
+                  child: BackButton(
+                    color: Theme.of(context).colorScheme.onSurface,
+                  ),
+                ),
+              ),
+            ),
         ],
       ),
     );
