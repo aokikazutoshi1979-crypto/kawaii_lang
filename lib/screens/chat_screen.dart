@@ -167,6 +167,70 @@ class _ChatScreenState extends State<ChatScreen> {
     return false; // 判定不能は不正解扱い
   }
 
+  String _normalizeForDuplicateCheck(String input) {
+    var s = input.trim().toLowerCase();
+    s = s.replaceAll(RegExp(r'\s+'), ' ');
+    s = s.replaceAll(RegExp(r'^[\"“”『』「」]+|[\"“”『』「」]+$'), '');
+    s = s.replaceAll(RegExp(r'[.!?。！？…．、]+$'), '');
+    return s;
+  }
+
+  bool _isDuplicateSimilar(String candidate, List<String> avoidList) {
+    final c = _normalizeForDuplicateCheck(candidate);
+    if (c.isEmpty) return true;
+    for (final a in avoidList) {
+      if (a.trim().isEmpty) continue;
+      final n = _normalizeForDuplicateCheck(a);
+      if (n.isNotEmpty && c == n) return true;
+    }
+    return false;
+  }
+
+  String _buildSimilarPromptWithAvoid({
+    required String seed,
+    required String targetLang,
+    required List<String> avoidList,
+  }) {
+    final base = PromptBuilders.buildSimilarQuestionPrompt(
+      translatedText: seed,
+      targetLang: targetLang,
+    );
+    if (avoidList.isEmpty) return base;
+    final quoted = avoidList.where((s) => s.trim().isNotEmpty).map((s) => '"$s"').join(', ');
+    if (quoted.isEmpty) return base;
+    return '$base\n\n【追加条件】\n- 次の表現と同一にならないこと: $quoted\n';
+  }
+
+  Future<String?> _generateSimilarExpression({
+    required String seed,
+    required String targetLang,
+    required AppLocalizations loc,
+    List<String> avoidList = const [],
+  }) async {
+    final basePrompt = PromptBuilders.buildSimilarQuestionPrompt(
+      translatedText: seed,
+      targetLang: targetLang,
+    );
+    final String? first = await GptService.getChatResponse(basePrompt, seed, loc);
+    final String firstText = (first ?? '').trim();
+    if (firstText.isEmpty) return null;
+    if (!_isDuplicateSimilar(firstText, avoidList)) return firstText;
+
+    final retryPrompt = _buildSimilarPromptWithAvoid(
+      seed: seed,
+      targetLang: targetLang,
+      avoidList: avoidList,
+    );
+    final String? retry = await GptService.getChatResponse(retryPrompt, seed, loc);
+    final String retryText = (retry ?? '').trim();
+    if (retryText.isEmpty) return null;
+    if (_isDuplicateSimilar(retryText, avoidList)) {
+      print('similar expression duplicated; skipped');
+      return null;
+    }
+    return retryText;
+  }
+
   Widget _langPill(BuildContext context, String text) {
     final scheme = Theme.of(context).colorScheme;
     return Container(
@@ -965,14 +1029,14 @@ class _ChatScreenState extends State<ChatScreen> {
           });
         });
 
-        // 5) 類似表現（ターゲット言語）を生成
-        final prompt8 = PromptBuilders.buildSimilarQuestionPrompt(
-          translatedText: questionText,
-          targetLang:     targetName,
+        // 5) 類似表現（ターゲット言語）を生成（同一文は再生成）
+        final String? similar = await _generateSimilarExpression(
+          seed: questionText,
+          targetLang: targetName,
+          loc: loc,
+          avoidList: [rawInput, translatedText],
         );
-        final String? similarRes = await GptService.getChatResponse(prompt8, translatedText, loc);
-        final String similar = (similarRes ?? '').trim();
-        if (similar.isEmpty) return; // 念のためガード
+        if (similar == null || similar.isEmpty) return; // 念のためガード
 
         // 6) 類似表現の母語訳
         final prompt10 = PromptBuilders.buildSimilarQuestionInNativeLangPrompt(
@@ -1279,19 +1343,20 @@ class _ChatScreenState extends State<ChatScreen> {
     //      「類似表現を直接生成」する既存のプロンプトを使用（translatedText ではなく questionText 由来の意味でOKな設計なら、buildSimilarQuestionPromptの引数を translatedText にしても良い）
     final String seedForSimilar = (translatedText ?? questionText);
     
-    // ② 問8：類似表現を生成
-    final prompt8 = PromptBuilders.buildSimilarQuestionPrompt(
-      translatedText: seedForSimilar,   // ← ココを translatedText → seedForSimilar
+    // ② 問8：類似表現を生成（同一文は再生成）
+    final avoidList = <String>[];
+    if (rawInput != null && rawInput.trim().isNotEmpty) avoidList.add(rawInput);
+    if (translatedText != null && translatedText!.trim().isNotEmpty) {
+      avoidList.add(translatedText!);
+    }
+    final String? similar = await _generateSimilarExpression(
+      seed: seedForSimilar,
       targetLang: targetName,
+      loc: loc,
+      avoidList: avoidList,
     );
 
-    final String? similar = await GptService.getChatResponse(
-      prompt8,
-      seedForSimilar,                   // ← ココも translatedText → seedForSimilar
-      loc,
-    );
-
-    if (similar == null) {
+    if (similar == null || similar.trim().isEmpty) {
       print('❌ 問8の類似表現生成に失敗しました');
       return;
     }
