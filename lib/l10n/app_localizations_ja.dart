@@ -445,6 +445,20 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get profileTitle => 'プロフィール';
+
+  @override
+  String totalCorrectCount(Object count) {
+    return '累計正解 $count問';
+  }
+
+  @override
+  String get categoryCorrectHeader => 'カテゴリー別の正解数';
+
+  @override
+  String get noHistoryData => 'まだデータがありません';
+
+  @override
   String get questionListGuide => '下から1つ選ぶと練習が始まります';
 
   @override

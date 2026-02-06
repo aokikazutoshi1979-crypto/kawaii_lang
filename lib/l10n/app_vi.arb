@@ -230,6 +230,25 @@
       "days": {}
     }
   },
+  "profileTitle": "Hồ sơ",
+  "@profileTitle": {
+    "description": "Tiêu đề màn hình hồ sơ"
+  },
+  "totalCorrectCount": "Tổng đúng: {count}",
+  "@totalCorrectCount": {
+    "description": "Tổng số câu đúng",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "categoryCorrectHeader": "Số đúng theo danh mục",
+  "@categoryCorrectHeader": {
+    "description": "Tiêu đề số câu đúng theo danh mục"
+  },
+  "noHistoryData": "Chưa có dữ liệu",
+  "@noHistoryData": {
+    "description": "Hiển thị khi không có dữ liệu lịch sử"
+  },
   "questionListGuide": "Chọn một mục bên dưới để bắt đầu luyện tập.",
   "@questionListGuide": {
     "description": "Dòng hướng dẫn phía trên danh sách câu hỏi"

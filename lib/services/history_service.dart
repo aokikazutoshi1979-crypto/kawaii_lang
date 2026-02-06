@@ -12,6 +12,19 @@ class DailyCorrectStats {
   });
 }
 
+class ProfileStats {
+  final int todayCorrect;
+  final int streakDays;
+  final int totalCorrect;
+  final Map<String, int> correctByScene;
+  const ProfileStats({
+    required this.todayCorrect,
+    required this.streakDays,
+    required this.totalCorrect,
+    required this.correctByScene,
+  });
+}
+
 class HistoryService {
   HistoryService._();
   static final instance = HistoryService._();
@@ -63,6 +76,68 @@ class HistoryService {
     }
 
     return DailyCorrectStats(todayCorrect: todayCorrect, streakDays: streak);
+  }
+
+  Future<ProfileStats> getProfileStats() async {
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null) {
+      return const ProfileStats(
+        todayCorrect: 0,
+        streakDays: 0,
+        totalCorrect: 0,
+        correctByScene: <String, int>{},
+      );
+    }
+
+    final now = DateTime.now();
+    final today = DateTime(now.year, now.month, now.day);
+    final todayKey = today.millisecondsSinceEpoch;
+
+    final snap = await _db
+        .collection('users')
+        .doc(_uid)
+        .collection('history')
+        .where('isCorrect', isEqualTo: true)
+        .get();
+
+    final Map<int, int> correctByDay = {};
+    final Map<String, int> correctByScene = {};
+    var totalCorrect = 0;
+
+    for (final doc in snap.docs) {
+      final data = doc.data();
+      totalCorrect++;
+
+      final scene = (data['scene'] ?? '').toString();
+      if (scene.isNotEmpty) {
+        correctByScene[scene] = (correctByScene[scene] ?? 0) + 1;
+      }
+
+      final ts = data['timestamp'];
+      if (ts is! Timestamp) continue;
+      final local = ts.toDate().toLocal();
+      final dayKey = DateTime(local.year, local.month, local.day).millisecondsSinceEpoch;
+      correctByDay[dayKey] = (correctByDay[dayKey] ?? 0) + 1;
+    }
+
+    final todayCorrect = correctByDay[todayKey] ?? 0;
+    var streak = 0;
+    for (var i = 0; ; i++) {
+      final day = today.subtract(Duration(days: i));
+      final key = DateTime(day.year, day.month, day.day).millisecondsSinceEpoch;
+      if ((correctByDay[key] ?? 0) > 0) {
+        streak++;
+      } else {
+        break;
+      }
+    }
+
+    return ProfileStats(
+      todayCorrect: todayCorrect,
+      streakDays: streak,
+      totalCorrect: totalCorrect,
+      correctByScene: correctByScene,
+    );
   }
 
   Future<void> recordAnswer({

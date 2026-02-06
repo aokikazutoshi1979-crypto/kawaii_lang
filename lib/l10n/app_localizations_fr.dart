@@ -464,6 +464,20 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
+  String get profileTitle => 'Profil';
+
+  @override
+  String totalCorrectCount(Object count) {
+    return 'Total de réussites : $count';
+  }
+
+  @override
+  String get categoryCorrectHeader => 'Réussites par catégorie';
+
+  @override
+  String get noHistoryData => 'Pas encore de données';
+
+  @override
   String get questionListGuide =>
       'Choisissez-en une ci-dessous pour commencer à pratiquer.';
 

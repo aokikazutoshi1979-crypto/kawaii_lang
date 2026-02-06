@@ -233,6 +233,25 @@
       "days": {}
     }
   },
+  "profileTitle": "Profile",
+  "@profileTitle": {
+    "description": "Profile screen title"
+  },
+  "totalCorrectCount": "Total correct: {count}",
+  "@totalCorrectCount": {
+    "description": "Total correct answers",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "categoryCorrectHeader": "Correct by category",
+  "@categoryCorrectHeader": {
+    "description": "Header for correct answers by category"
+  },
+  "noHistoryData": "No data yet",
+  "@noHistoryData": {
+    "description": "Shown when there is no history data"
+  },
   "questionListGuide": "Choose one below to start practicing.",
   "@questionListGuide": {
     "description": "Guide text shown above the question list"

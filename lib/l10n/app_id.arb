@@ -230,6 +230,25 @@
       "days": {}
     }
   },
+  "profileTitle": "Profil",
+  "@profileTitle": {
+    "description": "Judul layar profil"
+  },
+  "totalCorrectCount": "Total benar: {count}",
+  "@totalCorrectCount": {
+    "description": "Total jawaban benar",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "categoryCorrectHeader": "Benar per kategori",
+  "@categoryCorrectHeader": {
+    "description": "Judul untuk jawaban benar per kategori"
+  },
+  "noHistoryData": "Belum ada data",
+  "@noHistoryData": {
+    "description": "Ditampilkan saat tidak ada data riwayat"
+  },
   "questionListGuide": "Pilih salah satu di bawah untuk mulai berlatih.",
   "@questionListGuide": {
     "description": "Teks panduan di atas daftar soal"

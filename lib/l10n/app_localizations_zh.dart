@@ -439,6 +439,20 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get profileTitle => '个人资料';
+
+  @override
+  String totalCorrectCount(Object count) {
+    return '累计正确 $count题';
+  }
+
+  @override
+  String get categoryCorrectHeader => '分类正确数';
+
+  @override
+  String get noHistoryData => '暂无数据';
+
+  @override
   String get questionListGuide => '下方选择一项即可开始练习。';
 
   @override
@@ -934,6 +948,20 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String streakDaysCount(Object days) {
     return '連續正確 $days天';
   }
+
+  @override
+  String get profileTitle => '個人資料';
+
+  @override
+  String totalCorrectCount(Object count) {
+    return '累計正確 $count題';
+  }
+
+  @override
+  String get categoryCorrectHeader => '分類正確數';
+
+  @override
+  String get noHistoryData => '尚無資料';
 
   @override
   String get questionListGuide => '下方選擇一項即可開始練習。';

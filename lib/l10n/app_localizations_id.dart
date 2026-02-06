@@ -460,6 +460,20 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String get profileTitle => 'Profil';
+
+  @override
+  String totalCorrectCount(Object count) {
+    return 'Total benar: $count';
+  }
+
+  @override
+  String get categoryCorrectHeader => 'Benar per kategori';
+
+  @override
+  String get noHistoryData => 'Belum ada data';
+
+  @override
   String get questionListGuide =>
       'Pilih salah satu di bawah untuk mulai berlatih.';
 

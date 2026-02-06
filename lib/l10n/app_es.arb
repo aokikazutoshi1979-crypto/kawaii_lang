@@ -230,6 +230,25 @@
       "days": {}
     }
   },
+  "profileTitle": "Perfil",
+  "@profileTitle": {
+    "description": "Título de la pantalla de perfil"
+  },
+  "totalCorrectCount": "Total de aciertos: {count}",
+  "@totalCorrectCount": {
+    "description": "Total de aciertos",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "categoryCorrectHeader": "Aciertos por categoría",
+  "@categoryCorrectHeader": {
+    "description": "Encabezado de aciertos por categoría"
+  },
+  "noHistoryData": "Aún no hay datos",
+  "@noHistoryData": {
+    "description": "Se muestra cuando no hay datos de historial"
+  },
   "questionListGuide": "Elige una de abajo para empezar a practicar.",
   "@questionListGuide": {
     "description": "Guía mostrada encima de la lista de preguntas"

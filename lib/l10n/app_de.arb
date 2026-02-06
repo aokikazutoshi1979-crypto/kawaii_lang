@@ -230,6 +230,25 @@
       "days": {}
     }
   },
+  "profileTitle": "Profil",
+  "@profileTitle": {
+    "description": "Titel des Profilbildschirms"
+  },
+  "totalCorrectCount": "Insgesamt richtig: {count}",
+  "@totalCorrectCount": {
+    "description": "Gesamtzahl richtiger Antworten",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "categoryCorrectHeader": "Richtig nach Kategorie",
+  "@categoryCorrectHeader": {
+    "description": "Überschrift für richtige Antworten nach Kategorie"
+  },
+  "noHistoryData": "Noch keine Daten",
+  "@noHistoryData": {
+    "description": "Wird angezeigt, wenn keine Verlaufsdaten vorhanden sind"
+  },
   "questionListGuide": "Wähle unten eine aus, um mit dem Üben zu beginnen.",
   "@questionListGuide": {
     "description": "Hinweistext über der Frageliste"

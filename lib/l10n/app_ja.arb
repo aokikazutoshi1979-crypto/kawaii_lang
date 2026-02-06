@@ -228,6 +228,25 @@
       "days": {}
     }
   },
+  "profileTitle": "プロフィール",
+  "@profileTitle": {
+    "description": "プロフィール画面タイトル"
+  },
+  "totalCorrectCount": "累計正解 {count}問",
+  "@totalCorrectCount": {
+    "description": "累計正解数",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "categoryCorrectHeader": "カテゴリー別の正解数",
+  "@categoryCorrectHeader": {
+    "description": "カテゴリー別の正解数 見出し"
+  },
+  "noHistoryData": "まだデータがありません",
+  "@noHistoryData": {
+    "description": "履歴データがない場合の表示"
+  },
   "questionListGuide": "下から1つ選ぶと練習が始まります",
   "@questionListGuide": {
     "description": "出題リストのガイド文"

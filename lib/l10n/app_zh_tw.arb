@@ -229,6 +229,25 @@
       "days": {}
     }
   },
+  "profileTitle": "個人資料",
+  "@profileTitle": {
+    "description": "個人資料頁面標題"
+  },
+  "totalCorrectCount": "累計正確 {count}題",
+  "@totalCorrectCount": {
+    "description": "累計正確數量",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "categoryCorrectHeader": "分類正確數",
+  "@categoryCorrectHeader": {
+    "description": "分類正確數標題"
+  },
+  "noHistoryData": "尚無資料",
+  "@noHistoryData": {
+    "description": "沒有歷史資料時顯示"
+  },
   "questionListGuide": "下方選擇一項即可開始練習。",
   "@questionListGuide": {
     "description": "題目列表上方的提示文案"

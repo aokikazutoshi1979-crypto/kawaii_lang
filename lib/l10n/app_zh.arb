@@ -231,6 +231,25 @@
       "days": {}
     }
   },
+  "profileTitle": "个人资料",
+  "@profileTitle": {
+    "description": "个人资料页面标题"
+  },
+  "totalCorrectCount": "累计正确 {count}题",
+  "@totalCorrectCount": {
+    "description": "累计正确数量",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "categoryCorrectHeader": "分类正确数",
+  "@categoryCorrectHeader": {
+    "description": "分类正确数标题"
+  },
+  "noHistoryData": "暂无数据",
+  "@noHistoryData": {
+    "description": "没有历史数据时显示"
+  },
   "questionListGuide": "下方选择一项即可开始练习。",
   "@questionListGuide": {
     "description": "题目列表上方的提示文案"

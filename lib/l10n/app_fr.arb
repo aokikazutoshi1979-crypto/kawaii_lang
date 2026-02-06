@@ -230,6 +230,25 @@
       "days": {}
     }
   },
+  "profileTitle": "Profil",
+  "@profileTitle": {
+    "description": "Titre de l'écran de profil"
+  },
+  "totalCorrectCount": "Total de réussites : {count}",
+  "@totalCorrectCount": {
+    "description": "Total des réussites",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "categoryCorrectHeader": "Réussites par catégorie",
+  "@categoryCorrectHeader": {
+    "description": "En-tête des réussites par catégorie"
+  },
+  "noHistoryData": "Pas encore de données",
+  "@noHistoryData": {
+    "description": "Affiché lorsqu'il n'y a pas de données d'historique"
+  },
   "questionListGuide": "Choisissez-en une ci-dessous pour commencer à pratiquer.",
   "@questionListGuide": {
     "description": "Texte guide au-dessus de la liste des questions"

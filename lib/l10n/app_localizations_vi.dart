@@ -456,6 +456,20 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get profileTitle => 'Hồ sơ';
+
+  @override
+  String totalCorrectCount(Object count) {
+    return 'Tổng đúng: $count';
+  }
+
+  @override
+  String get categoryCorrectHeader => 'Số đúng theo danh mục';
+
+  @override
+  String get noHistoryData => 'Chưa có dữ liệu';
+
+  @override
   String get questionListGuide => 'Chọn một mục bên dưới để bắt đầu luyện tập.';
 
   @override

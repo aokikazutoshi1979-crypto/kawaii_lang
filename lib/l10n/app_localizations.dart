@@ -923,6 +923,30 @@ abstract class AppLocalizations {
   /// **'連続正解 {days}日'**
   String streakDaysCount(Object days);
 
+  /// プロフィール画面タイトル
+  ///
+  /// In ja, this message translates to:
+  /// **'プロフィール'**
+  String get profileTitle;
+
+  /// 累計正解数
+  ///
+  /// In ja, this message translates to:
+  /// **'累計正解 {count}問'**
+  String totalCorrectCount(Object count);
+
+  /// カテゴリー別の正解数 見出し
+  ///
+  /// In ja, this message translates to:
+  /// **'カテゴリー別の正解数'**
+  String get categoryCorrectHeader;
+
+  /// 履歴データがない場合の表示
+  ///
+  /// In ja, this message translates to:
+  /// **'まだデータがありません'**
+  String get noHistoryData;
+
   /// 出題リストのガイド文
   ///
   /// In ja, this message translates to:

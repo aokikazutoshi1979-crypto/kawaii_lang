@@ -446,6 +446,20 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get profileTitle => '프로필';
+
+  @override
+  String totalCorrectCount(Object count) {
+    return '누적 정답 $count개';
+  }
+
+  @override
+  String get categoryCorrectHeader => '카테고리별 정답 수';
+
+  @override
+  String get noHistoryData => '아직 데이터가 없습니다';
+
+  @override
   String get questionListGuide => '아래에서 하나를 선택하면 연습이 시작됩니다.';
 
   @override

@@ -18,6 +18,7 @@ import 'package:purchases_flutter/purchases_flutter.dart';
 import 'subscription_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:kawaii_lang/services/subscription_state.dart';
+import 'profile_screen.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({Key? key}) : super(key: key);
@@ -296,6 +297,19 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                 ),
               ),
             ],
+
+            ListTile(
+              leading: const Icon(Icons.person_outline),
+              title: Text(loc.profileTitle),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const ProfileScreen()),
+                );
+              },
+            ),
+            const Divider(height: 32),
 
             if (isAnon) ...[
               // アカウント登録ボタンに変更
