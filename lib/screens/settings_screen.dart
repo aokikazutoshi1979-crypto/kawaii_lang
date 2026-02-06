@@ -53,6 +53,13 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     {'label': 'Bahasa Indonesia',     'code': 'id'}
   ];
 
+  String _labelForLangCode(String? code) {
+    if (code == null) return '';
+    final match = languages.where((l) => l['code'] == code);
+    if (match.isNotEmpty) return match.first['label'] ?? code;
+    return code;
+  }
+
   /// 外部URLをブラウザで開く
   Future<void> _launchUrl(String url) async {
     final uri = Uri.parse(url);
@@ -298,16 +305,18 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
               ),
             ],
 
-            ListTile(
-              leading: const Icon(Icons.person_outline),
-              title: Text(loc.profileTitle),
-              trailing: const Icon(Icons.chevron_right),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (_) => const ProfileScreen()),
-                );
-              },
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+              child: ElevatedButton.icon(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => const ProfileScreen()),
+                  );
+                },
+                icon: const Icon(Icons.person_outline),
+                label: Text(loc.profileTitle),
+              ),
             ),
             const Divider(height: 32),
 
@@ -392,49 +401,45 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
             ),
             const Divider(height: 32),
 
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 16.0),
-              child: Text(
+            ExpansionTile(
+              tilePadding: const EdgeInsets.symmetric(horizontal: 16),
+              title: Text(
                 loc.languageSelectionTitle,
                 style: Theme.of(context).textTheme.titleLarge,
-                textAlign: TextAlign.center, // ← 中央寄せ
               ),
-            ),
-            ...languages.map((lang) {
-              return Card(
-                child: ListTile(
+              subtitle: Text(_labelForLangCode(selectedLang)),
+              children: languages.map((lang) {
+                return ListTile(
                   title: Text(lang['label']!),
                   trailing: selectedLang == lang['code']
                       ? const Icon(Icons.check, color: Colors.green)
                       : null,
                   onTap: () => _saveLanguage(lang['code']!),
-                ),
-              );
-            }).toList(),
+                );
+              }).toList(),
+            ),
             const Divider(height: 32),
 
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 16.0),
-              child: Text(
+            ExpansionTile(
+              tilePadding: const EdgeInsets.symmetric(horizontal: 16),
+              title: Text(
                 loc.targetLanguage,
                 style: Theme.of(context).textTheme.titleLarge,
-                textAlign: TextAlign.center,
               ),
-            ),
-            ...((selectedLang == null)
-                    ? languages
-                    : languages.where((lang) => lang['code'] != selectedLang))
-                .map((lang) {
-              return Card(
-                child: ListTile(
+              subtitle: Text(_labelForLangCode(selectedTargetLang)),
+              children: ((selectedLang == null)
+                      ? languages
+                      : languages.where((lang) => lang['code'] != selectedLang))
+                  .map((lang) {
+                return ListTile(
                   title: Text(lang['label']!),
                   trailing: selectedTargetLang == lang['code']
                       ? const Icon(Icons.check, color: Colors.green)
                       : null,
                   onTap: () => _saveTargetLanguage(lang['code']!),
-                ),
-              );
-            }).toList(),
+                );
+              }).toList(),
+            ),
             const Divider(height: 32),
 
             // ❷ ここからは非匿名ユーザーだけ
