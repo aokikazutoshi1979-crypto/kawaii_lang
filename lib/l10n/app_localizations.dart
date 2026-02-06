@@ -911,6 +911,18 @@ abstract class AppLocalizations {
   /// **'すべて'**
   String get subsceneAll;
 
+  /// 今日の正解数
+  ///
+  /// In ja, this message translates to:
+  /// **'今日の正解 {count}問'**
+  String todayCorrectCount(Object count);
+
+  /// 連続正解日数
+  ///
+  /// In ja, this message translates to:
+  /// **'連続正解 {days}日'**
+  String streakDaysCount(Object days);
+
   /// 出題リストのガイド文
   ///
   /// In ja, this message translates to:

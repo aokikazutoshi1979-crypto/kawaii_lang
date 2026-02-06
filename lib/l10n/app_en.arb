@@ -219,6 +219,20 @@
   "@subsceneAll": {
     "description": "Label for 'All' filter button"
   },
+  "todayCorrectCount": "Correct today: {count}",
+  "@todayCorrectCount": {
+    "description": "Total correct answers today",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "streakDaysCount": "Streak: {days} days",
+  "@streakDaysCount": {
+    "description": "Consecutive days with at least one correct answer",
+    "placeholders": {
+      "days": {}
+    }
+  },
   "questionListGuide": "Choose one below to start practicing.",
   "@questionListGuide": {
     "description": "Guide text shown above the question list"

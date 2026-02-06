@@ -216,6 +216,20 @@
   "@subsceneAll": {
     "description": "Nút lọc: Tất cả"
   },
+  "todayCorrectCount": "Đúng hôm nay: {count}",
+  "@todayCorrectCount": {
+    "description": "Tổng số câu đúng hôm nay",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "streakDaysCount": "Chuỗi: {days} ngày",
+  "@streakDaysCount": {
+    "description": "Số ngày liên tiếp có ít nhất một câu đúng",
+    "placeholders": {
+      "days": {}
+    }
+  },
   "questionListGuide": "Chọn một mục bên dưới để bắt đầu luyện tập.",
   "@questionListGuide": {
     "description": "Dòng hướng dẫn phía trên danh sách câu hỏi"

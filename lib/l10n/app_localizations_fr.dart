@@ -454,6 +454,16 @@ class AppLocalizationsFr extends AppLocalizations {
   String get subsceneAll => 'Tous';
 
   @override
+  String todayCorrectCount(Object count) {
+    return 'Réussites du jour : $count';
+  }
+
+  @override
+  String streakDaysCount(Object days) {
+    return 'Série : $days jours';
+  }
+
+  @override
   String get questionListGuide =>
       'Choisissez-en une ci-dessous pour commencer à pratiquer.';
 

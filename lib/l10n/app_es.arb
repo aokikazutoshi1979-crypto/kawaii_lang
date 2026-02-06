@@ -216,6 +216,20 @@
   "@subsceneAll": {
     "description": "Botón de filtro: Todos"
   },
+  "todayCorrectCount": "Aciertos de hoy: {count}",
+  "@todayCorrectCount": {
+    "description": "Total de aciertos de hoy",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "streakDaysCount": "Racha: {days} días",
+  "@streakDaysCount": {
+    "description": "Días consecutivos con al menos un acierto",
+    "placeholders": {
+      "days": {}
+    }
+  },
   "questionListGuide": "Elige una de abajo para empezar a practicar.",
   "@questionListGuide": {
     "description": "Guía mostrada encima de la lista de preguntas"

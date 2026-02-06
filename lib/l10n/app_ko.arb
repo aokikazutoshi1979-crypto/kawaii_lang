@@ -216,6 +216,20 @@
   "@subsceneAll": {
     "description": "필터 버튼: 전체"
   },
+  "todayCorrectCount": "오늘 정답 {count}개",
+  "@todayCorrectCount": {
+    "description": "오늘의 정답 수",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "streakDaysCount": "연속 정답 {days}일",
+  "@streakDaysCount": {
+    "description": "연속 정답 일수",
+    "placeholders": {
+      "days": {}
+    }
+  },
   "questionListGuide": "아래에서 하나를 선택하면 연습이 시작됩니다.",
   "@questionListGuide": {
     "description": "문제 목록 위에 표시되는 안내 문구"

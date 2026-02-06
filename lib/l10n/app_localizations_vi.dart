@@ -446,6 +446,16 @@ class AppLocalizationsVi extends AppLocalizations {
   String get subsceneAll => 'Tất cả';
 
   @override
+  String todayCorrectCount(Object count) {
+    return 'Đúng hôm nay: $count';
+  }
+
+  @override
+  String streakDaysCount(Object days) {
+    return 'Chuỗi: $days ngày';
+  }
+
+  @override
   String get questionListGuide => 'Chọn một mục bên dưới để bắt đầu luyện tập.';
 
   @override

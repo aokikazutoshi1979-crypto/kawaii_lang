@@ -216,6 +216,20 @@
   "@subsceneAll": {
     "description": "Tombol filter: Semua"
   },
+  "todayCorrectCount": "Benar hari ini: {count}",
+  "@todayCorrectCount": {
+    "description": "Total jawaban benar hari ini",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "streakDaysCount": "Rangkaian: {days} hari",
+  "@streakDaysCount": {
+    "description": "Hari berturut-turut dengan setidaknya satu jawaban benar",
+    "placeholders": {
+      "days": {}
+    }
+  },
   "questionListGuide": "Pilih salah satu di bawah untuk mulai berlatih.",
   "@questionListGuide": {
     "description": "Teks panduan di atas daftar soal"

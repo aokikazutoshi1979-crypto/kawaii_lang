@@ -435,6 +435,16 @@ class AppLocalizationsJa extends AppLocalizations {
   String get subsceneAll => 'すべて';
 
   @override
+  String todayCorrectCount(Object count) {
+    return '今日の正解 $count問';
+  }
+
+  @override
+  String streakDaysCount(Object days) {
+    return '連続正解 $days日';
+  }
+
+  @override
   String get questionListGuide => '下から1つ選ぶと練習が始まります';
 
   @override

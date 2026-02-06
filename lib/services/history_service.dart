@@ -3,12 +3,67 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 
+class DailyCorrectStats {
+  final int todayCorrect;
+  final int streakDays;
+  const DailyCorrectStats({
+    required this.todayCorrect,
+    required this.streakDays,
+  });
+}
+
 class HistoryService {
   HistoryService._();
   static final instance = HistoryService._();
 
   final _db = FirebaseFirestore.instance;
   String get _uid => FirebaseAuth.instance.currentUser!.uid;
+
+  Future<DailyCorrectStats> getTodayCorrectAndStreak({int lookbackDays = 365}) async {
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null) {
+      return const DailyCorrectStats(todayCorrect: 0, streakDays: 0);
+    }
+
+    final now = DateTime.now();
+    final today = DateTime(now.year, now.month, now.day);
+    final cutoff = today.subtract(Duration(days: lookbackDays));
+
+    final snap = await _db
+        .collection('users')
+        .doc(_uid)
+        .collection('history')
+        .where('timestamp', isGreaterThanOrEqualTo: Timestamp.fromDate(cutoff))
+        .orderBy('timestamp', descending: true)
+        .get();
+
+    final Map<int, int> correctByDay = {};
+    for (final doc in snap.docs) {
+      final data = doc.data();
+      if (data['isCorrect'] != true) continue;
+      final ts = data['timestamp'];
+      if (ts is! Timestamp) continue;
+      final local = ts.toDate().toLocal();
+      final dayKey = DateTime(local.year, local.month, local.day).millisecondsSinceEpoch;
+      correctByDay[dayKey] = (correctByDay[dayKey] ?? 0) + 1;
+    }
+
+    final todayKey = today.millisecondsSinceEpoch;
+    final todayCorrect = correctByDay[todayKey] ?? 0;
+
+    var streak = 0;
+    for (var i = 0; i <= lookbackDays; i++) {
+      final day = today.subtract(Duration(days: i));
+      final key = DateTime(day.year, day.month, day.day).millisecondsSinceEpoch;
+      if ((correctByDay[key] ?? 0) > 0) {
+        streak++;
+      } else {
+        break;
+      }
+    }
+
+    return DailyCorrectStats(todayCorrect: todayCorrect, streakDays: streak);
+  }
 
   Future<void> recordAnswer({
     required String questionId,

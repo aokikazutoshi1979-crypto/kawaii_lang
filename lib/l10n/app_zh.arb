@@ -217,6 +217,20 @@
   "@subsceneAll": {
     "description": "筛选按钮：全部"
   },
+  "todayCorrectCount": "今日正确 {count}题",
+  "@todayCorrectCount": {
+    "description": "今日正确数量",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "streakDaysCount": "连续正确 {days}天",
+  "@streakDaysCount": {
+    "description": "连续正确天数",
+    "placeholders": {
+      "days": {}
+    }
+  },
   "questionListGuide": "下方选择一项即可开始练习。",
   "@questionListGuide": {
     "description": "题目列表上方的提示文案"

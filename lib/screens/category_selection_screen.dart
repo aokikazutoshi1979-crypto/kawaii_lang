@@ -18,6 +18,7 @@ import 'package:flutter/foundation.dart'; // kReleaseMode
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import '../services/subscription_state.dart';
 import 'chat_screen.dart';
+import '../services/history_service.dart';
 
 class CategorySelectionScreen extends StatefulWidget {
   const CategorySelectionScreen({Key? key}) : super(key: key);
@@ -38,6 +39,8 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
 
   QuizMode selectedMode = QuizMode.reading;
   static const String _quickStartPrefKey = 'has_used_quick_start';
+  int _todayCorrect = 0;
+  int _streakDays = 0;
 
   @override
   void initState() {
@@ -46,6 +49,7 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
     _loadLanguage();
     _loadTargetLanguage();
     _loadScenesJson();   // ← 追加
+    _loadDailyStats();
     
     // 🔑 サブスク検証サービスを初期化
     // maybeInitSubscription(); // 🔑 追加：サブスク状態を1日1回だけ確認
@@ -182,6 +186,41 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
 
   String _getSceneImagePath(String key) => 'assets/images/backgrounds/$key.png';
 
+  Future<void> _loadDailyStats() async {
+    final stats = await HistoryService.instance.getTodayCorrectAndStreak();
+    if (!mounted) return;
+    setState(() {
+      _todayCorrect = stats.todayCorrect;
+      _streakDays = stats.streakDays;
+    });
+  }
+
+  Widget _buildDailyStats(AppLocalizations loc) {
+    Widget statChip(String text) {
+      return Container(
+        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 12),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(color: Colors.pink.shade100),
+        ),
+        child: Text(
+          text,
+          style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
+          textAlign: TextAlign.center,
+        ),
+      );
+    }
+
+    return Row(
+      children: [
+        Expanded(child: statChip(loc.todayCorrectCount(_todayCorrect))),
+        const SizedBox(width: 8),
+        Expanded(child: statChip(loc.streakDaysCount(_streakDays))),
+      ],
+    );
+  }
+
   void _goToQuestionList() {
     Navigator.push(
       context,
@@ -192,7 +231,7 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
           mode: selectedMode, // ★追加
         ),
       ),
-    );
+    ).then((_) => _loadDailyStats());
   }
 
   Future<void> _goToRecommendedChat() async {
@@ -252,7 +291,7 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
             recommendedReturnScene: selectedSceneKey,
           ),
         ),
-      );
+      ).then((_) => _loadDailyStats());
     } catch (e) {
       debugPrint('recommended chat load failed: $e');
       _goToQuestionList();
@@ -275,7 +314,6 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: Text(loc.categoryTitle),
         actions: [
           IconButton(
             icon: const Icon(Icons.person),
@@ -297,6 +335,8 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+          _buildDailyStats(loc),
+          const SizedBox(height: 14),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 8.0),
             child: Text(loc.scene, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),

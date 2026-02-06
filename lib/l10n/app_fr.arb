@@ -216,6 +216,20 @@
   "@subsceneAll": {
     "description": "Bouton de filtre : Tous"
   },
+  "todayCorrectCount": "Réussites du jour : {count}",
+  "@todayCorrectCount": {
+    "description": "Total des réussites du jour",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "streakDaysCount": "Série : {days} jours",
+  "@streakDaysCount": {
+    "description": "Jours consécutifs avec au moins une réussite",
+    "placeholders": {
+      "days": {}
+    }
+  },
   "questionListGuide": "Choisissez-en une ci-dessous pour commencer à pratiquer.",
   "@questionListGuide": {
     "description": "Texte guide au-dessus de la liste des questions"

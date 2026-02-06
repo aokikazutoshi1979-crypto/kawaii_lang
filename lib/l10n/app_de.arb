@@ -216,6 +216,20 @@
   "@subsceneAll": {
     "description": "Filter-Schaltfläche: Alle"
   },
+  "todayCorrectCount": "Heute richtig: {count}",
+  "@todayCorrectCount": {
+    "description": "Gesamtzahl richtiger Antworten heute",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "streakDaysCount": "Serie: {days} Tage",
+  "@streakDaysCount": {
+    "description": "Aufeinanderfolgende Tage mit mindestens einer richtigen Antwort",
+    "placeholders": {
+      "days": {}
+    }
+  },
   "questionListGuide": "Wähle unten eine aus, um mit dem Üben zu beginnen.",
   "@questionListGuide": {
     "description": "Hinweistext über der Frageliste"

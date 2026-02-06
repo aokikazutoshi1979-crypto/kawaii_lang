@@ -214,6 +214,20 @@
   "@subsceneAll": {
     "description": "subSceneフィルタの「すべて」ボタン表示"
   },
+  "todayCorrectCount": "今日の正解 {count}問",
+  "@todayCorrectCount": {
+    "description": "今日の正解数",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "streakDaysCount": "連続正解 {days}日",
+  "@streakDaysCount": {
+    "description": "連続正解日数",
+    "placeholders": {
+      "days": {}
+    }
+  },
   "questionListGuide": "下から1つ選ぶと練習が始まります",
   "@questionListGuide": {
     "description": "出題リストのガイド文"

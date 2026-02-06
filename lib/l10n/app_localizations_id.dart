@@ -450,6 +450,16 @@ class AppLocalizationsId extends AppLocalizations {
   String get subsceneAll => 'Semua';
 
   @override
+  String todayCorrectCount(Object count) {
+    return 'Benar hari ini: $count';
+  }
+
+  @override
+  String streakDaysCount(Object days) {
+    return 'Rangkaian: $days hari';
+  }
+
+  @override
   String get questionListGuide =>
       'Pilih salah satu di bawah untuk mulai berlatih.';
 

@@ -215,6 +215,20 @@
   "@subsceneAll": {
     "description": "篩選按鈕：全部（台灣繁體）"
   },
+  "todayCorrectCount": "今日正確 {count}題",
+  "@todayCorrectCount": {
+    "description": "今日正確數量",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "streakDaysCount": "連續正確 {days}天",
+  "@streakDaysCount": {
+    "description": "連續正確天數",
+    "placeholders": {
+      "days": {}
+    }
+  },
   "questionListGuide": "下方選擇一項即可開始練習。",
   "@questionListGuide": {
     "description": "題目列表上方的提示文案"

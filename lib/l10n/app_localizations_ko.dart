@@ -436,6 +436,16 @@ class AppLocalizationsKo extends AppLocalizations {
   String get subsceneAll => '전체';
 
   @override
+  String todayCorrectCount(Object count) {
+    return '오늘 정답 $count개';
+  }
+
+  @override
+  String streakDaysCount(Object days) {
+    return '연속 정답 $days일';
+  }
+
+  @override
   String get questionListGuide => '아래에서 하나를 선택하면 연습이 시작됩니다.';
 
   @override

@@ -429,6 +429,16 @@ class AppLocalizationsZh extends AppLocalizations {
   String get subsceneAll => '全部';
 
   @override
+  String todayCorrectCount(Object count) {
+    return '今日正确 $count题';
+  }
+
+  @override
+  String streakDaysCount(Object days) {
+    return '连续正确 $days天';
+  }
+
+  @override
   String get questionListGuide => '下方选择一项即可开始练习。';
 
   @override
@@ -914,6 +924,16 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get subsceneAll => '全部';
+
+  @override
+  String todayCorrectCount(Object count) {
+    return '今日正確 $count題';
+  }
+
+  @override
+  String streakDaysCount(Object days) {
+    return '連續正確 $days天';
+  }
 
   @override
   String get questionListGuide => '下方選擇一項即可開始練習。';
