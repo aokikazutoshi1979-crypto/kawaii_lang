@@ -249,6 +249,31 @@
   "@noHistoryData": {
     "description": "Hiển thị khi không có dữ liệu lịch sử"
   },
+  "currentRank": "Hạng hiện tại: {rank}",
+  "@currentRank": {
+    "description": "Hiển thị hạng hiện tại",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "progressToRank": "Tiến độ đến {rank}",
+  "@progressToRank": {
+    "description": "Tiến độ đến hạng tiếp theo",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "nextRankIn": "Còn {count} câu đúng để lên hạng",
+  "@nextRankIn": {
+    "description": "Số câu đúng còn lại để lên hạng",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "maxRankAchieved": "Đã đạt hạng cao nhất",
+  "@maxRankAchieved": {
+    "description": "Hiển thị khi đạt hạng cao nhất"
+  },
   "questionListGuide": "Chọn một mục bên dưới để bắt đầu luyện tập.",
   "@questionListGuide": {
     "description": "Dòng hướng dẫn phía trên danh sách câu hỏi"

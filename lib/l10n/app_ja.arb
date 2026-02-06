@@ -247,6 +247,31 @@
   "@noHistoryData": {
     "description": "履歴データがない場合の表示"
   },
+  "currentRank": "現在のランク: {rank}",
+  "@currentRank": {
+    "description": "現在のランク表示",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "progressToRank": "次のランク {rank} までの進捗",
+  "@progressToRank": {
+    "description": "次のランクへの進捗",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "nextRankIn": "次のランクまであと {count}問",
+  "@nextRankIn": {
+    "description": "次のランクまでの残り正解数",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "maxRankAchieved": "最高ランクに到達",
+  "@maxRankAchieved": {
+    "description": "最高ランク到達時の表示"
+  },
   "questionListGuide": "下から1つ選ぶと練習が始まります",
   "@questionListGuide": {
     "description": "出題リストのガイド文"

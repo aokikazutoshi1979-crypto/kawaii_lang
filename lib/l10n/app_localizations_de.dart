@@ -477,6 +477,24 @@ class AppLocalizationsDe extends AppLocalizations {
   String get noHistoryData => 'Noch keine Daten';
 
   @override
+  String currentRank(Object rank) {
+    return 'Aktueller Rang: $rank';
+  }
+
+  @override
+  String progressToRank(Object rank) {
+    return 'Fortschritt zu $rank';
+  }
+
+  @override
+  String nextRankIn(Object count) {
+    return 'Nächster Rang in $count richtigen Antworten';
+  }
+
+  @override
+  String get maxRankAchieved => 'Maximaler Rang erreicht';
+
+  @override
   String get questionListGuide =>
       'Wähle unten eine aus, um mit dem Üben zu beginnen.';
 

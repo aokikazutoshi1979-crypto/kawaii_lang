@@ -470,6 +470,24 @@ class AppLocalizationsVi extends AppLocalizations {
   String get noHistoryData => 'Chưa có dữ liệu';
 
   @override
+  String currentRank(Object rank) {
+    return 'Hạng hiện tại: $rank';
+  }
+
+  @override
+  String progressToRank(Object rank) {
+    return 'Tiến độ đến $rank';
+  }
+
+  @override
+  String nextRankIn(Object count) {
+    return 'Còn $count câu đúng để lên hạng';
+  }
+
+  @override
+  String get maxRankAchieved => 'Đã đạt hạng cao nhất';
+
+  @override
   String get questionListGuide => 'Chọn một mục bên dưới để bắt đầu luyện tập.';
 
   @override

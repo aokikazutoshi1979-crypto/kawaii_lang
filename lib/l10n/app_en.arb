@@ -252,6 +252,31 @@
   "@noHistoryData": {
     "description": "Shown when there is no history data"
   },
+  "currentRank": "Current Rank: {rank}",
+  "@currentRank": {
+    "description": "Current rank display",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "progressToRank": "Progress to {rank}",
+  "@progressToRank": {
+    "description": "Progress label toward next rank",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "nextRankIn": "Next rank in {count} correct answers",
+  "@nextRankIn": {
+    "description": "Remaining correct answers to next rank",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "maxRankAchieved": "Max rank achieved",
+  "@maxRankAchieved": {
+    "description": "Shown when top rank is reached"
+  },
   "questionListGuide": "Choose one below to start practicing.",
   "@questionListGuide": {
     "description": "Guide text shown above the question list"

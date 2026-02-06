@@ -248,6 +248,31 @@
   "@noHistoryData": {
     "description": "沒有歷史資料時顯示"
   },
+  "currentRank": "目前等級：{rank}",
+  "@currentRank": {
+    "description": "目前等級顯示",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "progressToRank": "進度至 {rank}",
+  "@progressToRank": {
+    "description": "到下一等級的進度",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "nextRankIn": "再答對 {count} 題即可升級",
+  "@nextRankIn": {
+    "description": "距離下一等級還需的正確數",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "maxRankAchieved": "已達最高等級",
+  "@maxRankAchieved": {
+    "description": "達到最高等級時顯示"
+  },
   "questionListGuide": "下方選擇一項即可開始練習。",
   "@questionListGuide": {
     "description": "題目列表上方的提示文案"

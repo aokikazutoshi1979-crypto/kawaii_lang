@@ -249,6 +249,31 @@
   "@noHistoryData": {
     "description": "Affiché lorsqu'il n'y a pas de données d'historique"
   },
+  "currentRank": "Rang actuel : {rank}",
+  "@currentRank": {
+    "description": "Affichage du rang actuel",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "progressToRank": "Progression vers {rank}",
+  "@progressToRank": {
+    "description": "Progression vers le rang suivant",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "nextRankIn": "Prochain rang dans {count} bonnes réponses",
+  "@nextRankIn": {
+    "description": "Bonnes réponses restantes pour le rang suivant",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "maxRankAchieved": "Rang maximum atteint",
+  "@maxRankAchieved": {
+    "description": "Affiché lorsque le rang maximum est atteint"
+  },
   "questionListGuide": "Choisissez-en une ci-dessous pour commencer à pratiquer.",
   "@questionListGuide": {
     "description": "Texte guide au-dessus de la liste des questions"

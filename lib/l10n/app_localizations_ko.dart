@@ -460,6 +460,24 @@ class AppLocalizationsKo extends AppLocalizations {
   String get noHistoryData => '아직 데이터가 없습니다';
 
   @override
+  String currentRank(Object rank) {
+    return '현재 랭크: $rank';
+  }
+
+  @override
+  String progressToRank(Object rank) {
+    return '다음 랭크 $rank까지 진행';
+  }
+
+  @override
+  String nextRankIn(Object count) {
+    return '다음 랭크까지 $count개 정답';
+  }
+
+  @override
+  String get maxRankAchieved => '최고 랭크 달성';
+
+  @override
   String get questionListGuide => '아래에서 하나를 선택하면 연습이 시작됩니다.';
 
   @override

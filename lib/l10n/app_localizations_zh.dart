@@ -453,6 +453,24 @@ class AppLocalizationsZh extends AppLocalizations {
   String get noHistoryData => '暂无数据';
 
   @override
+  String currentRank(Object rank) {
+    return '当前等级：$rank';
+  }
+
+  @override
+  String progressToRank(Object rank) {
+    return '进度至 $rank';
+  }
+
+  @override
+  String nextRankIn(Object count) {
+    return '再答对 $count 题升到下一等级';
+  }
+
+  @override
+  String get maxRankAchieved => '已达到最高等级';
+
+  @override
   String get questionListGuide => '下方选择一项即可开始练习。';
 
   @override
@@ -962,6 +980,24 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get noHistoryData => '尚無資料';
+
+  @override
+  String currentRank(Object rank) {
+    return '目前等級：$rank';
+  }
+
+  @override
+  String progressToRank(Object rank) {
+    return '進度至 $rank';
+  }
+
+  @override
+  String nextRankIn(Object count) {
+    return '再答對 $count 題即可升級';
+  }
+
+  @override
+  String get maxRankAchieved => '已達最高等級';
 
   @override
   String get questionListGuide => '下方選擇一項即可開始練習。';

@@ -947,6 +947,30 @@ abstract class AppLocalizations {
   /// **'まだデータがありません'**
   String get noHistoryData;
 
+  /// 現在のランク表示
+  ///
+  /// In ja, this message translates to:
+  /// **'現在のランク: {rank}'**
+  String currentRank(Object rank);
+
+  /// 次のランクへの進捗
+  ///
+  /// In ja, this message translates to:
+  /// **'次のランク {rank} までの進捗'**
+  String progressToRank(Object rank);
+
+  /// 次のランクまでの残り正解数
+  ///
+  /// In ja, this message translates to:
+  /// **'次のランクまであと {count}問'**
+  String nextRankIn(Object count);
+
+  /// 最高ランク到達時の表示
+  ///
+  /// In ja, this message translates to:
+  /// **'最高ランクに到達'**
+  String get maxRankAchieved;
+
   /// 出題リストのガイド文
   ///
   /// In ja, this message translates to:

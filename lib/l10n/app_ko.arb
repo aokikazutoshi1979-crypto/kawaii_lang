@@ -249,6 +249,31 @@
   "@noHistoryData": {
     "description": "기록 데이터가 없을 때 표시"
   },
+  "currentRank": "현재 랭크: {rank}",
+  "@currentRank": {
+    "description": "현재 랭크 표시",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "progressToRank": "다음 랭크 {rank}까지 진행",
+  "@progressToRank": {
+    "description": "다음 랭크까지의 진행도",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "nextRankIn": "다음 랭크까지 {count}개 정답",
+  "@nextRankIn": {
+    "description": "다음 랭크까지 남은 정답 수",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "maxRankAchieved": "최고 랭크 달성",
+  "@maxRankAchieved": {
+    "description": "최고 랭크 도달 시 표시"
+  },
   "questionListGuide": "아래에서 하나를 선택하면 연습이 시작됩니다.",
   "@questionListGuide": {
     "description": "문제 목록 위에 표시되는 안내 문구"

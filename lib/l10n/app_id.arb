@@ -249,6 +249,31 @@
   "@noHistoryData": {
     "description": "Ditampilkan saat tidak ada data riwayat"
   },
+  "currentRank": "Peringkat saat ini: {rank}",
+  "@currentRank": {
+    "description": "Tampilan peringkat saat ini",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "progressToRank": "Progres menuju {rank}",
+  "@progressToRank": {
+    "description": "Progres ke peringkat berikutnya",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "nextRankIn": "Peringkat berikutnya dalam {count} jawaban benar",
+  "@nextRankIn": {
+    "description": "Sisa jawaban benar ke peringkat berikutnya",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "maxRankAchieved": "Peringkat tertinggi tercapai",
+  "@maxRankAchieved": {
+    "description": "Ditampilkan saat peringkat tertinggi tercapai"
+  },
   "questionListGuide": "Pilih salah satu di bawah untuk mulai berlatih.",
   "@questionListGuide": {
     "description": "Teks panduan di atas daftar soal"

@@ -474,6 +474,24 @@ class AppLocalizationsId extends AppLocalizations {
   String get noHistoryData => 'Belum ada data';
 
   @override
+  String currentRank(Object rank) {
+    return 'Peringkat saat ini: $rank';
+  }
+
+  @override
+  String progressToRank(Object rank) {
+    return 'Progres menuju $rank';
+  }
+
+  @override
+  String nextRankIn(Object count) {
+    return 'Peringkat berikutnya dalam $count jawaban benar';
+  }
+
+  @override
+  String get maxRankAchieved => 'Peringkat tertinggi tercapai';
+
+  @override
   String get questionListGuide =>
       'Pilih salah satu di bawah untuk mulai berlatih.';
 

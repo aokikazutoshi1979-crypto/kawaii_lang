@@ -459,6 +459,24 @@ class AppLocalizationsJa extends AppLocalizations {
   String get noHistoryData => 'まだデータがありません';
 
   @override
+  String currentRank(Object rank) {
+    return '現在のランク: $rank';
+  }
+
+  @override
+  String progressToRank(Object rank) {
+    return '次のランク $rank までの進捗';
+  }
+
+  @override
+  String nextRankIn(Object count) {
+    return '次のランクまであと $count問';
+  }
+
+  @override
+  String get maxRankAchieved => '最高ランクに到達';
+
+  @override
   String get questionListGuide => '下から1つ選ぶと練習が始まります';
 
   @override

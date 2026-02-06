@@ -249,6 +249,31 @@
   "@noHistoryData": {
     "description": "Se muestra cuando no hay datos de historial"
   },
+  "currentRank": "Rango actual: {rank}",
+  "@currentRank": {
+    "description": "Muestra el rango actual",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "progressToRank": "Progreso hacia {rank}",
+  "@progressToRank": {
+    "description": "Progreso hacia el siguiente rango",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "nextRankIn": "Siguiente rango en {count} aciertos",
+  "@nextRankIn": {
+    "description": "Aciertos restantes para el siguiente rango",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "maxRankAchieved": "Rango máximo alcanzado",
+  "@maxRankAchieved": {
+    "description": "Se muestra al alcanzar el rango máximo"
+  },
   "questionListGuide": "Elige una de abajo para empezar a practicar.",
   "@questionListGuide": {
     "description": "Guía mostrada encima de la lista de preguntas"

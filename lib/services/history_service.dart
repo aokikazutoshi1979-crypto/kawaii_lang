@@ -16,11 +16,13 @@ class ProfileStats {
   final int todayCorrect;
   final int streakDays;
   final int totalCorrect;
+  final int uniqueCorrect;
   final Map<String, int> correctByScene;
   const ProfileStats({
     required this.todayCorrect,
     required this.streakDays,
     required this.totalCorrect,
+    required this.uniqueCorrect,
     required this.correctByScene,
   });
 }
@@ -85,6 +87,7 @@ class HistoryService {
         todayCorrect: 0,
         streakDays: 0,
         totalCorrect: 0,
+        uniqueCorrect: 0,
         correctByScene: <String, int>{},
       );
     }
@@ -103,10 +106,13 @@ class HistoryService {
     final Map<int, int> correctByDay = {};
     final Map<String, int> correctByScene = {};
     var totalCorrect = 0;
+    final Set<String> uniqueQuestionIds = {};
 
     for (final doc in snap.docs) {
       final data = doc.data();
       totalCorrect++;
+      final qid = (data['questionId'] ?? '').toString();
+      if (qid.isNotEmpty) uniqueQuestionIds.add(qid);
 
       final scene = (data['scene'] ?? '').toString();
       if (scene.isNotEmpty) {
@@ -136,6 +142,7 @@ class HistoryService {
       todayCorrect: todayCorrect,
       streakDays: streak,
       totalCorrect: totalCorrect,
+      uniqueCorrect: uniqueQuestionIds.length,
       correctByScene: correctByScene,
     );
   }

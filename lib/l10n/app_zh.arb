@@ -250,6 +250,31 @@
   "@noHistoryData": {
     "description": "没有历史数据时显示"
   },
+  "currentRank": "当前等级：{rank}",
+  "@currentRank": {
+    "description": "当前等级显示",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "progressToRank": "进度至 {rank}",
+  "@progressToRank": {
+    "description": "到下一等级的进度",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "nextRankIn": "再答对 {count} 题升到下一等级",
+  "@nextRankIn": {
+    "description": "距离下一等级还需的正确数",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "maxRankAchieved": "已达到最高等级",
+  "@maxRankAchieved": {
+    "description": "达到最高等级时显示"
+  },
   "questionListGuide": "下方选择一项即可开始练习。",
   "@questionListGuide": {
     "description": "题目列表上方的提示文案"
