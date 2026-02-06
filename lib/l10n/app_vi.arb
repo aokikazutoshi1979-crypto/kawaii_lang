@@ -274,6 +274,28 @@
   "@maxRankAchieved": {
     "description": "Hiển thị khi đạt hạng cao nhất"
   },
+  "rankUpTitle": "Lên hạng!",
+  "@rankUpTitle": {
+    "description": "Tiêu đề khi lên hạng"
+  },
+  "rankUpBody": "Bạn đã đạt {rank}.",
+  "@rankUpBody": {
+    "description": "Nội dung khi lên hạng",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "recentQuestionsTitle": "Câu hỏi gần đây (gần nhất {count})",
+  "@recentQuestionsTitle": {
+    "description": "Tiêu đề câu hỏi gần đây",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "startQuestionButton": "Bắt đầu",
+  "@startQuestionButton": {
+    "description": "Nhãn nút bắt đầu câu hỏi gần đây"
+  },
   "questionListGuide": "Chọn một mục bên dưới để bắt đầu luyện tập.",
   "@questionListGuide": {
     "description": "Dòng hướng dẫn phía trên danh sách câu hỏi"

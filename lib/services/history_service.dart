@@ -27,6 +27,19 @@ class ProfileStats {
   });
 }
 
+class RecentQuestionEntry {
+  final String questionId;
+  final String scene;
+  final String targetCode;
+  final String nativeCode;
+  const RecentQuestionEntry({
+    required this.questionId,
+    required this.scene,
+    required this.targetCode,
+    required this.nativeCode,
+  });
+}
+
 class HistoryService {
   HistoryService._();
   static final instance = HistoryService._();
@@ -145,6 +158,39 @@ class HistoryService {
       uniqueCorrect: uniqueQuestionIds.length,
       correctByScene: correctByScene,
     );
+  }
+
+  Future<List<RecentQuestionEntry>> getRecentCorrectQuestions({
+    int limit = 20,
+    int fetchLimit = 60,
+  }) async {
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null) return const [];
+
+    final snap = await _db
+        .collection('users')
+        .doc(_uid)
+        .collection('history')
+        .orderBy('timestamp', descending: true)
+        .limit(fetchLimit)
+        .get();
+
+    final List<RecentQuestionEntry> list = [];
+    for (final doc in snap.docs) {
+      final data = doc.data();
+      if (data['isCorrect'] != true) continue;
+      final qid = (data['questionId'] ?? '').toString();
+      final scene = (data['scene'] ?? '').toString();
+      if (qid.isEmpty || scene.isEmpty) continue;
+      list.add(RecentQuestionEntry(
+        questionId: qid,
+        scene: scene,
+        targetCode: (data['targetCode'] ?? '').toString(),
+        nativeCode: (data['nativeCode'] ?? '').toString(),
+      ));
+      if (list.length >= limit) break;
+    }
+    return list;
   }
 
   Future<void> recordAnswer({

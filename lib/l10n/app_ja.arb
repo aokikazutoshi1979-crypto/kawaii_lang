@@ -272,6 +272,28 @@
   "@maxRankAchieved": {
     "description": "最高ランク到達時の表示"
   },
+  "rankUpTitle": "ランクアップ！",
+  "@rankUpTitle": {
+    "description": "ランクアップ時のタイトル"
+  },
+  "rankUpBody": "{rank}に到達しました",
+  "@rankUpBody": {
+    "description": "ランクアップ時の本文",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "recentQuestionsTitle": "最近解いた問題（直近{count}件）",
+  "@recentQuestionsTitle": {
+    "description": "最近解いた問題の見出し",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "startQuestionButton": "出題",
+  "@startQuestionButton": {
+    "description": "最近解いた問題の出題ボタン"
+  },
   "questionListGuide": "下から1つ選ぶと練習が始まります",
   "@questionListGuide": {
     "description": "出題リストのガイド文"

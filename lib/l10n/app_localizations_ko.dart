@@ -478,6 +478,22 @@ class AppLocalizationsKo extends AppLocalizations {
   String get maxRankAchieved => '최고 랭크 달성';
 
   @override
+  String get rankUpTitle => '랭크 업!';
+
+  @override
+  String rankUpBody(Object rank) {
+    return '$rank에 도달했습니다.';
+  }
+
+  @override
+  String recentQuestionsTitle(Object count) {
+    return '최근 푼 문제 (최근 $count개)';
+  }
+
+  @override
+  String get startQuestionButton => '시작';
+
+  @override
   String get questionListGuide => '아래에서 하나를 선택하면 연습이 시작됩니다.';
 
   @override

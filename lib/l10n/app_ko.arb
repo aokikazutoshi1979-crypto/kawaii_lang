@@ -274,6 +274,28 @@
   "@maxRankAchieved": {
     "description": "최고 랭크 도달 시 표시"
   },
+  "rankUpTitle": "랭크 업!",
+  "@rankUpTitle": {
+    "description": "랭크 업 시 제목"
+  },
+  "rankUpBody": "{rank}에 도달했습니다.",
+  "@rankUpBody": {
+    "description": "랭크 업 시 본문",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "recentQuestionsTitle": "최근 푼 문제 (최근 {count}개)",
+  "@recentQuestionsTitle": {
+    "description": "최근 푼 문제 제목",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "startQuestionButton": "시작",
+  "@startQuestionButton": {
+    "description": "최근 문제 시작 버튼 라벨"
+  },
   "questionListGuide": "아래에서 하나를 선택하면 연습이 시작됩니다.",
   "@questionListGuide": {
     "description": "문제 목록 위에 표시되는 안내 문구"

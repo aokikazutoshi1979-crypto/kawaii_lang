@@ -95,6 +95,15 @@ class _ChatScreenState extends State<ChatScreen> {
 
   bool _hasShownSessionError = false;
 
+  static const List<Map<String, Object>> _ranks = [
+    {'name': 'Starter', 'threshold': 0},
+    {'name': 'Explorer', 'threshold': 25},
+    {'name': 'Speaker', 'threshold': 100},
+    {'name': 'Fluent', 'threshold': 300},
+    {'name': 'Pro', 'threshold': 600},
+    {'name': 'Master', 'threshold': 1000},
+  ];
+
   // 録音用
   final AudioRecorder _rec = AudioRecorder();
   String? _pendingAudioPath;   // 送信時にメッセへ添付するための一時バッファ
@@ -165,6 +174,55 @@ class _ChatScreenState extends State<ChatScreen> {
       // 解析失敗は下で false
     }
     return false; // 判定不能は不正解扱い
+  }
+
+  int _rankIndexForUnique(int uniqueCorrect) {
+    var index = 0;
+    for (var i = 0; i < _ranks.length; i++) {
+      final threshold = _ranks[i]['threshold'] as int;
+      if (uniqueCorrect >= threshold) {
+        index = i;
+      } else {
+        break;
+      }
+    }
+    return index;
+  }
+
+  Future<void> _maybeShowRankUp() async {
+    final stats = await HistoryService.instance.getProfileStats();
+    final uniqueCorrect = stats.uniqueCorrect;
+    final currentIndex = _rankIndexForUnique(uniqueCorrect);
+
+    final prefs = await SharedPreferences.getInstance();
+    final lastIndex = prefs.getInt('last_rank_index');
+    if (lastIndex == null) {
+      await prefs.setInt('last_rank_index', currentIndex);
+      return;
+    }
+
+    if (currentIndex > lastIndex) {
+      await prefs.setInt('last_rank_index', currentIndex);
+      if (!mounted) return;
+      final rankName = _ranks[currentIndex]['name'] as String;
+      showDialog<void>(
+        context: context,
+        barrierDismissible: true,
+        builder: (context) {
+          return AlertDialog(
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+            title: Text(loc.rankUpTitle),
+            content: Text(loc.rankUpBody(rankName)),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.of(context).pop(),
+                child: Text(loc.ok),
+              ),
+            ],
+          );
+        },
+      );
+    }
   }
 
   String _normalizeForDuplicateCheck(String input) {
@@ -875,6 +933,10 @@ class _ChatScreenState extends State<ChatScreen> {
           } catch (e) {
             print('▶ history record failed (ignored): $e');
           }
+        }
+
+        if (user != null) {
+          await _maybeShowRankUp();
         }
 
         // 問6

@@ -274,6 +274,28 @@
   "@maxRankAchieved": {
     "description": "Se muestra al alcanzar el rango máximo"
   },
+  "rankUpTitle": "¡Subiste de rango!",
+  "@rankUpTitle": {
+    "description": "Título mostrado al subir de rango"
+  },
+  "rankUpBody": "Alcanzaste {rank}.",
+  "@rankUpBody": {
+    "description": "Cuerpo mostrado al subir de rango",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "recentQuestionsTitle": "Preguntas recientes (últimas {count})",
+  "@recentQuestionsTitle": {
+    "description": "Encabezado de preguntas recientes",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "startQuestionButton": "Empezar",
+  "@startQuestionButton": {
+    "description": "Etiqueta del botón para iniciar una pregunta reciente"
+  },
   "questionListGuide": "Elige una de abajo para empezar a practicar.",
   "@questionListGuide": {
     "description": "Guía mostrada encima de la lista de preguntas"

@@ -273,6 +273,28 @@
   "@maxRankAchieved": {
     "description": "達到最高等級時顯示"
   },
+  "rankUpTitle": "升級了！",
+  "@rankUpTitle": {
+    "description": "升級時的標題"
+  },
+  "rankUpBody": "你已達到 {rank}。",
+  "@rankUpBody": {
+    "description": "升級時的內容",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "recentQuestionsTitle": "最近題目（最近{count}題）",
+  "@recentQuestionsTitle": {
+    "description": "最近題目標題",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "startQuestionButton": "開始",
+  "@startQuestionButton": {
+    "description": "開始最近題目的按鈕"
+  },
   "questionListGuide": "下方選擇一項即可開始練習。",
   "@questionListGuide": {
     "description": "題目列表上方的提示文案"

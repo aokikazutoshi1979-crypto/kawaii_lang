@@ -274,6 +274,28 @@
   "@maxRankAchieved": {
     "description": "Ditampilkan saat peringkat tertinggi tercapai"
   },
+  "rankUpTitle": "Naik peringkat!",
+  "@rankUpTitle": {
+    "description": "Judul saat naik peringkat"
+  },
+  "rankUpBody": "Kamu mencapai {rank}.",
+  "@rankUpBody": {
+    "description": "Isi saat naik peringkat",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "recentQuestionsTitle": "Pertanyaan terbaru (terakhir {count})",
+  "@recentQuestionsTitle": {
+    "description": "Judul pertanyaan terbaru",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "startQuestionButton": "Mulai",
+  "@startQuestionButton": {
+    "description": "Label tombol untuk memulai pertanyaan terbaru"
+  },
   "questionListGuide": "Pilih salah satu di bawah untuk mulai berlatih.",
   "@questionListGuide": {
     "description": "Teks panduan di atas daftar soal"

@@ -488,6 +488,22 @@ class AppLocalizationsVi extends AppLocalizations {
   String get maxRankAchieved => 'Đã đạt hạng cao nhất';
 
   @override
+  String get rankUpTitle => 'Lên hạng!';
+
+  @override
+  String rankUpBody(Object rank) {
+    return 'Bạn đã đạt $rank.';
+  }
+
+  @override
+  String recentQuestionsTitle(Object count) {
+    return 'Câu hỏi gần đây (gần nhất $count)';
+  }
+
+  @override
+  String get startQuestionButton => 'Bắt đầu';
+
+  @override
   String get questionListGuide => 'Chọn một mục bên dưới để bắt đầu luyện tập.';
 
   @override

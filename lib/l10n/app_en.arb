@@ -277,6 +277,28 @@
   "@maxRankAchieved": {
     "description": "Shown when top rank is reached"
   },
+  "rankUpTitle": "Rank Up!",
+  "@rankUpTitle": {
+    "description": "Title shown on rank up"
+  },
+  "rankUpBody": "You reached {rank}.",
+  "@rankUpBody": {
+    "description": "Body shown on rank up",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "recentQuestionsTitle": "Recent questions (last {count})",
+  "@recentQuestionsTitle": {
+    "description": "Header for recent solved questions",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "startQuestionButton": "Start",
+  "@startQuestionButton": {
+    "description": "Button label to start a recent question"
+  },
   "questionListGuide": "Choose one below to start practicing.",
   "@questionListGuide": {
     "description": "Guide text shown above the question list"

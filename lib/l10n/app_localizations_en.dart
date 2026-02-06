@@ -491,6 +491,22 @@ class AppLocalizationsEn extends AppLocalizations {
   String get maxRankAchieved => 'Max rank achieved';
 
   @override
+  String get rankUpTitle => 'Rank Up!';
+
+  @override
+  String rankUpBody(Object rank) {
+    return 'You reached $rank.';
+  }
+
+  @override
+  String recentQuestionsTitle(Object count) {
+    return 'Recent questions (last $count)';
+  }
+
+  @override
+  String get startQuestionButton => 'Start';
+
+  @override
   String get questionListGuide => 'Choose one below to start practicing.';
 
   @override

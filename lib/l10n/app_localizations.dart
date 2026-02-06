@@ -971,6 +971,30 @@ abstract class AppLocalizations {
   /// **'最高ランクに到達'**
   String get maxRankAchieved;
 
+  /// ランクアップ時のタイトル
+  ///
+  /// In ja, this message translates to:
+  /// **'ランクアップ！'**
+  String get rankUpTitle;
+
+  /// ランクアップ時の本文
+  ///
+  /// In ja, this message translates to:
+  /// **'{rank}に到達しました'**
+  String rankUpBody(Object rank);
+
+  /// 最近解いた問題の見出し
+  ///
+  /// In ja, this message translates to:
+  /// **'最近解いた問題（直近{count}件）'**
+  String recentQuestionsTitle(Object count);
+
+  /// 出題ボタン
+  ///
+  /// In ja, this message translates to:
+  /// **'出題'**
+  String get startQuestionButton;
+
   /// 出題リストのガイド文
   ///
   /// In ja, this message translates to:

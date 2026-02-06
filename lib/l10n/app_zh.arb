@@ -275,6 +275,28 @@
   "@maxRankAchieved": {
     "description": "达到最高等级时显示"
   },
+  "rankUpTitle": "升级了！",
+  "@rankUpTitle": {
+    "description": "升级时的标题"
+  },
+  "rankUpBody": "你已达到 {rank}。",
+  "@rankUpBody": {
+    "description": "升级时的正文",
+    "placeholders": {
+      "rank": {}
+    }
+  },
+  "recentQuestionsTitle": "最近题目（最近{count}题）",
+  "@recentQuestionsTitle": {
+    "description": "最近题目标题",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "startQuestionButton": "开始",
+  "@startQuestionButton": {
+    "description": "开始最近题目的按钮"
+  },
   "questionListGuide": "下方选择一项即可开始练习。",
   "@questionListGuide": {
     "description": "题目列表上方的提示文案"

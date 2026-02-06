@@ -471,6 +471,22 @@ class AppLocalizationsZh extends AppLocalizations {
   String get maxRankAchieved => '已达到最高等级';
 
   @override
+  String get rankUpTitle => '升级了！';
+
+  @override
+  String rankUpBody(Object rank) {
+    return '你已达到 $rank。';
+  }
+
+  @override
+  String recentQuestionsTitle(Object count) {
+    return '最近题目（最近$count题）';
+  }
+
+  @override
+  String get startQuestionButton => '开始';
+
+  @override
   String get questionListGuide => '下方选择一项即可开始练习。';
 
   @override
@@ -998,6 +1014,22 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get maxRankAchieved => '已達最高等級';
+
+  @override
+  String get rankUpTitle => '升級了！';
+
+  @override
+  String rankUpBody(Object rank) {
+    return '你已達到 $rank。';
+  }
+
+  @override
+  String recentQuestionsTitle(Object count) {
+    return '最近題目（最近$count題）';
+  }
+
+  @override
+  String get startQuestionButton => '開始';
 
   @override
   String get questionListGuide => '下方選擇一項即可開始練習。';
