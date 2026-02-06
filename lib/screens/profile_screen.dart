@@ -195,11 +195,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
     return current;
   }
 
-  String _progressBar(int filledCount) {
-    final filled = filledCount.clamp(0, 10);
-    return List.generate(10, (i) => i < filled ? '▓' : '░').join();
-  }
-
   Widget _rankSection(ProfileStats stats, AppLocalizations loc) {
     final uniqueCorrect = stats.uniqueCorrect;
     final current = _currentRankFor(uniqueCorrect);
@@ -223,23 +218,31 @@ class _ProfileScreenState extends State<ProfileScreen> {
       final shown = uniqueCorrect.clamp(0, nextThreshold);
       final remaining = (nextThreshold - uniqueCorrect).clamp(0, nextThreshold);
 
-      final filled = (ratio * 10).floor();
-      final bar = _progressBar(filled);
-
       lines.addAll([
         const SizedBox(height: 6),
-        Text.rich(
-          TextSpan(
-            children: [
-              TextSpan(text: '${loc.progressToRank(nextName)}  '),
-              TextSpan(
-                text: bar,
-                style: const TextStyle(fontFamily: 'monospace'),
+        Row(
+          children: [
+            Expanded(
+              child: Text(
+                loc.progressToRank(nextName),
+                style: const TextStyle(fontSize: 14),
               ),
-              TextSpan(text: '  $shown/$nextThreshold'),
-            ],
+            ),
+            Text(
+              '$shown/$nextThreshold',
+              style: const TextStyle(fontSize: 14),
+            ),
+          ],
+        ),
+        const SizedBox(height: 6),
+        ClipRRect(
+          borderRadius: BorderRadius.circular(6),
+          child: LinearProgressIndicator(
+            value: ratio,
+            minHeight: 8,
+            backgroundColor: Colors.grey.shade300,
+            color: Colors.pink.shade400,
           ),
-          style: const TextStyle(fontSize: 14),
         ),
         const SizedBox(height: 4),
         Text(
