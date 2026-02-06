@@ -162,7 +162,7 @@ class HistoryService {
 
   Future<List<RecentQuestionEntry>> getRecentCorrectQuestions({
     int limit = 20,
-    int fetchLimit = 60,
+    int fetchLimit = 200,
   }) async {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) return const [];
@@ -176,12 +176,16 @@ class HistoryService {
         .get();
 
     final List<RecentQuestionEntry> list = [];
+    final Set<String> seen = {};
     for (final doc in snap.docs) {
       final data = doc.data();
       if (data['isCorrect'] != true) continue;
       final qid = (data['questionId'] ?? '').toString();
       final scene = (data['scene'] ?? '').toString();
       if (qid.isEmpty || scene.isEmpty) continue;
+      final key = '$scene|$qid';
+      if (seen.contains(key)) continue;
+      seen.add(key);
       list.add(RecentQuestionEntry(
         questionId: qid,
         scene: scene,

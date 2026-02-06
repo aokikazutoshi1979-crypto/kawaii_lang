@@ -368,6 +368,11 @@ class _ChatBubbleState extends State<ChatBubble> {
                         ),
                       ),
                       const SizedBox(width: 8),
+                      const Text(
+                        'Your voice',
+                        style: TextStyle(fontSize: 12, color: Colors.black54),
+                      ),
+                      const SizedBox(width: 8),
                       Text(
                         '${_mmss(_position)} / ${_mmss(_duration.inMilliseconds > 0 ? _duration : Duration(milliseconds: widget.recordingDurationMs ?? 0))}',
                         style: const TextStyle(fontSize: 13, color: Colors.black87),

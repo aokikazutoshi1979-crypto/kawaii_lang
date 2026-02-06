@@ -989,7 +989,7 @@ abstract class AppLocalizations {
   /// **'最近解いた問題（直近{count}件）'**
   String recentQuestionsTitle(Object count);
 
-  /// 出題ボタン
+  /// 最近解いた問題の出題ボタン
   ///
   /// In ja, this message translates to:
   /// **'出題'**
