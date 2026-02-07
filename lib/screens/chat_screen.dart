@@ -14,6 +14,7 @@ import 'dart:convert'; // ✅ これが必要！
 import 'package:kawaii_lang/services/history_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'dart:async';
+import 'dart:collection';
 import 'package:record/record.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:kawaii_lang/config/quiz_mode_config.dart';
@@ -22,7 +23,7 @@ import '../models/quiz_mode.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'dart:ui';
 // 先頭で：プラットフォーム別にしたい場合
-import 'dart:io' show Platform;
+import 'dart:io' show Platform, File;
 import '../common/scene_label.dart';
 import 'package:kawaii_lang/services/language_catalog.dart';
 import 'question_list_screen.dart';
@@ -104,6 +105,10 @@ class _ChatScreenState extends State<ChatScreen> {
     {'name': 'Master', 'threshold': 1000},
   ];
 
+  final Queue<double> _ampQueue = Queue<double>();
+  StreamSubscription<Amplitude>? _ampSub;
+  double _ampEma = 0.0;
+
   // 録音用
   final AudioRecorder _rec = AudioRecorder();
   String? _pendingAudioPath;   // 送信時にメッセへ添付するための一時バッファ
@@ -174,6 +179,36 @@ class _ChatScreenState extends State<ChatScreen> {
       // 解析失敗は下で false
     }
     return false; // 判定不能は不正解扱い
+  }
+
+  void _startAmplitudeStream() {
+    _ampSub?.cancel();
+    _ampQueue.clear();
+    _ampEma = 0.0;
+    _ampSub = _rec
+        .onAmplitudeChanged(const Duration(milliseconds: 60))
+        .listen((amp) {
+      if (!mounted) return;
+      final db = amp.current ?? -60.0;
+      final normalized = ((db + 60.0) / 60.0).clamp(0.0, 1.0);
+      const alpha = 0.25;
+      _ampEma = (_ampEma * (1 - alpha)) + (normalized * alpha);
+      setState(() {
+        _ampQueue.add(_ampEma);
+        while (_ampQueue.length > 40) {
+          _ampQueue.removeFirst();
+        }
+      });
+    });
+  }
+
+  void _stopAmplitudeStream({bool clear = true}) {
+    _ampSub?.cancel();
+    _ampSub = null;
+    _ampEma = 0.0;
+    if (clear) {
+      _ampQueue.clear();
+    }
   }
 
   int _rankIndexForUnique(int uniqueCorrect) {
@@ -581,6 +616,7 @@ class _ChatScreenState extends State<ChatScreen> {
     // 録音中なら止める（安全策）
     _rec.stop();
     _rec.dispose();
+    _stopAmplitudeStream(clear: false);
     _tts.stop();
     _speechService.stop();
     _controller.dispose();
@@ -651,6 +687,7 @@ class _ChatScreenState extends State<ChatScreen> {
           );
           _pendingAudioPath = path;                 // 後で吹き出しへ添付するため保持
           _recStartAt = DateTime.now();
+          _startAmplitudeStream();
 
           // ★★ 10秒で自動停止（STT & 録音を同時に止める）
           _recLimitTimer?.cancel();
@@ -758,6 +795,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
     // ★★ 10秒タイマー停止
     _recLimitTimer?.cancel();
+    _stopAmplitudeStream(clear: true);
 
     // ★★ 録音停止 → 長さ計測 → バッファに保持
     try {
@@ -787,12 +825,38 @@ class _ChatScreenState extends State<ChatScreen> {
     setState(() => _isListening = false);
   }
 
+  Future<void> _cancelRecording() async {
+    await _stopListening();
+    final path = _pendingAudioPath;
+    if (path != null && path.isNotEmpty) {
+      try {
+        final f = File(path);
+        if (f.existsSync()) {
+          await f.delete();
+        }
+      } catch (_) {}
+    }
+    _pendingAudioPath = null;
+    _pendingDurationMs = null;
+    if (mounted) {
+      setState(() {
+        _controller.clear();
+        _hasInput = false;
+      });
+    }
+  }
+
+  Future<void> _confirmRecording() async {
+    await _stopListening();
+  }
+
   void _activateKeyboardMode() async {
     setState(() {
       _isKeyboardMode = true;
       _isListening = false;
     });
     _speechService.stop();
+    _stopAmplitudeStream(clear: true);
 
     // もし録音中なら止める
     try {
@@ -1669,8 +1733,11 @@ class _ChatScreenState extends State<ChatScreen> {
                   isKeyboardMode: _isKeyboardMode,
                   hasInput: _hasInput,
                   hasSubmitted: _hasSubmitted,
+                  waveformSamples: _ampQueue.toList(),
                   controller: _controller,
-                  onMicTap: _isListening ? _stopListening : _startListening,
+                  onMicTap: _isListening ? _confirmRecording : _startListening,
+                  onRecordCancel: _cancelRecording,
+                  onRecordConfirm: _confirmRecording,
                   onKeyboardTap: _activateKeyboardMode,
                   onSend: () {
                     setState(() => _revealListeningText = true); // ★ここで解除
