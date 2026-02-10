@@ -303,26 +303,36 @@ class _WaveformPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    const barCount = 40;
-    const gap = 2.0;
+    const barCount = 96;
+    const gap = 1.2;
     final totalGap = gap * (barCount - 1);
     final barWidth = (size.width - totalGap) / barCount;
     if (barWidth <= 0) return;
 
     final paint = Paint()..color = color;
     final values = List<double>.filled(barCount, 0.0);
-    final start = math.max(0, barCount - samples.length);
-    for (var i = 0; i < samples.length && (i + start) < barCount; i++) {
-      values[i + start] = samples[i].clamp(0.0, 1.0);
+    if (samples.isNotEmpty) {
+      final rawLen = samples.length;
+      for (var i = 0; i < barCount; i++) {
+        final t = (barCount == 1) ? 0.0 : i / (barCount - 1);
+        final pos = (rawLen == 1) ? 0.0 : t * (rawLen - 1);
+        final idx = pos.floor();
+        final frac = pos - idx;
+        final v0 = samples[idx].clamp(0.0, 1.0);
+        final v1 = samples[math.min(idx + 1, rawLen - 1)].clamp(0.0, 1.0);
+        final v = v0 + (v1 - v0) * frac;
+        final edge = 0.4 + 0.6 * math.sin(math.pi * t);
+        values[i] = (v * edge).clamp(0.0, 1.0);
+      }
     }
 
     final centerY = size.height / 2;
     var x = 0.0;
     for (var i = 0; i < barCount; i++) {
       final v = values[i];
-      final h = math.max(2.0, v * (size.height / 2));
+      final h = math.max(1.5, v * (size.height / 2));
       final rect = Rect.fromLTWH(x, centerY - h, barWidth, h * 2);
-      final rrect = RRect.fromRectAndRadius(rect, const Radius.circular(3));
+      final rrect = RRect.fromRectAndRadius(rect, const Radius.circular(2));
       canvas.drawRRect(rrect, paint);
       x += barWidth + gap;
     }

@@ -226,7 +226,7 @@ class _ChatScreenState extends State<ChatScreen> {
     _ampQueue.clear();
     _ampEma = 0.0;
     _ampSub = _rec
-        .onAmplitudeChanged(const Duration(milliseconds: 60))
+        .onAmplitudeChanged(const Duration(milliseconds: 50))
         .listen((amp) {
       if (!mounted) return;
       final db = amp.current ?? -60.0;
