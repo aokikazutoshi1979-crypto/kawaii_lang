@@ -15,6 +15,7 @@ import 'package:kawaii_lang/services/history_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'dart:async';
 import 'dart:collection';
+import 'dart:math';
 import 'package:record/record.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:kawaii_lang/config/quiz_mode_config.dart';
@@ -109,6 +110,17 @@ class _ChatScreenState extends State<ChatScreen> {
   StreamSubscription<Amplitude>? _ampSub;
   double _ampEma = 0.0;
 
+  static const List<String> _tumugiLines = [
+    'Nice! That came through.',
+    'Great — that sounded natural.',
+    'Awesome! Keep going.',
+    'Perfect!',
+    'Yes! You nailed it.',
+  ];
+  static const String _tumugiNextPrompt = 'Ready for the next one?';
+  final Queue<String> _recentTumugiLines = Queue<String>();
+  final Random _rng = Random();
+
   // 録音用
   final AudioRecorder _rec = AudioRecorder();
   String? _pendingAudioPath;   // 送信時にメッセへ添付するための一時バッファ
@@ -131,6 +143,34 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   bool _revealListeningText = false;
+
+  String _pickTumugiLine() {
+    final pool = List<String>.from(_tumugiLines)
+      ..removeWhere((line) => _recentTumugiLines.contains(line));
+    if (pool.isEmpty) {
+      pool.addAll(_tumugiLines);
+    }
+    final baseLine = pool[_rng.nextInt(pool.length)];
+    _recentTumugiLines.addLast(baseLine);
+    while (_recentTumugiLines.length > 3) {
+      _recentTumugiLines.removeFirst();
+    }
+    return '$baseLine $_tumugiNextPrompt';
+  }
+
+  Future<void> _enqueueTumugiReply() async {
+    if (_messages.isEmpty || _messages.last['role'] == 'user') return;
+    final delayMs = 300 + _rng.nextInt(301);
+    await Future.delayed(Duration(milliseconds: delayMs));
+    if (!mounted) return;
+    setState(() {
+      _messages.add({
+        'role': 'tumugi',
+        'text': _pickTumugiLine(),
+        'avatarPath': 'assets/images/characters/tumugi_01.png',
+      });
+    });
+  }
 
   // 返ってくる型が String でも Map でも安全に扱う
   bool _parseIsCorrectJson(dynamic response) {
@@ -1013,6 +1053,7 @@ class _ChatScreenState extends State<ChatScreen> {
           addAccuracyNoticeBubble: true,   // ←“的確です”通知を表示
           onlyFirstBubble: false,          // ←②以降も続ける
         );
+        await _enqueueTumugiReply();
         return;
       }
 

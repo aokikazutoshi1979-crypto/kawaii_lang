@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'chat_bubble.dart';
+import 'tumugi_bubble.dart';
 
 class MessageList extends StatelessWidget {
   final List<Map<String, dynamic>> messages;
@@ -11,6 +12,12 @@ class MessageList extends StatelessWidget {
     return ListView(
       padding: const EdgeInsets.all(12),
       children: messages.map((msg) {
+        if (msg['role'] == 'tumugi') {
+          return TumugiBubble(
+            text: msg['text'] ?? '',
+            avatarPath: msg['avatarPath'],
+          );
+        }
         final isBot = msg['role'] != 'user';
         final tts = msg['tts']; // ← 🔊 TTS対象テキストがある場合
         return ChatBubble(
