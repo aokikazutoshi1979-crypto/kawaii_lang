@@ -119,6 +119,28 @@ String tsumugiSentenceJoiner(String uiLanguageCode) {
   return ' ';
 }
 
+String tsumugiNamePrefix(String uiLanguageCode, String? displayName) {
+  final name = (displayName ?? '').trim();
+  if (name.isEmpty) return '';
+  switch (_norm(uiLanguageCode)) {
+    case 'ja':
+      return '$nameさん、';
+    case 'ko':
+      return '$name님, ';
+    case 'zh':
+    case 'zh_tw':
+      return '$name，';
+    case 'es':
+    case 'fr':
+    case 'de':
+    case 'vi':
+    case 'id':
+    case 'en':
+    default:
+      return '$name, ';
+  }
+}
+
 List<String> _templatesFor(String lang) {
   switch (lang) {
     case 'ja':

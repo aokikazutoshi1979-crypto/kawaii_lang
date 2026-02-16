@@ -137,6 +137,7 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   bool _revealListeningText = false;
+  String? _displayName;
 
   String _pickTumugiLine() {
     final baseLines = tsumugiPraiseLines(_nativeCode);
@@ -150,9 +151,10 @@ class _ChatScreenState extends State<ChatScreen> {
     while (_recentTumugiLines.length > 3) {
       _recentTumugiLines.removeFirst();
     }
+    final prefix = tsumugiNamePrefix(_nativeCode, _displayName);
     final joiner = tsumugiSentenceJoiner(_nativeCode);
     final nextPrompt = tsumugiNextPrompt(_nativeCode);
-    return '$baseLine$joiner$nextPrompt';
+    return '$prefix$baseLine$joiner$nextPrompt';
   }
 
   Future<void> _enqueueTumugiReply() async {
@@ -402,6 +404,8 @@ class _ChatScreenState extends State<ChatScreen> {
     // 3) TTS 初期化（内部で _ttsReady = true にする想定）
     _initTts();
 
+    _loadDisplayName();
+
     // ★ 言語カタログを読み込んでから一度だけ再描画
     Future.microtask(() async {
       await LanguageCatalog.instance.ensureLoaded();
@@ -420,6 +424,14 @@ class _ChatScreenState extends State<ChatScreen> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
       // if (_mode == QuizMode.listening) _speakCurrentQuestion();
+    });
+  }
+
+  Future<void> _loadDisplayName() async {
+    final prefs = await SharedPreferences.getInstance();
+    if (!mounted) return;
+    setState(() {
+      _displayName = prefs.getString('user_display_name');
     });
   }
 
@@ -594,6 +606,34 @@ class _ChatScreenState extends State<ChatScreen> {
           ],
         ),
       ),
+    );
+  }
+
+  TextSpan _buildTsumugiQuestionSpan({
+    required String fullText,
+    required String promptText,
+    required TextStyle baseStyle,
+  }) {
+    final cleanPrompt = promptText.trim();
+    if (cleanPrompt.isEmpty) {
+      return TextSpan(text: fullText, style: baseStyle);
+    }
+    final idx = fullText.indexOf(cleanPrompt);
+    if (idx < 0) {
+      return TextSpan(text: fullText, style: baseStyle);
+    }
+    final before = fullText.substring(0, idx);
+    final after = fullText.substring(idx + cleanPrompt.length);
+    return TextSpan(
+      style: baseStyle,
+      children: [
+        if (before.isNotEmpty) TextSpan(text: before),
+        TextSpan(
+          text: cleanPrompt,
+          style: baseStyle.copyWith(color: const Color(0xFFE91E63)),
+        ),
+        if (after.isNotEmpty) TextSpan(text: after),
+      ],
     );
   }
 
@@ -1729,7 +1769,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         const CircleAvatar(
-                          radius: 18,
+                          radius: 31.5,
                           backgroundImage: AssetImage(
                             'assets/images/characters/tumugi_01.png',
                           ),
@@ -1739,19 +1779,25 @@ class _ChatScreenState extends State<ChatScreen> {
                           child: Container(
                             padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
                             decoration: BoxDecoration(
-                              color: scheme.surface.withOpacity(0.85),
+                              color: const Color(0xFFFFF0F5),
                               borderRadius: BorderRadius.circular(14),
-                              border: Border.all(color: scheme.outlineVariant.withOpacity(0.4)),
-                            ),
-                            child: Text(
-                              _tsumugiQuestionText.isNotEmpty
-                                  ? _tsumugiQuestionText
-                                  : _currentNativeText,
-                              textAlign: TextAlign.left,
-                              style: const TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
+                              border: Border.all(
+                                color: Colors.pink.shade200.withOpacity(0.6),
                               ),
+                            ),
+                            child: Text.rich(
+                              _buildTsumugiQuestionSpan(
+                                fullText: _tsumugiQuestionText.isNotEmpty
+                                    ? _tsumugiQuestionText
+                                    : _currentNativeText,
+                                promptText: _currentNativeText,
+                                baseStyle: const TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black87,
+                                ),
+                              ),
+                              textAlign: TextAlign.left,
                             ),
                           ),
                         ),

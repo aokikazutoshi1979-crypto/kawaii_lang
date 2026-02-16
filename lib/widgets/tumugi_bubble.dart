@@ -38,7 +38,7 @@ class _TumugiBubbleState extends State<TumugiBubble> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         CircleAvatar(
-          radius: 21,
+          radius: 31.5,
           backgroundColor: Colors.white,
           foregroundImage: widget.avatarPath != null
               ? AssetImage(widget.avatarPath!)
