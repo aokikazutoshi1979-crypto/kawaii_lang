@@ -242,6 +242,27 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get userNameTitle => '사용자 이름';
+
+  @override
+  String get userNameIntro => '앱에 표시될 이름이에요. 나중에 변경할 수 있어요.';
+
+  @override
+  String get userNameHint => '이름을 입력';
+
+  @override
+  String get userNameContinue => '계속';
+
+  @override
+  String get userNameSave => '저장';
+
+  @override
+  String get userNameEdit => '이름 변경';
+
+  @override
+  String get userNameUpdated => '이름을 업데이트했어요';
+
+  @override
   String registeredDate(Object date) {
     return '등록일: $date';
   }

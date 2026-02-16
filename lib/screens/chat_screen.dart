@@ -28,6 +28,7 @@ import 'dart:io' show Platform, File;
 import '../common/scene_label.dart';
 import 'package:kawaii_lang/services/language_catalog.dart';
 import 'question_list_screen.dart';
+import '../utils/tsumugi_prompt.dart';
 
 
 class ChatScreen extends StatefulWidget {
@@ -84,6 +85,7 @@ class _ChatScreenState extends State<ChatScreen> {
   String _nativeCode = 'ja';
 
   String _currentNativeText = ''; // ← 出題を保持
+  String _tsumugiQuestionText = '';
 
   late String _targetCode;
 
@@ -110,14 +112,6 @@ class _ChatScreenState extends State<ChatScreen> {
   StreamSubscription<Amplitude>? _ampSub;
   double _ampEma = 0.0;
 
-  static const List<String> _tumugiLines = [
-    'Nice! That came through.',
-    'Great — that sounded natural.',
-    'Awesome! Keep going.',
-    'Perfect!',
-    'Yes! You nailed it.',
-  ];
-  static const String _tumugiNextPrompt = 'Ready for the next one?';
   final Queue<String> _recentTumugiLines = Queue<String>();
   final Random _rng = Random();
 
@@ -145,17 +139,20 @@ class _ChatScreenState extends State<ChatScreen> {
   bool _revealListeningText = false;
 
   String _pickTumugiLine() {
-    final pool = List<String>.from(_tumugiLines)
+    final baseLines = tsumugiPraiseLines(_nativeCode);
+    final pool = List<String>.from(baseLines)
       ..removeWhere((line) => _recentTumugiLines.contains(line));
     if (pool.isEmpty) {
-      pool.addAll(_tumugiLines);
+      pool.addAll(baseLines);
     }
     final baseLine = pool[_rng.nextInt(pool.length)];
     _recentTumugiLines.addLast(baseLine);
     while (_recentTumugiLines.length > 3) {
       _recentTumugiLines.removeFirst();
     }
-    return '$baseLine $_tumugiNextPrompt';
+    final joiner = tsumugiSentenceJoiner(_nativeCode);
+    final nextPrompt = tsumugiNextPrompt(_nativeCode);
+    return '$baseLine$joiner$nextPrompt';
   }
 
   Future<void> _enqueueTumugiReply() async {
@@ -408,7 +405,15 @@ class _ChatScreenState extends State<ChatScreen> {
     // ★ 言語カタログを読み込んでから一度だけ再描画
     Future.microtask(() async {
       await LanguageCatalog.instance.ensureLoaded();
-      if (mounted) setState(() {}); // ← AppBar の表示名を更新
+      if (mounted) {
+        setState(() {
+          _tsumugiQuestionText = buildTsumugiPrompt(
+            uiLanguageCode: _nativeCode,
+            promptText: _currentNativeText,
+            targetLanguageName: _displayLangName(widget.targetLang),
+          );
+        });
+      }
     });
 
     // 4) Listening で入室したら、自動再生（ビルド完了後に）
@@ -676,6 +681,11 @@ class _ChatScreenState extends State<ChatScreen> {
       // ★ ここで毎回リセット（モードに関わらず）
       _revealListeningText = false;
       _currentNativeText = nativeText;
+      _tsumugiQuestionText = buildTsumugiPrompt(
+        uiLanguageCode: _nativeCode,
+        promptText: nativeText,
+        targetLanguageName: _displayLangName(widget.targetLang),
+      );
 
       if (isListening) {
         _messages = [
@@ -1713,23 +1723,39 @@ class _ChatScreenState extends State<ChatScreen> {
                 // ★ 出題テキストを中央寄せ＆太字で表示（Readingモードのときだけ）
                 if (_mode == QuizMode.reading && _currentNativeText.isNotEmpty)
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 12.0),
-                    child: Container(
-                      margin: const EdgeInsets.symmetric(horizontal: 16),
-                      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-                      decoration: BoxDecoration(
-                        color: scheme.surface.withOpacity(0.85),
-                        borderRadius: BorderRadius.circular(14),
-                        border: Border.all(color: scheme.outlineVariant.withOpacity(0.4)),
-                      ),
-                      child: Text(
-                        _currentNativeText, // ← 出題文を表示
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        const CircleAvatar(
+                          radius: 18,
+                          backgroundImage: AssetImage(
+                            'assets/images/characters/tumugi_01.png',
+                          ),
                         ),
-                      ),
+                        const SizedBox(width: 10),
+                        Flexible(
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                            decoration: BoxDecoration(
+                              color: scheme.surface.withOpacity(0.85),
+                              borderRadius: BorderRadius.circular(14),
+                              border: Border.all(color: scheme.outlineVariant.withOpacity(0.4)),
+                            ),
+                            child: Text(
+                              _tsumugiQuestionText.isNotEmpty
+                                  ? _tsumugiQuestionText
+                                  : _currentNativeText,
+                              textAlign: TextAlign.left,
+                              style: const TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
 

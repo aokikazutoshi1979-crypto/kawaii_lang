@@ -249,6 +249,28 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String get userNameTitle => 'Nama pengguna';
+
+  @override
+  String get userNameIntro =>
+      'Nama ini akan ditampilkan di aplikasi. Bisa diubah nanti.';
+
+  @override
+  String get userNameHint => 'Masukkan nama';
+
+  @override
+  String get userNameContinue => 'Lanjut';
+
+  @override
+  String get userNameSave => 'Simpan';
+
+  @override
+  String get userNameEdit => 'Ubah nama';
+
+  @override
+  String get userNameUpdated => 'Nama diperbarui';
+
+  @override
   String registeredDate(Object date) {
     return 'Tanggal terdaftar: $date';
   }

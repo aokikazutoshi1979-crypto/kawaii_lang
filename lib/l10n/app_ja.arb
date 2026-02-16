@@ -94,6 +94,13 @@
   "passwordResetError": "リセットメールの送信に失敗しました。",
   "settingsTitle": "設定",
   "welcomeUser": "ようこそ、{name} さん",
+  "userNameTitle": "ユーザー名",
+  "userNameIntro": "表示名として使います。後から変更できます。",
+  "userNameHint": "名前を入力",
+  "userNameContinue": "はじめる",
+  "userNameSave": "保存",
+  "userNameEdit": "ユーザー名を変更",
+  "userNameUpdated": "ユーザー名を更新しました",
   "registeredDate": "登録日: {date}",
   "userFetchFailed": "ユーザー情報の取得に失敗しました（エラー: {error}）",
   "@userFetchFailed": {

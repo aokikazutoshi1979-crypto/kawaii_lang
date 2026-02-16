@@ -94,6 +94,13 @@
   "passwordResetError": "Gửi email đặt lại mật khẩu thất bại.",
   "settingsTitle": "Cài đặt",
   "welcomeUser": "Chào mừng, {name}!",
+  "userNameTitle": "Tên người dùng",
+  "userNameIntro": "Tên này sẽ hiển thị trong ứng dụng. Bạn có thể đổi sau.",
+  "userNameHint": "Nhập tên của bạn",
+  "userNameContinue": "Tiếp tục",
+  "userNameSave": "Lưu",
+  "userNameEdit": "Chỉnh sửa tên",
+  "userNameUpdated": "Đã cập nhật tên",
   "registeredDate": "Ngày đăng ký: {date}",
   "userFetchFailed": "Không thể lấy thông tin người dùng (lỗi: {error}).",
   "@userFetchFailed": {

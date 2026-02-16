@@ -7,6 +7,7 @@ import '../services/idle_service.dart';
 import 'language_selection_screen.dart';
 import 'target_language_selection_screen.dart';
 import 'category_selection_screen.dart';
+import 'user_name_screen.dart';
 import 'package:kawaii_lang/config.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -74,6 +75,7 @@ class _SplashScreenState extends State<SplashScreen> {
     final prefs = await SharedPreferences.getInstance();
     final savedLang = prefs.getString('user_language');
     final savedTarget = prefs.getString('target_language');
+    final savedName = prefs.getString('user_display_name')?.trim();
 
     if (savedLang == null) {
       Navigator.pushReplacement(
@@ -87,6 +89,13 @@ class _SplashScreenState extends State<SplashScreen> {
         context,
         MaterialPageRoute(
           builder: (_) => const TargetLanguageSelectionScreen(),
+        ),
+      );
+    } else if (savedName == null || savedName.isEmpty) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (_) => const UserNameScreen(isOnboarding: true),
         ),
       );
     } else {

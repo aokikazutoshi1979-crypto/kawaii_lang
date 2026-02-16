@@ -248,6 +248,28 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get userNameTitle => 'Tên người dùng';
+
+  @override
+  String get userNameIntro =>
+      'Tên này sẽ hiển thị trong ứng dụng. Bạn có thể đổi sau.';
+
+  @override
+  String get userNameHint => 'Nhập tên của bạn';
+
+  @override
+  String get userNameContinue => 'Tiếp tục';
+
+  @override
+  String get userNameSave => 'Lưu';
+
+  @override
+  String get userNameEdit => 'Chỉnh sửa tên';
+
+  @override
+  String get userNameUpdated => 'Đã cập nhật tên';
+
+  @override
   String registeredDate(Object date) {
     return 'Ngày đăng ký: $date';
   }

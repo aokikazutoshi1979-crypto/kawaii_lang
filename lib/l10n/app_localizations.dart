@@ -545,6 +545,48 @@ abstract class AppLocalizations {
   /// **'ようこそ、{name} さん'**
   String welcomeUser(Object name);
 
+  /// No description provided for @userNameTitle.
+  ///
+  /// In ja, this message translates to:
+  /// **'ユーザー名'**
+  String get userNameTitle;
+
+  /// No description provided for @userNameIntro.
+  ///
+  /// In ja, this message translates to:
+  /// **'表示名として使います。後から変更できます。'**
+  String get userNameIntro;
+
+  /// No description provided for @userNameHint.
+  ///
+  /// In ja, this message translates to:
+  /// **'名前を入力'**
+  String get userNameHint;
+
+  /// No description provided for @userNameContinue.
+  ///
+  /// In ja, this message translates to:
+  /// **'はじめる'**
+  String get userNameContinue;
+
+  /// No description provided for @userNameSave.
+  ///
+  /// In ja, this message translates to:
+  /// **'保存'**
+  String get userNameSave;
+
+  /// No description provided for @userNameEdit.
+  ///
+  /// In ja, this message translates to:
+  /// **'ユーザー名を変更'**
+  String get userNameEdit;
+
+  /// No description provided for @userNameUpdated.
+  ///
+  /// In ja, this message translates to:
+  /// **'ユーザー名を更新しました'**
+  String get userNameUpdated;
+
   /// No description provided for @registeredDate.
   ///
   /// In ja, this message translates to:

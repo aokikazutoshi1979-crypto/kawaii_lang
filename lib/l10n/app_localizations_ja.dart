@@ -242,6 +242,27 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get userNameTitle => 'ユーザー名';
+
+  @override
+  String get userNameIntro => '表示名として使います。後から変更できます。';
+
+  @override
+  String get userNameHint => '名前を入力';
+
+  @override
+  String get userNameContinue => 'はじめる';
+
+  @override
+  String get userNameSave => '保存';
+
+  @override
+  String get userNameEdit => 'ユーザー名を変更';
+
+  @override
+  String get userNameUpdated => 'ユーザー名を更新しました';
+
+  @override
   String registeredDate(Object date) {
     return '登録日: $date';
   }

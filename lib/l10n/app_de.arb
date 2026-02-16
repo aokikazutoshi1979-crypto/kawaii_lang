@@ -94,6 +94,13 @@
   "passwordResetError": "Das Senden der Zurücksetzungs-E-Mail ist fehlgeschlagen.",
   "settingsTitle": "Einstellungen",
   "welcomeUser": "Willkommen, {name}!",
+  "userNameTitle": "Benutzername",
+  "userNameIntro": "Dieser Name wird in der App angezeigt. Du kannst ihn später ändern.",
+  "userNameHint": "Gib deinen Namen ein",
+  "userNameContinue": "Weiter",
+  "userNameSave": "Speichern",
+  "userNameEdit": "Namen bearbeiten",
+  "userNameUpdated": "Name aktualisiert",
   "registeredDate": "Registrierungsdatum: {date}",
   "userFetchFailed": "Abrufen der Benutzerdaten fehlgeschlagen (Fehler: {error}).",
   "@userFetchFailed": {

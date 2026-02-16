@@ -94,6 +94,13 @@
   "passwordResetError": "Failed to send the reset email.",
   "settingsTitle": "Settings",
   "welcomeUser": "Welcome, {name}",
+  "userNameTitle": "Your Name",
+  "userNameIntro": "This name will be shown in the app. You can change it later.",
+  "userNameHint": "Enter your name",
+  "userNameContinue": "Continue",
+  "userNameSave": "Save",
+  "userNameEdit": "Edit name",
+  "userNameUpdated": "Name updated",
   "registeredDate": "Registered on: {date}",
   "userFetchFailed": "Failed to fetch user info (Error: {error})",
   "@userFetchFailed": {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:kawaii_lang/l10n/app_localizations.dart';
+import 'user_name_screen.dart';
 
 class TargetLanguageSelectionScreen extends StatefulWidget {
   const TargetLanguageSelectionScreen({Key? key}) : super(key: key);
@@ -58,7 +59,17 @@ class _TargetLanguageSelectionScreenState
       selectedLang = code;
     });
 
-    Navigator.pushReplacementNamed(context, '/category');
+    final savedName = prefs.getString('user_display_name')?.trim();
+    if (savedName == null || savedName.isEmpty) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (_) => const UserNameScreen(isOnboarding: true),
+        ),
+      );
+    } else {
+      Navigator.pushReplacementNamed(context, '/category');
+    }
   }
 
   @override

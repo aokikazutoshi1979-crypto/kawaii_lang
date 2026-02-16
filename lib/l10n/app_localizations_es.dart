@@ -253,6 +253,28 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String get userNameTitle => 'Nombre de usuario';
+
+  @override
+  String get userNameIntro =>
+      'Este nombre se mostrará en la app. Puedes cambiarlo más tarde.';
+
+  @override
+  String get userNameHint => 'Escribe tu nombre';
+
+  @override
+  String get userNameContinue => 'Continuar';
+
+  @override
+  String get userNameSave => 'Guardar';
+
+  @override
+  String get userNameEdit => 'Editar nombre';
+
+  @override
+  String get userNameUpdated => 'Nombre actualizado';
+
+  @override
   String registeredDate(Object date) {
     return 'Fecha de registro: $date';
   }

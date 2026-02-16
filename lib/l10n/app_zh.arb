@@ -93,6 +93,13 @@
   "passwordResetError": "发送重设邮件失败。",
   "settingsTitle": "设置",
   "welcomeUser": "欢迎，{name}",
+  "userNameTitle": "用户名",
+  "userNameIntro": "此名称会显示在应用中，可随时更改。",
+  "userNameHint": "请输入姓名",
+  "userNameContinue": "继续",
+  "userNameSave": "保存",
+  "userNameEdit": "修改用户名",
+  "userNameUpdated": "用户名已更新",
   "registeredDate": "注册日期: {date}",
   "userFetchFailed": "获取用户信息失败（错误：{error}）",
   "@userFetchFailed": {

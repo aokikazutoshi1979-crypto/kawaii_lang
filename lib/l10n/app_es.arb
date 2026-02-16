@@ -94,6 +94,13 @@
   "passwordResetError": "No se pudo enviar el correo de restablecimiento.",
   "settingsTitle": "Configuración",
   "welcomeUser": "¡Bienvenido, {name}!",
+  "userNameTitle": "Nombre de usuario",
+  "userNameIntro": "Este nombre se mostrará en la app. Puedes cambiarlo más tarde.",
+  "userNameHint": "Escribe tu nombre",
+  "userNameContinue": "Continuar",
+  "userNameSave": "Guardar",
+  "userNameEdit": "Editar nombre",
+  "userNameUpdated": "Nombre actualizado",
   "registeredDate": "Fecha de registro: {date}",
   "userFetchFailed": "No se pudo obtener la información del usuario (error: {error}).",
   "@userFetchFailed": {

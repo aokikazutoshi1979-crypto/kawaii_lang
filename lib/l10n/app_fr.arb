@@ -94,6 +94,13 @@
   "passwordResetError": "Échec de l'envoi de l'e-mail de réinitialisation.",
   "settingsTitle": "Paramètres",
   "welcomeUser": "Bienvenue, {name} !",
+  "userNameTitle": "Nom d'utilisateur",
+  "userNameIntro": "Ce nom sera affiché dans l'app. Vous pourrez le modifier plus tard.",
+  "userNameHint": "Entrez votre nom",
+  "userNameContinue": "Continuer",
+  "userNameSave": "Enregistrer",
+  "userNameEdit": "Modifier le nom",
+  "userNameUpdated": "Nom mis à jour",
   "registeredDate": "Date d'inscription : {date}",
   "userFetchFailed": "Échec de la récupération des informations utilisateur (erreur : {error}).",
   "@userFetchFailed": {

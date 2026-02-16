@@ -19,6 +19,7 @@ import 'subscription_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:kawaii_lang/services/subscription_state.dart';
 import 'profile_screen.dart';
+import 'user_name_screen.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({Key? key}) : super(key: key);
@@ -38,6 +39,7 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
   bool _isLoadingUser = false;
   String? selectedLang;
   String? selectedTargetLang;
+  String? _displayName;
   final String _faqUrl = 'https://kawaiilang.com/faq.html';
 
   final List<Map<String, String>> languages = [
@@ -85,6 +87,7 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     // １）言語設定のロード（既存）
     _loadLanguage();
     _loadTargetLanguage();
+    _loadDisplayName();
 
     // ２）RevenueCat の初期化＆オファー取得
     SubscriptionService.instance.init();
@@ -120,6 +123,13 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     });
   }
 
+  Future<void> _loadDisplayName() async {
+    final prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _displayName = prefs.getString('user_display_name');
+    });
+  }
+
   Future<void> _fetchUser() async {
     final uid = _authService.currentUser!.uid;
     print('💡 Firestoreからユーザーデータ取得中... UID: $uid');
@@ -133,6 +143,10 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
       final user = await _authService.fetchCurrentUser();
       setState(() {
         _user = user;
+        if ((_displayName == null || _displayName!.trim().isEmpty) &&
+            (user?.displayName != null && user!.displayName!.trim().isNotEmpty)) {
+          _displayName = user.displayName!.trim();
+        }
       });
     } catch (e) {
       print('❌ ユーザー取得エラー: $e');
@@ -226,9 +240,9 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
 
     final isAnon = _authService.currentUser!.isAnonymous;
     final loc = AppLocalizations.of(context)!;
-    final displayName = isAnon
-        ? loc.guest
-        : (_user?.displayName ?? _user?.email ?? '');
+    final displayName = (_displayName != null && _displayName!.trim().isNotEmpty)
+        ? _displayName!.trim()
+        : (isAnon ? loc.guest : (_user?.displayName ?? _user?.email ?? loc.guest));
 
     // ① RevenueCat パッケージ取得済みか判定
     final bool hasPackages = !_loadingOfferings &&
@@ -251,26 +265,49 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
         child: ListView(
           children: [
             // 匿名でも _user が取れていれば、ここを通るように
-            if (_user != null) ...[
-              // 匿名ユーザーなら "GUEST"、それ以外は displayName または email
-              Text(
-                loc.welcomeUser(
-                  _authService.currentUser!.isAnonymous
-                    ? loc.guest                   // ← arb の "guest": "ゲスト" を使う
-                    : (_user!.email ?? 'User'),
-                ),
-                style: Theme.of(context).textTheme.titleLarge,
-              ),
-              const SizedBox(height: 8),
-              if (!_authService.currentUser!.isAnonymous) ...[
-                Text(
-                  loc.registeredDate(
-                    DateFormat.yMMMd().format(_user!.createdAt),
+            // ① いつでもユーザー名を表示（匿名でも可）
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    loc.welcomeUser(displayName),
+                    style: Theme.of(context).textTheme.titleLarge,
                   ),
                 ),
+                TextButton.icon(
+                  onPressed: () async {
+                    final updated = await Navigator.push<String>(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => UserNameScreen(
+                          isOnboarding: false,
+                          initialName: _displayName,
+                        ),
+                      ),
+                    );
+                    if (updated != null && updated.trim().isNotEmpty) {
+                      setState(() => _displayName = updated.trim());
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text(loc.userNameUpdated)),
+                      );
+                    }
+                  },
+                  icon: const Icon(Icons.edit, size: 18),
+                  label: Text(loc.userNameEdit),
+                ),
               ],
-              const Divider(height: 32),
+            ),
+            const SizedBox(height: 8),
+            if (_user != null && !_authService.currentUser!.isAnonymous) ...[
+              Text(
+                loc.registeredDate(
+                  DateFormat.yMMMd().format(_user!.createdAt),
+                ),
+              ),
+            ],
+            const Divider(height: 32),
 
+            if (_user != null) ...[
               // サブスクリプション管理ボタンに変更（アイコン付き）
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),

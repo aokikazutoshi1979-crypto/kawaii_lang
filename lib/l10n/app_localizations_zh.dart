@@ -240,6 +240,27 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get userNameTitle => '用户名';
+
+  @override
+  String get userNameIntro => '此名称会显示在应用中，可随时更改。';
+
+  @override
+  String get userNameHint => '请输入姓名';
+
+  @override
+  String get userNameContinue => '继续';
+
+  @override
+  String get userNameSave => '保存';
+
+  @override
+  String get userNameEdit => '修改用户名';
+
+  @override
+  String get userNameUpdated => '用户名已更新';
+
+  @override
   String registeredDate(Object date) {
     return '注册日期: $date';
   }
@@ -783,6 +804,27 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String welcomeUser(Object name) {
     return '歡迎，$name';
   }
+
+  @override
+  String get userNameTitle => '使用者名稱';
+
+  @override
+  String get userNameIntro => '此名稱會顯示在應用中，之後可更改。';
+
+  @override
+  String get userNameHint => '請輸入姓名';
+
+  @override
+  String get userNameContinue => '繼續';
+
+  @override
+  String get userNameSave => '儲存';
+
+  @override
+  String get userNameEdit => '變更使用者名稱';
+
+  @override
+  String get userNameUpdated => '使用者名稱已更新';
 
   @override
   String registeredDate(Object date) {

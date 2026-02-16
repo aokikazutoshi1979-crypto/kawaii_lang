@@ -94,6 +94,13 @@
   "passwordResetError": "재설정 이메일 전송에 실패했습니다.",
   "settingsTitle": "설정",
   "welcomeUser": "환영합니다, {name}님",
+  "userNameTitle": "사용자 이름",
+  "userNameIntro": "앱에 표시될 이름이에요. 나중에 변경할 수 있어요.",
+  "userNameHint": "이름을 입력",
+  "userNameContinue": "계속",
+  "userNameSave": "저장",
+  "userNameEdit": "이름 변경",
+  "userNameUpdated": "이름을 업데이트했어요",
   "registeredDate": "등록일: {date}",
   "userFetchFailed": "사용자 정보 가져오기에 실패했습니다 (오류: {error})",
   "@userFetchFailed": {
