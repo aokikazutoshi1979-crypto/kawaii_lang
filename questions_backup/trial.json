@@ -3,10 +3,8 @@
     "id": "trial_greeting_001",
     "scene": "trial",
     "subScene": "greeting",
-    "level": "starter",
-    "tags": [
-      "greeting"
-    ],
+    "level": "beginner",
+    "tags": ["greeting"],
     "translations": {
       "ja": "はじめまして。",
       "en": "Nice to meet you.",
@@ -25,9 +23,7 @@
     "scene": "trial",
     "subScene": "greeting",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "調子はどうですか？",
       "en": "How are you?",
@@ -45,10 +41,8 @@
     "id": "trial_greeting_003",
     "scene": "trial",
     "subScene": "greeting",
-    "level": "starter",
-    "tags": [
-      "greeting"
-    ],
+    "level": "beginner",
+    "tags": ["greeting"],
     "translations": {
       "ja": "またね。",
       "en": "See you later.",
@@ -66,10 +60,8 @@
     "id": "trial_aizuchi_001",
     "scene": "trial",
     "subScene": "aizuchi",
-    "level": "starter",
-    "tags": [
-      "aizuchi"
-    ],
+    "level": "beginner",
+    "tags": ["aizuchi"],
     "translations": {
       "ja": "本当ですか。",
       "en": "Is that true?",
@@ -88,9 +80,7 @@
     "scene": "trial",
     "subScene": "aizuchi",
     "level": "beginner",
-    "tags": [
-      "aizuchi"
-    ],
+    "tags": ["aizuchi"],
     "translations": {
       "ja": "まさにその通り。",
       "en": "Exactly!",
@@ -108,10 +98,8 @@
     "id": "trial_aizuchi_003",
     "scene": "trial",
     "subScene": "aizuchi",
-    "level": "starter",
-    "tags": [
-      "aizuchi"
-    ],
+    "level": "beginner",
+    "tags": ["aizuchi"],
     "translations": {
       "ja": "いいね！",
       "en": "Nice!",
@@ -129,10 +117,8 @@
     "id": "trial_thanks_sorry_001",
     "scene": "trial",
     "subScene": "thanks_sorry",
-    "level": "starter",
-    "tags": [
-      "thanks_sorry"
-    ],
+    "level": "beginner",
+    "tags": ["thanks_sorry"],
     "translations": {
       "ja": "どうもありがとう。",
       "en": "Thank you very much.",
@@ -151,9 +137,7 @@
     "scene": "trial",
     "subScene": "thanks_sorry",
     "level": "beginner",
-    "tags": [
-      "thanks_sorry"
-    ],
+    "tags": ["thanks_sorry"],
     "translations": {
       "ja": "本当に感謝しています",
       "en": "I really appreciate it.",
@@ -171,10 +155,8 @@
     "id": "trial_thanks_sorry_003",
     "scene": "trial",
     "subScene": "thanks_sorry",
-    "level": "starter",
-    "tags": [
-      "thanks_sorry"
-    ],
+    "level": "beginner",
+    "tags": ["thanks_sorry"],
     "translations": {
       "ja": "ごめんなさい。",
       "en": "I’m sorry.",
@@ -193,9 +175,7 @@
     "scene": "trial",
     "subScene": "phrases",
     "level": "beginner",
-    "tags": [
-      "phrases"
-    ],
+    "tags": ["phrases"],
     "translations": {
       "ja": "すみません、トイレはどこですか？",
       "en": "Excuse me, where is the bathroom?",
@@ -214,9 +194,7 @@
     "scene": "trial",
     "subScene": "phrases",
     "level": "beginner",
-    "tags": [
-      "phrases"
-    ],
+    "tags": ["phrases"],
     "translations": {
       "ja": "分かりません。",
       "en": "I don’t understand.",
@@ -235,9 +213,7 @@
     "scene": "trial",
     "subScene": "phrases",
     "level": "beginner",
-    "tags": [
-      "phrases"
-    ],
+    "tags": ["phrases"],
     "translations": {
       "ja": "これはどういう意味ですか？",
       "en": "What does this mean?",

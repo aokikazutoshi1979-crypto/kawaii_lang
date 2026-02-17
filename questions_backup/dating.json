@@ -3,7 +3,7 @@
     "id": "dating_001",
     "scene": "dating",
     "subScene": "dating_first_meeting",
-    "level": "starter",
+    "level": "beginner",
     "tags": [
       "dating"
     ],
@@ -108,7 +108,7 @@
     "id": "dating_006",
     "scene": "dating",
     "subScene": "dating_first_meeting",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [
       "dating"
     ],
@@ -801,7 +801,7 @@
     "id": "dating_039",
     "scene": "dating",
     "subScene": "dating_accept_decline",
-    "level": "starter",
+    "level": "beginner",
     "tags": [
       "dating"
     ],
@@ -1956,7 +1956,7 @@
     "id": "dating_094",
     "scene": "dating",
     "subScene": "dating_goodbye",
-    "level": "starter",
+    "level": "beginner",
     "tags": [
       "dating"
     ],

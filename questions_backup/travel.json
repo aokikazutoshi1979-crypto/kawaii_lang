@@ -4,9 +4,7 @@
     "scene": "travel",
     "subScene": "Arrival",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "私の渡航目的は旅行です。",
       "en": "I'm traveling for leisure.",
@@ -25,9 +23,7 @@
     "scene": "travel",
     "subScene": "Arrival",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "5日間、滞在する予定です。",
       "en": "I plan to stay for 5 days.",
@@ -46,9 +42,7 @@
     "scene": "travel",
     "subScene": "Arrival",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ホテルに泊まるつもりです。",
       "en": "I intend to stay at a hotel.",
@@ -67,9 +61,7 @@
     "scene": "travel",
     "subScene": "Accommodation",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "電話で予約した者です。",
       "en": "I have a reservation by phone.",
@@ -88,9 +80,7 @@
     "scene": "travel",
     "subScene": "Accommodation",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "出かけるので荷物を預かってください。",
       "en": "I'm going out, so please hold my luggage.",
@@ -109,9 +99,7 @@
     "scene": "travel",
     "subScene": "Accommodation",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "チェックインしたいです。",
       "en": "I would like to check in.",
@@ -130,9 +118,7 @@
     "scene": "travel",
     "subScene": "Transportation",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "バス停はどこですか？",
       "en": "Where is the bus stop?",
@@ -151,9 +137,7 @@
     "scene": "travel",
     "subScene": "Transportation",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "この電車は東京へ行きますか？",
       "en": "Does this train go to Tokyo?",
@@ -172,9 +156,7 @@
     "scene": "travel",
     "subScene": "Transportation",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "チケットはどこで買えばいいですか？",
       "en": "Where can I buy tickets?",
@@ -193,9 +175,7 @@
     "scene": "travel",
     "subScene": "Sightseeing",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "この近くに人気の観光スポットはどこですか？",
       "en": "Which popular tourist spots are nearby?",
@@ -214,9 +194,7 @@
     "scene": "travel",
     "subScene": "Sightseeing",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "美術館の開館時間を教えてください。",
       "en": "What are the opening hours of the art museum?",
@@ -235,9 +213,7 @@
     "scene": "travel",
     "subScene": "Sightseeing",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "英語の音声ガイドは利用できますか？",
       "en": "Is an English audio guide available?",
@@ -256,9 +232,7 @@
     "scene": "travel",
     "subScene": "Sightseeing",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "入場料はいくらですか？",
       "en": "How much is the entrance fee?",
@@ -277,9 +251,7 @@
     "scene": "travel",
     "subScene": "Sightseeing",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "博物館の写真撮影は許可されていますか？",
       "en": "Is photography allowed in the museum?",
@@ -298,9 +270,7 @@
     "scene": "travel",
     "subScene": "Sightseeing",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ガイドツアーの予約をしたいです。",
       "en": "I would like to book a guided tour.",
@@ -319,9 +289,7 @@
     "scene": "travel",
     "subScene": "Sightseeing",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "おすすめの展望台はどこですか？",
       "en": "Which lookout point do you recommend?",
@@ -340,9 +308,7 @@
     "scene": "travel",
     "subScene": "Sightseeing",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "所要時間はどれくらいですか？",
       "en": "How long does it take?",
@@ -361,9 +327,7 @@
     "scene": "travel",
     "subScene": "Sightseeing",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "次の観光バスは何時に出発しますか？",
       "en": "What time does the next tour bus depart?",
@@ -382,9 +346,7 @@
     "scene": "travel",
     "subScene": "Sightseeing",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "オープンエアツアーに参加したいです。",
       "en": "I would like to join the open‑air tour.",
@@ -403,9 +365,7 @@
     "scene": "travel",
     "subScene": "Meals",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "こちらのレストランのおすすめ料理は何ですか？",
       "en": "What is the recommended dish at this restaurant?",
@@ -424,9 +384,7 @@
     "scene": "travel",
     "subScene": "Meals",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ベジタリアンメニューはありますか？",
       "en": "Do you have vegetarian options?",
@@ -445,9 +403,7 @@
     "scene": "travel",
     "subScene": "Meals",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "２名で予約を取りたいです。",
       "en": "I would like to make a reservation for two.",
@@ -466,9 +422,7 @@
     "scene": "travel",
     "subScene": "Meals",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "喫煙席と禁煙席はありますか？",
       "en": "Do you have smoking and non‑smoking sections?",
@@ -487,9 +441,7 @@
     "scene": "travel",
     "subScene": "Meals",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "英語のメニューをお願いします。",
       "en": "Could I have the menu in English, please?",
@@ -508,9 +460,7 @@
     "scene": "travel",
     "subScene": "Meals",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "デザートメニューを見せてください。",
       "en": "Please show me the dessert menu.",
@@ -529,9 +479,7 @@
     "scene": "travel",
     "subScene": "Meals",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "アレルギー情報を教えてください。",
       "en": "Please tell me about allergy information.",
@@ -550,9 +498,7 @@
     "scene": "travel",
     "subScene": "Meals",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "テイクアウトは可能ですか？",
       "en": "Is takeout available?",
@@ -571,9 +517,7 @@
     "scene": "travel",
     "subScene": "Meals",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "お会計を別々にできますか？",
       "en": "Can we have separate bills?",
@@ -592,9 +536,7 @@
     "scene": "travel",
     "subScene": "Meals",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ランチセットを注文したいです。",
       "en": "I would like to order the lunch set.",
@@ -613,9 +555,7 @@
     "scene": "travel",
     "subScene": "Shopping",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "このお土産品はいくらですか？",
       "en": "How much is this souvenir?",
@@ -634,9 +574,7 @@
     "scene": "travel",
     "subScene": "Shopping",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "値引きは可能ですか？",
       "en": "Is a discount possible?",
@@ -655,9 +593,7 @@
     "scene": "travel",
     "subScene": "Shopping",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "クレジットカードで支払えますか？",
       "en": "Can I pay by credit card?",
@@ -676,9 +612,7 @@
     "scene": "travel",
     "subScene": "Shopping",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "免税手続きの方法を教えてください。",
       "en": "Please tell me how to complete the tax refund procedure.",
@@ -697,9 +631,7 @@
     "scene": "travel",
     "subScene": "Shopping",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "試着したいのですが、何号がありますか？",
       "en": "I would like to try this on; what sizes do you have?",
@@ -718,9 +650,7 @@
     "scene": "travel",
     "subScene": "Shopping",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "サイズ交換はできますか？",
       "en": "Can I exchange for a different size?",
@@ -739,9 +669,7 @@
     "scene": "travel",
     "subScene": "Shopping",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "包装をお願いしたいです。",
       "en": "I would like this gift wrapped, please.",
@@ -760,9 +688,7 @@
     "scene": "travel",
     "subScene": "Shopping",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "レシートを英語で発行できますか？",
       "en": "Can I get the receipt in English?",
@@ -781,9 +707,7 @@
     "scene": "travel",
     "subScene": "Shopping",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "この商品は在庫がありますか？",
       "en": "Is this item in stock?",
@@ -802,9 +726,7 @@
     "scene": "travel",
     "subScene": "Shopping",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "おすすめのお土産を教えてください。",
       "en": "Please recommend some souvenirs.",
@@ -823,9 +745,7 @@
     "scene": "travel",
     "subScene": "Communications_Internet",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "この国で使えるSIMカードはどこで買えますか？",
       "en": "Where can I buy a SIM card usable in this country?",
@@ -844,9 +764,7 @@
     "scene": "travel",
     "subScene": "Communications_Internet",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "プリペイドSIMのチャージ方法を教えてください。",
       "en": "Please tell me how to recharge the prepaid SIM.",
@@ -864,10 +782,8 @@
     "id": "travel_042",
     "scene": "travel",
     "subScene": "Communications_Internet",
-    "level": "intermediate",
-    "tags": [
-      "greeting"
-    ],
+    "level": "beginner",
+    "tags": ["greeting"],
     "translations": {
       "ja": "Wi‑Fiのパスワードを教えていただけますか？",
       "en": "Could you tell me the Wi‑Fi password?",
@@ -886,9 +802,7 @@
     "scene": "travel",
     "subScene": "Communications_Internet",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ホテルのWi‑Fiは無料で使えますか？",
       "en": "Is the hotel Wi‑Fi free to use?",
@@ -907,9 +821,7 @@
     "scene": "travel",
     "subScene": "Communications_Internet",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "インターネットカフェは近くにありますか？",
       "en": "Is there an internet café nearby?",
@@ -928,30 +840,26 @@
     "scene": "travel",
     "subScene": "Communications_Internet",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "国際電話をかけるにはどうすればいいですか？",
       "en": "How do I make an international call?",
       "zh": "如何拨打国际电话？",
       "zh_TW": "如何撥打國際電話？",
       "ko": "국제 전화를 걸려면 어떻게 해야 하나요?",
-      "es": "¿Cómo hago una llamada internacional?",
+      "es": "¿Cómo hago una llamada internacional?",  
       "fr": "Comment passer un appel international ?",
       "de": "Wie tätige ich einen internationalen Anruf?",
       "vi": "Làm thế nào để gọi điện quốc tế?",
       "id": "Bagaimana cara melakukan panggilan internasional?"
     }
   },
-  {
+  {  
     "id": "travel_046",
     "scene": "travel",
     "subScene": "Communications_Internet",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "公衆Wi‑Fiの安全性は大丈夫ですか？",
       "en": "Is public Wi‑Fi safe?",
@@ -970,9 +878,7 @@
     "scene": "travel",
     "subScene": "Communications_Internet",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "SIMカードの挿入方法がわかりません。",
       "en": "I don't know how to insert the SIM card.",
@@ -991,9 +897,7 @@
     "scene": "travel",
     "subScene": "Communications_Internet",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "モバイルバッテリーを貸してもらえますか？",
       "en": "Could I borrow a mobile battery?",
@@ -1012,9 +916,7 @@
     "scene": "travel",
     "subScene": "Communications_Internet",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "電源プラグの形状は何ですか？",
       "en": "What type of power plug does it use?",
@@ -1033,9 +935,7 @@
     "scene": "travel",
     "subScene": "Exchange_Banking",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "両替所はどこにありますか？",
       "en": "Where is the currency exchange?",
@@ -1054,9 +954,7 @@
     "scene": "travel",
     "subScene": "Exchange_Banking",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "何時まで両替できますか？",
       "en": "Until what time can I exchange money?",
@@ -1075,9 +973,7 @@
     "scene": "travel",
     "subScene": "Exchange_Banking",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "両替手数料はいくらですか？",
       "en": "What are the exchange fees?",
@@ -1096,9 +992,7 @@
     "scene": "travel",
     "subScene": "Exchange_Banking",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "パスポートが必要ですか？",
       "en": "Do I need a passport?",
@@ -1117,9 +1011,7 @@
     "scene": "travel",
     "subScene": "Exchange_Banking",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ATMで現地通貨を引き出せますか？",
       "en": "Can I withdraw local currency from an ATM?",
@@ -1138,9 +1030,7 @@
     "scene": "travel",
     "subScene": "Exchange_Banking",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "１万円をドルに両替するといくらになりますか？",
       "en": "How much is ¥10,000 in dollars?",
@@ -1159,9 +1049,7 @@
     "scene": "travel",
     "subScene": "Exchange_Banking",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "クレジットカードで現金引き出しは可能ですか？",
       "en": "Can I withdraw cash with a credit card?",
@@ -1180,9 +1068,7 @@
     "scene": "travel",
     "subScene": "Exchange_Banking",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "手数料なしの両替所はありますか？",
       "en": "Is there an exchange with no fees?",
@@ -1201,9 +1087,7 @@
     "scene": "travel",
     "subScene": "Exchange_Banking",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "銀行の営業時間を教えてください。",
       "en": "What are the bank's business hours?",
@@ -1222,9 +1106,7 @@
     "scene": "travel",
     "subScene": "Exchange_Banking",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "海外送金をしたいのですが、手順を教えてください。",
       "en": "I would like to send an international transfer; please tell me the procedure.",
@@ -1243,9 +1125,7 @@
     "scene": "travel",
     "subScene": "Emergencies",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "病院はどこですか？",
       "en": "Where is the hospital?",
@@ -1264,9 +1144,7 @@
     "scene": "travel",
     "subScene": "Emergencies",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "緊急連絡先を教えてください。",
       "en": "Please tell me the emergency contact number.",
@@ -1285,9 +1163,7 @@
     "scene": "travel",
     "subScene": "Emergencies",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "薬局は近くにありますか？",
       "en": "Is there a pharmacy nearby?",
@@ -1306,9 +1182,7 @@
     "scene": "travel",
     "subScene": "Emergencies",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "警察を呼びたいのですが。",
       "en": "I would like to call the police.",
@@ -1327,9 +1201,7 @@
     "scene": "travel",
     "subScene": "Emergencies",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "事故が起きました、助けてください。",
       "en": "There's been an accident; please help.",
@@ -1348,9 +1220,7 @@
     "scene": "travel",
     "subScene": "Emergencies",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "道に迷いました、助けを呼びたいです。",
       "en": "I'm lost; I'd like to ask for help.",
@@ -1369,9 +1239,7 @@
     "scene": "travel",
     "subScene": "Emergencies",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "救急車を呼んでください。",
       "en": "Please call an ambulance.",
@@ -1390,9 +1258,7 @@
     "scene": "travel",
     "subScene": "Emergencies",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "財布を落としてしまいました。",
       "en": "I've lost my wallet.",
@@ -1411,9 +1277,7 @@
     "scene": "travel",
     "subScene": "Emergencies",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "パスポートを紛失しました。",
       "en": "I've lost my passport.",
@@ -1432,9 +1296,7 @@
     "scene": "travel",
     "subScene": "Emergencies",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "火事が発生しました、どうすればいいですか？",
       "en": "There's a fire; what should I do?",
@@ -1453,9 +1315,7 @@
     "scene": "travel",
     "subScene": "Guide_Map",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "この地図の見方を教えてください。",
       "en": "Please explain how to read this map.",
@@ -1474,9 +1334,7 @@
     "scene": "travel",
     "subScene": "Guide_Map",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ここから駅までどう行けばいいですか？",
       "en": "How do I get to the station from here?",
@@ -1495,9 +1353,7 @@
     "scene": "travel",
     "subScene": "Guide_Map",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "次の角を右に曲がるとどこに出ますか？",
       "en": "If I turn right at the next corner, where will I end up?",
@@ -1516,9 +1372,7 @@
     "scene": "travel",
     "subScene": "Guide_Map",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "徒歩でどれくらいかかりますか？",
       "en": "How long does it take on foot?",
@@ -1537,9 +1391,7 @@
     "scene": "travel",
     "subScene": "Guide_Map",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "タクシー乗り場はどこですか？",
       "en": "Where is the taxi stand?",
@@ -1558,9 +1410,7 @@
     "scene": "travel",
     "subScene": "Guide_Map",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "近くにバス停はありますか？",
       "en": "Is there a bus stop nearby?",
@@ -1578,10 +1428,8 @@
     "id": "travel_076",
     "scene": "travel",
     "subScene": "Guide_Map",
-    "level": "intermediate",
-    "tags": [
-      "greeting"
-    ],
+    "level": "beginner",
+    "tags": ["greeting"],
     "translations": {
       "ja": "地下鉄の路線図をいただけますか？",
       "en": "Could you give me a subway map?",
@@ -1600,9 +1448,7 @@
     "scene": "travel",
     "subScene": "Guide_Map",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "道に迷ったとき、どうすればいいですか？",
       "en": "What should I do if I get lost?",
@@ -1621,9 +1467,7 @@
     "scene": "travel",
     "subScene": "Guide_Map",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "GPSがうまく動かないのですが、どうしたらいいですか？",
       "en": "My GPS isn't working well; what should I do?",
@@ -1642,9 +1486,7 @@
     "scene": "travel",
     "subScene": "Guide_Map",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "最寄りのランドマークを教えてください。",
       "en": "Please tell me the nearest landmark.",
@@ -1663,9 +1505,7 @@
     "scene": "travel",
     "subScene": "Culture_Customs",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "写真を撮ってもいいですか？",
       "en": "May I take a photo?",
@@ -1684,9 +1524,7 @@
     "scene": "travel",
     "subScene": "Culture_Customs",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "挨拶の仕方はどのようにしますか？",
       "en": "How do I greet people?",
@@ -1694,7 +1532,7 @@
       "zh_TW": "我該如何打招呼？",
       "ko": "인사하는 방법은 어떻게 하나요?",
       "es": "¿Cómo saludo a la gente?",
-      "fr": "Comment dois‑je saluer les gens ?",
+      "fr": "Comment dois‑je saluer les gens ?",  
       "de": "Wie grüßt man die Leute?",
       "vi": "Tôi chào hỏi mọi người như thế nào?",
       "id": "Bagaimana saya menyapa orang?"
@@ -1705,9 +1543,7 @@
     "scene": "travel",
     "subScene": "Culture_Customs",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "レストランでチップは必要ですか？",
       "en": "Is tipping required in restaurants?",
@@ -1726,9 +1562,7 @@
     "scene": "travel",
     "subScene": "Culture_Customs",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "靴を脱ぐ必要はありますか？",
       "en": "Do I need to remove my shoes?",
@@ -1747,9 +1581,7 @@
     "scene": "travel",
     "subScene": "Culture_Customs",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "お辞儀の仕方を教えてください。",
       "en": "Please teach me how to bow.",
@@ -1768,9 +1600,7 @@
     "scene": "travel",
     "subScene": "Culture_Customs",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "お酒の場でのマナーは何ですか？",
       "en": "What are the etiquette rules when drinking?",
@@ -1789,9 +1619,7 @@
     "scene": "travel",
     "subScene": "Culture_Customs",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "公共の場で大声で話してもいいですか？",
       "en": "Is it okay to speak loudly in public spaces?",
@@ -1810,9 +1638,7 @@
     "scene": "travel",
     "subScene": "Culture_Customs",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "お祭りに参加する際のルールは？",
       "en": "What are the rules for participating in festivals?",
@@ -1831,9 +1657,7 @@
     "scene": "travel",
     "subScene": "Culture_Customs",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "寺院での服装や振る舞いで注意すべきことは？",
       "en": "What should I be mindful of regarding attire and behavior at temples?",
@@ -1852,9 +1676,7 @@
     "scene": "travel",
     "subScene": "Culture_Customs",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "祝日や休日の営業日はどうなっていますか？",
       "en": "What are the business hours on holidays?",
@@ -1873,9 +1695,7 @@
     "scene": "travel",
     "subScene": "Experiences_Activities",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "料理教室に参加したいです。",
       "en": "I would like to join a cooking class.",
@@ -1894,9 +1714,7 @@
     "scene": "travel",
     "subScene": "Experiences_Activities",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "現地の伝統工芸体験はありますか？",
       "en": "Is there a local traditional craft experience?",
@@ -1915,9 +1733,7 @@
     "scene": "travel",
     "subScene": "Experiences_Activities",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "日帰りツアーを予約したいです。",
       "en": "I would like to book a day tour.",
@@ -1936,9 +1752,7 @@
     "scene": "travel",
     "subScene": "Experiences_Activities",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ダイビングツアーの申し込みはどこでできますか？",
       "en": "Where can I sign up for a diving tour?",
@@ -1957,9 +1771,7 @@
     "scene": "travel",
     "subScene": "Experiences_Activities",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "マウンテンバイクを借りたいです。",
       "en": "I would like to rent a mountain bike.",
@@ -1978,9 +1790,7 @@
     "scene": "travel",
     "subScene": "Experiences_Activities",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ワイナリーツアーの時間を教えてください。",
       "en": "Please tell me the time of the winery tour.",
@@ -1999,9 +1809,7 @@
     "scene": "travel",
     "subScene": "Experiences_Activities",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "おすすめのナイトクルーズは何ですか？",
       "en": "What night cruise do you recommend?",
@@ -2020,9 +1828,7 @@
     "scene": "travel",
     "subScene": "Experiences_Activities",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ワークショップの予約状況を確認したいです。",
       "en": "I want to check the reservation status of the workshop.",
@@ -2041,9 +1847,7 @@
     "scene": "travel",
     "subScene": "Experiences_Activities",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "写真撮影ツアーに参加したいです。",
       "en": "I would like to join a photo tour.",
@@ -2062,9 +1866,7 @@
     "scene": "travel",
     "subScene": "Experiences_Activities",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "海外音楽フェスのチケットを購入したいです。",
       "en": "I would like to purchase tickets for an international music festival.",

@@ -4,9 +4,7 @@
     "scene": "shopping",
     "subScene": "Searchforproducts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "水を探しています。",
       "en": "I'm looking for water.",
@@ -25,9 +23,7 @@
     "scene": "shopping",
     "subScene": "Searchforproducts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ジュースはどこですか？",
       "en": "Where is the juice?",
@@ -46,9 +42,7 @@
     "scene": "shopping",
     "subScene": "Searchforproducts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "これを見せてください。",
       "en": "Please show me this.",
@@ -67,9 +61,7 @@
     "scene": "shopping",
     "subScene": "Searchforproducts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "この商品の他のサイズはありますか？",
       "en": "Do you have other sizes of this item?",
@@ -88,9 +80,7 @@
     "scene": "shopping",
     "subScene": "Searchforproducts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "この商品の他の色はありますか？",
       "en": "Do you have other colors of this item?",
@@ -109,9 +99,7 @@
     "scene": "shopping",
     "subScene": "Searchforproducts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "他に何かありますか？",
       "en": "Do you have anything else?",
@@ -130,9 +118,7 @@
     "scene": "shopping",
     "subScene": "Searchforproducts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "試着できますか？",
       "en": "Can I try this on?",
@@ -151,9 +137,7 @@
     "scene": "shopping",
     "subScene": "Searchforproducts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "これを買います。",
       "en": "I’ll buy this.",
@@ -172,9 +156,7 @@
     "scene": "shopping",
     "subScene": "Purchase",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "この商品をラッピングしてもらえますか？",
       "en": "Can you gift-wrap this item?",
@@ -193,9 +175,7 @@
     "scene": "shopping",
     "subScene": "Purchase",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "合計金額はいくらですか？",
       "en": "What is the total amount?",
@@ -214,9 +194,7 @@
     "scene": "shopping",
     "subScene": "Purchase",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "現金で支払えますか？",
       "en": "Can I pay in cash?",
@@ -235,9 +213,7 @@
     "scene": "shopping",
     "subScene": "Purchase",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "クレジットカードで支払えますか？",
       "en": "Can I pay by credit card?",
@@ -256,9 +232,7 @@
     "scene": "shopping",
     "subScene": "Paymentmethods",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ポイントは使えますか？",
       "en": "Can I use points?",
@@ -277,9 +251,7 @@
     "scene": "shopping",
     "subScene": "Paymentmethods",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "電子マネー（Suica、Pasmoなど）は使えますか？",
       "en": "Can I use electronic money (Suica, Pasmo, etc.)?",
@@ -298,9 +270,7 @@
     "scene": "shopping",
     "subScene": "Paymentmethods",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "QRコード決済に対応していますか？",
       "en": "Do you support QR code payments?",
@@ -319,9 +289,7 @@
     "scene": "shopping",
     "subScene": "Paymentmethods",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "分割払いは可能ですか？",
       "en": "Is installment payment available?",
@@ -340,9 +308,7 @@
     "scene": "shopping",
     "subScene": "Paymentmethods",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "後払いサービスはありますか？",
       "en": "Do you offer a buy now, pay later service?",
@@ -361,9 +327,7 @@
     "scene": "shopping",
     "subScene": "Paymentmethods",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ギフトカードは使えますか？",
       "en": "Can I use a gift card?",
@@ -382,15 +346,13 @@
     "scene": "shopping",
     "subScene": "Paymentmethods",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "会員ポイントは貯まりますか？",
       "en": "Do I earn membership points?",
       "zh": "可以累计会员积分吗？",
       "zh_TW": "會員點數可以累積嗎？",
-      "ko": "멤버십 포인트가 적립되나요?",
+      "ko": "멤버십 포인트가 적립되나요?",  
       "es": "¿Se acumulan puntos de miembro?",
       "fr": "Les points de fidélité sont‑ils cumulables ?",
       "de": "Sammle ich Mitgliedspunkte?",
@@ -403,9 +365,7 @@
     "scene": "shopping",
     "subScene": "Paymentmethods",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "外国通貨で支払えますか？",
       "en": "Can I pay with foreign currency?",
@@ -424,9 +384,7 @@
     "scene": "shopping",
     "subScene": "Paymentmethods",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "タッチレス決済は利用できますか？",
       "en": "Is contactless payment available?",
@@ -445,9 +403,7 @@
     "scene": "shopping",
     "subScene": "Paymentmethods",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "店頭での支払いオプションは何がありますか？",
       "en": "What payment options do you have in store?",
@@ -466,9 +422,7 @@
     "scene": "shopping",
     "subScene": "Returnsandexchanges",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "サイズが合わなかったら交換できますか？",
       "en": "If the size doesn’t fit, can I exchange it?",
@@ -487,9 +441,7 @@
     "scene": "shopping",
     "subScene": "Returnsandexchanges",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "購入後何日以内に返品できますか？",
       "en": "How many days after purchase can I return it?",
@@ -508,9 +460,7 @@
     "scene": "shopping",
     "subScene": "Returnsandexchanges",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "レシートがなくても返品できますか？",
       "en": "Can I return it without a receipt?",
@@ -529,9 +479,7 @@
     "scene": "shopping",
     "subScene": "Returnsandexchanges",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "不良品の場合はどうすればいいですか？",
       "en": "What should I do if the product is defective?",
@@ -550,9 +498,7 @@
     "scene": "shopping",
     "subScene": "Returnsandexchanges",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "返品の際の手数料はいくらですか？",
       "en": "How much is the handling fee for returns?",
@@ -571,9 +517,7 @@
     "scene": "shopping",
     "subScene": "Returnsandexchanges",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "オンライン購入品の返品方法を教えてください。",
       "en": "Please tell me how to return items purchased online.",
@@ -592,9 +536,7 @@
     "scene": "shopping",
     "subScene": "Returnsandexchanges",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "返品したら返金はいつされますか？",
       "en": "When will I be refunded after returning?",
@@ -613,9 +555,7 @@
     "scene": "shopping",
     "subScene": "Returnsandexchanges",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ギフト包装品の返品は可能ですか？",
       "en": "Can I return gift-wrapped items?",
@@ -634,9 +574,7 @@
     "scene": "shopping",
     "subScene": "Returnsandexchanges",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "交換の場合、差額の支払い方法は？",
       "en": "For exchanges, how do I pay the price difference?",
@@ -655,9 +593,7 @@
     "scene": "shopping",
     "subScene": "Returnsandexchanges",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "返品手続きはどこで行いますか？",
       "en": "Where do I complete the return procedure?",
@@ -676,9 +612,7 @@
     "scene": "shopping",
     "subScene": "Productdetails",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "この商品の素材は何ですか？",
       "en": "What is the material of this product?",
@@ -697,9 +631,7 @@
     "scene": "shopping",
     "subScene": "Productdetails",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "この商品は防水機能がありますか？",
       "en": "Does this product have waterproof functionality?",
@@ -718,9 +650,7 @@
     "scene": "shopping",
     "subScene": "Productdetails",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "サイズチャートを見せてください。",
       "en": "Please show me the size chart.",
@@ -739,9 +669,7 @@
     "scene": "shopping",
     "subScene": "Productdetails",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "重量はどれくらいですか？",
       "en": "How much does it weigh?",
@@ -760,9 +688,7 @@
     "scene": "shopping",
     "subScene": "Productdetails",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "メーカー保証は付いていますか？",
       "en": "Is a manufacturer’s warranty included?",
@@ -781,9 +707,7 @@
     "scene": "shopping",
     "subScene": "Productdetails",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "電源が必要ですか？",
       "en": "Does it require power?",
@@ -802,9 +726,7 @@
     "scene": "shopping",
     "subScene": "Productdetails",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "これはオーガニック素材ですか？",
       "en": "Is this an organic material?",
@@ -823,9 +745,7 @@
     "scene": "shopping",
     "subScene": "Productdetails",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "使い方の説明書はありますか？",
       "en": "Do you have an instruction manual?",
@@ -844,9 +764,7 @@
     "scene": "shopping",
     "subScene": "Productdetails",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "バッテリーの持ちはどれくらいですか？",
       "en": "How long does the battery last?",
@@ -865,9 +783,7 @@
     "scene": "shopping",
     "subScene": "Productdetails",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "アレルギー情報を教えてください。",
       "en": "Please tell me the allergy information.",
@@ -886,9 +802,7 @@
     "scene": "shopping",
     "subScene": "Campaignsanddiscounts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "今セール中の商品はありますか？",
       "en": "Are there any items on sale now?",
@@ -907,9 +821,7 @@
     "scene": "shopping",
     "subScene": "Campaignsanddiscounts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "割引クーポンは使えますか？",
       "en": "Can I use a discount coupon?",
@@ -928,9 +840,7 @@
     "scene": "shopping",
     "subScene": "Campaignsanddiscounts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "会員限定セールの詳細を教えてください。",
       "en": "Please tell me the details of the members-only sale.",
@@ -949,9 +859,7 @@
     "scene": "shopping",
     "subScene": "Campaignsanddiscounts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "まとめ買い割引はありますか？",
       "en": "Is there a bulk purchase discount?",
@@ -970,9 +878,7 @@
     "scene": "shopping",
     "subScene": "Campaignsanddiscounts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "学生割引は適用できますか？",
       "en": "Can I apply a student discount?",
@@ -991,9 +897,7 @@
     "scene": "shopping",
     "subScene": "Campaignsanddiscounts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ポイントアップキャンペーンはいつですか？",
       "en": "When is the points-up campaign?",
@@ -1012,9 +916,7 @@
     "scene": "shopping",
     "subScene": "Campaignsanddiscounts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "期間限定クーポンコードを教えてください。",
       "en": "Please tell me the limited-time coupon code.",
@@ -1033,9 +935,7 @@
     "scene": "shopping",
     "subScene": "Campaignsanddiscounts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ブランドデー割引はありますか？",
       "en": "Is there a brand day discount?",
@@ -1054,9 +954,7 @@
     "scene": "shopping",
     "subScene": "Campaignsanddiscounts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "前回購入者限定割引は利用可能ですか？",
       "en": "Is the returning customer discount available?",
@@ -1075,9 +973,7 @@
     "scene": "shopping",
     "subScene": "Campaignsanddiscounts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "二点目半額キャンペーンは実施中ですか？",
       "en": "Is the second-item-half-price campaign ongoing?",
@@ -1096,9 +992,7 @@
     "scene": "shopping",
     "subScene": "Deliveryandhomedelivery",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "自宅まで配送できますか？",
       "en": "Can you deliver to my home?",
@@ -1117,9 +1011,7 @@
     "scene": "shopping",
     "subScene": "Deliveryandhomedelivery",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "送料はいくらかかりますか？",
       "en": "How much is the shipping fee?",
@@ -1138,9 +1030,7 @@
     "scene": "shopping",
     "subScene": "Deliveryandhomedelivery",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "配送にかかる日数はどれくらいですか？",
       "en": "How many days will delivery take?",
@@ -1159,9 +1049,7 @@
     "scene": "shopping",
     "subScene": "Deliveryandhomedelivery",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "即日配送は可能ですか？",
       "en": "Is same-day delivery available?",
@@ -1180,9 +1068,7 @@
     "scene": "shopping",
     "subScene": "Deliveryandhomedelivery",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "配送状況を追跡する方法を教えてください。",
       "en": "Please tell me how to track the delivery status.",
@@ -1201,9 +1087,7 @@
     "scene": "shopping",
     "subScene": "Deliveryandhomedelivery",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "コンビニ受取はできますか？",
       "en": "Can I pick it up at a convenience store?",
@@ -1222,9 +1106,7 @@
     "scene": "shopping",
     "subScene": "Deliveryandhomedelivery",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "海外配送に対応していますか？",
       "en": "Do you offer international shipping?",
@@ -1243,9 +1125,7 @@
     "scene": "shopping",
     "subScene": "Deliveryandhomedelivery",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "配送日時の指定はできますか？",
       "en": "Can I specify the delivery date and time?",
@@ -1264,9 +1144,7 @@
     "scene": "shopping",
     "subScene": "Deliveryandhomedelivery",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "不在時の再配達はどのように頼めますか？",
       "en": "How can I request a re-delivery if I’m not home?",
@@ -1284,10 +1162,8 @@
     "id": "shopping_062",
     "scene": "shopping",
     "subScene": "Deliveryandhomedelivery",
-    "level": "intermediate",
-    "tags": [
-      "greeting"
-    ],
+    "level": "beginner",
+    "tags": ["greeting"],
     "translations": {
       "ja": "梱包を丁寧にお願いできますか？",
       "en": "Could you please pack it carefully?",
@@ -1306,9 +1182,7 @@
     "scene": "shopping",
     "subScene": "Membershipregistrationandpoints",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "新規会員登録をしたいです。",
       "en": "I’d like to register as a new member.",
@@ -1327,9 +1201,7 @@
     "scene": "shopping",
     "subScene": "Membershipregistrationandpoints",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "会員カードはどこでもらえますか？",
       "en": "Where can I get a membership card?",
@@ -1348,9 +1220,7 @@
     "scene": "shopping",
     "subScene": "Membershipregistrationandpoints",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ポイントは何ポイントから使えますか？",
       "en": "What is the minimum number of points required to use them?",
@@ -1369,9 +1239,7 @@
     "scene": "shopping",
     "subScene": "Membershipregistrationandpoints",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ポイント残高を確認できますか？",
       "en": "Can I check my points balance?",
@@ -1390,9 +1258,7 @@
     "scene": "shopping",
     "subScene": "Membershipregistrationandpoints",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "会員特典の内容を教えてください。",
       "en": "Please tell me the member benefits.",
@@ -1411,9 +1277,7 @@
     "scene": "shopping",
     "subScene": "Membershipregistrationandpoints",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "年会費はかかりますか？",
       "en": "Is there an annual membership fee?",
@@ -1432,9 +1296,7 @@
     "scene": "shopping",
     "subScene": "Membershipregistrationandpoints",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "会員登録に必要なものは何ですか？",
       "en": "What do I need to register as a member?",
@@ -1453,9 +1315,7 @@
     "scene": "shopping",
     "subScene": "Membershipregistrationandpoints",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ポイントはいつまで有効ですか？",
       "en": "Until when are the points valid?",
@@ -1474,9 +1334,7 @@
     "scene": "shopping",
     "subScene": "Membershipregistrationandpoints",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "会員ランクはどうやって上がりますか？",
       "en": "How do I upgrade my membership rank?",
@@ -1495,9 +1353,7 @@
     "scene": "shopping",
     "subScene": "Membershipregistrationandpoints",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "メールマガジンを解除したいです。",
       "en": "I want to unsubscribe from the newsletter.",
@@ -1516,9 +1372,7 @@
     "scene": "shopping",
     "subScene": "Try-onandfitting",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "試着室はどこですか？",
       "en": "Where is the fitting room?",
@@ -1537,9 +1391,7 @@
     "scene": "shopping",
     "subScene": "Try-onandfitting",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "この服を試着してもいいですか？",
       "en": "May I try on these clothes?",
@@ -1558,9 +1410,7 @@
     "scene": "shopping",
     "subScene": "Try-onandfitting",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "大きめのサイズを試着したいです。",
       "en": "I’d like to try a larger size.",
@@ -1579,9 +1429,7 @@
     "scene": "shopping",
     "subScene": "Try-onandfitting",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "靴を試着したいのですが、在庫はありますか？",
       "en": "I’d like to try on these shoes; are they in stock?",
@@ -1600,9 +1448,7 @@
     "scene": "shopping",
     "subScene": "Try-onandfitting",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "試着後、他のサイズも持ってきてください。",
       "en": "After I try it on, please bring me another size as well.",
@@ -1621,9 +1467,7 @@
     "scene": "shopping",
     "subScene": "Try-onandfitting",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "フィッティングルームに鏡はありますか？",
       "en": "Is there a mirror in the fitting room?",
@@ -1642,9 +1486,7 @@
     "scene": "shopping",
     "subScene": "Try-onandfitting",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "試着後に荷物を預けられますか？",
       "en": "Can I store my belongings after trying on?",
@@ -1663,9 +1505,7 @@
     "scene": "shopping",
     "subScene": "Try-onandfitting",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "試着室の中で写真を撮ってもいいですか？",
       "en": "May I take photos inside the fitting room?",
@@ -1684,9 +1524,7 @@
     "scene": "shopping",
     "subScene": "Try-onandfitting",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "着たままレジに持って行けますか？",
       "en": "Can I bring it to the checkout while wearing it?",
@@ -1705,9 +1543,7 @@
     "scene": "shopping",
     "subScene": "Try-onandfitting",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "試着済みの商品を購入するときの手続きは？",
       "en": "What is the procedure for purchasing an item after trying it on?",
@@ -1726,9 +1562,7 @@
     "scene": "shopping",
     "subScene": "After-salesserviceandwarranty",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "この商品の保証期間はどれくらいですか？",
       "en": "What is the warranty period for this product?",
@@ -1747,9 +1581,7 @@
     "scene": "shopping",
     "subScene": "After-salesserviceandwarranty",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "保証書は発行されますか？",
       "en": "Will a warranty certificate be issued?",
@@ -1768,9 +1600,7 @@
     "scene": "shopping",
     "subScene": "After-salesserviceandwarranty",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "修理はどこにお願いすればいいですか？",
       "en": "Where should I request repairs?",
@@ -1789,9 +1619,7 @@
     "scene": "shopping",
     "subScene": "After-salesserviceandwarranty",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "延長保証はできますか？",
       "en": "Can I get an extended warranty?",
@@ -1810,9 +1638,7 @@
     "scene": "shopping",
     "subScene": "After-salesserviceandwarranty",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "保証対象外のケースは何ですか？",
       "en": "What cases are excluded from the warranty?",
@@ -1831,9 +1657,7 @@
     "scene": "shopping",
     "subScene": "After-salesserviceandwarranty",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "故障した場合の連絡先を教えてください。",
       "en": "Please tell me the contact information in case of a malfunction.",
@@ -1852,9 +1676,7 @@
     "scene": "shopping",
     "subScene": "After-salesserviceandwarranty",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "返品ではなく修理を希望します。",
       "en": "I would like repair instead of a return.",
@@ -1873,9 +1695,7 @@
     "scene": "shopping",
     "subScene": "After-salesserviceandwarranty",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "部品交換は可能ですか？",
       "en": "Is it possible to replace parts?",
@@ -1894,9 +1714,7 @@
     "scene": "shopping",
     "subScene": "After-salesserviceandwarranty",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "購入後のメンテナンス方法を教えてください。",
       "en": "Please tell me how to maintain it after purchase.",
@@ -1915,9 +1733,7 @@
     "scene": "shopping",
     "subScene": "After-salesserviceandwarranty",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "レシートが必要ですか？",
       "en": "Is a receipt necessary?",
@@ -1936,9 +1752,7 @@
     "scene": "shopping",
     "subScene": "Storeinformationandopeninghours",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "この店舗の営業時間を教えてください。",
       "en": "Please tell me the business hours of this store.",
@@ -1957,9 +1771,7 @@
     "scene": "shopping",
     "subScene": "Storeinformationandopeninghours",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "定休日はいつですか？",
       "en": "What days is the store regularly closed?",
@@ -1978,9 +1790,7 @@
     "scene": "shopping",
     "subScene": "Storeinformationandopeninghours",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "他の店舗は近くにありますか？",
       "en": "Are there other stores nearby?",
@@ -1999,9 +1809,7 @@
     "scene": "shopping",
     "subScene": "Storeinformationandopeninghours",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "店舗の電話番号を教えてください。",
       "en": "Please tell me the store’s phone number.",
@@ -2020,9 +1828,7 @@
     "scene": "shopping",
     "subScene": "Storeinformationandopeninghours",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "駐車場はありますか？",
       "en": "Is parking available?",
@@ -2041,9 +1847,7 @@
     "scene": "shopping",
     "subScene": "Storeinformationandopeninghours",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "バリアフリー対応はしていますか？",
       "en": "Is barrier-free access available?",
@@ -2062,9 +1866,7 @@
     "scene": "shopping",
     "subScene": "Storeinformationandopeninghours",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "トイレはどこにありますか？",
       "en": "Where is the restroom?",
@@ -2083,9 +1885,7 @@
     "scene": "shopping",
     "subScene": "Storeinformationandopeninghours",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "店内のレイアウトを教えてください。",
       "en": "Please tell me the layout of the store.",
@@ -2104,9 +1904,7 @@
     "scene": "shopping",
     "subScene": "Storeinformationandopeninghours",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "本日の混雑状況はどうですか？",
       "en": "How crowded is it today?",
@@ -2125,9 +1923,7 @@
     "scene": "shopping",
     "subScene": "Storeinformationandopeninghours",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "キッズスペースはありますか？",
       "en": "Is there a kids’ area?",
@@ -2146,9 +1942,7 @@
     "scene": "shopping",
     "subScene": "Support",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "商品に不具合があります。",
       "en": "There is a defect in the product.",
@@ -2167,9 +1961,7 @@
     "scene": "shopping",
     "subScene": "Support",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "購入後に問題があった場合はどうすればいいですか？",
       "en": "What should I do if there is a problem after purchase?",
@@ -2188,9 +1980,7 @@
     "scene": "shopping",
     "subScene": "Support",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "紛失・盗難の対応を教えてください。",
       "en": "Please tell me how to handle loss or theft.",
@@ -2208,10 +1998,8 @@
     "id": "shopping_106",
     "scene": "shopping",
     "subScene": "Support",
-    "level": "intermediate",
-    "tags": [
-      "greeting"
-    ],
+    "level": "beginner",
+    "tags": ["greeting"],
     "translations": {
       "ja": "オンライン注文のサポートはどこに問い合わせればいいですか？",
       "en": "Where should I contact for online order support?",
@@ -2230,9 +2018,7 @@
     "scene": "shopping",
     "subScene": "Support",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "電話サポートは何時まで対応していますか？",
       "en": "Until what time is phone support available?",
@@ -2251,9 +2037,7 @@
     "scene": "shopping",
     "subScene": "Support",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "メールで問い合わせできますか？",
       "en": "Can I make an inquiry by email?",
@@ -2272,9 +2056,7 @@
     "scene": "shopping",
     "subScene": "Support",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "チャットサポートは利用できますか？",
       "en": "Is chat support available?",
@@ -2293,9 +2075,7 @@
     "scene": "shopping",
     "subScene": "Support",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "急ぎの対応をお願いしたいです。",
       "en": "I need urgent assistance.",
@@ -2314,9 +2094,7 @@
     "scene": "shopping",
     "subScene": "Support",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "クレーム窓口の場所を教えてください。",
       "en": "Please tell me the location of the complaints desk.",
@@ -2335,9 +2113,7 @@
     "scene": "shopping",
     "subScene": "Support",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "フィードバックを送りたいのですが。",
       "en": "I would like to send feedback.",

@@ -4,10 +4,7 @@
     "scene": "community_life",
     "subScene": "neighborhood_events",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "このイベントは毎年開催されていますか？",
       "en": "Is this event held every year?",
       "zh": "这个活动每年都会举办吗？",
@@ -25,10 +22,7 @@
     "scene": "community_life",
     "subScene": "neighborhood_events",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "参加費はいくらですか？",
       "en": "How much does it cost to participate?",
       "zh": "参加费用是多少？",
@@ -46,10 +40,7 @@
     "scene": "community_life",
     "subScene": "neighborhood_events",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "事前申し込みは必要ですか？",
       "en": "Do I need to register in advance?",
       "zh": "需要提前报名吗？",
@@ -67,10 +58,7 @@
     "scene": "community_life",
     "subScene": "neighborhood_events",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "会場へのアクセス方法を教えてください。",
       "en": "How do I get to the venue?",
       "zh": "如何前往会场？",
@@ -88,10 +76,7 @@
     "scene": "community_life",
     "subScene": "neighborhood_events",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "駐車場はありますか？",
       "en": "Is parking available?",
       "zh": "有停车位吗？",
@@ -109,10 +94,7 @@
     "scene": "community_life",
     "subScene": "neighborhood_events",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "子供向けのアクティビティはありますか？",
       "en": "Are there activities for children?",
       "zh": "有儿童活动吗？",
@@ -130,10 +112,7 @@
     "scene": "community_life",
     "subScene": "neighborhood_events",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "雨天の場合はどうなりますか？",
       "en": "What if it rains?",
       "zh": "如果下雨怎么办？",
@@ -151,10 +130,7 @@
     "scene": "community_life",
     "subScene": "neighborhood_events",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "ボランティア募集はありますか？",
       "en": "Are volunteers available?",
       "zh": "有志愿者吗？",
@@ -172,10 +148,7 @@
     "scene": "community_life",
     "subScene": "neighborhood_events",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "イベントのスケジュールはどこで確認できますか？",
       "en": "Where can I find the event schedule?",
       "zh": "在哪里可以找到活动日程？",
@@ -193,10 +166,7 @@
     "scene": "community_life",
     "subScene": "neighborhood_events",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "飲食物の販売はありますか？",
       "en": "Are food and drink available for purchase?",
       "zh": "有食物和饮料出售吗？",
@@ -214,10 +184,7 @@
     "scene": "community_life",
     "subScene": "neighborhood_meetings",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "次回の自治会ミーティングはいつですか？",
       "en": "When is the next neighborhood association meeting?",
       "zh": "下次社区协会会议什么时候举行？",
@@ -235,10 +202,7 @@
     "scene": "community_life",
     "subScene": "neighborhood_meetings",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "議題はどこで確認できますか？",
       "en": "Where can I find the agenda?",
       "zh": "在哪里可以找到议程？",
@@ -256,10 +220,7 @@
     "scene": "community_life",
     "subScene": "neighborhood_meetings",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "会議は誰でも参加できますか？",
       "en": "Can anyone attend meetings?",
       "zh": "任何人都可以参加会议吗？",
@@ -277,10 +238,7 @@
     "scene": "community_life",
     "subScene": "neighborhood_meetings",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "オンライン参加は可能ですか？",
       "en": "Can I participate online?",
       "zh": "我可以在线参与吗？",
@@ -298,10 +256,7 @@
     "scene": "community_life",
     "subScene": "neighborhood_meetings",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "会議はどこで開催されますか？",
       "en": "Where are meetings held?",
       "zh": "会议在哪里举行？",
@@ -319,10 +274,7 @@
     "scene": "community_life",
     "subScene": "neighborhood_meetings",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "議事録は配布されますか？",
       "en": "Are minutes distributed?",
       "zh": "会议记录会分发吗？",
@@ -340,10 +292,7 @@
     "scene": "community_life",
     "subScene": "neighborhood_meetings",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "発言するには事前申し込みが必要ですか？",
       "en": "Do I need to register in advance to speak?",
       "zh": "我需要提前报名才能发言吗？",
@@ -361,10 +310,7 @@
     "scene": "community_life",
     "subScene": "neighborhood_meetings",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "会費は必要ですか？",
       "en": "Is there a membership fee?",
       "zh": "需要会员费吗？",
@@ -382,10 +328,7 @@
     "scene": "community_life",
     "subScene": "neighborhood_meetings",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "会長はどなたですか？",
       "en": "Who is the chairman?",
       "zh": "主席是谁？",
@@ -403,10 +346,7 @@
     "scene": "community_life",
     "subScene": "neighborhood_meetings",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "会議の所要時間はどれくらいですか？",
       "en": "How long do meetings last?",
       "zh": "会议持续多长时间？",
@@ -424,10 +364,7 @@
     "scene": "community_life",
     "subScene": "community_center",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "この施設の利用時間はいつですか？",
       "en": "What hours can this facility be used?",
       "zh": "这个设施可以在什么时间使用？",
@@ -445,10 +382,7 @@
     "scene": "community_life",
     "subScene": "community_center",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "利用料金はいくらですか？",
       "en": "How much does it cost?",
       "zh": "费用是多少？",
@@ -466,10 +400,7 @@
     "scene": "community_life",
     "subScene": "community_center",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "予約は必要ですか？",
       "en": "Do I need to make a reservation?",
       "zh": "需要预约吗？",
@@ -487,10 +418,7 @@
     "scene": "community_life",
     "subScene": "community_center",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "どのような設備がありますか？",
       "en": "What kind of facilities are available?",
       "zh": "有哪些设施？",
@@ -508,10 +436,7 @@
     "scene": "community_life",
     "subScene": "community_center",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "イベントの開催予定はありますか？",
       "en": "Are there any upcoming events?",
       "zh": "有什么即将举行的活动吗？",
@@ -529,10 +454,7 @@
     "scene": "community_life",
     "subScene": "community_center",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "子供向けの教室はありますか？",
       "en": "Are there any children's classes available?",
       "zh": "有儿童课程吗？",
@@ -550,10 +472,7 @@
     "scene": "community_life",
     "subScene": "community_center",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "駐車場はありますか？",
       "en": "Is parking available?",
       "zh": "有停车位吗？",
@@ -571,10 +490,7 @@
     "scene": "community_life",
     "subScene": "community_center",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "飲食物の持ち込みは可能ですか？",
       "en": "Can I bring in food and drinks?",
       "zh": "我可以带食物和饮料进去吗？",
@@ -592,10 +508,7 @@
     "scene": "community_life",
     "subScene": "community_center",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "バリアフリー対応はしていますか？",
       "en": "Is the venue barrier-free?",
       "zh": "场地是否无障碍？",
@@ -613,10 +526,7 @@
     "scene": "community_life",
     "subScene": "community_center",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "Wi-Fiは使えますか？",
       "en": "Is Wi-Fi available?",
       "zh": "有无线网络吗？",
@@ -634,10 +544,7 @@
     "scene": "community_life",
     "subScene": "volunteer_activities",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "ボランティア募集はありますか？",
       "en": "Are volunteers being recruited?",
       "zh": "有志愿者招募吗？",
@@ -655,10 +562,7 @@
     "scene": "community_life",
     "subScene": "volunteer_activities",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "応募条件はありますか？",
       "en": "Are there any application requirements?",
       "zh": "有什么申请要求吗？",
@@ -676,10 +580,7 @@
     "scene": "community_life",
     "subScene": "volunteer_activities",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "活動場所はどこですか？",
       "en": "Where will the activities take place?",
       "zh": "活动在哪里举行？",
@@ -697,10 +598,7 @@
     "scene": "community_life",
     "subScene": "volunteer_activities",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "活動時間はどれくらいですか？",
       "en": "How long will the activities last?",
       "zh": "活动持续多久？",
@@ -718,10 +616,7 @@
     "scene": "community_life",
     "subScene": "volunteer_activities",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "交通費は支給されますか？",
       "en": "Are transportation expenses reimbursed?",
       "zh": "交通费用可以报销吗？",
@@ -739,10 +634,7 @@
     "scene": "community_life",
     "subScene": "volunteer_activities",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "どのような活動内容ですか？",
       "en": "What kind of activities will they involve?",
       "zh": "活动内容是什么？",
@@ -760,10 +652,7 @@
     "scene": "community_life",
     "subScene": "volunteer_activities",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "必要なスキルはありますか？",
       "en": "Are there any skills required?",
       "zh": "需要什么技能？",
@@ -781,10 +670,7 @@
     "scene": "community_life",
     "subScene": "volunteer_activities",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "参加人数に制限はありますか？",
       "en": "Is there a limit to the number of participants?",
       "zh": "参加人数有限制吗？",
@@ -802,10 +688,7 @@
     "scene": "community_life",
     "subScene": "volunteer_activities",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "服装の指定はありますか？",
       "en": "Is there a dress code?",
       "zh": "着装要求是什么？",
@@ -823,10 +706,7 @@
     "scene": "community_life",
     "subScene": "volunteer_activities",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "保険は加入できますか？",
       "en": "Can I purchase insurance?",
       "zh": "我可以购买保险吗？",
@@ -844,10 +724,7 @@
     "scene": "community_life",
     "subScene": "local_festivals",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "この祭りはいつ開催されますか？",
       "en": "When is this festival held?",
       "zh": "这个节日什么时候举行？",
@@ -865,10 +742,7 @@
     "scene": "community_life",
     "subScene": "local_festivals",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "入場料はかかりますか？",
       "en": "Is there an admission fee?",
       "zh": "需要门票吗？",
@@ -886,10 +760,7 @@
     "scene": "community_life",
     "subScene": "local_festivals",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "会場の場所を教えてください。",
       "en": "Where is the venue located?",
       "zh": "场地在哪里？",
@@ -907,10 +778,7 @@
     "scene": "community_life",
     "subScene": "local_festivals",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "雨天でも開催されますか？",
       "en": "Will the festival be held even if it rains?",
       "zh": "即使下雨，节日也会举行吗？",
@@ -928,10 +796,7 @@
     "scene": "community_life",
     "subScene": "local_festivals",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "屋台は出ますか？",
       "en": "Will there be food stalls?",
       "zh": "会有小吃摊吗？",
@@ -949,10 +814,7 @@
     "scene": "community_life",
     "subScene": "local_festivals",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "ステージイベントはありますか？",
       "en": "Are there any stage events?",
       "zh": "有舞台活动吗？",
@@ -970,10 +832,7 @@
     "scene": "community_life",
     "subScene": "local_festivals",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "混雑する時間帯はいつですか？",
       "en": "What are the busiest times?",
       "zh": "最繁忙的时段是什么时候？",
@@ -991,10 +850,7 @@
     "scene": "community_life",
     "subScene": "local_festivals",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "交通規制はありますか？",
       "en": "Are there traffic restrictions?",
       "zh": "有交通限制吗？",
@@ -1012,10 +868,7 @@
     "scene": "community_life",
     "subScene": "local_festivals",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "記念品の販売はありますか？",
       "en": "Are souvenirs for sale?",
       "zh": "有纪念品出售吗？",
@@ -1033,10 +886,7 @@
     "scene": "community_life",
     "subScene": "local_festivals",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "ペット同伴は可能ですか？",
       "en": "Are pets allowed?",
       "zh": "可以携带宠物吗？",
@@ -1054,10 +904,7 @@
     "scene": "community_life",
     "subScene": "public_services",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "ゴミの収集日はいつですか？",
       "en": "When is garbage collection day?",
       "zh": "垃圾收集日是什么时候？",
@@ -1075,10 +922,7 @@
     "scene": "community_life",
     "subScene": "public_services",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "粗大ゴミはどうやって出しますか？",
       "en": "How do I dispose of oversized garbage?",
       "zh": "如何处理超大垃圾？",
@@ -1096,10 +940,7 @@
     "scene": "community_life",
     "subScene": "public_services",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "水道の利用開始手続きはどこで行いますか？",
       "en": "Where do I apply for water service?",
       "zh": "在哪里申请供水？",
@@ -1117,10 +958,7 @@
     "scene": "community_life",
     "subScene": "public_services",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "停電時の連絡先はどこですか？",
       "en": "Who do I contact in the event of a power outage?",
       "zh": "停电时该联系谁？",
@@ -1138,10 +976,7 @@
     "scene": "community_life",
     "subScene": "public_services",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "防災情報はどこで入手できますか？",
       "en": "Where can I get disaster prevention information?",
       "zh": "哪里可以获取防灾信息？",
@@ -1159,10 +994,7 @@
     "scene": "community_life",
     "subScene": "public_services",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "地域の医療機関リストはありますか？",
       "en": "Is there a list of local medical facilities?",
       "zh": "有没有当地医疗机构的列表？",
@@ -1180,10 +1012,7 @@
     "scene": "community_life",
     "subScene": "public_services",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "公共交通の時刻表はどこで見られますか？",
       "en": "Where can I find public transportation timetables?",
       "zh": "哪里可以找到公共交通时刻表？",
@@ -1201,10 +1030,7 @@
     "scene": "community_life",
     "subScene": "public_services",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "公園の利用ルールはありますか？",
       "en": "What are the park usage rules?",
       "zh": "公园的使用规则是什么？",
@@ -1222,10 +1048,7 @@
     "scene": "community_life",
     "subScene": "public_services",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "道路工事の予定はどこで確認できますか？",
       "en": "Where can I check for scheduled road construction?",
       "zh": "哪里可以查看道路施工计划？",
@@ -1243,10 +1066,7 @@
     "scene": "community_life",
     "subScene": "public_services",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "図書館の利用カードはどうやって作りますか？",
       "en": "How do I get a library card?",
       "zh": "如何获得图书证？",
@@ -1264,10 +1084,7 @@
     "scene": "community_life",
     "subScene": "local_market",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "この市場は何曜日に開かれますか？",
       "en": "What days of the week is this market held?",
       "zh": "这个市场每周哪几天举行？",
@@ -1285,10 +1102,7 @@
     "scene": "community_life",
     "subScene": "local_market",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "営業時間は何時から何時までですか？",
       "en": "What are the opening hours?",
       "zh": "开放时间是几点？",
@@ -1306,10 +1120,7 @@
     "scene": "community_life",
     "subScene": "local_market",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "駐車場はありますか？",
       "en": "Is parking available?",
       "zh": "可以停车吗？",
@@ -1327,10 +1138,7 @@
     "scene": "community_life",
     "subScene": "local_market",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "地元の特産品は何ですか？",
       "en": "What local specialties are there?",
       "zh": "有哪些当地特产？",
@@ -1348,10 +1156,7 @@
     "scene": "community_life",
     "subScene": "local_market",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "クレジットカードは使えますか？",
       "en": "Do credit cards accepted?",
       "zh": "可以使用信用卡吗？",
@@ -1369,10 +1174,7 @@
     "scene": "community_life",
     "subScene": "local_market",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "試食はできますか？",
       "en": "Can I sample food?",
       "zh": "可以品尝美食吗？",
@@ -1390,10 +1192,7 @@
     "scene": "community_life",
     "subScene": "local_market",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "雨天時も開催されますか？",
       "en": "Will the market be held even if it rains?",
       "zh": "即使下雨，市场也会开放吗？",
@@ -1411,10 +1210,7 @@
     "scene": "community_life",
     "subScene": "local_market",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "出店者の一覧はありますか？",
       "en": "Does a list of vendors exist?",
       "zh": "有摊位名单吗？",
@@ -1432,10 +1228,7 @@
     "scene": "community_life",
     "subScene": "local_market",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "値引き交渉は可能ですか？",
       "en": "Can I negotiate prices?",
       "zh": "可以协商价格吗？",
@@ -1453,10 +1246,7 @@
     "scene": "community_life",
     "subScene": "local_market",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "ペット同伴はできますか？",
       "en": "Can pets be brought in?",
       "zh": "可以携带宠物入场吗？",
@@ -1474,10 +1264,7 @@
     "scene": "community_life",
     "subScene": "park_events",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "次のイベントはいつですか？",
       "en": "When is the next event?",
       "zh": "下次活动什么时候举行？",
@@ -1495,10 +1282,7 @@
     "scene": "community_life",
     "subScene": "park_events",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "参加費はかかりますか？",
       "en": "Is there a participation fee?",
       "zh": "需要参加费吗？",
@@ -1516,10 +1300,7 @@
     "scene": "community_life",
     "subScene": "park_events",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "事前予約は必要ですか？",
       "en": "Do I need to book in advance?",
       "zh": "需要提前预订吗？",
@@ -1537,10 +1318,7 @@
     "scene": "community_life",
     "subScene": "park_events",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "どこで開催されますか？",
       "en": "Where will it be held?",
       "zh": "在哪里举行？",
@@ -1558,10 +1336,7 @@
     "scene": "community_life",
     "subScene": "park_events",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "雨天時は中止ですか？",
       "en": "Will the event be cancelled if it rains?",
       "zh": "如果下雨，活动会取消吗？",
@@ -1579,10 +1354,7 @@
     "scene": "community_life",
     "subScene": "park_events",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "飲食の販売はありますか？",
       "en": "Will food and drinks be sold?",
       "zh": "会出售食物和饮料吗？",
@@ -1600,10 +1372,7 @@
     "scene": "community_life",
     "subScene": "park_events",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "持ち込みは可能ですか？",
       "en": "Can I bring my own food?",
       "zh": "可以自带食物吗？",
@@ -1621,10 +1390,7 @@
     "scene": "community_life",
     "subScene": "park_events",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "イベントの所要時間はどれくらいですか？",
       "en": "How long will the event last?",
       "zh": "活动持续多长时间？",
@@ -1642,10 +1408,7 @@
     "scene": "community_life",
     "subScene": "park_events",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "子供向けプログラムはありますか？",
       "en": "Is there a children's program?",
       "zh": "有儿童项目吗？",
@@ -1663,10 +1426,7 @@
     "scene": "community_life",
     "subScene": "park_events",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
-    "translations": {
+    "tags": ["community_life"],    "translations": {
       "ja": "駐車場はありますか？",
       "en": "Is parking available?",
       "zh": "可以停车吗？",
@@ -1684,9 +1444,7 @@
     "scene": "community_life",
     "subScene": "school_activities",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
+    "tags": ["community_life"],
     "translations": {
       "ja": "学校の運動会はいつですか？",
       "en": "When is the school sports day?",
@@ -1705,9 +1463,7 @@
     "scene": "community_life",
     "subScene": "school_activities",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
+    "tags": ["community_life"],
     "translations": {
       "ja": "保護者は参加できますか？",
       "en": "Can parents attend?",
@@ -1726,9 +1482,7 @@
     "scene": "community_life",
     "subScene": "school_activities",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
+    "tags": ["community_life"],
     "translations": {
       "ja": "観覧席はどこですか？",
       "en": "Where are the spectator seats?",
@@ -1747,9 +1501,7 @@
     "scene": "community_life",
     "subScene": "school_activities",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
+    "tags": ["community_life"],
     "translations": {
       "ja": "写真撮影は可能ですか？",
       "en": "Can I take photos?",
@@ -1768,9 +1520,7 @@
     "scene": "community_life",
     "subScene": "school_activities",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
+    "tags": ["community_life"],
     "translations": {
       "ja": "お弁当の持ち込みはできますか？",
       "en": "Can I bring a packed lunch?",
@@ -1789,9 +1539,7 @@
     "scene": "community_life",
     "subScene": "school_activities",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
+    "tags": ["community_life"],
     "translations": {
       "ja": "競技のスケジュールはどこで見られますか？",
       "en": "Where can I see the competition schedule?",
@@ -1810,9 +1558,7 @@
     "scene": "community_life",
     "subScene": "school_activities",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
+    "tags": ["community_life"],
     "translations": {
       "ja": "雨天時の対応はどうなりますか？",
       "en": "What happens if it rains?",
@@ -1831,9 +1577,7 @@
     "scene": "community_life",
     "subScene": "school_activities",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
+    "tags": ["community_life"],
     "translations": {
       "ja": "ボランティア募集はありますか？",
       "en": "Are volunteers available?",
@@ -1852,9 +1596,7 @@
     "scene": "community_life",
     "subScene": "school_activities",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
+    "tags": ["community_life"],
     "translations": {
       "ja": "記念品はもらえますか？",
       "en": "Can I receive a souvenir?",
@@ -1873,9 +1615,7 @@
     "scene": "community_life",
     "subScene": "school_activities",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
+    "tags": ["community_life"],
     "translations": {
       "ja": "駐車場は利用できますか？",
       "en": "Is parking available?",
@@ -1894,9 +1634,7 @@
     "scene": "community_life",
     "subScene": "senior_programs",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
+    "tags": ["community_life"],
     "translations": {
       "ja": "高齢者向け教室はありますか？",
       "en": "Are there classes for seniors?",
@@ -1915,9 +1653,7 @@
     "scene": "community_life",
     "subScene": "senior_programs",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
+    "tags": ["community_life"],
     "translations": {
       "ja": "参加費はいくらですか？",
       "en": "How much does it cost to participate?",
@@ -1936,9 +1672,7 @@
     "scene": "community_life",
     "subScene": "senior_programs",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
+    "tags": ["community_life"],
     "translations": {
       "ja": "事前申し込みは必要ですか？",
       "en": "Do I need to register in advance?",
@@ -1957,9 +1691,7 @@
     "scene": "community_life",
     "subScene": "senior_programs",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
+    "tags": ["community_life"],
     "translations": {
       "ja": "送迎サービスはありますか？",
       "en": "Is there a shuttle service?",
@@ -1978,9 +1710,7 @@
     "scene": "community_life",
     "subScene": "senior_programs",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
+    "tags": ["community_life"],
     "translations": {
       "ja": "どのような内容の講座ですか？",
       "en": "What kind of classes are offered?",
@@ -1999,9 +1729,7 @@
     "scene": "community_life",
     "subScene": "senior_programs",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
+    "tags": ["community_life"],
     "translations": {
       "ja": "運動プログラムはありますか？",
       "en": "Are there exercise programs?",
@@ -2020,9 +1748,7 @@
     "scene": "community_life",
     "subScene": "senior_programs",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
+    "tags": ["community_life"],
     "translations": {
       "ja": "開催場所はどこですか？",
       "en": "Where is the event held?",
@@ -2041,9 +1767,7 @@
     "scene": "community_life",
     "subScene": "senior_programs",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
+    "tags": ["community_life"],
     "translations": {
       "ja": "開催時間は何時からですか？",
       "en": "What time does the event start?",
@@ -2062,9 +1786,7 @@
     "scene": "community_life",
     "subScene": "senior_programs",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
+    "tags": ["community_life"],
     "translations": {
       "ja": "持ち物はありますか？",
       "en": "What should I bring with me?",
@@ -2083,9 +1805,7 @@
     "scene": "community_life",
     "subScene": "senior_programs",
     "level": "beginner",
-    "tags": [
-      "community_life"
-    ],
+    "tags": ["community_life"],
     "translations": {
       "ja": "参加者の年齢制限はありますか？",
       "en": "Are there any age restrictions for participants?",

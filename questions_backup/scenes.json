@@ -1,0 +1,1921 @@
+[
+  {
+    "id":     "trial",
+    "label":  {
+          "ja": "無料プレビュー",
+          "en": "Free Preview",
+          "zh": "免费预览",
+          "zh_TW": "免費預覽",
+          "ko": "무료 미리보기",
+          "es": "Vista previa gratuita",
+          "fr": "Aperçu gratuit",
+          "de": "Kostenlose Vorschau",
+          "vi": "Xem trước miễn phí",
+          "id": "Pratinjau gratis"
+    },
+    "subScenes": [
+      {
+        "id": "greeting",
+        "label": {
+          "ja": "あいさつ",
+          "en": "Greeting",
+          "zh": "问候",
+          "zh_TW": "問候",
+          "ko": "인사",
+          "es": "Saludo",
+          "fr": "Salutation",
+          "de": "Begrüßung",
+          "vi": "Chào hỏi",
+          "id": "Salam"
+        }
+      },
+      {
+        "id": "aizuchi",
+        "label": {
+          "ja": "あいづち",
+          "en": "Aizuchi",
+          "zh": "应答",
+          "zh_TW": "應答",
+          "ko": "맞장구",
+          "es": "Respuestas de escucha",
+          "fr": "Réponses d'écoute",
+          "de": "Zuhörreaktionen",
+          "vi": "Phản hồi nghe",
+          "id": "Tanggapan dengar"
+        }
+      },
+      {
+        "id": "thanks_sorry",
+        "label": {
+          "ja": "感謝＆謝罪",
+          "en": "Thanks/Sorry",
+          "zh": "感谢与道歉",
+          "zh_TW": "感謝與道歉",
+          "ko": "감사/사과",
+          "es": "Gracias/Disculpa",
+          "fr": "Remerciements/Excuses",
+          "de": "Dank/Entschuldigung",
+          "vi": "Cảm ơn/Xin lỗi",
+          "id": "Terima kasih/Maaf"
+        }
+      },
+      {
+        "id": "phrases",
+        "label": {
+          "ja": "便利なフレーズ",
+          "en": "Useful Phrases",
+          "zh": "常用短语",
+          "zh_TW": "常用短語",
+          "ko": "유용한 문구",
+          "es": "Frases útiles",
+          "fr": "Phrases utiles",
+          "de": "Nützliche Redewendungen",
+          "vi": "Cụm từ hữu ích",
+          "id": "Frasa berguna"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vocabulary",
+    "label": {
+      "ja": "短文",
+      "en": "Short Sentences",
+      "zh": "短句",
+      "zh_TW": "短句",
+      "ko": "짧은 문장",
+      "es": "Frases cortas",
+      "fr": "Phrases courtes",
+      "de": "Kurze Sätze",
+      "vi": "Câu ngắn",
+      "id": "Kalimat pendek"
+    },
+    "subScenes": [
+      {
+        "id": "vocabulary_pronouns",
+        "label": {
+          "ja": "代名詞",
+          "en": "Pronouns",
+          "zh": "代词",
+          "zh_TW": "代詞",
+          "ko": "대명사",
+          "es": "Pronombres",
+          "fr": "Pronoms",
+          "de": "Pronomen",
+          "vi": "Đại từ",
+          "id": "Kata ganti"
+        }
+      },
+      {
+        "id": "vocabulary_verbs",
+        "label": {
+          "ja": "動詞",
+          "en": "Verbs",
+          "zh": "动词",
+          "zh_TW": "動詞",
+          "ko": "동사",
+          "es": "Verbos",
+          "fr": "Verbes",
+          "de": "Verben",
+          "vi": "Động từ",
+          "id": "Kata kerja"
+        }
+      },
+      {
+        "id": "vocabulary_adjectives",
+        "label": {
+          "ja": "形容詞",
+          "en": "Adjectives",
+          "zh": "形容词",
+          "zh_TW": "形容詞",
+          "ko": "형용사",
+          "es": "Adjetivos",
+          "fr": "Adjectifs",
+          "de": "Adjektive",
+          "vi": "Tính từ",
+          "id": "Kata sifat"
+        }
+      },
+      {
+        "id": "vocabulary_numbers",
+        "label": {
+          "ja": "数字",
+          "en": "Numbers",
+          "zh": "数字",
+          "zh_TW": "數字",
+          "ko": "숫자",
+          "es": "Números",
+          "fr": "Nombres",
+          "de": "Zahlen",
+          "vi": "Số",
+          "id": "Angka"
+        }
+      },
+      {
+        "id": "vocabulary_transportation",
+        "label": {
+          "ja": "交通",
+          "en": "Transportation",
+          "zh": "交通",
+          "zh_TW": "交通",
+          "ko": "교통",
+          "es": "Transporte",
+          "fr": "Transport",
+          "de": "Verkehr",
+          "vi": "Giao thông",
+          "id": "Transportasi"
+        }
+      },
+      {
+        "id": "vocabulary_food",
+        "label": {
+          "ja": "食べ物",
+          "en": "Food",
+          "zh": "食物",
+          "zh_TW": "食物",
+          "ko": "음식",
+          "es": "Comida",
+          "fr": "Nourriture",
+          "de": "Essen",
+          "vi": "Thức ăn",
+          "id": "Makanan"
+        }
+      },
+      {
+        "id": "vocabulary_drinks",
+        "label": {
+          "ja": "飲み物",
+          "en": "Drinks",
+          "zh": "饮料",
+          "zh_TW": "飲料",
+          "ko": "음료",
+          "es": "Bebidas",
+          "fr": "Boissons",
+          "de": "Getränke",
+          "vi": "Đồ uống",
+          "id": "Minuman"
+        }
+      },
+      {
+        "id": "vocabulary_places",
+        "label": {
+          "ja": "場所",
+          "en": "Places",
+          "zh": "地方",
+          "zh_TW": "地方",
+          "ko": "장소",
+          "es": "Lugares",
+          "fr": "Lieux",
+          "de": "Orte",
+          "vi": "Địa điểm",
+          "id": "Tempat"
+        }
+      },
+      {
+        "id": "vocabulary_directions",
+        "label": {
+          "ja": "方向",
+          "en": "Directions",
+          "zh": "方向",
+          "zh_TW": "方向",
+          "ko": "방향",
+          "es": "Direcciones",
+          "fr": "Directions",
+          "de": "Richtungen",
+          "vi": "Hướng",
+          "id": "Arah"
+        }
+      },
+      {
+        "id": "vocabulary_people",
+        "label": {
+          "ja": "人々",
+          "en": "People",
+          "zh": "人们",
+          "zh_TW": "人們",
+          "ko": "사람들",
+          "es": "Personas",
+          "fr": "Personnes",
+          "de": "Menschen",
+          "vi": "Con người",
+          "id": "Orang-orang"
+        }
+      },
+      {
+        "id": "vocabulary_relationships",
+        "label": {
+          "ja": "人間関係",
+          "en": "Relationships",
+          "zh": "关系",
+          "zh_TW": "關係",
+          "ko": "관계",
+          "es": "Relaciones",
+          "fr": "Relations",
+          "de": "Beziehungen",
+          "vi": "Các mối quan hệ",
+          "id": "Hubungan"
+        }
+      },
+      {
+        "id": "vocabulary_nature",
+        "label": {
+          "ja": "自然",
+          "en": "Nature",
+          "zh": "自然",
+          "zh_TW": "自然",
+          "ko": "자연",
+          "es": "Naturaleza",
+          "fr": "Nature",
+          "de": "Natur",
+          "vi": "Thiên nhiên",
+          "id": "Alam"
+        }
+      },
+      {
+        "id": "vocabulary_animals",
+        "label": {
+          "ja": "動物",
+          "en": "Animals",
+          "zh": "动物",
+          "zh_TW": "動物",
+          "ko": "동물",
+          "es": "Animales",
+          "fr": "Animaux",
+          "de": "Tiere",
+          "vi": "Động vật",
+          "id": "Hewan"
+        }
+      },
+      {
+        "id": "vocabulary_essentials",
+        "label": {
+          "ja": "必需品",
+          "en": "Essentials",
+          "zh": "必需品",
+          "zh_TW": "必需品",
+          "ko": "필수품",
+          "es": "Artículos esenciales",
+          "fr": "Articles essentiels",
+          "de": "Wesentliche Dinge",
+          "vi": "Vật dụng cần thiết",
+          "id": "Barang penting"
+        }
+      },
+      {
+        "id": "vocabulary_emergencies",
+        "label": {
+          "ja": "緊急時",
+          "en": "Emergencies",
+          "zh": "紧急情况",
+          "zh_TW": "緊急情況",
+          "ko": "비상사태",
+          "es": "Emergencias",
+          "fr": "Urgences",
+          "de": "Notfälle",
+          "vi": "Trường hợp khẩn cấp",
+          "id": "Keadaan darurat"
+        }
+      }
+    ]
+  },
+  {
+    "id": "greeting",
+    "label": {
+      "ja": "あいさつ",
+      "en": "Greeting",
+      "zh": "问候",
+      "zh_TW": "問候",
+      "ko": "인사",
+      "es": "Saludos",
+      "fr": "Salutations",
+      "de": "Begrüßung",
+      "vi": "Chào hỏi",
+      "id": "Salam"
+    },
+    "subScenes": [
+      {
+        "id": "greeting_self_introduction",
+        "label": {
+          "ja": "自己紹介",
+          "en": "Self-introduction",
+          "zh": "自我介绍",
+          "zh_TW": "自我介紹",
+          "ko": "자기소개",
+          "es": "Presentación personal",
+          "fr": "Présentation de soi",
+          "de": "Selbstvorstellung",
+          "vi": "Giới thiệu bản thân",
+          "id": "Perkenalan diri"
+        }
+      },
+      {
+        "id": "greeting_morning",
+        "label": {
+          "ja": "朝のあいさつ",
+          "en": "Morning greetings",
+          "zh": "早上问候",
+          "zh_TW": "早上問候",
+          "ko": "아침 인사",
+          "es": "Saludos de la mañana",
+          "fr": "Salutations du matin",
+          "de": "Morgengrüße",
+          "vi": "Lời chào buổi sáng",
+          "id": "Salam pagi"
+        }
+      },
+      {
+        "id": "greeting_afternoon",
+        "label": {
+          "ja": "昼のあいさつ",
+          "en": "Afternoon greetings",
+          "zh": "下午问候",
+          "zh_TW": "下午問候",
+          "ko": "오후 인사",
+          "es": "Saludos de la tarde",
+          "fr": "Salutations de l’après-midi",
+          "de": "Nachmittagsgrüße",
+          "vi": "Lời chào buổi chiều",
+          "id": "Salam siang"
+        }
+      },
+      {
+        "id": "greeting_evening",
+        "label": {
+          "ja": "夜のあいさつ",
+          "en": "Evening greetings",
+          "zh": "晚间问候",
+          "zh_TW": "晚間問候",
+          "ko": "저녁 인사",
+          "es": "Saludos de la noche",
+          "fr": "Salutations du soir",
+          "de": "Abendgrüße",
+          "vi": "Lời chào buổi tối",
+          "id": "Salam malam"
+        }
+      },
+      {
+        "id": "greeting_farewell",
+        "label": {
+          "ja": "別れのあいさつ",
+          "en": "Farewells",
+          "zh": "告别",
+          "zh_TW": "告別",
+          "ko": "작별 인사",
+          "es": "Despedidas",
+          "fr": "Adieux",
+          "de": "Abschiedsgrüße",
+          "vi": "Lời chào tạm biệt",
+          "id": "Ucapan perpisahan"
+        }
+      },
+      {
+        "id": "greeting_reunion",
+        "label": {
+          "ja": "再会のあいさつ",
+          "en": "Reunion greetings",
+          "zh": "重逢问候",
+          "zh_TW": "重逢問候",
+          "ko": "재회의 인사",
+          "es": "Saludos de reencuentro",
+          "fr": "Salutations de retrouvailles",
+          "de": "Wiedersehensgrüße",
+          "vi": "Lời chào tái ngộ",
+          "id": "Salam pertemuan kembali"
+        }
+      },
+      {
+        "id": "greeting_thank_you",
+        "label": {
+          "ja": "感謝の表現",
+          "en": "Thank-you phrases",
+          "zh": "感谢表达",
+          "zh_TW": "感謝表達",
+          "ko": "감사의 표현",
+          "es": "Expresiones de agradecimiento",
+          "fr": "Expressions de remerciement",
+          "de": "Dankesformeln",
+          "vi": "Cụm từ cảm ơn",
+          "id": "Ungkapan terima kasih"
+        }
+      },
+      {
+        "id": "greeting_congratulations",
+        "label": {
+          "ja": "お祝いの表現",
+          "en": "Congratulations",
+          "zh": "祝贺表达",
+          "zh_TW": "祝賀表達",
+          "ko": "축하 표현",
+          "es": "Felicitaciones",
+          "fr": "Félicitations",
+          "de": "Glückwünsche",
+          "vi": "Lời chúc mừng",
+          "id": "Ucapan selamat"
+        }
+      },
+      {
+        "id": "greeting_polite_business",
+        "label": {
+          "ja": "丁寧／ビジネス",
+          "en": "Polite/Business",
+          "zh": "礼貌／商务",
+          "zh_TW": "禮貌／商務",
+          "ko": "정중／비즈니스",
+          "es": "Cortesía/Negocios",
+          "fr": "Politesse/Professionnel",
+          "de": "Höflich/Business",
+          "vi": "Lịch sự/Công việc",
+          "id": "Sopan/Bisnis"
+        }
+      },
+      {
+        "id": "greeting_casual_friends",
+        "label": {
+          "ja": "カジュアル（友人）",
+          "en": "Casual (friends)",
+          "zh": "随意（朋友）",
+          "zh_TW": "隨意（朋友）",
+          "ko": "캐주얼(친구)",
+          "es": "Informal (amigos)",
+          "fr": "Décontracté (amis)",
+          "de": "Locker (Freunde)",
+          "vi": "Thân mật (bạn bè)",
+          "id": "Santai (teman)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "travel",
+    "label": {
+      "ja": "旅行",
+      "en": "Travel",
+      "zh": "旅行",
+      "zh_TW": "旅遊",
+      "ko": "여행",
+      "es": "Viajes",
+      "fr": "Voyages",
+      "de": "Reisen",
+      "vi": "Du lịch",
+      "id": "Perjalanan"
+    },
+    "subScenes": [
+      {
+        "id": "Arrival",
+        "label": {
+          "ja": "到着・入国",
+          "en": "Arrival",
+          "zh": "抵达／入境",
+          "zh_TW": "抵達／入境",
+          "ko": "도착·입국",
+          "es": "Llegada",
+          "fr": "Arrivée",
+          "de": "Ankunft",
+          "vi": "Đến nơi",
+          "id": "Kedatangan"
+        }
+      },
+      {
+        "id": "Accommodation",
+        "label": {
+          "ja": "宿泊",
+          "en": "Accommodation",
+          "zh": "住宿",
+          "zh_TW": "住宿",
+          "ko": "숙박",
+          "es": "Alojamiento",
+          "fr": "Hébergement",
+          "de": "Unterkunft",
+          "vi": "Lưu trú",
+          "id": "Akomodasi"
+        }
+      },
+      {
+        "id": "Transportation",
+        "label": {
+          "ja": "交通",
+          "en": "Transportation",
+          "zh": "交通",
+          "zh_TW": "交通",
+          "ko": "교통",
+          "es": "Transporte",
+          "fr": "Transports",
+          "de": "Verkehr",
+          "vi": "Phương tiện đi lại",
+          "id": "Transportasi"
+        }
+      },
+      {
+        "id": "Sightseeing",
+        "label": {
+          "ja": "観光",
+          "en": "Sightseeing",
+          "zh": "观光",
+          "zh_TW": "觀光",
+          "ko": "관광",
+          "es": "Turismo",
+          "fr": "Visites",
+          "de": "Besichtigungen",
+          "vi": "Tham quan",
+          "id": "Tamasya"
+        }
+      },
+      {
+        "id": "Meals",
+        "label": {
+          "ja": "食事",
+          "en": "Meals",
+          "zh": "用餐",
+          "zh_TW": "用餐",
+          "ko": "식사",
+          "es": "Comidas",
+          "fr": "Repas",
+          "de": "Mahlzeiten",
+          "vi": "Bữa ăn",
+          "id": "Makanan"
+        }
+      },
+      {
+        "id": "Shopping",
+        "label": {
+          "ja": "買い物",
+          "en": "Shopping",
+          "zh": "购物",
+          "zh_TW": "購物",
+          "ko": "쇼핑",
+          "es": "Compras",
+          "fr": "Achats",
+          "de": "Einkaufen",
+          "vi": "Mua sắm",
+          "id": "Belanja"
+        }
+      },
+      {
+        "id": "Communications_Internet",
+        "label": {
+          "ja": "通信・インターネット",
+          "en": "Communications & Internet",
+          "zh": "通信与互联网",
+          "zh_TW": "通訊與網路",
+          "ko": "통신·인터넷",
+          "es": "Comunicaciones e Internet",
+          "fr": "Communications et Internet",
+          "de": "Kommunikation & Internet",
+          "vi": "Liên lạc & Internet",
+          "id": "Komunikasi & Internet"
+        }
+      },
+      {
+        "id": "Exchange_Banking",
+        "label": {
+          "ja": "両替・銀行",
+          "en": "Exchange & Banking",
+          "zh": "兑换与银行",
+          "zh_TW": "兌換與銀行",
+          "ko": "환전·은행",
+          "es": "Cambio y banca",
+          "fr": "Change et banque",
+          "de": "Geldwechsel & Bank",
+          "vi": "Đổi tiền & ngân hàng",
+          "id": "Penukaran & Perbankan"
+        }
+      },
+      {
+        "id": "Emergencies",
+        "label": {
+          "ja": "緊急時",
+          "en": "Emergencies",
+          "zh": "紧急情况",
+          "zh_TW": "緊急情況",
+          "ko": "비상시",
+          "es": "Emergencias",
+          "fr": "Urgences",
+          "de": "Notfälle",
+          "vi": "Trường hợp khẩn cấp",
+          "id": "Keadaan darurat"
+        }
+      },
+      {
+        "id": "Guide_Map",
+        "label": {
+          "ja": "案内・地図",
+          "en": "Guide & Map",
+          "zh": "导览与地图",
+          "zh_TW": "導覽與地圖",
+          "ko": "안내·지도",
+          "es": "Guía y mapas",
+          "fr": "Guide et carte",
+          "de": "Wegbeschreibung & Karten",
+          "vi": "Hướng dẫn & bản đồ",
+          "id": "Panduan & Peta"
+        }
+      },
+      {
+        "id": "Culture_Customs",
+        "label": {
+          "ja": "文化・マナー",
+          "en": "Culture & Customs",
+          "zh": "文化与礼仪",
+          "zh_TW": "文化與禮儀",
+          "ko": "문화·예절",
+          "es": "Cultura y costumbres",
+          "fr": "Culture et coutumes",
+          "de": "Kultur & Bräuche",
+          "vi": "Văn hóa & phong tục",
+          "id": "Budaya & adat istiadat"
+        }
+      },
+      {
+        "id": "Experiences_Activities",
+        "label": {
+          "ja": "体験・アクティビティ",
+          "en": "Experiences & Activities",
+          "zh": "体验与活动",
+          "zh_TW": "體驗與活動",
+          "ko": "체험·액티비티",
+          "es": "Experiencias y actividades",
+          "fr": "Expériences et activités",
+          "de": "Erlebnisse & Aktivitäten",
+          "vi": "Trải nghiệm & hoạt động",
+          "id": "Pengalaman & aktivitas"
+        }
+      }
+    ]
+  },
+  {
+    "id": "restaurant",
+    "label": {
+      "ja": "レストラン",
+      "en": "Restaurant",
+      "zh": "餐馆",
+      "zh_TW": "餐廳",
+      "ko": "레스토랑",
+      "es": "Restaurante",
+      "fr": "Restaurant",
+      "de": "Restaurant",
+      "vi": "Nhà hàng",
+      "id": "Restoran"
+    },
+    "subScenes": [
+      {
+        "id": "Check-in",
+        "label": {
+          "ja": "入店・受付",
+          "en": "Check-in",
+          "zh": "入店/登记",
+          "zh_TW": "入店／登記",
+          "ko": "입장/체크인",
+          "es": "Entrada/Registro",
+          "fr": "Arrivée/Accueil",
+          "de": "Check-in/Anmeldung",
+          "vi": "Vào quán/đăng ký",
+          "id": "Masuk/Check-in"
+        }
+      },
+      {
+        "id": "Ordering",
+        "label": {
+          "ja": "注文",
+          "en": "Ordering",
+          "zh": "点餐",
+          "zh_TW": "點餐",
+          "ko": "주문",
+          "es": "Pedido",
+          "fr": "Commande",
+          "de": "Bestellung",
+          "vi": "Gọi món",
+          "id": "Memesan"
+        }
+      },
+      {
+        "id": "Checkout",
+        "label": {
+          "ja": "会計",
+          "en": "Checkout",
+          "zh": "结账",
+          "zh_TW": "結帳",
+          "ko": "계산",
+          "es": "Cuenta",
+          "fr": "Addition",
+          "de": "Rechnung",
+          "vi": "Tính tiền",
+          "id": "Bayar hóa đơn"
+        }
+      },
+      {
+        "id": "Reservations",
+        "label": {
+          "ja": "予約",
+          "en": "Reservations",
+          "zh": "预订",
+          "zh_TW": "預訂",
+          "ko": "예약",
+          "es": "Reservas",
+          "fr": "Réservations",
+          "de": "Reservierungen",
+          "vi": "Đặt chỗ",
+          "id": "Reservasi"
+        }
+      },
+      {
+        "id": "Drinks",
+        "label": {
+          "ja": "ドリンク",
+          "en": "Drinks",
+          "zh": "饮品",
+          "zh_TW": "飲品",
+          "ko": "음료",
+          "es": "Bebidas",
+          "fr": "Boissons",
+          "de": "Getränke",
+          "vi": "Đồ uống",
+          "id": "Minuman"
+        }
+      },
+      {
+        "id": "Desserts",
+        "label": {
+          "ja": "デザート",
+          "en": "Desserts",
+          "zh": "甜点",
+          "zh_TW": "甜點",
+          "ko": "디저트",
+          "es": "Postres",
+          "fr": "Desserts",
+          "de": "Desserts",
+          "vi": "Tráng miệng",
+          "id": "Pencuci mulut"
+        }
+      },
+      {
+        "id": "Services&Facilities",
+        "label": {
+          "ja": "サービス・設備",
+          "en": "Services & Facilities",
+          "zh": "服务与设施",
+          "zh_TW": "服務與設施",
+          "ko": "서비스/시설",
+          "es": "Servicios e instalaciones",
+          "fr": "Services & équipements",
+          "de": "Service & Ausstattung",
+          "vi": "Dịch vụ & tiện ích",
+          "id": "Layanan & fasilitas"
+        }
+      },
+      {
+        "id": "Take-out",
+        "label": {
+          "ja": "テイクアウト",
+          "en": "Take-out",
+          "zh": "外带",
+          "zh_TW": "外帶",
+          "ko": "테이크아웃",
+          "es": "Para llevar",
+          "fr": "À emporter",
+          "de": "Zum Mitnehmen",
+          "vi": "Mang về",
+          "id": "Bawa pulang"
+        }
+      },
+      {
+        "id": "Fooddetails",
+        "label": {
+          "ja": "料理の詳細",
+          "en": "Food Details",
+          "zh": "菜品细节",
+          "zh_TW": "菜品細節",
+          "ko": "음식 상세",
+          "es": "Detalles de la comida",
+          "fr": "Détails du plat",
+          "de": "Gerichtdetails",
+          "vi": "Chi tiết món ăn",
+          "id": "Detail makanan"
+        }
+      },
+      {
+        "id": "Paymentoptions",
+        "label": {
+          "ja": "支払い方法",
+          "en": "Payment Options",
+          "zh": "支付方式",
+          "zh_TW": "付款方式",
+          "ko": "결제 방법",
+          "es": "Opciones de pago",
+          "fr": "Options de paiement",
+          "de": "Zahlungsarten",
+          "vi": "Phương thức thanh toán",
+          "id": "Opsi pembayaran"
+        }
+      },
+      {
+        "id": "Access&Parking",
+        "label": {
+          "ja": "アクセス・駐車場",
+          "en": "Access & Parking",
+          "zh": "交通与停车",
+          "zh_TW": "交通與停車",
+          "ko": "접근/주차",
+          "es": "Acceso y estacionamiento",
+          "fr": "Accès & stationnement",
+          "de": "Anfahrt & Parken",
+          "vi": "Lối vào & bãi đỗ xe",
+          "id": "Akses & parkir"
+        }
+      },
+      {
+        "id": "Health&Safety",
+        "label": {
+          "ja": "衛生・安全",
+          "en": "Health & Safety",
+          "zh": "卫生与安全",
+          "zh_TW": "衛生與安全",
+          "ko": "위생/안전",
+          "es": "Salud y seguridad",
+          "fr": "Hygiène & sécurité",
+          "de": "Gesundheit & Sicherheit",
+          "vi": "Sức khỏe & an toàn",
+          "id": "Kesehatan & keselamatan"
+        }
+      },
+      {
+        "id": "Promotions&Events",
+        "label": {
+          "ja": "プロモーション・イベント",
+          "en": "Promotions & Events",
+          "zh": "促销与活动",
+          "zh_TW": "促銷與活動",
+          "ko": "프로모션/이벤트",
+          "es": "Promociones y eventos",
+          "fr": "Promotions & événements",
+          "de": "Aktionen & Events",
+          "vi": "Khuyến mãi & sự kiện",
+          "id": "Promosi & acara"
+        }
+      }
+    ]
+  },
+  {
+    "id": "shopping",
+    "label": {
+      "ja": "買い物",
+      "en": "Shopping",
+      "zh": "购物",
+      "zh_TW": "購物",
+      "ko": "쇼핑",
+      "es": "Compras",
+      "fr": "Achats",
+      "de": "Einkaufen",
+      "vi": "Mua sắm",
+      "id": "Belanja"
+    },
+    "subScenes": [
+      {
+        "id": "Searchforproducts",
+        "label": {
+          "ja": "商品探し",
+          "en": "Search for products",
+          "zh": "寻找商品",
+          "zh_TW": "尋找商品",
+          "ko": "상품 찾기",
+          "es": "Búsqueda de productos",
+          "fr": "Recherche de produits",
+          "de": "Produktsuche",
+          "vi": "Tìm sản phẩm",
+          "id": "Cari produk"
+        }
+      },
+      {
+        "id": "Productdetails",
+        "label": {
+          "ja": "商品の詳細",
+          "en": "Product details",
+          "zh": "商品详情",
+          "zh_TW": "商品詳情",
+          "ko": "제품 상세",
+          "es": "Detalles del producto",
+          "fr": "Détails du produit",
+          "de": "Produktdetails",
+          "vi": "Chi tiết sản phẩm",
+          "id": "Detail produk"
+        }
+      },
+      {
+        "id": "Campaignsanddiscounts",
+        "label": {
+          "ja": "キャンペーン・割引",
+          "en": "Campaigns & discounts",
+          "zh": "活动与折扣",
+          "zh_TW": "活動與折扣",
+          "ko": "캠페인/할인",
+          "es": "Promociones y descuentos",
+          "fr": "Campagnes et réductions",
+          "de": "Aktionen & Rabatte",
+          "vi": "Khuyến mãi & giảm giá",
+          "id": "Kampanye & diskon"
+        }
+      },
+      {
+        "id": "Paymentmethods",
+        "label": {
+          "ja": "支払い方法",
+          "en": "Payment methods",
+          "zh": "支付方式",
+          "zh_TW": "付款方式",
+          "ko": "결제 방법",
+          "es": "Métodos de pago",
+          "fr": "Moyens de paiement",
+          "de": "Zahlungsmethoden",
+          "vi": "Phương thức thanh toán",
+          "id": "Metode pembayaran"
+        }
+      },
+      {
+        "id": "Purchase",
+        "label": {
+          "ja": "購入",
+          "en": "Purchase",
+          "zh": "购买",
+          "zh_TW": "購買",
+          "ko": "구매",
+          "es": "Compra",
+          "fr": "Achat",
+          "de": "Kauf",
+          "vi": "Mua hàng",
+          "id": "Pembelian"
+        }
+      },
+      {
+        "id": "Returnsandexchanges",
+        "label": {
+          "ja": "返品・交換",
+          "en": "Returns & exchanges",
+          "zh": "退货与换货",
+          "zh_TW": "退貨與換貨",
+          "ko": "반품/교환",
+          "es": "Devoluciones y cambios",
+          "fr": "Retours et échanges",
+          "de": "Rückgaben & Umtausch",
+          "vi": "Trả hàng & đổi hàng",
+          "id": "Pengembalian & penukaran"
+        }
+      },
+      {
+        "id": "Deliveryandhomedelivery",
+        "label": {
+          "ja": "配送・宅配",
+          "en": "Delivery & home delivery",
+          "zh": "送货与宅配",
+          "zh_TW": "配送與宅配",
+          "ko": "배송/배달",
+          "es": "Envío y entrega a domicilio",
+          "fr": "Livraison & livraison à domicile",
+          "de": "Versand & Heimlieferung",
+          "vi": "Giao hàng & giao tận nhà",
+          "id": "Pengiriman & antar ke rumah"
+        }
+      },
+      {
+        "id": "Membershipregistrationandpoints",
+        "label": {
+          "ja": "会員登録・ポイント",
+          "en": "Membership & points",
+          "zh": "会员注册与积分",
+          "zh_TW": "會員註冊與點數",
+          "ko": "회원 등록/포인트",
+          "es": "Membresía y puntos",
+          "fr": "Adhésion & points",
+          "de": "Mitgliedschaft & Punkte",
+          "vi": "Đăng ký thành viên & điểm",
+          "id": "Keanggotaan & poin"
+        }
+      },
+      {
+        "id": "Try-onandfitting",
+        "label": {
+          "ja": "試着・フィッティング",
+          "en": "Try-on & fitting",
+          "zh": "试穿与试衣",
+          "zh_TW": "試穿與試衣",
+          "ko": "착용/피팅",
+          "es": "Prueba y ajuste",
+          "fr": "Essayage & fitting",
+          "de": "Anprobe & Fitting",
+          "vi": "Thử đồ & fitting",
+          "id": "Coba & fitting"
+        }
+      },
+      {
+        "id": "After-salesserviceandwarranty",
+        "label": {
+          "ja": "アフターサービス・保証",
+          "en": "After-sales service & warranty",
+          "zh": "售后服务与保修",
+          "zh_TW": "售後服務與保固",
+          "ko": "A/S 및 보증",
+          "es": "Servicio posventa y garantía",
+          "fr": "Service après-vente & garantie",
+          "de": "Kundendienst & Garantie",
+          "vi": "Dịch vụ hậu mãi & bảo hành",
+          "id": "Layanan purna jual & garansi"
+        }
+      },
+      {
+        "id": "Storeinformationandopeninghours",
+        "label": {
+          "ja": "店舗情報・営業時間",
+          "en": "Store info & hours",
+          "zh": "店铺信息与营业时间",
+          "zh_TW": "店鋪資訊與營業時間",
+          "ko": "매장 정보/영업시간",
+          "es": "Información de la tienda y horarios",
+          "fr": "Infos magasin & horaires",
+          "de": "Filialinfos & Öffnungszeiten",
+          "vi": "Thông tin cửa hàng & giờ mở cửa",
+          "id": "Info toko & jam buka"
+        }
+      },
+      {
+        "id": "Support",
+        "label": {
+          "ja": "サポート",
+          "en": "Support",
+          "zh": "支持",
+          "zh_TW": "支援",
+          "ko": "지원",
+          "es": "Soporte",
+          "fr": "Support",
+          "de": "Support",
+          "vi": "Hỗ trợ",
+          "id": "Dukungan"
+        }
+      }
+    ]
+  },
+  {
+    "id": "dating",
+    "label": {
+      "ja": "デート",
+      "en": "Dating",
+      "zh": "约会",
+      "zh_TW": "約會",
+      "ko": "데이트",
+      "es": "Cita",
+      "fr": "Rendez-vous",
+      "de": "Verabredung",
+      "vi": "Hẹn hò",
+      "id": "Kencan"
+    },
+    "subScenes": [
+      {
+        "id": "dating_first_meeting",
+        "label": {
+          "ja": "初対面",
+          "en": "First Meeting",
+          "zh": "初次见面",
+          "zh_TW": "初次見面",
+          "ko": "첫 만남",
+          "es": "Primer encuentro",
+          "fr": "Première rencontre",
+          "de": "Erstes Treffen",
+          "vi": "Gặp lần đầu",
+          "id": "Pertemuan pertama"
+        }
+      },
+      {
+        "id": "dating_casual_talk",
+        "label": {
+          "ja": "雑談",
+          "en": "Casual Talk",
+          "zh": "闲聊",
+          "zh_TW": "閒聊",
+          "ko": "가벼운 대화",
+          "es": "Charla casual",
+          "fr": "Conversation informelle",
+          "de": "Lockeres Gespräch",
+          "vi": "Trò chuyện thân mật",
+          "id": "Obrolan santai"
+        }
+      },
+      {
+        "id": "dating_invitation",
+        "label": {
+          "ja": "お誘い",
+          "en": "Invitations",
+          "zh": "邀请",
+          "zh_TW": "邀請",
+          "ko": "초대",
+          "es": "Invitaciones",
+          "fr": "Invitations",
+          "de": "Einladungen",
+          "vi": "Lời mời",
+          "id": "Undangan"
+        }
+      },
+      {
+        "id": "dating_accept_decline",
+        "label": {
+          "ja": "承諾・お断り",
+          "en": "Accept/Decline",
+          "zh": "接受/拒绝",
+          "zh_TW": "接受/婉拒",
+          "ko": "수락/거절",
+          "es": "Aceptar/Rechazar",
+          "fr": "Accepter/Refuser",
+          "de": "Annehmen/Ablehnen",
+          "vi": "Đồng ý/Từ chối",
+          "id": "Terima/Tolak"
+        }
+      },
+      {
+        "id": "dating_plan_schedule",
+        "label": {
+          "ja": "日程調整",
+          "en": "Plan & Schedule",
+          "zh": "安排日程",
+          "zh_TW": "行程安排",
+          "ko": "일정 조율",
+          "es": "Planificación y horarios",
+          "fr": "Planification et horaires",
+          "de": "Planung & Termin",
+          "vi": "Lên kế hoạch & lịch",
+          "id": "Rencana & jadwal"
+        }
+      },
+      {
+        "id": "dating_at_cafe",
+        "label": {
+          "ja": "カフェで",
+          "en": "At a Cafe",
+          "zh": "在咖啡馆",
+          "zh_TW": "在咖啡館",
+          "ko": "카페에서",
+          "es": "En una cafetería",
+          "fr": "Au café",
+          "de": "Im Café",
+          "vi": "Ở quán cà phê",
+          "id": "Di kafe"
+        }
+      },
+      {
+        "id": "dating_at_restaurant",
+        "label": {
+          "ja": "レストランで",
+          "en": "At a Restaurant",
+          "zh": "在餐馆",
+          "zh_TW": "在餐館",
+          "ko": "레스토랑에서",
+          "es": "En un restaurante",
+          "fr": "Au restaurant",
+          "de": "Im Restaurant",
+          "vi": "Ở nhà hàng",
+          "id": "Di restoran"
+        }
+      },
+      {
+        "id": "dating_compliments",
+        "label": {
+          "ja": "褒め言葉",
+          "en": "Compliments",
+          "zh": "赞美",
+          "zh_TW": "讚美",
+          "ko": "칭찬",
+          "es": "Elogios",
+          "fr": "Compliments",
+          "de": "Komplimente",
+          "vi": "Lời khen",
+          "id": "Pujian"
+        }
+      },
+      {
+        "id": "dating_express_feelings",
+        "label": {
+          "ja": "気持ちを伝える",
+          "en": "Expressing Feelings",
+          "zh": "表达感情",
+          "zh_TW": "表達感情",
+          "ko": "마음을 전하기",
+          "es": "Expresar sentimientos",
+          "fr": "Exprimer ses sentiments",
+          "de": "Gefühle ausdrücken",
+          "vi": "Bày tỏ cảm xúc",
+          "id": "Menyatakan perasaan"
+        }
+      },
+      {
+        "id": "dating_goodbye",
+        "label": {
+          "ja": "別れのあいさつ",
+          "en": "Goodbyes",
+          "zh": "告别",
+          "zh_TW": "告別",
+          "ko": "작별 인사",
+          "es": "Despedidas",
+          "fr": "Adieux",
+          "de": "Abschiedsgrüße",
+          "vi": "Lời chào tạm biệt",
+          "id": "Ucapan perpisahan"
+        }
+      }
+    ]
+  },
+  {
+    "id": "culture_entertainment",
+    "label": {
+      "ja": "文化・エンタメ",
+      "en": "Culture Entertainment",
+      "zh": "文化娱乐",
+      "zh_TW": "文化娛樂",
+      "ko": "문화·엔터테인먼트",
+      "es": "Cultura y entretenimiento",
+      "fr": "Culture et divertissement",
+      "de": "Kultur und Unterhaltung",
+      "vi": "Văn hóa & Giải trí",
+      "id": "Budaya & Hiburan"
+    },
+    "subScenes": [
+      {
+        "id": "movies_theater",
+        "label": {
+          "ja": "映画館",
+          "en": "Movies/Theater",
+          "zh": "电影院",
+          "zh_TW": "電影院",
+          "ko": "영화관",
+          "es": "Cine/Teatro",
+          "fr": "Cinéma/Théâtre",
+          "de": "Kino/Theater",
+          "vi": "Rạp chiếu phim/Nhà hát",
+          "id": "Bioskop/Teater"
+        }
+      },
+      {
+        "id": "music_live",
+        "label": {
+          "ja": "音楽ライブ",
+          "en": "Live Music",
+          "zh": "现场音乐",
+          "zh_TW": "現場音樂",
+          "ko": "라이브 음악",
+          "es": "Música en vivo",
+          "fr": "Musique en direct",
+          "de": "Live-Musik",
+          "vi": "Nhạc sống",
+          "id": "Musik Langsung"
+        }
+      },
+      {
+        "id": "museum_gallery",
+        "label": {
+          "ja": "美術館・博物館",
+          "en": "Museum/Gallery",
+          "zh": "博物馆/画廊",
+          "zh_TW": "博物館／畫廊",
+          "ko": "박물관/갤러리",
+          "es": "Museo/Galería",
+          "fr": "Musée/Galerie",
+          "de": "Museum/Galerie",
+          "vi": "Bảo tàng/Phòng trưng bày",
+          "id": "Museum/Galeri"
+        }
+      },
+      {
+        "id": "sports_viewing",
+        "label": {
+          "ja": "スポーツ観戦",
+          "en": "Sports Viewing",
+          "zh": "观看体育赛事",
+          "zh_TW": "觀看體育賽事",
+          "ko": "스포츠 관람",
+          "es": "Ver deportes",
+          "fr": "Spectacle sportif",
+          "de": "Sportveranstaltung ansehen",
+          "vi": "Xem thể thao",
+          "id": "Menonton Olahraga"
+        }
+      },
+      {
+        "id": "ticket_booking",
+        "label": {
+          "ja": "チケット予約",
+          "en": "Ticket Booking",
+          "zh": "订票",
+          "zh_TW": "訂票",
+          "ko": "티켓 예약",
+          "es": "Reserva de entradas",
+          "fr": "Réservation de billets",
+          "de": "Ticketbuchung",
+          "vi": "Đặt vé",
+          "id": "Pemesanan Tiket"
+        }
+      },
+      {
+        "id": "art_exhibition",
+        "label": {
+          "ja": "アート展示",
+          "en": "Art Exhibition",
+          "zh": "艺术展",
+          "zh_TW": "藝術展",
+          "ko": "아트 전시",
+          "es": "Exposición de arte",
+          "fr": "Exposition d'art",
+          "de": "Kunstausstellung",
+          "vi": "Triển lãm nghệ thuật",
+          "id": "Pameran Seni"
+        }
+      },
+      {
+        "id": "sports_event",
+        "label": {
+          "ja": "スポーツイベント",
+          "en": "Sports Event",
+          "zh": "体育活动",
+          "zh_TW": "體育活動",
+          "ko": "스포츠 이벤트",
+          "es": "Evento deportivo",
+          "fr": "Événement sportif",
+          "de": "Sportveranstaltung",
+          "vi": "Sự kiện thể thao",
+          "id": "Acara Olahraga"
+        }
+      },
+      {
+        "id": "theme_park",
+        "label": {
+          "ja": "テーマパーク",
+          "en": "Theme Park",
+          "zh": "主题公园",
+          "zh_TW": "主題公園",
+          "ko": "테마파크",
+          "es": "Parque temático",
+          "fr": "Parc à thème",
+          "de": "Freizeitpark",
+          "vi": "Công viên giải trí",
+          "id": "Taman Hiburan"
+        }
+      },
+      {
+        "id": "traditional_festival",
+        "label": {
+          "ja": "伝統祭り",
+          "en": "Traditional Festival",
+          "zh": "传统节日",
+          "zh_TW": "傳統節日",
+          "ko": "전통 축제",
+          "es": "Festival tradicional",
+          "fr": "Festival traditionnel",
+          "de": "Traditionelles Fest",
+          "vi": "Lễ hội truyền thống",
+          "id": "Festival Tradisional"
+        }
+      },
+      {
+        "id": "nightlife",
+        "label": {
+          "ja": "ナイトライフ",
+          "en": "Nightlife",
+          "zh": "夜生活",
+          "zh_TW": "夜生活",
+          "ko": "나이트라이프",
+          "es": "Vida nocturna",
+          "fr": "Vie nocturne",
+          "de": "Nachtleben",
+          "vi": "Cuộc sống về đêm",
+          "id": "Hiburan Malam"
+        }
+      }
+    ]
+  },
+  {
+    "id": "community_life",
+    "label": {
+      "ja": "地域生活",
+      "en": "Community Life",
+      "zh": "社区生活",
+      "zh_TW": "社區生活",
+      "ko": "지역 생활",
+      "es": "Vida comunitaria",
+      "fr": "Vie communautaire",
+      "de": "Gemeinschaftsleben",
+      "vi": "Đời sống cộng đồng",
+      "id": "Kehidupan komunitas"
+    },
+    "subScenes": [
+      {
+        "id": "neighborhood_events",
+        "label": {
+          "ja": "近隣イベント",
+          "en": "Neighborhood Events",
+          "zh": "邻里活动",
+          "zh_TW": "鄰里活動",
+          "ko": "이웃 행사",
+          "es": "Eventos del vecindario",
+          "fr": "Événements de quartier",
+          "de": "Nachbarschaftsveranstaltungen",
+          "vi": "Sự kiện khu phố",
+          "id": "Acara lingkungan"
+        }
+      },
+      {
+        "id": "neighborhood_meetings",
+        "label": {
+          "ja": "近隣会議",
+          "en": "Neighborhood Meetings",
+          "zh": "邻里会议",
+          "zh_TW": "鄰里會議",
+          "ko": "이웃 회의",
+          "es": "Reuniones del vecindario",
+          "fr": "Réunions de quartier",
+          "de": "Nachbarschaftstreffen",
+          "vi": "Cuộc họp khu phố",
+          "id": "Pertemuan lingkungan"
+        }
+      },
+      {
+        "id": "community_center",
+        "label": {
+          "ja": "コミュニティセンター",
+          "en": "Community Center",
+          "zh": "社区中心",
+          "zh_TW": "社區中心",
+          "ko": "커뮤니티 센터",
+          "es": "Centro comunitario",
+          "fr": "Centre communautaire",
+          "de": "Gemeindezentrum",
+          "vi": "Trung tâm cộng đồng",
+          "id": "Pusat komunitas"
+        }
+      },
+      {
+        "id": "volunteer_activities",
+        "label": {
+          "ja": "ボランティア活動",
+          "en": "Volunteer Activities",
+          "zh": "志愿活动",
+          "zh_TW": "志願活動",
+          "ko": "자원봉사 활동",
+          "es": "Actividades de voluntariado",
+          "fr": "Activités bénévoles",
+          "de": "Freiwilligenaktivitäten",
+          "vi": "Hoạt động tình nguyện",
+          "id": "Kegiatan sukarela"
+        }
+      },
+      {
+        "id": "local_festivals",
+        "label": {
+          "ja": "地域のお祭り",
+          "en": "Local Festivals",
+          "zh": "本地节日",
+          "zh_TW": "本地節日",
+          "ko": "지역 축제",
+          "es": "Festivales locales",
+          "fr": "Festivals locaux",
+          "de": "Lokale Feste",
+          "vi": "Lễ hội địa phương",
+          "id": "Festival lokal"
+        }
+      },
+      {
+        "id": "public_services",
+        "label": {
+          "ja": "公共サービス",
+          "en": "Public Services",
+          "zh": "公共服务",
+          "zh_TW": "公共服務",
+          "ko": "공공 서비스",
+          "es": "Servicios públicos",
+          "fr": "Services publics",
+          "de": "Öffentliche Dienstleistungen",
+          "vi": "Dịch vụ công",
+          "id": "Layanan publik"
+        }
+      },
+      {
+        "id": "local_market",
+        "label": {
+          "ja": "地元市場",
+          "en": "Local Market",
+          "zh": "本地市场",
+          "zh_TW": "本地市場",
+          "ko": "지역 시장",
+          "es": "Mercado local",
+          "fr": "Marché local",
+          "de": "Lokaler Markt",
+          "vi": "Chợ địa phương",
+          "id": "Pasar lokal"
+        }
+      },
+      {
+        "id": "park_events",
+        "label": {
+          "ja": "公園イベント",
+          "en": "Park Events",
+          "zh": "公园活动",
+          "zh_TW": "公園活動",
+          "ko": "공원 행사",
+          "es": "Eventos en el parque",
+          "fr": "Événements au parc",
+          "de": "Parkveranstaltungen",
+          "vi": "Sự kiện công viên",
+          "id": "Acara taman"
+        }
+      },
+      {
+        "id": "school_activities",
+        "label": {
+          "ja": "学校行事",
+          "en": "School Activities",
+          "zh": "学校活动",
+          "zh_TW": "學校活動",
+          "ko": "학교 행사",
+          "es": "Actividades escolares",
+          "fr": "Activités scolaires",
+          "de": "Schulaktivitäten",
+          "vi": "Hoạt động trường học",
+          "id": "Kegiatan sekolah"
+        }
+      },
+      {
+        "id": "senior_programs",
+        "label": {
+          "ja": "高齢者プログラム",
+          "en": "Senior Programs",
+          "zh": "老年人项目",
+          "zh_TW": "老年人項目",
+          "ko": "노인 프로그램",
+          "es": "Programas para personas mayores",
+          "fr": "Programmes pour seniors",
+          "de": "Seniorenprogramme",
+          "vi": "Chương trình cho người cao tuổi",
+          "id": "Program lansia"
+        }
+      }
+    ]
+  },
+  {
+    "id": "work",
+    "label": {
+      "ja": "仕事",
+      "en": "work",
+      "zh": "工作",
+      "zh_TW": "工作",
+      "ko": "일하다",
+      "es": "trabajar",
+      "fr": "travail",
+      "de": "arbeiten",
+      "vi": "công việc"
+    },
+    "subScenes": [
+      {
+        "id": "Interviews_JobHunting",
+        "label": {
+          "ja": "面接・就職活動",
+          "en": "Interviews and employment activities",
+          "zh": "访谈和就业活动",
+          "zh_TW": "訪談和就業活動",
+          "ko": "인터뷰 및 고용 활동",
+          "es": "Entrevistas y actividades de empleo",
+          "fr": "Entretiens et activités d'emploi",
+          "de": "Interviews und Beschäftigungsaktivitäten",
+          "vi": "Các cuộc phỏng vấn và các hoạt động việc làm"
+        }
+      },
+      {
+        "id": "BusinessMeetings",
+        "label": {
+          "ja": "ビジネスミーティング",
+          "en": "Business Meeting",
+          "zh": "商务会议",
+          "zh_TW": "商務會議",
+          "ko": "비즈니스 회의",
+          "es": "Reunión de negocios",
+          "fr": "Réunion d'affaires",
+          "de": "Geschäftstreffen",
+          "vi": "Cuộc họp kinh doanh"
+        }
+      },
+      {
+        "id": "Career_HumanResources",
+        "label": {
+          "ja": "人事・キャリア",
+          "en": "HR and Career",
+          "zh": "人力资源和职业",
+          "zh_TW": "人力資源和職業",
+          "ko": "HR과 경력",
+          "es": "RRHH y carrera",
+          "fr": "",
+          "de": "HR und Karriere",
+          "vi": "Nhân sự và sự nghiệp"
+        }
+      },
+      {
+        "id": "ClientRelations",
+        "label": {
+          "ja": "顧客関係",
+          "en": "Customer Relationships",
+          "zh": "客户关系",
+          "zh_TW": "客戶關係",
+          "ko": "고객 관계",
+          "es": "Relaciones con los clientes",
+          "fr": "Relations avec les clients",
+          "de": "Kundenbeziehungen",
+          "vi": "Mối quan hệ khách hàng"
+        }
+      },
+      {
+        "id": "Email_BusinessDocuments",
+        "label": {
+          "ja": "メール・ビジネス文書",
+          "en": "Email and business documents",
+          "zh": "电子邮件和业务文件",
+          "zh_TW": "電子郵件和業務文件",
+          "ko": "이메일 및 비즈니스 문서",
+          "es": "Correo electrónico y documentos comerciales",
+          "fr": "Courriel et documents commerciaux",
+          "de": "E -Mail- und Geschäftsdokumente",
+          "vi": "Email và tài liệu kinh doanh"
+        }
+      },
+      {
+        "id": "Negotiations_Transactions",
+        "label": {
+          "ja": "交渉・取引",
+          "en": "Negotiation and trading",
+          "zh": "谈判和交易",
+          "zh_TW": "談判和交易",
+          "ko": "협상 및 거래",
+          "es": "Negociación y comercio",
+          "fr": "Négociation et échange",
+          "de": "Verhandlung und Handel",
+          "vi": "Đàm phán và giao dịch"
+        }
+      },
+      {
+        "id": "OfficeConversations",
+        "label": {
+          "ja": "社内会話",
+          "en": "In-house conversation",
+          "zh": "内部对话",
+          "zh_TW": "內部對話",
+          "ko": "사내 대화",
+          "es": "Conversación interna",
+          "fr": "Conversation interne",
+          "de": "Internes Gespräch",
+          "vi": "Cuộc trò chuyện trong nhà"
+        }
+      },
+      {
+        "id": "Presentations",
+        "label": {
+          "ja": "プレゼンテーション",
+          "en": "presentation",
+          "zh": "推介会",
+          "zh_TW": "推介會",
+          "ko": "프레젠테이션",
+          "es": "presentación",
+          "fr": "présentation",
+          "de": "Präsentation",
+          "vi": "bài thuyết trình"
+        }
+      },
+      {
+        "id": "Telephone_OnlineMeetings",
+        "label": {
+          "ja": "電話・オンラインミーティング",
+          "en": "Telephone and online meetings",
+          "zh": "电话和在线会议",
+          "zh_TW": "電話和在線會議",
+          "ko": "전화 및 온라인 회의",
+          "es": "Reuniones telefónicas y en línea",
+          "fr": "Teleins téléphoniques et en ligne",
+          "de": "Telefon- und Online -Besprechungen",
+          "vi": "Các cuộc họp điện thoại và trực tuyến"
+        }
+      },
+      {
+        "id": "Troubleshooting",
+        "label": {
+          "ja": "トラブルシューティング",
+          "en": "troubleshooting",
+          "zh": "故障排除",
+          "zh_TW": "故障排除",
+          "ko": "문제 해결",
+          "es": "solución de problemas",
+          "fr": "dépannage",
+          "de": "Fehlerbehebung",
+          "vi": "Khắc phục sự cố"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Social_interactions_hobbies",
+    "label": {
+      "ja": "交流・趣味",
+      "en": "Exchange and hobbies",
+      "zh": "交流和爱好",
+      "zh_TW": "交流和愛好",
+      "ko": "교환 및 취미",
+      "es": "Intercambio y pasatiempos",
+      "fr": "Échange et passe-temps",
+      "de": "Austausch und Hobbys",
+      "vi": "Trao đổi và sở thích"
+    },
+    "subScenes": [
+      {
+        "id": "MakingFriends",
+        "label": {
+          "ja": "友達作り",
+          "en": "Making friends",
+          "zh": "结交朋友",
+          "zh_TW": "結交朋友",
+          "ko": "친구 만들기",
+          "es": "Hacer amigos",
+          "fr": "Se faire des amis",
+          "de": "Freunde finden",
+          "vi": "Kết bạn"
+        }
+      },
+      {
+        "id": "Invitations_Plans",
+        "label": {
+          "ja": "招待状・プラン",
+          "en": "Invitations and plans",
+          "zh": "邀请和计划",
+          "zh_TW": "邀請和計劃",
+          "ko": "초대장 및 계획",
+          "es": "Invitaciones y planes",
+          "fr": "Invitations et plans",
+          "de": "Einladungen und Pläne",
+          "vi": "Lời mời và kế hoạch"
+        }
+      },
+      {
+        "id": "CasualConversations",
+        "label": {
+          "ja": "気軽な会話",
+          "en": "Easy conversation",
+          "zh": "简单的对话",
+          "zh_TW": "簡單的對話",
+          "ko": "쉬운 대화",
+          "es": "Conversación fácil",
+          "fr": "Conversation facile",
+          "de": "Einfaches Gespräch",
+          "vi": "Cuộc trò chuyện dễ dàng"
+        }
+      },
+      {
+        "id": "Hobbies_Leisure",
+        "label": {
+          "ja": "趣味・レジャー",
+          "en": "Hobbies and leisure",
+          "zh": "爱好和休闲",
+          "zh_TW": "愛好和休閒",
+          "ko": "취미와 여가",
+          "es": "Pasatiempos y ocio",
+          "fr": "Passe-temps et loisirs",
+          "de": "Hobbys und Freizeit",
+          "vi": "Sở thích và giải trí"
+        }
+      },
+      {
+        "id": "Sports_Activities",
+        "label": {
+          "ja": "スポーツ・アクティビティ",
+          "en": "Sports Activities",
+          "zh": "体育活动",
+          "zh_TW": "體育活動",
+          "ko": "스포츠 활동",
+          "es": "Actividades deportivas",
+          "fr": "Activités sportives",
+          "de": "Sportaktivitäten",
+          "vi": "Hoạt động thể thao"
+        }
+      },
+      {
+        "id": "Music_Concerts",
+        "label": {
+          "ja": "音楽・コンサート",
+          "en": "Music and Concerts",
+          "zh": "音乐和音乐会",
+          "zh_TW": "音樂和音樂會",
+          "ko": "음악과 콘서트",
+          "es": "Música y conciertos",
+          "fr": "Musique et concerts",
+          "de": "Musik und Konzerte",
+          "vi": "Âm nhạc và buổi hòa nhạc"
+        }
+      },
+      {
+        "id": "Books_Movies",
+        "label": {
+          "ja": "読書・映画",
+          "en": "Reading/Movie",
+          "zh": "阅读/电影",
+          "zh_TW": "閱讀/電影",
+          "ko": "읽기/영화",
+          "es": "Lectura/película",
+          "fr": "Lecture / film",
+          "de": "Lesen/Film",
+          "vi": "Đọc/Phim"
+        }
+      },
+      {
+        "id": "Travel_Plans",
+        "label": {
+          "ja": "旅行・プラン",
+          "en": "Travel & Plans",
+          "zh": "旅行与计划",
+          "zh_TW": "旅行與計劃",
+          "ko": "여행 및 계획",
+          "es": "Viajes y planes",
+          "fr": "Voyages et plans",
+          "de": "Reise & Pläne",
+          "vi": "Du lịch & Kế hoạch"
+        }
+      },
+      {
+        "id": "SocialEvents_Parties",
+        "label": {
+          "ja": "社交イベント・パーティー",
+          "en": "Social Events and Party",
+          "zh": "社交活动和聚会",
+          "zh_TW": "社交活動和聚會",
+          "ko": "사교 행사와 파티",
+          "es": "Eventos sociales y fiesta",
+          "fr": "Événements sociaux et fête",
+          "de": "Gesellschaftliche Ereignisse und Party",
+          "vi": "Các sự kiện xã hội và bữa tiệc"
+        }
+      },
+      {
+        "id": "Dining_Cafes",
+        "label": {
+          "ja": "食事・カフェ",
+          "en": "Food and Café",
+          "zh": "食物和咖啡馆",
+          "zh_TW": "食物和咖啡館",
+          "ko": "음식과 카페",
+          "es": "Comida y café",
+          "fr": "Nourriture et café",
+          "de": "Essen und Café",
+          "vi": "Thức ăn và Café"
+        }
+      },
+      {
+        "id": "Otaku",
+        "label": {
+          "ja": "オタク",
+          "en": "Otaku",
+          "zh": "宅宅",
+          "zh_TW": "御宅族",
+          "ko": "오타쿠",
+          "es": "Otaku",
+          "fr": "Otaku",
+          "de": "Otaku",
+          "vi": "Otaku"
+        }
+      }
+    ]
+  }
+]

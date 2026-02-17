@@ -3,7 +3,7 @@
     "id": "work_001",
     "scene": "work",
     "subScene": "Interviews_JobHunting",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "はじめまして、よろしくお願いします。",
@@ -22,7 +22,7 @@
     "id": "work_002",
     "scene": "work",
     "subScene": "Interviews_JobHunting",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "自己紹介をさせていただきます。",
@@ -193,7 +193,7 @@
     "id": "work_011",
     "scene": "work",
     "subScene": "BusinessMeetings",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "本日の議題をご確認ください。",
@@ -573,7 +573,7 @@
     "id": "work_031",
     "scene": "work",
     "subScene": "ClientRelations",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "本日はご来社いただきありがとうございます。",
@@ -611,7 +611,7 @@
     "id": "work_033",
     "scene": "work",
     "subScene": "ClientRelations",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ご要望を詳しくお聞かせください。",
@@ -630,7 +630,7 @@
     "id": "work_034",
     "scene": "work",
     "subScene": "ClientRelations",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "このプランの特徴をご説明します。",
@@ -668,7 +668,7 @@
     "id": "work_036",
     "scene": "work",
     "subScene": "ClientRelations",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ご不明点はございますか？",
@@ -687,7 +687,7 @@
     "id": "work_037",
     "scene": "work",
     "subScene": "ClientRelations",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ご提案にご満足いただけましたか？",
@@ -744,7 +744,7 @@
     "id": "work_040",
     "scene": "work",
     "subScene": "ClientRelations",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "今後ともよろしくお願いいたします。",
@@ -763,7 +763,7 @@
     "id": "work_041",
     "scene": "work",
     "subScene": "Email_BusinessDocuments",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "先日の会議の資料を送付いたします。",
@@ -782,7 +782,7 @@
     "id": "work_042",
     "scene": "work",
     "subScene": "Email_BusinessDocuments",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ご依頼いただいた件について回答いたします。",
@@ -801,7 +801,7 @@
     "id": "work_043",
     "scene": "work",
     "subScene": "Email_BusinessDocuments",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "お忙しいところ恐れ入りますが、ご確認ください。",
@@ -820,7 +820,7 @@
     "id": "work_044",
     "scene": "work",
     "subScene": "Email_BusinessDocuments",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ご不明点がありましたらお知らせください。",
@@ -839,7 +839,7 @@
     "id": "work_045",
     "scene": "work",
     "subScene": "Email_BusinessDocuments",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "期限までにご返信いただけますでしょうか。",
@@ -877,7 +877,7 @@
     "id": "work_047",
     "scene": "work",
     "subScene": "Email_BusinessDocuments",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ご対応いただき、誠にありがとうございます。",
@@ -896,7 +896,7 @@
     "id": "work_048",
     "scene": "work",
     "subScene": "Email_BusinessDocuments",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "申し訳ございませんが、再度ご確認をお願いいたします。",
@@ -915,7 +915,7 @@
     "id": "work_049",
     "scene": "work",
     "subScene": "Email_BusinessDocuments",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ご提案についてご検討いただけますでしょうか。",
@@ -934,7 +934,7 @@
     "id": "work_050",
     "scene": "work",
     "subScene": "Email_BusinessDocuments",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "引き続きよろしくお願いいたします。",
@@ -953,7 +953,7 @@
     "id": "work_051",
     "scene": "work",
     "subScene": "Negotiations_Transactions",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "本日の交渉を始めさせていただきます。",
@@ -1010,7 +1010,7 @@
     "id": "work_054",
     "scene": "work",
     "subScene": "Negotiations_Transactions",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "支払い条件についてご相談させてください。",
@@ -1048,7 +1048,7 @@
     "id": "work_056",
     "scene": "work",
     "subScene": "Negotiations_Transactions",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "他の選択肢をご提案いただけますか？",
@@ -1086,7 +1086,7 @@
     "id": "work_058",
     "scene": "work",
     "subScene": "Negotiations_Transactions",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "この条件で合意いただけますか？",
@@ -1124,7 +1124,7 @@
     "id": "work_060",
     "scene": "work",
     "subScene": "Negotiations_Transactions",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "本日の交渉に感謝いたします。",
@@ -1143,7 +1143,7 @@
     "id": "work_061",
     "scene": "work",
     "subScene": "OfficeConversations",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "おはようございます。",
@@ -1181,7 +1181,7 @@
     "id": "work_063",
     "scene": "work",
     "subScene": "OfficeConversations",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "この資料をコピーしていただけますか？",
@@ -1200,7 +1200,7 @@
     "id": "work_064",
     "scene": "work",
     "subScene": "OfficeConversations",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ちょっとお時間よろしいでしょうか。",
@@ -1219,7 +1219,7 @@
     "id": "work_065",
     "scene": "work",
     "subScene": "OfficeConversations",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "会議室を予約していただけますか？",
@@ -1295,7 +1295,7 @@
     "id": "work_069",
     "scene": "work",
     "subScene": "OfficeConversations",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "帰宅前に確認していただけますか？",
@@ -1352,7 +1352,7 @@
     "id": "work_072",
     "scene": "work",
     "subScene": "Presentations",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "まずは概要をご説明いたします。",
@@ -1428,7 +1428,7 @@
     "id": "work_076",
     "scene": "work",
     "subScene": "Presentations",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "次に、課題についてご説明します。",
@@ -1466,7 +1466,7 @@
     "id": "work_078",
     "scene": "work",
     "subScene": "Presentations",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ご不明点はございますか？",
@@ -1485,7 +1485,7 @@
     "id": "work_079",
     "scene": "work",
     "subScene": "Presentations",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ご清聴ありがとうございました。",
@@ -1504,7 +1504,7 @@
     "id": "work_080",
     "scene": "work",
     "subScene": "Presentations",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ご質問があればお受けいたします。",
@@ -1523,7 +1523,7 @@
     "id": "work_081",
     "scene": "work",
     "subScene": "Telephone_OnlineMeetings",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "お電話ありがとうございます、Tarouでございます。",
@@ -1542,7 +1542,7 @@
     "id": "work_082",
     "scene": "work",
     "subScene": "Telephone_OnlineMeetings",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "担当者におつなぎいたします。",
@@ -1561,7 +1561,7 @@
     "id": "work_083",
     "scene": "work",
     "subScene": "Telephone_OnlineMeetings",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "少々お待ちいただけますか？",
@@ -1675,7 +1675,7 @@
     "id": "work_089",
     "scene": "work",
     "subScene": "Telephone_OnlineMeetings",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "本日はご参加いただきありがとうございました。",
@@ -1694,7 +1694,7 @@
     "id": "work_090",
     "scene": "work",
     "subScene": "Telephone_OnlineMeetings",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "また改めてご連絡いたします。",
@@ -1713,7 +1713,7 @@
     "id": "work_091",
     "scene": "work",
     "subScene": "Troubleshooting",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ご迷惑をおかけして申し訳ございません。",
@@ -1732,7 +1732,7 @@
     "id": "work_092",
     "scene": "work",
     "subScene": "Troubleshooting",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "詳細をもう少し教えていただけますか？",
@@ -1751,7 +1751,7 @@
     "id": "work_093",
     "scene": "work",
     "subScene": "Troubleshooting",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "こちらで状況を確認いたします。",
@@ -1789,7 +1789,7 @@
     "id": "work_095",
     "scene": "work",
     "subScene": "Troubleshooting",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "代替案をご提案させていただきます。",
@@ -1808,7 +1808,7 @@
     "id": "work_096",
     "scene": "work",
     "subScene": "Troubleshooting",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "至急対応いたしますのでご安心ください。",
@@ -1827,7 +1827,7 @@
     "id": "work_097",
     "scene": "work",
     "subScene": "Troubleshooting",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "今回の原因についてご説明します。",
@@ -1865,7 +1865,7 @@
     "id": "work_099",
     "scene": "work",
     "subScene": "Troubleshooting",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "本件は上司に報告させていただきます。",
@@ -1884,7 +1884,7 @@
     "id": "work_100",
     "scene": "work",
     "subScene": "Troubleshooting",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "改めてお詫び申し上げます。",

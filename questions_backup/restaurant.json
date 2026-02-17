@@ -3,10 +3,8 @@
     "id": "restaurant_001",
     "scene": "restaurant",
     "subScene": "Check-in",
-    "level": "starter",
-    "tags": [
-      "greeting"
-    ],
+    "level": "beginner",
+    "tags": ["greeting"],
     "translations": {
       "ja": "４名です。",
       "en": "We are a party of four.",
@@ -25,9 +23,7 @@
     "scene": "restaurant",
     "subScene": "Check-in",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "待ち時間はどれくらいですか？",
       "en": "How long is the wait?",
@@ -46,9 +42,7 @@
     "scene": "restaurant",
     "subScene": "Check-in",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ラストオーダーは何時ですか？",
       "en": "What time is last order?",
@@ -67,9 +61,7 @@
     "scene": "restaurant",
     "subScene": "Check-in",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "禁煙席をお願いします。",
       "en": "A non‑smoking table, please.",
@@ -88,9 +80,7 @@
     "scene": "restaurant",
     "subScene": "Ordering",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ベジタリアンメニューはありますか？",
       "en": "Do you have a vegetarian menu?",
@@ -109,9 +99,7 @@
     "scene": "restaurant",
     "subScene": "Ordering",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "同行者が牛乳アレルギーです。",
       "en": "My companion is allergic to milk.",
@@ -130,9 +118,7 @@
     "scene": "restaurant",
     "subScene": "Ordering",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "おすすめのメニューはなんですか？",
       "en": "What dishes do you recommend?",
@@ -151,9 +137,7 @@
     "scene": "restaurant",
     "subScene": "Ordering",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "これはどのくらい大きいですか？",
       "en": "How big is this?",
@@ -172,9 +156,7 @@
     "scene": "restaurant",
     "subScene": "Ordering",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "エビを抜いてくれますか？",
       "en": "Could you remove the shrimp, please?",
@@ -193,9 +175,7 @@
     "scene": "restaurant",
     "subScene": "Ordering",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "この料理をお願いします。",
       "en": "I would like to have this dish.",
@@ -214,9 +194,7 @@
     "scene": "restaurant",
     "subScene": "Ordering",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "お水をください。",
       "en": "Could I have some water, please?",
@@ -235,9 +213,7 @@
     "scene": "restaurant",
     "subScene": "Ordering",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "頼んだ料理がまだ来ていません。",
       "en": "The order hasn't arrived yet.",
@@ -256,9 +232,7 @@
     "scene": "restaurant",
     "subScene": "Ordering",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "紙ナプキンをもらえますか？",
       "en": "Could I get a paper napkin?",
@@ -277,9 +251,7 @@
     "scene": "restaurant",
     "subScene": "Checkout",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "お会計をお願いします。",
       "en": "Could I have the check, please?",
@@ -298,9 +270,7 @@
     "scene": "restaurant",
     "subScene": "Checkout",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "現金で支払えますか？",
       "en": "Can I pay in cash?",
@@ -319,9 +289,7 @@
     "scene": "restaurant",
     "subScene": "Checkout",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "クレジットカードで支払えますか？",
       "en": "Can I pay by credit card?",
@@ -340,9 +308,7 @@
     "scene": "restaurant",
     "subScene": "Reservations",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "予約をしたいのですが。",
       "en": "I'd like to make a reservation.",
@@ -361,9 +327,7 @@
     "scene": "restaurant",
     "subScene": "Reservations",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "明日20時に予約できますか？",
       "en": "Can I reserve for tomorrow at 8 PM?",
@@ -382,9 +346,7 @@
     "scene": "restaurant",
     "subScene": "Reservations",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "テラス席を予約したいです。",
       "en": "I would like to reserve a terrace table.",
@@ -403,9 +365,7 @@
     "scene": "restaurant",
     "subScene": "Reservations",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ベビーチェアは必要です。",
       "en": "We need a high chair.",
@@ -424,9 +384,7 @@
     "scene": "restaurant",
     "subScene": "Reservations",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "予約のキャンセルはいつまで可能ですか？",
       "en": "Until when can I cancel the reservation?",
@@ -445,9 +403,7 @@
     "scene": "restaurant",
     "subScene": "Reservations",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "予約確認メールを再送してください。",
       "en": "Please resend the reservation confirmation email.",
@@ -466,9 +422,7 @@
     "scene": "restaurant",
     "subScene": "Reservations",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "名前は田中で予約しています。",
       "en": "The reservation is under the name Tanaka.",
@@ -487,9 +441,7 @@
     "scene": "restaurant",
     "subScene": "Reservations",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "予約時間に遅れそうです。",
       "en": "We might be late for the reservation.",
@@ -508,9 +460,7 @@
     "scene": "restaurant",
     "subScene": "Reservations",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "2名から4名に変更できますか？",
       "en": "Can we change the reservation from two to four people?",
@@ -529,9 +479,7 @@
     "scene": "restaurant",
     "subScene": "Reservations",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "犬連れですが大丈夫ですか？",
       "en": "Is it okay if we bring our dog?",
@@ -550,9 +498,7 @@
     "scene": "restaurant",
     "subScene": "Drinks",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "メニューにないドリンクはありますか？",
       "en": "Do you have drinks not listed on the menu?",
@@ -571,9 +517,7 @@
     "scene": "restaurant",
     "subScene": "Drinks",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ビールを一杯ください。",
       "en": "I'll have a beer, please.",
@@ -592,9 +536,7 @@
     "scene": "restaurant",
     "subScene": "Drinks",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ノンアルコールカクテルはありますか？",
       "en": "Do you have non‑alcoholic cocktails?",
@@ -613,9 +555,7 @@
     "scene": "restaurant",
     "subScene": "Drinks",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "日本酒のおすすめはありますか？",
       "en": "Which sake do you recommend?",
@@ -634,9 +574,7 @@
     "scene": "restaurant",
     "subScene": "Drinks",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "グラスワインを赤白でお願いします。",
       "en": "A glass of red and a glass of white wine, please.",
@@ -655,9 +593,7 @@
     "scene": "restaurant",
     "subScene": "Drinks",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ドリンクのサイズは何種類ありますか？",
       "en": "How many sizes of drinks are there?",
@@ -676,9 +612,7 @@
     "scene": "restaurant",
     "subScene": "Drinks",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "おすすめのカクテルを教えてください。",
       "en": "Please recommend a cocktail.",
@@ -697,9 +631,7 @@
     "scene": "restaurant",
     "subScene": "Drinks",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ミネラルウォーターはスパークリングですか？",
       "en": "Is the mineral water sparkling?",
@@ -718,9 +650,7 @@
     "scene": "restaurant",
     "subScene": "Drinks",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "飲み放題プランはありますか？",
       "en": "Do you have an all‑you‑can‑drink plan?",
@@ -739,9 +669,7 @@
     "scene": "restaurant",
     "subScene": "Drinks",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "お茶のおかわりは無料ですか？",
       "en": "Is refilling tea free?",
@@ -760,9 +688,7 @@
     "scene": "restaurant",
     "subScene": "Desserts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "デザートメニューをください。",
       "en": "Could I have the dessert menu?",
@@ -781,9 +707,7 @@
     "scene": "restaurant",
     "subScene": "Desserts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "本日のデザートは何ですか？",
       "en": "What is today's dessert?",
@@ -802,9 +726,7 @@
     "scene": "restaurant",
     "subScene": "Desserts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "チーズケーキをください。",
       "en": "I'll have the cheesecake, please.",
@@ -823,9 +745,7 @@
     "scene": "restaurant",
     "subScene": "Desserts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "アイスクリームは何味がありますか？",
       "en": "What flavors of ice cream do you have?",
@@ -844,9 +764,7 @@
     "scene": "restaurant",
     "subScene": "Desserts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "甘さ控えめにできますか？",
       "en": "Can you make it less sweet?",
@@ -865,9 +783,7 @@
     "scene": "restaurant",
     "subScene": "Desserts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ケーキの盛り合わせをお願いします。",
       "en": "I’d like a cake assortment, please.",
@@ -886,9 +802,7 @@
     "scene": "restaurant",
     "subScene": "Desserts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "フルーツタルトを一つください。",
       "en": "I’d like one fruit tart, please.",
@@ -907,9 +821,7 @@
     "scene": "restaurant",
     "subScene": "Desserts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "コーヒーと一緒におすすめのデザートは？",
       "en": "What dessert do you recommend with coffee?",
@@ -928,9 +840,7 @@
     "scene": "restaurant",
     "subScene": "Desserts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "小さめサイズのデザートはありますか？",
       "en": "Do you have smaller dessert portions?",
@@ -949,9 +859,7 @@
     "scene": "restaurant",
     "subScene": "Desserts",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "デザートを後で追加できますか？",
       "en": "Can I add a dessert later?",
@@ -970,9 +878,7 @@
     "scene": "restaurant",
     "subScene": "Services&Facilities",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "トイレはどこにありますか？",
       "en": "Where is the restroom?",
@@ -991,9 +897,7 @@
     "scene": "restaurant",
     "subScene": "Services&Facilities",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "無料Wi‑Fiはありますか？",
       "en": "Do you have free Wi‑Fi?",
@@ -1012,9 +916,7 @@
     "scene": "restaurant",
     "subScene": "Services&Facilities",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "喫煙ルームはありますか？",
       "en": "Is there a smoking room?",
@@ -1033,9 +935,7 @@
     "scene": "restaurant",
     "subScene": "Services&Facilities",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ベビールームはありますか？",
       "en": "Is there a baby room?",
@@ -1054,9 +954,7 @@
     "scene": "restaurant",
     "subScene": "Services&Facilities",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "お祝い用のプレートを用意できますか？",
       "en": "Can you prepare a celebratory plate?",
@@ -1075,9 +973,7 @@
     "scene": "restaurant",
     "subScene": "Services&Facilities",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "英語のメニューはありますか？",
       "en": "Do you have a menu in English?",
@@ -1096,9 +992,7 @@
     "scene": "restaurant",
     "subScene": "Services&Facilities",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "店内に電源はありますか？",
       "en": "Is there a power outlet in the restaurant?",
@@ -1117,9 +1011,7 @@
     "scene": "restaurant",
     "subScene": "Services&Facilities",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "スタッフを呼ぶにはどうすればいいですか？",
       "en": "How can I call the staff?",
@@ -1138,9 +1030,7 @@
     "scene": "restaurant",
     "subScene": "Services&Facilities",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "傘を貸してもらえますか？",
       "en": "Could I borrow an umbrella?",
@@ -1159,9 +1049,7 @@
     "scene": "restaurant",
     "subScene": "Services&Facilities",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "静かな席に移動できますか？",
       "en": "Can we move to a quieter table?",
@@ -1180,9 +1068,7 @@
     "scene": "restaurant",
     "subScene": "Take-out",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "テイクアウトは可能ですか？",
       "en": "Is takeout available?",
@@ -1201,9 +1087,7 @@
     "scene": "restaurant",
     "subScene": "Take-out",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "持ち帰り用の容器をお願いします。",
       "en": "I’d like a container for takeout, please.",
@@ -1222,9 +1106,7 @@
     "scene": "restaurant",
     "subScene": "Take-out",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "注文を電話でできますか？",
       "en": "Can I place an order by phone?",
@@ -1243,9 +1125,7 @@
     "scene": "restaurant",
     "subScene": "Take-out",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "オンラインで予約できますか？",
       "en": "Can I make a reservation online?",
@@ -1264,9 +1144,7 @@
     "scene": "restaurant",
     "subScene": "Take-out",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "テイクアウト用のメニューをください。",
       "en": "Could I have the takeout menu?",
@@ -1285,9 +1163,7 @@
     "scene": "restaurant",
     "subScene": "Take-out",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "いつ受け取りに行けばいいですか？",
       "en": "When should I pick it up?",
@@ -1306,9 +1182,7 @@
     "scene": "restaurant",
     "subScene": "Take-out",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "保冷バッグを用意できますか？",
       "en": "Could you provide an insulated bag?",
@@ -1327,9 +1201,7 @@
     "scene": "restaurant",
     "subScene": "Take-out",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "数量を増やしたいのですが。",
       "en": "I’d like to increase the quantity.",
@@ -1348,9 +1220,7 @@
     "scene": "restaurant",
     "subScene": "Take-out",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "アレルギー表示付きでお願いします。",
       "en": "Please include allergy information.",
@@ -1369,14 +1239,12 @@
     "scene": "restaurant",
     "subScene": "Take-out",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ホテルまで配達はできますか？",
       "en": "Can you deliver to the hotel?",
       "zh": "可以送到酒店吗？",
-      "zh_TW": "可以送到飯店嗎？",
+      "zh_TW": "可以送到飯店嗎？",  
       "ko": "호텔로 배달할 수 있나요?",
       "es": "¿Puede entregar en el hotel?",
       "fr": "Pouvez‑vous livrer à l'hôtel ?",
@@ -1390,9 +1258,7 @@
     "scene": "restaurant",
     "subScene": "Fooddetails",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "この料理には何が入っていますか？",
       "en": "What’s in this dish?",
@@ -1411,9 +1277,7 @@
     "scene": "restaurant",
     "subScene": "Fooddetails",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "これはスパイシーですか？",
       "en": "Is this spicy?",
@@ -1432,9 +1296,7 @@
     "scene": "restaurant",
     "subScene": "Fooddetails",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "グルテンフリーの料理はありますか？",
       "en": "Do you have gluten‑free dishes?",
@@ -1453,9 +1315,7 @@
     "scene": "restaurant",
     "subScene": "Fooddetails",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ベジタリアン用にアレンジできますか？",
       "en": "Can you make it vegetarian?",
@@ -1474,9 +1334,7 @@
     "scene": "restaurant",
     "subScene": "Fooddetails",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "こちらのソースは手作りですか？",
       "en": "Is this sauce homemade?",
@@ -1495,9 +1353,7 @@
     "scene": "restaurant",
     "subScene": "Fooddetails",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "料理の辛さは何段階ありますか？",
       "en": "How many spice levels are there?",
@@ -1516,9 +1372,7 @@
     "scene": "restaurant",
     "subScene": "Fooddetails",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "魚料理は新鮮ですか？",
       "en": "Is the fish dish fresh?",
@@ -1537,9 +1391,7 @@
     "scene": "restaurant",
     "subScene": "Fooddetails",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "この魚はどこ産ですか？",
       "en": "Where is this fish from?",
@@ -1558,9 +1410,7 @@
     "scene": "restaurant",
     "subScene": "Fooddetails",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "シェフのおすすめ料理は何ですか？",
       "en": "What is the chef’s recommendation?",
@@ -1579,9 +1429,7 @@
     "scene": "restaurant",
     "subScene": "Fooddetails",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "この料理はどのくらいで提供されますか？",
       "en": "How long will this dish take to be served?",
@@ -1600,9 +1448,7 @@
     "scene": "restaurant",
     "subScene": "Paymentoptions",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "分割払いはできますか？",
       "en": "Can I pay in installments?",
@@ -1621,9 +1467,7 @@
     "scene": "restaurant",
     "subScene": "Paymentoptions",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "QRコード決済は利用できますか？",
       "en": "Do you accept QR code payments?",
@@ -1642,9 +1486,7 @@
     "scene": "restaurant",
     "subScene": "Paymentoptions",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ポイントカードは使えますか？",
       "en": "Can I use a loyalty card?",
@@ -1663,9 +1505,7 @@
     "scene": "restaurant",
     "subScene": "Paymentoptions",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ギフトカードは使えますか？",
       "en": "Do you accept gift cards?",
@@ -1684,9 +1524,7 @@
     "scene": "restaurant",
     "subScene": "Paymentoptions",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "チャージ式カードは対応していますか？",
       "en": "Do you accept rechargeable cards?",
@@ -1705,9 +1543,7 @@
     "scene": "restaurant",
     "subScene": "Paymentoptions",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "タッチ決済は可能ですか？",
       "en": "Is contactless payment available?",
@@ -1726,9 +1562,7 @@
     "scene": "restaurant",
     "subScene": "Paymentoptions",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "記念日に無料ドリンク券は使えますか？",
       "en": "Can I use a free drink voucher on anniversaries?",
@@ -1747,9 +1581,7 @@
     "scene": "restaurant",
     "subScene": "Paymentoptions",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "学割はありますか？",
       "en": "Do you offer a student discount?",
@@ -1768,9 +1600,7 @@
     "scene": "restaurant",
     "subScene": "Paymentoptions",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "社員証割引は適用できますか？",
       "en": "Can I use an employee ID discount?",
@@ -1789,9 +1619,7 @@
     "scene": "restaurant",
     "subScene": "Promotions&Events",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "期間限定メニューはありますか？",
       "en": "Do you have a limited-time menu?",
@@ -1810,9 +1638,7 @@
     "scene": "restaurant",
     "subScene": "Promotions&Events",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ハッピーアワーは何時からですか？",
       "en": "What time does happy hour start?",
@@ -1831,9 +1657,7 @@
     "scene": "restaurant",
     "subScene": "Promotions&Events",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "誕生日特典はありますか？",
       "en": "Do you offer birthday perks?",
@@ -1852,9 +1676,7 @@
     "scene": "restaurant",
     "subScene": "Promotions&Events",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "料理教室イベントの詳細を教えてください。",
       "en": "Please tell me the details of the cooking class event.",
@@ -1873,9 +1695,7 @@
     "scene": "restaurant",
     "subScene": "Promotions&Events",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ワインテイスティングイベントに参加できますか？",
       "en": "Can I participate in the wine tasting event?",
@@ -1894,9 +1714,7 @@
     "scene": "restaurant",
     "subScene": "Promotions&Events",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "クーポンコードはどこで入手できますか？",
       "en": "Where can I get a coupon code?",
@@ -1915,9 +1733,7 @@
     "scene": "restaurant",
     "subScene": "Promotions&Events",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "メンバーズカードの特典は何ですか？",
       "en": "What are the benefits of the membership card?",
@@ -1936,9 +1752,7 @@
     "scene": "restaurant",
     "subScene": "Promotions&Events",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "SNSフォローで割引は受けられますか？",
       "en": "Can I get a discount by following on social media?",
@@ -1957,9 +1771,7 @@
     "scene": "restaurant",
     "subScene": "Health&Safety",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "アレルギー対応について教えてください。",
       "en": "Please tell me about allergy accommodations.",
@@ -1978,9 +1790,7 @@
     "scene": "restaurant",
     "subScene": "Health&Safety",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "手袋を着用していますか？",
       "en": "Do you wear gloves?",
@@ -1999,9 +1809,7 @@
     "scene": "restaurant",
     "subScene": "Health&Safety",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "食品の消費期限はどのように管理していますか？",
       "en": "How do you manage food expiration dates?",
@@ -2020,9 +1828,7 @@
     "scene": "restaurant",
     "subScene": "Health&Safety",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "コロナ対策はされていますか？",
       "en": "Are COVID-19 measures in place?",
@@ -2041,9 +1847,7 @@
     "scene": "restaurant",
     "subScene": "Health&Safety",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "アルコール消毒はどこにありますか？",
       "en": "Where can I find the alcohol sanitizer?",
@@ -2062,9 +1866,7 @@
     "scene": "restaurant",
     "subScene": "Health&Safety",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "調理場を見学できますか？",
       "en": "Can I tour the kitchen?",
@@ -2083,9 +1885,7 @@
     "scene": "restaurant",
     "subScene": "Health&Safety",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "食材は毎日検品していますか？",
       "en": "Do you inspect ingredients daily?",
@@ -2104,9 +1904,7 @@
     "scene": "restaurant",
     "subScene": "Health&Safety",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "食품サンプルは衛生的ですか？",
       "en": "Are the food samples hygienic?",
@@ -2125,9 +1923,7 @@
     "scene": "restaurant",
     "subScene": "Health&Safety",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "ペット同伴時の衛生ルールはありますか？",
       "en": "Are there hygiene rules when accompanied by pets?",
@@ -2146,13 +1942,11 @@
     "scene": "restaurant",
     "subScene": "Health&Safety",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "店内の換気状況を教えてください。",
       "en": "Please tell me about the ventilation inside the store.",
-      "zh": "请告诉我店内的通风情况。",
+      "zh": "请告诉我店内的通风情况。",  
       "zh_TW": "請告訴我店內的通風狀況。",
       "ko": "매장 내 환기 상황을 알려주세요.",
       "es": "Por favor, infórmeme sobre la ventilación en el interior de la tienda.",
@@ -2167,15 +1961,13 @@
     "scene": "restaurant",
     "subScene": "Access&Parking",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "駐車場はありますか？",
       "en": "Is there parking available?",
       "zh": "有停车场吗？",
       "zh_TW": "有停車場嗎？",
-      "ko": "주차장이 있나요?",
+      "ko": "주차장이 있나요?",  
       "es": "¿Hay estacionamiento?",
       "fr": "Y a-t-il un parking ?",
       "de": "Gibt es Parkplätze?",
@@ -2188,9 +1980,7 @@
     "scene": "restaurant",
     "subScene": "Access&Parking",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "近くの駅から徒歩何分ですか？",
       "en": "How many minutes on foot from the nearest station?",
@@ -2198,7 +1988,7 @@
       "zh_TW": "從最近的車站步行需要幾分鐘？",
       "ko": "가장 가까운 역에서 도보로 몇 분 걸리나요?",
       "es": "¿Cuántos minutos a pie se tarda desde la estación más cercana?",
-      "fr": "Combien de minutes à pied depuis la gare la plus proche ?",
+      "fr": "Combien de minutes à pied depuis la gare la plus proche ?",  
       "de": "Wie viele Minuten sind es zu Fuß vom nächstgelegenen Bahnhof?",
       "vi": "Từ ga gần nhất mất bao nhiêu phút đi bộ?",
       "id": "Berapa menit berjalan kaki dari stasiun terdekat?"
@@ -2209,16 +1999,14 @@
     "scene": "restaurant",
     "subScene": "Access&Parking",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "車椅子で入店できますか？",
       "en": "Is the store wheelchair accessible?",
       "zh": "可以使用轮椅进入吗？",
       "zh_TW": "可以使用輪椅進入嗎？",
       "ko": "휠체어로 들어갈 수 있나요?",
-      "es": "¿Se puede acceder en silla de ruedas?",
+      "es": "¿Se puede acceder en silla de ruedas?",  
       "fr": "Le lieu est-il accessible en fauteuil roulant ?",
       "de": "Ist der Zutritt mit einem Rollstuhl möglich?",
       "vi": "Có thể vào bằng xe lăn không?",
@@ -2230,9 +2018,7 @@
     "scene": "restaurant",
     "subScene": "Access&Parking",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "自転車置き場はありますか？",
       "en": "Do you have bicycle parking?",
@@ -2251,9 +2037,7 @@
     "scene": "restaurant",
     "subScene": "Access&Parking",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "タクシー乗り場はどこですか？",
       "en": "Where is the taxi stand?",
@@ -2272,9 +2056,7 @@
     "scene": "restaurant",
     "subScene": "Access&Parking",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "お店の入口はどこにありますか？",
       "en": "Where is the entrance to the store?",
@@ -2293,9 +2075,7 @@
     "scene": "restaurant",
     "subScene": "Access&Parking",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "バリアフリー対応はありますか？",
       "en": "Is there barrier-free accessibility?",
@@ -2314,9 +2094,7 @@
     "scene": "restaurant",
     "subScene": "Access&Parking",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "近くのバス停の名前を教えてください。",
       "en": "Please tell me the name of the nearest bus stop.",
@@ -2335,9 +2113,7 @@
     "scene": "restaurant",
     "subScene": "Access&Parking",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "地下鉄の最寄り出口は何番ですか？",
       "en": "Which subway exit number is the nearest?",
@@ -2356,9 +2132,7 @@
     "scene": "restaurant",
     "subScene": "Access&Parking",
     "level": "beginner",
-    "tags": [
-      "greeting"
-    ],
+    "tags": ["greeting"],
     "translations": {
       "ja": "お店の外観の特徴は何ですか？",
       "en": "What are the distinguishing features of the store's exterior?",

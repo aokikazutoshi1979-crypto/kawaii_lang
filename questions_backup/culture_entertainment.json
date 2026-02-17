@@ -4,9 +4,7 @@
     "scene": "culture_entertainment",
     "subScene": "movies_theater",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "この映画は上映していますか？",
       "en": "Is this movie still showing?",
@@ -25,9 +23,7 @@
     "scene": "culture_entertainment",
     "subScene": "movies_theater",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "何時の回がありますか？",
       "en": "What showings are there?",
@@ -46,9 +42,7 @@
     "scene": "culture_entertainment",
     "subScene": "movies_theater",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "字幕版と吹替版はどちらですか？",
       "en": "Is the subtitled or dubbed version available?",
@@ -67,9 +61,7 @@
     "scene": "culture_entertainment",
     "subScene": "movies_theater",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "チケットはまだありますか？",
       "en": "Are there still tickets available?",
@@ -88,9 +80,7 @@
     "scene": "culture_entertainment",
     "subScene": "movies_theater",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "2枚、真ん中あたりでお願いします。",
       "en": "I'd like two tickets, somewhere in the middle, please.",
@@ -109,9 +99,7 @@
     "scene": "culture_entertainment",
     "subScene": "movies_theater",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "一番前以外の席は空いてますか？",
       "en": "Are any seats available other than the front?",
@@ -130,9 +118,7 @@
     "scene": "culture_entertainment",
     "subScene": "movies_theater",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "学割は使えますか？",
       "en": "Can I get a student discount?",
@@ -151,9 +137,7 @@
     "scene": "culture_entertainment",
     "subScene": "movies_theater",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "予告は何分ありますか？",
       "en": "How many minutes of previews are there?",
@@ -172,9 +156,7 @@
     "scene": "culture_entertainment",
     "subScene": "movies_theater",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "飲み物の持ち込みはできますか？",
       "en": "Can I bring in drinks?",
@@ -193,9 +175,7 @@
     "scene": "culture_entertainment",
     "subScene": "movies_theater",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "エンドロール後に映像はありますか？",
       "en": "Is there footage after the credits?",
@@ -214,9 +194,7 @@
     "scene": "culture_entertainment",
     "subScene": "music_live",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "このバンドは出演しますか？",
       "en": "Will this band be performing?",
@@ -235,9 +213,7 @@
     "scene": "culture_entertainment",
     "subScene": "music_live",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "開演は何時ですか？",
       "en": "What time does the show start?",
@@ -256,9 +232,7 @@
     "scene": "culture_entertainment",
     "subScene": "music_live",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "入場は先着ですか？整理番号ですか？",
       "en": "Is it first-come, first-served? Or are there serial numbers?",
@@ -277,9 +251,7 @@
     "scene": "culture_entertainment",
     "subScene": "music_live",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "物販はどこで買えますか？",
       "en": "Where can I buy merchandise?",
@@ -298,9 +270,7 @@
     "scene": "culture_entertainment",
     "subScene": "music_live",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "ドリンク代はいくらですか？",
       "en": "How much do drinks cost?",
@@ -319,9 +289,7 @@
     "scene": "culture_entertainment",
     "subScene": "music_live",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "再入場はできますか？",
       "en": "Can I re-enter?",
@@ -340,9 +308,7 @@
     "scene": "culture_entertainment",
     "subScene": "music_live",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "撮影や録音は可能ですか？",
       "en": "Can I take photos or record audio?",
@@ -361,9 +327,7 @@
     "scene": "culture_entertainment",
     "subScene": "music_live",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "一番盛り上がる曲はどれですか？",
       "en": "Which song was the most exciting?",
@@ -382,9 +346,7 @@
     "scene": "culture_entertainment",
     "subScene": "music_live",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "アンコールは何曲ありましたか？",
       "en": "How many encores were there?",
@@ -403,9 +365,7 @@
     "scene": "culture_entertainment",
     "subScene": "music_live",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "次のライブ予定はありますか？",
       "en": "Are there any other live performances planned?",
@@ -424,9 +384,7 @@
     "scene": "culture_entertainment",
     "subScene": "museum_gallery",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "常設展と企画展の違いは何ですか？",
       "en": "What is the difference between the permanent exhibition and the special exhibition?",
@@ -445,9 +403,7 @@
     "scene": "culture_entertainment",
     "subScene": "museum_gallery",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "音声ガイドはありますか？",
       "en": "Are there audio guides?",
@@ -466,9 +422,7 @@
     "scene": "culture_entertainment",
     "subScene": "museum_gallery",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "写真撮影はできますか？",
       "en": "Can I take photos?",
@@ -487,9 +441,7 @@
     "scene": "culture_entertainment",
     "subScene": "museum_gallery",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "チケットはオンラインで買えますか？",
       "en": "Can I buy tickets online?",
@@ -508,9 +460,7 @@
     "scene": "culture_entertainment",
     "subScene": "museum_gallery",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "所要時間はどれくらいですか？",
       "en": "How long is the show?",
@@ -529,9 +479,7 @@
     "scene": "culture_entertainment",
     "subScene": "museum_gallery",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "学生割引はありますか？",
       "en": "Are there student discounts?",
@@ -550,9 +498,7 @@
     "scene": "culture_entertainment",
     "subScene": "museum_gallery",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "トイレはどこですか？",
       "en": "Where are the restrooms?",
@@ -571,9 +517,7 @@
     "scene": "culture_entertainment",
     "subScene": "museum_gallery",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "再入場は可能ですか？",
       "en": "Is re-entry allowed?",
@@ -592,9 +536,7 @@
     "scene": "culture_entertainment",
     "subScene": "museum_gallery",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "休館日はいつですか？",
       "en": "When are the museum closed?",
@@ -613,9 +555,7 @@
     "scene": "culture_entertainment",
     "subScene": "museum_gallery",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "目玉展示はどれですか？",
       "en": "Which exhibits are the highlights?",
@@ -634,9 +574,7 @@
     "scene": "culture_entertainment",
     "subScene": "sports_viewing",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "今日の座席はどのエリアですか？",
       "en": "Which seating area are available today?",
@@ -655,9 +593,7 @@
     "scene": "culture_entertainment",
     "subScene": "sports_viewing",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "応援グッズはどこで買えますか？",
       "en": "Where can I buy cheering merchandise?",
@@ -676,9 +612,7 @@
     "scene": "culture_entertainment",
     "subScene": "sports_viewing",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "ビジター席はどちらですか？",
       "en": "Where are the visitor seats?",
@@ -697,9 +631,7 @@
     "scene": "culture_entertainment",
     "subScene": "sports_viewing",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "試合開始は何時ですか？",
       "en": "What time does the game start?",
@@ -718,9 +650,7 @@
     "scene": "culture_entertainment",
     "subScene": "sports_viewing",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "雨天中止のとき払い戻しはありますか？",
       "en": "Are refunds available if the game is cancelled due to rain?",
@@ -739,9 +669,7 @@
     "scene": "culture_entertainment",
     "subScene": "sports_viewing",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "飲食の持ち込みはできますか？",
       "en": "Can I bring in food and drinks?",
@@ -760,9 +688,7 @@
     "scene": "culture_entertainment",
     "subScene": "sports_viewing",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "ハーフタイムショーはありますか？",
       "en": "Is there a halftime show?",
@@ -781,9 +707,7 @@
     "scene": "culture_entertainment",
     "subScene": "sports_viewing",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "公式アプリはありますか？",
       "en": "Is there an official app?",
@@ -802,9 +726,7 @@
     "scene": "culture_entertainment",
     "subScene": "sports_viewing",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "途中入場できますか？",
       "en": "Can I enter at any time?",
@@ -823,9 +745,7 @@
     "scene": "culture_entertainment",
     "subScene": "sports_viewing",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "ベストなアクセス方法は何ですか？",
       "en": "What is the best way to get there?",
@@ -844,9 +764,7 @@
     "scene": "culture_entertainment",
     "subScene": "ticket_booking",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "チケットを予約したいです。",
       "en": "I'd like to reserve tickets.",
@@ -865,9 +783,7 @@
     "scene": "culture_entertainment",
     "subScene": "ticket_booking",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "予約の取り消しはできますか？",
       "en": "Can I cancel my reservation?",
@@ -886,9 +802,7 @@
     "scene": "culture_entertainment",
     "subScene": "ticket_booking",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "座席指定は可能ですか？",
       "en": "Can I reserve seats?",
@@ -907,9 +821,7 @@
     "scene": "culture_entertainment",
     "subScene": "ticket_booking",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "一番安いチケットはどれですか？",
       "en": "What are the cheapest tickets?",
@@ -928,9 +840,7 @@
     "scene": "culture_entertainment",
     "subScene": "ticket_booking",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "追加料金はありますか？",
       "en": "Are there any additional fees?",
@@ -949,9 +859,7 @@
     "scene": "culture_entertainment",
     "subScene": "ticket_booking",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "支払い方法を教えてください。",
       "en": "How do I pay?",
@@ -970,9 +878,7 @@
     "scene": "culture_entertainment",
     "subScene": "ticket_booking",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "予約番号を忘れました。",
       "en": "I forgot my reservation number.",
@@ -991,9 +897,7 @@
     "scene": "culture_entertainment",
     "subScene": "ticket_booking",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "日程変更はできますか？",
       "en": "Can I change my date?",
@@ -1012,9 +916,7 @@
     "scene": "culture_entertainment",
     "subScene": "ticket_booking",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "子供料金はありますか？",
       "en": "Are there children's rates?",
@@ -1033,9 +935,7 @@
     "scene": "culture_entertainment",
     "subScene": "ticket_booking",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "団体割引はありますか？",
       "en": "Are there group discounts?",
@@ -1054,9 +954,7 @@
     "scene": "culture_entertainment",
     "subScene": "art_exhibition",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "この美術館は何時まで開館していますか？",
       "en": "What time is the museum open until?",
@@ -1075,9 +973,7 @@
     "scene": "culture_entertainment",
     "subScene": "art_exhibition",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "入場料はいくらですか？",
       "en": "How much is the admission fee?",
@@ -1096,9 +992,7 @@
     "scene": "culture_entertainment",
     "subScene": "art_exhibition",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "写真撮影は可能ですか？",
       "en": "Can I take photos?",
@@ -1117,9 +1011,7 @@
     "scene": "culture_entertainment",
     "subScene": "art_exhibition",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "館内にカフェはありますか？",
       "en": "Is there a cafe on site? Are there guided tours?",
@@ -1138,9 +1030,7 @@
     "scene": "culture_entertainment",
     "subScene": "art_exhibition",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "ガイドツアーはありますか？",
       "en": "Are guided tours available?",
@@ -1159,9 +1049,7 @@
     "scene": "culture_entertainment",
     "subScene": "art_exhibition",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "展示品は購入できますか？",
       "en": "Can I purchase exhibits?",
@@ -1180,9 +1068,7 @@
     "scene": "culture_entertainment",
     "subScene": "art_exhibition",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "展示の説明は日本語以外でもありますか？",
       "en": "Are the exhibit explanations available in languages other than Japanese?",
@@ -1201,9 +1087,7 @@
     "scene": "culture_entertainment",
     "subScene": "art_exhibition",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "館内での飲食は可能ですか？",
       "en": "Can I eat and drink inside the museum?",
@@ -1222,9 +1106,7 @@
     "scene": "culture_entertainment",
     "subScene": "art_exhibition",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "入場券は事前に予約が必要ですか？",
       "en": "Do I need to reserve tickets in advance?",
@@ -1243,9 +1125,7 @@
     "scene": "culture_entertainment",
     "subScene": "art_exhibition",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "展示替えはいつ行われますか？",
       "en": "When do exhibits change?",
@@ -1264,9 +1144,7 @@
     "scene": "culture_entertainment",
     "subScene": "sports_event",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "この試合は何時から始まりますか？",
       "en": "What time does this match start?",
@@ -1285,9 +1163,7 @@
     "scene": "culture_entertainment",
     "subScene": "sports_event",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "座席指定は可能ですか？",
       "en": "Can I reserve seats?",
@@ -1306,9 +1182,7 @@
     "scene": "culture_entertainment",
     "subScene": "sports_event",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "飲食物の持ち込みはできますか？",
       "en": "Can I bring in food and drinks?",
@@ -1327,9 +1201,7 @@
     "scene": "culture_entertainment",
     "subScene": "sports_event",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "会場へのアクセス方法を教えてください。",
       "en": "How do I get to the venue?",
@@ -1348,9 +1220,7 @@
     "scene": "culture_entertainment",
     "subScene": "sports_event",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "応援グッズはどこで買えますか？",
       "en": "Where can I buy cheering merchandise?",
@@ -1369,9 +1239,7 @@
     "scene": "culture_entertainment",
     "subScene": "sports_event",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "雨天の場合はどうなりますか？",
       "en": "What happens if it rains?",
@@ -1390,9 +1258,7 @@
     "scene": "culture_entertainment",
     "subScene": "sports_event",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "試合結果はどこで確認できますか？",
       "en": "Where can I check the match results?",
@@ -1411,9 +1277,7 @@
     "scene": "culture_entertainment",
     "subScene": "sports_event",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "再入場は可能ですか？",
       "en": "Is re-entry allowed?",
@@ -1432,9 +1296,7 @@
     "scene": "culture_entertainment",
     "subScene": "sports_event",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "チケットは当日でも購入できますか？",
       "en": "Can tickets be purchased on the day?",
@@ -1453,9 +1315,7 @@
     "scene": "culture_entertainment",
     "subScene": "sports_event",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "選手との交流イベントはありますか？",
       "en": "Are there any meet-and-greet events with players?",
@@ -1474,9 +1334,7 @@
     "scene": "culture_entertainment",
     "subScene": "theme_park",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "このアトラクションの待ち時間はどれくらいですか？",
       "en": "How long is the wait time for this attraction?",
@@ -1495,9 +1353,7 @@
     "scene": "culture_entertainment",
     "subScene": "theme_park",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "フリーパスはありますか？",
       "en": "Are there free passes?",
@@ -1516,9 +1372,7 @@
     "scene": "culture_entertainment",
     "subScene": "theme_park",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "ショーの開始時間を教えてください。",
       "en": "What time does the show start?",
@@ -1537,9 +1391,7 @@
     "scene": "culture_entertainment",
     "subScene": "theme_park",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "園内にロッカーはありますか？",
       "en": "Are there lockers in the park?",
@@ -1558,9 +1410,7 @@
     "scene": "culture_entertainment",
     "subScene": "theme_park",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "お土産ショップはどこにありますか？",
       "en": "Where is the souvenir shop?",
@@ -1579,9 +1429,7 @@
     "scene": "culture_entertainment",
     "subScene": "theme_park",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "雨の日でも楽しめるアトラクションはありますか？",
       "en": "Are there any attractions that can be enjoyed on rainy days?",
@@ -1600,9 +1448,7 @@
     "scene": "culture_entertainment",
     "subScene": "theme_park",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "園内マップはどこで入手できますか？",
       "en": "Where can I get a park map?",
@@ -1621,9 +1467,7 @@
     "scene": "culture_entertainment",
     "subScene": "theme_park",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "ベビーカーの貸し出しはありますか？",
       "en": "Do I rent strollers?",
@@ -1642,9 +1486,7 @@
     "scene": "culture_entertainment",
     "subScene": "theme_park",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "再入場は可能ですか？",
       "en": "Is re-entry allowed?",
@@ -1663,9 +1505,7 @@
     "scene": "culture_entertainment",
     "subScene": "theme_park",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "誕生日特典はありますか？",
       "en": "Are there any birthday benefits?",
@@ -1684,9 +1524,7 @@
     "scene": "culture_entertainment",
     "subScene": "traditional_festival",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "この祭りは毎年いつ開催されますか？",
       "en": "When does this festival take place each year?",
@@ -1705,9 +1543,7 @@
     "scene": "culture_entertainment",
     "subScene": "traditional_festival",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "出店は何時まで営業していますか？",
       "en": "What time do the stalls stay open?",
@@ -1726,9 +1562,7 @@
     "scene": "culture_entertainment",
     "subScene": "traditional_festival",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "祭りの由来を教えてください。",
       "en": "What is the origin of this festival?",
@@ -1747,9 +1581,7 @@
     "scene": "culture_entertainment",
     "subScene": "traditional_festival",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "花火大会は何時からですか？",
       "en": "What time does the fireworks display start?",
@@ -1768,9 +1600,7 @@
     "scene": "culture_entertainment",
     "subScene": "traditional_festival",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "浴衣のレンタルはありますか？",
       "en": "Do you offer yukata rentals?",
@@ -1789,9 +1619,7 @@
     "scene": "culture_entertainment",
     "subScene": "traditional_festival",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "ステージイベントはどこで行われますか？",
       "en": "Where are the stage events held?",
@@ -1810,9 +1638,7 @@
     "scene": "culture_entertainment",
     "subScene": "traditional_festival",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "混雑を避けるには何時に行けばいいですか？",
       "en": "What time should I go to avoid the crowds?",
@@ -1831,9 +1657,7 @@
     "scene": "culture_entertainment",
     "subScene": "traditional_festival",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "雨天の場合はどうなりますか？",
       "en": "What happens if it rains?",
@@ -1852,9 +1676,7 @@
     "scene": "culture_entertainment",
     "subScene": "traditional_festival",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "駐車場はありますか？",
       "en": "Is there parking available?",
@@ -1873,9 +1695,7 @@
     "scene": "culture_entertainment",
     "subScene": "traditional_festival",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "子供向けのイベントはありますか？",
       "en": "Are there any events for children?",
@@ -1894,9 +1714,7 @@
     "scene": "culture_entertainment",
     "subScene": "nightlife",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "このバーは何時まで営業していますか？",
       "en": "What time does this bar stay open?",
@@ -1915,9 +1733,7 @@
     "scene": "culture_entertainment",
     "subScene": "nightlife",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "おすすめのカクテルは何ですか？",
       "en": "What cocktails do they offer?",
@@ -1936,9 +1752,7 @@
     "scene": "culture_entertainment",
     "subScene": "nightlife",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "ライブ演奏はありますか？",
       "en": "Do they have live music?",
@@ -1957,9 +1771,7 @@
     "scene": "culture_entertainment",
     "subScene": "nightlife",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "ドレスコードはありますか？",
       "en": "Is there a dress code?",
@@ -1978,9 +1790,7 @@
     "scene": "culture_entertainment",
     "subScene": "nightlife",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "チャージ料金はかかりますか？",
       "en": "Is there a cover charge?",
@@ -1999,9 +1809,7 @@
     "scene": "culture_entertainment",
     "subScene": "nightlife",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "予約は必要ですか？",
       "en": "Do I need to make a reservation?",
@@ -2020,9 +1828,7 @@
     "scene": "culture_entertainment",
     "subScene": "nightlife",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "喫煙席はありますか？",
       "en": "Is there smoking available?",
@@ -2041,9 +1847,7 @@
     "scene": "culture_entertainment",
     "subScene": "nightlife",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "店内は騒がしいですか？",
       "en": "Is it noisy inside?",
@@ -2062,9 +1866,7 @@
     "scene": "culture_entertainment",
     "subScene": "nightlife",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "ハッピーアワーはありますか？",
       "en": "Do you have a happy hour?",
@@ -2083,9 +1885,7 @@
     "scene": "culture_entertainment",
     "subScene": "nightlife",
     "level": "beginner",
-    "tags": [
-      "culture_entertainment"
-    ],
+    "tags": ["culture_entertainment"],
     "translations": {
       "ja": "グループ向けの個室はありますか？",
       "en": "Do you have private rooms for groups?",

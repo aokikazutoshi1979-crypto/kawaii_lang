@@ -1,0 +1,2102 @@
+[
+  {
+    "id": "greeting_001",
+    "scene": "greeting",
+    "subScene": "greeting_self_introduction",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "はじめまして。",
+      "en": "Nice to meet you.",
+      "zh": "很高兴见到你。",
+      "zh_TW": "很高興見到你。",
+      "ko": "만나서 반갑습니다.",
+      "es": "Mucho gusto.",
+      "fr": "Enchanté(e).",
+      "de": "Freut mich, Sie kennenzulernen.",
+      "vi": "Rất vui được gặp bạn.",
+      "id": "Senang bertemu dengan Anda."
+    }
+  },
+  {
+    "id": "greeting_002",
+    "scene": "greeting",
+    "subScene": "greeting_self_introduction",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "私は佐藤花子です。",
+      "en": "I am Hanako Sato.",
+      "zh": "我是佐藤花子。",
+      "zh_TW": "我是佐藤花子。",
+      "ko": "저는 사토 하나코입니다.",
+      "es": "Soy Hanako Sato.",
+      "fr": "Je suis Hanako Sato.",
+      "de": "Ich bin Hanako Sato.",
+      "vi": "Tôi là Hanako Sato.",
+      "id": "Saya Hanako Sato."
+    }
+  },
+  {
+    "id": "greeting_003",
+    "scene": "greeting",
+    "subScene": "greeting_self_introduction",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "花子と呼んでください。",
+      "en": "Please call me Hanako.",
+      "zh": "请叫我花子。",
+      "zh_TW": "請叫我花子。",
+      "ko": "하나코라고 불러주세요.",
+      "es": "Por favor, llámame Hanako.",
+      "fr": "Appelez-moi Hanako, s'il vous plaît.",
+      "de": "Bitte nennen Sie mich Hanako.",
+      "vi": "Xin hãy gọi tôi là Hanako.",
+      "id": "Silakan panggil saya Hanako."
+    }
+  },
+  {
+    "id": "greeting_004",
+    "scene": "greeting",
+    "subScene": "greeting_self_introduction",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "東京から来ました。",
+      "en": "I am from Tokyo.",
+      "zh": "我来自东京。",
+      "zh_TW": "我來自東京。",
+      "ko": "저는 도쿄에서 왔습니다.",
+      "es": "Soy de Tokio.",
+      "fr": "Je viens de Tokyo.",
+      "de": "Ich komme aus Tokio.",
+      "vi": "Tôi đến từ Tokyo.",
+      "id": "Saya berasal dari Tokyo."
+    }
+  },
+  {
+    "id": "greeting_005",
+    "scene": "greeting",
+    "subScene": "greeting_self_introduction",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "IT企業で働いています。",
+      "en": "I work at an IT company.",
+      "zh": "我在一家IT公司工作。",
+      "zh_TW": "我在一家IT公司工作。",
+      "ko": "저는 IT 회사에서 일합니다.",
+      "es": "Trabajo en una empresa de TI.",
+      "fr": "Je travaille dans une entreprise informatique.",
+      "de": "Ich arbeite in einem IT-Unternehmen.",
+      "vi": "Tôi làm việc tại một công ty CNTT.",
+      "id": "Saya bekerja di perusahaan TI."
+    }
+  },
+  {
+    "id": "greeting_006",
+    "scene": "greeting",
+    "subScene": "greeting_self_introduction",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "経済学を勉強しています。",
+      "en": "I study economics.",
+      "zh": "我学习经济学。",
+      "zh_TW": "我學習經濟學。",
+      "ko": "저는 경제학을 공부하고 있습니다.",
+      "es": "Estudio economía.",
+      "fr": "J'étudie l'économie.",
+      "de": "Ich studiere Wirtschaftswissenschaften.",
+      "vi": "Tôi học kinh tế học.",
+      "id": "Saya belajar ekonomi."
+    }
+  },
+  {
+    "id": "greeting_007",
+    "scene": "greeting",
+    "subScene": "greeting_self_introduction",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "お会いできてうれしいです。",
+      "en": "I’m glad to meet you.",
+      "zh": "很高兴见到你。",
+      "zh_TW": "很高興見到你。",
+      "ko": "만나서 기쁩니다.",
+      "es": "Me alegra conocerte.",
+      "fr": "Je suis heureux(se) de vous rencontrer.",
+      "de": "Ich freue mich, Sie kennenzulernen.",
+      "vi": "Tôi rất vui được gặp bạn.",
+      "id": "Saya senang bertemu dengan Anda."
+    }
+  },
+  {
+    "id": "greeting_008",
+    "scene": "greeting",
+    "subScene": "greeting_self_introduction",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "よろしくお願いします。",
+      "en": "Please take care of me.",
+      "zh": "请多关照。",
+      "zh_TW": "請多關照。",
+      "ko": "잘 부탁드립니다.",
+      "es": "Encantado(a) de conocerte.",
+      "fr": "Je compte sur vous.",
+      "de": "Ich freue mich auf die Zusammenarbeit.",
+      "vi": "Rất mong được giúp đỡ.",
+      "id": "Mohon kerja samanya."
+    }
+  },
+  {
+    "id": "greeting_009",
+    "scene": "greeting",
+    "subScene": "greeting_self_introduction",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "お名前を教えていただけますか？",
+      "en": "Could you tell me your name?",
+      "zh": "请告诉我你的名字好吗？",
+      "zh_TW": "請告訴我你的名字好嗎？",
+      "ko": "이름을 알려 주시겠어요?",
+      "es": "¿Podría decirme su nombre?",
+      "fr": "Pouvez-vous me dire votre nom ?",
+      "de": "Könnten Sie mir Ihren Namen sagen?",
+      "vi": "Bạn có thể cho tôi biết tên bạn không?",
+      "id": "Bisakah Anda memberitahu saya nama Anda?"
+    }
+  },
+  {
+    "id": "greeting_010",
+    "scene": "greeting",
+    "subScene": "greeting_self_introduction",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "お会いするのは初めてですよね？",
+      "en": "This is our first time meeting, right?",
+      "zh": "这是我们第一次见面，对吗？",
+      "zh_TW": "這是我們第一次見面，對嗎？",
+      "ko": "우리 처음 만나는 거죠?",
+      "es": "Es la primera vez que nos vemos, ¿verdad?",
+      "fr": "C’est la première fois que nous nous rencontrons, n’est-ce pas ?",
+      "de": "Dies ist das erste Mal, dass wir uns treffen, richtig?",
+      "vi": "Đây là lần đầu tiên chúng ta gặp nhau, đúng không?",
+      "id": "Ini pertama kali kita bertemu, bukan?"
+    }
+  },
+  {
+    "id": "greeting_011",
+    "scene": "greeting",
+    "subScene": "greeting_morning",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "おはようございます。",
+      "en": "Good morning.",
+      "zh": "早上好。",
+      "zh_TW": "早安。",
+      "ko": "좋은 아침입니다.",
+      "es": "Buenos días.",
+      "fr": "Bonjour.",
+      "de": "Guten Morgen.",
+      "vi": "Chào buổi sáng.",
+      "id": "Selamat pagi."
+    }
+  },
+  {
+    "id": "greeting_012",
+    "scene": "greeting",
+    "subScene": "greeting_morning",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "おはよう。",
+      "en": "Morning.",
+      "zh": "早。",
+      "zh_TW": "早。",
+      "ko": "안녕(아침).",
+      "es": "Buenos días.",
+      "fr": "Salut.",
+      "de": "Morgen.",
+      "vi": "Chào buổi sáng.",
+      "id": "Selamat pagi."
+    }
+  },
+  {
+    "id": "greeting_013",
+    "scene": "greeting",
+    "subScene": "greeting_morning",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "今日はいい天気ですね。",
+      "en": "It’s nice weather today.",
+      "zh": "今天天气很好。",
+      "zh_TW": "今天天氣很好。",
+      "ko": "오늘 날씨 좋네요.",
+      "es": "Hace buen tiempo hoy.",
+      "fr": "Il fait beau aujourd’hui.",
+      "de": "Heute ist schönes Wetter.",
+      "vi": "Hôm nay trời đẹp quá.",
+      "id": "Hari ini cuacanya bagus."
+    }
+  },
+  {
+    "id": "greeting_014",
+    "scene": "greeting",
+    "subScene": "greeting_morning",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "よく眠れましたか？",
+      "en": "Did you sleep well?",
+      "zh": "你睡得好吗？",
+      "zh_TW": "你睡得好嗎？",
+      "ko": "잘 잤어요?",
+      "es": "¿Dormiste bien?",
+      "fr": "As-tu bien dormi ?",
+      "de": "Haben Sie gut geschlafen?",
+      "vi": "Bạn ngủ ngon không?",
+      "id": "Apakah Anda tidur nyenyak?"
+    }
+  },
+  {
+    "id": "greeting_015",
+    "scene": "greeting",
+    "subScene": "greeting_morning",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "朝ごはんはもう食べましたか？",
+      "en": "Have you had breakfast yet?",
+      "zh": "你吃早餐了吗？",
+      "zh_TW": "你吃早餐了嗎？",
+      "ko": "아침 먹었어요?",
+      "es": "¿Ya desayunaste?",
+      "fr": "As-tu déjà pris ton petit-déjeuner ?",
+      "de": "Haben Sie schon gefrühstückt?",
+      "vi": "Bạn đã ăn sáng chưa?",
+      "id": "Apakah Anda sudah sarapan?"
+    }
+  },
+  {
+    "id": "greeting_016",
+    "scene": "greeting",
+    "subScene": "greeting_morning",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "今日も一日頑張りましょう。",
+      "en": "Let’s do our best today.",
+      "zh": "今天也一起努力吧。",
+      "zh_TW": "今天也一起努力吧。",
+      "ko": "오늘도 힘내요.",
+      "es": "Vamos a dar lo mejor hoy.",
+      "fr": "Faisons de notre mieux aujourd’hui.",
+      "de": "Lassen Sie uns heute unser Bestes geben.",
+      "vi": "Hôm nay chúng ta cùng cố gắng nhé.",
+      "id": "Mari kita lakukan yang terbaik hari ini."
+    }
+  },
+  {
+    "id": "greeting_017",
+    "scene": "greeting",
+    "subScene": "greeting_morning",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "昨日はよく眠れましたか？",
+      "en": "Did you sleep well last night?",
+      "zh": "你昨晚睡得好吗？",
+      "zh_TW": "你昨晚睡得好嗎？",
+      "ko": "어젯밤 잘 잤어요?",
+      "es": "¿Dormiste bien anoche?",
+      "fr": "As-tu bien dormi hier soir ?",
+      "de": "Haben Sie letzte Nacht gut geschlafen?",
+      "vi": "Đêm qua bạn ngủ ngon không?",
+      "id": "Apakah Anda tidur nyenyak tadi malam?"
+    }
+  },
+  {
+    "id": "greeting_018",
+    "scene": "greeting",
+    "subScene": "greeting_morning",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "朝の散歩は気持ちいいですね。",
+      "en": "Morning walks feel nice, don’t they?",
+      "zh": "早晨散步很舒服，对吧？",
+      "zh_TW": "早晨散步很舒服，對吧？",
+      "ko": "아침 산책은 기분 좋죠?",
+      "es": "Pasear por la mañana se siente bien, ¿verdad?",
+      "fr": "La promenade du matin est agréable, n’est-ce pas ?",
+      "de": "Morgenspaziergänge sind schön, nicht wahr?",
+      "vi": "Đi dạo buổi sáng thật dễ chịu, phải không?",
+      "id": "Jalan pagi terasa menyenangkan, bukan?"
+    }
+  },
+  {
+    "id": "greeting_019",
+    "scene": "greeting",
+    "subScene": "greeting_morning",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "お目覚めはいかがですか？",
+      "en": "How was your wake-up?",
+      "zh": "你起床感觉怎么样？",
+      "zh_TW": "你起床感覺怎麼樣？",
+      "ko": "기분 좋게 일어났어요?",
+      "es": "¿Cómo te sientes al despertar?",
+      "fr": "Comment vous sentez-vous ce matin ?",
+      "de": "Wie war Ihr Aufwachen?",
+      "vi": "Bạn thấy thế nào khi thức dậy?",
+      "id": "Bagaimana perasaan Anda saat bangun tidur?"
+    }
+  },
+  {
+    "id": "greeting_020",
+    "scene": "greeting",
+    "subScene": "greeting_morning",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "今日の予定はありますか？",
+      "en": "Do you have plans for today?",
+      "zh": "你今天有安排吗？",
+      "zh_TW": "你今天有安排嗎？",
+      "ko": "오늘 계획 있어요?",
+      "es": "¿Tienes planes para hoy?",
+      "fr": "Avez-vous des projets pour aujourd’hui ?",
+      "de": "Haben Sie Pläne für heute?",
+      "vi": "Bạn có kế hoạch gì cho hôm nay không?",
+      "id": "Apakah Anda punya rencana hari ini?"
+    }
+  },
+  {
+    "id": "greeting_021",
+    "scene": "greeting",
+    "subScene": "greeting_afternoon",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "こんにちは。",
+      "en": "Hello.",
+      "zh": "你好。",
+      "zh_TW": "你好。",
+      "ko": "안녕하세요.",
+      "es": "Hola.",
+      "fr": "Bonjour.",
+      "de": "Hallo.",
+      "vi": "Xin chào.",
+      "id": "Halo."
+    }
+  },
+  {
+    "id": "greeting_022",
+    "scene": "greeting",
+    "subScene": "greeting_afternoon",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "いい午後ですね。",
+      "en": "It’s a nice afternoon.",
+      "zh": "这是一个美好的下午。",
+      "zh_TW": "這是一個美好的下午。",
+      "ko": "좋은 오후네요.",
+      "es": "Es una buena tarde.",
+      "fr": "C’est un bel après-midi.",
+      "de": "Es ist ein schöner Nachmittag.",
+      "vi": "Buổi chiều thật đẹp.",
+      "id": "Sore yang indah."
+    }
+  },
+  {
+    "id": "greeting_023",
+    "scene": "greeting",
+    "subScene": "greeting_afternoon",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "お昼ごはんは食べましたか？",
+      "en": "Have you had lunch?",
+      "zh": "你吃午饭了吗？",
+      "zh_TW": "你吃午飯了嗎？",
+      "ko": "점심 먹었어요?",
+      "es": "¿Has almorzado?",
+      "fr": "As-tu déjeuné ?",
+      "de": "Haben Sie zu Mittag gegessen?",
+      "vi": "Bạn đã ăn trưa chưa?",
+      "id": "Apakah Anda sudah makan siang?"
+    }
+  },
+  {
+    "id": "greeting_024",
+    "scene": "greeting",
+    "subScene": "greeting_afternoon",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "午後の予定はありますか？",
+      "en": "Do you have plans for the afternoon?",
+      "zh": "你下午有安排吗？",
+      "zh_TW": "你下午有安排嗎？",
+      "ko": "오후에 계획 있어요?",
+      "es": "¿Tienes planes para esta tarde?",
+      "fr": "Avez-vous des projets pour cet après-midi ?",
+      "de": "Haben Sie Pläne für den Nachmittag?",
+      "vi": "Bạn có kế hoạch gì cho buổi chiều không?",
+      "id": "Apakah Anda punya rencana sore ini?"
+    }
+  },
+  {
+    "id": "greeting_025",
+    "scene": "greeting",
+    "subScene": "greeting_afternoon",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "お元気ですか？",
+      "en": "How are you?",
+      "zh": "你好吗？",
+      "zh_TW": "你好嗎？",
+      "ko": "잘 지내세요?",
+      "es": "¿Cómo estás?",
+      "fr": "Comment ça va ?",
+      "de": "Wie geht es Ihnen?",
+      "vi": "Bạn khỏe không?",
+      "id": "Apa kabar?"
+    }
+  },
+  {
+    "id": "greeting_026",
+    "scene": "greeting",
+    "subScene": "greeting_afternoon",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "お仕事は順調ですか？",
+      "en": "Is your work going well?",
+      "zh": "你的工作顺利吗？",
+      "zh_TW": "你的工作順利嗎？",
+      "ko": "일 잘 되고 있어요?",
+      "es": "¿Va bien tu trabajo?",
+      "fr": "Votre travail se passe-t-il bien ?",
+      "de": "Läuft Ihre Arbeit gut?",
+      "vi": "Công việc của bạn thuận lợi chứ?",
+      "id": "Apakah pekerjaan Anda lancar?"
+    }
+  },
+  {
+    "id": "greeting_027",
+    "scene": "greeting",
+    "subScene": "greeting_afternoon",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "今日は忙しいですか？",
+      "en": "Are you busy today?",
+      "zh": "你今天忙吗？",
+      "zh_TW": "你今天忙嗎？",
+      "ko": "오늘 바쁘세요?",
+      "es": "¿Estás ocupado hoy?",
+      "fr": "Êtes-vous occupé aujourd’hui ?",
+      "de": "Sind Sie heute beschäftigt?",
+      "vi": "Hôm nay bạn bận không?",
+      "id": "Apakah Anda sibuk hari ini?"
+    }
+  },
+  {
+    "id": "greeting_028",
+    "scene": "greeting",
+    "subScene": "greeting_afternoon",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "いい日差しですね。",
+      "en": "It’s nice sunlight.",
+      "zh": "阳光真好。",
+      "zh_TW": "陽光真好。",
+      "ko": "햇빛이 좋네요.",
+      "es": "Hace un buen sol.",
+      "fr": "Il y a un beau soleil.",
+      "de": "Das Sonnenlicht ist schön.",
+      "vi": "Ánh nắng đẹp thật.",
+      "id": "Cahayanya indah sekali."
+    }
+  },
+  {
+    "id": "greeting_029",
+    "scene": "greeting",
+    "subScene": "greeting_afternoon",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "今、休憩中ですか？",
+      "en": "Are you on a break now?",
+      "zh": "你现在在休息吗？",
+      "zh_TW": "你現在在休息嗎？",
+      "ko": "지금 쉬는 중이에요?",
+      "es": "¿Estás descansando ahora?",
+      "fr": "Êtes-vous en pause maintenant ?",
+      "de": "Sind Sie gerade in der Pause?",
+      "vi": "Bạn đang nghỉ ngơi à?",
+      "id": "Apakah Anda sedang istirahat?"
+    }
+  },
+  {
+    "id": "greeting_030",
+    "scene": "greeting",
+    "subScene": "greeting_afternoon",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "午後も頑張りましょう。",
+      "en": "Let’s do our best this afternoon.",
+      "zh": "下午也一起加油吧。",
+      "zh_TW": "下午也一起加油吧。",
+      "ko": "오후에도 힘냅시다.",
+      "es": "Vamos a dar lo mejor esta tarde.",
+      "fr": "Faisons de notre mieux cet après-midi.",
+      "de": "Lassen Sie uns heute Nachmittag unser Bestes geben.",
+      "vi": "Chiều nay chúng ta cùng cố gắng nhé.",
+      "id": "Mari kita lakukan yang terbaik sore ini."
+    }
+  },
+  {
+    "id": "greeting_031",
+    "scene": "greeting",
+    "subScene": "greeting_evening",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "こんばんは。",
+      "en": "Good evening.",
+      "zh": "晚上好。",
+      "zh_TW": "晚上好。",
+      "ko": "좋은 저녁입니다.",
+      "es": "Buenas noches.",
+      "fr": "Bonsoir.",
+      "de": "Guten Abend.",
+      "vi": "Chào buổi tối.",
+      "id": "Selamat malam."
+    }
+  },
+  {
+    "id": "greeting_032",
+    "scene": "greeting",
+    "subScene": "greeting_evening",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "いい夜ですね。",
+      "en": "It’s a nice night.",
+      "zh": "今晚真好。",
+      "zh_TW": "今晚真好。",
+      "ko": "좋은 밤이네요.",
+      "es": "Es una buena noche.",
+      "fr": "C’est une belle nuit.",
+      "de": "Es ist eine schöne Nacht.",
+      "vi": "Đêm thật đẹp.",
+      "id": "Malam yang indah."
+    }
+  },
+  {
+    "id": "greeting_033",
+    "scene": "greeting",
+    "subScene": "greeting_evening",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "お仕事お疲れさまでした。",
+      "en": "Good job today.",
+      "zh": "今天辛苦了。",
+      "zh_TW": "今天辛苦了。",
+      "ko": "오늘 수고하셨어요.",
+      "es": "Buen trabajo hoy.",
+      "fr": "Bon travail aujourd’hui.",
+      "de": "Gute Arbeit heute.",
+      "vi": "Hôm nay làm việc vất vả rồi.",
+      "id": "Pekerjaan bagus hari ini."
+    }
+  },
+  {
+    "id": "greeting_034",
+    "scene": "greeting",
+    "subScene": "greeting_evening",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "夕食は食べましたか？",
+      "en": "Have you had dinner?",
+      "zh": "你吃晚饭了吗？",
+      "zh_TW": "你吃晚飯了嗎？",
+      "ko": "저녁 먹었어요?",
+      "es": "¿Has cenado?",
+      "fr": "As-tu dîné ?",
+      "de": "Haben Sie zu Abend gegessen?",
+      "vi": "Bạn đã ăn tối chưa?",
+      "id": "Apakah Anda sudah makan malam?"
+    }
+  },
+  {
+    "id": "greeting_035",
+    "scene": "greeting",
+    "subScene": "greeting_evening",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "今日はどんな一日でしたか？",
+      "en": "How was your day?",
+      "zh": "你今天过得怎么样？",
+      "zh_TW": "你今天過得怎麼樣？",
+      "ko": "오늘 하루 어땠어요?",
+      "es": "¿Cómo estuvo tu día?",
+      "fr": "Comment s’est passée votre journée ?",
+      "de": "Wie war Ihr Tag?",
+      "vi": "Ngày hôm nay của bạn thế nào?",
+      "id": "Bagaimana harimu?"
+    }
+  },
+  {
+    "id": "greeting_036",
+    "scene": "greeting",
+    "subScene": "greeting_evening",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "いい夢を見てくださいね。",
+      "en": "Have sweet dreams.",
+      "zh": "祝你做个好梦。",
+      "zh_TW": "祝你做個好夢。",
+      "ko": "좋은 꿈 꾸세요.",
+      "es": "Que tengas dulces sueños.",
+      "fr": "Fais de beaux rêves.",
+      "de": "Träumen Sie süß.",
+      "vi": "Chúc bạn mơ đẹp nhé.",
+      "id": "Semoga mimpi indah."
+    }
+  },
+  {
+    "id": "greeting_037",
+    "scene": "greeting",
+    "subScene": "greeting_evening",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "夜風が気持ちいいですね。",
+      "en": "The night breeze feels nice.",
+      "zh": "夜风很舒服。",
+      "zh_TW": "夜風很舒服。",
+      "ko": "밤바람이 시원하네요.",
+      "es": "La brisa nocturna se siente bien.",
+      "fr": "La brise nocturne est agréable.",
+      "de": "Die Nachtbrise ist angenehm.",
+      "vi": "Gió đêm thật dễ chịu.",
+      "id": "Angin malam terasa menyenangkan."
+    }
+  },
+  {
+    "id": "greeting_038",
+    "scene": "greeting",
+    "subScene": "greeting_evening",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "今夜は星がきれいですね。",
+      "en": "The stars are beautiful tonight.",
+      "zh": "今晚的星星很美。",
+      "zh_TW": "今晚的星星很美。",
+      "ko": "오늘 밤 별이 예쁘네요.",
+      "es": "Las estrellas están hermosas esta noche.",
+      "fr": "Les étoiles sont belles ce soir.",
+      "de": "Die Sterne sind heute Abend schön.",
+      "vi": "Tối nay sao thật đẹp.",
+      "id": "Bintang-bintang indah malam ini."
+    }
+  },
+  {
+    "id": "greeting_039",
+    "scene": "greeting",
+    "subScene": "greeting_evening",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "明日の予定はありますか？",
+      "en": "Do you have plans for tomorrow?",
+      "zh": "你明天有安排吗？",
+      "zh_TW": "你明天有安排嗎？",
+      "ko": "내일 계획 있어요?",
+      "es": "¿Tienes planes para mañana?",
+      "fr": "Avez-vous des projets pour demain ?",
+      "de": "Haben Sie Pläne für morgen?",
+      "vi": "Bạn có kế hoạch gì cho ngày mai không?",
+      "id": "Apakah Anda punya rencana besok?"
+    }
+  },
+  {
+    "id": "greeting_040",
+    "scene": "greeting",
+    "subScene": "greeting_evening",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "お休みなさい。",
+      "en": "Good night.",
+      "zh": "晚安。",
+      "zh_TW": "晚安。",
+      "ko": "안녕히 주무세요.",
+      "es": "Buenas noches.",
+      "fr": "Bonne nuit.",
+      "de": "Gute Nacht.",
+      "vi": "Chúc ngủ ngon.",
+      "id": "Selamat malam."
+    }
+  },
+  {
+    "id": "greeting_041",
+    "scene": "greeting",
+    "subScene": "greeting_farewell",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "さようなら。",
+      "en": "Goodbye.",
+      "zh": "再见。",
+      "zh_TW": "再見。",
+      "ko": "안녕히 가세요.",
+      "es": "Adiós.",
+      "fr": "Au revoir.",
+      "de": "Auf Wiedersehen.",
+      "vi": "Tạm biệt.",
+      "id": "Selamat tinggal."
+    }
+  },
+  {
+    "id": "greeting_042",
+    "scene": "greeting",
+    "subScene": "greeting_farewell",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "また会いましょう。",
+      "en": "See you again.",
+      "zh": "再见。",
+      "zh_TW": "再見。",
+      "ko": "또 만나요.",
+      "es": "Nos vemos.",
+      "fr": "À bientôt.",
+      "de": "Bis bald.",
+      "vi": "Hẹn gặp lại.",
+      "id": "Sampai jumpa lagi."
+    }
+  },
+  {
+    "id": "greeting_043",
+    "scene": "greeting",
+    "subScene": "greeting_farewell",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "お元気で。",
+      "en": "Take care.",
+      "zh": "保重。",
+      "zh_TW": "保重。",
+      "ko": "건강하세요.",
+      "es": "Cuídate.",
+      "fr": "Prenez soin de vous.",
+      "de": "Passen Sie auf sich auf.",
+      "vi": "Bảo trọng nhé.",
+      "id": "Jaga diri baik-baik."
+    }
+  },
+  {
+    "id": "greeting_044",
+    "scene": "greeting",
+    "subScene": "greeting_farewell",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "また近いうちに。",
+      "en": "See you soon.",
+      "zh": "很快见。",
+      "zh_TW": "很快見。",
+      "ko": "곧 봐요.",
+      "es": "Hasta pronto.",
+      "fr": "À très bientôt.",
+      "de": "Bis bald.",
+      "vi": "Hẹn gặp lại sớm.",
+      "id": "Sampai jumpa segera."
+    }
+  },
+  {
+    "id": "greeting_045",
+    "scene": "greeting",
+    "subScene": "greeting_farewell",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "お気をつけて。",
+      "en": "Be careful.",
+      "zh": "请小心。",
+      "zh_TW": "請小心。",
+      "ko": "조심하세요.",
+      "es": "Ten cuidado.",
+      "fr": "Faites attention.",
+      "de": "Seien Sie vorsichtig.",
+      "vi": "Cẩn thận nhé.",
+      "id": "Hati-hati."
+    }
+  },
+  {
+    "id": "greeting_046",
+    "scene": "greeting",
+    "subScene": "greeting_farewell",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "さよなら、友よ。",
+      "en": "Farewell, my friend.",
+      "zh": "再见，我的朋友。",
+      "zh_TW": "再見，我的朋友。",
+      "ko": "안녕, 친구야.",
+      "es": "Adiós, amigo.",
+      "fr": "Adieu, mon ami.",
+      "de": "Lebe wohl, mein Freund.",
+      "vi": "Tạm biệt, bạn của tôi.",
+      "id": "Selamat tinggal, temanku."
+    }
+  },
+  {
+    "id": "greeting_047",
+    "scene": "greeting",
+    "subScene": "greeting_farewell",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "また明日。",
+      "en": "See you tomorrow.",
+      "zh": "明天见。",
+      "zh_TW": "明天見。",
+      "ko": "내일 봐요.",
+      "es": "Hasta mañana.",
+      "fr": "À demain.",
+      "de": "Bis morgen.",
+      "vi": "Hẹn gặp lại ngày mai.",
+      "id": "Sampai jumpa besok."
+    }
+  },
+  {
+    "id": "greeting_048",
+    "scene": "greeting",
+    "subScene": "greeting_farewell",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "今日は楽しかったです。",
+      "en": "I had fun today.",
+      "zh": "今天很开心。",
+      "zh_TW": "今天很開心。",
+      "ko": "오늘 즐거웠어요.",
+      "es": "Me divertí hoy.",
+      "fr": "Je me suis bien amusé(e) aujourd’hui.",
+      "de": "Heute hat es Spaß gemacht.",
+      "vi": "Hôm nay tôi rất vui.",
+      "id": "Hari ini menyenangkan."
+    }
+  },
+  {
+    "id": "greeting_049",
+    "scene": "greeting",
+    "subScene": "greeting_farewell",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "お別れするのは寂しいです。",
+      "en": "I’m sad to say goodbye.",
+      "zh": "告别让我很难过。",
+      "zh_TW": "告別讓我很難過。",
+      "ko": "헤어지기 아쉬워요.",
+      "es": "Me entristece despedirme.",
+      "fr": "Je suis triste de dire au revoir.",
+      "de": "Es macht mich traurig, mich zu verabschieden.",
+      "vi": "Tôi buồn khi phải chia tay.",
+      "id": "Saya sedih berpisah."
+    }
+  },
+  {
+    "id": "greeting_050",
+    "scene": "greeting",
+    "subScene": "greeting_farewell",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "またの機会に。",
+      "en": "Next time.",
+      "zh": "下次吧。",
+      "zh_TW": "下次吧。",
+      "ko": "다음에 봐요.",
+      "es": "La próxima vez.",
+      "fr": "La prochaine fois.",
+      "de": "Beim nächsten Mal.",
+      "vi": "Hẹn lần sau.",
+      "id": "Lain kali."
+    }
+  },
+  {
+    "id": "greeting_051",
+    "scene": "greeting",
+    "subScene": "greeting_reunion",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "お久しぶりです。",
+      "en": "Long time no see.",
+      "zh": "好久不见。",
+      "zh_TW": "好久不見。",
+      "ko": "오랜만이에요.",
+      "es": "Cuánto tiempo sin verte.",
+      "fr": "Ça fait longtemps.",
+      "de": "Lange nicht gesehen.",
+      "vi": "Lâu rồi không gặp.",
+      "id": "Lama tidak bertemu."
+    }
+  },
+  {
+    "id": "greeting_052",
+    "scene": "greeting",
+    "subScene": "greeting_reunion",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "元気でしたか？",
+      "en": "How have you been?",
+      "zh": "你过得好吗？",
+      "zh_TW": "你過得好嗎？",
+      "ko": "잘 지냈어요?",
+      "es": "¿Cómo has estado?",
+      "fr": "Comment allez-vous ?",
+      "de": "Wie ist es Ihnen ergangen?",
+      "vi": "Bạn dạo này thế nào?",
+      "id": "Bagaimana kabarmu?"
+    }
+  },
+  {
+    "id": "greeting_053",
+    "scene": "greeting",
+    "subScene": "greeting_reunion",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "会えてうれしいです。",
+      "en": "I’m happy to see you.",
+      "zh": "见到你我很高兴。",
+      "zh_TW": "見到你我很高興。",
+      "ko": "만나서 기뻐요.",
+      "es": "Me alegra verte.",
+      "fr": "Je suis content(e) de te voir.",
+      "de": "Ich freue mich, dich zu sehen.",
+      "vi": "Tôi vui khi gặp bạn.",
+      "id": "Saya senang bertemu denganmu."
+    }
+  },
+  {
+    "id": "greeting_054",
+    "scene": "greeting",
+    "subScene": "greeting_reunion",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "どれくらいぶりですか？",
+      "en": "How long has it been?",
+      "zh": "有多久没见了？",
+      "zh_TW": "有多久沒見了？",
+      "ko": "얼마 만이에요?",
+      "es": "¿Cuánto tiempo ha pasado?",
+      "fr": "Ça fait combien de temps ?",
+      "de": "Wie lange ist es her?",
+      "vi": "Đã bao lâu rồi?",
+      "id": "Sudah berapa lama?"
+    }
+  },
+  {
+    "id": "greeting_055",
+    "scene": "greeting",
+    "subScene": "greeting_reunion",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "全然変わっていませんね。",
+      "en": "You haven’t changed at all.",
+      "zh": "你一点都没变。",
+      "zh_TW": "你一點都沒變。",
+      "ko": "하나도 안 변했네요.",
+      "es": "No has cambiado nada.",
+      "fr": "Tu n’as pas changé du tout.",
+      "de": "Du hast dich gar nicht verändert.",
+      "vi": "Bạn không thay đổi chút nào.",
+      "id": "Kamu tidak berubah sama sekali."
+    }
+  },
+  {
+    "id": "greeting_056",
+    "scene": "greeting",
+    "subScene": "greeting_reunion",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "また会えるなんて嬉しいです。",
+      "en": "I’m so glad we can meet again.",
+      "zh": "能再次见到你真高兴。",
+      "zh_TW": "能再次見到你真高興。",
+      "ko": "다시 만나서 정말 기뻐요.",
+      "es": "Me alegra mucho poder verte de nuevo.",
+      "fr": "Je suis tellement heureux(se) de pouvoir te revoir.",
+      "de": "Ich freue mich so, dich wiederzusehen.",
+      "vi": "Tôi rất vui khi được gặp lại bạn.",
+      "id": "Saya senang sekali bisa bertemu lagi."
+    }
+  },
+  {
+    "id": "greeting_057",
+    "scene": "greeting",
+    "subScene": "greeting_reunion",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "最近どうしていましたか？",
+      "en": "What have you been up to?",
+      "zh": "你最近在忙什么？",
+      "zh_TW": "你最近在忙什麼？",
+      "ko": "요즘 뭐 하고 지냈어요?",
+      "es": "¿Qué has estado haciendo últimamente?",
+      "fr": "Qu’est-ce que tu as fait dernièrement ?",
+      "de": "Was hast du in letzter Zeit gemacht?",
+      "vi": "Dạo này bạn làm gì?",
+      "id": "Akhir-akhir ini kamu sibuk apa?"
+    }
+  },
+  {
+    "id": "greeting_058",
+    "scene": "greeting",
+    "subScene": "greeting_reunion",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "また会えて安心しました。",
+      "en": "I’m relieved to see you again.",
+      "zh": "再次见到你我很安心。",
+      "zh_TW": "再次見到你我很安心。",
+      "ko": "다시 만나서 안심돼요.",
+      "es": "Me alegra verte de nuevo.",
+      "fr": "Je suis soulagé(e) de te revoir.",
+      "de": "Ich bin erleichtert, dich wiederzusehen.",
+      "vi": "Tôi yên tâm khi gặp lại bạn.",
+      "id": "Saya lega bertemu lagi denganmu."
+    }
+  },
+  {
+    "id": "greeting_059",
+    "scene": "greeting",
+    "subScene": "greeting_reunion",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "懐かしいですね。",
+      "en": "This is nostalgic.",
+      "zh": "真让人怀念。",
+      "zh_TW": "真讓人懷念。",
+      "ko": "정말 그립네요.",
+      "es": "Qué nostalgia.",
+      "fr": "C’est nostalgique.",
+      "de": "Das ist nostalgisch.",
+      "vi": "Thật hoài niệm.",
+      "id": "Membuat bernostalgia."
+    }
+  },
+  {
+    "id": "greeting_060",
+    "scene": "greeting",
+    "subScene": "greeting_reunion",
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "再会できて光栄です。",
+      "en": "It’s an honor to meet you again.",
+      "zh": "能再次见到你很荣幸。",
+      "zh_TW": "能再次見到你很榮幸。",
+      "ko": "다시 만나 뵙게 되어 영광입니다.",
+      "es": "Es un honor volver a verte.",
+      "fr": "C’est un honneur de te revoir.",
+      "de": "Es ist mir eine Ehre, dich wiederzusehen.",
+      "vi": "Tôi rất vinh hạnh được gặp lại bạn.",
+      "id": "Suatu kehormatan bisa bertemu lagi denganmu."
+    }
+  },
+  {
+    "id": "greeting_061",
+    "scene": "greeting",
+    "subScene": "greeting_thank_you",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "ありがとうございます。",
+      "en": "Thank you.",
+      "zh": "谢谢。",
+      "zh_TW": "謝謝。",
+      "ko": "감사합니다.",
+      "es": "Gracias.",
+      "fr": "Merci.",
+      "de": "Danke.",
+      "vi": "Cảm ơn bạn.",
+      "id": "Terima kasih."
+    }
+  },
+  {
+    "id": "greeting_062",
+    "scene": "greeting",
+    "subScene": "greeting_thank_you",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "どうもありがとう。",
+      "en": "Thank you very much.",
+      "zh": "非常感谢。",
+      "zh_TW": "非常感謝。",
+      "ko": "정말 감사합니다.",
+      "es": "Muchas gracias.",
+      "fr": "Merci beaucoup.",
+      "de": "Vielen Dank.",
+      "vi": "Cảm ơn nhiều.",
+      "id": "Terima kasih banyak."
+    }
+  },
+  {
+    "id": "greeting_063",
+    "scene": "greeting",
+    "subScene": "greeting_thank_you",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "感謝します。",
+      "en": "I appreciate it.",
+      "zh": "我很感激。",
+      "zh_TW": "我很感激。",
+      "ko": "감사드립니다.",
+      "es": "Lo aprecio.",
+      "fr": "Je vous remercie.",
+      "de": "Ich schätze es.",
+      "vi": "Tôi rất cảm kích.",
+      "id": "Saya menghargainya."
+    }
+  },
+  {
+    "id": "greeting_064",
+    "scene": "greeting",
+    "subScene": "greeting_thank_you",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "本当に助かりました。",
+      "en": "That was really helpful.",
+      "zh": "真的帮了大忙。",
+      "zh_TW": "真的幫了大忙。",
+      "ko": "정말 도움이 됐어요.",
+      "es": "Fue de gran ayuda.",
+      "fr": "Ça m’a vraiment aidé.",
+      "de": "Das hat wirklich geholfen.",
+      "vi": "Điều đó thực sự giúp ích.",
+      "id": "Itu sangat membantu."
+    }
+  },
+  {
+    "id": "greeting_065",
+    "scene": "greeting",
+    "subScene": "greeting_thank_you",
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "ご親切に感謝します。",
+      "en": "Thank you for your kindness.",
+      "zh": "感谢你的好意。",
+      "zh_TW": "感謝你的好意。",
+      "ko": "친절에 감사드립니다.",
+      "es": "Gracias por tu amabilidad.",
+      "fr": "Merci pour votre gentillesse.",
+      "de": "Vielen Dank für Ihre Freundlichkeit.",
+      "vi": "Cảm ơn vì sự tử tế của bạn.",
+      "id": "Terima kasih atas kebaikan Anda."
+    }
+  },
+  {
+    "id": "greeting_066",
+    "scene": "greeting",
+    "subScene": "greeting_thank_you",
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "お世話になりました。",
+      "en": "Thank you for your support.",
+      "zh": "承蒙关照。",
+      "zh_TW": "承蒙關照。",
+      "ko": "신세 많이 졌습니다.",
+      "es": "Gracias por su apoyo.",
+      "fr": "Merci pour votre soutien.",
+      "de": "Vielen Dank für Ihre Unterstützung.",
+      "vi": "Cảm ơn vì đã giúp đỡ tôi.",
+      "id": "Terima kasih atas dukungan Anda."
+    }
+  },
+  {
+    "id": "greeting_067",
+    "scene": "greeting",
+    "subScene": "greeting_thank_you",
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "ご協力ありがとうございます。",
+      "en": "Thank you for your cooperation.",
+      "zh": "感谢您的合作。",
+      "zh_TW": "感謝您的合作。",
+      "ko": "협조해 주셔서 감사합니다.",
+      "es": "Gracias por su cooperación.",
+      "fr": "Merci pour votre coopération.",
+      "de": "Vielen Dank für Ihre Zusammenarbeit.",
+      "vi": "Cảm ơn vì sự hợp tác của bạn.",
+      "id": "Terima kasih atas kerja samanya."
+    }
+  },
+  {
+    "id": "greeting_068",
+    "scene": "greeting",
+    "subScene": "greeting_thank_you",
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "心から感謝しています。",
+      "en": "I sincerely appreciate it.",
+      "zh": "衷心感谢您。",
+      "zh_TW": "衷心感謝您。",
+      "ko": "진심으로 감사드립니다.",
+      "es": "Lo aprecio sinceramente.",
+      "fr": "Je vous suis sincèrement reconnaissant(e).",
+      "de": "Ich bin Ihnen aufrichtig dankbar.",
+      "vi": "Tôi thật sự biết ơn.",
+      "id": "Saya sangat menghargainya."
+    }
+  },
+  {
+    "id": "greeting_069",
+    "scene": "greeting",
+    "subScene": "greeting_thank_you",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "助けてくれてありがとう。",
+      "en": "Thank you for helping me.",
+      "zh": "谢谢你帮我。",
+      "zh_TW": "謝謝你幫我。",
+      "ko": "도와줘서 고마워요.",
+      "es": "Gracias por ayudarme.",
+      "fr": "Merci de m’avoir aidé(e).",
+      "de": "Danke, dass Sie mir geholfen haben.",
+      "vi": "Cảm ơn vì đã giúp tôi.",
+      "id": "Terima kasih sudah membantu saya."
+    }
+  },
+  {
+    "id": "greeting_070",
+    "scene": "greeting",
+    "subScene": "greeting_thank_you",
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "感謝の気持ちでいっぱいです。",
+      "en": "I’m filled with gratitude.",
+      "zh": "心怀感激。",
+      "zh_TW": "心懷感激。",
+      "ko": "감사한 마음이 가득합니다.",
+      "es": "Estoy lleno(a) de gratitud.",
+      "fr": "Je suis rempli(e) de gratitude.",
+      "de": "Ich bin voller Dankbarkeit.",
+      "vi": "Tôi tràn đầy lòng biết ơn.",
+      "id": "Saya penuh rasa syukur."
+    }
+  },
+  {
+    "id": "greeting_071",
+    "scene": "greeting",
+    "subScene": "greeting_congratulations",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "おめでとうございます。",
+      "en": "Congratulations.",
+      "zh": "恭喜。",
+      "zh_TW": "恭喜。",
+      "ko": "축하합니다.",
+      "es": "Felicidades.",
+      "fr": "Félicitations.",
+      "de": "Herzlichen Glückwunsch.",
+      "vi": "Xin chúc mừng.",
+      "id": "Selamat."
+    }
+  },
+  {
+    "id": "greeting_072",
+    "scene": "greeting",
+    "subScene": "greeting_congratulations",
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "お祝い申し上げます。",
+      "en": "My congratulations to you.",
+      "zh": "向您表示祝贺。",
+      "zh_TW": "向您表示祝賀。",
+      "ko": "축하의 말씀 드립니다.",
+      "es": "Mis felicitaciones.",
+      "fr": "Toutes mes félicitations.",
+      "de": "Meine Glückwünsche.",
+      "vi": "Xin gửi lời chúc mừng.",
+      "id": "Selamat atas pencapaian Anda."
+    }
+  },
+  {
+    "id": "greeting_073",
+    "scene": "greeting",
+    "subScene": "greeting_congratulations",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "よくやりましたね。",
+      "en": "Well done.",
+      "zh": "干得好。",
+      "zh_TW": "幹得好。",
+      "ko": "잘했어요.",
+      "es": "Bien hecho.",
+      "fr": "Bien joué.",
+      "de": "Gut gemacht.",
+      "vi": "Làm tốt lắm.",
+      "id": "Bagus sekali."
+    }
+  },
+  {
+    "id": "greeting_074",
+    "scene": "greeting",
+    "subScene": "greeting_congratulations",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "成功おめでとう。",
+      "en": "Congratulations on your success.",
+      "zh": "祝贺你成功。",
+      "zh_TW": "祝賀你成功。",
+      "ko": "성공을 축하합니다.",
+      "es": "Felicidades por tu éxito.",
+      "fr": "Félicitations pour votre succès.",
+      "de": "Glückwunsch zu Ihrem Erfolg.",
+      "vi": "Chúc mừng thành công của bạn.",
+      "id": "Selamat atas kesuksesan Anda."
+    }
+  },
+  {
+    "id": "greeting_075",
+    "scene": "greeting",
+    "subScene": "greeting_congratulations",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "ご結婚おめでとうございます。",
+      "en": "Congratulations on your marriage.",
+      "zh": "祝贺你们结婚。",
+      "zh_TW": "祝賀你們結婚。",
+      "ko": "결혼을 축하합니다.",
+      "es": "Felicidades por su boda.",
+      "fr": "Félicitations pour votre mariage.",
+      "de": "Herzlichen Glückwunsch zur Hochzeit.",
+      "vi": "Chúc mừng đám cưới của bạn.",
+      "id": "Selamat atas pernikahan Anda."
+    }
+  },
+  {
+    "id": "greeting_076",
+    "scene": "greeting",
+    "subScene": "greeting_congratulations",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "卒業おめでとうございます。",
+      "en": "Congratulations on your graduation.",
+      "zh": "祝贺你毕业。",
+      "zh_TW": "祝賀你畢業。",
+      "ko": "졸업을 축하합니다.",
+      "es": "Felicidades por tu graduación.",
+      "fr": "Félicitations pour votre diplôme.",
+      "de": "Herzlichen Glückwunsch zum Abschluss.",
+      "vi": "Chúc mừng bạn tốt nghiệp.",
+      "id": "Selamat atas kelulusan Anda."
+    }
+  },
+  {
+    "id": "greeting_077",
+    "scene": "greeting",
+    "subScene": "greeting_congratulations",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "お誕生日おめでとうございます。",
+      "en": "Happy birthday.",
+      "zh": "生日快乐。",
+      "zh_TW": "生日快樂。",
+      "ko": "생일 축하합니다.",
+      "es": "Feliz cumpleaños.",
+      "fr": "Joyeux anniversaire.",
+      "de": "Alles Gute zum Geburtstag.",
+      "vi": "Chúc mừng sinh nhật.",
+      "id": "Selamat ulang tahun."
+    }
+  },
+  {
+    "id": "greeting_078",
+    "scene": "greeting",
+    "subScene": "greeting_congratulations",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "合格おめでとうございます。",
+      "en": "Congratulations on passing.",
+      "zh": "祝贺你合格。",
+      "zh_TW": "祝賀你合格。",
+      "ko": "합격을 축하합니다.",
+      "es": "Felicidades por aprobar.",
+      "fr": "Félicitations pour votre réussite.",
+      "de": "Glückwunsch zum Bestehen.",
+      "vi": "Chúc mừng bạn đã đỗ.",
+      "id": "Selamat atas kelulusan Anda."
+    }
+  },
+  {
+    "id": "greeting_079",
+    "scene": "greeting",
+    "subScene": "greeting_congratulations",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "新しい仕事おめでとうございます。",
+      "en": "Congratulations on your new job.",
+      "zh": "祝贺你找到新工作。",
+      "zh_TW": "祝賀你找到新工作。",
+      "ko": "새 직장을 축하합니다.",
+      "es": "Felicidades por tu nuevo trabajo.",
+      "fr": "Félicitations pour votre nouvel emploi.",
+      "de": "Glückwunsch zu Ihrem neuen Job.",
+      "vi": "Chúc mừng công việc mới của bạn.",
+      "id": "Selamat atas pekerjaan baru Anda."
+    }
+  },
+  {
+    "id": "greeting_080",
+    "scene": "greeting",
+    "subScene": "greeting_congratulations",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "素晴らしい成果ですね。",
+      "en": "That’s a wonderful achievement.",
+      "zh": "真是了不起的成就。",
+      "zh_TW": "真是了不起的成就。",
+      "ko": "정말 훌륭한 성과네요.",
+      "es": "Es un logro maravilloso.",
+      "fr": "C’est un merveilleux accomplissement.",
+      "de": "Das ist eine wunderbare Leistung.",
+      "vi": "Đó là một thành tích tuyệt vời.",
+      "id": "Itu adalah pencapaian yang luar biasa."
+    }
+  },
+  {
+    "id": "greeting_081",
+    "scene": "greeting",
+    "subScene": "greeting_polite_business",
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "お世話になっております。",
+      "en": "Thank you for your continued support.",
+      "zh": "承蒙关照。",
+      "zh_TW": "承蒙關照。",
+      "ko": "평소에 감사드립니다.",
+      "es": "Gracias por su continuo apoyo.",
+      "fr": "Merci pour votre soutien continu.",
+      "de": "Vielen Dank für Ihre fortgesetzte Unterstützung.",
+      "vi": "Cảm ơn vì đã luôn giúp đỡ tôi.",
+      "id": "Terima kasih atas dukungan Anda yang berkelanjutan."
+    }
+  },
+  {
+    "id": "greeting_082",
+    "scene": "greeting",
+    "subScene": "greeting_polite_business",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "いつもありがとうございます。",
+      "en": "Thank you always.",
+      "zh": "一直以来谢谢你。",
+      "zh_TW": "一直以來謝謝你。",
+      "ko": "항상 감사합니다.",
+      "es": "Gracias siempre.",
+      "fr": "Merci toujours.",
+      "de": "Ich danke Ihnen immer.",
+      "vi": "Cảm ơn bạn luôn.",
+      "id": "Terima kasih selalu."
+    }
+  },
+  {
+    "id": "greeting_083",
+    "scene": "greeting",
+    "subScene": "greeting_polite_business",
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "ご無沙汰しております。",
+      "en": "It’s been a while.",
+      "zh": "好久不见。",
+      "zh_TW": "好久不見。",
+      "ko": "오랜만입니다.",
+      "es": "Hace tiempo que no nos vemos.",
+      "fr": "Ça fait longtemps.",
+      "de": "Lange nicht gesehen.",
+      "vi": "Lâu rồi không gặp.",
+      "id": "Sudah lama tidak bertemu."
+    }
+  },
+  {
+    "id": "greeting_084",
+    "scene": "greeting",
+    "subScene": "greeting_polite_business",
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "お変わりありませんか。",
+      "en": "How have you been?",
+      "zh": "你过得好吗？",
+      "zh_TW": "你過得好嗎？",
+      "ko": "잘 지내셨어요?",
+      "es": "¿Cómo ha estado?",
+      "fr": "Comment allez-vous ?",
+      "de": "Wie ist es Ihnen ergangen?",
+      "vi": "Bạn vẫn khỏe chứ?",
+      "id": "Bagaimana kabar Anda?"
+    }
+  },
+  {
+    "id": "greeting_085",
+    "scene": "greeting",
+    "subScene": "greeting_polite_business",
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "お忙しいところ失礼します。",
+      "en": "Sorry to bother you when you’re busy.",
+      "zh": "在您忙的时候打扰您，抱歉。",
+      "zh_TW": "在您忙的時候打擾您，抱歉。",
+      "ko": "바쁘신데 죄송합니다.",
+      "es": "Perdón por molestarte cuando estás ocupado.",
+      "fr": "Désolé(e) de vous déranger alors que vous êtes occupé(e).",
+      "de": "Entschuldigen Sie die Störung während Ihrer Beschäftigung.",
+      "vi": "Xin lỗi đã làm phiền khi bạn bận.",
+      "id": "Maaf mengganggu saat Anda sibuk."
+    }
+  },
+  {
+    "id": "greeting_086",
+    "scene": "greeting",
+    "subScene": "greeting_polite_business",
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "お時間いただきありがとうございます。",
+      "en": "Thank you for your time.",
+      "zh": "感谢您的时间。",
+      "zh_TW": "感謝您的時間。",
+      "ko": "시간 내주셔서 감사합니다.",
+      "es": "Gracias por su tiempo.",
+      "fr": "Merci pour votre temps.",
+      "de": "Vielen Dank für Ihre Zeit.",
+      "vi": "Cảm ơn vì thời gian của bạn.",
+      "id": "Terima kasih atas waktu Anda."
+    }
+  },
+  {
+    "id": "greeting_087",
+    "scene": "greeting",
+    "subScene": "greeting_polite_business",
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "引き続きよろしくお願いします。",
+      "en": "I look forward to your continued support.",
+      "zh": "今后也请多关照。",
+      "zh_TW": "今後也請多關照。",
+      "ko": "앞으로도 잘 부탁드립니다.",
+      "es": "Espero seguir contando con su apoyo.",
+      "fr": "Je compte sur votre soutien continu.",
+      "de": "Ich freue mich auf Ihre weitere Unterstützung.",
+      "vi": "Rất mong được tiếp tục hợp tác.",
+      "id": "Mohon kerja samanya terus berlanjut."
+    }
+  },
+  {
+    "id": "greeting_088",
+    "scene": "greeting",
+    "subScene": "greeting_polite_business",
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "ご確認ありがとうございます。",
+      "en": "Thank you for confirming.",
+      "zh": "感谢您的确认。",
+      "zh_TW": "感謝您的確認。",
+      "ko": "확인해 주셔서 감사합니다.",
+      "es": "Gracias por confirmar.",
+      "fr": "Merci pour votre confirmation.",
+      "de": "Vielen Dank für Ihre Bestätigung.",
+      "vi": "Cảm ơn bạn đã xác nhận.",
+      "id": "Terima kasih atas konfirmasinya."
+    }
+  },
+  {
+    "id": "greeting_089",
+    "scene": "greeting",
+    "subScene": "greeting_polite_business",
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "よろしくお願い申し上げます。",
+      "en": "I humbly ask for your favor.",
+      "zh": "恳请关照。",
+      "zh_TW": "懇請關照。",
+      "ko": "잘 부탁드리겠습니다.",
+      "es": "Le ruego su cooperación.",
+      "fr": "Je vous prie de bien vouloir m’aider.",
+      "de": "Ich bitte höflich um Ihre Unterstützung.",
+      "vi": "Kính mong được giúp đỡ.",
+      "id": "Mohon kerja samanya dengan hormat."
+    }
+  },
+  {
+    "id": "greeting_090",
+    "scene": "greeting",
+    "subScene": "greeting_polite_business",
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "失礼いたします。",
+      "en": "Excuse me.",
+      "zh": "失礼了。",
+      "zh_TW": "失禮了。",
+      "ko": "실례하겠습니다.",
+      "es": "Con permiso.",
+      "fr": "Excusez-moi.",
+      "de": "Entschuldigen Sie bitte.",
+      "vi": "Xin phép.",
+      "id": "Permisi."
+    }
+  },
+  {
+    "id": "greeting_091",
+    "scene": "greeting",
+    "subScene": "greeting_casual_friends",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "やあ。",
+      "en": "Hi.",
+      "zh": "嗨。",
+      "zh_TW": "嗨。",
+      "ko": "안녕.",
+      "es": "Hola.",
+      "fr": "Salut.",
+      "de": "Hallo.",
+      "vi": "Chào.",
+      "id": "Hai."
+    }
+  },
+  {
+    "id": "greeting_092",
+    "scene": "greeting",
+    "subScene": "greeting_casual_friends",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "元気？",
+      "en": "How are you?",
+      "zh": "你好吗？",
+      "zh_TW": "你好嗎？",
+      "ko": "잘 지냈어?",
+      "es": "¿Cómo estás?",
+      "fr": "Ça va ?",
+      "de": "Wie geht’s?",
+      "vi": "Bạn khỏe không?",
+      "id": "Apa kabar?"
+    }
+  },
+  {
+    "id": "greeting_093",
+    "scene": "greeting",
+    "subScene": "greeting_casual_friends",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "久しぶり。",
+      "en": "Long time no see.",
+      "zh": "好久不见。",
+      "zh_TW": "好久不見。",
+      "ko": "오랜만이야.",
+      "es": "Cuánto tiempo sin verte.",
+      "fr": "Ça fait longtemps.",
+      "de": "Lange nicht gesehen.",
+      "vi": "Lâu rồi không gặp.",
+      "id": "Lama tidak bertemu."
+    }
+  },
+  {
+    "id": "greeting_094",
+    "scene": "greeting",
+    "subScene": "greeting_casual_friends",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "調子どう？",
+      "en": "How’s it going?",
+      "zh": "最近怎么样？",
+      "zh_TW": "最近怎麼樣？",
+      "ko": "어떻게 지내?",
+      "es": "¿Cómo va todo?",
+      "fr": "Comment ça va ?",
+      "de": "Wie läuft’s?",
+      "vi": "Dạo này thế nào?",
+      "id": "Bagaimana kabarmu?"
+    }
+  },
+  {
+    "id": "greeting_095",
+    "scene": "greeting",
+    "subScene": "greeting_casual_friends",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "おーい。",
+      "en": "Hey!",
+      "zh": "喂！",
+      "zh_TW": "喂！",
+      "ko": "이봐!",
+      "es": "¡Oye!",
+      "fr": "Hé !",
+      "de": "He!",
+      "vi": "Này!",
+      "id": "Halo!"
+    }
+  },
+  {
+    "id": "greeting_096",
+    "scene": "greeting",
+    "subScene": "greeting_casual_friends",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "何かあった？",
+      "en": "What happened?",
+      "zh": "发生什么事了？",
+      "zh_TW": "發生什麼事了？",
+      "ko": "무슨 일 있었어?",
+      "es": "¿Qué pasó?",
+      "fr": "Que s’est-il passé ?",
+      "de": "Was ist passiert?",
+      "vi": "Có chuyện gì vậy?",
+      "id": "Ada apa?"
+    }
+  },
+  {
+    "id": "greeting_097",
+    "scene": "greeting",
+    "subScene": "greeting_casual_friends",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "最近どうしてた？",
+      "en": "What have you been up to lately?",
+      "zh": "最近在忙什么？",
+      "zh_TW": "最近在忙什麼？",
+      "ko": "요즘 뭐 하고 지냈어?",
+      "es": "¿Qué has estado haciendo últimamente?",
+      "fr": "Qu’est-ce que tu as fait dernièrement ?",
+      "de": "Was hast du in letzter Zeit gemacht?",
+      "vi": "Dạo này bạn làm gì?",
+      "id": "Akhir-akhir ini kamu sibuk apa?"
+    }
+  },
+  {
+    "id": "greeting_098",
+    "scene": "greeting",
+    "subScene": "greeting_casual_friends",
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "やっほー。",
+      "en": "Hi there!",
+      "zh": "哈喽！",
+      "zh_TW": "哈囉！",
+      "ko": "야호!",
+      "es": "¡Hola!",
+      "fr": "Coucou !",
+      "de": "Hallo zusammen!",
+      "vi": "Xin chào!",
+      "id": "Halo semuanya!"
+    }
+  },
+  {
+    "id": "greeting_099",
+    "scene": "greeting",
+    "subScene": "greeting_casual_friends",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "元気にしてた？",
+      "en": "Have you been well?",
+      "zh": "你一直好吗？",
+      "zh_TW": "你一直好嗎？",
+      "ko": "잘 지냈어?",
+      "es": "¿Has estado bien?",
+      "fr": "As-tu été bien ?",
+      "de": "Bist du gesund geblieben?",
+      "vi": "Bạn vẫn khỏe chứ?",
+      "id": "Apakah kamu baik-baik saja?"
+    }
+  },
+  {
+    "id": "greeting_100",
+    "scene": "greeting",
+    "subScene": "greeting_casual_friends",
+    "level": "beginner",
+    "tags": [
+      "greeting"
+    ],
+    "translations": {
+      "ja": "何してたの？",
+      "en": "What were you doing?",
+      "zh": "你在做什么？",
+      "zh_TW": "你在做什麼？",
+      "ko": "뭐 하고 있었어?",
+      "es": "¿Qué estabas haciendo?",
+      "fr": "Qu’est-ce que tu faisais ?",
+      "de": "Was hast du gemacht?",
+      "vi": "Bạn đã làm gì vậy?",
+      "id": "Kamu sedang melakukan apa?"
+    }
+  }
+]

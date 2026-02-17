@@ -1,10 +1,14 @@
 const functions = require("firebase-functions");
+const { defineSecret } = require("firebase-functions/params");
 const express = require("express");
 const cors = require("cors");
 const axios = require("axios");
 const admin = require("firebase-admin");
 const fetch = require("node-fetch");
 admin.initializeApp();
+
+const OPENAI_API_KEY = defineSecret("OPENAI_API_KEY");
+const APPLE_SHARED_SECRET = defineSecret("APPLE_SHARED_SECRET");
 
 const app = express();
 app.use(cors({ origin: true }));
@@ -76,8 +80,7 @@ app.post("/chat", async (req, res) => {
       },
       {
         headers: {
-          // Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
-          Authorization: `Bearer ${functions.config().openai.key}`,
+          Authorization: `Bearer ${OPENAI_API_KEY.value()}`,
           "Content-Type": "application/json",
         },
       }
@@ -112,13 +115,14 @@ async function callVerify(url, body) {
 
 exports.verifyReceipt = functions
   .region("asia-northeast1")
+  .runWith({ secrets: [APPLE_SHARED_SECRET] })
   .https.onCall(async (data, context) => {
     console.log("⚡ verifyReceipt called, receiptData length:", data.receiptData?.length);
     console.log("receiptData startsWith:", data.receiptData.slice(0,50));
 
     const body = JSON.stringify({
       "receipt-data": data.receiptData,
-      password: functions.config().apple.shared_secret,
+      password: APPLE_SHARED_SECRET.value(),
     });
     console.log("→ Calling production verify with body length:", body.length);
 
@@ -162,4 +166,5 @@ exports.verifyReceipt = functions
 
 exports.api = functions
   .region('asia-northeast1')
+  .runWith({ secrets: [OPENAI_API_KEY] })
   .https.onRequest(app);

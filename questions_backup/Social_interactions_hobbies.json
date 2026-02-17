@@ -3,7 +3,7 @@
     "id": "Social_interactions_hobbies_001",
     "scene": "Social_interactions_hobbies",
     "subScene": "MakingFriends",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "はじめまして、よろしくお願いします。",
@@ -22,7 +22,7 @@
     "id": "Social_interactions_hobbies_002",
     "scene": "Social_interactions_hobbies",
     "subScene": "MakingFriends",
-    "level": "intermediate",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "お名前を教えていただけますか？",

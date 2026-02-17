@@ -3,7 +3,7 @@
     "id": "vocabulary_001",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "私の服",
@@ -22,7 +22,7 @@
     "id": "vocabulary_002",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "あなたの本",
@@ -41,7 +41,7 @@
     "id": "vocabulary_003",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "彼の家",
@@ -60,7 +60,7 @@
     "id": "vocabulary_004",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "彼女のかばん",
@@ -79,7 +79,7 @@
     "id": "vocabulary_005",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "私たちの部屋",
@@ -117,7 +117,7 @@
     "id": "vocabulary_007",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "彼らの友達",
@@ -155,7 +155,7 @@
     "id": "vocabulary_009",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "これはペン",
@@ -174,7 +174,7 @@
     "id": "vocabulary_010",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "それは椅子",
@@ -193,7 +193,7 @@
     "id": "vocabulary_011",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "あれの色",
@@ -212,7 +212,7 @@
     "id": "vocabulary_012",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "どれの形",
@@ -231,7 +231,7 @@
     "id": "vocabulary_013",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "誰の名前",
@@ -250,7 +250,7 @@
     "id": "vocabulary_014",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "誰かの家",
@@ -269,7 +269,7 @@
     "id": "vocabulary_015",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "誰もの意見",
@@ -288,7 +288,7 @@
     "id": "vocabulary_016",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "何の意味",
@@ -307,7 +307,7 @@
     "id": "vocabulary_017",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "何かの理由",
@@ -326,7 +326,7 @@
     "id": "vocabulary_018",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "何もの価値",
@@ -345,7 +345,7 @@
     "id": "vocabulary_019",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "みんなの声",
@@ -364,7 +364,7 @@
     "id": "vocabulary_020",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "全員の写真",
@@ -383,7 +383,7 @@
     "id": "vocabulary_021",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "自分の部屋",
@@ -402,7 +402,7 @@
     "id": "vocabulary_022",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "お前の手紙",
@@ -421,7 +421,7 @@
     "id": "vocabulary_023",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "君の友達",
@@ -440,7 +440,7 @@
     "id": "vocabulary_024",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "我々の計画",
@@ -459,7 +459,7 @@
     "id": "vocabulary_025",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "我の信念",
@@ -478,7 +478,7 @@
     "id": "vocabulary_026",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "彼の本",
@@ -497,7 +497,7 @@
     "id": "vocabulary_027",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "彼女の服",
@@ -516,7 +516,7 @@
     "id": "vocabulary_028",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "あなたの車",
@@ -535,7 +535,7 @@
     "id": "vocabulary_029",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "誰の鞄",
@@ -554,7 +554,7 @@
     "id": "vocabulary_030",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "こちらの部屋",
@@ -573,7 +573,7 @@
     "id": "vocabulary_031",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "そちらの道",
@@ -592,7 +592,7 @@
     "id": "vocabulary_032",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "あちらの店",
@@ -611,7 +611,7 @@
     "id": "vocabulary_033",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "どちらの学校",
@@ -630,7 +630,7 @@
     "id": "vocabulary_034",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "これらの花",
@@ -649,7 +649,7 @@
     "id": "vocabulary_035",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "それらの靴",
@@ -668,7 +668,7 @@
     "id": "vocabulary_036",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "あれらの家",
@@ -687,7 +687,7 @@
     "id": "vocabulary_037",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "どれらの本",
@@ -744,7 +744,7 @@
     "id": "vocabulary_040",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "私たちの犬",
@@ -763,7 +763,7 @@
     "id": "vocabulary_041",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "彼らの庭",
@@ -782,7 +782,7 @@
     "id": "vocabulary_042",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "彼女たちの家",
@@ -801,7 +801,7 @@
     "id": "vocabulary_043",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "こっちの席",
@@ -820,7 +820,7 @@
     "id": "vocabulary_044",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "そっちの部屋",
@@ -839,7 +839,7 @@
     "id": "vocabulary_045",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "あっちの道",
@@ -858,7 +858,7 @@
     "id": "vocabulary_046",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "どっちの方向",
@@ -877,7 +877,7 @@
     "id": "vocabulary_047",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "自分の考え",
@@ -896,7 +896,7 @@
     "id": "vocabulary_048",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "こちらの景色",
@@ -915,7 +915,7 @@
     "id": "vocabulary_049",
     "scene": "vocabulary",
     "subScene": "vocabulary_pronouns",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "そちらの山",
@@ -934,7 +934,7 @@
     "id": "vocabulary_050",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "行く準備",
@@ -953,7 +953,7 @@
     "id": "vocabulary_051",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "来る日",
@@ -972,7 +972,7 @@
     "id": "vocabulary_052",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "帰る時間",
@@ -991,7 +991,7 @@
     "id": "vocabulary_053",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "する練習",
@@ -1010,7 +1010,7 @@
     "id": "vocabulary_054",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ある方法",
@@ -1029,7 +1029,7 @@
     "id": "vocabulary_055",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "いる場所",
@@ -1048,7 +1048,7 @@
     "id": "vocabulary_056",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "見る景色",
@@ -1067,7 +1067,7 @@
     "id": "vocabulary_057",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "聞く話",
@@ -1086,7 +1086,7 @@
     "id": "vocabulary_058",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "話す内容",
@@ -1105,7 +1105,7 @@
     "id": "vocabulary_059",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "食べる物",
@@ -1124,7 +1124,7 @@
     "id": "vocabulary_060",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "飲む水",
@@ -1143,7 +1143,7 @@
     "id": "vocabulary_061",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "買う服",
@@ -1162,7 +1162,7 @@
     "id": "vocabulary_062",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "売る車",
@@ -1181,7 +1181,7 @@
     "id": "vocabulary_063",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "使う道具",
@@ -1200,7 +1200,7 @@
     "id": "vocabulary_064",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "作る料理",
@@ -1219,7 +1219,7 @@
     "id": "vocabulary_065",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "持つ鞄",
@@ -1238,7 +1238,7 @@
     "id": "vocabulary_066",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "待つ時間",
@@ -1257,7 +1257,7 @@
     "id": "vocabulary_067",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "歩く道",
@@ -1276,7 +1276,7 @@
     "id": "vocabulary_068",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "走る速さ",
@@ -1295,7 +1295,7 @@
     "id": "vocabulary_069",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "乗る電車",
@@ -1314,7 +1314,7 @@
     "id": "vocabulary_070",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "降りる駅",
@@ -1333,7 +1333,7 @@
     "id": "vocabulary_071",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "開けるドア",
@@ -1352,7 +1352,7 @@
     "id": "vocabulary_072",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "閉める窓",
@@ -1371,7 +1371,7 @@
     "id": "vocabulary_073",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "開く花",
@@ -1390,7 +1390,7 @@
     "id": "vocabulary_074",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "閉まる扉",
@@ -1409,7 +1409,7 @@
     "id": "vocabulary_075",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "始める仕事",
@@ -1428,7 +1428,7 @@
     "id": "vocabulary_076",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "終わる試合",
@@ -1447,7 +1447,7 @@
     "id": "vocabulary_077",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "教える先生",
@@ -1466,7 +1466,7 @@
     "id": "vocabulary_078",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "学ぶ学生",
@@ -1485,7 +1485,7 @@
     "id": "vocabulary_079",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "勉強する時間",
@@ -1504,7 +1504,7 @@
     "id": "vocabulary_080",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "読む本",
@@ -1523,7 +1523,7 @@
     "id": "vocabulary_081",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "書く手紙",
@@ -1542,7 +1542,7 @@
     "id": "vocabulary_082",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "送る荷物",
@@ -1561,7 +1561,7 @@
     "id": "vocabulary_083",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "もらう手紙",
@@ -1580,7 +1580,7 @@
     "id": "vocabulary_084",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "あげる花",
@@ -1599,7 +1599,7 @@
     "id": "vocabulary_085",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "借りる本",
@@ -1618,7 +1618,7 @@
     "id": "vocabulary_086",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "貸す傘",
@@ -1637,7 +1637,7 @@
     "id": "vocabulary_087",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "探す鍵",
@@ -1656,7 +1656,7 @@
     "id": "vocabulary_088",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "見つける道",
@@ -1675,7 +1675,7 @@
     "id": "vocabulary_089",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "助ける友達",
@@ -1694,7 +1694,7 @@
     "id": "vocabulary_090",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "働く場所",
@@ -1713,7 +1713,7 @@
     "id": "vocabulary_091",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "休む時間",
@@ -1732,7 +1732,7 @@
     "id": "vocabulary_092",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "起きる朝",
@@ -1751,7 +1751,7 @@
     "id": "vocabulary_093",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "寝る夜",
@@ -1770,7 +1770,7 @@
     "id": "vocabulary_094",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "遊ぶ公園",
@@ -1789,7 +1789,7 @@
     "id": "vocabulary_095",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "笑う子供",
@@ -1808,7 +1808,7 @@
     "id": "vocabulary_096",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "泣く赤ちゃん",
@@ -1827,7 +1827,7 @@
     "id": "vocabulary_097",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "洗う皿",
@@ -1865,7 +1865,7 @@
     "id": "vocabulary_099",
     "scene": "vocabulary",
     "subScene": "vocabulary_verbs",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "終える仕事",
@@ -1884,7 +1884,7 @@
     "id": "vocabulary_100",
     "scene": "vocabulary",
     "subScene": "vocabulary_adjectives",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "大きい家",
@@ -1903,7 +1903,7 @@
     "id": "vocabulary_101",
     "scene": "vocabulary",
     "subScene": "vocabulary_adjectives",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "小さい店",
@@ -1922,7 +1922,7 @@
     "id": "vocabulary_102",
     "scene": "vocabulary",
     "subScene": "vocabulary_adjectives",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "長い道",
@@ -1941,7 +1941,7 @@
     "id": "vocabulary_103",
     "scene": "vocabulary",
     "subScene": "vocabulary_adjectives",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "短い話",
@@ -1960,7 +1960,7 @@
     "id": "vocabulary_104",
     "scene": "vocabulary",
     "subScene": "vocabulary_adjectives",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "高い山",
@@ -1979,7 +1979,7 @@
     "id": "vocabulary_105",
     "scene": "vocabulary",
     "subScene": "vocabulary_adjectives",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "低い丘",
@@ -1998,7 +1998,7 @@
     "id": "vocabulary_106",
     "scene": "vocabulary",
     "subScene": "vocabulary_adjectives",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "重い荷物",
@@ -2017,7 +2017,7 @@
     "id": "vocabulary_107",
     "scene": "vocabulary",
     "subScene": "vocabulary_adjectives",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "軽い服",
@@ -2036,7 +2036,7 @@
     "id": "vocabulary_108",
     "scene": "vocabulary",
     "subScene": "vocabulary_adjectives",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "速い車",
@@ -2055,7 +2055,7 @@
     "id": "vocabulary_109",
     "scene": "vocabulary",
     "subScene": "vocabulary_adjectives",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "遅い電車",
@@ -2074,7 +2074,7 @@
     "id": "vocabulary_110",
     "scene": "vocabulary",
     "subScene": "vocabulary_adjectives",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "新しい服",
@@ -2093,7 +2093,7 @@
     "id": "vocabulary_111",
     "scene": "vocabulary",
     "subScene": "vocabulary_adjectives",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "古い本",
@@ -2112,7 +2112,7 @@
     "id": "vocabulary_112",
     "scene": "vocabulary",
     "subScene": "vocabulary_adjectives",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "きれいな景色",
@@ -2131,7 +2131,7 @@
     "id": "vocabulary_113",
     "scene": "vocabulary",
     "subScene": "vocabulary_adjectives",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "汚い部屋",
@@ -2150,7 +2150,7 @@
     "id": "vocabulary_114",
     "scene": "vocabulary",
     "subScene": "vocabulary_adjectives",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "明るい窓",
@@ -2169,7 +2169,7 @@
     "id": "vocabulary_115",
     "scene": "vocabulary",
     "subScene": "vocabulary_adjectives",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "暗い道",
@@ -2188,7 +2188,7 @@
     "id": "vocabulary_116",
     "scene": "vocabulary",
     "subScene": "vocabulary_adjectives",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "暑い日",
@@ -2207,7 +2207,7 @@
     "id": "vocabulary_117",
     "scene": "vocabulary",
     "subScene": "vocabulary_adjectives",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "寒い夜",
@@ -2226,7 +2226,7 @@
     "id": "vocabulary_118",
     "scene": "vocabulary",
     "subScene": "vocabulary_adjectives",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "甘いお菓子",
@@ -2245,7 +2245,7 @@
     "id": "vocabulary_119",
     "scene": "vocabulary",
     "subScene": "vocabulary_adjectives",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "辛い料理",
@@ -2264,7 +2264,7 @@
     "id": "vocabulary_120",
     "scene": "vocabulary",
     "subScene": "vocabulary_numbers",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "一つの椅子",
@@ -2283,7 +2283,7 @@
     "id": "vocabulary_121",
     "scene": "vocabulary",
     "subScene": "vocabulary_numbers",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "二つのリンゴ",
@@ -2302,7 +2302,7 @@
     "id": "vocabulary_122",
     "scene": "vocabulary",
     "subScene": "vocabulary_numbers",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "三本のペン",
@@ -2321,7 +2321,7 @@
     "id": "vocabulary_123",
     "scene": "vocabulary",
     "subScene": "vocabulary_numbers",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "四枚の紙",
@@ -2340,7 +2340,7 @@
     "id": "vocabulary_124",
     "scene": "vocabulary",
     "subScene": "vocabulary_numbers",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "五冊の本",
@@ -2359,7 +2359,7 @@
     "id": "vocabulary_125",
     "scene": "vocabulary",
     "subScene": "vocabulary_numbers",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "六匹の猫",
@@ -2378,7 +2378,7 @@
     "id": "vocabulary_126",
     "scene": "vocabulary",
     "subScene": "vocabulary_numbers",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "七羽の鳥",
@@ -2397,7 +2397,7 @@
     "id": "vocabulary_127",
     "scene": "vocabulary",
     "subScene": "vocabulary_numbers",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "八個の卵",
@@ -2416,7 +2416,7 @@
     "id": "vocabulary_128",
     "scene": "vocabulary",
     "subScene": "vocabulary_numbers",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "九人の学生",
@@ -2435,7 +2435,7 @@
     "id": "vocabulary_129",
     "scene": "vocabulary",
     "subScene": "vocabulary_numbers",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "十本の木",
@@ -2454,7 +2454,7 @@
     "id": "vocabulary_130",
     "scene": "vocabulary",
     "subScene": "vocabulary_numbers",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "百円玉",
@@ -2473,7 +2473,7 @@
     "id": "vocabulary_131",
     "scene": "vocabulary",
     "subScene": "vocabulary_numbers",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "千円札",
@@ -2492,7 +2492,7 @@
     "id": "vocabulary_132",
     "scene": "vocabulary",
     "subScene": "vocabulary_numbers",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "一万円",
@@ -2511,7 +2511,7 @@
     "id": "vocabulary_133",
     "scene": "vocabulary",
     "subScene": "vocabulary_numbers",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ゼロポイント",
@@ -2530,7 +2530,7 @@
     "id": "vocabulary_134",
     "scene": "vocabulary",
     "subScene": "vocabulary_numbers",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "何色",
@@ -2549,7 +2549,7 @@
     "id": "vocabulary_135",
     "scene": "vocabulary",
     "subScene": "vocabulary_numbers",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "いくつの箱",
@@ -2568,7 +2568,7 @@
     "id": "vocabulary_136",
     "scene": "vocabulary",
     "subScene": "vocabulary_numbers",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "半分のケーキ",
@@ -2587,7 +2587,7 @@
     "id": "vocabulary_137",
     "scene": "vocabulary",
     "subScene": "vocabulary_numbers",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "全部の荷物",
@@ -2606,7 +2606,7 @@
     "id": "vocabulary_138",
     "scene": "vocabulary",
     "subScene": "vocabulary_numbers",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "少しの水",
@@ -2625,7 +2625,7 @@
     "id": "vocabulary_139",
     "scene": "vocabulary",
     "subScene": "vocabulary_numbers",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "多い人数",
@@ -2644,7 +2644,7 @@
     "id": "vocabulary_140",
     "scene": "vocabulary",
     "subScene": "vocabulary_transportation",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "電車の切符",
@@ -2663,7 +2663,7 @@
     "id": "vocabulary_141",
     "scene": "vocabulary",
     "subScene": "vocabulary_transportation",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "バスの停留所",
@@ -2682,7 +2682,7 @@
     "id": "vocabulary_142",
     "scene": "vocabulary",
     "subScene": "vocabulary_transportation",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "飛行機の便",
@@ -2701,7 +2701,7 @@
     "id": "vocabulary_143",
     "scene": "vocabulary",
     "subScene": "vocabulary_transportation",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "車の鍵",
@@ -2758,7 +2758,7 @@
     "id": "vocabulary_146",
     "scene": "vocabulary",
     "subScene": "vocabulary_transportation",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "船の旅",
@@ -2777,7 +2777,7 @@
     "id": "vocabulary_147",
     "scene": "vocabulary",
     "subScene": "vocabulary_transportation",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "地下鉄の駅",
@@ -2796,7 +2796,7 @@
     "id": "vocabulary_148",
     "scene": "vocabulary",
     "subScene": "vocabulary_transportation",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "駅の改札",
@@ -2815,7 +2815,7 @@
     "id": "vocabulary_149",
     "scene": "vocabulary",
     "subScene": "vocabulary_transportation",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "空港のロビー",
@@ -2834,7 +2834,7 @@
     "id": "vocabulary_150",
     "scene": "vocabulary",
     "subScene": "vocabulary_transportation",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "切符の料金",
@@ -2853,7 +2853,7 @@
     "id": "vocabulary_151",
     "scene": "vocabulary",
     "subScene": "vocabulary_transportation",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "改札のゲート",
@@ -2872,7 +2872,7 @@
     "id": "vocabulary_152",
     "scene": "vocabulary",
     "subScene": "vocabulary_transportation",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "停留所の看板",
@@ -2891,7 +2891,7 @@
     "id": "vocabulary_153",
     "scene": "vocabulary",
     "subScene": "vocabulary_transportation",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "駐車場の入口",
@@ -2910,7 +2910,7 @@
     "id": "vocabulary_154",
     "scene": "vocabulary",
     "subScene": "vocabulary_transportation",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "信号の色",
@@ -2929,7 +2929,7 @@
     "id": "vocabulary_155",
     "scene": "vocabulary",
     "subScene": "vocabulary_transportation",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "道路の標識",
@@ -2948,7 +2948,7 @@
     "id": "vocabulary_156",
     "scene": "vocabulary",
     "subScene": "vocabulary_transportation",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "橋の下",
@@ -2986,7 +2986,7 @@
     "id": "vocabulary_158",
     "scene": "vocabulary",
     "subScene": "vocabulary_transportation",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "踏切の音",
@@ -3024,7 +3024,7 @@
     "id": "vocabulary_160",
     "scene": "vocabulary",
     "subScene": "vocabulary_food",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ご飯の味",
@@ -3043,7 +3043,7 @@
     "id": "vocabulary_161",
     "scene": "vocabulary",
     "subScene": "vocabulary_food",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "パンの形",
@@ -3062,7 +3062,7 @@
     "id": "vocabulary_162",
     "scene": "vocabulary",
     "subScene": "vocabulary_food",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "麺の種類",
@@ -3081,7 +3081,7 @@
     "id": "vocabulary_163",
     "scene": "vocabulary",
     "subScene": "vocabulary_food",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "肉の料理",
@@ -3100,7 +3100,7 @@
     "id": "vocabulary_164",
     "scene": "vocabulary",
     "subScene": "vocabulary_food",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "魚の切り身",
@@ -3119,7 +3119,7 @@
     "id": "vocabulary_165",
     "scene": "vocabulary",
     "subScene": "vocabulary_food",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "野菜の色",
@@ -3138,7 +3138,7 @@
     "id": "vocabulary_166",
     "scene": "vocabulary",
     "subScene": "vocabulary_food",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "果物の香り",
@@ -3157,7 +3157,7 @@
     "id": "vocabulary_167",
     "scene": "vocabulary",
     "subScene": "vocabulary_food",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "卵の殻",
@@ -3176,7 +3176,7 @@
     "id": "vocabulary_168",
     "scene": "vocabulary",
     "subScene": "vocabulary_food",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "スープの温度",
@@ -3214,7 +3214,7 @@
     "id": "vocabulary_170",
     "scene": "vocabulary",
     "subScene": "vocabulary_food",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "寿司の種類",
@@ -3271,7 +3271,7 @@
     "id": "vocabulary_173",
     "scene": "vocabulary",
     "subScene": "vocabulary_food",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ピザの生地",
@@ -3290,7 +3290,7 @@
     "id": "vocabulary_174",
     "scene": "vocabulary",
     "subScene": "vocabulary_food",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ケーキの甘さ",
@@ -3309,7 +3309,7 @@
     "id": "vocabulary_175",
     "scene": "vocabulary",
     "subScene": "vocabulary_food",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "お菓子の袋",
@@ -3328,7 +3328,7 @@
     "id": "vocabulary_176",
     "scene": "vocabulary",
     "subScene": "vocabulary_food",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "味噌汁の具",
@@ -3347,7 +3347,7 @@
     "id": "vocabulary_177",
     "scene": "vocabulary",
     "subScene": "vocabulary_food",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "天ぷらの衣",
@@ -3366,7 +3366,7 @@
     "id": "vocabulary_178",
     "scene": "vocabulary",
     "subScene": "vocabulary_food",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "おにぎりの具",
@@ -3385,7 +3385,7 @@
     "id": "vocabulary_179",
     "scene": "vocabulary",
     "subScene": "vocabulary_food",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "刺身の鮮度",
@@ -3404,7 +3404,7 @@
     "id": "vocabulary_180",
     "scene": "vocabulary",
     "subScene": "vocabulary_drinks",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "水の温度",
@@ -3423,7 +3423,7 @@
     "id": "vocabulary_181",
     "scene": "vocabulary",
     "subScene": "vocabulary_drinks",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "お茶の香り",
@@ -3461,7 +3461,7 @@
     "id": "vocabulary_183",
     "scene": "vocabulary",
     "subScene": "vocabulary_drinks",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "紅茶の種類",
@@ -3480,7 +3480,7 @@
     "id": "vocabulary_184",
     "scene": "vocabulary",
     "subScene": "vocabulary_drinks",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "牛乳の温度",
@@ -3499,7 +3499,7 @@
     "id": "vocabulary_185",
     "scene": "vocabulary",
     "subScene": "vocabulary_drinks",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ジュースの味",
@@ -3518,7 +3518,7 @@
     "id": "vocabulary_186",
     "scene": "vocabulary",
     "subScene": "vocabulary_drinks",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ビールの泡",
@@ -3537,7 +3537,7 @@
     "id": "vocabulary_187",
     "scene": "vocabulary",
     "subScene": "vocabulary_drinks",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ワインの香り",
@@ -3556,7 +3556,7 @@
     "id": "vocabulary_188",
     "scene": "vocabulary",
     "subScene": "vocabulary_drinks",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "お酒の種類",
@@ -3575,7 +3575,7 @@
     "id": "vocabulary_189",
     "scene": "vocabulary",
     "subScene": "vocabulary_drinks",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "炭酸水の泡",
@@ -3594,7 +3594,7 @@
     "id": "vocabulary_190",
     "scene": "vocabulary",
     "subScene": "vocabulary_drinks",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "緑茶の香り",
@@ -3613,7 +3613,7 @@
     "id": "vocabulary_191",
     "scene": "vocabulary",
     "subScene": "vocabulary_drinks",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "麦茶の色",
@@ -3689,7 +3689,7 @@
     "id": "vocabulary_195",
     "scene": "vocabulary",
     "subScene": "vocabulary_drinks",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "コーラの炭酸",
@@ -3746,7 +3746,7 @@
     "id": "vocabulary_198",
     "scene": "vocabulary",
     "subScene": "vocabulary_drinks",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "抹茶の香り",
@@ -3784,7 +3784,7 @@
     "id": "vocabulary_200",
     "scene": "vocabulary",
     "subScene": "vocabulary_places",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ホテルの部屋",
@@ -3860,7 +3860,7 @@
     "id": "vocabulary_204",
     "scene": "vocabulary",
     "subScene": "vocabulary_places",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "スーパーの棚",
@@ -3879,7 +3879,7 @@
     "id": "vocabulary_205",
     "scene": "vocabulary",
     "subScene": "vocabulary_places",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "市場の活気",
@@ -3898,7 +3898,7 @@
     "id": "vocabulary_206",
     "scene": "vocabulary",
     "subScene": "vocabulary_places",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "病院の入口",
@@ -3917,7 +3917,7 @@
     "id": "vocabulary_207",
     "scene": "vocabulary",
     "subScene": "vocabulary_places",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "薬局の棚",
@@ -3936,7 +3936,7 @@
     "id": "vocabulary_208",
     "scene": "vocabulary",
     "subScene": "vocabulary_places",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "銀行の窓口",
@@ -3955,7 +3955,7 @@
     "id": "vocabulary_209",
     "scene": "vocabulary",
     "subScene": "vocabulary_places",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "郵便局の窓口",
@@ -3974,7 +3974,7 @@
     "id": "vocabulary_210",
     "scene": "vocabulary",
     "subScene": "vocabulary_places",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "図書館の本",
@@ -3993,7 +3993,7 @@
     "id": "vocabulary_211",
     "scene": "vocabulary",
     "subScene": "vocabulary_places",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "学校の授業",
@@ -4012,7 +4012,7 @@
     "id": "vocabulary_212",
     "scene": "vocabulary",
     "subScene": "vocabulary_places",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "警察署の前",
@@ -4031,7 +4031,7 @@
     "id": "vocabulary_213",
     "scene": "vocabulary",
     "subScene": "vocabulary_places",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "公園のベンチ",
@@ -4050,7 +4050,7 @@
     "id": "vocabulary_214",
     "scene": "vocabulary",
     "subScene": "vocabulary_places",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "博物館の展示",
@@ -4069,7 +4069,7 @@
     "id": "vocabulary_215",
     "scene": "vocabulary",
     "subScene": "vocabulary_places",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "美術館の絵",
@@ -4088,7 +4088,7 @@
     "id": "vocabulary_216",
     "scene": "vocabulary",
     "subScene": "vocabulary_places",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "映画館の席",
@@ -4107,7 +4107,7 @@
     "id": "vocabulary_217",
     "scene": "vocabulary",
     "subScene": "vocabulary_places",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "劇場の舞台",
@@ -4126,7 +4126,7 @@
     "id": "vocabulary_218",
     "scene": "vocabulary",
     "subScene": "vocabulary_places",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "神社の鳥居",
@@ -4145,7 +4145,7 @@
     "id": "vocabulary_219",
     "scene": "vocabulary",
     "subScene": "vocabulary_places",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "寺の鐘",
@@ -4164,7 +4164,7 @@
     "id": "vocabulary_220",
     "scene": "vocabulary",
     "subScene": "vocabulary_directions",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "右の道",
@@ -4183,7 +4183,7 @@
     "id": "vocabulary_221",
     "scene": "vocabulary",
     "subScene": "vocabulary_directions",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "左の道",
@@ -4202,7 +4202,7 @@
     "id": "vocabulary_222",
     "scene": "vocabulary",
     "subScene": "vocabulary_directions",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "前の席",
@@ -4221,7 +4221,7 @@
     "id": "vocabulary_223",
     "scene": "vocabulary",
     "subScene": "vocabulary_directions",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "後ろの席",
@@ -4240,7 +4240,7 @@
     "id": "vocabulary_224",
     "scene": "vocabulary",
     "subScene": "vocabulary_directions",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "上の階",
@@ -4259,7 +4259,7 @@
     "id": "vocabulary_225",
     "scene": "vocabulary",
     "subScene": "vocabulary_directions",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "下の階",
@@ -4278,7 +4278,7 @@
     "id": "vocabulary_226",
     "scene": "vocabulary",
     "subScene": "vocabulary_directions",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "北の国",
@@ -4297,7 +4297,7 @@
     "id": "vocabulary_227",
     "scene": "vocabulary",
     "subScene": "vocabulary_directions",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "南の国",
@@ -4316,7 +4316,7 @@
     "id": "vocabulary_228",
     "scene": "vocabulary",
     "subScene": "vocabulary_directions",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "東の空",
@@ -4335,7 +4335,7 @@
     "id": "vocabulary_229",
     "scene": "vocabulary",
     "subScene": "vocabulary_directions",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "西の空",
@@ -4354,7 +4354,7 @@
     "id": "vocabulary_230",
     "scene": "vocabulary",
     "subScene": "vocabulary_directions",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "まっすぐ進む",
@@ -4373,7 +4373,7 @@
     "id": "vocabulary_231",
     "scene": "vocabulary",
     "subScene": "vocabulary_directions",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "曲がる道",
@@ -4392,7 +4392,7 @@
     "id": "vocabulary_232",
     "scene": "vocabulary",
     "subScene": "vocabulary_directions",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "近い店",
@@ -4411,7 +4411,7 @@
     "id": "vocabulary_233",
     "scene": "vocabulary",
     "subScene": "vocabulary_directions",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "遠い山",
@@ -4430,7 +4430,7 @@
     "id": "vocabulary_234",
     "scene": "vocabulary",
     "subScene": "vocabulary_directions",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "手前の机",
@@ -4449,7 +4449,7 @@
     "id": "vocabulary_235",
     "scene": "vocabulary",
     "subScene": "vocabulary_directions",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "奥の部屋",
@@ -4468,7 +4468,7 @@
     "id": "vocabulary_236",
     "scene": "vocabulary",
     "subScene": "vocabulary_directions",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "隣の家",
@@ -4487,7 +4487,7 @@
     "id": "vocabulary_237",
     "scene": "vocabulary",
     "subScene": "vocabulary_directions",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "向かいの店",
@@ -4506,7 +4506,7 @@
     "id": "vocabulary_238",
     "scene": "vocabulary",
     "subScene": "vocabulary_directions",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "中央の広場",
@@ -4525,7 +4525,7 @@
     "id": "vocabulary_239",
     "scene": "vocabulary",
     "subScene": "vocabulary_directions",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "角の店",
@@ -4544,7 +4544,7 @@
     "id": "vocabulary_240",
     "scene": "vocabulary",
     "subScene": "vocabulary_people",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "人の集まり",
@@ -4563,7 +4563,7 @@
     "id": "vocabulary_241",
     "scene": "vocabulary",
     "subScene": "vocabulary_people",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "子供の遊び",
@@ -4582,7 +4582,7 @@
     "id": "vocabulary_242",
     "scene": "vocabulary",
     "subScene": "vocabulary_people",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "大人の会話",
@@ -4601,7 +4601,7 @@
     "id": "vocabulary_243",
     "scene": "vocabulary",
     "subScene": "vocabulary_people",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "男性の声",
@@ -4620,7 +4620,7 @@
     "id": "vocabulary_244",
     "scene": "vocabulary",
     "subScene": "vocabulary_people",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "女性の声",
@@ -4639,7 +4639,7 @@
     "id": "vocabulary_245",
     "scene": "vocabulary",
     "subScene": "vocabulary_people",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "先生の教室",
@@ -4658,7 +4658,7 @@
     "id": "vocabulary_246",
     "scene": "vocabulary",
     "subScene": "vocabulary_people",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "学生のノート",
@@ -4677,7 +4677,7 @@
     "id": "vocabulary_247",
     "scene": "vocabulary",
     "subScene": "vocabulary_people",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "友達の家",
@@ -4696,7 +4696,7 @@
     "id": "vocabulary_248",
     "scene": "vocabulary",
     "subScene": "vocabulary_people",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "店員の制服",
@@ -4715,7 +4715,7 @@
     "id": "vocabulary_249",
     "scene": "vocabulary",
     "subScene": "vocabulary_people",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "客の注文",
@@ -4734,7 +4734,7 @@
     "id": "vocabulary_250",
     "scene": "vocabulary",
     "subScene": "vocabulary_people",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "医者の診察",
@@ -4753,7 +4753,7 @@
     "id": "vocabulary_251",
     "scene": "vocabulary",
     "subScene": "vocabulary_people",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "看護師の手",
@@ -4772,7 +4772,7 @@
     "id": "vocabulary_252",
     "scene": "vocabulary",
     "subScene": "vocabulary_people",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "運転手の席",
@@ -4791,7 +4791,7 @@
     "id": "vocabulary_253",
     "scene": "vocabulary",
     "subScene": "vocabulary_people",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "警察官の制服",
@@ -4810,7 +4810,7 @@
     "id": "vocabulary_254",
     "scene": "vocabulary",
     "subScene": "vocabulary_people",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "消防士の帽子",
@@ -4829,7 +4829,7 @@
     "id": "vocabulary_255",
     "scene": "vocabulary",
     "subScene": "vocabulary_people",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "旅行者の荷物",
@@ -4848,7 +4848,7 @@
     "id": "vocabulary_256",
     "scene": "vocabulary",
     "subScene": "vocabulary_people",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "親の手",
@@ -4867,7 +4867,7 @@
     "id": "vocabulary_257",
     "scene": "vocabulary",
     "subScene": "vocabulary_people",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "兄の部屋",
@@ -4886,7 +4886,7 @@
     "id": "vocabulary_258",
     "scene": "vocabulary",
     "subScene": "vocabulary_people",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "姉の服",
@@ -4905,7 +4905,7 @@
     "id": "vocabulary_259",
     "scene": "vocabulary",
     "subScene": "vocabulary_people",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "家族の写真",
@@ -4924,7 +4924,7 @@
     "id": "vocabulary_260",
     "scene": "vocabulary",
     "subScene": "vocabulary_relationships",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "父の家",
@@ -4943,7 +4943,7 @@
     "id": "vocabulary_261",
     "scene": "vocabulary",
     "subScene": "vocabulary_relationships",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "母の笑顔",
@@ -4962,7 +4962,7 @@
     "id": "vocabulary_262",
     "scene": "vocabulary",
     "subScene": "vocabulary_relationships",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "兄弟の部屋",
@@ -4981,7 +4981,7 @@
     "id": "vocabulary_263",
     "scene": "vocabulary",
     "subScene": "vocabulary_relationships",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "姉妹の服",
@@ -5000,7 +5000,7 @@
     "id": "vocabulary_264",
     "scene": "vocabulary",
     "subScene": "vocabulary_relationships",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "夫の車",
@@ -5019,7 +5019,7 @@
     "id": "vocabulary_265",
     "scene": "vocabulary",
     "subScene": "vocabulary_relationships",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "妻の手紙",
@@ -5038,7 +5038,7 @@
     "id": "vocabulary_266",
     "scene": "vocabulary",
     "subScene": "vocabulary_relationships",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "息子の友達",
@@ -5057,7 +5057,7 @@
     "id": "vocabulary_267",
     "scene": "vocabulary",
     "subScene": "vocabulary_relationships",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "娘の本",
@@ -5076,7 +5076,7 @@
     "id": "vocabulary_268",
     "scene": "vocabulary",
     "subScene": "vocabulary_relationships",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "親戚の集まり",
@@ -5095,7 +5095,7 @@
     "id": "vocabulary_269",
     "scene": "vocabulary",
     "subScene": "vocabulary_relationships",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "祖父の杖",
@@ -5114,7 +5114,7 @@
     "id": "vocabulary_270",
     "scene": "vocabulary",
     "subScene": "vocabulary_relationships",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "祖母の料理",
@@ -5133,7 +5133,7 @@
     "id": "vocabulary_271",
     "scene": "vocabulary",
     "subScene": "vocabulary_relationships",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "孫の写真",
@@ -5152,7 +5152,7 @@
     "id": "vocabulary_272",
     "scene": "vocabulary",
     "subScene": "vocabulary_relationships",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "友人の手紙",
@@ -5171,7 +5171,7 @@
     "id": "vocabulary_273",
     "scene": "vocabulary",
     "subScene": "vocabulary_relationships",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "同僚の机",
@@ -5190,7 +5190,7 @@
     "id": "vocabulary_274",
     "scene": "vocabulary",
     "subScene": "vocabulary_relationships",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "上司の話",
@@ -5209,7 +5209,7 @@
     "id": "vocabulary_275",
     "scene": "vocabulary",
     "subScene": "vocabulary_relationships",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "部下の報告",
@@ -5228,7 +5228,7 @@
     "id": "vocabulary_276",
     "scene": "vocabulary",
     "subScene": "vocabulary_relationships",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "恋人の手紙",
@@ -5247,7 +5247,7 @@
     "id": "vocabulary_277",
     "scene": "vocabulary",
     "subScene": "vocabulary_relationships",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "婚約者の指輪",
@@ -5266,7 +5266,7 @@
     "id": "vocabulary_278",
     "scene": "vocabulary",
     "subScene": "vocabulary_relationships",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "夫婦の旅行",
@@ -5304,7 +5304,7 @@
     "id": "vocabulary_280",
     "scene": "vocabulary",
     "subScene": "vocabulary_nature",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "山の景色",
@@ -5323,7 +5323,7 @@
     "id": "vocabulary_281",
     "scene": "vocabulary",
     "subScene": "vocabulary_nature",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "川の流れ",
@@ -5342,7 +5342,7 @@
     "id": "vocabulary_282",
     "scene": "vocabulary",
     "subScene": "vocabulary_nature",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "海の波",
@@ -5361,7 +5361,7 @@
     "id": "vocabulary_283",
     "scene": "vocabulary",
     "subScene": "vocabulary_nature",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "湖のほとり",
@@ -5380,7 +5380,7 @@
     "id": "vocabulary_284",
     "scene": "vocabulary",
     "subScene": "vocabulary_nature",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "森の中",
@@ -5399,7 +5399,7 @@
     "id": "vocabulary_285",
     "scene": "vocabulary",
     "subScene": "vocabulary_nature",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "林の道",
@@ -5418,7 +5418,7 @@
     "id": "vocabulary_286",
     "scene": "vocabulary",
     "subScene": "vocabulary_nature",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "空の色",
@@ -5437,7 +5437,7 @@
     "id": "vocabulary_287",
     "scene": "vocabulary",
     "subScene": "vocabulary_nature",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "雲の形",
@@ -5456,7 +5456,7 @@
     "id": "vocabulary_288",
     "scene": "vocabulary",
     "subScene": "vocabulary_nature",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "雨の音",
@@ -5475,7 +5475,7 @@
     "id": "vocabulary_289",
     "scene": "vocabulary",
     "subScene": "vocabulary_nature",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "雪の結晶",
@@ -5494,7 +5494,7 @@
     "id": "vocabulary_290",
     "scene": "vocabulary",
     "subScene": "vocabulary_nature",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "風の強さ",
@@ -5513,7 +5513,7 @@
     "id": "vocabulary_291",
     "scene": "vocabulary",
     "subScene": "vocabulary_nature",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "太陽の光",
@@ -5532,7 +5532,7 @@
     "id": "vocabulary_292",
     "scene": "vocabulary",
     "subScene": "vocabulary_nature",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "月の明かり",
@@ -5551,7 +5551,7 @@
     "id": "vocabulary_293",
     "scene": "vocabulary",
     "subScene": "vocabulary_nature",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "星の輝き",
@@ -5570,7 +5570,7 @@
     "id": "vocabulary_294",
     "scene": "vocabulary",
     "subScene": "vocabulary_nature",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "花の香り",
@@ -5589,7 +5589,7 @@
     "id": "vocabulary_295",
     "scene": "vocabulary",
     "subScene": "vocabulary_nature",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "草の匂い",
@@ -5608,7 +5608,7 @@
     "id": "vocabulary_296",
     "scene": "vocabulary",
     "subScene": "vocabulary_nature",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "砂の色",
@@ -5627,7 +5627,7 @@
     "id": "vocabulary_297",
     "scene": "vocabulary",
     "subScene": "vocabulary_nature",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "岩の形",
@@ -5646,7 +5646,7 @@
     "id": "vocabulary_298",
     "scene": "vocabulary",
     "subScene": "vocabulary_nature",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "滝の音",
@@ -5665,7 +5665,7 @@
     "id": "vocabulary_299",
     "scene": "vocabulary",
     "subScene": "vocabulary_nature",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "島の海岸",
@@ -5684,7 +5684,7 @@
     "id": "vocabulary_300",
     "scene": "vocabulary",
     "subScene": "vocabulary_animals",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "犬の散歩",
@@ -5703,7 +5703,7 @@
     "id": "vocabulary_301",
     "scene": "vocabulary",
     "subScene": "vocabulary_animals",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "猫の鳴き声",
@@ -5722,7 +5722,7 @@
     "id": "vocabulary_302",
     "scene": "vocabulary",
     "subScene": "vocabulary_animals",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "鳥の羽",
@@ -5741,7 +5741,7 @@
     "id": "vocabulary_303",
     "scene": "vocabulary",
     "subScene": "vocabulary_animals",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "魚の群れ",
@@ -5760,7 +5760,7 @@
     "id": "vocabulary_304",
     "scene": "vocabulary",
     "subScene": "vocabulary_animals",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "馬の蹄",
@@ -5779,7 +5779,7 @@
     "id": "vocabulary_305",
     "scene": "vocabulary",
     "subScene": "vocabulary_animals",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "牛の乳",
@@ -5798,7 +5798,7 @@
     "id": "vocabulary_306",
     "scene": "vocabulary",
     "subScene": "vocabulary_animals",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "羊の毛",
@@ -5817,7 +5817,7 @@
     "id": "vocabulary_307",
     "scene": "vocabulary",
     "subScene": "vocabulary_animals",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "豚の鳴き声",
@@ -5836,7 +5836,7 @@
     "id": "vocabulary_308",
     "scene": "vocabulary",
     "subScene": "vocabulary_animals",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "鶏の卵",
@@ -5855,7 +5855,7 @@
     "id": "vocabulary_309",
     "scene": "vocabulary",
     "subScene": "vocabulary_animals",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "象の鼻",
@@ -5893,7 +5893,7 @@
     "id": "vocabulary_311",
     "scene": "vocabulary",
     "subScene": "vocabulary_animals",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "トラの模様",
@@ -5912,7 +5912,7 @@
     "id": "vocabulary_312",
     "scene": "vocabulary",
     "subScene": "vocabulary_animals",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "くまの手",
@@ -5931,7 +5931,7 @@
     "id": "vocabulary_313",
     "scene": "vocabulary",
     "subScene": "vocabulary_animals",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "さるの顔",
@@ -5950,7 +5950,7 @@
     "id": "vocabulary_314",
     "scene": "vocabulary",
     "subScene": "vocabulary_animals",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "うさぎの耳",
@@ -5988,7 +5988,7 @@
     "id": "vocabulary_316",
     "scene": "vocabulary",
     "subScene": "vocabulary_animals",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "きつねの毛",
@@ -6007,7 +6007,7 @@
     "id": "vocabulary_317",
     "scene": "vocabulary",
     "subScene": "vocabulary_animals",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "りすの木",
@@ -6026,7 +6026,7 @@
     "id": "vocabulary_318",
     "scene": "vocabulary",
     "subScene": "vocabulary_animals",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "かめの甲羅",
@@ -6045,7 +6045,7 @@
     "id": "vocabulary_319",
     "scene": "vocabulary",
     "subScene": "vocabulary_animals",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "へびの皮",
@@ -6064,7 +6064,7 @@
     "id": "vocabulary_320",
     "scene": "vocabulary",
     "subScene": "vocabulary_essentials",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "お金の袋",
@@ -6083,7 +6083,7 @@
     "id": "vocabulary_321",
     "scene": "vocabulary",
     "subScene": "vocabulary_essentials",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "財布の中",
@@ -6121,7 +6121,7 @@
     "id": "vocabulary_323",
     "scene": "vocabulary",
     "subScene": "vocabulary_essentials",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "鍵の束",
@@ -6140,7 +6140,7 @@
     "id": "vocabulary_324",
     "scene": "vocabulary",
     "subScene": "vocabulary_essentials",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "カバンの中",
@@ -6159,7 +6159,7 @@
     "id": "vocabulary_325",
     "scene": "vocabulary",
     "subScene": "vocabulary_essentials",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "服の色",
@@ -6178,7 +6178,7 @@
     "id": "vocabulary_326",
     "scene": "vocabulary",
     "subScene": "vocabulary_essentials",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "靴のサイズ",
@@ -6197,7 +6197,7 @@
     "id": "vocabulary_327",
     "scene": "vocabulary",
     "subScene": "vocabulary_essentials",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "眼鏡の枠",
@@ -6216,7 +6216,7 @@
     "id": "vocabulary_328",
     "scene": "vocabulary",
     "subScene": "vocabulary_essentials",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "時計の針",
@@ -6235,7 +6235,7 @@
     "id": "vocabulary_329",
     "scene": "vocabulary",
     "subScene": "vocabulary_essentials",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "地図の場所",
@@ -6273,7 +6273,7 @@
     "id": "vocabulary_331",
     "scene": "vocabulary",
     "subScene": "vocabulary_essentials",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "傘の色",
@@ -6292,7 +6292,7 @@
     "id": "vocabulary_332",
     "scene": "vocabulary",
     "subScene": "vocabulary_essentials",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ノートの表紙",
@@ -6311,7 +6311,7 @@
     "id": "vocabulary_333",
     "scene": "vocabulary",
     "subScene": "vocabulary_essentials",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "ペンの色",
@@ -6349,7 +6349,7 @@
     "id": "vocabulary_335",
     "scene": "vocabulary",
     "subScene": "vocabulary_essentials",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "イヤホンの線",
@@ -6406,7 +6406,7 @@
     "id": "vocabulary_338",
     "scene": "vocabulary",
     "subScene": "vocabulary_essentials",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "タオルの端",
@@ -6425,7 +6425,7 @@
     "id": "vocabulary_339",
     "scene": "vocabulary",
     "subScene": "vocabulary_essentials",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "マスクの紐",
@@ -6444,7 +6444,7 @@
     "id": "vocabulary_340",
     "scene": "vocabulary",
     "subScene": "vocabulary_emergencies",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "警察の車",
@@ -6482,7 +6482,7 @@
     "id": "vocabulary_342",
     "scene": "vocabulary",
     "subScene": "vocabulary_emergencies",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "消防車の梯子",
@@ -6520,7 +6520,7 @@
     "id": "vocabulary_344",
     "scene": "vocabulary",
     "subScene": "vocabulary_emergencies",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "危ない場所",
@@ -6539,7 +6539,7 @@
     "id": "vocabulary_345",
     "scene": "vocabulary",
     "subScene": "vocabulary_emergencies",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "避難の道",
@@ -6558,7 +6558,7 @@
     "id": "vocabulary_346",
     "scene": "vocabulary",
     "subScene": "vocabulary_emergencies",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "事故の現場",
@@ -6577,7 +6577,7 @@
     "id": "vocabulary_347",
     "scene": "vocabulary",
     "subScene": "vocabulary_emergencies",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "火事の煙",
@@ -6596,7 +6596,7 @@
     "id": "vocabulary_348",
     "scene": "vocabulary",
     "subScene": "vocabulary_emergencies",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "地震の揺れ",
@@ -6615,7 +6615,7 @@
     "id": "vocabulary_349",
     "scene": "vocabulary",
     "subScene": "vocabulary_emergencies",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "津波の警報",
@@ -6634,7 +6634,7 @@
     "id": "vocabulary_350",
     "scene": "vocabulary",
     "subScene": "vocabulary_emergencies",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "台風の風",
@@ -6653,7 +6653,7 @@
     "id": "vocabulary_351",
     "scene": "vocabulary",
     "subScene": "vocabulary_emergencies",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "洪水の被害",
@@ -6672,7 +6672,7 @@
     "id": "vocabulary_352",
     "scene": "vocabulary",
     "subScene": "vocabulary_emergencies",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "怪我の手当",
@@ -6691,7 +6691,7 @@
     "id": "vocabulary_353",
     "scene": "vocabulary",
     "subScene": "vocabulary_emergencies",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "病気の症状",
@@ -6710,7 +6710,7 @@
     "id": "vocabulary_354",
     "scene": "vocabulary",
     "subScene": "vocabulary_emergencies",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "発熱の兆候",
@@ -6729,7 +6729,7 @@
     "id": "vocabulary_355",
     "scene": "vocabulary",
     "subScene": "vocabulary_emergencies",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "咳の音",
@@ -6748,7 +6748,7 @@
     "id": "vocabulary_356",
     "scene": "vocabulary",
     "subScene": "vocabulary_emergencies",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "救急箱の中",
@@ -6767,7 +6767,7 @@
     "id": "vocabulary_357",
     "scene": "vocabulary",
     "subScene": "vocabulary_emergencies",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "薬の袋",
@@ -6786,7 +6786,7 @@
     "id": "vocabulary_358",
     "scene": "vocabulary",
     "subScene": "vocabulary_emergencies",
-    "level": "starter",
+    "level": "beginner",
     "tags": [],
     "translations": {
       "ja": "非常口の標識",
