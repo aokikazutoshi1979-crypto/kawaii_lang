@@ -242,6 +242,18 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get filterLabel => '필터:';
+
+  @override
+  String get filterTopicLabel => '주제';
+
+  @override
+  String get levelStarter => '스타터';
+
+  @override
+  String get tapToExpand => '탭하여 펼치기';
+
+  @override
   String get userNameTitle => '사용자 이름';
 
   @override

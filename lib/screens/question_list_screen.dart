@@ -141,6 +141,28 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
     return s ?? id; // 見つからなければID表示
   }
 
+  Widget _buildFilterChip({
+    required String label,
+    required bool selected,
+    required VoidCallback onSelected,
+  }) {
+    return Padding(
+      padding: const EdgeInsets.only(right: 8),
+      child: ChoiceChip(
+        label: Text(label),
+        selected: selected,
+        onSelected: (_) => onSelected(),
+        selectedColor: Colors.pink[100],
+        backgroundColor: Colors.white,
+        shape: StadiumBorder(side: BorderSide(color: Colors.pink.shade200)),
+        labelStyle: TextStyle(
+          color: selected ? Colors.pink.shade700 : Colors.black87,
+          fontWeight: FontWeight.w600,
+        ),
+      ),
+    );
+  }
+
   Locale _localeFromAppCode(String code) {
     // 例: zh_Hant_TW / zh-TW / zh_TW → zh(言語) + TW(国) + Hant(スクリプト)
     final c = code.replaceAll('-', '_');
@@ -223,15 +245,32 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
   List<Question> _filtered = [];         // 表示用（questions のフィルタ結果）
   String _searchQuery = '';
   final TextEditingController _searchController = TextEditingController();
+  String _selectedLevel = 'all';
+  String _selectedTag = 'all';
 
   void _applyFilter() {
     final base = questions;
-    final filteredBySub = (_selectedSubScene == null)
-        ? base
-        : base.where((q) => q.subScene == _selectedSubScene).toList();
+    Iterable<Question> filteredBySub = base;
+    if (_selectedLevel != 'all') {
+      filteredBySub = filteredBySub.where(
+        (q) => q.level.toLowerCase() == _selectedLevel,
+      );
+    }
+    if (widget.selectedScene == 'trial') {
+      if (_selectedTag != 'all') {
+        filteredBySub = filteredBySub.where(
+          (q) => q.tags.contains(_selectedTag),
+        );
+      }
+    }
+    if (widget.selectedScene != 'trial') {
+      filteredBySub = (_selectedSubScene == null)
+          ? filteredBySub
+          : filteredBySub.where((q) => q.subScene == _selectedSubScene);
+    }
     final q = _searchQuery.trim();
     final next = q.isEmpty
-        ? filteredBySub
+        ? filteredBySub.toList()
         : filteredBySub
             .where((item) => item.getText(nativeLang).toLowerCase().contains(q.toLowerCase()))
             .toList();
@@ -419,8 +458,8 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                 compact: true,
               ),
 
-          // ▼▼ ここから subScene フィルタ ▼▼
-          if (_availableSubScenes.isNotEmpty) ...[
+          // ▼▼ ここから フィルタ ▼▼
+          if (_availableSubScenes.isNotEmpty || isTrial) ...[
             const SizedBox(height: 12),
             TextField(
               controller: _searchController,
@@ -448,7 +487,7 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
             Row(
               children: [
                 Text(
-                  '絞り込み：',
+                  loc.filterLabel,
                   style: TextStyle(fontSize: 13, color: Colors.grey.shade700),
                 ),
                 const Spacer(),
@@ -461,57 +500,138 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
               ],
             ),
             const SizedBox(height: 6),
+            Text(
+              loc.level,
+              style: TextStyle(fontSize: 12, color: Colors.grey.shade700),
+            ),
+            const SizedBox(height: 6),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  // ALL ボタン
-                  Padding(
-                    padding: const EdgeInsets.only(right: 8),
-                    child: ChoiceChip(
-                      label: Text(loc.subsceneAll),
-                      selected: _selectedSubScene == null,
-                      onSelected: (_) {
-                        _selectedSubScene = null;
-                        _applyFilter();
-                      },
-                      selectedColor: Colors.pink[100],
-                      backgroundColor: Colors.white,
-                      shape: StadiumBorder(side: BorderSide(color: Colors.pink.shade200)),
-                      labelStyle: TextStyle(
-                        color: _selectedSubScene == null ? Colors.pink.shade700 : Colors.black87,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
+                  _buildFilterChip(
+                    label: loc.subsceneAll,
+                    selected: _selectedLevel == 'all',
+                    onSelected: () {
+                      _selectedLevel = 'all';
+                      _applyFilter();
+                    },
                   ),
-                  // subScene ごとのボタン
-                  ..._availableSubScenes.map((key) {
-                    final selected = _selectedSubScene == key;
-                    return Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ChoiceChip(
-                        label: Text(_subSceneLabel(key, loc)),
-                        selected: selected,
-                        onSelected: (_) {
-                          _selectedSubScene = key;
-                          _applyFilter();
-                        },
-                        selectedColor: Colors.pink[100],
-                        backgroundColor: Colors.white,
-                        shape: StadiumBorder(side: BorderSide(color: Colors.pink.shade200)),
-                        labelStyle: TextStyle(
-                          color: selected ? Colors.pink.shade700 : Colors.black87,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                    );
-                  }),
+                  _buildFilterChip(
+                    label: loc.levelStarter,
+                    selected: _selectedLevel == 'starter',
+                    onSelected: () {
+                      _selectedLevel = 'starter';
+                      _applyFilter();
+                    },
+                  ),
+                  _buildFilterChip(
+                    label: loc.levelBeginner,
+                    selected: _selectedLevel == 'beginner',
+                    onSelected: () {
+                      _selectedLevel = 'beginner';
+                      _applyFilter();
+                    },
+                  ),
+                  _buildFilterChip(
+                    label: loc.levelIntermediate,
+                    selected: _selectedLevel == 'intermediate',
+                    onSelected: () {
+                      _selectedLevel = 'intermediate';
+                      _applyFilter();
+                    },
+                  ),
+                  _buildFilterChip(
+                    label: loc.levelAdvanced,
+                    selected: _selectedLevel == 'advanced',
+                    onSelected: () {
+                      _selectedLevel = 'advanced';
+                      _applyFilter();
+                    },
+                  ),
                 ],
               ),
             ),
-            const SizedBox(height: 8),
+            if (isTrial) ...[
+              const SizedBox(height: 10),
+              Text(
+                loc.filterTopicLabel,
+                style: TextStyle(fontSize: 12, color: Colors.grey.shade700),
+              ),
+              const SizedBox(height: 6),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    _buildFilterChip(
+                      label: loc.subsceneAll,
+                      selected: _selectedTag == 'all',
+                      onSelected: () {
+                        _selectedTag = 'all';
+                        _applyFilter();
+                      },
+                    ),
+                    _buildFilterChip(
+                      label: _subSceneLabel('aizuchi', loc),
+                      selected: _selectedTag == 'aizuchi',
+                      onSelected: () {
+                        _selectedTag = 'aizuchi';
+                        _applyFilter();
+                      },
+                    ),
+                    _buildFilterChip(
+                      label: _subSceneLabel('greeting', loc),
+                      selected: _selectedTag == 'greeting',
+                      onSelected: () {
+                        _selectedTag = 'greeting';
+                        _applyFilter();
+                      },
+                    ),
+                    _buildFilterChip(
+                      label: _subSceneLabel('phrases', loc),
+                      selected: _selectedTag == 'phrases',
+                      onSelected: () {
+                        _selectedTag = 'phrases';
+                        _applyFilter();
+                      },
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 8),
+            ] else ...[
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    // ALL ボタン
+                    _buildFilterChip(
+                      label: loc.subsceneAll,
+                      selected: _selectedSubScene == null,
+                      onSelected: () {
+                        _selectedSubScene = null;
+                        _applyFilter();
+                      },
+                    ),
+                    // subScene ごとのボタン
+                    ..._availableSubScenes.map((key) {
+                      final selected = _selectedSubScene == key;
+                      return _buildFilterChip(
+                        label: _subSceneLabel(key, loc),
+                        selected: selected,
+                        onSelected: () {
+                          _selectedSubScene = key;
+                          _applyFilter();
+                        },
+                      );
+                    }),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 8),
+            ],
           ],
-          // ▲▲ ここまで subScene フィルタ ▲▲
+          // ▲▲ ここまで フィルタ ▲▲
 
           Padding(
             padding: const EdgeInsets.all(16),

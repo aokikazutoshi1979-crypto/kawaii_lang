@@ -242,6 +242,18 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get filterLabel => '絞り込み：';
+
+  @override
+  String get filterTopicLabel => 'トピック';
+
+  @override
+  String get levelStarter => 'スターター';
+
+  @override
+  String get tapToExpand => 'タップして全文を見る';
+
+  @override
   String get userNameTitle => 'ユーザー名';
 
   @override

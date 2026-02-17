@@ -1,7 +1,7 @@
 name: kawaii_lang
 description: "A new Flutter project."
 publish_to: 'none'
-version: 1.0.23+23
+version: 1.0.25+25
 
 environment:
   sdk: ">=3.3.0 <4.0.0"
@@ -51,7 +51,7 @@ flutter_native_splash:
   ios: true
 
 flutter_icons:
-  image_path: "assets/images/icon.png"
+  image_path: "assets/images/characters/tumugi_icon.png"
   android: true
   ios: true
 

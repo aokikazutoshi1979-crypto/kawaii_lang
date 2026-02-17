@@ -249,6 +249,18 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String get filterLabel => 'Filter:';
+
+  @override
+  String get filterTopicLabel => 'Topik';
+
+  @override
+  String get levelStarter => 'Pemula';
+
+  @override
+  String get tapToExpand => 'Ketuk untuk memperluas';
+
+  @override
   String get userNameTitle => 'Nama pengguna';
 
   @override

@@ -249,6 +249,18 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get filterLabel => 'Filter:';
+
+  @override
+  String get filterTopicLabel => 'Topic';
+
+  @override
+  String get levelStarter => 'Starter';
+
+  @override
+  String get tapToExpand => 'Tap to expand';
+
+  @override
   String get userNameTitle => 'Your Name';
 
   @override

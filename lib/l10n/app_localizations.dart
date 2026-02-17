@@ -545,6 +545,30 @@ abstract class AppLocalizations {
   /// **'ようこそ、{name} さん'**
   String welcomeUser(Object name);
 
+  /// No description provided for @filterLabel.
+  ///
+  /// In ja, this message translates to:
+  /// **'絞り込み：'**
+  String get filterLabel;
+
+  /// No description provided for @filterTopicLabel.
+  ///
+  /// In ja, this message translates to:
+  /// **'トピック'**
+  String get filterTopicLabel;
+
+  /// No description provided for @levelStarter.
+  ///
+  /// In ja, this message translates to:
+  /// **'スターター'**
+  String get levelStarter;
+
+  /// No description provided for @tapToExpand.
+  ///
+  /// In ja, this message translates to:
+  /// **'タップして全文を見る'**
+  String get tapToExpand;
+
   /// No description provided for @userNameTitle.
   ///
   /// In ja, this message translates to:

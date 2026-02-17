@@ -248,6 +248,18 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get filterLabel => 'Lọc:';
+
+  @override
+  String get filterTopicLabel => 'Chủ đề';
+
+  @override
+  String get levelStarter => 'Sơ cấp';
+
+  @override
+  String get tapToExpand => 'Chạm để mở rộng';
+
+  @override
   String get userNameTitle => 'Tên người dùng';
 
   @override

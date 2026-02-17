@@ -251,6 +251,18 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
+  String get filterLabel => 'Filtrer :';
+
+  @override
+  String get filterTopicLabel => 'Sujet';
+
+  @override
+  String get levelStarter => 'Débutant';
+
+  @override
+  String get tapToExpand => 'Touchez pour développer';
+
+  @override
   String get userNameTitle => 'Nom d\'utilisateur';
 
   @override

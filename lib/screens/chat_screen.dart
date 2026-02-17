@@ -86,6 +86,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   String _currentNativeText = ''; // ← 出題を保持
   String _tsumugiQuestionText = '';
+  bool _isPromptExpanded = false;
 
   late String _targetCode;
 
@@ -307,6 +308,35 @@ class _ChatScreenState extends State<ChatScreen> {
     return s;
   }
 
+  String _normalizeRomaji(String input) {
+    return input
+        .trim()
+        .toLowerCase()
+        .replaceAll(RegExp(r'[^a-z0-9]+'), '');
+  }
+
+  bool _isSameRomaji(String? a, String? b) {
+    if (a == null || b == null) return false;
+    final na = _normalizeRomaji(a);
+    final nb = _normalizeRomaji(b);
+    if (na.isEmpty || nb.isEmpty) return false;
+    return na == nb;
+  }
+
+  Future<String?> _romajiForJapanese(String text, AppLocalizations loc) async {
+    final t = text.trim();
+    if (t.isEmpty) return null;
+    final prompt = PromptBuilders.buildSimilarQuestionTtsPrompt(
+      translatedText: t,
+      targetLang: _targetCode,
+    );
+    final res = await GptService.getChatResponse(prompt, t, loc);
+    if (res == null) return null;
+    final r = res.trim();
+    if (r.isEmpty || r.toLowerCase() == 'null') return null;
+    return r;
+  }
+
   bool _isDuplicateSimilar(String candidate, List<String> avoidList) {
     final c = _normalizeForDuplicateCheck(candidate);
     if (c.isEmpty) return true;
@@ -386,6 +416,11 @@ class _ChatScreenState extends State<ChatScreen> {
     return LanguageCatalog.instance.labelFor(code, displayLang: display);
   }
 
+  String _displayLangCode(String rawCode) {
+    final code = getLangCode(rawCode).replaceAll('_', '-');
+    return code.toUpperCase();
+  }
+
   @override
   void initState() {
     super.initState();
@@ -411,9 +446,8 @@ class _ChatScreenState extends State<ChatScreen> {
       await LanguageCatalog.instance.ensureLoaded();
       if (mounted) {
         setState(() {
-          _tsumugiQuestionText = buildTsumugiPrompt(
+          _tsumugiQuestionText = buildTsumugiQuestionLine(
             uiLanguageCode: _nativeCode,
-            promptText: _currentNativeText,
             targetLanguageName: _displayLangName(widget.targetLang),
           );
         });
@@ -609,34 +643,6 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 
-  TextSpan _buildTsumugiQuestionSpan({
-    required String fullText,
-    required String promptText,
-    required TextStyle baseStyle,
-  }) {
-    final cleanPrompt = promptText.trim();
-    if (cleanPrompt.isEmpty) {
-      return TextSpan(text: fullText, style: baseStyle);
-    }
-    final idx = fullText.indexOf(cleanPrompt);
-    if (idx < 0) {
-      return TextSpan(text: fullText, style: baseStyle);
-    }
-    final before = fullText.substring(0, idx);
-    final after = fullText.substring(idx + cleanPrompt.length);
-    return TextSpan(
-      style: baseStyle,
-      children: [
-        if (before.isNotEmpty) TextSpan(text: before),
-        TextSpan(
-          text: cleanPrompt,
-          style: baseStyle.copyWith(color: const Color(0xFFE91E63)),
-        ),
-        if (after.isNotEmpty) TextSpan(text: after),
-      ],
-    );
-  }
-
   Future<void> _speakText(String text) async {
     if (!_ttsReady || _isSpeaking) return;
     text = text.replaceAll(RegExp(r'<[^>]+>'), ' ').replaceAll(RegExp(r'\s+'), ' ').trim();
@@ -721,9 +727,9 @@ class _ChatScreenState extends State<ChatScreen> {
       // ★ ここで毎回リセット（モードに関わらず）
       _revealListeningText = false;
       _currentNativeText = nativeText;
-      _tsumugiQuestionText = buildTsumugiPrompt(
+      _isPromptExpanded = false;
+      _tsumugiQuestionText = buildTsumugiQuestionLine(
         uiLanguageCode: _nativeCode,
-        promptText: nativeText,
         targetLanguageName: _displayLangName(widget.targetLang),
       );
 
@@ -1247,13 +1253,35 @@ class _ChatScreenState extends State<ChatScreen> {
         });
 
         // 5) 類似表現（ターゲット言語）を生成（同一文は再生成）
-        final String? similar = await _generateSimilarExpression(
+        String? userRomaji;
+        if (_targetCode == 'ja' && rawInput.trim().isNotEmpty) {
+          userRomaji = await _romajiForJapanese(rawInput, loc);
+        }
+
+        String? similar = await _generateSimilarExpression(
           seed: questionText,
           targetLang: targetName,
           loc: loc,
           avoidList: [rawInput, translatedText],
         );
         if (similar == null || similar.isEmpty) return; // 念のためガード
+
+        String? similarRomaji;
+        if (_targetCode == 'ja' && userRomaji != null) {
+          similarRomaji = await _romajiForJapanese(similar, loc);
+          if (_isSameRomaji(similarRomaji, userRomaji)) {
+            final retry = await _generateSimilarExpression(
+              seed: questionText,
+              targetLang: targetName,
+              loc: loc,
+              avoidList: [rawInput, translatedText, similar],
+            );
+            if (retry != null && retry.trim().isNotEmpty) {
+              similar = retry;
+              similarRomaji = await _romajiForJapanese(similar, loc);
+            }
+          }
+        }
 
         // 6) 類似表現の母語訳
         final prompt10 = PromptBuilders.buildSimilarQuestionInNativeLangPrompt(
@@ -1267,7 +1295,9 @@ class _ChatScreenState extends State<ChatScreen> {
         String? transcriptionSimilar;
         {
           final norm = widget.targetLang.replaceAll('-', '_').toLowerCase();
-          if (const {'ja', 'zh', 'zh_tw', 'ko'}.contains(norm) && similar.isNotEmpty) {
+          if (norm == 'ja' && similarRomaji != null) {
+            transcriptionSimilar = similarRomaji;
+          } else if (const {'ja', 'zh', 'zh_tw', 'ko'}.contains(norm) && similar.isNotEmpty) {
             final prompt12 = PromptBuilders.buildSimilarQuestionTtsPrompt(
               translatedText: similar,
               targetLang: widget.targetLang,
@@ -1566,7 +1596,12 @@ class _ChatScreenState extends State<ChatScreen> {
     if (translatedText != null && translatedText!.trim().isNotEmpty) {
       avoidList.add(translatedText!);
     }
-    final String? similar = await _generateSimilarExpression(
+    String? userRomaji;
+    if (_targetCode == 'ja' && rawInput != null && rawInput.trim().isNotEmpty) {
+      userRomaji = await _romajiForJapanese(rawInput, loc);
+    }
+
+    String? similar = await _generateSimilarExpression(
       seed: seedForSimilar,
       targetLang: targetName,
       loc: loc,
@@ -1576,6 +1611,23 @@ class _ChatScreenState extends State<ChatScreen> {
     if (similar == null || similar.trim().isEmpty) {
       print('❌ 問8の類似表現生成に失敗しました');
       return;
+    }
+
+    String? similarRomaji;
+    if (_targetCode == 'ja' && userRomaji != null) {
+      similarRomaji = await _romajiForJapanese(similar, loc);
+      if (_isSameRomaji(similarRomaji, userRomaji)) {
+        final retry = await _generateSimilarExpression(
+          seed: seedForSimilar,
+          targetLang: targetName,
+          loc: loc,
+          avoidList: [...avoidList, similar],
+        );
+        if (retry != null && retry.trim().isNotEmpty) {
+          similar = retry;
+          similarRomaji = await _romajiForJapanese(similar, loc);
+        }
+      }
     }
 
     // ③ 問10：同義の文の母語での訳を生成
@@ -1597,7 +1649,10 @@ class _ChatScreenState extends State<ChatScreen> {
 
     // 問12：同義の文の音声転写を作成する
     String? rawTranscription;
-    if (const {'ja', 'zh', 'zh_tw', 'ko'}.contains(widget.targetLang)) {
+    final norm = widget.targetLang.replaceAll('-', '_').toLowerCase();
+    if (norm == 'ja' && similarRomaji != null) {
+      rawTranscription = similarRomaji;
+    } else if (const {'ja', 'zh', 'zh_tw', 'ko'}.contains(norm)) {
       final prompt12 = PromptBuilders.buildSimilarQuestionTtsPrompt(
         translatedText: similar,
         targetLang: widget.targetLang,
@@ -1707,11 +1762,11 @@ class _ChatScreenState extends State<ChatScreen> {
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      _langPill(context, _displayLangName(widget.nativeLang)), // 例: 日本語 / English
+                      _langPill(context, _displayLangCode(widget.nativeLang)), // 例: EN / JA
                       const SizedBox(width: 8),
                       const Icon(Icons.east_rounded, size: 20, color: Colors.grey),
                       const SizedBox(width: 8),
-                      _langPill(context, _displayLangName(widget.targetLang)), // 例: 英語 / Korean
+                      _langPill(context, _displayLangCode(widget.targetLang)), // 例: EN / JA
                     ],
                   ),
                 ),
@@ -1776,28 +1831,51 @@ class _ChatScreenState extends State<ChatScreen> {
                         ),
                         const SizedBox(width: 10),
                         Flexible(
-                          child: Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-                            decoration: BoxDecoration(
-                              color: const Color(0xFFFFF0F5),
-                              borderRadius: BorderRadius.circular(14),
-                              border: Border.all(
-                                color: Colors.pink.shade200.withOpacity(0.6),
-                              ),
-                            ),
-                            child: Text.rich(
-                              _buildTsumugiQuestionSpan(
-                                fullText: _tsumugiQuestionText.isNotEmpty
-                                    ? _tsumugiQuestionText
-                                    : _currentNativeText,
-                                promptText: _currentNativeText,
-                                baseStyle: const TextStyle(
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.black87,
+                          child: GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                _isPromptExpanded = !_isPromptExpanded;
+                              });
+                            },
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFFF0F5),
+                                borderRadius: BorderRadius.circular(14),
+                                border: Border.all(
+                                  color: Colors.pink.shade200.withOpacity(0.6),
                                 ),
                               ),
-                              textAlign: TextAlign.left,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    _tsumugiQuestionText.isNotEmpty
+                                        ? _tsumugiQuestionText
+                                        : _currentNativeText,
+                                    textAlign: TextAlign.left,
+                                    style: const TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black87,
+                                    ),
+                                  ),
+                                  if (formatPromptQuote(_nativeCode, _currentNativeText).isNotEmpty) ...[
+                                    const SizedBox(height: 6),
+                                    _ExpandablePromptText(
+                                      text: formatPromptQuote(_nativeCode, _currentNativeText),
+                                      isExpanded: _isPromptExpanded,
+                                      maxLines: 2,
+                                      expandLabel: loc.tapToExpand,
+                                      style: const TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold,
+                                        color: Color(0xFFE91E63),
+                                      ),
+                                    ),
+                                  ],
+                                ],
+                              ),
                             ),
                           ),
                         ),
@@ -1895,6 +1973,60 @@ class _ChatScreenState extends State<ChatScreen> {
             ),
         ],
       ),
+    );
+  }
+}
+
+class _ExpandablePromptText extends StatelessWidget {
+  const _ExpandablePromptText({
+    required this.text,
+    required this.isExpanded,
+    required this.maxLines,
+    required this.expandLabel,
+    required this.style,
+  });
+
+  final String text;
+  final bool isExpanded;
+  final int maxLines;
+  final String expandLabel;
+  final TextStyle style;
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final painter = TextPainter(
+          text: TextSpan(text: text, style: style),
+          maxLines: maxLines,
+          textDirection: Directionality.of(context),
+        )..layout(maxWidth: constraints.maxWidth);
+
+        final isOverflowing = painter.didExceedMaxLines;
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              text,
+              style: style,
+              maxLines: isExpanded ? null : maxLines,
+              overflow: isExpanded ? TextOverflow.visible : TextOverflow.ellipsis,
+            ),
+            if (!isExpanded && isOverflowing)
+              Padding(
+                padding: const EdgeInsets.only(top: 4),
+                child: Text(
+                  expandLabel,
+                  style: style.copyWith(
+                    fontSize: 11,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.grey.shade600,
+                  ),
+                ),
+              ),
+          ],
+        );
+      },
     );
   }
 }

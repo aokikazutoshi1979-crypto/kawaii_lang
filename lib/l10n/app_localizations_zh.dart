@@ -240,6 +240,18 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get filterLabel => '筛选：';
+
+  @override
+  String get filterTopicLabel => '主题';
+
+  @override
+  String get levelStarter => '入门';
+
+  @override
+  String get tapToExpand => '点击展开';
+
+  @override
   String get userNameTitle => '用户名';
 
   @override
@@ -804,6 +816,18 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String welcomeUser(Object name) {
     return '歡迎，$name';
   }
+
+  @override
+  String get filterLabel => '篩選：';
+
+  @override
+  String get filterTopicLabel => '主題';
+
+  @override
+  String get levelStarter => '入門';
+
+  @override
+  String get tapToExpand => '點擊展開';
 
   @override
   String get userNameTitle => '使用者名稱';

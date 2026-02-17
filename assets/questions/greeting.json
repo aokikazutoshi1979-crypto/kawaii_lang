@@ -3,8 +3,10 @@
     "id": "greeting_001",
     "scene": "greeting",
     "subScene": "greeting_self_introduction",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "はじめまして。",
       "en": "Nice to meet you.",
@@ -23,7 +25,9 @@
     "scene": "greeting",
     "subScene": "greeting_self_introduction",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "私は佐藤花子です。",
       "en": "I am Hanako Sato.",
@@ -42,7 +46,9 @@
     "scene": "greeting",
     "subScene": "greeting_self_introduction",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "花子と呼んでください。",
       "en": "Please call me Hanako.",
@@ -61,7 +67,9 @@
     "scene": "greeting",
     "subScene": "greeting_self_introduction",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "東京から来ました。",
       "en": "I am from Tokyo.",
@@ -80,7 +88,9 @@
     "scene": "greeting",
     "subScene": "greeting_self_introduction",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "IT企業で働いています。",
       "en": "I work at an IT company.",
@@ -99,7 +109,9 @@
     "scene": "greeting",
     "subScene": "greeting_self_introduction",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "経済学を勉強しています。",
       "en": "I study economics.",
@@ -118,7 +130,9 @@
     "scene": "greeting",
     "subScene": "greeting_self_introduction",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "お会いできてうれしいです。",
       "en": "I’m glad to meet you.",
@@ -136,8 +150,10 @@
     "id": "greeting_008",
     "scene": "greeting",
     "subScene": "greeting_self_introduction",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "よろしくお願いします。",
       "en": "Please take care of me.",
@@ -156,7 +172,9 @@
     "scene": "greeting",
     "subScene": "greeting_self_introduction",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "お名前を教えていただけますか？",
       "en": "Could you tell me your name?",
@@ -175,7 +193,9 @@
     "scene": "greeting",
     "subScene": "greeting_self_introduction",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "お会いするのは初めてですよね？",
       "en": "This is our first time meeting, right?",
@@ -193,8 +213,10 @@
     "id": "greeting_011",
     "scene": "greeting",
     "subScene": "greeting_morning",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "おはようございます。",
       "en": "Good morning.",
@@ -212,8 +234,10 @@
     "id": "greeting_012",
     "scene": "greeting",
     "subScene": "greeting_morning",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "おはよう。",
       "en": "Morning.",
@@ -231,8 +255,10 @@
     "id": "greeting_013",
     "scene": "greeting",
     "subScene": "greeting_morning",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "今日はいい天気ですね。",
       "en": "It’s nice weather today.",
@@ -251,7 +277,9 @@
     "scene": "greeting",
     "subScene": "greeting_morning",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "よく眠れましたか？",
       "en": "Did you sleep well?",
@@ -270,7 +298,9 @@
     "scene": "greeting",
     "subScene": "greeting_morning",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "朝ごはんはもう食べましたか？",
       "en": "Have you had breakfast yet?",
@@ -289,7 +319,9 @@
     "scene": "greeting",
     "subScene": "greeting_morning",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "今日も一日頑張りましょう。",
       "en": "Let’s do our best today.",
@@ -308,7 +340,9 @@
     "scene": "greeting",
     "subScene": "greeting_morning",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "昨日はよく眠れましたか？",
       "en": "Did you sleep well last night?",
@@ -327,7 +361,9 @@
     "scene": "greeting",
     "subScene": "greeting_morning",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "朝の散歩は気持ちいいですね。",
       "en": "Morning walks feel nice, don’t they?",
@@ -346,7 +382,9 @@
     "scene": "greeting",
     "subScene": "greeting_morning",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "お目覚めはいかがですか？",
       "en": "How was your wake-up?",
@@ -365,7 +403,9 @@
     "scene": "greeting",
     "subScene": "greeting_morning",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "今日の予定はありますか？",
       "en": "Do you have plans for today?",
@@ -383,8 +423,10 @@
     "id": "greeting_021",
     "scene": "greeting",
     "subScene": "greeting_afternoon",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "こんにちは。",
       "en": "Hello.",
@@ -402,8 +444,10 @@
     "id": "greeting_022",
     "scene": "greeting",
     "subScene": "greeting_afternoon",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "いい午後ですね。",
       "en": "It’s a nice afternoon.",
@@ -422,7 +466,9 @@
     "scene": "greeting",
     "subScene": "greeting_afternoon",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "お昼ごはんは食べましたか？",
       "en": "Have you had lunch?",
@@ -441,7 +487,9 @@
     "scene": "greeting",
     "subScene": "greeting_afternoon",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "午後の予定はありますか？",
       "en": "Do you have plans for the afternoon?",
@@ -459,8 +507,10 @@
     "id": "greeting_025",
     "scene": "greeting",
     "subScene": "greeting_afternoon",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "お元気ですか？",
       "en": "How are you?",
@@ -479,7 +529,9 @@
     "scene": "greeting",
     "subScene": "greeting_afternoon",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "お仕事は順調ですか？",
       "en": "Is your work going well?",
@@ -498,7 +550,9 @@
     "scene": "greeting",
     "subScene": "greeting_afternoon",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "今日は忙しいですか？",
       "en": "Are you busy today?",
@@ -516,8 +570,10 @@
     "id": "greeting_028",
     "scene": "greeting",
     "subScene": "greeting_afternoon",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "いい日差しですね。",
       "en": "It’s nice sunlight.",
@@ -536,7 +592,9 @@
     "scene": "greeting",
     "subScene": "greeting_afternoon",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "今、休憩中ですか？",
       "en": "Are you on a break now?",
@@ -555,7 +613,9 @@
     "scene": "greeting",
     "subScene": "greeting_afternoon",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "午後も頑張りましょう。",
       "en": "Let’s do our best this afternoon.",
@@ -569,12 +629,14 @@
       "id": "Mari kita lakukan yang terbaik sore ini."
     }
   },
-    {
+  {
     "id": "greeting_031",
     "scene": "greeting",
     "subScene": "greeting_evening",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "こんばんは。",
       "en": "Good evening.",
@@ -592,8 +654,10 @@
     "id": "greeting_032",
     "scene": "greeting",
     "subScene": "greeting_evening",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "いい夜ですね。",
       "en": "It’s a nice night.",
@@ -612,7 +676,9 @@
     "scene": "greeting",
     "subScene": "greeting_evening",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "お仕事お疲れさまでした。",
       "en": "Good job today.",
@@ -631,7 +697,9 @@
     "scene": "greeting",
     "subScene": "greeting_evening",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "夕食は食べましたか？",
       "en": "Have you had dinner?",
@@ -650,7 +718,9 @@
     "scene": "greeting",
     "subScene": "greeting_evening",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "今日はどんな一日でしたか？",
       "en": "How was your day?",
@@ -669,7 +739,9 @@
     "scene": "greeting",
     "subScene": "greeting_evening",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "いい夢を見てくださいね。",
       "en": "Have sweet dreams.",
@@ -688,7 +760,9 @@
     "scene": "greeting",
     "subScene": "greeting_evening",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "夜風が気持ちいいですね。",
       "en": "The night breeze feels nice.",
@@ -707,7 +781,9 @@
     "scene": "greeting",
     "subScene": "greeting_evening",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "今夜は星がきれいですね。",
       "en": "The stars are beautiful tonight.",
@@ -726,7 +802,9 @@
     "scene": "greeting",
     "subScene": "greeting_evening",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "明日の予定はありますか？",
       "en": "Do you have plans for tomorrow?",
@@ -744,8 +822,10 @@
     "id": "greeting_040",
     "scene": "greeting",
     "subScene": "greeting_evening",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "お休みなさい。",
       "en": "Good night.",
@@ -763,8 +843,10 @@
     "id": "greeting_041",
     "scene": "greeting",
     "subScene": "greeting_farewell",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "さようなら。",
       "en": "Goodbye.",
@@ -782,8 +864,10 @@
     "id": "greeting_042",
     "scene": "greeting",
     "subScene": "greeting_farewell",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "また会いましょう。",
       "en": "See you again.",
@@ -801,8 +885,10 @@
     "id": "greeting_043",
     "scene": "greeting",
     "subScene": "greeting_farewell",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "お元気で。",
       "en": "Take care.",
@@ -821,7 +907,9 @@
     "scene": "greeting",
     "subScene": "greeting_farewell",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "また近いうちに。",
       "en": "See you soon.",
@@ -839,8 +927,10 @@
     "id": "greeting_045",
     "scene": "greeting",
     "subScene": "greeting_farewell",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "お気をつけて。",
       "en": "Be careful.",
@@ -858,8 +948,10 @@
     "id": "greeting_046",
     "scene": "greeting",
     "subScene": "greeting_farewell",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "さよなら、友よ。",
       "en": "Farewell, my friend.",
@@ -877,8 +969,10 @@
     "id": "greeting_047",
     "scene": "greeting",
     "subScene": "greeting_farewell",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "また明日。",
       "en": "See you tomorrow.",
@@ -897,7 +991,9 @@
     "scene": "greeting",
     "subScene": "greeting_farewell",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "今日は楽しかったです。",
       "en": "I had fun today.",
@@ -916,7 +1012,9 @@
     "scene": "greeting",
     "subScene": "greeting_farewell",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "お別れするのは寂しいです。",
       "en": "I’m sad to say goodbye.",
@@ -935,7 +1033,9 @@
     "scene": "greeting",
     "subScene": "greeting_farewell",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "またの機会に。",
       "en": "Next time.",
@@ -953,8 +1053,10 @@
     "id": "greeting_051",
     "scene": "greeting",
     "subScene": "greeting_reunion",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "お久しぶりです。",
       "en": "Long time no see.",
@@ -972,8 +1074,10 @@
     "id": "greeting_052",
     "scene": "greeting",
     "subScene": "greeting_reunion",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "元気でしたか？",
       "en": "How have you been?",
@@ -992,7 +1096,9 @@
     "scene": "greeting",
     "subScene": "greeting_reunion",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "会えてうれしいです。",
       "en": "I’m happy to see you.",
@@ -1011,7 +1117,9 @@
     "scene": "greeting",
     "subScene": "greeting_reunion",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "どれくらいぶりですか？",
       "en": "How long has it been?",
@@ -1030,7 +1138,9 @@
     "scene": "greeting",
     "subScene": "greeting_reunion",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "全然変わっていませんね。",
       "en": "You haven’t changed at all.",
@@ -1049,7 +1159,9 @@
     "scene": "greeting",
     "subScene": "greeting_reunion",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "また会えるなんて嬉しいです。",
       "en": "I’m so glad we can meet again.",
@@ -1068,7 +1180,9 @@
     "scene": "greeting",
     "subScene": "greeting_reunion",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "最近どうしていましたか？",
       "en": "What have you been up to?",
@@ -1087,7 +1201,9 @@
     "scene": "greeting",
     "subScene": "greeting_reunion",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "また会えて安心しました。",
       "en": "I’m relieved to see you again.",
@@ -1105,8 +1221,10 @@
     "id": "greeting_059",
     "scene": "greeting",
     "subScene": "greeting_reunion",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "懐かしいですね。",
       "en": "This is nostalgic.",
@@ -1124,8 +1242,10 @@
     "id": "greeting_060",
     "scene": "greeting",
     "subScene": "greeting_reunion",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "再会できて光栄です。",
       "en": "It’s an honor to meet you again.",
@@ -1143,8 +1263,10 @@
     "id": "greeting_061",
     "scene": "greeting",
     "subScene": "greeting_thank_you",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "ありがとうございます。",
       "en": "Thank you.",
@@ -1162,8 +1284,10 @@
     "id": "greeting_062",
     "scene": "greeting",
     "subScene": "greeting_thank_you",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "どうもありがとう。",
       "en": "Thank you very much.",
@@ -1182,7 +1306,9 @@
     "scene": "greeting",
     "subScene": "greeting_thank_you",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "感謝します。",
       "en": "I appreciate it.",
@@ -1201,7 +1327,9 @@
     "scene": "greeting",
     "subScene": "greeting_thank_you",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "本当に助かりました。",
       "en": "That was really helpful.",
@@ -1219,8 +1347,10 @@
     "id": "greeting_065",
     "scene": "greeting",
     "subScene": "greeting_thank_you",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "ご親切に感謝します。",
       "en": "Thank you for your kindness.",
@@ -1238,8 +1368,10 @@
     "id": "greeting_066",
     "scene": "greeting",
     "subScene": "greeting_thank_you",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "お世話になりました。",
       "en": "Thank you for your support.",
@@ -1257,8 +1389,10 @@
     "id": "greeting_067",
     "scene": "greeting",
     "subScene": "greeting_thank_you",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "ご協力ありがとうございます。",
       "en": "Thank you for your cooperation.",
@@ -1276,8 +1410,10 @@
     "id": "greeting_068",
     "scene": "greeting",
     "subScene": "greeting_thank_you",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "心から感謝しています。",
       "en": "I sincerely appreciate it.",
@@ -1296,7 +1432,9 @@
     "scene": "greeting",
     "subScene": "greeting_thank_you",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "助けてくれてありがとう。",
       "en": "Thank you for helping me.",
@@ -1314,8 +1452,10 @@
     "id": "greeting_070",
     "scene": "greeting",
     "subScene": "greeting_thank_you",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "感謝の気持ちでいっぱいです。",
       "en": "I’m filled with gratitude.",
@@ -1333,8 +1473,10 @@
     "id": "greeting_071",
     "scene": "greeting",
     "subScene": "greeting_congratulations",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "おめでとうございます。",
       "en": "Congratulations.",
@@ -1352,8 +1494,10 @@
     "id": "greeting_072",
     "scene": "greeting",
     "subScene": "greeting_congratulations",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "お祝い申し上げます。",
       "en": "My congratulations to you.",
@@ -1371,8 +1515,10 @@
     "id": "greeting_073",
     "scene": "greeting",
     "subScene": "greeting_congratulations",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "よくやりましたね。",
       "en": "Well done.",
@@ -1390,8 +1536,10 @@
     "id": "greeting_074",
     "scene": "greeting",
     "subScene": "greeting_congratulations",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "成功おめでとう。",
       "en": "Congratulations on your success.",
@@ -1410,7 +1558,9 @@
     "scene": "greeting",
     "subScene": "greeting_congratulations",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "ご結婚おめでとうございます。",
       "en": "Congratulations on your marriage.",
@@ -1429,7 +1579,9 @@
     "scene": "greeting",
     "subScene": "greeting_congratulations",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "卒業おめでとうございます。",
       "en": "Congratulations on your graduation.",
@@ -1448,7 +1600,9 @@
     "scene": "greeting",
     "subScene": "greeting_congratulations",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "お誕生日おめでとうございます。",
       "en": "Happy birthday.",
@@ -1467,7 +1621,9 @@
     "scene": "greeting",
     "subScene": "greeting_congratulations",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "合格おめでとうございます。",
       "en": "Congratulations on passing.",
@@ -1486,7 +1642,9 @@
     "scene": "greeting",
     "subScene": "greeting_congratulations",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "新しい仕事おめでとうございます。",
       "en": "Congratulations on your new job.",
@@ -1505,7 +1663,9 @@
     "scene": "greeting",
     "subScene": "greeting_congratulations",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "素晴らしい成果ですね。",
       "en": "That’s a wonderful achievement.",
@@ -1523,8 +1683,10 @@
     "id": "greeting_081",
     "scene": "greeting",
     "subScene": "greeting_polite_business",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "お世話になっております。",
       "en": "Thank you for your continued support.",
@@ -1543,7 +1705,9 @@
     "scene": "greeting",
     "subScene": "greeting_polite_business",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "いつもありがとうございます。",
       "en": "Thank you always.",
@@ -1561,8 +1725,10 @@
     "id": "greeting_083",
     "scene": "greeting",
     "subScene": "greeting_polite_business",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "ご無沙汰しております。",
       "en": "It’s been a while.",
@@ -1580,8 +1746,10 @@
     "id": "greeting_084",
     "scene": "greeting",
     "subScene": "greeting_polite_business",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "お変わりありませんか。",
       "en": "How have you been?",
@@ -1599,8 +1767,10 @@
     "id": "greeting_085",
     "scene": "greeting",
     "subScene": "greeting_polite_business",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "お忙しいところ失礼します。",
       "en": "Sorry to bother you when you’re busy.",
@@ -1618,8 +1788,10 @@
     "id": "greeting_086",
     "scene": "greeting",
     "subScene": "greeting_polite_business",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "お時間いただきありがとうございます。",
       "en": "Thank you for your time.",
@@ -1637,8 +1809,10 @@
     "id": "greeting_087",
     "scene": "greeting",
     "subScene": "greeting_polite_business",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "引き続きよろしくお願いします。",
       "en": "I look forward to your continued support.",
@@ -1656,8 +1830,10 @@
     "id": "greeting_088",
     "scene": "greeting",
     "subScene": "greeting_polite_business",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "ご確認ありがとうございます。",
       "en": "Thank you for confirming.",
@@ -1675,8 +1851,10 @@
     "id": "greeting_089",
     "scene": "greeting",
     "subScene": "greeting_polite_business",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "よろしくお願い申し上げます。",
       "en": "I humbly ask for your favor.",
@@ -1694,8 +1872,10 @@
     "id": "greeting_090",
     "scene": "greeting",
     "subScene": "greeting_polite_business",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "intermediate",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "失礼いたします。",
       "en": "Excuse me.",
@@ -1713,8 +1893,10 @@
     "id": "greeting_091",
     "scene": "greeting",
     "subScene": "greeting_casual_friends",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "やあ。",
       "en": "Hi.",
@@ -1732,8 +1914,10 @@
     "id": "greeting_092",
     "scene": "greeting",
     "subScene": "greeting_casual_friends",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "元気？",
       "en": "How are you?",
@@ -1751,8 +1935,10 @@
     "id": "greeting_093",
     "scene": "greeting",
     "subScene": "greeting_casual_friends",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "久しぶり。",
       "en": "Long time no see.",
@@ -1770,8 +1956,10 @@
     "id": "greeting_094",
     "scene": "greeting",
     "subScene": "greeting_casual_friends",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "調子どう？",
       "en": "How’s it going?",
@@ -1789,8 +1977,10 @@
     "id": "greeting_095",
     "scene": "greeting",
     "subScene": "greeting_casual_friends",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "おーい。",
       "en": "Hey!",
@@ -1808,8 +1998,10 @@
     "id": "greeting_096",
     "scene": "greeting",
     "subScene": "greeting_casual_friends",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "何かあった？",
       "en": "What happened?",
@@ -1828,7 +2020,9 @@
     "scene": "greeting",
     "subScene": "greeting_casual_friends",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "最近どうしてた？",
       "en": "What have you been up to lately?",
@@ -1846,8 +2040,10 @@
     "id": "greeting_098",
     "scene": "greeting",
     "subScene": "greeting_casual_friends",
-    "level": "beginner",
-    "tags": ["greeting"],
+    "level": "starter",
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "やっほー。",
       "en": "Hi there!",
@@ -1866,7 +2062,9 @@
     "scene": "greeting",
     "subScene": "greeting_casual_friends",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "元気にしてた？",
       "en": "Have you been well?",
@@ -1885,7 +2083,9 @@
     "scene": "greeting",
     "subScene": "greeting_casual_friends",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "何してたの？",
       "en": "What were you doing?",
