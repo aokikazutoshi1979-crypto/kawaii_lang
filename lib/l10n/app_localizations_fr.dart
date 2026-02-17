@@ -257,6 +257,17 @@ class AppLocalizationsFr extends AppLocalizations {
   String get filterTopicLabel => 'Sujet';
 
   @override
+  String get filterButton => 'Filtrer';
+
+  @override
+  String get filterClear => 'Réinitialiser';
+
+  @override
+  String filterStatusSummary(Object count, Object level, Object topic) {
+    return '$count phrases • Niveau : $level • Sujet : $topic';
+  }
+
+  @override
   String get levelStarter => 'Débutant';
 
   @override

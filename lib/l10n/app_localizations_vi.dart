@@ -254,6 +254,17 @@ class AppLocalizationsVi extends AppLocalizations {
   String get filterTopicLabel => 'Chủ đề';
 
   @override
+  String get filterButton => 'Bộ lọc';
+
+  @override
+  String get filterClear => 'Đặt lại';
+
+  @override
+  String filterStatusSummary(Object count, Object level, Object topic) {
+    return '$count cụm • Mức: $level • Chủ đề: $topic';
+  }
+
+  @override
   String get levelStarter => 'Sơ cấp';
 
   @override

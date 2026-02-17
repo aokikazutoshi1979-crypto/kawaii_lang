@@ -255,6 +255,17 @@ class AppLocalizationsEn extends AppLocalizations {
   String get filterTopicLabel => 'Topic';
 
   @override
+  String get filterButton => 'Filter';
+
+  @override
+  String get filterClear => 'Clear';
+
+  @override
+  String filterStatusSummary(Object count, Object level, Object topic) {
+    return '$count phrases • Level: $level • Topic: $topic';
+  }
+
+  @override
   String get levelStarter => 'Starter';
 
   @override

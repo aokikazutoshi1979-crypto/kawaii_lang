@@ -255,6 +255,17 @@ class AppLocalizationsId extends AppLocalizations {
   String get filterTopicLabel => 'Topik';
 
   @override
+  String get filterButton => 'Filter';
+
+  @override
+  String get filterClear => 'Reset';
+
+  @override
+  String filterStatusSummary(Object count, Object level, Object topic) {
+    return '$count frasa • Level: $level • Topik: $topic';
+  }
+
+  @override
   String get levelStarter => 'Pemula';
 
   @override

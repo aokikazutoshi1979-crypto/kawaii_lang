@@ -557,6 +557,24 @@ abstract class AppLocalizations {
   /// **'トピック'**
   String get filterTopicLabel;
 
+  /// No description provided for @filterButton.
+  ///
+  /// In ja, this message translates to:
+  /// **'フィルター'**
+  String get filterButton;
+
+  /// No description provided for @filterClear.
+  ///
+  /// In ja, this message translates to:
+  /// **'リセット'**
+  String get filterClear;
+
+  /// No description provided for @filterStatusSummary.
+  ///
+  /// In ja, this message translates to:
+  /// **'{count}問・レベル: {level}・トピック: {topic}'**
+  String filterStatusSummary(Object count, Object level, Object topic);
+
   /// No description provided for @levelStarter.
   ///
   /// In ja, this message translates to:

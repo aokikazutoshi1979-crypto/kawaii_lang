@@ -141,6 +141,27 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
     return s ?? id; // 見つからなければID表示
   }
 
+  String _levelLabel(String level, AppLocalizations loc) {
+    switch (level) {
+      case 'starter':
+        return loc.levelStarter;
+      case 'beginner':
+        return loc.levelBeginner;
+      case 'intermediate':
+        return loc.levelIntermediate;
+      case 'advanced':
+        return loc.levelAdvanced;
+      case 'all':
+      default:
+        return loc.subsceneAll;
+    }
+  }
+
+  String _topicLabel(String tag, AppLocalizations loc) {
+    if (tag == 'all') return loc.subsceneAll;
+    return _subSceneLabel(tag, loc);
+  }
+
   Widget _buildFilterChip({
     required String label,
     required bool selected,
@@ -160,6 +181,246 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
           fontWeight: FontWeight.w600,
         ),
       ),
+    );
+  }
+
+  Widget _buildSearchRow(AppLocalizations loc, {required bool showFilterButton}) {
+    return Row(
+      children: [
+        Expanded(
+          child: TextField(
+            controller: _searchController,
+            onChanged: (value) {
+              _searchQuery = value;
+              _applyFilter();
+            },
+            decoration: InputDecoration(
+              hintText: 'フレーズを検索',
+              prefixIcon: const Icon(Icons.search),
+              filled: true,
+              fillColor: Colors.white,
+              contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+                borderSide: BorderSide(color: Colors.grey.shade300),
+              ),
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+                borderSide: BorderSide(color: Colors.grey.shade300),
+              ),
+            ),
+          ),
+        ),
+        if (showFilterButton) ...[
+          const SizedBox(width: 8),
+          InkWell(
+            onTap: _openFilterSheet,
+            borderRadius: BorderRadius.circular(12),
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: Colors.pink.shade200),
+              ),
+              child: Row(
+                children: [
+                  Icon(Icons.filter_list, size: 18, color: Colors.pink.shade400),
+                  const SizedBox(width: 6),
+                  Text(
+                    loc.filterButton,
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.pink.shade600,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ],
+    );
+  }
+
+  Widget _buildFilterStatusBar(AppLocalizations loc) {
+    final summary = loc.filterStatusSummary(
+      _filtered.length,
+      _levelLabel(_selectedLevel, loc),
+      _topicLabel(_selectedTag, loc),
+    );
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+      decoration: BoxDecoration(
+        color: const Color(0xFFFFF3F6),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: Colors.pink.shade100),
+      ),
+      child: Row(
+        children: [
+          Expanded(
+            child: Text(
+              summary,
+              style: TextStyle(fontSize: 12, color: Colors.grey.shade700),
+            ),
+          ),
+          TextButton(
+            onPressed: () {
+              _searchController.clear();
+              _searchQuery = '';
+              _selectedLevel = 'all';
+              _selectedTag = 'all';
+              _applyFilter();
+            },
+            child: Text(loc.filterClear),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _openFilterSheet() {
+    final loc = AppLocalizations.of(context)!;
+    showModalBottomSheet(
+      context: context,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(18)),
+      ),
+      builder: (context) {
+        return StatefulBuilder(
+          builder: (context, setModalState) {
+            return SafeArea(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(16, 12, 16, 20),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Text(
+                          loc.filterButton,
+                          style: Theme.of(context).textTheme.titleMedium,
+                        ),
+                        const Spacer(),
+                        IconButton(
+                          icon: const Icon(Icons.close),
+                          onPressed: () => Navigator.pop(context),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 4),
+                    Text(loc.level, style: TextStyle(fontSize: 12, color: Colors.grey.shade700)),
+                    const SizedBox(height: 6),
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: [
+                          _buildFilterChip(
+                            label: loc.subsceneAll,
+                            selected: _selectedLevel == 'all',
+                            onSelected: () {
+                              _selectedLevel = 'all';
+                              _applyFilter();
+                              setModalState(() {});
+                            },
+                          ),
+                          _buildFilterChip(
+                            label: loc.levelStarter,
+                            selected: _selectedLevel == 'starter',
+                            onSelected: () {
+                              _selectedLevel = 'starter';
+                              _applyFilter();
+                              setModalState(() {});
+                            },
+                          ),
+                          _buildFilterChip(
+                            label: loc.levelBeginner,
+                            selected: _selectedLevel == 'beginner',
+                            onSelected: () {
+                              _selectedLevel = 'beginner';
+                              _applyFilter();
+                              setModalState(() {});
+                            },
+                          ),
+                          _buildFilterChip(
+                            label: loc.levelIntermediate,
+                            selected: _selectedLevel == 'intermediate',
+                            onSelected: () {
+                              _selectedLevel = 'intermediate';
+                              _applyFilter();
+                              setModalState(() {});
+                            },
+                          ),
+                          _buildFilterChip(
+                            label: loc.levelAdvanced,
+                            selected: _selectedLevel == 'advanced',
+                            onSelected: () {
+                              _selectedLevel = 'advanced';
+                              _applyFilter();
+                              setModalState(() {});
+                            },
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    Text(
+                      loc.filterTopicLabel,
+                      style: TextStyle(fontSize: 12, color: Colors.grey.shade700),
+                    ),
+                    const SizedBox(height: 6),
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: [
+                          _buildFilterChip(
+                            label: loc.subsceneAll,
+                            selected: _selectedTag == 'all',
+                            onSelected: () {
+                              _selectedTag = 'all';
+                              _applyFilter();
+                              setModalState(() {});
+                            },
+                          ),
+                          _buildFilterChip(
+                            label: _subSceneLabel('aizuchi', loc),
+                            selected: _selectedTag == 'aizuchi',
+                            onSelected: () {
+                              _selectedTag = 'aizuchi';
+                              _applyFilter();
+                              setModalState(() {});
+                            },
+                          ),
+                          _buildFilterChip(
+                            label: _subSceneLabel('greeting', loc),
+                            selected: _selectedTag == 'greeting',
+                            onSelected: () {
+                              _selectedTag = 'greeting';
+                              _applyFilter();
+                              setModalState(() {});
+                            },
+                          ),
+                          _buildFilterChip(
+                            label: _subSceneLabel('phrases', loc),
+                            selected: _selectedTag == 'phrases',
+                            onSelected: () {
+                              _selectedTag = 'phrases';
+                              _applyFilter();
+                              setModalState(() {});
+                            },
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            );
+          },
+        );
+      },
     );
   }
 
@@ -461,101 +722,32 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
           // ▼▼ ここから フィルタ ▼▼
           if (_availableSubScenes.isNotEmpty || isTrial) ...[
             const SizedBox(height: 12),
-            TextField(
-              controller: _searchController,
-              onChanged: (value) {
-                _searchQuery = value;
-                _applyFilter();
-              },
-              decoration: InputDecoration(
-                hintText: 'フレーズを検索',
-                prefixIcon: const Icon(Icons.search),
-                filled: true,
-                fillColor: Colors.white,
-                contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12),
-                  borderSide: BorderSide(color: Colors.grey.shade300),
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12),
-                  borderSide: BorderSide(color: Colors.grey.shade300),
-                ),
-              ),
-            ),
-            const SizedBox(height: 10),
-            Row(
-              children: [
-                Text(
-                  loc.filterLabel,
-                  style: TextStyle(fontSize: 13, color: Colors.grey.shade700),
-                ),
-                const Spacer(),
-                Text(
-                  _filtered.length == questions.length
-                      ? '${questions.length}問'
-                      : '${questions.length}問（絞り込み後 ${_filtered.length}問）',
-                  style: TextStyle(fontSize: 12, color: Colors.grey.shade600),
-                ),
-              ],
-            ),
-            const SizedBox(height: 6),
-            Text(
-              loc.level,
-              style: TextStyle(fontSize: 12, color: Colors.grey.shade700),
-            ),
-            const SizedBox(height: 6),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
+            if (isTrial) ...[
+              _buildSearchRow(loc, showFilterButton: true),
+              const SizedBox(height: 8),
+              _buildFilterStatusBar(loc),
+              const SizedBox(height: 8),
+            ] else ...[
+              _buildSearchRow(loc, showFilterButton: false),
+              const SizedBox(height: 10),
+              Row(
                 children: [
-                  _buildFilterChip(
-                    label: loc.subsceneAll,
-                    selected: _selectedLevel == 'all',
-                    onSelected: () {
-                      _selectedLevel = 'all';
-                      _applyFilter();
-                    },
+                  Text(
+                    loc.filterLabel,
+                    style: TextStyle(fontSize: 13, color: Colors.grey.shade700),
                   ),
-                  _buildFilterChip(
-                    label: loc.levelStarter,
-                    selected: _selectedLevel == 'starter',
-                    onSelected: () {
-                      _selectedLevel = 'starter';
-                      _applyFilter();
-                    },
-                  ),
-                  _buildFilterChip(
-                    label: loc.levelBeginner,
-                    selected: _selectedLevel == 'beginner',
-                    onSelected: () {
-                      _selectedLevel = 'beginner';
-                      _applyFilter();
-                    },
-                  ),
-                  _buildFilterChip(
-                    label: loc.levelIntermediate,
-                    selected: _selectedLevel == 'intermediate',
-                    onSelected: () {
-                      _selectedLevel = 'intermediate';
-                      _applyFilter();
-                    },
-                  ),
-                  _buildFilterChip(
-                    label: loc.levelAdvanced,
-                    selected: _selectedLevel == 'advanced',
-                    onSelected: () {
-                      _selectedLevel = 'advanced';
-                      _applyFilter();
-                    },
+                  const Spacer(),
+                  Text(
+                    _filtered.length == questions.length
+                        ? '${questions.length}問'
+                        : '${questions.length}問（絞り込み後 ${_filtered.length}問）',
+                    style: TextStyle(fontSize: 12, color: Colors.grey.shade600),
                   ),
                 ],
               ),
-            ),
-            if (isTrial) ...[
-              const SizedBox(height: 10),
+              const SizedBox(height: 6),
               Text(
-                loc.filterTopicLabel,
+                loc.level,
                 style: TextStyle(fontSize: 12, color: Colors.grey.shade700),
               ),
               const SizedBox(height: 6),
@@ -565,46 +757,52 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                   children: [
                     _buildFilterChip(
                       label: loc.subsceneAll,
-                      selected: _selectedTag == 'all',
+                      selected: _selectedLevel == 'all',
                       onSelected: () {
-                        _selectedTag = 'all';
+                        _selectedLevel = 'all';
                         _applyFilter();
                       },
                     ),
                     _buildFilterChip(
-                      label: _subSceneLabel('aizuchi', loc),
-                      selected: _selectedTag == 'aizuchi',
+                      label: loc.levelStarter,
+                      selected: _selectedLevel == 'starter',
                       onSelected: () {
-                        _selectedTag = 'aizuchi';
+                        _selectedLevel = 'starter';
                         _applyFilter();
                       },
                     ),
                     _buildFilterChip(
-                      label: _subSceneLabel('greeting', loc),
-                      selected: _selectedTag == 'greeting',
+                      label: loc.levelBeginner,
+                      selected: _selectedLevel == 'beginner',
                       onSelected: () {
-                        _selectedTag = 'greeting';
+                        _selectedLevel = 'beginner';
                         _applyFilter();
                       },
                     ),
                     _buildFilterChip(
-                      label: _subSceneLabel('phrases', loc),
-                      selected: _selectedTag == 'phrases',
+                      label: loc.levelIntermediate,
+                      selected: _selectedLevel == 'intermediate',
                       onSelected: () {
-                        _selectedTag = 'phrases';
+                        _selectedLevel = 'intermediate';
+                        _applyFilter();
+                      },
+                    ),
+                    _buildFilterChip(
+                      label: loc.levelAdvanced,
+                      selected: _selectedLevel == 'advanced',
+                      onSelected: () {
+                        _selectedLevel = 'advanced';
                         _applyFilter();
                       },
                     ),
                   ],
                 ),
               ),
-              const SizedBox(height: 8),
-            ] else ...[
+              const SizedBox(height: 10),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
-                    // ALL ボタン
                     _buildFilterChip(
                       label: loc.subsceneAll,
                       selected: _selectedSubScene == null,
@@ -613,7 +811,6 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                         _applyFilter();
                       },
                     ),
-                    // subScene ごとのボタン
                     ..._availableSubScenes.map((key) {
                       final selected = _selectedSubScene == key;
                       return _buildFilterChip(

@@ -259,6 +259,17 @@ class AppLocalizationsEs extends AppLocalizations {
   String get filterTopicLabel => 'Tema';
 
   @override
+  String get filterButton => 'Filtro';
+
+  @override
+  String get filterClear => 'Borrar';
+
+  @override
+  String filterStatusSummary(Object count, Object level, Object topic) {
+    return '$count frases • Nivel: $level • Tema: $topic';
+  }
+
+  @override
   String get levelStarter => 'Inicial';
 
   @override

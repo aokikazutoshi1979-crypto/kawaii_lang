@@ -248,6 +248,17 @@ class AppLocalizationsKo extends AppLocalizations {
   String get filterTopicLabel => '주제';
 
   @override
+  String get filterButton => '필터';
+
+  @override
+  String get filterClear => '초기화';
+
+  @override
+  String filterStatusSummary(Object count, Object level, Object topic) {
+    return '$count개 • 레벨: $level • 주제: $topic';
+  }
+
+  @override
   String get levelStarter => '스타터';
 
   @override

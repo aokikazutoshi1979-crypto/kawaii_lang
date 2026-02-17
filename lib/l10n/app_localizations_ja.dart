@@ -248,6 +248,17 @@ class AppLocalizationsJa extends AppLocalizations {
   String get filterTopicLabel => 'トピック';
 
   @override
+  String get filterButton => 'フィルター';
+
+  @override
+  String get filterClear => 'リセット';
+
+  @override
+  String filterStatusSummary(Object count, Object level, Object topic) {
+    return '$count問・レベル: $level・トピック: $topic';
+  }
+
+  @override
   String get levelStarter => 'スターター';
 
   @override

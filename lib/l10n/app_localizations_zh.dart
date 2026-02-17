@@ -246,6 +246,17 @@ class AppLocalizationsZh extends AppLocalizations {
   String get filterTopicLabel => '主题';
 
   @override
+  String get filterButton => '筛选';
+
+  @override
+  String get filterClear => '清除';
+
+  @override
+  String filterStatusSummary(Object count, Object level, Object topic) {
+    return '$count条 • 级别: $level • 主题: $topic';
+  }
+
+  @override
   String get levelStarter => '入门';
 
   @override
@@ -822,6 +833,17 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get filterTopicLabel => '主題';
+
+  @override
+  String get filterButton => '篩選';
+
+  @override
+  String get filterClear => '清除';
+
+  @override
+  String filterStatusSummary(Object count, Object level, Object topic) {
+    return '$count條 • 級別: $level • 主題: $topic';
+  }
 
   @override
   String get levelStarter => '入門';
