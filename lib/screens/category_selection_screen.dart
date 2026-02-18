@@ -16,6 +16,7 @@ import 'package:flutter/foundation.dart'; // kReleaseMode
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import '../services/subscription_state.dart';
 import 'chat_screen.dart';
+import '../services/tsumugi_quote_service.dart';
 
 class CategorySelectionScreen extends StatefulWidget {
   const CategorySelectionScreen({Key? key}) : super(key: key);
@@ -37,6 +38,7 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
   QuizMode selectedMode = QuizMode.reading;
   static const String _quickStartPrefKey = 'has_used_quick_start';
   static const String _quizModePrefKey = 'quiz_mode';
+  String? _tsumugiQuote;
   @override
   void initState() {
     super.initState();
@@ -45,6 +47,7 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
     _loadTargetLanguage();
     _loadQuizMode();
     _loadScenesJson();   // ← 追加
+    _loadTsumugiQuote();
     
     // 🔑 サブスク検証サービスを初期化
     // maybeInitSubscription(); // 🔑 追加：サブスク状態を1日1回だけ確認
@@ -128,6 +131,12 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
     final mode = raw == QuizMode.listening.name ? QuizMode.listening : QuizMode.reading;
     if (!mounted) return;
     setState(() => selectedMode = mode);
+  }
+
+  Future<void> _loadTsumugiQuote() async {
+    final quote = await TsumugiQuoteService.instance.getNextQuote();
+    if (!mounted) return;
+    setState(() => _tsumugiQuote = quote);
   }
 
   Future<void> _onSubmit() async {
@@ -348,6 +357,7 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                 _loadLanguage();
                 _loadTargetLanguage();
                 _loadQuizMode();
+                _loadTsumugiQuote();
               });
             },
           ),
@@ -373,13 +383,31 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                 const rowHeight = 58.0;
                 const dividerHeight = 1.0;
                 const rowsVisible = 5;
+                const quoteHeight = 64.0;
+                const paddingTop = 8.0;
+                const paddingBottom = 24.0;
+                final hasQuote = _tsumugiQuote != null;
                 final paperHeight = (rowHeight * rowsVisible) + (dividerHeight * (rowsVisible - 1));
-                final desiredTopGap = (constraints.maxHeight * 0.45) - (specialHeight / 2);
-                final maxTopGap = (constraints.maxHeight - (specialHeight + specialGap + paperHeight + bottomGap + modeHeight))
-                    .clamp(0.0, double.infinity);
-                var topGap = desiredTopGap;
-                if (topGap < 60.0) topGap = 60.0;
-                if (topGap > maxTopGap) topGap = maxTopGap;
+                final availableHeight = constraints.maxHeight - paddingTop - paddingBottom;
+                final desiredQuoteTop = availableHeight * 0.40;
+                final desiredSpecialTop = availableHeight * 0.50;
+                final gapBetween = hasQuote
+                    ? (desiredSpecialTop - desiredQuoteTop - quoteHeight).clamp(0.0, 120.0)
+                    : 0.0;
+
+                var topGap = hasQuote ? desiredQuoteTop : desiredSpecialTop;
+                final totalHeight = topGap
+                    + (hasQuote ? quoteHeight : 0.0)
+                    + gapBetween
+                    + specialHeight
+                    + specialGap
+                    + paperHeight
+                    + bottomGap
+                    + modeHeight;
+                final overflow = totalHeight - availableHeight;
+                if (overflow > 0) {
+                  topGap = (topGap - overflow).clamp(0.0, topGap);
+                }
 
                 return Padding(
                   padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
@@ -387,6 +415,34 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       SizedBox(height: topGap),
+                      if (_tsumugiQuote != null)
+                        Align(
+                          alignment: Alignment.center,
+                          child: SizedBox(
+                            width: constraints.maxWidth * 0.624,
+                            height: quoteHeight,
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFFF0F5),
+                                borderRadius: BorderRadius.circular(16),
+                                border: Border.all(
+                                  color: Colors.pink.shade200.withOpacity(0.6),
+                                ),
+                              ),
+                              child: Text(
+                                _tsumugiQuote!,
+                                maxLines: 2,
+                                overflow: TextOverflow.clip,
+                                softWrap: true,
+                                textAlign: TextAlign.center,
+                                style: const TextStyle(fontSize: 14, height: 1.35),
+                              ),
+                            ),
+                          ),
+                        ),
+                      if (_tsumugiQuote != null)
+                        SizedBox(height: gapBetween),
                       Align(
                         alignment: Alignment.center,
                         child: SizedBox(
