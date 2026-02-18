@@ -11,8 +11,6 @@ import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:kawaii_lang/models/language.dart';
 import 'dart:convert';                     // jsonDecode
 import 'package:flutter/services.dart';    // rootBundle
-import 'package:kawaii_lang/widgets/mode_toggle_bar.dart';
-import 'package:kawaii_lang/config/quiz_mode_config.dart';
 import '../models/quiz_mode.dart';
 import 'package:flutter/foundation.dart'; // kReleaseMode
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
@@ -38,12 +36,14 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
 
   QuizMode selectedMode = QuizMode.reading;
   static const String _quickStartPrefKey = 'has_used_quick_start';
+  static const String _quizModePrefKey = 'quiz_mode';
   @override
   void initState() {
     super.initState();
     selectedSceneKey = 'trial';
     _loadLanguage();
     _loadTargetLanguage();
+    _loadQuizMode();
     _loadScenesJson();   // ← 追加
     
     // 🔑 サブスク検証サービスを初期化
@@ -122,6 +122,14 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
     });
   }
 
+  Future<void> _loadQuizMode() async {
+    final prefs = await SharedPreferences.getInstance();
+    final raw = prefs.getString(_quizModePrefKey);
+    final mode = raw == QuizMode.listening.name ? QuizMode.listening : QuizMode.reading;
+    if (!mounted) return;
+    setState(() => selectedMode = mode);
+  }
+
   Future<void> _onSubmit() async {
     final loc = AppLocalizations.of(context)!;
 
@@ -158,6 +166,33 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
     setState(() => selectedSceneKey = key);
     addBreadcrumb();
     await _onSubmit();
+  }
+
+  IconData _sceneIcon(String key) {
+    switch (key) {
+      case 'trial':
+        return Icons.local_cafe_rounded;
+      case 'travel':
+        return Icons.flight_rounded;
+      case 'restaurant':
+        return Icons.restaurant_rounded;
+      case 'shopping':
+        return Icons.shopping_bag_rounded;
+      case 'hotel':
+        return Icons.hotel_rounded;
+      case 'hospital':
+        return Icons.local_hospital_rounded;
+      case 'emergency':
+        return Icons.warning_rounded;
+      case 'taxi':
+        return Icons.local_taxi_rounded;
+      case 'business':
+        return Icons.work_rounded;
+      case 'daily':
+        return Icons.home_rounded;
+      default:
+        return Icons.menu_book_rounded;
+    }
   }
 
   // ① 強制クラッシュ（致命的クラッシュを送る）
@@ -312,6 +347,7 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                 // 設定画面から戻ってきたときに母語を再読み込み
                 _loadLanguage();
                 _loadTargetLanguage();
+                _loadQuizMode();
               });
             },
           ),
@@ -330,157 +366,142 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
           SafeArea(
             child: LayoutBuilder(
               builder: (context, constraints) {
-                final topGap = (constraints.maxHeight * 0.45).clamp(120.0, 360.0);
-                return SingleChildScrollView(
+                const specialHeight = 68.0;
+                const specialGap = 8.0;
+                const bottomGap = 20.0;
+                const modeHeight = 0.0;
+                const rowHeight = 58.0;
+                const dividerHeight = 1.0;
+                const rowsVisible = 5;
+                final paperHeight = (rowHeight * rowsVisible) + (dividerHeight * (rowsVisible - 1));
+                final desiredTopGap = (constraints.maxHeight * 0.45) - (specialHeight / 2);
+                final maxTopGap = (constraints.maxHeight - (specialHeight + specialGap + paperHeight + bottomGap + modeHeight))
+                    .clamp(0.0, double.infinity);
+                var topGap = desiredTopGap;
+                if (topGap < 60.0) topGap = 60.0;
+                if (topGap > maxTopGap) topGap = maxTopGap;
+
+                return Padding(
                   padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
-                  child: ConstrainedBox(
-                    constraints: BoxConstraints(minHeight: constraints.maxHeight),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        SizedBox(height: topGap),
-                        Container(
-                          height: 68,
-                          alignment: Alignment.center,
-                          margin: const EdgeInsets.only(bottom: 8),
-                          decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.75),
-                            borderRadius: BorderRadius.circular(16),
-                            border: Border.all(color: Colors.pink.shade100),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.black.withOpacity(0.06),
-                                blurRadius: 8,
-                                offset: const Offset(0, 3),
-                              ),
-                            ],
-                          ),
-                          child: const Text(
-                            "Today's Special (1 min)",
-                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
-                            textAlign: TextAlign.center,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      SizedBox(height: topGap),
+                      Align(
+                        alignment: Alignment.center,
+                        child: SizedBox(
+                          width: constraints.maxWidth * 0.624,
+                          child: Container(
+                            height: specialHeight,
+                            alignment: Alignment.center,
+                            margin: const EdgeInsets.only(bottom: specialGap),
+                            decoration: BoxDecoration(
+                              color: const Color(0xFFEEE5DB),
+                              borderRadius: BorderRadius.circular(14),
+                              border: Border.all(color: const Color(0xFFDCD6CE)),
+                            ),
+                            child: const Text(
+                              "Today's Special (1 min)",
+                              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
+                              textAlign: TextAlign.center,
+                            ),
                           ),
                         ),
-                        SizedBox(
-                          height: 180, // 現在の半分（360 -> 180）
-                          child: GridView.builder(
-                            scrollDirection: Axis.horizontal,
-                            physics: const BouncingScrollPhysics(),
-                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
-                            itemCount: sceneItems.length,
-                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 3,      // 上下3列
-                        mainAxisSpacing: 8,     // 横方向の間隔
-                        crossAxisSpacing: 8,    // 縦方向の間隔
-                        mainAxisExtent: 190,    // カードの“横幅”（180〜200で調整）
                       ),
-                      itemBuilder: (context, index) {
-                        final item   = sceneItems[index];
-                        final key    = item['key'] as String;
-                        final label  = item['label'] as String;
-                        final count  = _counts[key];
-                        final active = selectedSceneKey == key;
-                        final isFree = key == 'trial';
-                        final showLock = !hasSubOnDevice && !isFree;
+                      Align(
+                        alignment: Alignment.center,
+                        child: SizedBox(
+                          width: constraints.maxWidth * 0.546,
+                          child: Container(
+                            height: paperHeight,
+                            decoration: BoxDecoration(
+                              color: const Color(0xFFEEE5DB),
+                              borderRadius: BorderRadius.circular(14),
+                              border: Border.all(color: const Color(0xFFDCD6CE)),
+                            ),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(14),
+                              child: ListView.separated(
+                                padding: EdgeInsets.zero,
+                                physics: const BouncingScrollPhysics(),
+                                itemCount: sceneItems.length,
+                                separatorBuilder: (context, index) => Divider(
+                                  height: 1,
+                                  color: const Color(0xFFE3DED8).withOpacity(0.8),
+                                ),
+                                itemBuilder: (context, index) {
+                                  final item   = sceneItems[index];
+                                  final key    = item['key'] as String;
+                                  final label  = item['label'] as String;
+                                  final count  = _counts[key];
+                                  final active = selectedSceneKey == key;
 
-                        return GestureDetector(
-                          onTap: () => _onSceneTap(key),
-                          child: Card(
-                            color: Colors.white,
-                            clipBehavior: Clip.hardEdge,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(16),
-                              side: BorderSide(
-                                color: active ? Colors.pink.shade300 : Colors.transparent,
-                                width: 2,
+                                  return Material(
+                                    color: active ? const Color(0xFFEAE6E1).withOpacity(0.8) : Colors.transparent,
+                                    child: InkWell(
+                                      onTap: () => _onSceneTap(key),
+                                      splashColor: const Color(0xFFE0DBD6).withOpacity(0.5),
+                                      highlightColor: const Color(0xFFE6E1DB).withOpacity(0.5),
+                                      child: SizedBox(
+                                        height: 58,
+                                        child: Padding(
+                                          padding: const EdgeInsets.symmetric(horizontal: 14),
+                                          child: Row(
+                                            children: [
+                                              Icon(
+                                                _sceneIcon(key),
+                                                size: 20,
+                                                color: Colors.pink.shade400,
+                                              ),
+                                              const SizedBox(width: 12),
+                                              Expanded(
+                                                child: Column(
+                                                  mainAxisAlignment: MainAxisAlignment.center,
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text(
+                                                      label,
+                                                      style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                                                      maxLines: 1,
+                                                      overflow: TextOverflow.ellipsis,
+                                                    ),
+                                                    const SizedBox(height: 2),
+                                                    if (count == null)
+                                                      const SizedBox(
+                                                        height: 12,
+                                                        width: 12,
+                                                        child: CircularProgressIndicator(strokeWidth: 2),
+                                                      )
+                                                    else
+                                                      Text(
+                                                        '($count)',
+                                                        style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey[600]),
+                                                      ),
+                                                  ],
+                                                ),
+                                              ),
+                                              const Icon(
+                                                Icons.chevron_right,
+                                                size: 20,
+                                                color: Colors.grey,
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  );
+                                },
                               ),
                             ),
-                            child: Stack(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Text(
-                                        label,
-                                        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-                                        textAlign: TextAlign.center,
-                                        maxLines: 2,
-                                        overflow: TextOverflow.ellipsis,
-                                      ),
-                                      const SizedBox(height: 6),
-                                      if (count == null)
-                                        const SizedBox(height: 14, width: 14, child: CircularProgressIndicator(strokeWidth: 2))
-                                      else
-                                        Text(
-                                          '($count)',
-                                          style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey[600]),
-                                          textAlign: TextAlign.center,
-                                        ),
-                                    ],
-                                  ),
-                                ),
-                                if (isFree)
-                                  Positioned(
-                                    top: 8,
-                                    left: 8,
-                                    child: Container(
-                                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                                      decoration: BoxDecoration(
-                                        color: Colors.pink.shade300,
-                                        borderRadius: BorderRadius.circular(10),
-                                      ),
-                                      child: const Text(
-                                        'FREE',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 11,
-                                          fontWeight: FontWeight.bold,
-                                          letterSpacing: 0.4,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                if (showLock)
-                                  Positioned(
-                                    top: 8,
-                                    right: 8,
-                                    child: Container(
-                                      padding: const EdgeInsets.all(6),
-                                      decoration: BoxDecoration(
-                                        color: Colors.grey.shade200,
-                                        borderRadius: BorderRadius.circular(10),
-                                        border: Border.all(color: Colors.grey.shade300),
-                                      ),
-                                      child: Icon(
-                                        Icons.lock_rounded,
-                                        size: 16,
-                                        color: Colors.grey.shade600,
-                                      ),
-                                    ),
-                                  ),
-                              ],
-                            ),
                           ),
-                        ).animate().fade(duration: 300.ms).slideX(begin: 0.1);
-                      },
                         ),
-                        ), // ← ここで SizedBox を閉じる
-                        const SizedBox(height: 20),
+                      ).animate().fade(duration: 300.ms).slideX(begin: 0.05),
+                      const SizedBox(height: bottomGap),
 
-                        if (QuizModeToggleConfig.showInCategorySelection)
-                          ModeToggleBar(
-                            value: selectedMode,
-                            onChanged: (m) => setState(() => selectedMode = m),
-                            readingLabel:   loc.readingLabel,   // ← ARB
-                            listeningLabel: loc.listeningLabel, // ← ARB
-                          ),
-
-                  const SizedBox(height: 12),
-                ],
-              ),
-            ),
+                      const SizedBox(height: 12),
+                    ],
+                  ),
                 );
               },
             ),

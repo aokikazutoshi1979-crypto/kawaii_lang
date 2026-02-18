@@ -20,6 +20,8 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:kawaii_lang/services/subscription_state.dart';
 import 'profile_screen.dart';
 import 'user_name_screen.dart';
+import 'package:kawaii_lang/widgets/mode_toggle_bar.dart';
+import '../models/quiz_mode.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({Key? key}) : super(key: key);
@@ -41,6 +43,8 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
   String? selectedTargetLang;
   String? _displayName;
   final String _faqUrl = 'https://kawaiilang.com/faq.html';
+  QuizMode _selectedMode = QuizMode.reading;
+  static const String _quizModePrefKey = 'quiz_mode';
 
   final List<Map<String, String>> languages = [
     {'label': '日本語',                'code': 'ja'},
@@ -88,6 +92,7 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     _loadLanguage();
     _loadTargetLanguage();
     _loadDisplayName();
+    _loadQuizMode();
 
     // ２）RevenueCat の初期化＆オファー取得
     SubscriptionService.instance.init();
@@ -128,6 +133,21 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     setState(() {
       _displayName = prefs.getString('user_display_name');
     });
+  }
+
+  Future<void> _loadQuizMode() async {
+    final prefs = await SharedPreferences.getInstance();
+    final raw = prefs.getString(_quizModePrefKey);
+    final mode = raw == QuizMode.listening.name ? QuizMode.listening : QuizMode.reading;
+    if (!mounted) return;
+    setState(() => _selectedMode = mode);
+  }
+
+  Future<void> _saveQuizMode(QuizMode mode) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_quizModePrefKey, mode.name);
+    if (!mounted) return;
+    setState(() => _selectedMode = mode);
   }
 
   Future<void> _fetchUser() async {
@@ -402,6 +422,17 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
               ),
               const Divider(height: 32),
             ],
+
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+              child: ModeToggleBar(
+                value: _selectedMode,
+                onChanged: _saveQuizMode,
+                readingLabel: loc.readingLabel,
+                listeningLabel: loc.listeningLabel,
+              ),
+            ),
+            const Divider(height: 32),
 
             if (selectedLang != null) ...[
               Padding(
