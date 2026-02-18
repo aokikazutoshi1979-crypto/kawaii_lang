@@ -154,6 +154,12 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
     _goToQuestionList();
   }
 
+  Future<void> _onSceneTap(String key) async {
+    setState(() => selectedSceneKey = key);
+    addBreadcrumb();
+    await _onSubmit();
+  }
+
   // ① 強制クラッシュ（致命的クラッシュを送る）
   void triggerFatalCrash() {
     if (kReleaseMode) return; // 本番では無効
@@ -333,6 +339,28 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
                         SizedBox(height: topGap),
+                        Container(
+                          height: 68,
+                          alignment: Alignment.center,
+                          margin: const EdgeInsets.only(bottom: 8),
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.75),
+                            borderRadius: BorderRadius.circular(16),
+                            border: Border.all(color: Colors.pink.shade100),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withOpacity(0.06),
+                                blurRadius: 8,
+                                offset: const Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: const Text(
+                            "Today's Special (1 min)",
+                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
                         SizedBox(
                           height: 180, // 現在の半分（360 -> 180）
                           child: GridView.builder(
@@ -348,15 +376,15 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                       ),
                       itemBuilder: (context, index) {
                         final item   = sceneItems[index];
-                        final key    = item['key']!;
-                        final label  = item['label']!;
+                        final key    = item['key'] as String;
+                        final label  = item['label'] as String;
                         final count  = _counts[key];
                         final active = selectedSceneKey == key;
                         final isFree = key == 'trial';
                         final showLock = !hasSubOnDevice && !isFree;
 
                         return GestureDetector(
-                          onTap: () => setState(() => selectedSceneKey = key),
+                          onTap: () => _onSceneTap(key),
                           child: Card(
                             color: Colors.white,
                             clipBehavior: Clip.hardEdge,
@@ -449,29 +477,10 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                             listeningLabel: loc.listeningLabel, // ← ARB
                           ),
 
-                        const SizedBox(height: 12),
-
-                        ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            padding: const EdgeInsets.symmetric(vertical: 16),
-                            backgroundColor: Colors.pink.shade500,
-                            foregroundColor: Colors.white,
-                            elevation: 2,
-                            shadowColor: Colors.pink.shade200,
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
-                          ),
-                          onPressed: () {
-                            addBreadcrumb();
-                            // 実機テスト時だけ手動で切り替え
-                            // triggerFatalCrash();   // ← 落ちる（致命）
-                            // triggerNonFatal();     // ← 落ちない（非致命）
-                            _onSubmit();             // 本来の処理
-                          },
-                          child: Text(loc.start, style: const TextStyle(fontSize: 18)),
-                        ).animate().scale(duration: 400.ms),
-                      ],
-                    ),
-                  ),
+                  const SizedBox(height: 12),
+                ],
+              ),
+            ),
                 );
               },
             ),
