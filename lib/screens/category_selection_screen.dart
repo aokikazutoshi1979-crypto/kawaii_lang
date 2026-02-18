@@ -18,7 +18,6 @@ import 'package:flutter/foundation.dart'; // kReleaseMode
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import '../services/subscription_state.dart';
 import 'chat_screen.dart';
-import '../services/history_service.dart';
 
 class CategorySelectionScreen extends StatefulWidget {
   const CategorySelectionScreen({Key? key}) : super(key: key);
@@ -39,9 +38,6 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
 
   QuizMode selectedMode = QuizMode.reading;
   static const String _quickStartPrefKey = 'has_used_quick_start';
-  int _todayCorrect = 0;
-  int _streakDays = 0;
-
   @override
   void initState() {
     super.initState();
@@ -49,7 +45,6 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
     _loadLanguage();
     _loadTargetLanguage();
     _loadScenesJson();   // ← 追加
-    _loadDailyStats();
     
     // 🔑 サブスク検証サービスを初期化
     // maybeInitSubscription(); // 🔑 追加：サブスク状態を1日1回だけ確認
@@ -184,43 +179,6 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
     FirebaseCrashlytics.instance.log('User tapped Start button');
   }
 
-  String _getSceneImagePath(String key) => 'assets/images/backgrounds/$key.png';
-
-  Future<void> _loadDailyStats() async {
-    final stats = await HistoryService.instance.getTodayCorrectAndStreak();
-    if (!mounted) return;
-    setState(() {
-      _todayCorrect = stats.todayCorrect;
-      _streakDays = stats.streakDays;
-    });
-  }
-
-  Widget _buildDailyStats(AppLocalizations loc) {
-    Widget statChip(String text) {
-      return Container(
-        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 12),
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: Colors.pink.shade100),
-        ),
-        child: Text(
-          text,
-          style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
-          textAlign: TextAlign.center,
-        ),
-      );
-    }
-
-    return Row(
-      children: [
-        Expanded(child: statChip(loc.todayCorrectCount(_todayCorrect))),
-        const SizedBox(width: 8),
-        Expanded(child: statChip(loc.streakDaysCount(_streakDays))),
-      ],
-    );
-  }
-
   void _goToQuestionList() {
     Navigator.push(
       context,
@@ -231,7 +189,7 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
           mode: selectedMode, // ★追加
         ),
       ),
-    ).then((_) => _loadDailyStats());
+    );
   }
 
   Future<void> _goToRecommendedChat() async {
@@ -291,7 +249,7 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
             recommendedReturnScene: selectedSceneKey,
           ),
         ),
-      ).then((_) => _loadDailyStats());
+      );
     } catch (e) {
       debugPrint('recommended chat load failed: $e');
       _goToQuestionList();
@@ -312,11 +270,34 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
     // print('▶ sceneItems: ${sceneItems.map((i) => i['key']).toList()}');
 
     return Scaffold(
+      extendBodyBehindAppBar: true,
+      backgroundColor: Colors.transparent,
       appBar: AppBar(
         automaticallyImplyLeading: false,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        scrolledUnderElevation: 0,
         actions: [
           IconButton(
-            icon: const Icon(Icons.person),
+            icon: Container(
+              padding: const EdgeInsets.all(6),
+              decoration: BoxDecoration(
+                color: Colors.white.withOpacity(0.9),
+                shape: BoxShape.circle,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.1),
+                    blurRadius: 8,
+                    offset: const Offset(0, 3),
+                  ),
+                ],
+              ),
+              child: const Icon(
+                Icons.settings_rounded,
+                color: Colors.black87,
+                size: 22,
+              ),
+            ),
             onPressed: () {
               Navigator.push(
                 context,
@@ -330,162 +311,172 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
           ),
         ],
       ),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-          _buildDailyStats(loc),
-          const SizedBox(height: 14),
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 8.0),
-            child: Text(loc.scene, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+      body: Stack(
+        fit: StackFit.expand,
+        children: [
+          Positioned.fill(
+            child: Image.asset(
+              'assets/images/characters/tumugi_menu.png',
+              fit: BoxFit.cover,
+              alignment: Alignment.center,
+            ),
           ),
-          SizedBox(
-            height: 360, // お好みで 200〜240
-            child: GridView.builder(
-              scrollDirection: Axis.horizontal,
-              physics: const BouncingScrollPhysics(),
-              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
-              itemCount: sceneItems.length,
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,      // 上下2列
-                mainAxisSpacing: 8,     // 横方向の間隔
-                crossAxisSpacing: 8,    // 縦方向の間隔
-                mainAxisExtent: 190,    // カードの“横幅”（180〜200で調整）
-              ),
-              itemBuilder: (context, index) {
-                final item   = sceneItems[index];
-                final key    = item['key']!;
-                final label  = item['label']!;
-                final count  = _counts[key];
-                final active = selectedSceneKey == key;
-                final isFree = key == 'trial';
-                final showLock = !hasSubOnDevice && !isFree;
-
-                return GestureDetector(
-                  onTap: () => setState(() => selectedSceneKey = key),
-                  child: Card(
-                    color: Colors.white,
-                    clipBehavior: Clip.hardEdge,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(16),
-                      side: BorderSide(
-                        color: active ? Colors.pink.shade300 : Colors.transparent,
-                        width: 2,
-                      ),
-                    ),
-                    child: Stack(
+          SafeArea(
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                final topGap = (constraints.maxHeight * 0.45).clamp(120.0, 360.0);
+                return SingleChildScrollView(
+                  padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+                  child: ConstrainedBox(
+                    constraints: BoxConstraints(minHeight: constraints.maxHeight),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Image.asset(
-                                _getSceneImagePath(key),
-                                height: 70,
-                                fit: BoxFit.contain,
-                                errorBuilder: (_, __, ___) => const Icon(Icons.image_not_supported),
+                        SizedBox(height: topGap),
+                        SizedBox(
+                          height: 180, // 現在の半分（360 -> 180）
+                          child: GridView.builder(
+                            scrollDirection: Axis.horizontal,
+                            physics: const BouncingScrollPhysics(),
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
+                            itemCount: sceneItems.length,
+                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 3,      // 上下3列
+                        mainAxisSpacing: 8,     // 横方向の間隔
+                        crossAxisSpacing: 8,    // 縦方向の間隔
+                        mainAxisExtent: 190,    // カードの“横幅”（180〜200で調整）
+                      ),
+                      itemBuilder: (context, index) {
+                        final item   = sceneItems[index];
+                        final key    = item['key']!;
+                        final label  = item['label']!;
+                        final count  = _counts[key];
+                        final active = selectedSceneKey == key;
+                        final isFree = key == 'trial';
+                        final showLock = !hasSubOnDevice && !isFree;
+
+                        return GestureDetector(
+                          onTap: () => setState(() => selectedSceneKey = key),
+                          child: Card(
+                            color: Colors.white,
+                            clipBehavior: Clip.hardEdge,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(16),
+                              side: BorderSide(
+                                color: active ? Colors.pink.shade300 : Colors.transparent,
+                                width: 2,
                               ),
-                              const SizedBox(height: 8),
-                              Text(
-                                label,
-                                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-                                textAlign: TextAlign.center,
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                              ),
-                              const SizedBox(height: 4),
-                              if (count == null)
-                                const SizedBox(height: 14, width: 14, child: CircularProgressIndicator(strokeWidth: 2))
-                              else
-                                Text(
-                                  '($count)',
-                                  style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey[600]),
-                                  textAlign: TextAlign.center,
+                            ),
+                            child: Stack(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        label,
+                                        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                                        textAlign: TextAlign.center,
+                                        maxLines: 2,
+                                        overflow: TextOverflow.ellipsis,
+                                      ),
+                                      const SizedBox(height: 6),
+                                      if (count == null)
+                                        const SizedBox(height: 14, width: 14, child: CircularProgressIndicator(strokeWidth: 2))
+                                      else
+                                        Text(
+                                          '($count)',
+                                          style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey[600]),
+                                          textAlign: TextAlign.center,
+                                        ),
+                                    ],
+                                  ),
                                 ),
-                            ],
+                                if (isFree)
+                                  Positioned(
+                                    top: 8,
+                                    left: 8,
+                                    child: Container(
+                                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                      decoration: BoxDecoration(
+                                        color: Colors.pink.shade300,
+                                        borderRadius: BorderRadius.circular(10),
+                                      ),
+                                      child: const Text(
+                                        'FREE',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 11,
+                                          fontWeight: FontWeight.bold,
+                                          letterSpacing: 0.4,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                if (showLock)
+                                  Positioned(
+                                    top: 8,
+                                    right: 8,
+                                    child: Container(
+                                      padding: const EdgeInsets.all(6),
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey.shade200,
+                                        borderRadius: BorderRadius.circular(10),
+                                        border: Border.all(color: Colors.grey.shade300),
+                                      ),
+                                      child: Icon(
+                                        Icons.lock_rounded,
+                                        size: 16,
+                                        color: Colors.grey.shade600,
+                                      ),
+                                    ),
+                                  ),
+                              ],
+                            ),
                           ),
+                        ).animate().fade(duration: 300.ms).slideX(begin: 0.1);
+                      },
                         ),
-                        if (isFree)
-                          Positioned(
-                            top: 8,
-                            left: 8,
-                            child: Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                              decoration: BoxDecoration(
-                                color: Colors.pink.shade300,
-                                borderRadius: BorderRadius.circular(10),
-                              ),
-                              child: const Text(
-                                'FREE',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 11,
-                                  fontWeight: FontWeight.bold,
-                                  letterSpacing: 0.4,
-                                ),
-                              ),
-                            ),
+                        ), // ← ここで SizedBox を閉じる
+                        const SizedBox(height: 20),
+
+                        if (QuizModeToggleConfig.showInCategorySelection)
+                          ModeToggleBar(
+                            value: selectedMode,
+                            onChanged: (m) => setState(() => selectedMode = m),
+                            readingLabel:   loc.readingLabel,   // ← ARB
+                            listeningLabel: loc.listeningLabel, // ← ARB
                           ),
-                        if (showLock)
-                          Positioned(
-                            top: 8,
-                            right: 8,
-                            child: Container(
-                              padding: const EdgeInsets.all(6),
-                              decoration: BoxDecoration(
-                                color: Colors.grey.shade200,
-                                borderRadius: BorderRadius.circular(10),
-                                border: Border.all(color: Colors.grey.shade300),
-                              ),
-                              child: Icon(
-                                Icons.lock_rounded,
-                                size: 16,
-                                color: Colors.grey.shade600,
-                              ),
-                            ),
+
+                        const SizedBox(height: 12),
+
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            padding: const EdgeInsets.symmetric(vertical: 16),
+                            backgroundColor: Colors.pink.shade500,
+                            foregroundColor: Colors.white,
+                            elevation: 2,
+                            shadowColor: Colors.pink.shade200,
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
                           ),
+                          onPressed: () {
+                            addBreadcrumb();
+                            // 実機テスト時だけ手動で切り替え
+                            // triggerFatalCrash();   // ← 落ちる（致命）
+                            // triggerNonFatal();     // ← 落ちない（非致命）
+                            _onSubmit();             // 本来の処理
+                          },
+                          child: Text(loc.start, style: const TextStyle(fontSize: 18)),
+                        ).animate().scale(duration: 400.ms),
                       ],
                     ),
                   ),
-                ).animate().fade(duration: 300.ms).slideX(begin: 0.1);
+                );
               },
             ),
-          ), // ← ここで SizedBox を閉じる
-            const SizedBox(height: 20),
-
-            if (QuizModeToggleConfig.showInCategorySelection)
-              ModeToggleBar(
-                value: selectedMode,
-                onChanged: (m) => setState(() => selectedMode = m),
-                readingLabel:   loc.readingLabel,   // ← ARB
-                listeningLabel: loc.listeningLabel, // ← ARB
-              ),
-
-            const SizedBox(height: 12),
-
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(vertical: 16),
-                backgroundColor: Colors.pink.shade500,
-                foregroundColor: Colors.white,
-                elevation: 2,
-                shadowColor: Colors.pink.shade200,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
-              ),
-              onPressed: () {
-                addBreadcrumb();
-                // 実機テスト時だけ手動で切り替え
-                // triggerFatalCrash();   // ← 落ちる（致命）
-                // triggerNonFatal();     // ← 落ちない（非致命）
-                _onSubmit();             // 本来の処理
-              },
-              child: Text(loc.start, style: const TextStyle(fontSize: 18)),
-            ).animate().scale(duration: 400.ms),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
