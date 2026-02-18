@@ -253,7 +253,12 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String filterStatusSummary(Object count, Object level, Object topic) {
-    return '$count条 • 级别: $level • 主题: $topic';
+    return '$count • L:$level • T:$topic';
+  }
+
+  @override
+  String filterResultsCount(Object count) {
+    return '$count条';
   }
 
   @override
@@ -842,7 +847,12 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String filterStatusSummary(Object count, Object level, Object topic) {
-    return '$count條 • 級別: $level • 主題: $topic';
+    return '$count • L:$level • T:$topic';
+  }
+
+  @override
+  String filterResultsCount(Object count) {
+    return '$count條';
   }
 
   @override

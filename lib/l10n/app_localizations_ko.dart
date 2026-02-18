@@ -255,7 +255,12 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String filterStatusSummary(Object count, Object level, Object topic) {
-    return '$count개 • 레벨: $level • 주제: $topic';
+    return '$count • L:$level • T:$topic';
+  }
+
+  @override
+  String filterResultsCount(Object count) {
+    return '$count개';
   }
 
   @override

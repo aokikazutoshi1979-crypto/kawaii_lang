@@ -262,7 +262,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String filterStatusSummary(Object count, Object level, Object topic) {
-    return '$count phrases • Level: $level • Topic: $topic';
+    return '$count • L:$level • T:$topic';
+  }
+
+  @override
+  String filterResultsCount(Object count) {
+    return '$count results';
   }
 
   @override

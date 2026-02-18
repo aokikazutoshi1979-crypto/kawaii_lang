@@ -572,8 +572,14 @@ abstract class AppLocalizations {
   /// No description provided for @filterStatusSummary.
   ///
   /// In ja, this message translates to:
-  /// **'{count}問・レベル: {level}・トピック: {topic}'**
+  /// **'{count}問 • L:{level} • T:{topic}'**
   String filterStatusSummary(Object count, Object level, Object topic);
+
+  /// No description provided for @filterResultsCount.
+  ///
+  /// In ja, this message translates to:
+  /// **'{count}件'**
+  String filterResultsCount(Object count);
 
   /// No description provided for @levelStarter.
   ///

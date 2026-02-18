@@ -185,6 +185,9 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
   }
 
   Widget _buildSearchRow(AppLocalizations loc, {required bool showFilterButton}) {
+    final hasActiveFilters = _selectedLevel != 'all' || _selectedTag != 'all';
+    final hasSearch = _searchQuery.trim().isNotEmpty;
+    final showClear = hasActiveFilters || hasSearch;
     return Row(
       children: [
         Expanded(
@@ -213,69 +216,99 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
         ),
         if (showFilterButton) ...[
           const SizedBox(width: 8),
-          InkWell(
-            onTap: _openFilterSheet,
-            borderRadius: BorderRadius.circular(12),
-            child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-              decoration: BoxDecoration(
-                color: Colors.white,
+          Stack(
+            clipBehavior: Clip.none,
+            children: [
+              InkWell(
+                onTap: _openFilterSheet,
                 borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: Colors.pink.shade200),
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                  decoration: BoxDecoration(
+                    color: hasActiveFilters ? Colors.pink.shade200 : Colors.white,
+                    borderRadius: BorderRadius.circular(12),
+                    border: hasActiveFilters
+                        ? null
+                        : Border.all(color: Colors.pink.shade200),
+                  ),
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.filter_list,
+                        size: 18,
+                        color: hasActiveFilters ? Colors.white : Colors.pink.shade400,
+                      ),
+                      const SizedBox(width: 6),
+                      Text(
+                        loc.filterButton,
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: hasActiveFilters ? Colors.white : Colors.pink.shade600,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ),
-              child: Row(
-                children: [
-                  Icon(Icons.filter_list, size: 18, color: Colors.pink.shade400),
-                  const SizedBox(width: 6),
-                  Text(
-                    loc.filterButton,
-                    style: TextStyle(
-                      fontSize: 12,
+              if (hasActiveFilters)
+                Positioned(
+                  right: -2,
+                  top: -2,
+                  child: Container(
+                    width: 8,
+                    height: 8,
+                    decoration: BoxDecoration(
                       color: Colors.pink.shade600,
-                      fontWeight: FontWeight.w600,
+                      shape: BoxShape.circle,
                     ),
                   ),
-                ],
+                ),
+            ],
+          ),
+          if (showClear) ...[
+            const SizedBox(width: 6),
+            TextButton(
+              onPressed: () {
+                _searchController.clear();
+                _searchQuery = '';
+                _selectedLevel = 'all';
+                _selectedTag = 'all';
+                _applyFilter();
+              },
+              style: TextButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 6),
+                minimumSize: Size.zero,
+                tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                visualDensity: VisualDensity.compact,
+              ),
+              child: Text(
+                loc.filterClear,
+                style: TextStyle(fontSize: 11, color: Colors.grey.shade700),
               ),
             ),
-          ),
+          ],
         ],
       ],
     );
   }
 
-  Widget _buildFilterStatusBar(AppLocalizations loc) {
-    final summary = loc.filterStatusSummary(
-      _filtered.length,
-      _levelLabel(_selectedLevel, loc),
-      _topicLabel(_selectedTag, loc),
-    );
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-      decoration: BoxDecoration(
-        color: const Color(0xFFFFF3F6),
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.pink.shade100),
-      ),
-      child: Row(
-        children: [
-          Expanded(
-            child: Text(
-              summary,
-              style: TextStyle(fontSize: 12, color: Colors.grey.shade700),
-            ),
-          ),
-          TextButton(
-            onPressed: () {
-              _searchController.clear();
-              _searchQuery = '';
-              _selectedLevel = 'all';
-              _selectedTag = 'all';
-              _applyFilter();
-            },
-            child: Text(loc.filterClear),
-          ),
-        ],
+  Widget? _buildCompactFilterHint(AppLocalizations loc) {
+    final hasActiveFilters = _selectedLevel != 'all' || _selectedTag != 'all';
+    final hasSearch = _searchQuery.trim().isNotEmpty;
+    if (!hasActiveFilters && !hasSearch) return null;
+    final parts = <String>[];
+    parts.add(loc.filterResultsCount(_filtered.length));
+    if (_selectedLevel != 'all') parts.add(_levelLabel(_selectedLevel, loc));
+    if (_selectedTag != 'all') parts.add(_topicLabel(_selectedTag, loc));
+    final text = parts.join(' • ');
+    return Padding(
+      padding: const EdgeInsets.only(top: 6),
+      child: Text(
+        text,
+        style: TextStyle(fontSize: 11, color: Colors.grey.shade600),
+        maxLines: 1,
+        overflow: TextOverflow.ellipsis,
       ),
     );
   }
@@ -724,8 +757,7 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
             const SizedBox(height: 12),
             if (isTrial) ...[
               _buildSearchRow(loc, showFilterButton: true),
-              const SizedBox(height: 8),
-              _buildFilterStatusBar(loc),
+              if (_buildCompactFilterHint(loc) != null) _buildCompactFilterHint(loc)!,
               const SizedBox(height: 8),
             ] else ...[
               _buildSearchRow(loc, showFilterButton: false),

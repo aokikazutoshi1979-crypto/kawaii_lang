@@ -261,7 +261,12 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String filterStatusSummary(Object count, Object level, Object topic) {
-    return '$count cụm • Mức: $level • Chủ đề: $topic';
+    return '$count • L:$level • T:$topic';
+  }
+
+  @override
+  String filterResultsCount(Object count) {
+    return '$count kết quả';
   }
 
   @override
