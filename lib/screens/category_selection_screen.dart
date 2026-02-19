@@ -11,6 +11,7 @@ import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:kawaii_lang/models/language.dart';
 import 'dart:convert';                     // jsonDecode
 import 'package:flutter/services.dart';    // rootBundle
+import 'package:google_fonts/google_fonts.dart';
 import '../models/quiz_mode.dart';
 import 'package:flutter/foundation.dart'; // kReleaseMode
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
@@ -177,31 +178,43 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
     await _onSubmit();
   }
 
-  IconData _sceneIcon(String key) {
-    switch (key) {
-      case 'trial':
-        return Icons.local_cafe_rounded;
-      case 'travel':
-        return Icons.flight_rounded;
-      case 'restaurant':
-        return Icons.restaurant_rounded;
-      case 'shopping':
-        return Icons.shopping_bag_rounded;
-      case 'hotel':
-        return Icons.hotel_rounded;
-      case 'hospital':
-        return Icons.local_hospital_rounded;
-      case 'emergency':
-        return Icons.warning_rounded;
-      case 'taxi':
-        return Icons.local_taxi_rounded;
-      case 'business':
-        return Icons.work_rounded;
-      case 'daily':
-        return Icons.home_rounded;
-      default:
-        return Icons.menu_book_rounded;
+  TextStyle _menuTextStyle(BuildContext context) {
+    final locale = Localizations.localeOf(context);
+    final lang = locale.languageCode;
+    if (lang == 'ja') {
+      return GoogleFonts.yomogi(
+        fontSize: 22,
+        fontWeight: FontWeight.w600,
+        color: Colors.black87,
+        height: 1.1,
+        letterSpacing: 0.1,
+      );
     }
+    if (lang == 'ko') {
+      return GoogleFonts.nanumPenScript(
+        fontSize: 22,
+        fontWeight: FontWeight.w600,
+        color: Colors.black87,
+        height: 1.1,
+        letterSpacing: 0.1,
+      );
+    }
+    if (lang == 'zh') {
+      return GoogleFonts.longCang(
+        fontSize: 22,
+        fontWeight: FontWeight.w600,
+        color: Colors.black87,
+        height: 1.1,
+        letterSpacing: 0.1,
+      );
+    }
+    return GoogleFonts.pangolin(
+      fontSize: 22,
+      fontWeight: FontWeight.w600,
+      color: Colors.black87,
+      height: 1.1,
+      letterSpacing: 0.1,
+    );
   }
 
   // ① 強制クラッシュ（致命的クラッシュを送る）
@@ -311,10 +324,18 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
     final loc = AppLocalizations.of(context)!;
 
     // JSON読込み後の動的リストを作成
-    final sceneItems = _allScenes.map((scene) => {
-      'key':   scene.id,                                // ex. "trial","travel"...
-      'label': scene.label[loc.localeName] ?? scene.id, // ロケール対応ラベル
-    }).toList();
+    final sceneItems = [
+      {
+        'key': 'trial',
+        'label': "Today's Special (1 min)",
+      },
+      ..._allScenes
+          .where((scene) => scene.id != 'trial')
+          .map((scene) => {
+                'key': scene.id,                                // ex. "trial","travel"...
+                'label': scene.label[loc.localeName] ?? scene.id, // ロケール対応ラベル
+              }),
+    ];
 
     // ここを追加
     // print('▶ sceneItems: ${sceneItems.map((i) => i['key']).toList()}');
@@ -376,8 +397,6 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
           SafeArea(
             child: LayoutBuilder(
               builder: (context, constraints) {
-                const specialHeight = 68.0;
-                const specialGap = 8.0;
                 const bottomGap = 20.0;
                 const modeHeight = 0.0;
                 const rowHeight = 58.0;
@@ -390,17 +409,15 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                 final paperHeight = (rowHeight * rowsVisible) + (dividerHeight * (rowsVisible - 1));
                 final availableHeight = constraints.maxHeight - paddingTop - paddingBottom;
                 final desiredQuoteTop = availableHeight * 0.40;
-                final desiredSpecialTop = availableHeight * 0.50;
+                final desiredListTop = availableHeight * 0.50;
                 final gapBetween = hasQuote
-                    ? (desiredSpecialTop - desiredQuoteTop - quoteHeight).clamp(0.0, 120.0)
+                    ? (desiredListTop - desiredQuoteTop - quoteHeight).clamp(0.0, 120.0)
                     : 0.0;
 
-                var topGap = hasQuote ? desiredQuoteTop : desiredSpecialTop;
+                var topGap = hasQuote ? desiredQuoteTop : desiredListTop;
                 final totalHeight = topGap
                     + (hasQuote ? quoteHeight : 0.0)
                     + gapBetween
-                    + specialHeight
-                    + specialGap
                     + paperHeight
                     + bottomGap
                     + modeHeight;
@@ -446,109 +463,64 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                       Align(
                         alignment: Alignment.center,
                         child: SizedBox(
-                          width: constraints.maxWidth * 0.624,
-                          child: Container(
-                            height: specialHeight,
-                            alignment: Alignment.center,
-                            margin: const EdgeInsets.only(bottom: specialGap),
-                            decoration: BoxDecoration(
-                              color: const Color(0xFFEEE5DB),
-                              borderRadius: BorderRadius.circular(14),
-                              border: Border.all(color: const Color(0xFFDCD6CE)),
-                            ),
-                            child: const Text(
-                              "Today's Special (1 min)",
-                              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Align(
-                        alignment: Alignment.center,
-                        child: SizedBox(
                           width: constraints.maxWidth * 0.546,
-                          child: Container(
-                            height: paperHeight,
-                            decoration: BoxDecoration(
-                              color: const Color(0xFFEEE5DB),
-                              borderRadius: BorderRadius.circular(14),
-                              border: Border.all(color: const Color(0xFFDCD6CE)),
-                            ),
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(14),
-                              child: ListView.separated(
-                                padding: EdgeInsets.zero,
-                                physics: const BouncingScrollPhysics(),
-                                itemCount: sceneItems.length,
-                                separatorBuilder: (context, index) => Divider(
-                                  height: 1,
-                                  color: const Color(0xFFE3DED8).withOpacity(0.8),
-                                ),
-                                itemBuilder: (context, index) {
-                                  final item   = sceneItems[index];
-                                  final key    = item['key'] as String;
-                                  final label  = item['label'] as String;
-                                  final count  = _counts[key];
-                                  final active = selectedSceneKey == key;
+                          height: paperHeight,
+                          child: RepaintBoundary(
+                            child: ListView.separated(
+                              padding: EdgeInsets.zero,
+                              physics: const BouncingScrollPhysics(),
+                              cacheExtent: rowHeight * (rowsVisible + 2),
+                              itemCount: sceneItems.length,
+                              separatorBuilder: (context, index) => Divider(
+                                height: 1,
+                                color: const Color(0xFFE3DED8).withOpacity(0.6),
+                              ),
+                              itemBuilder: (context, index) {
+                                final item   = sceneItems[index];
+                                final key    = item['key'] as String;
+                                final label  = item['label'] as String;
+                                final count  = _counts[key];
+                                final active = selectedSceneKey == key;
 
-                                  return Material(
-                                    color: active ? const Color(0xFFEAE6E1).withOpacity(0.8) : Colors.transparent,
-                                    child: InkWell(
-                                      onTap: () => _onSceneTap(key),
-                                      splashColor: const Color(0xFFE0DBD6).withOpacity(0.5),
-                                      highlightColor: const Color(0xFFE6E1DB).withOpacity(0.5),
-                                      child: SizedBox(
-                                        height: 58,
-                                        child: Padding(
-                                          padding: const EdgeInsets.symmetric(horizontal: 14),
-                                          child: Row(
-                                            children: [
-                                              Icon(
-                                                _sceneIcon(key),
-                                                size: 20,
-                                                color: Colors.pink.shade400,
+                                return Material(
+                                  color: active ? const Color(0xFFEAE6E1).withOpacity(0.35) : Colors.transparent,
+                                  child: InkWell(
+                                    onTap: () => _onSceneTap(key),
+                                    splashColor: const Color(0xFFE0DBD6).withOpacity(0.4),
+                                    highlightColor: const Color(0xFFE6E1DB).withOpacity(0.4),
+                                    child: SizedBox(
+                                      height: 58,
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(horizontal: 8),
+                                        child: Column(
+                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              label,
+                                              style: _menuTextStyle(context),
+                                              maxLines: 1,
+                                              overflow: TextOverflow.ellipsis,
+                                            ),
+                                            const SizedBox(height: 2),
+                                            if (count == null)
+                                              const SizedBox(
+                                                height: 12,
+                                                width: 12,
+                                                child: CircularProgressIndicator(strokeWidth: 2),
+                                              )
+                                            else
+                                              Text(
+                                                '($count)',
+                                                style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey[600]),
                                               ),
-                                              const SizedBox(width: 12),
-                                              Expanded(
-                                                child: Column(
-                                                  mainAxisAlignment: MainAxisAlignment.center,
-                                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                                  children: [
-                                                    Text(
-                                                      label,
-                                                      style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-                                                      maxLines: 1,
-                                                      overflow: TextOverflow.ellipsis,
-                                                    ),
-                                                    const SizedBox(height: 2),
-                                                    if (count == null)
-                                                      const SizedBox(
-                                                        height: 12,
-                                                        width: 12,
-                                                        child: CircularProgressIndicator(strokeWidth: 2),
-                                                      )
-                                                    else
-                                                      Text(
-                                                        '($count)',
-                                                        style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey[600]),
-                                                      ),
-                                                  ],
-                                                ),
-                                              ),
-                                              const Icon(
-                                                Icons.chevron_right,
-                                                size: 20,
-                                                color: Colors.grey,
-                                              ),
-                                            ],
-                                          ),
+                                          ],
                                         ),
                                       ),
                                     ),
-                                  );
-                                },
-                              ),
+                                  ),
+                                );
+                              },
                             ),
                           ),
                         ),
