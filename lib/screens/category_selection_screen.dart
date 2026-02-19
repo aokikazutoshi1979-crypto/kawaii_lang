@@ -12,6 +12,7 @@ import 'package:kawaii_lang/models/language.dart';
 import 'dart:convert';                     // jsonDecode
 import 'package:flutter/services.dart';    // rootBundle
 import 'package:google_fonts/google_fonts.dart';
+import 'dart:async';
 import '../models/quiz_mode.dart';
 import 'package:flutter/foundation.dart'; // kReleaseMode
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
@@ -40,6 +41,12 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
   static const String _quickStartPrefKey = 'has_used_quick_start';
   static const String _quizModePrefKey = 'quiz_mode';
   String? _tsumugiQuote;
+  bool _revealRequested = false;
+  bool _revealStarted = false;
+  bool _showQuote = false;
+  bool _showList = false;
+  int _revealedCount = 0;
+  Timer? _listRevealTimer;
   @override
   void initState() {
     super.initState();
@@ -47,8 +54,12 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
     _loadLanguage();
     _loadTargetLanguage();
     _loadQuizMode();
-    _loadScenesJson();   // ← 追加
-    _loadTsumugiQuote();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      _loadScenesJson();
+      _loadTsumugiQuote();
+      _requestReveal();
+    });
     
     // 🔑 サブスク検証サービスを初期化
     // maybeInitSubscription(); // 🔑 追加：サブスク状態を1日1回だけ確認
@@ -76,6 +87,7 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
 
     if (!mounted) return;
     setState(() => _counts = Map.fromEntries(entries));
+    _tryStartReveal();
   }
 
   Future<int> _loadQuestionCountForScene(String sceneId) async {
@@ -138,6 +150,52 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
     final quote = await TsumugiQuoteService.instance.getNextQuote();
     if (!mounted) return;
     setState(() => _tsumugiQuote = quote);
+  }
+
+  void _requestReveal() {
+    _revealRequested = true;
+    _tryStartReveal();
+  }
+
+  void _tryStartReveal() {
+    if (_revealStarted || !_revealRequested) return;
+    if (_allScenes.isEmpty) return;
+    _startRevealSequence();
+  }
+
+  void _startRevealSequence() {
+    _revealStarted = true;
+    Future<void>.delayed(const Duration(milliseconds: 180), () {
+      if (!mounted) return;
+      setState(() => _showQuote = true);
+    });
+    Future<void>.delayed(const Duration(milliseconds: 520), () {
+      if (!mounted) return;
+      setState(() => _showList = true);
+      _startListReveal();
+    });
+  }
+
+  void _startListReveal() {
+    _listRevealTimer?.cancel();
+    _revealedCount = 0;
+    _listRevealTimer = Timer.periodic(const Duration(milliseconds: 110), (timer) {
+      if (!mounted) {
+        timer.cancel();
+        return;
+      }
+      if (_revealedCount >= _allScenes.length + 1) {
+        timer.cancel();
+        return;
+      }
+      setState(() => _revealedCount += 1);
+    });
+  }
+
+  @override
+  void dispose() {
+    _listRevealTimer?.cancel();
+    super.dispose();
   }
 
   Future<void> _onSubmit() async {
@@ -322,6 +380,8 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
+    final mq = MediaQuery.of(context);
+    final bgCacheWidth = (mq.size.width * mq.devicePixelRatio).round();
 
     // JSON読込み後の動的リストを作成
     final sceneItems = [
@@ -342,7 +402,7 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
 
     return Scaffold(
       extendBodyBehindAppBar: true,
-      backgroundColor: Colors.transparent,
+      backgroundColor: const Color(0xFFEEE5DB),
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Colors.transparent,
@@ -388,8 +448,11 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
         fit: StackFit.expand,
         children: [
           Positioned.fill(
-            child: Image.asset(
-              'assets/images/characters/tumugi_menu.png',
+            child: Image(
+              image: ResizeImage(
+                const AssetImage('assets/images/characters/tumugi_menu.png'),
+                width: bgCacheWidth,
+              ),
               fit: BoxFit.cover,
               alignment: Alignment.center,
             ),
@@ -433,98 +496,120 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                     children: [
                       SizedBox(height: topGap),
                       if (_tsumugiQuote != null)
-                        Align(
-                          alignment: Alignment.center,
-                          child: SizedBox(
-                            width: constraints.maxWidth * 0.624,
-                            height: quoteHeight,
-                            child: Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-                              decoration: BoxDecoration(
-                                color: const Color(0xFFFFF0F5),
-                                borderRadius: BorderRadius.circular(16),
-                                border: Border.all(
-                                  color: Colors.pink.shade200.withOpacity(0.6),
+                        AnimatedOpacity(
+                          opacity: _showQuote ? 1 : 0,
+                          duration: const Duration(milliseconds: 320),
+                          curve: Curves.easeOut,
+                          child: AnimatedSlide(
+                            offset: _showQuote ? Offset.zero : const Offset(0, 0.12),
+                            duration: const Duration(milliseconds: 320),
+                            curve: Curves.easeOut,
+                            child: Align(
+                              alignment: Alignment.center,
+                              child: SizedBox(
+                                width: constraints.maxWidth * 0.624,
+                                height: quoteHeight,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                                  decoration: BoxDecoration(
+                                    color: const Color(0xFFFFF0F5),
+                                    borderRadius: BorderRadius.circular(16),
+                                    border: Border.all(
+                                      color: Colors.pink.shade200.withOpacity(0.6),
+                                    ),
+                                  ),
+                                  child: Text(
+                                    _tsumugiQuote!,
+                                    maxLines: 2,
+                                    overflow: TextOverflow.clip,
+                                    softWrap: true,
+                                    textAlign: TextAlign.center,
+                                    style: const TextStyle(fontSize: 14, height: 1.35),
+                                  ),
                                 ),
-                              ),
-                              child: Text(
-                                _tsumugiQuote!,
-                                maxLines: 2,
-                                overflow: TextOverflow.clip,
-                                softWrap: true,
-                                textAlign: TextAlign.center,
-                                style: const TextStyle(fontSize: 14, height: 1.35),
                               ),
                             ),
                           ),
                         ),
                       if (_tsumugiQuote != null)
-                        SizedBox(height: gapBetween),
+                        SizedBox(height: _showQuote ? gapBetween : 0),
                       Align(
                         alignment: Alignment.center,
                         child: SizedBox(
                           width: constraints.maxWidth * 0.546,
                           height: paperHeight,
                           child: RepaintBoundary(
-                            child: ListView.separated(
-                              padding: EdgeInsets.zero,
-                              physics: const BouncingScrollPhysics(),
-                              cacheExtent: rowHeight * (rowsVisible + 2),
-                              itemCount: sceneItems.length,
-                              separatorBuilder: (context, index) => Divider(
-                                height: 1,
-                                color: const Color(0xFFE3DED8).withOpacity(0.6),
-                              ),
-                              itemBuilder: (context, index) {
-                                final item   = sceneItems[index];
-                                final key    = item['key'] as String;
-                                final label  = item['label'] as String;
-                                final count  = _counts[key];
-                                final active = selectedSceneKey == key;
-
-                                return Material(
-                                  color: active ? const Color(0xFFEAE6E1).withOpacity(0.35) : Colors.transparent,
-                                  child: InkWell(
-                                    onTap: () => _onSceneTap(key),
-                                    splashColor: const Color(0xFFE0DBD6).withOpacity(0.4),
-                                    highlightColor: const Color(0xFFE6E1DB).withOpacity(0.4),
-                                    child: SizedBox(
-                                      height: 58,
-                                      child: Padding(
-                                        padding: const EdgeInsets.symmetric(horizontal: 8),
-                                        child: Column(
-                                          mainAxisAlignment: MainAxisAlignment.center,
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              label,
-                                              style: _menuTextStyle(context),
-                                              maxLines: 1,
-                                              overflow: TextOverflow.ellipsis,
-                                            ),
-                                            const SizedBox(height: 2),
-                                            if (count == null)
-                                              const SizedBox(
-                                                height: 12,
-                                                width: 12,
-                                                child: CircularProgressIndicator(strokeWidth: 2),
-                                              )
-                                            else
-                                              Text(
-                                                '($count)',
-                                                style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey[600]),
-                                              ),
-                                          ],
-                                        ),
-                                      ),
+                            child: !_showList
+                                ? const SizedBox.shrink()
+                                : ListView.separated(
+                                    padding: EdgeInsets.zero,
+                                    physics: const ClampingScrollPhysics(),
+                                    cacheExtent: rowHeight * (rowsVisible + 2),
+                                    itemCount: sceneItems.length,
+                                    separatorBuilder: (context, index) => Divider(
+                                      height: 1,
+                                      color: const Color(0xFFE3DED8).withOpacity(0.6),
                                     ),
+                                    itemBuilder: (context, index) {
+                                      final item   = sceneItems[index];
+                                      final key    = item['key'] as String;
+                                      final label  = item['label'] as String;
+                                      final count  = _counts[key];
+                                      final active = selectedSceneKey == key;
+                                      final isVisible = index < _revealedCount;
+
+                                      return AnimatedOpacity(
+                                        opacity: isVisible ? 1 : 0,
+                                        duration: const Duration(milliseconds: 320),
+                                        child: AnimatedSlide(
+                                          offset: isVisible ? Offset.zero : const Offset(0, 0.12),
+                                          duration: const Duration(milliseconds: 320),
+                                          curve: Curves.easeOut,
+                                          child: Material(
+                                            color: active ? const Color(0xFFEAE6E1).withOpacity(0.35) : Colors.transparent,
+                                            child: InkWell(
+                                              onTap: () => _onSceneTap(key),
+                                              splashColor: Colors.transparent,
+                                              highlightColor: Colors.transparent,
+                                              child: SizedBox(
+                                                height: 58,
+                                                child: Padding(
+                                                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                                                  child: Column(
+                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                    children: [
+                                                      Text(
+                                                        label,
+                                                        style: _menuTextStyle(context),
+                                                        maxLines: 1,
+                                                        overflow: TextOverflow.ellipsis,
+                                                      ),
+                                                      const SizedBox(height: 2),
+                                                      if (count == null)
+                                                        const SizedBox(
+                                                          height: 12,
+                                                          width: 12,
+                                                          child: CircularProgressIndicator(strokeWidth: 2),
+                                                        )
+                                                      else
+                                                        Text(
+                                                          '($count)',
+                                                          style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey[600]),
+                                                        ),
+                                                    ],
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      );
+                                    },
                                   ),
-                                );
-                              },
-                            ),
                           ),
                         ),
-                      ).animate().fade(duration: 300.ms).slideX(begin: 0.05),
+                      ),
                       const SizedBox(height: bottomGap),
 
                       const SizedBox(height: 12),

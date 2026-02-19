@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
@@ -18,25 +17,23 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  int _dotIndex = 0;
-  late List<String> _loadingDots;
-  late Timer _timer;
+  void _startPostNavigationInit() {
+    Future<void>.delayed(const Duration(milliseconds: 100), () async {
+      try {
+        Purchases.setDebugLogsEnabled(true);
+        await Purchases.configure(
+          PurchasesConfiguration('appl_dEZMvMgsqmnwhWGCcICYJlBjgwe'),
+        );
+        await IdleService.ensureInitialized();
+      } catch (e) {
+        debugPrint('⚠️ Post-navigation init ignored: $e');
+      }
+    });
+  }
 
   @override
   void initState() {
     super.initState();
-    // ドットアニメーションの初期化
-    _loadingDots = ['.', '..', '...'];
-    _timer = Timer.periodic(
-      const Duration(milliseconds: 500),
-      (timer) {
-        if (!mounted) return;
-        setState(() {
-          _dotIndex = (_dotIndex + 1) % _loadingDots.length;
-        });
-      },
-    );
-
     // アプリ初期化と画面遷移を開始
     _initializeApp();
   }
@@ -52,19 +49,18 @@ class _SplashScreenState extends State<SplashScreen> {
       // ① 匿名サインイン＋Firestore 書き込み
       await AuthService.signInAnonymouslyIfNeeded(force: isTestReset);
 
-
-
-
-      // 2) RevenueCat 設定
-      Purchases.setDebugLogsEnabled(true);
-      await Purchases.configure(
-        PurchasesConfiguration('appl_dEZMvMgsqmnwhWGCcICYJlBjgwe'),
+      // 2) 次画面の背景を先読みして遷移時の引っかかりを軽減
+      final dpr = MediaQuery.of(context).devicePixelRatio;
+      final w = (MediaQuery.of(context).size.width * dpr).round();
+      await precacheImage(
+        ResizeImage(
+          const AssetImage('assets/images/characters/tumugi_menu.png'),
+          width: w,
+        ),
+        context,
       );
 
-      // 3) IdleService 初期化
-      await IdleService.ensureInitialized();
-
-      // 4) 最低表示時間を確保
+      // 3) 最低表示時間を確保
       await Future.delayed(const Duration(seconds: 2));
     } catch (e) {
       debugPrint('⚠️ スプラッシュ初期化で例外を無視: $e');
@@ -84,6 +80,7 @@ class _SplashScreenState extends State<SplashScreen> {
           builder: (_) => LanguageSelectionScreen(),
         ),
       );
+      _startPostNavigationInit();
     } else if (savedTarget == null) {
       Navigator.pushReplacement(
         context,
@@ -91,6 +88,7 @@ class _SplashScreenState extends State<SplashScreen> {
           builder: (_) => const TargetLanguageSelectionScreen(),
         ),
       );
+      _startPostNavigationInit();
     } else if (savedName == null || savedName.isEmpty) {
       Navigator.pushReplacement(
         context,
@@ -98,6 +96,7 @@ class _SplashScreenState extends State<SplashScreen> {
           builder: (_) => const UserNameScreen(isOnboarding: true),
         ),
       );
+      _startPostNavigationInit();
     } else {
       Navigator.pushReplacement(
         context,
@@ -105,47 +104,25 @@ class _SplashScreenState extends State<SplashScreen> {
           builder: (_) => CategorySelectionScreen(),
         ),
       );
+      _startPostNavigationInit();
     }
   }
 
   @override
   void dispose() {
-    _timer.cancel();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    final screenWidth = MediaQuery.of(context).size.width;
-
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Center(
-            child: Image.asset(
-              'assets/images/splash_logo.png',
-              width: screenWidth * 0.9,
-              fit: BoxFit.contain,
-            ),
-          ),
-          const SizedBox(height: 20),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text(
-                'Your Kawaii Trainer is loading',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
-              ),
-              const SizedBox(width: 4),
-              Text(
-                _loadingDots[_dotIndex],
-                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
-              ),
-            ],
-          ),
-        ],
+      body: Center(
+        child: Image.asset(
+          'assets/images/characters/tumugi_splash.png',
+          width: MediaQuery.of(context).size.width * 0.9,
+          fit: BoxFit.contain,
+        ),
       ),
     );
   }
