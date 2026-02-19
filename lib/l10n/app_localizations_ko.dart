@@ -216,6 +216,12 @@ class AppLocalizationsKo extends AppLocalizations {
   String get sceneTrial => '무료 미리보기';
 
   @override
+  String get todaysSpecialTitle => '오늘의 추천';
+
+  @override
+  String get freePreviewSubtitle => '무료 미리보기';
+
+  @override
   String get lockedMessage => '이 문제는 구독자만 이용할 수 있습니다。';
 
   @override

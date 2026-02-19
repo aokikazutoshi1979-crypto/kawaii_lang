@@ -222,6 +222,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get sceneTrial => 'Free Preview';
 
   @override
+  String get todaysSpecialTitle => 'Today’s Special';
+
+  @override
+  String get freePreviewSubtitle => 'Free Preview';
+
+  @override
   String get lockedMessage => 'This question is for subscribers only.';
 
   @override

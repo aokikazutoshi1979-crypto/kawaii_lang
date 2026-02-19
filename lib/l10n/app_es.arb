@@ -86,6 +86,8 @@
   "errorSessionMismatch": "Se ha iniciado sesión en otro dispositivo. Por favor, vuelva a iniciar sesión.",
   "errorPunctuationFailed": "⚠️ No se pudo recuperar la frase con puntuación.",
   "sceneTrial": "Vista previa gratuita",
+  "todaysSpecialTitle": "Recomendación de hoy",
+  "freePreviewSubtitle": "Vista previa gratis",
   "lockedMessage": "Disponible al suscribirse al plan.",
   "resetPassword": "Restablecer contraseña",
   "enterEmailForReset": "Por favor, ingrese su correo electrónico para restablecer la contraseña.",

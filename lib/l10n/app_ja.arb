@@ -86,6 +86,8 @@
   "errorSessionMismatch": "他の端末でログインされました。再ログインしてください。",
   "errorPunctuationFailed": "⚠️ 句読点付きの文が取得できませんでした。",
   "sceneTrial": "無料プレビュー",
+  "todaysSpecialTitle": "本日のおすすめ",
+  "freePreviewSubtitle": "無料プレビュー",
   "lockedMessage": "プラン加入でご利用いただけます。",
   "resetPassword": "パスワードをリセット",
   "enterEmailForReset": "パスワードをリセットするためにメールアドレスを入力してください。",

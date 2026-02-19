@@ -497,6 +497,18 @@ abstract class AppLocalizations {
   /// **'無料プレビュー'**
   String get sceneTrial;
 
+  /// No description provided for @todaysSpecialTitle.
+  ///
+  /// In ja, this message translates to:
+  /// **'本日のおすすめ'**
+  String get todaysSpecialTitle;
+
+  /// No description provided for @freePreviewSubtitle.
+  ///
+  /// In ja, this message translates to:
+  /// **'無料プレビュー'**
+  String get freePreviewSubtitle;
+
   /// ロック中アラートの本文
   ///
   /// In ja, this message translates to:

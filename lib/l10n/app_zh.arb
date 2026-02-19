@@ -85,6 +85,8 @@
   "errorSessionMismatch": "您已从其他设备登录。请重新登录。",
   "errorPunctuationFailed": "⚠️ 无法检索带标点的句子。",
   "sceneTrial": "免费预览",
+  "todaysSpecialTitle": "今日推荐",
+  "freePreviewSubtitle": "免费预览",
   "lockedMessage": "可供订阅该计划。",
   "resetPassword": "重设密码",
   "enterEmailForReset": "请输入电子邮件地址以重设密码。",

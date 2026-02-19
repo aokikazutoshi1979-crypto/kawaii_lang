@@ -214,6 +214,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get sceneTrial => '免费预览';
 
   @override
+  String get todaysSpecialTitle => '今日推荐';
+
+  @override
+  String get freePreviewSubtitle => '免费预览';
+
+  @override
   String get lockedMessage => '此期仅供订阅者阅读。';
 
   @override
@@ -806,6 +812,12 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get sceneTrial => '免費預覽';
+
+  @override
+  String get todaysSpecialTitle => '今日推薦';
+
+  @override
+  String get freePreviewSubtitle => '免費預覽';
 
   @override
   String get lockedMessage => '此內容僅供訂閱者閱讀。';

@@ -221,6 +221,12 @@ class AppLocalizationsVi extends AppLocalizations {
   String get sceneTrial => 'Xem trước miễn phí';
 
   @override
+  String get todaysSpecialTitle => 'Gợi ý hôm nay';
+
+  @override
+  String get freePreviewSubtitle => 'Xem trước miễn phí';
+
+  @override
   String get lockedMessage => 'Câu hỏi này chỉ dành cho người đăng ký.';
 
   @override

@@ -86,6 +86,8 @@
   "errorSessionMismatch": "You have been logged in from another device. Please log in again.",
   "errorPunctuationFailed": "⚠️ Failed to retrieve the punctuated sentence.",
   "sceneTrial": "Free Preview",
+  "todaysSpecialTitle": "Today’s Special",
+  "freePreviewSubtitle": "Free Preview",
   "lockedMessage": "Available for subscription to the plan.",
   "resetPassword": "Reset Password",
   "enterEmailForReset": "Enter your email address to reset your password.",

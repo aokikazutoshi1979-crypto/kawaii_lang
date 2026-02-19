@@ -86,6 +86,8 @@
   "errorSessionMismatch": "Bạn đã đăng nhập từ thiết bị khác. Vui lòng đăng nhập lại.",
   "errorPunctuationFailed": "⚠️ Không thể lấy câu có dấu câu.",
   "sceneTrial": "Xem trước miễn phí",
+  "todaysSpecialTitle": "Gợi ý hôm nay",
+  "freePreviewSubtitle": "Xem trước miễn phí",
   "lockedMessage": "Có thể sử dụng khi đăng ký gói.",
   "resetPassword": "Đặt lại mật khẩu",
   "enterEmailForReset": "Vui lòng nhập địa chỉ email để đặt lại mật khẩu.",

@@ -86,6 +86,8 @@
   "errorSessionMismatch": "Es wurde eine Anmeldung von einem anderen Gerät festgestellt. Bitte melden Sie sich erneut an.",
   "errorPunctuationFailed": "⚠️ Satz mit Zeichensetzung konnte nicht abgerufen werden.",
   "sceneTrial": "Kostenlose Vorschau",
+  "todaysSpecialTitle": "Heutige Empfehlung",
+  "freePreviewSubtitle": "Kostenlose Vorschau",
   "lockedMessage": "Verfügbar mit Abonnement.",
   "resetPassword": "Passwort zurücksetzen",
   "enterEmailForReset": "Bitte geben Sie Ihre E-Mail-Adresse ein, um Ihr Passwort zurückzusetzen.",

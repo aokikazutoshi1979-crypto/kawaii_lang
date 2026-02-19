@@ -371,13 +371,15 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
     final sceneItems = [
       {
         'key': 'trial',
-        'label': "Today's Special (1 min)",
+        'label': loc.todaysSpecialTitle,
+        'subtitle': loc.freePreviewSubtitle,
       },
       ..._allScenes
           .where((scene) => scene.id != 'trial')
           .map((scene) => {
                 'key': scene.id,                                // ex. "trial","travel"...
                 'label': scene.label[loc.localeName] ?? scene.id, // ロケール対応ラベル
+                'subtitle': null,
               }),
     ];
 
@@ -538,6 +540,7 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                                       final item   = sceneItems[index];
                                       final key    = item['key'] as String;
                                       final label  = item['label'] as String;
+                                      final subtitle = item['subtitle'] as String?;
                                       final count  = _counts[key];
                                       final active = selectedSceneKey == key;
                                     return Material(
@@ -568,7 +571,17 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                                                       overflow: TextOverflow.ellipsis,
                                                     ),
                                                     const SizedBox(height: 2),
-                                                    if (count == null)
+                                                    if (subtitle != null)
+                                                      Text(
+                                                        subtitle,
+                                                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                                                          color: Colors.grey[700],
+                                                          fontWeight: FontWeight.w600,
+                                                        ),
+                                                        maxLines: 1,
+                                                        overflow: TextOverflow.ellipsis,
+                                                      )
+                                                    else if (count == null)
                                                       const SizedBox(
                                                         height: 12,
                                                         width: 12,

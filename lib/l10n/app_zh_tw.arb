@@ -85,6 +85,8 @@
   "errorSessionMismatch": "您已從其他裝置登入。請重新登入。",
   "errorPunctuationFailed": "⚠️ 無法檢索帶標點的句子。",
   "sceneTrial": "免費預覽",
+  "todaysSpecialTitle": "今日推薦",
+  "freePreviewSubtitle": "免費預覽",
   "lockedMessage": "可供訂閱該方案。",
   "resetPassword": "重設密碼",
   "enterEmailForReset": "請輸入電子郵件地址以重設密碼。",

@@ -86,6 +86,8 @@
   "errorSessionMismatch": "Anda telah masuk dari perangkat lain. Silakan masuk kembali.",
   "errorPunctuationFailed": "⚠️ Gagal mengambil kalimat dengan tanda baca.",
   "sceneTrial": "Pratinjau gratis",
+  "todaysSpecialTitle": "Rekomendasi hari ini",
+  "freePreviewSubtitle": "Pratinjau gratis",
   "lockedMessage": "Tersedia dengan berlangganan paket.",
   "resetPassword": "Atur ulang kata sandi",
   "enterEmailForReset": "Silakan masukkan alamat email untuk mengatur ulang kata sandi.",

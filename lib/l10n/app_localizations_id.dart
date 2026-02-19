@@ -222,6 +222,12 @@ class AppLocalizationsId extends AppLocalizations {
   String get sceneTrial => 'Pratinjau gratis';
 
   @override
+  String get todaysSpecialTitle => 'Rekomendasi hari ini';
+
+  @override
+  String get freePreviewSubtitle => 'Pratinjau gratis';
+
+  @override
   String get lockedMessage => 'Pertanyaan ini hanya tersedia bagi pelanggan.';
 
   @override

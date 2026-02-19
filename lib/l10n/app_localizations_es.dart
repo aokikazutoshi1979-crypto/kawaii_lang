@@ -223,6 +223,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get sceneTrial => 'Vista previa gratuita';
 
   @override
+  String get todaysSpecialTitle => 'Recomendación de hoy';
+
+  @override
+  String get freePreviewSubtitle => 'Vista previa gratis';
+
+  @override
   String get lockedMessage =>
       'Este ejercicio solo está disponible para suscriptores.';
 

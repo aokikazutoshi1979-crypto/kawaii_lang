@@ -115,6 +115,7 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
   String _sceneLabel(String scene, AppLocalizations loc) {
     switch (scene) {
       case 'trial': return loc.sceneTrial;
+      case 'todays_special': return loc.todaysSpecialTitle;
       case 'vocabulary': return loc.sceneVocabulary;
       case 'greeting': return loc.sceneGreeting;
       case 'travel': return loc.sceneTravel;
@@ -304,11 +305,20 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
     final text = parts.join(' • ');
     return Padding(
       padding: const EdgeInsets.only(top: 6),
-      child: Text(
-        text,
-        style: TextStyle(fontSize: 11, color: Colors.grey.shade600),
-        maxLines: 1,
-        overflow: TextOverflow.ellipsis,
+      child: Align(
+        alignment: Alignment.center,
+        child: FractionallySizedBox(
+          widthFactor: 0.75,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8),
+            child: Text(
+              text,
+              style: const TextStyle(fontSize: 11, color: Colors.white),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
+        ),
       ),
     );
   }
@@ -687,7 +697,7 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
     final bool hasSub = hasSubOnDevice;
     final showSubscribeButton = !hasSub;
     // トライアルシーンかどうか
-    final isTrial = widget.selectedScene == 'trial';
+    final isTrial = widget.selectedScene == 'trial' || widget.selectedScene == 'todays_special';
     // トライアル以外かつ未加入のときだけロック
     final locked = !isTrial && !hasSub;
     // ---------------------------------------
@@ -718,7 +728,6 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
 
     final topInset = MediaQuery.of(context).padding.top + kToolbarHeight;
     final canPop = Navigator.of(context).canPop();
-    final titleTopPadding = 30.0;
     final baseTitleSize = Theme.of(context).textTheme.titleLarge?.fontSize ?? 20.0;
     final freePreviewTitleSize = baseTitleSize * 1.2;
     return Scaffold(
@@ -755,15 +764,10 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                 ),
               )
             : null,
-        title: isTrial
-            ? Padding(
-                padding: const EdgeInsets.only(right: 12),
-                child: _buildSearchRow(loc, showFilterButton: true),
-              )
-            : Padding(
-                padding: EdgeInsets.only(top: titleTopPadding),
-                child: Text(_sceneLabel(widget.selectedScene, loc)),
-              ),
+        title: Padding(
+          padding: const EdgeInsets.only(right: 12),
+          child: _buildSearchRow(loc, showFilterButton: true),
+        ),
       ),
       body: Stack(
         fit: StackFit.expand,
@@ -785,12 +789,31 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
               child: ListView(
                 padding: EdgeInsets.zero,
                 children: [
-                  if (isTrial)
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        if (isTrial) ...[
+                          Text(
+                            loc.todaysSpecialTitle,
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: freePreviewTitleSize,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Text(
+                            loc.freePreviewSubtitle,
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Colors.white.withOpacity(0.78),
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ] else ...[
                           Text(
                             _sceneLabel(widget.selectedScene, loc),
                             textAlign: TextAlign.center,
@@ -800,36 +823,10 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Text(
-                            loc.questionListGuide,
-                            textAlign: TextAlign.center,
-                            style: const TextStyle(
-                              fontSize: 12,
-                              color: Colors.white,
-                            ),
-                          ),
                         ],
-                      ),
+                      ],
                     ),
-                  if (showSubscribeButton && !isTrial)
-                    ListTile(
-                      leading: SizedBox(
-                        width: 60,
-                        height: 60,
-                        child: Image.asset(
-                          'assets/images/icon/basic_plan002.png',
-                          fit: BoxFit.contain,
-                        ),
-                      ),
-                      title: Text(loc.subscriptionManageTitle),
-                      trailing: const Icon(Icons.chevron_right),
-                      onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(builder: (_) => const SubscriptionScreen()),
-                        );
-                      },
-                    ),
-                  if (!isTrial) const Divider(height: 32),
+                  ),
                   if (QuizModeToggleConfig.showInQuestionList)
                     ModeToggleBar(
                       value: _mode,
@@ -838,112 +835,9 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                     ),
 
                   // ▼▼ ここから フィルタ ▼▼
-                  if (_availableSubScenes.isNotEmpty || isTrial) ...[
-                    const SizedBox(height: 12),
-                    if (isTrial) ...[
-                      if (_buildCompactFilterHint(loc) != null) _buildCompactFilterHint(loc)!,
-                      const SizedBox(height: 8),
-                    ] else ...[
-                      _buildSearchRow(loc, showFilterButton: false),
-                      const SizedBox(height: 10),
-                      Row(
-                        children: [
-                          Text(
-                            loc.filterLabel,
-                            style: TextStyle(fontSize: 13, color: Colors.grey.shade700),
-                          ),
-                          const Spacer(),
-                          Text(
-                            _filtered.length == questions.length
-                                ? '${questions.length}問'
-                                : '${questions.length}問（絞り込み後 ${_filtered.length}問）',
-                            style: TextStyle(fontSize: 12, color: Colors.grey.shade600),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 6),
-                      Text(
-                        loc.level,
-                        style: TextStyle(fontSize: 12, color: Colors.grey.shade700),
-                      ),
-                      const SizedBox(height: 6),
-                      SingleChildScrollView(
-                        scrollDirection: Axis.horizontal,
-                        child: Row(
-                          children: [
-                            _buildFilterChip(
-                              label: loc.subsceneAll,
-                              selected: _selectedLevel == 'all',
-                              onSelected: () {
-                                _selectedLevel = 'all';
-                                _applyFilter();
-                              },
-                            ),
-                            _buildFilterChip(
-                              label: loc.levelStarter,
-                              selected: _selectedLevel == 'starter',
-                              onSelected: () {
-                                _selectedLevel = 'starter';
-                                _applyFilter();
-                              },
-                            ),
-                            _buildFilterChip(
-                              label: loc.levelBeginner,
-                              selected: _selectedLevel == 'beginner',
-                              onSelected: () {
-                                _selectedLevel = 'beginner';
-                                _applyFilter();
-                              },
-                            ),
-                            _buildFilterChip(
-                              label: loc.levelIntermediate,
-                              selected: _selectedLevel == 'intermediate',
-                              onSelected: () {
-                                _selectedLevel = 'intermediate';
-                                _applyFilter();
-                              },
-                            ),
-                            _buildFilterChip(
-                              label: loc.levelAdvanced,
-                              selected: _selectedLevel == 'advanced',
-                              onSelected: () {
-                                _selectedLevel = 'advanced';
-                                _applyFilter();
-                              },
-                            ),
-                          ],
-                        ),
-                      ),
-                      const SizedBox(height: 10),
-                      SingleChildScrollView(
-                        scrollDirection: Axis.horizontal,
-                        child: Row(
-                          children: [
-                            _buildFilterChip(
-                              label: loc.subsceneAll,
-                              selected: _selectedSubScene == null,
-                              onSelected: () {
-                                _selectedSubScene = null;
-                                _applyFilter();
-                              },
-                            ),
-                            ..._availableSubScenes.map((key) {
-                              final selected = _selectedSubScene == key;
-                              return _buildFilterChip(
-                                label: _subSceneLabel(key, loc),
-                                selected: selected,
-                                onSelected: () {
-                                  _selectedSubScene = key;
-                                  _applyFilter();
-                                },
-                              );
-                            }),
-                          ],
-                        ),
-                      ),
-                      const SizedBox(height: 8),
-                    ],
-                  ],
+                  const SizedBox(height: 12),
+                  if (_buildCompactFilterHint(loc) != null) _buildCompactFilterHint(loc)!,
+                  const SizedBox(height: 8),
                   // ▲▲ ここまで フィルタ ▲▲
 
                   Padding(
@@ -964,18 +858,6 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                           padding: const EdgeInsets.symmetric(vertical: 6),
                           child: Column(
                             children: [
-                              if (entry.key == 0 && !isTrial)
-                                Padding(
-                                  padding: const EdgeInsets.only(bottom: 6),
-                                  child: Text(
-                                    loc.questionListGuide,
-                                    style: const TextStyle(
-                                      fontSize: 12,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ),
                               Align(
                                 alignment: Alignment.center,
                                 child: FractionallySizedBox(
@@ -1049,6 +931,55 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
               ),
             ),
           ),
+          if (showSubscribeButton && !isTrial)
+            Positioned(
+              left: 16,
+              right: 16,
+              bottom: 16,
+              child: SafeArea(
+                top: false,
+                child: InkWell(
+                  borderRadius: BorderRadius.circular(14),
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: (_) => const SubscriptionScreen()),
+                    );
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+                    decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.45),
+                      borderRadius: BorderRadius.circular(14),
+                      border: Border.all(color: Colors.white.withOpacity(0.35)),
+                    ),
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          width: 44,
+                          height: 44,
+                          child: Image.asset(
+                            'assets/images/icon/basic_plan002.png',
+                            fit: BoxFit.contain,
+                          ),
+                        ),
+                        const SizedBox(width: 10),
+                        Expanded(
+                          child: Text(
+                            loc.subscriptionManageTitle,
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
+                        ),
+                        const Icon(Icons.chevron_right, color: Colors.white),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
         ],
       ),
     );

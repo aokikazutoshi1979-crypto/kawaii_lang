@@ -86,6 +86,8 @@
   "errorSessionMismatch": "Vous avez été connecté(e) depuis un autre appareil. Veuillez vous reconnecter.",
   "errorPunctuationFailed": "⚠️ Impossible de récupérer la phrase avec la ponctuation.",
   "sceneTrial": "Aperçu gratuit",
+  "todaysSpecialTitle": "La recommandation du jour",
+  "freePreviewSubtitle": "Aperçu gratuit",
   "lockedMessage": "Disponible avec un abonnement au forfait.",
   "resetPassword": "Réinitialiser le mot de passe",
   "enterEmailForReset": "Veuillez entrer votre adresse e-mail pour réinitialiser le mot de passe.",

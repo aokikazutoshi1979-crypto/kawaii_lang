@@ -216,6 +216,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get sceneTrial => '無料プレビュー';
 
   @override
+  String get todaysSpecialTitle => '本日のおすすめ';
+
+  @override
+  String get freePreviewSubtitle => '無料プレビュー';
+
+  @override
   String get lockedMessage => 'この問題はサブスクリプション加入者のみ利用できます。';
 
   @override
