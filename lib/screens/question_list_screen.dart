@@ -717,13 +717,53 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
     }
 
     final topInset = MediaQuery.of(context).padding.top + kToolbarHeight;
+    final canPop = Navigator.of(context).canPop();
+    final titleTopPadding = 30.0;
+    final baseTitleSize = Theme.of(context).textTheme.titleLarge?.fontSize ?? 20.0;
+    final freePreviewTitleSize = baseTitleSize * 1.2;
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         backgroundColor: Colors.transparent,
         elevation: 0,
         scrolledUnderElevation: 0,
-        title: Text(_sceneLabel(widget.selectedScene, loc)),
+        leading: canPop
+            ? Padding(
+                padding: const EdgeInsets.only(left: 8),
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.92),
+                    shape: BoxShape.circle,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.18),
+                        blurRadius: 8,
+                        offset: const Offset(0, 3),
+                      ),
+                    ],
+                  ),
+                  child: IconButton(
+                    icon: const Icon(
+                      Icons.arrow_back_ios_new_rounded,
+                      size: 20,
+                      color: Colors.black87,
+                    ),
+                    tooltip: MaterialLocalizations.of(context).backButtonTooltip,
+                    onPressed: () => Navigator.of(context).maybePop(),
+                  ),
+                ),
+              )
+            : null,
+        title: isTrial
+            ? Padding(
+                padding: const EdgeInsets.only(right: 12),
+                child: _buildSearchRow(loc, showFilterButton: true),
+              )
+            : Padding(
+                padding: EdgeInsets.only(top: titleTopPadding),
+                child: Text(_sceneLabel(widget.selectedScene, loc)),
+              ),
       ),
       body: Stack(
         fit: StackFit.expand,
@@ -739,8 +779,38 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
           ),
           Padding(
             padding: EdgeInsets.only(top: topInset),
-            child: ListView(
-              children: [
+            child: MediaQuery.removePadding(
+              context: context,
+              removeTop: true,
+              child: ListView(
+                padding: EdgeInsets.zero,
+                children: [
+            if (isTrial)
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Text(
+                      _sceneLabel(widget.selectedScene, loc),
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: freePreviewTitleSize,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Text(
+                      loc.questionListGuide,
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                        fontSize: 12,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             // 新コード：サブスクリプション画面へ遷移するタイルに変更
             if (showSubscribeButton && !isTrial)
               ListTile(
@@ -760,7 +830,7 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                   );
                 },
               ),
-            const Divider(height: 32),
+            if (!isTrial) const Divider(height: 32),
 
             if (QuizModeToggleConfig.showInQuestionList)
               ModeToggleBar(
@@ -773,7 +843,6 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
           if (_availableSubScenes.isNotEmpty || isTrial) ...[
             const SizedBox(height: 12),
             if (isTrial) ...[
-              _buildSearchRow(loc, showFilterButton: true),
               if (_buildCompactFilterHint(loc) != null) _buildCompactFilterHint(loc)!,
               const SizedBox(height: 8),
             ] else ...[
@@ -903,7 +972,7 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                   padding: const EdgeInsets.symmetric(vertical: 6),
                   child: Column(
                     children: [
-                      if (entry.key == 0)
+                      if (entry.key == 0 && !isTrial)
                         Padding(
                           padding: const EdgeInsets.only(bottom: 6),
                           child: Text(
@@ -1007,11 +1076,12 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
               }).toList(),
             ),
           ),
-                ],
-              ),
-            ),
-          ],
-        ),
+        ],
+      ),
+    ),
+  ),
+  ],
+),
     );
   }
 }
