@@ -785,303 +785,272 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
               child: ListView(
                 padding: EdgeInsets.zero,
                 children: [
-            if (isTrial)
-              Padding(
-                padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    Text(
-                      _sceneLabel(widget.selectedScene, loc),
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: freePreviewTitleSize,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    Text(
-                      loc.questionListGuide,
-                      textAlign: TextAlign.center,
-                      style: const TextStyle(
-                        fontSize: 12,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            // 新コード：サブスクリプション画面へ遷移するタイルに変更
-            if (showSubscribeButton && !isTrial)
-              ListTile(
-                leading: SizedBox(
-                  width: 60,
-                  height: 60,
-                  child: Image.asset(
-                    'assets/images/icon/basic_plan002.png',
-                    fit: BoxFit.contain,
-                  ),
-                ),
-                title: Text(loc.subscriptionManageTitle),
-                trailing: const Icon(Icons.chevron_right),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(builder: (_) => const SubscriptionScreen()),
-                  );
-                },
-              ),
-            if (!isTrial) const Divider(height: 32),
-
-            if (QuizModeToggleConfig.showInQuestionList)
-              ModeToggleBar(
-                value: _mode,
-                onChanged: (m) => setState(() => _mode = m),
-                compact: true,
-              ),
-
-          // ▼▼ ここから フィルタ ▼▼
-          if (_availableSubScenes.isNotEmpty || isTrial) ...[
-            const SizedBox(height: 12),
-            if (isTrial) ...[
-              if (_buildCompactFilterHint(loc) != null) _buildCompactFilterHint(loc)!,
-              const SizedBox(height: 8),
-            ] else ...[
-              _buildSearchRow(loc, showFilterButton: false),
-              const SizedBox(height: 10),
-              Row(
-                children: [
-                  Text(
-                    loc.filterLabel,
-                    style: TextStyle(fontSize: 13, color: Colors.grey.shade700),
-                  ),
-                  const Spacer(),
-                  Text(
-                    _filtered.length == questions.length
-                        ? '${questions.length}問'
-                        : '${questions.length}問（絞り込み後 ${_filtered.length}問）',
-                    style: TextStyle(fontSize: 12, color: Colors.grey.shade600),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 6),
-              Text(
-                loc.level,
-                style: TextStyle(fontSize: 12, color: Colors.grey.shade700),
-              ),
-              const SizedBox(height: 6),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    _buildFilterChip(
-                      label: loc.subsceneAll,
-                      selected: _selectedLevel == 'all',
-                      onSelected: () {
-                        _selectedLevel = 'all';
-                        _applyFilter();
-                      },
-                    ),
-                    _buildFilterChip(
-                      label: loc.levelStarter,
-                      selected: _selectedLevel == 'starter',
-                      onSelected: () {
-                        _selectedLevel = 'starter';
-                        _applyFilter();
-                      },
-                    ),
-                    _buildFilterChip(
-                      label: loc.levelBeginner,
-                      selected: _selectedLevel == 'beginner',
-                      onSelected: () {
-                        _selectedLevel = 'beginner';
-                        _applyFilter();
-                      },
-                    ),
-                    _buildFilterChip(
-                      label: loc.levelIntermediate,
-                      selected: _selectedLevel == 'intermediate',
-                      onSelected: () {
-                        _selectedLevel = 'intermediate';
-                        _applyFilter();
-                      },
-                    ),
-                    _buildFilterChip(
-                      label: loc.levelAdvanced,
-                      selected: _selectedLevel == 'advanced',
-                      onSelected: () {
-                        _selectedLevel = 'advanced';
-                        _applyFilter();
-                      },
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 10),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    _buildFilterChip(
-                      label: loc.subsceneAll,
-                      selected: _selectedSubScene == null,
-                      onSelected: () {
-                        _selectedSubScene = null;
-                        _applyFilter();
-                      },
-                    ),
-                    ..._availableSubScenes.map((key) {
-                      final selected = _selectedSubScene == key;
-                      return _buildFilterChip(
-                        label: _subSceneLabel(key, loc),
-                        selected: selected,
-                        onSelected: () {
-                          _selectedSubScene = key;
-                          _applyFilter();
-                        },
-                      );
-                    }),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 8),
-            ],
-          ],
-          // ▲▲ ここまで フィルタ ▲▲
-
-          Padding(
-            padding: const EdgeInsets.all(16),
-            child: Column(
-              children: _filtered.asMap().entries.map((entry) {
-                final idxFiltered = entry.key;
-                final q = entry.value;
-
-                // 元の全体リストでのインデックスを特定
-                final originalIndex = questions.indexWhere((qq) => qq.id == q.id);
-                final idx = originalIndex == -1 ? idxFiltered : originalIndex;
-
-                final questionId = q.id; // ★ 追加
-                final text = q.getText(nativeLang);
-                final done = _clearedSet.contains(questionId);
-
-                // ✅ 判定
-                // final displayText = _clearedSet.contains(questionId)
-                //     ? '✅ $text'
-                //     : text;
-
-                return Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 6),
-                  child: Column(
-                    children: [
-                      if (entry.key == 0 && !isTrial)
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 6),
-                          child: Text(
-                            loc.questionListGuide,
+                  if (isTrial)
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text(
+                            _sceneLabel(widget.selectedScene, loc),
+                            textAlign: TextAlign.center,
                             style: TextStyle(
-                              fontSize: 12,
-                              color: Colors.grey.shade600,
+                              color: Colors.white,
+                              fontSize: freePreviewTitleSize,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
-                        ),
-                      Stack(
-                        children: [
-                          Card(
-                            elevation: 0,
-                            color: locked ? Colors.grey[100] : Colors.white,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(12),
-                              side: BorderSide(color: Colors.grey.shade200),
+                          Text(
+                            loc.questionListGuide,
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(
+                              fontSize: 12,
+                              color: Colors.white,
                             ),
-                            child: InkWell(
-                              borderRadius: BorderRadius.circular(12),
-                              onTap: locked ? null : () => _onQuestionTap(q, idx),
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 12),
-                                child: Row(
-                                  children: [
-                                    Expanded(
-                                      child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
+                          ),
+                        ],
+                      ),
+                    ),
+                  if (showSubscribeButton && !isTrial)
+                    ListTile(
+                      leading: SizedBox(
+                        width: 60,
+                        height: 60,
+                        child: Image.asset(
+                          'assets/images/icon/basic_plan002.png',
+                          fit: BoxFit.contain,
+                        ),
+                      ),
+                      title: Text(loc.subscriptionManageTitle),
+                      trailing: const Icon(Icons.chevron_right),
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(builder: (_) => const SubscriptionScreen()),
+                        );
+                      },
+                    ),
+                  if (!isTrial) const Divider(height: 32),
+                  if (QuizModeToggleConfig.showInQuestionList)
+                    ModeToggleBar(
+                      value: _mode,
+                      onChanged: (m) => setState(() => _mode = m),
+                      compact: true,
+                    ),
+
+                  // ▼▼ ここから フィルタ ▼▼
+                  if (_availableSubScenes.isNotEmpty || isTrial) ...[
+                    const SizedBox(height: 12),
+                    if (isTrial) ...[
+                      if (_buildCompactFilterHint(loc) != null) _buildCompactFilterHint(loc)!,
+                      const SizedBox(height: 8),
+                    ] else ...[
+                      _buildSearchRow(loc, showFilterButton: false),
+                      const SizedBox(height: 10),
+                      Row(
+                        children: [
+                          Text(
+                            loc.filterLabel,
+                            style: TextStyle(fontSize: 13, color: Colors.grey.shade700),
+                          ),
+                          const Spacer(),
+                          Text(
+                            _filtered.length == questions.length
+                                ? '${questions.length}問'
+                                : '${questions.length}問（絞り込み後 ${_filtered.length}問）',
+                            style: TextStyle(fontSize: 12, color: Colors.grey.shade600),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 6),
+                      Text(
+                        loc.level,
+                        style: TextStyle(fontSize: 12, color: Colors.grey.shade700),
+                      ),
+                      const SizedBox(height: 6),
+                      SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          children: [
+                            _buildFilterChip(
+                              label: loc.subsceneAll,
+                              selected: _selectedLevel == 'all',
+                              onSelected: () {
+                                _selectedLevel = 'all';
+                                _applyFilter();
+                              },
+                            ),
+                            _buildFilterChip(
+                              label: loc.levelStarter,
+                              selected: _selectedLevel == 'starter',
+                              onSelected: () {
+                                _selectedLevel = 'starter';
+                                _applyFilter();
+                              },
+                            ),
+                            _buildFilterChip(
+                              label: loc.levelBeginner,
+                              selected: _selectedLevel == 'beginner',
+                              onSelected: () {
+                                _selectedLevel = 'beginner';
+                                _applyFilter();
+                              },
+                            ),
+                            _buildFilterChip(
+                              label: loc.levelIntermediate,
+                              selected: _selectedLevel == 'intermediate',
+                              onSelected: () {
+                                _selectedLevel = 'intermediate';
+                                _applyFilter();
+                              },
+                            ),
+                            _buildFilterChip(
+                              label: loc.levelAdvanced,
+                              selected: _selectedLevel == 'advanced',
+                              onSelected: () {
+                                _selectedLevel = 'advanced';
+                                _applyFilter();
+                              },
+                            ),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          children: [
+                            _buildFilterChip(
+                              label: loc.subsceneAll,
+                              selected: _selectedSubScene == null,
+                              onSelected: () {
+                                _selectedSubScene = null;
+                                _applyFilter();
+                              },
+                            ),
+                            ..._availableSubScenes.map((key) {
+                              final selected = _selectedSubScene == key;
+                              return _buildFilterChip(
+                                label: _subSceneLabel(key, loc),
+                                selected: selected,
+                                onSelected: () {
+                                  _selectedSubScene = key;
+                                  _applyFilter();
+                                },
+                              );
+                            }),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                    ],
+                  ],
+                  // ▲▲ ここまで フィルタ ▲▲
+
+                  Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Column(
+                      children: _filtered.asMap().entries.map((entry) {
+                        final idxFiltered = entry.key;
+                        final q = entry.value;
+
+                        final originalIndex = questions.indexWhere((qq) => qq.id == q.id);
+                        final idx = originalIndex == -1 ? idxFiltered : originalIndex;
+
+                        final questionId = q.id;
+                        final text = q.getText(nativeLang);
+                        final done = _clearedSet.contains(questionId);
+
+                        return Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 6),
+                          child: Column(
+                            children: [
+                              if (entry.key == 0 && !isTrial)
+                                Padding(
+                                  padding: const EdgeInsets.only(bottom: 6),
+                                  child: Text(
+                                    loc.questionListGuide,
+                                    style: const TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                              Align(
+                                alignment: Alignment.center,
+                                child: FractionallySizedBox(
+                                  widthFactor: 0.75,
+                                  child: InkWell(
+                                    borderRadius: BorderRadius.circular(8),
+                                    onTap: () {
+                                      if (locked) {
+                                        final loc = AppLocalizations.of(context)!;
+                                        showDialog<void>(
+                                          context: context,
+                                          barrierDismissible: true,
+                                          builder: (context) {
+                                            return AlertDialog(
+                                              title: Text(loc.subscriptionUpsellTitle),
+                                              content: Text(loc.subscriptionUpsellMessage),
+                                            );
+                                          },
+                                        );
+                                        return;
+                                      }
+                                      _onQuestionTap(q, idx);
+                                    },
+                                    child: Padding(
+                                      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
+                                      child: Row(
                                         children: [
-                                          Text(
-                                            text,
-                                            maxLines: 2,
-                                            overflow: TextOverflow.ellipsis,
+                                          const Text(
+                                            '▶',
                                             style: TextStyle(
-                                              fontSize: 16,
-                                              color: locked ? Colors.grey : Colors.black87,
+                                              fontSize: 14,
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
                                             ),
                                           ),
-                                          const SizedBox(height: 4),
-                                          Text(
-                                            loc.tapToPractice,
-                                            style: TextStyle(
-                                              fontSize: 12,
-                                              color: Colors.grey.shade600,
+                                          const SizedBox(width: 8),
+                                          Expanded(
+                                            child: Text(
+                                              text,
+                                              maxLines: 2,
+                                              overflow: TextOverflow.ellipsis,
+                                              style: const TextStyle(
+                                                fontSize: 16,
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.bold,
+                                              ),
                                             ),
                                           ),
+                                          if (done)
+                                            const Padding(
+                                              padding: EdgeInsets.only(left: 6),
+                                              child: Icon(
+                                                Icons.task_alt_rounded,
+                                                size: 20,
+                                                color: Colors.white,
+                                              ),
+                                            ),
                                         ],
                                       ),
                                     ),
-                                    const SizedBox(width: 8),
-                                    if (locked)
-                                      const Icon(Icons.lock, color: Colors.grey)
-                                    else
-                                      const Icon(Icons.chevron_right_rounded, color: Colors.grey),
-                                    if (done)
-                                      const Padding(
-                                        padding: EdgeInsets.only(left: 6),
-                                        child: Icon(
-                                          Icons.task_alt_rounded,
-                                          size: 20,
-                                          color: Colors.green,
-                                        ),
-                                      ),
-                                  ],
+                                  ),
                                 ),
                               ),
-                            ),
+                            ],
                           ),
-
-                          // ロック時だけポップアップを表示する透明レイヤー
-                          if (locked)
-                            Positioned.fill(
-                              child: Material(
-                                color: Colors.transparent,
-                                child: InkWell(
-                                  splashColor: Colors.transparent,
-                                  highlightColor: Colors.transparent,
-                                  onTap: () {
-                                    final loc = AppLocalizations.of(context)!;
-                                    showDialog<void>(
-                                      context: context,
-                                      barrierDismissible: true, // 外側タップで閉じられる
-                                      builder: (context) {
-                                        return AlertDialog(
-                                          title: Text(loc.subscriptionUpsellTitle),
-                                          content: Text(loc.subscriptionUpsellMessage),
-                                          // actions は無し
-                                        );
-                                      },
-                                    );
-                                  },
-                                ),
-                              ),
-                            ),
-                        ],
-                      ),
-                    ],
+                        );
+                      }).toList(),
+                    ),
                   ),
-                );
-              }).toList(),
+                ],
+              ),
             ),
           ),
         ],
       ),
-    ),
-  ),
-  ],
-),
     );
   }
 }
