@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../services/speech_service.dart';
 import '../services/question_manager.dart';
-import '../widgets/scene_background_with_character.dart';
 import '../widgets/message_list.dart';
 import '../widgets/mic_area.dart';
 import 'package:kawaii_lang/l10n/app_localizations.dart';
@@ -1734,20 +1733,53 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 
+  Widget _styledBackButton(BuildContext context) {
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: Colors.white.withOpacity(0.92),
+        shape: BoxShape.circle,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.18),
+            blurRadius: 8,
+            offset: const Offset(0, 3),
+          ),
+        ],
+      ),
+      child: IconButton(
+        icon: const Icon(
+          Icons.arrow_back_ios_new_rounded,
+          size: 20,
+          color: Colors.black87,
+        ),
+        tooltip: MaterialLocalizations.of(context).backButtonTooltip,
+        onPressed: () => Navigator.of(context).maybePop(),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
     final isListening = _mode == QuizMode.listening;
+    final canPop = Navigator.of(context).canPop();
     final topInset = MediaQuery.of(context).padding.top + (isListening ? 0 : kToolbarHeight);
     return Scaffold(
       backgroundColor: const Color(0xFFFFF7F9),
       extendBodyBehindAppBar: true,
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
         scrolledUnderElevation: 0,
         toolbarHeight: isListening ? 0 : kToolbarHeight,
+        leading: (!isListening && canPop)
+            ? Padding(
+                padding: const EdgeInsets.only(left: 8),
+                child: _styledBackButton(context),
+              )
+            : null,
         title: isListening
             ? null
             : Container(
@@ -1775,15 +1807,11 @@ class _ChatScreenState extends State<ChatScreen> {
 
       body: Stack(
         children: [
-          Positioned.fill(
-            child: SceneBackgroundWithCharacter(
-              langName: widget.targetLang,
-              sceneName: widget.scene,
-            ),
-          ),
-          Positioned.fill(
-            child: Container(
-              color: const Color(0xFFFFF7F9).withOpacity(0.35),
+          const Positioned.fill(
+            child: Image(
+              image: AssetImage('assets/images/characters/tumugi_chat.png'),
+              fit: BoxFit.cover,
+              alignment: Alignment.center,
             ),
           ),
           Padding(
@@ -1913,7 +1941,7 @@ class _ChatScreenState extends State<ChatScreen> {
                         const SizedBox(height: 8),
                         Text(
                           AppLocalizations.of(context)!.checking,
-                          style: TextStyle(fontSize: 16, color: Colors.grey[700]),
+                          style: const TextStyle(fontSize: 16, color: Colors.white),
                         ),
                       ],
                     ),
@@ -1958,16 +1986,14 @@ class _ChatScreenState extends State<ChatScreen> {
               ],
             ),
           ),
-          if (isListening)
+          if (isListening && canPop)
             Positioned(
               top: 0,
               left: 0,
               child: SafeArea(
                 child: Padding(
-                  padding: const EdgeInsets.only(left: 4),
-                  child: BackButton(
-                    color: Theme.of(context).colorScheme.onSurface,
-                  ),
+                  padding: const EdgeInsets.only(left: 8),
+                  child: _styledBackButton(context),
                 ),
               ),
             ),
