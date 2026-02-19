@@ -778,7 +778,7 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: topInset),
+            padding: EdgeInsets.only(top: topInset, bottom: 180),
             child: MediaQuery.removePadding(
               context: context,
               removeTop: true,
@@ -1018,7 +1018,7 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                                               maxLines: 2,
                                               overflow: TextOverflow.ellipsis,
                                               style: const TextStyle(
-                                                fontSize: 16,
+                                                fontSize: 17.6,
                                                 color: Colors.white,
                                                 fontWeight: FontWeight.bold,
                                               ),
