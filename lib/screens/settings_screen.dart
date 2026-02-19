@@ -18,6 +18,7 @@ import 'package:purchases_flutter/purchases_flutter.dart';
 import 'subscription_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:kawaii_lang/services/subscription_state.dart';
+import 'package:kawaii_lang/services/language_catalog.dart';
 import 'profile_screen.dart';
 import 'user_name_screen.dart';
 import 'package:kawaii_lang/widgets/mode_toggle_bar.dart';
@@ -42,28 +43,47 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
   String? selectedLang;
   String? selectedTargetLang;
   String? _displayName;
+  bool _languageCatalogReady = false;
   final String _faqUrl = 'https://kawaiilang.com/faq.html';
   QuizMode _selectedMode = QuizMode.reading;
   static const String _quizModePrefKey = 'quiz_mode';
 
-  final List<Map<String, String>> languages = [
-    {'label': '日本語',                'code': 'ja'},
-    {'label': 'English',              'code': 'en'},
-    {'label': '中文(简化)',                  'code': 'zh'},
-    {'label': '台灣(繁體)',     'code': 'zh_TW'},
-    {'label': '한국어',                'code': 'ko'},
-    {'label': 'Español',              'code': 'es'},
-    {'label': 'Français',             'code': 'fr'},
-    {'label': 'Deutsch',              'code': 'de'},
-    {'label': 'Tiếng Việt',           'code': 'vi'},
-    {'label': 'Bahasa Indonesia',     'code': 'id'}
+  final List<String> _languageCodes = const [
+    'ja',
+    'en',
+    'zh',
+    'zh_TW',
+    'ko',
+    'es',
+    'fr',
+    'de',
+    'vi',
+    'id',
   ];
 
-  String _labelForLangCode(String? code) {
+  String _displayLangCode(BuildContext context) {
+    final code = selectedLang;
+    if (code != null && code.isNotEmpty) return code;
+    final locale = Localizations.localeOf(context);
+    if (locale.languageCode == 'zh' && locale.countryCode?.toUpperCase() == 'TW') {
+      return 'zh_TW';
+    }
+    return locale.languageCode;
+  }
+
+  String _labelForLangCode(String? code, BuildContext context) {
     if (code == null) return '';
-    final match = languages.where((l) => l['code'] == code);
-    if (match.isNotEmpty) return match.first['label'] ?? code;
-    return code;
+    if (!_languageCatalogReady) return code;
+    return LanguageCatalog.instance.labelFor(
+      code,
+      displayLang: _displayLangCode(context),
+    );
+  }
+
+  Future<void> _loadLanguageCatalog() async {
+    await LanguageCatalog.instance.ensureLoaded();
+    if (!mounted) return;
+    setState(() => _languageCatalogReady = true);
   }
 
   /// 外部URLをブラウザで開く
@@ -93,6 +113,7 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     _loadTargetLanguage();
     _loadDisplayName();
     _loadQuizMode();
+    _loadLanguageCatalog();
 
     // ２）RevenueCat の初期化＆オファー取得
     SubscriptionService.instance.init();
@@ -475,14 +496,14 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                 loc.languageSelectionTitle,
                 style: Theme.of(context).textTheme.titleLarge,
               ),
-              subtitle: Text(_labelForLangCode(selectedLang)),
-              children: languages.map((lang) {
+              subtitle: Text(_labelForLangCode(selectedLang, context)),
+              children: _languageCodes.map((code) {
                 return ListTile(
-                  title: Text(lang['label']!),
-                  trailing: selectedLang == lang['code']
+                  title: Text(_labelForLangCode(code, context)),
+                  trailing: selectedLang == code
                       ? const Icon(Icons.check, color: Colors.green)
                       : null,
-                  onTap: () => _saveLanguage(lang['code']!),
+                  onTap: () => _saveLanguage(code),
                 );
               }).toList(),
             ),
@@ -494,17 +515,17 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                 loc.targetLanguage,
                 style: Theme.of(context).textTheme.titleLarge,
               ),
-              subtitle: Text(_labelForLangCode(selectedTargetLang)),
+              subtitle: Text(_labelForLangCode(selectedTargetLang, context)),
               children: ((selectedLang == null)
-                      ? languages
-                      : languages.where((lang) => lang['code'] != selectedLang))
-                  .map((lang) {
+                      ? _languageCodes
+                      : _languageCodes.where((code) => code != selectedLang))
+                  .map((code) {
                 return ListTile(
-                  title: Text(lang['label']!),
-                  trailing: selectedTargetLang == lang['code']
+                  title: Text(_labelForLangCode(code, context)),
+                  trailing: selectedTargetLang == code
                       ? const Icon(Icons.check, color: Colors.green)
                       : null,
-                  onTap: () => _saveTargetLanguage(lang['code']!),
+                  onTap: () => _saveTargetLanguage(code),
                 );
               }).toList(),
             ),

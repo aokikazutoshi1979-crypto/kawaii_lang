@@ -3,8 +3,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import '../services/auth_service.dart';
 import '../services/idle_service.dart';
-import 'language_selection_screen.dart';
-import 'target_language_selection_screen.dart';
 import 'category_selection_screen.dart';
 import 'user_name_screen.dart';
 import 'package:kawaii_lang/config.dart';
@@ -17,6 +15,31 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  static const Set<String> _supportedUserLangCodes = {
+    'ja',
+    'en',
+    'zh',
+    'zh_TW',
+    'ko',
+    'es',
+    'fr',
+    'de',
+    'vi',
+    'id',
+  };
+
+  String _detectDeviceLanguageCode() {
+    final locale = WidgetsBinding.instance.platformDispatcher.locale;
+    if (locale.languageCode == 'zh' &&
+        locale.countryCode?.toUpperCase() == 'TW') {
+      return 'zh_TW';
+    }
+    if (_supportedUserLangCodes.contains(locale.languageCode)) {
+      return locale.languageCode;
+    }
+    return 'en';
+  }
+
   void _startPostNavigationInit() {
     Future<void>.delayed(const Duration(milliseconds: 100), () async {
       try {
@@ -69,27 +92,21 @@ class _SplashScreenState extends State<SplashScreen> {
 
     // 5) 次の画面へ
     final prefs = await SharedPreferences.getInstance();
-    final savedLang = prefs.getString('user_language');
-    final savedTarget = prefs.getString('target_language');
+    var savedLang = prefs.getString('user_language');
+    var savedTarget = prefs.getString('target_language');
     final savedName = prefs.getString('user_display_name')?.trim();
 
     if (savedLang == null) {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (_) => LanguageSelectionScreen(),
-        ),
-      );
-      _startPostNavigationInit();
-    } else if (savedTarget == null) {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (_) => const TargetLanguageSelectionScreen(),
-        ),
-      );
-      _startPostNavigationInit();
-    } else if (savedName == null || savedName.isEmpty) {
+      savedLang = _detectDeviceLanguageCode();
+      await prefs.setString('user_language', savedLang);
+    }
+
+    if (savedTarget == null) {
+      savedTarget = (savedLang == 'ja') ? 'en' : 'ja';
+      await prefs.setString('target_language', savedTarget);
+    }
+
+    if (savedName == null || savedName.isEmpty) {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(

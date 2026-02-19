@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:kawaii_lang/l10n/app_localizations.dart';
+import 'package:kawaii_lang/services/language_catalog.dart';
 import 'user_name_screen.dart';
 
 class TargetLanguageSelectionScreen extends StatefulWidget {
@@ -15,24 +16,50 @@ class _TargetLanguageSelectionScreenState
     extends State<TargetLanguageSelectionScreen> {
   String? selectedLang;
   String? _nativeLang;
+  bool _languageCatalogReady = false;
 
-  final List<Map<String, String>> _languages = [
-    {'label': '日本語',            'code': 'ja'},
-    {'label': 'English',          'code': 'en'},
-    {'label': '中文(简化)',        'code': 'zh'},
-    {'label': '台灣(繁體)',        'code': 'zh_TW'},
-    {'label': '한국어',            'code': 'ko'},
-    {'label': 'Español',          'code': 'es'},
-    {'label': 'Français',         'code': 'fr'},
-    {'label': 'Deutsch',          'code': 'de'},
-    {'label': 'Tiếng Việt',       'code': 'vi'},
-    {'label': 'Bahasa Indonesia', 'code': 'id'},
+  final List<String> _languageCodes = const [
+    'ja',
+    'en',
+    'zh',
+    'zh_TW',
+    'ko',
+    'es',
+    'fr',
+    'de',
+    'vi',
+    'id',
   ];
+
+  String _displayLangCode(BuildContext context) {
+    final native = _nativeLang;
+    if (native != null && native.isNotEmpty) return native;
+    final locale = Localizations.localeOf(context);
+    if (locale.languageCode == 'zh' && locale.countryCode?.toUpperCase() == 'TW') {
+      return 'zh_TW';
+    }
+    return locale.languageCode;
+  }
+
+  String _labelForLangCode(String code, BuildContext context) {
+    if (!_languageCatalogReady) return code;
+    return LanguageCatalog.instance.labelFor(
+      code,
+      displayLang: _displayLangCode(context),
+    );
+  }
+
+  Future<void> _loadLanguageCatalog() async {
+    await LanguageCatalog.instance.ensureLoaded();
+    if (!mounted) return;
+    setState(() => _languageCatalogReady = true);
+  }
 
   @override
   void initState() {
     super.initState();
     _loadInitialLanguage();
+    _loadLanguageCatalog();
   }
 
   Future<void> _loadInitialLanguage() async {
@@ -77,8 +104,8 @@ class _TargetLanguageSelectionScreenState
     final loc = AppLocalizations.of(context)!;
     final native = _nativeLang;
     final languages = native == null
-        ? _languages
-        : _languages.where((l) => l['code'] != native).toList();
+        ? _languageCodes
+        : _languageCodes.where((code) => code != native).toList();
 
     return Scaffold(
       appBar: AppBar(title: Text(loc.targetLanguage)),
@@ -91,14 +118,14 @@ class _TargetLanguageSelectionScreenState
               style: const TextStyle(fontSize: 18),
             ),
             const SizedBox(height: 16),
-            ...languages.map((lang) {
+            ...languages.map((code) {
               return Card(
                 child: ListTile(
-                  title: Text(lang['label']!),
-                  trailing: selectedLang == lang['code']
+                  title: Text(_labelForLangCode(code, context)),
+                  trailing: selectedLang == code
                       ? const Icon(Icons.check, color: Colors.green)
                       : null,
-                  onTap: () => _selectLanguage(lang['code']!),
+                  onTap: () => _selectLanguage(code),
                 ),
               );
             }).toList(),
