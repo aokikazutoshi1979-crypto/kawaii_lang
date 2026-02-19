@@ -45,8 +45,7 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
   bool _revealStarted = false;
   bool _showQuote = false;
   bool _showList = false;
-  int _revealedCount = 0;
-  Timer? _listRevealTimer;
+  bool _listVisible = false;
   @override
   void initState() {
     super.initState();
@@ -171,30 +170,15 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
     });
     Future<void>.delayed(const Duration(milliseconds: 520), () {
       if (!mounted) return;
-      setState(() => _showList = true);
-      _startListReveal();
-    });
-  }
-
-  void _startListReveal() {
-    _listRevealTimer?.cancel();
-    _revealedCount = 0;
-    _listRevealTimer = Timer.periodic(const Duration(milliseconds: 110), (timer) {
-      if (!mounted) {
-        timer.cancel();
-        return;
-      }
-      if (_revealedCount >= _allScenes.length + 1) {
-        timer.cancel();
-        return;
-      }
-      setState(() => _revealedCount += 1);
+      setState(() {
+        _showList = true;
+        _listVisible = true;
+      });
     });
   }
 
   @override
   void dispose() {
-    _listRevealTimer?.cancel();
     super.dispose();
   }
 
@@ -556,55 +540,53 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                                       final label  = item['label'] as String;
                                       final count  = _counts[key];
                                       final active = selectedSceneKey == key;
-                                      final isVisible = index < _revealedCount;
-
-                                      return AnimatedOpacity(
-                                        opacity: isVisible ? 1 : 0,
-                                        duration: const Duration(milliseconds: 320),
-                                        child: AnimatedSlide(
-                                          offset: isVisible ? Offset.zero : const Offset(0, 0.12),
-                                          duration: const Duration(milliseconds: 320),
-                                          curve: Curves.easeOut,
-                                          child: Material(
-                                            color: active ? const Color(0xFFEAE6E1).withOpacity(0.35) : Colors.transparent,
-                                            child: InkWell(
-                                              onTap: () => _onSceneTap(key),
-                                              splashColor: Colors.transparent,
-                                              highlightColor: Colors.transparent,
-                                              child: SizedBox(
-                                                height: 58,
-                                                child: Padding(
-                                                  padding: const EdgeInsets.symmetric(horizontal: 8),
-                                                  child: Column(
-                                                    mainAxisAlignment: MainAxisAlignment.center,
-                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                    children: [
+                                    return Material(
+                                      color: active ? const Color(0xFFEAE6E1).withOpacity(0.35) : Colors.transparent,
+                                      child: InkWell(
+                                        onTap: () => _onSceneTap(key),
+                                        splashColor: Colors.transparent,
+                                        highlightColor: Colors.transparent,
+                                        child: SizedBox(
+                                          height: 58,
+                                          child: Padding(
+                                            padding: const EdgeInsets.symmetric(horizontal: 8),
+                                            child: AnimatedOpacity(
+                                              opacity: _listVisible ? 1 : 0,
+                                              duration: const Duration(milliseconds: 320),
+                                              child: AnimatedSlide(
+                                                offset: _listVisible ? Offset.zero : const Offset(0, 0.12),
+                                                duration: const Duration(milliseconds: 320),
+                                                curve: Curves.easeOut,
+                                                child: Column(
+                                                  mainAxisAlignment: MainAxisAlignment.center,
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text(
+                                                      label,
+                                                      style: _menuTextStyle(context),
+                                                      maxLines: 1,
+                                                      overflow: TextOverflow.ellipsis,
+                                                    ),
+                                                    const SizedBox(height: 2),
+                                                    if (count == null)
+                                                      const SizedBox(
+                                                        height: 12,
+                                                        width: 12,
+                                                        child: CircularProgressIndicator(strokeWidth: 2),
+                                                      )
+                                                    else
                                                       Text(
-                                                        label,
-                                                        style: _menuTextStyle(context),
-                                                        maxLines: 1,
-                                                        overflow: TextOverflow.ellipsis,
+                                                        '($count)',
+                                                        style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey[600]),
                                                       ),
-                                                      const SizedBox(height: 2),
-                                                      if (count == null)
-                                                        const SizedBox(
-                                                          height: 12,
-                                                          width: 12,
-                                                          child: CircularProgressIndicator(strokeWidth: 2),
-                                                        )
-                                                      else
-                                                        Text(
-                                                          '($count)',
-                                                          style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey[600]),
-                                                        ),
-                                                    ],
-                                                  ),
+                                                  ],
                                                 ),
                                               ),
                                             ),
                                           ),
                                         ),
-                                      );
+                                      ),
+                                    );
                                     },
                                   ),
                           ),

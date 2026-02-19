@@ -716,14 +716,31 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
       );
     }
 
+    final topInset = MediaQuery.of(context).padding.top + kToolbarHeight;
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
-        title: Text(
-  _sceneLabel(widget.selectedScene, loc),
-),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        scrolledUnderElevation: 0,
+        title: Text(_sceneLabel(widget.selectedScene, loc)),
       ),
-      body: ListView(
+      body: Stack(
+        fit: StackFit.expand,
         children: [
+          const DecoratedBox(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/images/characters/tumugi_questions.png'),
+                fit: BoxFit.cover,
+                alignment: Alignment.center,
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: topInset),
+            child: ListView(
+              children: [
             // 新コード：サブスクリプション画面へ遷移するタイルに変更
             if (showSubscribeButton && !isTrial)
               ListTile(
@@ -990,8 +1007,11 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
               }).toList(),
             ),
           ),
-        ],
-      ),
+                ],
+              ),
+            ),
+          ],
+        ),
     );
   }
 }

@@ -120,8 +120,9 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: Image.asset(
           'assets/images/characters/tumugi_splash.png',
-          width: MediaQuery.of(context).size.width * 0.9,
-          fit: BoxFit.contain,
+          width: double.infinity,
+          height: double.infinity,
+          fit: BoxFit.cover,
         ),
       ),
     );
