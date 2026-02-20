@@ -89,7 +89,10 @@ class SceneCatalog with ChangeNotifier {
     final map = _subsceneLabels[subSceneId];
     if (map == null) return null;
     final key = _normalizeCode(code);
-    return map[key] ?? map[code] ?? map['en'] ?? (map.isNotEmpty ? map.values.first : null);
+    return map[key] ??
+        map[code] ??
+        map['en'] ??
+        (map.isNotEmpty ? map.values.first : null);
   }
 
   String _normalizeCode(String code) {
@@ -114,22 +117,36 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
   // Helper to map scene key to localized label
   String _sceneLabel(String scene, AppLocalizations loc) {
     switch (scene) {
-      case 'trial': return loc.sceneTrial;
-      case 'todays_special': return loc.todaysSpecialTitle;
-      case 'vocabulary': return loc.sceneVocabulary;
-      case 'greeting': return loc.sceneGreeting;
-      case 'travel': return loc.sceneTravel;
-      case 'restaurant': return loc.sceneRestaurant;
-      case 'shopping': return loc.sceneShopping;
-      case 'dating': return loc.sceneDating;
-      case 'culture_entertainment': return loc.sceneculture_entertainment;
-      case 'community_life': return loc.scenecommunity_life;
-      case 'work': return loc.sceneWork;
-      case 'Social_interactions_hobbies': return loc.sceneSocial_interactions_hobbies;  
+      case 'trial':
+        return loc.sceneTrial;
+      case 'todays_special':
+        return loc.todaysSpecialTitle;
+      case 'vocabulary':
+        return loc.sceneVocabulary;
+      case 'greeting':
+        return loc.sceneGreeting;
+      case 'travel':
+        return loc.sceneTravel;
+      case 'restaurant':
+        return loc.sceneRestaurant;
+      case 'shopping':
+        return loc.sceneShopping;
+      case 'dating':
+        return loc.sceneDating;
+      case 'culture_entertainment':
+        return loc.sceneculture_entertainment;
+      case 'community_life':
+        return loc.scenecommunity_life;
+      case 'work':
+        return loc.sceneWork;
+      case 'Social_interactions_hobbies':
+        return loc.sceneSocial_interactions_hobbies;
 
-      default: return scene;
+      default:
+        return scene;
     }
   }
+
   late String nativeLang;
   bool hasSubscription = false;
   bool isLoading = true;
@@ -137,7 +154,7 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
 
   String _subSceneLabel(String id, AppLocalizations loc) {
     // ❌ NG: Localizations.localeOf(nativeLang);  // ← Stringを渡してた
-    final locale = _localeFromAppCode(nativeLang);  // ← これでOK
+    final locale = _localeFromAppCode(nativeLang); // ← これでOK
     final s = SceneCatalog.instance.labelForSubscene(id, locale);
     return s ?? id; // 見つからなければID表示
   }
@@ -185,7 +202,8 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
     );
   }
 
-  Widget _buildSearchRow(AppLocalizations loc, {required bool showFilterButton}) {
+  Widget _buildSearchRow(AppLocalizations loc,
+      {required bool showFilterButton}) {
     final hasActiveFilters = _selectedLevel != 'all' || _selectedTag != 'all';
     final hasSearch = _searchQuery.trim().isNotEmpty;
     final showClear = hasActiveFilters || hasSearch;
@@ -203,7 +221,8 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
               prefixIcon: const Icon(Icons.search),
               filled: true,
               fillColor: Colors.white,
-              contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+              contentPadding:
+                  const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
                 borderSide: BorderSide(color: Colors.grey.shade300),
@@ -224,9 +243,11 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                 onTap: _openFilterSheet,
                 borderRadius: BorderRadius.circular(12),
                 child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                   decoration: BoxDecoration(
-                    color: hasActiveFilters ? Colors.pink.shade200 : Colors.white,
+                    color:
+                        hasActiveFilters ? Colors.pink.shade200 : Colors.white,
                     borderRadius: BorderRadius.circular(12),
                     border: hasActiveFilters
                         ? null
@@ -237,14 +258,18 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                       Icon(
                         Icons.filter_list,
                         size: 18,
-                        color: hasActiveFilters ? Colors.white : Colors.pink.shade400,
+                        color: hasActiveFilters
+                            ? Colors.white
+                            : Colors.pink.shade400,
                       ),
                       const SizedBox(width: 6),
                       Text(
                         loc.filterButton,
                         style: TextStyle(
                           fontSize: 12,
-                          color: hasActiveFilters ? Colors.white : Colors.pink.shade600,
+                          color: hasActiveFilters
+                              ? Colors.white
+                              : Colors.pink.shade600,
                           fontWeight: FontWeight.w600,
                         ),
                       ),
@@ -364,7 +389,9 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                       ],
                     ),
                     const SizedBox(height: 4),
-                    Text(loc.level, style: TextStyle(fontSize: 12, color: Colors.grey.shade700)),
+                    Text(loc.level,
+                        style: TextStyle(
+                            fontSize: 12, color: Colors.grey.shade700)),
                     const SizedBox(height: 6),
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
@@ -421,7 +448,8 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                     const SizedBox(height: 12),
                     Text(
                       loc.filterTopicLabel,
-                      style: TextStyle(fontSize: 12, color: Colors.grey.shade700),
+                      style:
+                          TextStyle(fontSize: 12, color: Colors.grey.shade700),
                     ),
                     const SizedBox(height: 6),
                     SingleChildScrollView(
@@ -483,14 +511,17 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
     switch (c) {
       case 'zh_Hant_TW':
       case 'zh_TW':
-        return const Locale.fromSubtags(languageCode: 'zh', countryCode: 'TW', scriptCode: 'Hant');
+        return const Locale.fromSubtags(
+            languageCode: 'zh', countryCode: 'TW', scriptCode: 'Hant');
     }
 
     final parts = c.split('_');
-    if (parts.length == 1) return Locale(parts[0]); // ja / en / zh / ko / es / fr / de / vi / id
+    if (parts.length == 1)
+      return Locale(parts[0]); // ja / en / zh / ko / es / fr / de / vi / id
     if (parts.length == 2) return Locale(parts[0], parts[1]);
     // lang_script_country (基本使わないけど保険)
-    return Locale.fromSubtags(languageCode: parts[0], scriptCode: parts[1], countryCode: parts[2]);
+    return Locale.fromSubtags(
+        languageCode: parts[0], scriptCode: parts[1], countryCode: parts[2]);
   }
 
   // SubscriptionService のシングルトンを参照
@@ -504,7 +535,7 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
     _mode = widget.mode; // ← 初期値引き継ぎ
 
     // SubscriptionService のシングルトンを代入
-    subscriptionService = SubscriptionService.instance;  // ← ここを修正
+    subscriptionService = SubscriptionService.instance; // ← ここを修正
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _startTopControlsEntrance();
@@ -596,13 +627,14 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) return;
 
-    final targetCode = getLangCode(widget.targetLang); // "English"でも"en"でもOKな実装想定
+    final targetCode =
+        getLangCode(widget.targetLang); // "English"でも"en"でもOKな実装想定
     final nativeCode = getLangCode(nativeLang);
 
     final cleared = await HistoryService.instance.getClearedQuestionsByCode(
       targetCode: targetCode,
       nativeCode: nativeCode,
-      scene: widget.selectedScene,   // シーン画面なら付けると精度↑（任意）
+      scene: widget.selectedScene, // シーン画面なら付けると精度↑（任意）
       // subScene: widget.selectedSubScene, // 必要なら
     );
 
@@ -613,9 +645,9 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
   }
 
   // ▼▼ 2) subScene フィルタ用の状態とヘルパー ▼▼
-  String? _selectedSubScene;            // null = ALL
+  String? _selectedSubScene; // null = ALL
   List<String> _availableSubScenes = []; // JSONから抽出した subScene 一覧
-  List<Question> _filtered = [];         // 表示用（questions のフィルタ結果）
+  List<Question> _filtered = []; // 表示用（questions のフィルタ結果）
   String _searchQuery = '';
   final TextEditingController _searchController = TextEditingController();
   String _selectedLevel = 'all';
@@ -646,7 +678,10 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
     final next = q.isEmpty
         ? filteredBySub.toList()
         : filteredBySub
-            .where((item) => item.getText(nativeLang).toLowerCase().contains(q.toLowerCase()))
+            .where((item) => item
+                .getText(nativeLang)
+                .toLowerCase()
+                .contains(q.toLowerCase()))
             .toList();
     setState(() {
       _filtered = next;
@@ -681,12 +716,11 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
         'assets/questions/${widget.selectedScene}.json',
       );
       final arr = json.decode(raw) as List<dynamic>;
-      questions = arr
-          .map((e) => Question.fromJson(e as Map<String, dynamic>))
-          .toList();
+      questions =
+          arr.map((e) => Question.fromJson(e as Map<String, dynamic>)).toList();
 
       _selectedSubScene = null; // 初期表示はALL
-      _prepareSubScenes();      // ← 追加：一覧抽出＆適用
+      _prepareSubScenes(); // ← 追加：一覧抽出＆適用
     } catch (e) {
       print('❌ 問題リストロードエラー: $e');
       questions = [];
@@ -707,10 +741,10 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
     final correctText = q.getText(widget.targetLang);
     final questionList = questions.map((qq) {
       return {
-        'id':              qq.id,                       // ← ここを追加
-        'scene':     qq.scene,      // ← 追加
-        'subScene':  qq.subScene,   // ← 追加
-        'level':     qq.level,      // ← 追加
+        'id': qq.id, // ← ここを追加
+        'scene': qq.scene, // ← 追加
+        'subScene': qq.subScene, // ← 追加
+        'level': qq.level, // ← 追加
         nativeLang: qq.getText(nativeLang),
         widget.targetLang: qq.getText(widget.targetLang)
       };
@@ -877,9 +911,9 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
     // --- ここだけ！サブスク有無だけで判定 ---
     // サブスクが無ければボタンを表示、あれば非表示
     final bool hasSub = hasSubOnDevice;
-    final showSubscribeButton = !hasSub;
     // トライアルシーンかどうか
-    final isTrial = widget.selectedScene == 'trial' || widget.selectedScene == 'todays_special';
+    final isTrial = widget.selectedScene == 'trial' ||
+        widget.selectedScene == 'todays_special';
     // トライアル以外かつ未加入のときだけロック
     final locked = !isTrial && !hasSub;
     // ---------------------------------------
@@ -898,9 +932,8 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
     final user = FirebaseAuth.instance.currentUser;
     final hasPackages = !_loadingOfferings &&
         (_offerings?.current?.availablePackages.isNotEmpty ?? false);
-    final package = hasPackages
-        ? _offerings!.current!.availablePackages.first
-        : null;
+    final package =
+        hasPackages ? _offerings!.current!.availablePackages.first : null;
     final canPop = Navigator.of(context).canPop();
 
     if (isLoading) {
@@ -932,7 +965,8 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                         size: 20,
                         color: Colors.black87,
                       ),
-                      tooltip: MaterialLocalizations.of(context).backButtonTooltip,
+                      tooltip:
+                          MaterialLocalizations.of(context).backButtonTooltip,
                       onPressed: () => Navigator.of(context).maybePop(),
                     ),
                   ),
@@ -949,7 +983,8 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
             DecoratedBox(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/images/characters/tumugi_questions.png'),
+                  image: AssetImage(
+                      'assets/images/characters/tumugi_questions.png'),
                   fit: BoxFit.cover,
                   alignment: Alignment.center,
                 ),
@@ -971,9 +1006,10 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
     }
 
     final topInset = MediaQuery.of(context).padding.top + kToolbarHeight;
-    final baseTitleSize = Theme.of(context).textTheme.titleLarge?.fontSize ?? 20.0;
+    final baseTitleSize =
+        Theme.of(context).textTheme.titleLarge?.fontSize ?? 20.0;
     final freePreviewTitleSize = baseTitleSize * 1.2;
-    const questionListBottomInset = 180.0;
+    const questionListBottomInset = 164.0;
     final hasScrollableQuestions = _filtered.length > 4;
     final scrollHintBottom = questionListBottomInset;
     return Scaffold(
@@ -1004,7 +1040,8 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                       size: 20,
                       color: Colors.black87,
                     ),
-                    tooltip: MaterialLocalizations.of(context).backButtonTooltip,
+                    tooltip:
+                        MaterialLocalizations.of(context).backButtonTooltip,
                     onPressed: () => Navigator.of(context).maybePop(),
                   ),
                 ),
@@ -1021,14 +1058,16 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
           const DecoratedBox(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/images/characters/tumugi_questions.png'),
+                image:
+                    AssetImage('assets/images/characters/tumugi_questions.png'),
                 fit: BoxFit.cover,
                 alignment: Alignment.center,
               ),
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: topInset, bottom: questionListBottomInset),
+            padding:
+                EdgeInsets.only(top: topInset, bottom: questionListBottomInset),
             child: MediaQuery.removePadding(
               context: context,
               removeTop: true,
@@ -1039,7 +1078,7 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                 ),
                 children: [
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
+                    padding: const EdgeInsets.fromLTRB(16, 30, 16, 0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
@@ -1089,83 +1128,92 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                     _buildAnimatedCompactFilterHint(loc)!,
                   const SizedBox(height: 8),
                   // ▲▲ ここまで フィルタ ▲▲
+                  const SizedBox(height: 16),
 
-                  Padding(
-                    padding: const EdgeInsets.all(16),
-                    child: Column(
-                      children: _filtered.asMap().entries.map((entry) {
-                        final idxFiltered = entry.key;
-                        final q = entry.value;
+                  Transform.translate(
+                    offset: const Offset(0, -50),
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(16, 6, 16, 16),
+                      child: Column(
+                        children: _filtered.asMap().entries.map((entry) {
+                          final idxFiltered = entry.key;
+                          final q = entry.value;
 
-                        final originalIndex = questions.indexWhere((qq) => qq.id == q.id);
-                        final idx = originalIndex == -1 ? idxFiltered : originalIndex;
+                          final originalIndex =
+                              questions.indexWhere((qq) => qq.id == q.id);
+                          final idx =
+                              originalIndex == -1 ? idxFiltered : originalIndex;
 
-                        final questionId = q.id;
-                        final text = q.getText(nativeLang);
-                        final done = _clearedSet.contains(questionId);
+                          final questionId = q.id;
+                          final text = q.getText(nativeLang);
+                          final done = _clearedSet.contains(questionId);
 
-                        return Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 6),
-                          child: Column(
-                            children: [
-                              Align(
-                                alignment: Alignment.center,
-                                child: FractionallySizedBox(
-                                  widthFactor: 0.75,
-                                  child: InkWell(
-                                    borderRadius: BorderRadius.circular(8),
-                                    onTap: () {
-                                      if (locked) {
-                                        final loc = AppLocalizations.of(context)!;
-                                        _showSubscriptionUpsellDialog(loc);
-                                        return;
-                                      }
-                                      _onQuestionTap(q, idx);
-                                    },
-                                    child: Padding(
-                                      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
-                                      child: Row(
-                                        children: [
-                                          const Text(
-                                            '▶',
-                                            style: TextStyle(
-                                              fontSize: 14,
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.bold,
-                                            ),
-                                          ),
-                                          const SizedBox(width: 8),
-                                          Expanded(
-                                            child: Text(
-                                              text,
-                                              maxLines: 2,
-                                              overflow: TextOverflow.ellipsis,
-                                              style: const TextStyle(
-                                                fontSize: 17.6,
+                          return Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 6),
+                            child: Column(
+                              children: [
+                                Align(
+                                  alignment: Alignment.center,
+                                  child: FractionallySizedBox(
+                                    widthFactor: 0.75,
+                                    child: InkWell(
+                                      borderRadius: BorderRadius.circular(8),
+                                      onTap: () {
+                                        if (locked) {
+                                          final loc =
+                                              AppLocalizations.of(context)!;
+                                          _showSubscriptionUpsellDialog(loc);
+                                          return;
+                                        }
+                                        _onQuestionTap(q, idx);
+                                      },
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(
+                                            vertical: 12, horizontal: 8),
+                                        child: Row(
+                                          children: [
+                                            const Text(
+                                              '▶',
+                                              style: TextStyle(
+                                                fontSize: 14,
                                                 color: Colors.white,
                                                 fontWeight: FontWeight.bold,
                                               ),
                                             ),
-                                          ),
-                                          if (done)
-                                            const Padding(
-                                              padding: EdgeInsets.only(left: 6),
-                                              child: Icon(
-                                                Icons.task_alt_rounded,
-                                                size: 20,
-                                                color: Colors.white,
+                                            const SizedBox(width: 8),
+                                            Expanded(
+                                              child: Text(
+                                                text,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis,
+                                                style: const TextStyle(
+                                                  fontSize: 17.6,
+                                                  color: Colors.white,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
                                               ),
                                             ),
-                                        ],
+                                            if (done)
+                                              const Padding(
+                                                padding:
+                                                    EdgeInsets.only(left: 6),
+                                                child: Icon(
+                                                  Icons.task_alt_rounded,
+                                                  size: 20,
+                                                  color: Colors.white,
+                                                ),
+                                              ),
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),
                                 ),
-                              ),
-                            ],
-                          ),
-                        );
-                      }).toList(),
+                              ],
+                            ),
+                          );
+                        }).toList(),
+                      ),
                     ),
                   ),
                 ],
@@ -1204,55 +1252,6 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                           ),
                         ],
                       ),
-                    ),
-                  ),
-                ),
-              ),
-            ),
-          if (showSubscribeButton && !isTrial)
-            Positioned(
-              left: 16,
-              right: 16,
-              bottom: 16,
-              child: SafeArea(
-                top: false,
-                child: InkWell(
-                  borderRadius: BorderRadius.circular(14),
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(builder: (_) => const SubscriptionScreen()),
-                    );
-                  },
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-                    decoration: BoxDecoration(
-                      color: Colors.black.withOpacity(0.45),
-                      borderRadius: BorderRadius.circular(14),
-                      border: Border.all(color: Colors.white.withOpacity(0.35)),
-                    ),
-                    child: Row(
-                      children: [
-                        SizedBox(
-                          width: 44,
-                          height: 44,
-                          child: Image.asset(
-                            'assets/images/icon/basic_plan002.png',
-                            fit: BoxFit.contain,
-                          ),
-                        ),
-                        const SizedBox(width: 10),
-                        Expanded(
-                          child: Text(
-                            loc.subscriptionManageTitle,
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16,
-                            ),
-                          ),
-                        ),
-                        const Icon(Icons.chevron_right, color: Colors.white),
-                      ],
                     ),
                   ),
                 ),
