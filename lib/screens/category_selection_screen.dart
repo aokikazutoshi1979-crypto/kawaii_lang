@@ -31,6 +31,9 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
   String? selectedTargetLang;
   String? selectedSceneKey;
   String? selectedNativeLang;
+  final ScrollController _sceneListController = ScrollController();
+  bool _showTopScrollHint = false;
+  bool _showBottomScrollHint = false;
 
   List<Scene> _allScenes = [];
 
@@ -59,6 +62,7 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
       _loadTsumugiQuote();
       _requestReveal();
     });
+    _sceneListController.addListener(_updateSceneScrollHints);
     
     // 🔑 サブスク検証サービスを初期化
     // maybeInitSubscription(); // 🔑 追加：サブスク状態を1日1回だけ確認
@@ -87,6 +91,7 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
     if (!mounted) return;
     setState(() => _counts = Map.fromEntries(entries));
     _tryStartReveal();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _updateSceneScrollHints());
   }
 
   Future<int> _loadQuestionCountForScene(String sceneId) async {
@@ -174,11 +179,27 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
         _showList = true;
         _listVisible = true;
       });
+      WidgetsBinding.instance.addPostFrameCallback((_) => _updateSceneScrollHints());
+    });
+  }
+
+  void _updateSceneScrollHints() {
+    if (!_sceneListController.hasClients) return;
+    final position = _sceneListController.position;
+    final showTop = position.pixels > 2;
+    final showBottom = position.pixels < (position.maxScrollExtent - 2);
+    if (showTop == _showTopScrollHint && showBottom == _showBottomScrollHint) return;
+    if (!mounted) return;
+    setState(() {
+      _showTopScrollHint = showTop;
+      _showBottomScrollHint = showBottom;
     });
   }
 
   @override
   void dispose() {
+    _sceneListController.removeListener(_updateSceneScrollHints);
+    _sceneListController.dispose();
     super.dispose();
   }
 
@@ -463,6 +484,7 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                 final desiredQuoteTopRaw = (availableHeight * 0.40) - quoteShiftUp;
                 final desiredQuoteTop = desiredQuoteTopRaw < 0 ? 0.0 : desiredQuoteTopRaw;
                 final desiredListTop = availableHeight * 0.50;
+                final hasScrollableList = sceneItems.length > rowsVisible;
                 final gapBetween = hasQuote
                     ? (desiredListTop - desiredQuoteTop - quoteHeight).clamp(0.0, 120.0)
                     : 0.0;
@@ -531,80 +553,133 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                           child: RepaintBoundary(
                             child: !_showList
                                 ? const SizedBox.shrink()
-                                : ListView.separated(
-                                    padding: EdgeInsets.zero,
-                                    physics: const ClampingScrollPhysics(),
-                                    cacheExtent: rowHeight * (rowsVisible + 2),
-                                    itemCount: sceneItems.length,
-                                    separatorBuilder: (context, index) => Divider(
-                                      height: 1,
-                                      color: const Color(0xFFE3DED8).withOpacity(0.6),
-                                    ),
-                                    itemBuilder: (context, index) {
-                                      final item   = sceneItems[index];
-                                      final key    = item['key'] as String;
-                                      final label  = item['label'] as String;
-                                      final subtitle = item['subtitle'] as String?;
-                                      final count  = _counts[key];
-                                      final active = selectedSceneKey == key;
-                                    return Material(
-                                      color: active ? const Color(0xFFEAE6E1).withOpacity(0.35) : Colors.transparent,
-                                      child: InkWell(
-                                        onTap: () => _onSceneTap(key),
-                                        splashColor: Colors.transparent,
-                                        highlightColor: Colors.transparent,
-                                        child: SizedBox(
-                                          height: 58,
-                                          child: Padding(
-                                            padding: const EdgeInsets.symmetric(horizontal: 8),
-                                            child: AnimatedOpacity(
-                                              opacity: _listVisible ? 1 : 0,
-                                              duration: const Duration(milliseconds: 320),
-                                              child: AnimatedSlide(
-                                                offset: _listVisible ? Offset.zero : const Offset(0, 0.12),
-                                                duration: const Duration(milliseconds: 320),
-                                                curve: Curves.easeOut,
-                                                child: Column(
-                                                  mainAxisAlignment: MainAxisAlignment.center,
-                                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                                  children: [
-                                                    Text(
-                                                      label,
-                                                      style: _menuTextStyle(context),
-                                                      maxLines: 1,
-                                                      overflow: TextOverflow.ellipsis,
-                                                    ),
-                                                    const SizedBox(height: 2),
-                                                    if (subtitle != null)
-                                                      Text(
-                                                        subtitle,
-                                                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                                                          color: Colors.grey[700],
-                                                          fontWeight: FontWeight.w600,
+                                : Stack(
+                                    children: [
+                                      Scrollbar(
+                                        controller: _sceneListController,
+                                        thumbVisibility: hasScrollableList,
+                                        thickness: 3,
+                                        radius: const Radius.circular(8),
+                                        child: ListView.separated(
+                                          controller: _sceneListController,
+                                          padding: EdgeInsets.zero,
+                                          physics: const BouncingScrollPhysics(
+                                            parent: AlwaysScrollableScrollPhysics(),
+                                          ),
+                                          cacheExtent: rowHeight * (rowsVisible + 2),
+                                          itemCount: sceneItems.length,
+                                          separatorBuilder: (context, index) => Divider(
+                                            height: 1,
+                                            color: const Color(0xFFE3DED8).withOpacity(0.6),
+                                          ),
+                                          itemBuilder: (context, index) {
+                                            final item   = sceneItems[index];
+                                            final key    = item['key'] as String;
+                                            final label  = item['label'] as String;
+                                            final subtitle = item['subtitle'] as String?;
+                                            final count  = _counts[key];
+                                            final active = selectedSceneKey == key;
+                                            return Material(
+                                              color: active ? const Color(0xFFEAE6E1).withOpacity(0.35) : Colors.transparent,
+                                              child: InkWell(
+                                                onTap: () => _onSceneTap(key),
+                                                splashColor: Colors.transparent,
+                                                highlightColor: Colors.transparent,
+                                                child: SizedBox(
+                                                  height: 58,
+                                                  child: Padding(
+                                                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                                                    child: AnimatedOpacity(
+                                                      opacity: _listVisible ? 1 : 0,
+                                                      duration: const Duration(milliseconds: 320),
+                                                      child: AnimatedSlide(
+                                                        offset: _listVisible ? Offset.zero : const Offset(0, 0.12),
+                                                        duration: const Duration(milliseconds: 320),
+                                                        curve: Curves.easeOut,
+                                                        child: Column(
+                                                          mainAxisAlignment: MainAxisAlignment.center,
+                                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                                          children: [
+                                                            Text(
+                                                              label,
+                                                              style: _menuTextStyle(context),
+                                                              maxLines: 1,
+                                                              overflow: TextOverflow.ellipsis,
+                                                            ),
+                                                            const SizedBox(height: 2),
+                                                            if (subtitle != null)
+                                                              Text(
+                                                                subtitle,
+                                                                style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                                                                  color: Colors.grey[700],
+                                                                  fontWeight: FontWeight.w600,
+                                                                ),
+                                                                maxLines: 1,
+                                                                overflow: TextOverflow.ellipsis,
+                                                              )
+                                                            else if (count == null)
+                                                              const SizedBox(
+                                                                height: 12,
+                                                                width: 12,
+                                                                child: CircularProgressIndicator(strokeWidth: 2),
+                                                              )
+                                                            else
+                                                              Text(
+                                                                '($count)',
+                                                                style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey[600]),
+                                                              ),
+                                                          ],
                                                         ),
-                                                        maxLines: 1,
-                                                        overflow: TextOverflow.ellipsis,
-                                                      )
-                                                    else if (count == null)
-                                                      const SizedBox(
-                                                        height: 12,
-                                                        width: 12,
-                                                        child: CircularProgressIndicator(strokeWidth: 2),
-                                                      )
-                                                    else
-                                                      Text(
-                                                        '($count)',
-                                                        style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey[600]),
                                                       ),
-                                                  ],
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                            );
+                                          },
+                                        ),
+                                      ),
+                                      if (hasScrollableList && _showTopScrollHint)
+                                        IgnorePointer(
+                                          child: Align(
+                                            alignment: Alignment.topCenter,
+                                            child: Container(
+                                              height: 16,
+                                              decoration: const BoxDecoration(
+                                                gradient: LinearGradient(
+                                                  begin: Alignment.topCenter,
+                                                  end: Alignment.bottomCenter,
+                                                  colors: [Color(0x44FFFFFF), Color(0x00FFFFFF)],
                                                 ),
                                               ),
                                             ),
                                           ),
                                         ),
-                                      ),
-                                    );
-                                    },
+                                      if (hasScrollableList && _showBottomScrollHint)
+                                        IgnorePointer(
+                                          child: Align(
+                                            alignment: Alignment.bottomCenter,
+                                            child: Container(
+                                              height: 26,
+                                              decoration: const BoxDecoration(
+                                                gradient: LinearGradient(
+                                                  begin: Alignment.topCenter,
+                                                  end: Alignment.bottomCenter,
+                                                  colors: [Color(0x00FFFFFF), Color(0x66FFFFFF)],
+                                                ),
+                                              ),
+                                              child: const Align(
+                                                alignment: Alignment.bottomCenter,
+                                                child: Icon(
+                                                  Icons.keyboard_arrow_down_rounded,
+                                                  color: Colors.black54,
+                                                  size: 16,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                    ],
                                   ),
                           ),
                         ),
