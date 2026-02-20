@@ -3,8 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../main.dart';
-import 'terms_of_service.dart';
-import 'privacy_policy.dart';
 import 'package:kawaii_lang/l10n/app_localizations.dart';
 import '../widgets/keyboard_guide_button.dart';
 import 'package:intl/intl.dart';
@@ -90,8 +88,9 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
   Future<void> _launchUrl(String url) async {
     final uri = Uri.parse(url);
     if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Failed to open URL: $url')),
+        SnackBar(content: Text(AppLocalizations.of(context)!.errorServerError)),
       );
     }
   }
@@ -296,6 +295,220 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     );
   }
 
+  String _modeSubtitle(AppLocalizations loc) {
+    return _selectedMode == QuizMode.reading ? loc.readingLabel : loc.listeningLabel;
+  }
+
+  String _subscriptionSubtitle(AppLocalizations loc) {
+    final price = _offerings?.current?.monthly?.storeProduct.priceString;
+    final pricePart = (price == null || price.isEmpty)
+        ? ''
+        : '$price${loc.subscriptionPriceTaxSuffix}';
+    if (pricePart.isEmpty) {
+      return loc.subscriptionManageSubtitle;
+    }
+    return '$pricePart • ${loc.subscriptionPlanTrial}';
+  }
+
+  Future<void> _showModePicker(AppLocalizations loc) async {
+    await showModalBottomSheet<void>(
+      context: context,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(18)),
+      ),
+      builder: (ctx) {
+        return SafeArea(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              ListTile(
+                title: Text(loc.readingLabel),
+                trailing: _selectedMode == QuizMode.reading
+                    ? const Icon(Icons.check, color: Colors.green)
+                    : null,
+                onTap: () async {
+                  await _saveQuizMode(QuizMode.reading);
+                  if (!mounted) return;
+                  Navigator.of(ctx).pop();
+                },
+              ),
+              ListTile(
+                title: Text(loc.listeningLabel),
+                trailing: _selectedMode == QuizMode.listening
+                    ? const Icon(Icons.check, color: Colors.green)
+                    : null,
+                onTap: () async {
+                  await _saveQuizMode(QuizMode.listening);
+                  if (!mounted) return;
+                  Navigator.of(ctx).pop();
+                },
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  Future<void> _showLanguagePicker({required bool target}) async {
+    final loc = AppLocalizations.of(context)!;
+    final candidates = (target && selectedLang != null)
+        ? _languageCodes.where((code) => code != selectedLang).toList()
+        : _languageCodes;
+    final current = target ? selectedTargetLang : selectedLang;
+    await showModalBottomSheet<void>(
+      context: context,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(18)),
+      ),
+      builder: (ctx) {
+        return SafeArea(
+          child: ListView(
+            shrinkWrap: true,
+            children: [
+              ListTile(
+                title: Text(target ? loc.targetLanguage : loc.languageSelectionTitle),
+              ),
+              ...candidates.map((code) {
+                return ListTile(
+                  title: Text(_labelForLangCode(code, context)),
+                  trailing: current == code ? const Icon(Icons.check, color: Colors.green) : null,
+                  onTap: () async {
+                    Navigator.of(ctx).pop();
+                    if (target) {
+                      await _saveTargetLanguage(code);
+                    } else {
+                      await _saveLanguage(code);
+                    }
+                  },
+                );
+              }),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  Future<void> _onDangerAction(bool isAnon) async {
+    final loc = AppLocalizations.of(context)!;
+    final msg = isAnon ? loc.settings_confirmResetData : loc.settings_confirmDeleteAccount;
+    final ok = await _showConfirmDialog(context, msg);
+    if (!ok) return;
+
+    try {
+      if (isAnon) {
+        await _authService.resetAnonymousData();
+      } else {
+        final pw = await _promptForPassword(context);
+        await _authService.deleteUserAccount(password: pw);
+      }
+      if (!mounted) return;
+      Navigator.of(context).pushNamedAndRemoveUntil(
+        '/splash',
+        (route) => false,
+      );
+    } catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(AppLocalizations.of(context)!.errorServerError)),
+      );
+    }
+  }
+
+  Widget _sectionHeader(BuildContext context, String title) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(4, 10, 4, 8),
+      child: Text(
+        title,
+        style: Theme.of(context).textTheme.titleSmall?.copyWith(
+              color: Colors.grey.shade700,
+              fontWeight: FontWeight.w800,
+              letterSpacing: 0.2,
+            ),
+      ),
+    );
+  }
+
+  Widget _sectionCard({required List<Widget> children}) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.05),
+            blurRadius: 12,
+            offset: const Offset(0, 4),
+          ),
+        ],
+      ),
+      child: Column(children: children),
+    );
+  }
+
+  Widget _settingsRow({
+    required IconData icon,
+    required String title,
+    String? subtitle,
+    VoidCallback? onTap,
+    Color? iconColor,
+    Color? titleColor,
+    Widget? leading,
+    Widget? trailing,
+  }) {
+    return InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(16),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+        child: Row(
+          children: [
+            leading ??
+                Icon(
+                  icon,
+                  size: 20,
+                  color: iconColor ?? Colors.blueGrey.shade700,
+                ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    title,
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w700,
+                      color: titleColor ?? const Color(0xFF1F2937),
+                    ),
+                  ),
+                  if (subtitle != null && subtitle.isNotEmpty)
+                    Padding(
+                      padding: const EdgeInsets.only(top: 2),
+                      child: Text(
+                        subtitle,
+                        style: TextStyle(
+                          fontSize: 12.5,
+                          color: Colors.blueGrey.shade600,
+                          height: 1.35,
+                        ),
+                      ),
+                    ),
+                ],
+              ),
+            ),
+            trailing ??
+                Icon(
+                  Icons.chevron_right_rounded,
+                  color: Colors.grey.shade500,
+                ),
+          ],
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     // ① セッションミスマッチ時はエラー画面のみ表示
@@ -309,15 +522,11 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
       );
     }
 
-    final isAnon = _authService.currentUser!.isAnonymous;
+    final isAnon = _authService.currentUser?.isAnonymous ?? true;
     final loc = AppLocalizations.of(context)!;
     final displayName = (_displayName != null && _displayName!.trim().isNotEmpty)
         ? _displayName!.trim()
         : (isAnon ? loc.guest : (_user?.displayName ?? _user?.email ?? loc.guest));
-
-    // ① RevenueCat パッケージ取得済みか判定
-    final bool hasPackages = !_loadingOfferings &&
-        (_offerings?.current?.availablePackages.isNotEmpty ?? false);
 
     // ユーザーデータ読み込み中はプログレス
     if (!isAnon && _isLoadingUser) {
@@ -326,326 +535,280 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
       );
     }
 
-    // ② サブスク状態を判定（State 継承のフラグを利用）
-    final showSubscribe = !hasSubOnDevice;
+    final registeredDate = (!isAnon && _user != null)
+        ? loc.registeredDate(DateFormat.yMMMd().format(_user!.createdAt))
+        : null;
+    final languageSectionTitle = '${loc.languageSelectionTitle} / ${loc.targetLanguage}';
+    final modeSectionTitle = '${loc.readingLabel} / ${loc.listeningLabel}';
+    final supportSectionTitle = '${loc.viewFaq} / ${loc.termsOfService}';
 
     return Scaffold(
+      backgroundColor: const Color(0xFFF4F6F8),
       appBar: AppBar(title: Text(loc.settingsTitle)),
-      body: Padding(
-        padding: const EdgeInsets.all(16),
-        child: ListView(
-          children: [
-            // 匿名でも _user が取れていれば、ここを通るように
-            // ① いつでもユーザー名を表示（匿名でも可）
-            Row(
-              children: [
-                Expanded(
-                  child: Text(
-                    loc.welcomeUser(displayName),
-                    style: Theme.of(context).textTheme.titleLarge,
-                  ),
-                ),
-                TextButton.icon(
-                  onPressed: () async {
-                    final updated = await Navigator.push<String>(
-                      context,
-                      MaterialPageRoute(
-                        builder: (_) => UserNameScreen(
-                          isOnboarding: false,
-                          initialName: _displayName,
-                        ),
-                      ),
-                    );
-                    if (updated != null && updated.trim().isNotEmpty) {
-                      setState(() => _displayName = updated.trim());
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(content: Text(loc.userNameUpdated)),
-                      );
-                    }
-                  },
-                  icon: const Icon(Icons.edit, size: 18),
-                  label: Text(loc.userNameEdit),
-                ),
-              ],
-            ),
-            const SizedBox(height: 8),
-            if (_user != null && !_authService.currentUser!.isAnonymous) ...[
-              Text(
-                loc.registeredDate(
-                  DateFormat.yMMMd().format(_user!.createdAt),
-                ),
-              ),
-            ],
-            const Divider(height: 32),
-
-            if (_user != null) ...[
-              // サブスクリプション管理ボタンに変更（アイコン付き）
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-                child: ElevatedButton.icon(
-                  onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (_) => const SubscriptionScreen()),
-                  ),
-                  icon: SizedBox(
-                    width: 24,
-                    height: 24,
-                    child: Image.asset(
-                      'assets/images/icon/basic_plan002.png',
-                      fit: BoxFit.contain,
-                    ),
-                  ),
-                  label: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.center, // 中央揃え
-                    children: [
-                      Text(loc.subscriptionManageTitle),
-                      Text(
-                        loc.subscriptionManageSubtitle,
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: Colors.grey[600],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ],
-
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-              child: ElevatedButton.icon(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (_) => const ProfileScreen()),
-                  );
-                },
-                icon: const Icon(Icons.person_outline),
-                label: Text(loc.profileTitle),
-              ),
-            ),
-            const Divider(height: 32),
-
-            if (isAnon) ...[
-              // アカウント登録ボタンに変更
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-                child: ElevatedButton(
-                  onPressed: () => Navigator.pushNamed(context, '/register'),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.center, // 中央揃え
-                    children: [
-                      Text(loc.registerAccount),
-                      Text(
-                        loc.registerSubtitle,
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: Colors.grey[600],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              // ログインボタンに変更
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-                child: ElevatedButton(
-                  onPressed: () => Navigator.pushNamed(context, '/login'),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.center, // 中央揃え
-                    children: [
-                      Text(loc.loginTitle),
-                      Text(
-                        loc.loginSubtitle,
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: Colors.grey[600],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              const Divider(height: 32),
-            ],
-
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-              child: ModeToggleBar(
-                value: _selectedMode,
-                onChanged: _saveQuizMode,
-                readingLabel: loc.readingLabel,
-                listeningLabel: loc.listeningLabel,
-              ),
-            ),
-            const Divider(height: 32),
-
-            if (selectedLang != null) ...[
-              Padding(
-                padding: const EdgeInsets.only(bottom: 16),
-                child: KeyboardGuideButton(
-                  targetLanguage: selectedTargetLang ?? selectedLang!,
-                  alwaysVisible: true,
-                ),
-              ),
-              const Divider(height: 32),
-            ],
-
-            // ① FAQ へのリンクボタン
-            TextButton.icon(
-              icon: const Icon(Icons.help_outline),
-              label: Text(loc.viewFaq),
-              onPressed: () => _launchUrl(_faqUrl),
-            ),
-            const Divider(height: 32),
-
-            // ② 利用規約リンク
-            ListTile(
-              leading: const Icon(Icons.description),
-              title: Text(loc.termsOfService),
-              onTap: () => _launchUrl('https://kawaiilang.com/terms.html'),
-            ),
-            const Divider(height: 16),
-
-            // ③ プライバシーポリシーリンク
-            ListTile(
-              leading: const Icon(Icons.privacy_tip),
-              title: Text(loc.privacyPolicy),
-              onTap: () => _launchUrl('https://kawaiilang.com/privacy.html'),
-            ),
-            const Divider(height: 32),
-
-            ExpansionTile(
-              tilePadding: const EdgeInsets.symmetric(horizontal: 16),
-              title: Text(
-                loc.languageSelectionTitle,
-                style: Theme.of(context).textTheme.titleLarge,
-              ),
-              subtitle: Text(_labelForLangCode(selectedLang, context)),
-              children: _languageCodes.map((code) {
-                return ListTile(
-                  title: Text(_labelForLangCode(code, context)),
-                  trailing: selectedLang == code
-                      ? const Icon(Icons.check, color: Colors.green)
-                      : null,
-                  onTap: () => _saveLanguage(code),
-                );
-              }).toList(),
-            ),
-            const Divider(height: 32),
-
-            ExpansionTile(
-              tilePadding: const EdgeInsets.symmetric(horizontal: 16),
-              title: Text(
-                loc.targetLanguage,
-                style: Theme.of(context).textTheme.titleLarge,
-              ),
-              subtitle: Text(_labelForLangCode(selectedTargetLang, context)),
-              children: ((selectedLang == null)
-                      ? _languageCodes
-                      : _languageCodes.where((code) => code != selectedLang))
-                  .map((code) {
-                return ListTile(
-                  title: Text(_labelForLangCode(code, context)),
-                  trailing: selectedTargetLang == code
-                      ? const Icon(Icons.check, color: Colors.green)
-                      : null,
-                  onTap: () => _saveTargetLanguage(code),
-                );
-              }).toList(),
-            ),
-            const Divider(height: 32),
-
-            // ❷ ここからは非匿名ユーザーだけ
-            if (!isAnon) ...[
-              ListTile(
-                leading: const Icon(Icons.logout),
-                title: Text(loc.logout),
-                onTap: () async {
-                  // ダイアログで確認
-                  final shouldLogout = await showDialog<bool>(
-                    context: context,
-                    builder: (context) => AlertDialog(
-                      title: Text(loc.logout),                                   // 「ログアウト」
-                      content: Text(loc.logoutConfirmation                           // arb に追加:
-                          /* "本当にログアウトしますか？" */),                        
-                      actions: [
-                        TextButton(
-                          onPressed: () => Navigator.of(context).pop(false),
-                          child: Text(loc.cancel),                               // arb に追加: "キャンセル"
-                        ),
-                        TextButton(
-                          onPressed: () => Navigator.of(context).pop(true),
-                          child: Text(loc.ok),                              // arb に追加: "ログアウト"
+      body: SafeArea(
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            final horizontalPadding = constraints.maxWidth >= 620 ? 24.0 : 14.0;
+            return Center(
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 740),
+                child: ListView(
+                  padding: EdgeInsets.fromLTRB(horizontalPadding, 12, horizontalPadding, 24),
+                  children: [
+                    _sectionCard(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(14, 14, 14, 12),
+                          child: Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 20,
+                                backgroundColor: Colors.pink.shade50,
+                                child: Icon(
+                                  Icons.person_outline,
+                                  color: Colors.pink.shade400,
+                                ),
+                              ),
+                              const SizedBox(width: 10),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      loc.welcomeUser(displayName),
+                                      style: const TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w800,
+                                        color: Color(0xFF111827),
+                                      ),
+                                    ),
+                                    if (registeredDate != null)
+                                      Padding(
+                                        padding: const EdgeInsets.only(top: 2),
+                                        child: Text(
+                                          registeredDate,
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                            color: Colors.grey.shade600,
+                                          ),
+                                        ),
+                                      ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),
-                  );
+                    _sectionHeader(context, loc.profileTitle),
+                    _sectionCard(
+                      children: [
+                        _settingsRow(
+                          icon: Icons.edit_outlined,
+                          title: loc.userNameEdit,
+                          subtitle: displayName,
+                          onTap: () async {
+                            final updated = await Navigator.push<String>(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) => UserNameScreen(
+                                  isOnboarding: false,
+                                  initialName: _displayName,
+                                ),
+                              ),
+                            );
+                            if (updated != null && updated.trim().isNotEmpty) {
+                              setState(() => _displayName = updated.trim());
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(content: Text(loc.userNameUpdated)),
+                              );
+                            }
+                          },
+                        ),
+                        Divider(height: 1, color: Colors.grey.shade200),
+                        if (_user != null) ...[
+                          Container(
+                            color: Colors.pink.shade50.withOpacity(0.6),
+                            child: _settingsRow(
+                              icon: Icons.workspace_premium_outlined,
+                              title: loc.subscriptionManageTitle,
+                              subtitle: _subscriptionSubtitle(loc),
+                              leading: SizedBox(
+                                width: 22,
+                                height: 22,
+                                child: Image.asset(
+                                  'assets/images/icon/basic_plan002.png',
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                              onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (_) => const SubscriptionScreen()),
+                              ),
+                            ),
+                          ),
+                          Divider(height: 1, color: Colors.grey.shade200),
+                        ],
+                        _settingsRow(
+                          icon: Icons.person_outline_rounded,
+                          title: loc.profileTitle,
+                          onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (_) => const ProfileScreen()),
+                          ),
+                        ),
+                        if (isAnon) ...[
+                          Divider(height: 1, color: Colors.grey.shade200),
+                          _settingsRow(
+                            icon: Icons.person_add_alt_1_outlined,
+                            title: loc.registerAccount,
+                            subtitle: loc.registerSubtitle,
+                            onTap: () => Navigator.pushNamed(context, '/register'),
+                          ),
+                          Divider(height: 1, color: Colors.grey.shade200),
+                          _settingsRow(
+                            icon: Icons.login_rounded,
+                            title: loc.loginTitle,
+                            subtitle: loc.loginSubtitle,
+                            onTap: () => Navigator.pushNamed(context, '/login'),
+                          ),
+                        ],
+                      ],
+                    ),
 
-                  if (shouldLogout == true) {
-                    // ① ログアウト処理を完了させてから…
-                    await _handleLogout();
+                    _sectionHeader(context, modeSectionTitle),
+                    _sectionCard(
+                      children: [
+                        _settingsRow(
+                          icon: Icons.tune_rounded,
+                          title: modeSectionTitle,
+                          subtitle: _modeSubtitle(loc),
+                          onTap: () => _showModePicker(loc),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
+                          child: ModeToggleBar(
+                            value: _selectedMode,
+                            onChanged: _saveQuizMode,
+                            readingLabel: loc.readingLabel,
+                            listeningLabel: loc.listeningLabel,
+                          ),
+                        ),
+                      ],
+                    ),
 
-                    // ② 匿名ログイン
-                    await FirebaseAuth.instance.signInAnonymously();
+                    _sectionHeader(context, languageSectionTitle),
+                    _sectionCard(
+                      children: [
+                        _settingsRow(
+                          icon: Icons.translate_rounded,
+                          title: loc.languageSelectionTitle,
+                          subtitle: _labelForLangCode(selectedLang, context),
+                          onTap: () => _showLanguagePicker(target: false),
+                        ),
+                        Divider(height: 1, color: Colors.grey.shade200),
+                        _settingsRow(
+                          icon: Icons.language_rounded,
+                          title: loc.targetLanguage,
+                          subtitle: _labelForLangCode(selectedTargetLang, context),
+                          onTap: () => _showLanguagePicker(target: true),
+                        ),
+                      ],
+                    ),
 
-                    // ③ スタックを全部クリアしてスプラッシュ画面へ
-                    Navigator.of(context).pushNamedAndRemoveUntil(
-                      '/splash',        // あなたのスプラッシュ画面のルート名
-                      (route) => false, // 既存の全ルートを破棄
-                    );
-                  }
-                }
+                    _sectionHeader(context, supportSectionTitle),
+                    _sectionCard(
+                      children: [
+                        if (selectedLang != null)
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(12, 8, 12, 4),
+                            child: KeyboardGuideButton(
+                              targetLanguage: selectedTargetLang ?? selectedLang!,
+                              alwaysVisible: true,
+                            ),
+                          ),
+                        if (selectedLang != null) Divider(height: 1, color: Colors.grey.shade200),
+                        _settingsRow(
+                          icon: Icons.help_outline_rounded,
+                          title: loc.viewFaq,
+                          onTap: () => _launchUrl(_faqUrl),
+                        ),
+                        Divider(height: 1, color: Colors.grey.shade200),
+                        _settingsRow(
+                          icon: Icons.description_outlined,
+                          title: loc.termsOfService,
+                          onTap: () => _launchUrl('https://kawaiilang.com/terms.html'),
+                        ),
+                        Divider(height: 1, color: Colors.grey.shade200),
+                        _settingsRow(
+                          icon: Icons.privacy_tip_outlined,
+                          title: loc.privacyPolicy,
+                          onTap: () => _launchUrl('https://kawaiilang.com/privacy.html'),
+                        ),
+                      ],
+                    ),
+
+                    _sectionHeader(context, loc.logout),
+                    _sectionCard(
+                      children: [
+                        if (!isAnon) ...[
+                          _settingsRow(
+                            icon: Icons.logout_rounded,
+                            title: loc.logout,
+                            subtitle: loc.logoutConfirmation,
+                            onTap: () async {
+                              final shouldLogout = await showDialog<bool>(
+                                context: context,
+                                builder: (context) => AlertDialog(
+                                  title: Text(loc.logout),
+                                  content: Text(loc.logoutConfirmation),
+                                  actions: [
+                                    TextButton(
+                                      onPressed: () => Navigator.of(context).pop(false),
+                                      child: Text(loc.cancel),
+                                    ),
+                                    TextButton(
+                                      onPressed: () => Navigator.of(context).pop(true),
+                                      child: Text(loc.ok),
+                                    ),
+                                  ],
+                                ),
+                              );
+                              if (shouldLogout == true) {
+                                await _handleLogout();
+                                await FirebaseAuth.instance.signInAnonymously();
+                                if (!mounted) return;
+                                Navigator.of(context).pushNamedAndRemoveUntil(
+                                  '/splash',
+                                  (route) => false,
+                                );
+                              }
+                            },
+                          ),
+                          Divider(height: 1, color: Colors.grey.shade200),
+                        ],
+                        _settingsRow(
+                          icon: isAnon ? Icons.refresh_rounded : Icons.delete_forever_rounded,
+                          title: isAnon ? loc.settings_resetData : loc.settings_deleteAccount,
+                          subtitle: isAnon
+                              ? loc.settings_confirmResetData
+                              : loc.settings_confirmDeleteAccount,
+                          iconColor: Colors.red.shade500,
+                          titleColor: Colors.red.shade600,
+                          trailing: Icon(
+                            Icons.warning_amber_rounded,
+                            color: Colors.red.shade400,
+                          ),
+                          onTap: () => _onDangerAction(isAnon),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
-            ],
-
-            // ── アカウント削除／データ初期化 ──
-            ListTile(
-              leading: Icon(isAnon ? Icons.refresh : Icons.delete_forever),
-              title: Text(
-                isAnon
-                    ? loc.settings_resetData
-                    : loc.settings_deleteAccount,
-              ),
-              onTap: () async {
-                final loc = AppLocalizations.of(context)!;
-                // ① 確認ダイアログ用メッセージを選択
-                final msg = isAnon
-                    ? loc.settings_confirmResetData
-                    : loc.settings_confirmDeleteAccount;
-                // ② ダイアログを表示してユーザーが OK したか判定
-                final ok = await _showConfirmDialog(context, msg);
-                if (!ok) return; // キャンセルされたら以降の処理を中断
-
-                try {
-                  if (isAnon) {
-                    await _authService.resetAnonymousData();
-                  } else {
-                    final pw = await _promptForPassword(context);
-                    await _authService.deleteUserAccount(password: pw);
-                  }
-                  // ログ出力を追加
-                  debugPrint("✅ アカウント削除／初期化完了。現在のuser=${FirebaseAuth.instance.currentUser}");
-                  
-                  // ここでスタックを全部クリアして初期画面へ戻す
-                  Navigator.of(context).pushNamedAndRemoveUntil(
-                    '/splash', // あなたのアプリのスプラッシュルートに置き換えてください
-                    (route) => false,
-                  );
-                } catch (e, st) {
-                  debugPrint("❌ 削除エラー: $e\n$st");
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text('削除中にエラーが発生しました: $e')),
-                  );
-                }
-              },
-            ),
-          ],
+            );
+          },
         ),
       ),
     );
