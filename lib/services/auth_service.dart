@@ -44,11 +44,15 @@ class AuthService {
 
       // ↓ ここから「端末ID」を書き込む ↓
       final deviceId = await DeviceService.getDeviceId();
-      await userRef.set({
-        'lastLoginDeviceId': deviceId,
-        'lastLoginAt': FieldValue.serverTimestamp(),
-      }, SetOptions(merge: true));
-      debugPrint('▶️ lastLoginDeviceId 書き込み完了: $deviceId');
+      if (deviceId.trim().isNotEmpty) {
+        await userRef.set({
+          'lastLoginDeviceId': deviceId,
+          'lastLoginAt': FieldValue.serverTimestamp(),
+        }, SetOptions(merge: true));
+        debugPrint('▶️ lastLoginDeviceId 書き込み完了: $deviceId');
+      } else {
+        debugPrint('⚠️ lastLoginDeviceId が空のため書き込みをスキップ');
+      }
     } catch (e) {
       debugPrint('⚠️ Firestore 書き込み失敗: $e');
     }
@@ -112,13 +116,15 @@ class AuthService {
 
         // ↓ ここから追加 ↓
         final deviceId = await DeviceService.getDeviceId();
-        await FirebaseFirestore.instance
-          .collection('users')
-          .doc(user.uid)
-          .set({
-            'lastLoginDeviceId': deviceId,
-            'lastLoginAt': FieldValue.serverTimestamp(),
-          }, SetOptions(merge: true));
+        if (deviceId.trim().isNotEmpty) {
+          await FirebaseFirestore.instance
+            .collection('users')
+            .doc(user.uid)
+            .set({
+              'lastLoginDeviceId': deviceId,
+              'lastLoginAt': FieldValue.serverTimestamp(),
+            }, SetOptions(merge: true));
+        }
         // ↑ ここまで追加 ↑
       }
       return cred;

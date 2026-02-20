@@ -282,10 +282,20 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                 minimumSize: Size.zero,
                 tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                 visualDensity: VisualDensity.compact,
+                backgroundColor: Colors.black.withOpacity(0.55),
+                foregroundColor: Colors.white,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8),
+                  side: BorderSide(color: Colors.white.withOpacity(0.35)),
+                ),
               ),
               child: Text(
                 loc.filterClear,
-                style: TextStyle(fontSize: 11, color: Colors.grey.shade700),
+                style: const TextStyle(
+                  fontSize: 11,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w700,
+                ),
               ),
             ),
           ],
@@ -491,30 +501,89 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
   @override
   void initState() {
     super.initState();
-    _loadCleared();
     _mode = widget.mode; // ← 初期値引き継ぎ
 
     // SubscriptionService のシングルトンを代入
     subscriptionService = SubscriptionService.instance;  // ← ここを修正
 
-    // scenes.json の読み込み & nativeLang のロードを同時に待つ
-    Future.wait([
-      // scenes.json の読み込み（非同期・完了後に再描画）
-      SceneCatalog.instance.ensureLoaded(),
-
-      // もともとの初期化処理
-      _initAll(),
-    ]).then((_) {
-      // ここなら両方完了済み
-      final nl = nativeLang;
-      final labelMap = SceneCatalog.instance.debugLabelsFor("aizuchi");
-      final resolved = SceneCatalog.instance.labelForSubsceneByCode("aizuchi", nl);
-
-      setState(() {}); // ラベル再描画
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _startTopControlsEntrance();
+      _startDeferredInitialLoad();
     });
+  }
 
-    // オファリング読み込み
-    _loadSubscriptionOfferings();
+  void _startTopControlsEntrance() {
+    Future<void>.delayed(const Duration(milliseconds: 180), () {
+      if (!mounted) return;
+      setState(() => _showTopControls = true);
+    });
+  }
+
+  void _startDeferredInitialLoad() {
+    // 画面遷移アニメーションが終わってから重い処理を開始して、見た目のカクつきを抑える
+    Future<void>.delayed(const Duration(milliseconds: 520), () {
+      if (!mounted) return;
+
+      // scenes.json の読み込み & nativeLang のロードを同時に待つ
+      Future.wait([
+        // scenes.json の読み込み（非同期・完了後に再描画）
+        SceneCatalog.instance.ensureLoaded(),
+
+        // もともとの初期化処理
+        _initAll(),
+      ]).then((_) {
+        if (!mounted) return;
+        setState(() {}); // ラベル再描画
+      });
+
+      // オファリング読み込み
+      _loadSubscriptionOfferings();
+    });
+  }
+
+  Widget _buildAnimatedTopSearchRow(AppLocalizations loc) {
+    return AnimatedSwitcher(
+      duration: const Duration(milliseconds: 280),
+      switchInCurve: Curves.easeOutCubic,
+      switchOutCurve: Curves.easeInCubic,
+      transitionBuilder: (child, animation) {
+        final slide = Tween<Offset>(
+          begin: const Offset(0, 0.45),
+          end: Offset.zero,
+        ).animate(
+          CurvedAnimation(parent: animation, curve: Curves.easeOutCubic),
+        );
+        return FadeTransition(
+          opacity: animation,
+          child: SlideTransition(position: slide, child: child),
+        );
+      },
+      child: _showTopControls
+          ? SizedBox(
+              key: const ValueKey('search_row_visible'),
+              child: _buildSearchRow(loc, showFilterButton: true),
+            )
+          : const SizedBox(
+              key: ValueKey('search_row_hidden'),
+              height: 0,
+            ),
+    );
+  }
+
+  Widget? _buildAnimatedCompactFilterHint(AppLocalizations loc) {
+    final hint = _buildCompactFilterHint(loc);
+    if (hint == null) return null;
+    return AnimatedSlide(
+      offset: _showTopControls ? Offset.zero : const Offset(0, 0.35),
+      duration: const Duration(milliseconds: 260),
+      curve: Curves.easeOutCubic,
+      child: AnimatedOpacity(
+        opacity: _showTopControls ? 1.0 : 0.0,
+        duration: const Duration(milliseconds: 240),
+        curve: Curves.easeOut,
+        child: hint,
+      ),
+    );
   }
 
   @override
@@ -551,6 +620,7 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
   final TextEditingController _searchController = TextEditingController();
   String _selectedLevel = 'all';
   String _selectedTag = 'all';
+  bool _showTopControls = false;
 
   void _applyFilter() {
     final base = questions;
@@ -665,6 +735,118 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
     ).then((_) => _loadCleared()); // ★ 戻り時に更新
   }
 
+  Future<void> _openSubscriptionFromUpsell(BuildContext dialogContext) async {
+    Navigator.of(dialogContext).pop();
+    await Future<void>.delayed(const Duration(milliseconds: 100));
+    if (!mounted) return;
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (_) => const SubscriptionScreen()),
+    );
+  }
+
+  Future<void> _showSubscriptionUpsellDialog(AppLocalizations loc) async {
+    await showDialog<void>(
+      context: context,
+      barrierDismissible: true,
+      builder: (dialogContext) {
+        return Dialog(
+          backgroundColor: Colors.transparent,
+          insetPadding: const EdgeInsets.symmetric(horizontal: 24),
+          child: Container(
+            padding: const EdgeInsets.fromLTRB(18, 18, 18, 10),
+            decoration: BoxDecoration(
+              color: Colors.white.withOpacity(0.97),
+              borderRadius: BorderRadius.circular(18),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.18),
+                  blurRadius: 16,
+                  offset: const Offset(0, 8),
+                ),
+              ],
+            ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Text(
+                  loc.subscriptionUpsellTitle,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w800,
+                    color: Color(0xFF2B2B2B),
+                  ),
+                ),
+                const SizedBox(height: 12),
+                const Text(
+                  'このカテゴリはベーシック限定です\n全カテゴリ解放\n7日間無料。期間内にキャンセルで請求なし',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    height: 1.5,
+                    fontSize: 13.5,
+                    color: Color(0xFF4A4A4A),
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                ElevatedButton(
+                  onPressed: () => _openSubscriptionFromUpsell(dialogContext),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFFFF6B8A),
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(vertical: 12),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    elevation: 0,
+                  ),
+                  child: const Text(
+                    '7日間無料で試す',
+                    style: TextStyle(
+                      fontSize: 14.5,
+                      fontWeight: FontWeight.w800,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 8),
+                OutlinedButton(
+                  onPressed: () => _openSubscriptionFromUpsell(dialogContext),
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: const Color(0xFF4A4A4A),
+                    side: BorderSide(color: Colors.grey.shade400),
+                    padding: const EdgeInsets.symmetric(vertical: 11),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                  child: const Text(
+                    'プラン詳細を見る',
+                    style: TextStyle(
+                      fontSize: 13.5,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+                TextButton(
+                  onPressed: () => Navigator.of(dialogContext).pop(),
+                  child: Text(
+                    '今はしない',
+                    style: TextStyle(
+                      color: Colors.grey.shade700,
+                      fontSize: 12.5,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+
   /// RevenueCat のオファリング（販売プラン）を読み込んでいる最中かどうか
   bool _loadingOfferings = false;
 
@@ -719,17 +901,81 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
     final package = hasPackages
         ? _offerings!.current!.availablePackages.first
         : null;
+    final canPop = Navigator.of(context).canPop();
 
     if (isLoading) {
-      return const Scaffold(
-        body: Center(child: CircularProgressIndicator()),
+      return Scaffold(
+        extendBodyBehindAppBar: true,
+        appBar: AppBar(
+          automaticallyImplyLeading: false,
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          scrolledUnderElevation: 0,
+          leading: canPop
+              ? Padding(
+                  padding: const EdgeInsets.only(left: 8),
+                  child: DecoratedBox(
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.92),
+                      shape: BoxShape.circle,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.18),
+                          blurRadius: 8,
+                          offset: const Offset(0, 3),
+                        ),
+                      ],
+                    ),
+                    child: IconButton(
+                      icon: const Icon(
+                        Icons.arrow_back_ios_new_rounded,
+                        size: 20,
+                        color: Colors.black87,
+                      ),
+                      tooltip: MaterialLocalizations.of(context).backButtonTooltip,
+                      onPressed: () => Navigator.of(context).maybePop(),
+                    ),
+                  ),
+                )
+              : null,
+          title: Padding(
+            padding: const EdgeInsets.only(right: 12),
+            child: _buildAnimatedTopSearchRow(loc),
+          ),
+        ),
+        body: const Stack(
+          fit: StackFit.expand,
+          children: [
+            DecoratedBox(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/characters/tumugi_questions.png'),
+                  fit: BoxFit.cover,
+                  alignment: Alignment.center,
+                ),
+              ),
+            ),
+            Center(
+              child: SizedBox(
+                width: 28,
+                height: 28,
+                child: CircularProgressIndicator(
+                  strokeWidth: 2.6,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ],
+        ),
       );
     }
 
     final topInset = MediaQuery.of(context).padding.top + kToolbarHeight;
-    final canPop = Navigator.of(context).canPop();
     final baseTitleSize = Theme.of(context).textTheme.titleLarge?.fontSize ?? 20.0;
     final freePreviewTitleSize = baseTitleSize * 1.2;
+    const questionListBottomInset = 180.0;
+    final hasScrollableQuestions = _filtered.length > 4;
+    final scrollHintBottom = questionListBottomInset;
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -766,7 +1012,7 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
             : null,
         title: Padding(
           padding: const EdgeInsets.only(right: 12),
-          child: _buildSearchRow(loc, showFilterButton: true),
+          child: _buildAnimatedTopSearchRow(loc),
         ),
       ),
       body: Stack(
@@ -782,12 +1028,15 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: topInset, bottom: 180),
+            padding: EdgeInsets.only(top: topInset, bottom: questionListBottomInset),
             child: MediaQuery.removePadding(
               context: context,
               removeTop: true,
               child: ListView(
                 padding: EdgeInsets.zero,
+                physics: const BouncingScrollPhysics(
+                  parent: AlwaysScrollableScrollPhysics(),
+                ),
                 children: [
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
@@ -836,7 +1085,8 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
 
                   // ▼▼ ここから フィルタ ▼▼
                   const SizedBox(height: 12),
-                  if (_buildCompactFilterHint(loc) != null) _buildCompactFilterHint(loc)!,
+                  if (_buildAnimatedCompactFilterHint(loc) != null)
+                    _buildAnimatedCompactFilterHint(loc)!,
                   const SizedBox(height: 8),
                   // ▲▲ ここまで フィルタ ▲▲
 
@@ -867,16 +1117,7 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                                     onTap: () {
                                       if (locked) {
                                         final loc = AppLocalizations.of(context)!;
-                                        showDialog<void>(
-                                          context: context,
-                                          barrierDismissible: true,
-                                          builder: (context) {
-                                            return AlertDialog(
-                                              title: Text(loc.subscriptionUpsellTitle),
-                                              content: Text(loc.subscriptionUpsellMessage),
-                                            );
-                                          },
-                                        );
+                                        _showSubscriptionUpsellDialog(loc);
                                         return;
                                       }
                                       _onQuestionTap(q, idx);
@@ -931,6 +1172,43 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
               ),
             ),
           ),
+          if (hasScrollableQuestions)
+            Positioned(
+              left: 0,
+              right: 0,
+              bottom: scrollHintBottom,
+              child: IgnorePointer(
+                child: Align(
+                  alignment: Alignment.bottomCenter,
+                  child: Container(
+                    width: 240,
+                    height: 26,
+                    decoration: const BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [Color(0x00FFFFFF), Color(0x99FFFFFF)],
+                      ),
+                    ),
+                    child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Icon(
+                        Icons.keyboard_arrow_down_rounded,
+                        color: Colors.white,
+                        size: 16,
+                        shadows: [
+                          Shadow(
+                            color: Color(0xAA000000),
+                            blurRadius: 4,
+                            offset: Offset(0, 1),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
           if (showSubscribeButton && !isTrial)
             Positioned(
               left: 16,

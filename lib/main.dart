@@ -23,6 +23,35 @@ import 'dart:async';
 import 'dart:ui';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 
+const Set<String> _supportedUserLangCodes = {
+  'ja',
+  'en',
+  'zh',
+  'zh_TW',
+  'ko',
+  'es',
+  'fr',
+  'de',
+  'vi',
+  'id',
+};
+
+String _detectInitialLanguageCode() {
+  final locale = PlatformDispatcher.instance.locale;
+  if (locale.languageCode == 'zh' && locale.countryCode?.toUpperCase() == 'TW') {
+    return 'zh_TW';
+  }
+  if (_supportedUserLangCodes.contains(locale.languageCode)) {
+    return locale.languageCode;
+  }
+  return 'en';
+}
+
+Locale _localeFromAppCode(String code) {
+  if (code == 'zh_TW') return const Locale('zh', 'TW');
+  return Locale(code);
+}
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
@@ -43,8 +72,10 @@ void main() async {
     // ③ その他設定（起動前に必要なものだけ）
     final prefs = await SharedPreferences.getInstance();
     final savedLang = prefs.getString('user_language');
-    final initialLocale =
-        savedLang != null ? Locale(savedLang) : WidgetsBinding.instance.window.locale;
+    final initialCode = _supportedUserLangCodes.contains(savedLang)
+        ? savedLang!
+        : _detectInitialLanguageCode();
+    final initialLocale = _localeFromAppCode(initialCode);
 
     runApp(MyApp(initialLocale: initialLocale)); // ← ★ここだけで1回
 
@@ -130,7 +161,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
         if (deviceLocale != null && supportedLocales.contains(Locale(deviceLocale.languageCode))) {
           return deviceLocale;
         }
-        return const Locale('ja');
+        return const Locale('en');
       },
       // home: IdleGateScreen(),
       home: SplashScreen(),
