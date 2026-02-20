@@ -451,13 +451,17 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                 const rowHeight = 58.0;
                 const dividerHeight = 1.0;
                 const rowsVisible = 5;
-                const quoteHeight = 64.0;
+                const quoteBodyHeight = 64.0;
+                const quotePointerHeight = 10.0;
+                const quoteHeight = quoteBodyHeight + quotePointerHeight;
+                const quoteShiftUp = 80.0;
                 const paddingTop = 8.0;
                 const paddingBottom = 24.0;
                 final hasQuote = _tsumugiQuote != null;
                 final paperHeight = (rowHeight * rowsVisible) + (dividerHeight * (rowsVisible - 1));
                 final availableHeight = constraints.maxHeight - paddingTop - paddingBottom;
-                final desiredQuoteTop = availableHeight * 0.40;
+                final desiredQuoteTopRaw = (availableHeight * 0.40) - quoteShiftUp;
+                final desiredQuoteTop = desiredQuoteTopRaw < 0 ? 0.0 : desiredQuoteTopRaw;
                 final desiredListTop = availableHeight * 0.50;
                 final gapBetween = hasQuote
                     ? (desiredListTop - desiredQuoteTop - quoteHeight).clamp(0.0, 120.0)
@@ -495,22 +499,22 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                               child: SizedBox(
                                 width: constraints.maxWidth * 0.624,
                                 height: quoteHeight,
-                                child: Container(
-                                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xFFFFF0F5),
-                                    borderRadius: BorderRadius.circular(16),
-                                    border: Border.all(
-                                      color: Colors.pink.shade200.withOpacity(0.6),
-                                    ),
+                                child: CustomPaint(
+                                  painter: _QuoteBubblePainter(
+                                    fillColor: const Color(0xFFFFF0F5),
+                                    borderColor: Colors.pink.shade200.withOpacity(0.6),
+                                    pointerHeight: quotePointerHeight,
                                   ),
-                                  child: Text(
-                                    _tsumugiQuote!,
-                                    maxLines: 2,
-                                    overflow: TextOverflow.clip,
-                                    softWrap: true,
-                                    textAlign: TextAlign.center,
-                                    style: const TextStyle(fontSize: 14, height: 1.35),
+                                  child: Padding(
+                                    padding: EdgeInsets.fromLTRB(14, quotePointerHeight + 10, 14, 10),
+                                    child: Text(
+                                      _tsumugiQuote!,
+                                      maxLines: 2,
+                                      overflow: TextOverflow.clip,
+                                      softWrap: true,
+                                      textAlign: TextAlign.center,
+                                      style: const TextStyle(fontSize: 14, height: 1.35),
+                                    ),
                                   ),
                                 ),
                               ),
@@ -617,5 +621,77 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
         ],
       ),
     );
+  }
+}
+
+class _QuoteBubblePainter extends CustomPainter {
+  const _QuoteBubblePainter({
+    required this.fillColor,
+    required this.borderColor,
+    required this.pointerHeight,
+  });
+
+  final Color fillColor;
+  final Color borderColor;
+  final double pointerHeight;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    const radius = 16.0;
+    const pointerWidth = 22.0;
+    const pointerNeck = 8.0;
+
+    final centerX = size.width / 2;
+    final leftNeck = centerX - (pointerNeck / 2);
+    final rightNeck = centerX + (pointerNeck / 2);
+    final leftTip = centerX - (pointerWidth / 2);
+    final rightTip = centerX + (pointerWidth / 2);
+    final topY = pointerHeight;
+    final rect = Rect.fromLTWH(0, topY, size.width, size.height - topY);
+
+    final path = Path()
+      ..moveTo(rect.left + radius, rect.top)
+      ..lineTo(leftTip, rect.top)
+      ..quadraticBezierTo(leftNeck, rect.top, centerX, 0)
+      ..quadraticBezierTo(rightNeck, rect.top, rightTip, rect.top)
+      ..lineTo(rect.right - radius, rect.top)
+      ..arcToPoint(
+        Offset(rect.right, rect.top + radius),
+        radius: const Radius.circular(radius),
+      )
+      ..lineTo(rect.right, rect.bottom - radius)
+      ..arcToPoint(
+        Offset(rect.right - radius, rect.bottom),
+        radius: const Radius.circular(radius),
+      )
+      ..lineTo(rect.left + radius, rect.bottom)
+      ..arcToPoint(
+        Offset(rect.left, rect.bottom - radius),
+        radius: const Radius.circular(radius),
+      )
+      ..lineTo(rect.left, rect.top + radius)
+      ..arcToPoint(
+        Offset(rect.left + radius, rect.top),
+        radius: const Radius.circular(radius),
+      )
+      ..close();
+
+    final fillPaint = Paint()
+      ..color = fillColor
+      ..style = PaintingStyle.fill;
+    canvas.drawPath(path, fillPaint);
+
+    final strokePaint = Paint()
+      ..color = borderColor
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1.0;
+    canvas.drawPath(path, strokePaint);
+  }
+
+  @override
+  bool shouldRepaint(covariant _QuoteBubblePainter oldDelegate) {
+    return oldDelegate.fillColor != fillColor ||
+        oldDelegate.borderColor != borderColor ||
+        oldDelegate.pointerHeight != pointerHeight;
   }
 }
