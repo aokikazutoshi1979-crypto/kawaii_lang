@@ -46,6 +46,61 @@ class _SubscriptionScreenState extends SubscriptionState<SubscriptionScreen> {
     }
   }
 
+  String _planName(AppLocalizations loc, Package? pkg) {
+    final raw = pkg?.storeProduct.title.trim();
+    if (raw != null && raw.isNotEmpty) {
+      return raw.split('(').first.trim();
+    }
+    return loc.localeName.startsWith('ja') ? 'ベーシックプラン' : 'Basic Plan';
+  }
+
+  String _mainCtaText(AppLocalizations loc) {
+    return loc.localeName.startsWith('ja') ? '7日間無料で試す' : 'Start 7-day free trial';
+  }
+
+  String _trialCopy(AppLocalizations loc) {
+    return loc.localeName.startsWith('ja')
+        ? '7日間無料、期間内キャンセルで請求なし'
+        : '7-day free trial. Cancel anytime before trial ends and you will not be charged.';
+  }
+
+  List<String> _benefits(AppLocalizations loc) {
+    if (loc.localeName.startsWith('ja')) {
+      return const ['全カテゴリ解放', '回数制限なし', 'いつでも解約'];
+    }
+    return const ['All categories unlocked', 'Unlimited practice', 'Cancel anytime'];
+  }
+
+  String _iosCancelGuide(AppLocalizations loc) {
+    if (loc.localeName.startsWith('ja')) {
+      return '解約はiPhoneの「設定」→「Apple Account」→「サブスクリプション」から行えます。';
+    }
+    return 'To cancel on iPhone: Settings > Apple Account > Subscriptions.';
+  }
+
+  Future<void> _purchase(Package pkg) async {
+    final wasSubscribed = hasSubOnDevice;
+    try {
+      await SubscriptionService.instance.purchasePackage(pkg);
+      await refreshSubscriptionStatus();
+      if (!mounted) return;
+      if (!wasSubscribed && hasSubOnDevice) {
+        final loc = AppLocalizations.of(context)!;
+        final msg = loc.localeName.startsWith('ja')
+            ? 'サブスクリプションに加入しました。'
+            : 'Subscription activated.';
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(msg)),
+        );
+      }
+    } catch (_) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Purchase failed. Please try again.')),
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
@@ -65,88 +120,238 @@ class _SubscriptionScreenState extends SubscriptionState<SubscriptionScreen> {
     // コンソールにも出す
     debugPrint('[RevenueCat] $rcDebugLine');
 
-    return Scaffold(
-      appBar: AppBar(title: Text(loc.subscriptionTitle)),
-      body: ListView(
-        padding: const EdgeInsets.all(16),
-        children: [
-          // プラン説明
-          Text(
-            loc.subscriptionPlanTitle,
-            style: Theme.of(context).textTheme.titleLarge,
-          ),
-          const SizedBox(height: 8),
-          Text(loc.subscriptionPlanMonthly),
-          Text(loc.subscriptionPlanPeriod),
-          Text(loc.subscriptionPlanPrice),
-          Text(loc.subscriptionPlanTrial),
-          Text(loc.subscriptionStatusSubscribed),
-          const SizedBox(height: 24),
+    final priceText = pkg == null
+        ? (loc.localeName.startsWith('ja') ? '価格を読み込み中...' : 'Loading price...')
+        : '${pkg.storeProduct.priceString}${loc.subscriptionPriceTaxSuffix}';
 
-          // ◆ 現在の加入状態表示
-          Text(
-            loc.subscriptionCurrentStatusTitle,
-            style: Theme.of(context).textTheme.titleMedium,
-          ),
-          Text(
-            hasSub ? loc.subscriptionStatus : loc.subscriptionStatusTrial,
-          ),
-          const SizedBox(height: 24),
-          
-          // ◆ サブスク未加入かつ pkg があるときだけ購入タイルを表示
-          if (!hasSub && pkg != null)
-            ListTile(
-              leading: SizedBox(
-                width: 60,
-                height: 60,
-                child: Image.asset(
-                  'assets/images/icon/basic_plan002.png',
-                  fit: BoxFit.contain,
+    final planName = _planName(loc, pkg);
+    final benefits = _benefits(loc);
+
+    return Scaffold(
+      backgroundColor: const Color(0xFFF3F5F8),
+      appBar: AppBar(title: Text(loc.subscriptionTitle)),
+      body: SafeArea(
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            final horizontal = constraints.maxWidth >= 520 ? 24.0 : 14.0;
+            return Center(
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 640),
+                child: ListView(
+                  padding: EdgeInsets.fromLTRB(horizontal, 16, horizontal, 24),
+                  children: [
+                    Card(
+                      elevation: 0,
+                      color: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(18, 18, 18, 16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                SizedBox(
+                                  width: 46,
+                                  height: 46,
+                                  child: Image.asset(
+                                    'assets/images/icon/basic_plan002.png',
+                                    fit: BoxFit.contain,
+                                  ),
+                                ),
+                                const SizedBox(width: 12),
+                                Expanded(
+                                  child: Text(
+                                    planName,
+                                    style: const TextStyle(
+                                      fontSize: 21,
+                                      fontWeight: FontWeight.w800,
+                                      color: Color(0xFF1F2937),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 14),
+                            Text(
+                              priceText,
+                              style: const TextStyle(
+                                fontSize: 27,
+                                fontWeight: FontWeight.w900,
+                                color: Color(0xFF111827),
+                              ),
+                            ),
+                            const SizedBox(height: 6),
+                            Text(
+                              _trialCopy(loc),
+                              style: const TextStyle(
+                                fontSize: 13.5,
+                                fontWeight: FontWeight.w600,
+                                color: Color(0xFF334155),
+                                height: 1.4,
+                              ),
+                            ),
+                            const SizedBox(height: 14),
+                            ...benefits.map(
+                              (line) => Padding(
+                                padding: const EdgeInsets.only(bottom: 8),
+                                child: Row(
+                                  children: [
+                                    const Icon(
+                                      Icons.check_circle_rounded,
+                                      size: 18,
+                                      color: Color(0xFF16A34A),
+                                    ),
+                                    const SizedBox(width: 8),
+                                    Expanded(
+                                      child: Text(
+                                        line,
+                                        style: const TextStyle(
+                                          fontSize: 14.5,
+                                          fontWeight: FontWeight.w700,
+                                          color: Color(0xFF1F2937),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+
+                    if (!hasSub)
+                      Card(
+                        elevation: 0,
+                        color: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(18),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              ElevatedButton(
+                                onPressed: (pkg == null) ? null : () => _purchase(pkg),
+                                style: ElevatedButton.styleFrom(
+                                  elevation: 0,
+                                  backgroundColor: const Color(0xFFFC5B7D),
+                                  foregroundColor: Colors.white,
+                                  padding: const EdgeInsets.symmetric(vertical: 14),
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                ),
+                                child: Text(
+                                  _mainCtaText(loc),
+                                  style: const TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w800,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+
+                    if (hasSub) ...[
+                      Card(
+                        elevation: 0,
+                        color: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(18),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              Text(
+                                loc.subscriptionCurrentStatusTitle,
+                                style: const TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w800,
+                                  color: Color(0xFF1F2937),
+                                ),
+                              ),
+                              const SizedBox(height: 6),
+                              Text(
+                                loc.subscriptionStatus,
+                                style: const TextStyle(
+                                  color: Color(0xFF334155),
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                              const SizedBox(height: 12),
+                              ElevatedButton(
+                                onPressed: () => _launchUrl(_manageUrl),
+                                child: Text(loc.subscriptionManageButton),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+
+                    const SizedBox(height: 12),
+                    Card(
+                      elevation: 0,
+                      color: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 6),
+                        child: RestorePurchaseSection(
+                          onRestored: () async {
+                            await refreshSubscriptionStatus();
+                          },
+                        ),
+                      ),
+                    ),
+
+                    const SizedBox(height: 12),
+                    Card(
+                      elevation: 0,
+                      color: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18),
+                      ),
+                      child: Column(
+                        children: [
+                          TextButton(
+                            onPressed: () => _launchUrl(_eulaUrl),
+                            child: Text(loc.viewTerms),
+                          ),
+                          TextButton(
+                            onPressed: () => _launchUrl(_privacyUrl),
+                            child: Text(loc.viewPrivacyPolicy),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(14, 0, 14, 14),
+                            child: Text(
+                              _iosCancelGuide(loc),
+                              textAlign: TextAlign.center,
+                              style: Theme.of(context).textTheme.bodySmall,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
               ),
-              title: Text(loc.subscribeNow),
-              subtitle: Text(
-                '${pkg.storeProduct.priceString}${loc.subscriptionPriceTaxSuffix}',
-              ),
-              trailing: ElevatedButton(
-                onPressed: () async {
-                  await SubscriptionService.instance.purchasePackage(pkg);
-                  await refreshSubscriptionStatus();
-                },
-                child: Text(loc.subscribe),
-              ),
-            ),
-
-          // 管理ボタン（加入済みの場合）
-          if (hasSub)
-            ElevatedButton(
-              onPressed: () => _launchUrl(_manageUrl),
-              child: Text(loc.subscriptionManageButton),
-            ),
-
-          // 利用規約 (EULA) へのリンク
-          TextButton(
-            onPressed: () => _launchUrl(_eulaUrl),
-            child: Text(loc.viewTerms),
-          ),
-
-          // プライバシーポリシーへのリンク
-          TextButton(
-            onPressed: () => _launchUrl(_privacyUrl),
-            child: Text(loc.viewPrivacyPolicy),
-          ),
-
-          const SizedBox(height: 12),
-          Text(
-            loc.subscriptionManageNote,
-            style: Theme.of(context).textTheme.bodySmall,
-          ),
-          // 復元ボタンは別コンポーネントで
-          RestorePurchaseSection(onRestored: () async {
-            await refreshSubscriptionStatus();
-          }),
-          const Divider(height: 32),
-        ],
+            );
+          },
+        ),
       ),
     );
   }
