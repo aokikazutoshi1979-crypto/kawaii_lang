@@ -202,14 +202,33 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
       ? Locale(parts[0], parts[1])
       : Locale(parts[0]);
 
+    final previousTarget = selectedTargetLang;
+    var nextTarget = previousTarget;
+    if (nextTarget == null || nextTarget == code) {
+      nextTarget = _defaultTargetForNative(code);
+    }
+
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString('user_language', code);
+    await prefs.setString('target_language', nextTarget);
 
-    setState(() => selectedLang = code);
+    setState(() {
+      selectedLang = code;
+      selectedTargetLang = nextTarget;
+    });
     MyApp.setLocale(context, locale);
-    
+
+    final loc = AppLocalizations.of(context)!;
+    if (previousTarget == code) {
+      final targetLabel = _labelForLangCode(nextTarget, context);
+      final msg = loc.localeName.startsWith('ja')
+          ? '母語の変更に合わせて、学びたい言語を「$targetLabel」に自動変更しました。'
+          : 'Target language was automatically changed to "$targetLabel" to keep it different from your native language.';
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(msg)));
+      return;
+    }
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text(AppLocalizations.of(context)!.languageUpdated)),
+      SnackBar(content: Text(loc.languageUpdated)),
     );
   }
 
@@ -218,7 +237,7 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     if (native != null && code == native) {
       final loc = AppLocalizations.of(context)!;
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(loc.selectPrompt)),
+        SnackBar(content: Text(_sameLanguageNotAllowedMessage(loc))),
       );
       return;
     }
@@ -227,6 +246,17 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     await prefs.setString('target_language', code);
 
     setState(() => selectedTargetLang = code);
+  }
+
+  String _defaultTargetForNative(String nativeCode) {
+    return nativeCode == 'ja' ? 'en' : 'ja';
+  }
+
+  String _sameLanguageNotAllowedMessage(AppLocalizations loc) {
+    if (loc.localeName.startsWith('ja')) {
+      return '母語と学びたい言語は同じにできません。別の言語を選択してください。';
+    }
+    return 'Native language and target language must be different. Please choose another language.';
   }
 
   Future<void> _handleLogout() async {
