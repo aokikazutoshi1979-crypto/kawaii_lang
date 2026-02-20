@@ -1128,14 +1128,12 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                     _buildAnimatedCompactFilterHint(loc)!,
                   const SizedBox(height: 8),
                   // ▲▲ ここまで フィルタ ▲▲
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 12),
 
-                  Transform.translate(
-                    offset: const Offset(0, -50),
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(16, 6, 16, 16),
-                      child: Column(
-                        children: _filtered.asMap().entries.map((entry) {
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 6, 16, 16),
+                    child: Column(
+                      children: _filtered.asMap().entries.map((entry) {
                           final idxFiltered = entry.key;
                           final q = entry.value;
 
@@ -1214,7 +1212,6 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                           );
                         }).toList(),
                       ),
-                    ),
                   ),
                 ],
               ),

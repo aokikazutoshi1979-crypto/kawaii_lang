@@ -22,12 +22,24 @@ class _SubscriptionScreenState extends SubscriptionState<SubscriptionScreen> {
   final String _privacyUrl = 'https://kawaiilang.com/privacy.html';
 
   Offerings? offerings;
-  Package? package;  // ←ここでフィールドを用意
+  Package? package; // ←ここでフィールドを用意
+  bool _isPurchasing = false;
 
   @override
   void initState() {
     super.initState();
+    SubscriptionService.instance.subscriptionActiveNotifier.addListener(
+      _handleSubscriptionStateChanged,
+    );
     _loadOfferings();
+  }
+
+  @override
+  void dispose() {
+    SubscriptionService.instance.subscriptionActiveNotifier.removeListener(
+      _handleSubscriptionStateChanged,
+    );
+    super.dispose();
   }
 
   Future<void> _loadOfferings() async {
@@ -55,7 +67,9 @@ class _SubscriptionScreenState extends SubscriptionState<SubscriptionScreen> {
   }
 
   String _mainCtaText(AppLocalizations loc) {
-    return loc.localeName.startsWith('ja') ? '7日間無料で試す' : 'Start 7-day free trial';
+    return loc.localeName.startsWith('ja')
+        ? '7日間無料で試す'
+        : 'Start 7-day free trial';
   }
 
   String _trialCopy(AppLocalizations loc) {
@@ -68,7 +82,11 @@ class _SubscriptionScreenState extends SubscriptionState<SubscriptionScreen> {
     if (loc.localeName.startsWith('ja')) {
       return const ['全カテゴリ解放', '回数制限なし', 'いつでも解約'];
     }
-    return const ['All categories unlocked', 'Unlimited practice', 'Cancel anytime'];
+    return const [
+      'All categories unlocked',
+      'Unlimited practice',
+      'Cancel anytime'
+    ];
   }
 
   String _iosCancelGuide(AppLocalizations loc) {
@@ -78,13 +96,52 @@ class _SubscriptionScreenState extends SubscriptionState<SubscriptionScreen> {
     return 'To cancel on iPhone: Settings > Apple Account > Subscriptions.';
   }
 
-  Future<void> _purchase(Package pkg) async {
-    final wasSubscribed = hasSubOnDevice;
-    try {
-      await SubscriptionService.instance.purchasePackage(pkg);
+  void _handleSubscriptionStateChanged() {
+    if (!mounted) return;
+    final active =
+        SubscriptionService.instance.subscriptionActiveNotifier.value;
+    if (hasSubOnDevice == active && !(_isPurchasing && active)) return;
+    setState(() {
+      hasSubOnDevice = active;
+      if (active) {
+        _isPurchasing = false;
+      }
+    });
+  }
+
+  Future<void> _retrySubscriptionRefreshAfterPurchase() async {
+    const maxAttempts = 5;
+    for (var attempt = 0; attempt < maxAttempts; attempt++) {
       await refreshSubscriptionStatus();
       if (!mounted) return;
-      if (!wasSubscribed && hasSubOnDevice) {
+      if (hasSubOnDevice ||
+          SubscriptionService.instance.subscriptionActiveNotifier.value) {
+        return;
+      }
+      if (attempt < maxAttempts - 1) {
+        await Future.delayed(const Duration(seconds: 1));
+      }
+    }
+  }
+
+  Future<void> _purchase(Package pkg) async {
+    if (_isPurchasing) return;
+    final wasSubscribed = hasSubOnDevice ||
+        SubscriptionService.instance.subscriptionActiveNotifier.value;
+    setState(() => _isPurchasing = true);
+    try {
+      final purchased = await SubscriptionService.instance.purchasePackage(pkg);
+      if (!purchased) {
+        if (!mounted) return;
+        setState(() => _isPurchasing = false);
+        return;
+      }
+      await _retrySubscriptionRefreshAfterPurchase();
+      if (!mounted) return;
+      final isNowSubscribed = hasSubOnDevice ||
+          SubscriptionService.instance.subscriptionActiveNotifier.value;
+      setState(() => _isPurchasing = false);
+      if (!wasSubscribed && isNowSubscribed) {
         final loc = AppLocalizations.of(context)!;
         final msg = loc.localeName.startsWith('ja')
             ? 'サブスクリプションに加入しました。'
@@ -95,6 +152,7 @@ class _SubscriptionScreenState extends SubscriptionState<SubscriptionScreen> {
       }
     } catch (_) {
       if (!mounted) return;
+      setState(() => _isPurchasing = false);
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Purchase failed. Please try again.')),
       );
@@ -104,7 +162,8 @@ class _SubscriptionScreenState extends SubscriptionState<SubscriptionScreen> {
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
-    final bool hasSub = hasSubOnDevice;
+    final bool hasSub = hasSubOnDevice ||
+        SubscriptionService.instance.subscriptionActiveNotifier.value;
 
     // ←ここで「サービスのプロパティ」ではなく「Stateのフィールド」を使う
     final pkg = offerings?.current?.monthly;
@@ -112,9 +171,9 @@ class _SubscriptionScreenState extends SubscriptionState<SubscriptionScreen> {
     // ▼ 追加：表示＆ログ出力用のデバッグ文字列
     final String rcDebugLine = (pkg != null)
         ? 'pkg id=${pkg.storeProduct.identifier} '
-          'price=${pkg.storeProduct.price} '
-          'priceString=${pkg.storeProduct.priceString} '
-          'currency=${pkg.storeProduct.currencyCode}'
+            'price=${pkg.storeProduct.price} '
+            'priceString=${pkg.storeProduct.priceString} '
+            'currency=${pkg.storeProduct.currencyCode}'
         : 'pkg: null (Offerings 未取得 or 月額プランなし)';
 
     // コンソールにも出す
@@ -225,7 +284,6 @@ class _SubscriptionScreenState extends SubscriptionState<SubscriptionScreen> {
                       ),
                     ),
                     const SizedBox(height: 12),
-
                     if (!hasSub)
                       Card(
                         elevation: 0,
@@ -239,29 +297,45 @@ class _SubscriptionScreenState extends SubscriptionState<SubscriptionScreen> {
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
                               ElevatedButton(
-                                onPressed: (pkg == null) ? null : () => _purchase(pkg),
+                                onPressed: (pkg == null || _isPurchasing)
+                                    ? null
+                                    : () => _purchase(pkg),
                                 style: ElevatedButton.styleFrom(
                                   elevation: 0,
                                   backgroundColor: const Color(0xFFFC5B7D),
                                   foregroundColor: Colors.white,
-                                  padding: const EdgeInsets.symmetric(vertical: 14),
+                                  padding:
+                                      const EdgeInsets.symmetric(vertical: 14),
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(12),
                                   ),
                                 ),
                                 child: Text(
-                                  _mainCtaText(loc),
-                                  style: const TextStyle(
-                                    fontSize: 16,
+                                  _isPurchasing
+                                      ? loc.restoringPurchase
+                                      : _mainCtaText(loc),
+                                  style: TextStyle(
+                                    fontSize: _isPurchasing ? 14.5 : 16,
                                     fontWeight: FontWeight.w800,
                                   ),
                                 ),
                               ),
+                              if (_isPurchasing) ...[
+                                const SizedBox(height: 8),
+                                const Center(
+                                  child: SizedBox(
+                                    width: 16,
+                                    height: 16,
+                                    child: CircularProgressIndicator(
+                                      strokeWidth: 2,
+                                    ),
+                                  ),
+                                ),
+                              ],
                             ],
                           ),
                         ),
                       ),
-
                     if (hasSub) ...[
                       Card(
                         elevation: 0,
@@ -300,7 +374,6 @@ class _SubscriptionScreenState extends SubscriptionState<SubscriptionScreen> {
                         ),
                       ),
                     ],
-
                     const SizedBox(height: 12),
                     Card(
                       elevation: 0,
@@ -317,7 +390,6 @@ class _SubscriptionScreenState extends SubscriptionState<SubscriptionScreen> {
                         ),
                       ),
                     ),
-
                     const SizedBox(height: 12),
                     Card(
                       elevation: 0,

@@ -5,7 +5,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 
-import 'package:kawaii_lang/services/subscription_state.dart';
 import 'package:kawaii_lang/services/device_service.dart';
 
 /// サブスクリプション機能全般を管理するサービスクラス
@@ -23,6 +22,9 @@ class SubscriptionService {
 
   /// 直近の CustomerInfo
   CustomerInfo? _customerInfo;
+  final ValueNotifier<bool> subscriptionActiveNotifier = ValueNotifier<bool>(
+    false,
+  );
 
   /// あなたの有効化 Entitlement ID（必要に応じて合わせてください）
   static const String entitlementId = 'KawaiiLang_Subscription';
@@ -37,6 +39,7 @@ class SubscriptionService {
       _initFuture = null;
       _initializedUid = null;
       isSessionMismatch = false;
+      _setSubscriptionActive(false);
       return Future.value();
     }
 
@@ -63,7 +66,8 @@ class SubscriptionService {
           .get(const GetOptions(source: Source.server));
 
       final data = doc.data();
-      final storedDeviceId = (data?['lastLoginDeviceId'] as String?)?.trim() ?? '';
+      final storedDeviceId =
+          (data?['lastLoginDeviceId'] as String?)?.trim() ?? '';
       final currentDeviceId = (await DeviceService.getDeviceId()).trim();
 
       // 端末IDが空文字の場合は「未確定データ」とみなして不一致判定しない
@@ -127,6 +131,7 @@ class SubscriptionService {
   // --------------------------
   Future<void> _onCustomerInfo(CustomerInfo info) async {
     _customerInfo = info;
+    _setSubscriptionActive(_isActiveFromCustomerInfo(info));
 
     final uid = FirebaseAuth.instance.currentUser?.uid;
     if (uid == null) return;
@@ -144,10 +149,11 @@ class SubscriptionService {
 
     if (entitlement != null) {
       try {
-        purchaseDate = DateTime.tryParse(entitlement.originalPurchaseDate?.toString() ?? '');
+        purchaseDate =
+            DateTime.tryParse(entitlement.originalPurchaseDate.toString());
       } catch (_) {}
       try {
-        expirationDate = DateTime.tryParse(entitlement.expirationDate?.toString() ?? '');
+        expirationDate = DateTime.tryParse(entitlement.expirationDate ?? '');
       } catch (_) {}
     }
 
@@ -155,8 +161,10 @@ class SubscriptionService {
       await userRef.set({
         'hasSubscription': hasActive,
         'subscriptionPlan': entitlement?.productIdentifier ?? '',
-        'purchasedAt': purchaseDate != null ? Timestamp.fromDate(purchaseDate) : null,
-        'expirationDate': expirationDate != null ? Timestamp.fromDate(expirationDate) : null,
+        'purchasedAt':
+            purchaseDate != null ? Timestamp.fromDate(purchaseDate) : null,
+        'expirationDate':
+            expirationDate != null ? Timestamp.fromDate(expirationDate) : null,
         'latestSessionId': info.originalAppUserId,
         'updatedAt': now,
       }, SetOptions(merge: true));
@@ -174,7 +182,23 @@ class SubscriptionService {
           .recordError(e, st, reason: 'Firestore write (customer info)');
     }
 
-    debugPrint('▶️ サブスク更新: active=$hasActive, plan=${entitlement?.productIdentifier}');
+    debugPrint(
+        '▶️ サブスク更新: active=$hasActive, plan=${entitlement?.productIdentifier}');
+  }
+
+  void _setSubscriptionActive(bool active) {
+    if (subscriptionActiveNotifier.value == active) return;
+    subscriptionActiveNotifier.value = active;
+  }
+
+  bool _isActiveFromCustomerInfo(CustomerInfo info) {
+    final ent = info.entitlements.active[entitlementId];
+    if (ent == null) return false;
+    final raw = ent.expirationDate;
+    if (raw == null) return true;
+    final exp = DateTime.tryParse(raw.toString());
+    if (exp == null) return true;
+    return exp.isAfter(DateTime.now());
   }
 
   // --------------------------
@@ -194,30 +218,28 @@ class SubscriptionService {
 
   Future<bool> checkSubscriptionOnDevice() async {
     final info = await _safeCustomerInfo();
-    if (info == null) return false;
-
-    final raw = info.entitlements.active[entitlementId]?.expirationDate;
-    if (raw == null) return false;
-
-    final exp = DateTime.tryParse(raw.toString());
-    if (exp == null) return false;
-
-    return exp.isAfter(DateTime.now());
+    if (info == null) {
+      _setSubscriptionActive(false);
+      return false;
+    }
+    final active = _isActiveFromCustomerInfo(info);
+    _setSubscriptionActive(active);
+    return active;
   }
 
   // --------------------------
   // 購入/復元/オファリング
   // --------------------------
-  Future<void> purchasePackage(Package package) async {
+  Future<bool> purchasePackage(Package package) async {
     await init();
-    if (!_isConfigured) return;
+    if (!_isConfigured) return false;
 
     try {
       await Purchases.purchasePackage(package);
     } on PlatformException catch (e, st) {
       // キャンセル等のコードを取り出して分岐
       final code = PurchasesErrorHelper.getErrorCode(e);
-      if (code == PurchasesErrorCode.purchaseCancelledError) return;
+      if (code == PurchasesErrorCode.purchaseCancelledError) return false;
       FirebaseCrashlytics.instance
           .recordError(e, st, reason: 'purchasePackage platform error');
       rethrow;
@@ -235,6 +257,7 @@ class SubscriptionService {
       FirebaseCrashlytics.instance
           .recordError(e, st, reason: 'post-purchase getCustomerInfo');
     }
+    return true;
   }
 
   Future<void> restorePurchases() async {
@@ -258,8 +281,7 @@ class SubscriptionService {
     try {
       return await Purchases.getOfferings();
     } catch (e, st) {
-      FirebaseCrashlytics.instance
-          .recordError(e, st, reason: 'getOfferings');
+      FirebaseCrashlytics.instance.recordError(e, st, reason: 'getOfferings');
       return null;
     }
   }
