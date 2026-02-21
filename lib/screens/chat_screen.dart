@@ -1823,20 +1823,39 @@ class _ChatScreenState extends State<ChatScreen> {
                     padding: const EdgeInsets.only(top: 8, bottom: 4),
                     child: Align(
                       alignment: Alignment.center,
-                      child: TextButton(
-                        onPressed: _openQuestionListFromRecommend,
-                        style: TextButton.styleFrom(
-                          padding: EdgeInsets.zero,
-                          minimumSize: Size.zero,
-                          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                          visualDensity: VisualDensity.compact,
+                      child: DecoratedBox(
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.92),
+                          borderRadius: BorderRadius.circular(999),
+                          border: Border.all(color: Colors.black.withOpacity(0.08)),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black.withOpacity(0.14),
+                              blurRadius: 8,
+                              offset: const Offset(0, 3),
+                            ),
+                          ],
                         ),
-                        child: Text(
-                          'おすすめから開始しました（問題を選び直す）',
-                          style: TextStyle(
-                            fontSize: 12,
-                            color: Colors.pink.shade400,
-                            decoration: TextDecoration.underline,
+                        child: TextButton(
+                          onPressed: _openQuestionListFromRecommend,
+                          style: TextButton.styleFrom(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 12,
+                              vertical: 7,
+                            ),
+                            minimumSize: Size.zero,
+                            tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                            visualDensity: VisualDensity.compact,
+                            foregroundColor: Colors.black87,
+                          ),
+                          child: const Text(
+                            'おすすめから開始しました（問題を選び直す）',
+                            style: TextStyle(
+                              fontSize: 12.5,
+                              fontWeight: FontWeight.w700,
+                              color: Colors.black87,
+                              height: 1.2,
+                            ),
                           ),
                         ),
                       ),

@@ -18,7 +18,7 @@ import 'package:flutter/foundation.dart'; // kReleaseMode
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import '../services/subscription_state.dart';
 import 'chat_screen.dart';
-import '../services/tsumugi_quote_service.dart';
+import '../services/tsumugi_line_service.dart';
 import 'tsumugi_profile_screen.dart';
 import '../widgets/tsumugi_welcome_dialog.dart';
 
@@ -44,7 +44,7 @@ class _CategorySelectionScreenState
   QuizMode selectedMode = QuizMode.reading;
   static const String _quickStartPrefKey = 'has_used_quick_start';
   static const String _quizModePrefKey = 'quiz_mode';
-  String? _tsumugiQuote;
+  String? _tsumugiLine;
   bool _revealRequested = false;
   bool _revealStarted = false;
   bool _showQuote = false;
@@ -63,7 +63,7 @@ class _CategorySelectionScreenState
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
       _loadScenesJson();
-      _loadTsumugiQuote();
+      _loadTsumugiLine();
       _requestReveal();
       _precacheQuestionBackground();
       _maybeShowTsumugiIntroCard();
@@ -154,10 +154,15 @@ class _CategorySelectionScreenState
     setState(() => selectedMode = mode);
   }
 
-  Future<void> _loadTsumugiQuote() async {
-    final quote = await TsumugiQuoteService.instance.getNextQuote();
+  Future<void> _loadTsumugiLine() async {
+    await refreshSubscriptionStatus();
     if (!mounted) return;
-    setState(() => _tsumugiQuote = quote);
+    final quote = await TsumugiLineService.instance.getLine(
+      loc: AppLocalizations.of(context)!,
+      hasSubscription: hasSubOnDevice,
+    );
+    if (!mounted) return;
+    setState(() => _tsumugiLine = quote);
   }
 
   void _requestReveal() {
@@ -494,7 +499,7 @@ class _CategorySelectionScreenState
                 _loadLanguage();
                 _loadTargetLanguage();
                 _loadQuizMode();
-                _loadTsumugiQuote();
+                _loadTsumugiLine();
               });
             },
           ),
@@ -527,7 +532,7 @@ class _CategorySelectionScreenState
                 const quoteShiftUp = 80.0;
                 const paddingTop = 8.0;
                 const paddingBottom = 24.0;
-                final hasQuote = _tsumugiQuote != null;
+                final hasQuote = _tsumugiLine != null;
                 final paperHeight = (rowHeight * rowsVisible) +
                     (dividerHeight * (rowsVisible - 1));
                 final availableHeight =
@@ -561,7 +566,7 @@ class _CategorySelectionScreenState
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       SizedBox(height: topGap),
-                      if (_tsumugiQuote != null)
+                      if (_tsumugiLine != null)
                         AnimatedOpacity(
                           opacity: _showQuote ? 1 : 0,
                           duration: const Duration(milliseconds: 320),
@@ -579,18 +584,17 @@ class _CategorySelectionScreenState
                                 height: quoteHeight,
                                 child: CustomPaint(
                                   painter: _QuoteBubblePainter(
-                                    fillColor: const Color(0xFFFFF0F5),
-                                    borderColor:
-                                        Colors.pink.shade200.withOpacity(0.6),
+                                    fillColor: const Color(0xFFFCFCFD),
+                                    borderColor: const Color(0xFFE5E7EB),
                                     pointerHeight: quotePointerHeight,
                                   ),
                                   child: Padding(
                                     padding: EdgeInsets.fromLTRB(
                                         14, quotePointerHeight + 10, 14, 10),
                                     child: Text(
-                                      _tsumugiQuote!,
+                                      _tsumugiLine!,
                                       maxLines: 2,
-                                      overflow: TextOverflow.clip,
+                                      overflow: TextOverflow.ellipsis,
                                       softWrap: true,
                                       textAlign: TextAlign.center,
                                       style: const TextStyle(
@@ -602,7 +606,7 @@ class _CategorySelectionScreenState
                             ),
                           ),
                         ),
-                      if (_tsumugiQuote != null)
+                      if (_tsumugiLine != null)
                         SizedBox(height: _showQuote ? gapBetween : 0),
                       Align(
                         alignment: Alignment.center,
@@ -852,6 +856,12 @@ class _QuoteBubblePainter extends CustomPainter {
     final fillPaint = Paint()
       ..color = fillColor
       ..style = PaintingStyle.fill;
+    canvas.drawShadow(
+      path,
+      const Color(0x22000000),
+      5.0,
+      false,
+    );
     canvas.drawPath(path, fillPaint);
 
     final strokePaint = Paint()

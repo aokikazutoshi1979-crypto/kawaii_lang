@@ -355,6 +355,15 @@
   "tsumugiProfileMenuTitle": "About Tsumugi",
   "tsumugiProfileScreenTitle": "About Tsumugi",
   "tsumugiProfileBody": "Tsumugi is here to gently support your learning.\nIt is okay to make mistakes.\nWe will find what you did well and keep moving forward together.",
+  "tsumugiLineNormal1": "A short line is enough for today. Let us try one.",
+  "tsumugiLineNormal2": "It is okay if it is not perfect. Take it slowly.",
+  "tsumugiLineNormal3": "If you are unsure, pick the easiest one first.",
+  "tsumugiLineFree1": "Even in free preview, you can feel the rhythm.",
+  "tsumugiLineFree2": "Start light. Continue whenever you feel ready.",
+  "tsumugiLineFree3": "A small preview today is already a good step.",
+  "tsumugiLineNight1": "Do not push at night. One minute is enough.",
+  "tsumugiLineNight2": "Stopping here is okay. We can continue tomorrow.",
+  "tsumugiLineNight3": "At this hour, one gentle line is more than enough.",
   "subscriptionUpsellTitle": "Keep learning with the Basic Plan!",
   "subscriptionUpsellMessage": "The free plan is just a trial. If you truly want to speak, unlock all scenes now!"
 }

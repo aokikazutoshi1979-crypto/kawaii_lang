@@ -1259,6 +1259,60 @@ abstract class AppLocalizations {
   /// **'紬は、あなたの学習をそっと支える存在です。\n間違えても大丈夫。\nできたところを一緒に見つけながら、進んでいきます。'**
   String get tsumugiProfileBody;
 
+  /// No description provided for @tsumugiLineNormal1.
+  ///
+  /// In ja, this message translates to:
+  /// **'今日は短くていいよ。1行だけ、やってみよっか。'**
+  String get tsumugiLineNormal1;
+
+  /// No description provided for @tsumugiLineNormal2.
+  ///
+  /// In ja, this message translates to:
+  /// **'うまく言えなくても大丈夫。ゆっくりでいいよ。'**
+  String get tsumugiLineNormal2;
+
+  /// No description provided for @tsumugiLineNormal3.
+  ///
+  /// In ja, this message translates to:
+  /// **'迷ったら、いちばん簡単なのから選ぼう。'**
+  String get tsumugiLineNormal3;
+
+  /// No description provided for @tsumugiLineFree1.
+  ///
+  /// In ja, this message translates to:
+  /// **'無料プレビューでも、雰囲気はちゃんと掴めるよ。'**
+  String get tsumugiLineFree1;
+
+  /// No description provided for @tsumugiLineFree2.
+  ///
+  /// In ja, this message translates to:
+  /// **'まずは気軽に。続けたくなったら、いつでも。'**
+  String get tsumugiLineFree2;
+
+  /// No description provided for @tsumugiLineFree3.
+  ///
+  /// In ja, this message translates to:
+  /// **'今日はお試しだけでも、十分いい時間だよ。'**
+  String get tsumugiLineFree3;
+
+  /// No description provided for @tsumugiLineNight1.
+  ///
+  /// In ja, this message translates to:
+  /// **'夜は無理しないで。1分だけでも十分だよ。'**
+  String get tsumugiLineNight1;
+
+  /// No description provided for @tsumugiLineNight2.
+  ///
+  /// In ja, this message translates to:
+  /// **'今日はここまででもいいよ。続きはまた明日ね。'**
+  String get tsumugiLineNight2;
+
+  /// No description provided for @tsumugiLineNight3.
+  ///
+  /// In ja, this message translates to:
+  /// **'遅い時間は、やさしい一言だけで大丈夫だよ。'**
+  String get tsumugiLineNight3;
+
   /// No description provided for @subscriptionUpsellTitle.
   ///
   /// In ja, this message translates to:

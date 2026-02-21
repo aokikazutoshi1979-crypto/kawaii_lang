@@ -626,6 +626,33 @@ class AppLocalizationsZh extends AppLocalizations {
       '紬会温柔地陪伴你的学习。\n说错也没关系。\n我们会一起发现你做得好的地方，然后继续前进。';
 
   @override
+  String get tsumugiLineNormal1 => '今日は短くていいよ。1行だけ、やってみよっか。';
+
+  @override
+  String get tsumugiLineNormal2 => 'うまく言えなくても大丈夫。ゆっくりでいいよ。';
+
+  @override
+  String get tsumugiLineNormal3 => '迷ったら、いちばん簡単なのから選ぼう。';
+
+  @override
+  String get tsumugiLineFree1 => '無料プレビューでも、雰囲気はちゃんと掴めるよ。';
+
+  @override
+  String get tsumugiLineFree2 => 'まずは気軽に。続けたくなったら、いつでも。';
+
+  @override
+  String get tsumugiLineFree3 => '今日はお試しだけでも、十分いい時間だよ。';
+
+  @override
+  String get tsumugiLineNight1 => '夜は無理しないで。1分だけでも十分だよ。';
+
+  @override
+  String get tsumugiLineNight2 => '今日はここまででもいいよ。続きはまた明日ね。';
+
+  @override
+  String get tsumugiLineNight3 => '遅い時間は、やさしい一言だけで大丈夫だよ。';
+
+  @override
   String get subscriptionUpsellTitle => '使用基础方案继续学习！';
 
   @override

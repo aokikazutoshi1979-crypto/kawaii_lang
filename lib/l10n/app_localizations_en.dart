@@ -650,6 +650,41 @@ class AppLocalizationsEn extends AppLocalizations {
       'Tsumugi is here to gently support your learning.\nIt is okay to make mistakes.\nWe will find what you did well and keep moving forward together.';
 
   @override
+  String get tsumugiLineNormal1 =>
+      'A short line is enough for today. Let us try one.';
+
+  @override
+  String get tsumugiLineNormal2 =>
+      'It is okay if it is not perfect. Take it slowly.';
+
+  @override
+  String get tsumugiLineNormal3 =>
+      'If you are unsure, pick the easiest one first.';
+
+  @override
+  String get tsumugiLineFree1 =>
+      'Even in free preview, you can feel the rhythm.';
+
+  @override
+  String get tsumugiLineFree2 =>
+      'Start light. Continue whenever you feel ready.';
+
+  @override
+  String get tsumugiLineFree3 =>
+      'A small preview today is already a good step.';
+
+  @override
+  String get tsumugiLineNight1 => 'Do not push at night. One minute is enough.';
+
+  @override
+  String get tsumugiLineNight2 =>
+      'Stopping here is okay. We can continue tomorrow.';
+
+  @override
+  String get tsumugiLineNight3 =>
+      'At this hour, one gentle line is more than enough.';
+
+  @override
   String get subscriptionUpsellTitle => 'Keep learning with the Basic Plan!';
 
   @override
