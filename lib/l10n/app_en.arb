@@ -347,6 +347,14 @@
   "similarExpressionHeader": "Friendly Similar Expression",
   "incorrectMessageWithRaw": "{raw} \nThis answer is not grammatically or semantically correct.",
   "answerMeaningAccurate": "This answer accurately reflects the meaning of the question.",
+  "tsumugiIntroTitle": "Nice to meet you, I am Tsumugi.",
+  "tsumugiIntroBody": "Here, you can practice with short phrases. It is okay if you cannot say it perfectly. Let us take it slow, together.",
+  "tsumugiIntroStartButton": "Start",
+  "tsumugiIntroWhoIsButton": "Who is Tsumugi?",
+  "tsumugiIntroLaterButton": "Later",
+  "tsumugiProfileMenuTitle": "About Tsumugi",
+  "tsumugiProfileScreenTitle": "About Tsumugi",
+  "tsumugiProfileBody": "Tsumugi is here to gently support your learning.\nIt is okay to make mistakes.\nWe will find what you did well and keep moving forward together.",
   "subscriptionUpsellTitle": "Keep learning with the Basic Plan!",
   "subscriptionUpsellMessage": "The free plan is just a trial. If you truly want to speak, unlock all scenes now!"
 }

@@ -366,6 +366,14 @@
   "@answerMeaningAccurate": {
     "description": "ユーザーの回答が出題の意味を的確に表している場合に表示されるメッセージ"
   },
+  "tsumugiIntroTitle": "はじめまして、紬です",
+  "tsumugiIntroBody": "ここでは、短い一言から練習できます。うまく言えなくても大丈夫。ゆっくり一緒にいこ？",
+  "tsumugiIntroStartButton": "はじめる",
+  "tsumugiIntroWhoIsButton": "紬って？",
+  "tsumugiIntroLaterButton": "あとで",
+  "tsumugiProfileMenuTitle": "紬って？",
+  "tsumugiProfileScreenTitle": "紬って？",
+  "tsumugiProfileBody": "紬は、あなたの学習をそっと支える存在です。\n間違えても大丈夫。\nできたところを一緒に見つけながら、進んでいきます。",
   "subscriptionUpsellTitle": "ベーシックプランで学習を続けましょう！",
   "subscriptionUpsellMessage": "無料プランは体験だけ。本気で話せるようになるなら、今すぐ全シーン解放！"
 }

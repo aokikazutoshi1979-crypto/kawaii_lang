@@ -601,6 +601,31 @@ class AppLocalizationsZh extends AppLocalizations {
   String get answerMeaningAccurate => '此回答准确地表达了题目的含义。';
 
   @override
+  String get tsumugiIntroTitle => '初次见面，我是紬';
+
+  @override
+  String get tsumugiIntroBody => '在这里，你可以从简短的一句话开始练习。说不好也没关系，我们慢慢来，一起进步吧？';
+
+  @override
+  String get tsumugiIntroStartButton => '开始';
+
+  @override
+  String get tsumugiIntroWhoIsButton => '紬是谁？';
+
+  @override
+  String get tsumugiIntroLaterButton => '稍后';
+
+  @override
+  String get tsumugiProfileMenuTitle => '关于紬';
+
+  @override
+  String get tsumugiProfileScreenTitle => '关于紬';
+
+  @override
+  String get tsumugiProfileBody =>
+      '紬会温柔地陪伴你的学习。\n说错也没关系。\n我们会一起发现你做得好的地方，然后继续前进。';
+
+  @override
   String get subscriptionUpsellTitle => '使用基础方案继续学习！';
 
   @override

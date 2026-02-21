@@ -632,6 +632,31 @@ class AppLocalizationsEs extends AppLocalizations {
       'Esta respuesta refleja con precisión el significado de la pregunta.';
 
   @override
+  String get tsumugiIntroTitle => 'はじめまして、紬です';
+
+  @override
+  String get tsumugiIntroBody => 'ここでは、短い一言から練習できます。うまく言えなくても大丈夫。ゆっくり一緒にいこ？';
+
+  @override
+  String get tsumugiIntroStartButton => 'はじめる';
+
+  @override
+  String get tsumugiIntroWhoIsButton => '紬って？';
+
+  @override
+  String get tsumugiIntroLaterButton => 'あとで';
+
+  @override
+  String get tsumugiProfileMenuTitle => '紬って？';
+
+  @override
+  String get tsumugiProfileScreenTitle => '紬って？';
+
+  @override
+  String get tsumugiProfileBody =>
+      '紬は、あなたの学習をそっと支える存在です。\n間違えても大丈夫。\nできたところを一緒に見つけながら、進んでいきます。';
+
+  @override
   String get subscriptionUpsellTitle =>
       '¡Sigue aprendiendo con el Plan Básico!';
 

@@ -624,6 +624,32 @@ class AppLocalizationsEn extends AppLocalizations {
       'This answer accurately reflects the meaning of the question.';
 
   @override
+  String get tsumugiIntroTitle => 'Nice to meet you, I am Tsumugi.';
+
+  @override
+  String get tsumugiIntroBody =>
+      'Here, you can practice with short phrases. It is okay if you cannot say it perfectly. Let us take it slow, together.';
+
+  @override
+  String get tsumugiIntroStartButton => 'Start';
+
+  @override
+  String get tsumugiIntroWhoIsButton => 'Who is Tsumugi?';
+
+  @override
+  String get tsumugiIntroLaterButton => 'Later';
+
+  @override
+  String get tsumugiProfileMenuTitle => 'About Tsumugi';
+
+  @override
+  String get tsumugiProfileScreenTitle => 'About Tsumugi';
+
+  @override
+  String get tsumugiProfileBody =>
+      'Tsumugi is here to gently support your learning.\nIt is okay to make mistakes.\nWe will find what you did well and keep moving forward together.';
+
+  @override
   String get subscriptionUpsellTitle => 'Keep learning with the Basic Plan!';
 
   @override

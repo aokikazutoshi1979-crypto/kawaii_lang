@@ -21,6 +21,7 @@ import 'profile_screen.dart';
 import 'user_name_screen.dart';
 import 'package:kawaii_lang/widgets/mode_toggle_bar.dart';
 import '../models/quiz_mode.dart';
+import 'tsumugi_profile_screen.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({Key? key}) : super(key: key);
@@ -63,7 +64,8 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     final code = selectedLang;
     if (code != null && code.isNotEmpty) return code;
     final locale = Localizations.localeOf(context);
-    if (locale.languageCode == 'zh' && locale.countryCode?.toUpperCase() == 'TW') {
+    if (locale.languageCode == 'zh' &&
+        locale.countryCode?.toUpperCase() == 'TW') {
       return 'zh_TW';
     }
     return locale.languageCode;
@@ -158,7 +160,8 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
   Future<void> _loadQuizMode() async {
     final prefs = await SharedPreferences.getInstance();
     final raw = prefs.getString(_quizModePrefKey);
-    final mode = raw == QuizMode.listening.name ? QuizMode.listening : QuizMode.reading;
+    final mode =
+        raw == QuizMode.listening.name ? QuizMode.listening : QuizMode.reading;
     if (!mounted) return;
     setState(() => _selectedMode = mode);
   }
@@ -177,14 +180,16 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     setState(() => _isLoadingUser = true);
 
     try {
-      final doc = await FirebaseFirestore.instance.collection('users').doc(uid).get();
+      final doc =
+          await FirebaseFirestore.instance.collection('users').doc(uid).get();
       print('💡 Firestoreの中身: ${doc.data()}');
 
       final user = await _authService.fetchCurrentUser();
       setState(() {
         _user = user;
         if ((_displayName == null || _displayName!.trim().isEmpty) &&
-            (user?.displayName != null && user!.displayName!.trim().isNotEmpty)) {
+            (user?.displayName != null &&
+                user!.displayName!.trim().isNotEmpty)) {
           _displayName = user.displayName!.trim();
         }
       });
@@ -197,9 +202,8 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
 
   Future<void> _saveLanguage(String code) async {
     final parts = code.split(RegExp('[-_]'));
-    final locale = (parts.length == 2)
-      ? Locale(parts[0], parts[1])
-      : Locale(parts[0]);
+    final locale =
+        (parts.length == 2) ? Locale(parts[0], parts[1]) : Locale(parts[0]);
 
     final previousTarget = selectedTargetLang;
     var nextTarget = previousTarget;
@@ -270,23 +274,18 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     // 2) Firebase の認証情報をクリア
     await _authService.signOut();
 
+    // ─────────────────────────────────────
+    // 環境変数でテスト用リセットを切り替え
+    const bool isTestReset = bool.fromEnvironment(
+      'TEST_RESET',
+      defaultValue: false,
+    );
+    // ─────────────────────────────────────
 
-
-
-  // ─────────────────────────────────────
-  // 環境変数でテスト用リセットを切り替え
-  const bool isTestReset = bool.fromEnvironment(
-    'TEST_RESET',
-    defaultValue: false,
-  );
-  // ─────────────────────────────────────
-
-  // ① 匿名サインイン＋Firestore ドキュメント作成
-  await AuthService.signInAnonymouslyIfNeeded(
-    force: isTestReset,
-  );
-
-
+    // ① 匿名サインイン＋Firestore ドキュメント作成
+    await AuthService.signInAnonymouslyIfNeeded(
+      force: isTestReset,
+    );
 
     Navigator.pushAndRemoveUntil(
       context,
@@ -296,7 +295,9 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
   }
 
   String _modeSubtitle(AppLocalizations loc) {
-    return _selectedMode == QuizMode.reading ? loc.readingLabel : loc.listeningLabel;
+    return _selectedMode == QuizMode.reading
+        ? loc.readingLabel
+        : loc.listeningLabel;
   }
 
   String _subscriptionSubtitle(AppLocalizations loc) {
@@ -367,12 +368,15 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
             shrinkWrap: true,
             children: [
               ListTile(
-                title: Text(target ? loc.targetLanguage : loc.languageSelectionTitle),
+                title: Text(
+                    target ? loc.targetLanguage : loc.languageSelectionTitle),
               ),
               ...candidates.map((code) {
                 return ListTile(
                   title: Text(_labelForLangCode(code, context)),
-                  trailing: current == code ? const Icon(Icons.check, color: Colors.green) : null,
+                  trailing: current == code
+                      ? const Icon(Icons.check, color: Colors.green)
+                      : null,
                   onTap: () async {
                     Navigator.of(ctx).pop();
                     if (target) {
@@ -392,7 +396,9 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
 
   Future<void> _onDangerAction(bool isAnon) async {
     final loc = AppLocalizations.of(context)!;
-    final msg = isAnon ? loc.settings_confirmResetData : loc.settings_confirmDeleteAccount;
+    final msg = isAnon
+        ? loc.settings_confirmResetData
+        : loc.settings_confirmDeleteAccount;
     final ok = await _showConfirmDialog(context, msg);
     if (!ok) return;
 
@@ -511,8 +517,9 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isAnon = _authService.currentUser?.isAnonymous ?? true;
     // ① セッションミスマッチ時はエラー画面のみ表示
-    if (subscriptionService.isSessionMismatch) {
+    if (subscriptionService.isSessionMismatch && !isAnon) {
       return Scaffold(
         body: Center(
           child: Text(
@@ -522,11 +529,13 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
       );
     }
 
-    final isAnon = _authService.currentUser?.isAnonymous ?? true;
     final loc = AppLocalizations.of(context)!;
-    final displayName = (_displayName != null && _displayName!.trim().isNotEmpty)
-        ? _displayName!.trim()
-        : (isAnon ? loc.guest : (_user?.displayName ?? _user?.email ?? loc.guest));
+    final displayName =
+        (_displayName != null && _displayName!.trim().isNotEmpty)
+            ? _displayName!.trim()
+            : (isAnon
+                ? loc.guest
+                : (_user?.displayName ?? _user?.email ?? loc.guest));
 
     // ユーザーデータ読み込み中はプログレス
     if (!isAnon && _isLoadingUser) {
@@ -538,7 +547,8 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     final registeredDate = (!isAnon && _user != null)
         ? loc.registeredDate(DateFormat.yMMMd().format(_user!.createdAt))
         : null;
-    final languageSectionTitle = '${loc.languageSelectionTitle} / ${loc.targetLanguage}';
+    final languageSectionTitle =
+        '${loc.languageSelectionTitle} / ${loc.targetLanguage}';
     final modeSectionTitle = '${loc.readingLabel} / ${loc.listeningLabel}';
     final supportSectionTitle = '${loc.viewFaq} / ${loc.termsOfService}';
 
@@ -553,7 +563,8 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
               child: ConstrainedBox(
                 constraints: const BoxConstraints(maxWidth: 740),
                 child: ListView(
-                  padding: EdgeInsets.fromLTRB(horizontalPadding, 12, horizontalPadding, 24),
+                  padding: EdgeInsets.fromLTRB(
+                      horizontalPadding, 12, horizontalPadding, 24),
                   children: [
                     _sectionCard(
                       children: [
@@ -644,7 +655,8 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                               ),
                               onTap: () => Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (_) => const SubscriptionScreen()),
+                                MaterialPageRoute(
+                                    builder: (_) => const SubscriptionScreen()),
                               ),
                             ),
                           ),
@@ -655,7 +667,8 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                           title: loc.profileTitle,
                           onTap: () => Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (_) => const ProfileScreen()),
+                            MaterialPageRoute(
+                                builder: (_) => const ProfileScreen()),
                           ),
                         ),
                         if (isAnon) ...[
@@ -664,7 +677,8 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                             icon: Icons.person_add_alt_1_outlined,
                             title: loc.registerAccount,
                             subtitle: loc.registerSubtitle,
-                            onTap: () => Navigator.pushNamed(context, '/register'),
+                            onTap: () =>
+                                Navigator.pushNamed(context, '/register'),
                           ),
                           Divider(height: 1, color: Colors.grey.shade200),
                           _settingsRow(
@@ -676,7 +690,6 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                         ],
                       ],
                     ),
-
                     _sectionHeader(context, modeSectionTitle),
                     _sectionCard(
                       children: [
@@ -697,7 +710,6 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                         ),
                       ],
                     ),
-
                     _sectionHeader(context, languageSectionTitle),
                     _sectionCard(
                       children: [
@@ -711,12 +723,12 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                         _settingsRow(
                           icon: Icons.language_rounded,
                           title: loc.targetLanguage,
-                          subtitle: _labelForLangCode(selectedTargetLang, context),
+                          subtitle:
+                              _labelForLangCode(selectedTargetLang, context),
                           onTap: () => _showLanguagePicker(target: true),
                         ),
                       ],
                     ),
-
                     _sectionHeader(context, supportSectionTitle),
                     _sectionCard(
                       children: [
@@ -724,11 +736,24 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                           Padding(
                             padding: const EdgeInsets.fromLTRB(12, 8, 12, 4),
                             child: KeyboardGuideButton(
-                              targetLanguage: selectedTargetLang ?? selectedLang!,
+                              targetLanguage:
+                                  selectedTargetLang ?? selectedLang!,
                               alwaysVisible: true,
                             ),
                           ),
-                        if (selectedLang != null) Divider(height: 1, color: Colors.grey.shade200),
+                        if (selectedLang != null)
+                          Divider(height: 1, color: Colors.grey.shade200),
+                        _settingsRow(
+                          icon: Icons.auto_awesome_rounded,
+                          title: loc.tsumugiProfileMenuTitle,
+                          onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => const TsumugiProfileScreen(),
+                            ),
+                          ),
+                        ),
+                        Divider(height: 1, color: Colors.grey.shade200),
                         _settingsRow(
                           icon: Icons.help_outline_rounded,
                           title: loc.viewFaq,
@@ -738,17 +763,18 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                         _settingsRow(
                           icon: Icons.description_outlined,
                           title: loc.termsOfService,
-                          onTap: () => _launchUrl('https://kawaiilang.com/terms.html'),
+                          onTap: () =>
+                              _launchUrl('https://kawaiilang.com/terms.html'),
                         ),
                         Divider(height: 1, color: Colors.grey.shade200),
                         _settingsRow(
                           icon: Icons.privacy_tip_outlined,
                           title: loc.privacyPolicy,
-                          onTap: () => _launchUrl('https://kawaiilang.com/privacy.html'),
+                          onTap: () =>
+                              _launchUrl('https://kawaiilang.com/privacy.html'),
                         ),
                       ],
                     ),
-
                     _sectionHeader(context, loc.logout),
                     _sectionCard(
                       children: [
@@ -765,11 +791,13 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                                   content: Text(loc.logoutConfirmation),
                                   actions: [
                                     TextButton(
-                                      onPressed: () => Navigator.of(context).pop(false),
+                                      onPressed: () =>
+                                          Navigator.of(context).pop(false),
                                       child: Text(loc.cancel),
                                     ),
                                     TextButton(
-                                      onPressed: () => Navigator.of(context).pop(true),
+                                      onPressed: () =>
+                                          Navigator.of(context).pop(true),
                                       child: Text(loc.ok),
                                     ),
                                   ],
@@ -789,8 +817,12 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                           Divider(height: 1, color: Colors.grey.shade200),
                         ],
                         _settingsRow(
-                          icon: isAnon ? Icons.refresh_rounded : Icons.delete_forever_rounded,
-                          title: isAnon ? loc.settings_resetData : loc.settings_deleteAccount,
+                          icon: isAnon
+                              ? Icons.refresh_rounded
+                              : Icons.delete_forever_rounded,
+                          title: isAnon
+                              ? loc.settings_resetData
+                              : loc.settings_deleteAccount,
                           subtitle: isAnon
                               ? loc.settings_confirmResetData
                               : loc.settings_confirmDeleteAccount,
@@ -843,13 +875,15 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
       context: context,
       barrierDismissible: false,
       builder: (ctx) => AlertDialog(
-        title: Text(AppLocalizations.of(ctx)!.enterPassword),  // arb に “enterPassword” を定義しておく
+        title: Text(AppLocalizations.of(ctx)!
+            .enterPassword), // arb に “enterPassword” を定義しておく
         content: TextField(
           controller: controller,
           obscureText: true,
           autofocus: true,
           decoration: InputDecoration(
-            hintText: AppLocalizations.of(ctx)!.password,     // arb に “password” も定義
+            hintText:
+                AppLocalizations.of(ctx)!.password, // arb に “password” も定義
           ),
         ),
         actions: [

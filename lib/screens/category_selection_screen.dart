@@ -9,8 +9,8 @@ import 'settings_screen.dart';
 import '../services/subscription_service.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:kawaii_lang/models/language.dart';
-import 'dart:convert';                     // jsonDecode
-import 'package:flutter/services.dart';    // rootBundle
+import 'dart:convert'; // jsonDecode
+import 'package:flutter/services.dart'; // rootBundle
 import 'package:google_fonts/google_fonts.dart';
 import 'dart:async';
 import '../models/quiz_mode.dart';
@@ -19,15 +19,19 @@ import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import '../services/subscription_state.dart';
 import 'chat_screen.dart';
 import '../services/tsumugi_quote_service.dart';
+import 'tsumugi_profile_screen.dart';
+import '../widgets/tsumugi_welcome_dialog.dart';
 
 class CategorySelectionScreen extends StatefulWidget {
   const CategorySelectionScreen({Key? key}) : super(key: key);
 
   @override
-  _CategorySelectionScreenState createState() => _CategorySelectionScreenState();
+  _CategorySelectionScreenState createState() =>
+      _CategorySelectionScreenState();
 }
 
-class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionScreen> {
+class _CategorySelectionScreenState
+    extends SubscriptionState<CategorySelectionScreen> {
   String? selectedTargetLang;
   String? selectedSceneKey;
   String? selectedNativeLang;
@@ -47,6 +51,8 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
   bool _showList = false;
   bool _listVisible = false;
   bool _questionBgPrecached = false;
+  bool _checkingTsumugiIntro = false;
+  static const String _tsumugiIntroSeenPrefKey = 'has_seen_tsumugi_intro_card';
   @override
   void initState() {
     super.initState();
@@ -60,8 +66,9 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
       _loadTsumugiQuote();
       _requestReveal();
       _precacheQuestionBackground();
+      _maybeShowTsumugiIntroCard();
     });
-    
+
     // 🔑 サブスク検証サービスを初期化
     // maybeInitSubscription(); // 🔑 追加：サブスク状態を1日1回だけ確認
   }
@@ -70,9 +77,8 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
   Future<void> _loadScenesJson() async {
     final jsonStr = await rootBundle.loadString('assets/questions/scenes.json');
     final List<dynamic> jsonList = jsonDecode(jsonStr) as List<dynamic>;
-    final loaded = jsonList
-      .map((e) => Scene.fromJson(e as Map<String,dynamic>))
-      .toList();
+    final loaded =
+        jsonList.map((e) => Scene.fromJson(e as Map<String, dynamic>)).toList();
     // print('▶ loaded scenes:  [38;5;2m${loaded.map((s) => s.id).toList()} [0m');
 
     // print('▶ loaded scenes: ${loaded.map((s) => s.id).toList()}');
@@ -142,7 +148,8 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
   Future<void> _loadQuizMode() async {
     final prefs = await SharedPreferences.getInstance();
     final raw = prefs.getString(_quizModePrefKey);
-    final mode = raw == QuizMode.listening.name ? QuizMode.listening : QuizMode.reading;
+    final mode =
+        raw == QuizMode.listening.name ? QuizMode.listening : QuizMode.reading;
     if (!mounted) return;
     setState(() => selectedMode = mode);
   }
@@ -192,6 +199,36 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
     }
   }
 
+  Future<void> _maybeShowTsumugiIntroCard() async {
+    if (_checkingTsumugiIntro) return;
+    _checkingTsumugiIntro = true;
+    final prefs = await SharedPreferences.getInstance();
+    final seen = prefs.getBool(_tsumugiIntroSeenPrefKey) ?? false;
+    if (seen || !mounted) return;
+    await prefs.setBool(_tsumugiIntroSeenPrefKey, true);
+    if (!mounted) return;
+    await showDialog<void>(
+      context: context,
+      barrierDismissible: true,
+      barrierColor: Colors.black54,
+      builder: (dialogContext) {
+        return TsumugiWelcomeDialog(
+          onStart: () => Navigator.of(dialogContext).pop(),
+          onLater: () => Navigator.of(dialogContext).pop(),
+          onWhoIs: () {
+            Navigator.of(dialogContext).pop();
+            Future<void>.delayed(const Duration(milliseconds: 120), () {
+              if (!mounted) return;
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const TsumugiProfileScreen()),
+              );
+            });
+          },
+        );
+      },
+    );
+  }
+
   @override
   void dispose() {
     super.dispose();
@@ -201,7 +238,8 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
     final loc = AppLocalizations.of(context)!;
 
     // ① 未選択チェック
-    if ([selectedNativeLang, selectedTargetLang, selectedSceneKey].contains(null)) {
+    if ([selectedNativeLang, selectedTargetLang, selectedSceneKey]
+        .contains(null)) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text(loc.selectPrompt)),
       );
@@ -287,7 +325,8 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
       throw StateError('Test non-fatal error');
     } catch (e, st) {
       await FirebaseCrashlytics.instance.recordError(
-        e, st,
+        e,
+        st,
         reason: 'manual test non-fatal',
         information: ['screen: Home', 'tap: TestButton'],
       );
@@ -339,9 +378,8 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
     try {
       final raw = await rootBundle.loadString('assets/questions/trial.json');
       final arr = jsonDecode(raw) as List<dynamic>;
-      final questions = arr
-          .map((e) => Question.fromJson(e as Map<String, dynamic>))
-          .toList();
+      final questions =
+          arr.map((e) => Question.fromJson(e as Map<String, dynamic>)).toList();
 
       if (questions.isEmpty) {
         await _goToQuestionList();
@@ -408,13 +446,11 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
         'label': loc.todaysSpecialTitle,
         'subtitle': loc.freePreviewSubtitle,
       },
-      ..._allScenes
-          .where((scene) => scene.id != 'trial')
-          .map((scene) => {
-                'key': scene.id,                                // ex. "trial","travel"...
-                'label': scene.label[loc.localeName] ?? scene.id, // ロケール対応ラベル
-                'subtitle': null,
-              }),
+      ..._allScenes.where((scene) => scene.id != 'trial').map((scene) => {
+            'key': scene.id, // ex. "trial","travel"...
+            'label': scene.label[loc.localeName] ?? scene.id, // ロケール対応ラベル
+            'subtitle': null,
+          }),
     ];
 
     // ここを追加
@@ -492,23 +528,28 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                 const paddingTop = 8.0;
                 const paddingBottom = 24.0;
                 final hasQuote = _tsumugiQuote != null;
-                final paperHeight = (rowHeight * rowsVisible) + (dividerHeight * (rowsVisible - 1));
-                final availableHeight = constraints.maxHeight - paddingTop - paddingBottom;
-                final desiredQuoteTopRaw = (availableHeight * 0.40) - quoteShiftUp;
-                final desiredQuoteTop = desiredQuoteTopRaw < 0 ? 0.0 : desiredQuoteTopRaw;
+                final paperHeight = (rowHeight * rowsVisible) +
+                    (dividerHeight * (rowsVisible - 1));
+                final availableHeight =
+                    constraints.maxHeight - paddingTop - paddingBottom;
+                final desiredQuoteTopRaw =
+                    (availableHeight * 0.40) - quoteShiftUp;
+                final desiredQuoteTop =
+                    desiredQuoteTopRaw < 0 ? 0.0 : desiredQuoteTopRaw;
                 final desiredListTop = availableHeight * 0.50;
                 final hasScrollableList = sceneItems.length > rowsVisible;
                 final gapBetween = hasQuote
-                    ? (desiredListTop - desiredQuoteTop - quoteHeight).clamp(0.0, 120.0)
+                    ? (desiredListTop - desiredQuoteTop - quoteHeight)
+                        .clamp(0.0, 120.0)
                     : 0.0;
 
                 var topGap = hasQuote ? desiredQuoteTop : desiredListTop;
-                final totalHeight = topGap
-                    + (hasQuote ? quoteHeight : 0.0)
-                    + gapBetween
-                    + paperHeight
-                    + bottomGap
-                    + modeHeight;
+                final totalHeight = topGap +
+                    (hasQuote ? quoteHeight : 0.0) +
+                    gapBetween +
+                    paperHeight +
+                    bottomGap +
+                    modeHeight;
                 final overflow = totalHeight - availableHeight;
                 if (overflow > 0) {
                   topGap = (topGap - overflow).clamp(0.0, topGap);
@@ -526,7 +567,9 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                           duration: const Duration(milliseconds: 320),
                           curve: Curves.easeOut,
                           child: AnimatedSlide(
-                            offset: _showQuote ? Offset.zero : const Offset(0, 0.12),
+                            offset: _showQuote
+                                ? Offset.zero
+                                : const Offset(0, 0.12),
                             duration: const Duration(milliseconds: 320),
                             curve: Curves.easeOut,
                             child: Align(
@@ -537,18 +580,21 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                                 child: CustomPaint(
                                   painter: _QuoteBubblePainter(
                                     fillColor: const Color(0xFFFFF0F5),
-                                    borderColor: Colors.pink.shade200.withOpacity(0.6),
+                                    borderColor:
+                                        Colors.pink.shade200.withOpacity(0.6),
                                     pointerHeight: quotePointerHeight,
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.fromLTRB(14, quotePointerHeight + 10, 14, 10),
+                                    padding: EdgeInsets.fromLTRB(
+                                        14, quotePointerHeight + 10, 14, 10),
                                     child: Text(
                                       _tsumugiQuote!,
                                       maxLines: 2,
                                       overflow: TextOverflow.clip,
                                       softWrap: true,
                                       textAlign: TextAlign.center,
-                                      style: const TextStyle(fontSize: 14, height: 1.35),
+                                      style: const TextStyle(
+                                          fontSize: 14, height: 1.35),
                                     ),
                                   ),
                                 ),
@@ -571,89 +617,134 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                                       ListView.separated(
                                         padding: EdgeInsets.zero,
                                         physics: const BouncingScrollPhysics(),
-                                        cacheExtent: rowHeight * (rowsVisible + 2),
+                                        cacheExtent:
+                                            rowHeight * (rowsVisible + 2),
                                         itemCount: sceneItems.length,
-                                        separatorBuilder: (context, index) => Divider(
+                                        separatorBuilder: (context, index) =>
+                                            Divider(
                                           height: 1,
-                                          color: const Color(0xFFE3DED8).withOpacity(0.6),
+                                          color: const Color(0xFFE3DED8)
+                                              .withOpacity(0.6),
                                         ),
                                         itemBuilder: (context, index) {
-                                          final item   = sceneItems[index];
-                                          final key    = item['key'] as String;
-                                          final label  = item['label'] as String;
-                                          final subtitle = item['subtitle'] as String?;
-                                          final count  = _counts[key];
-                                          final active = selectedSceneKey == key;
+                                          final item = sceneItems[index];
+                                          final key = item['key'] as String;
+                                          final label = item['label'] as String;
+                                          final subtitle =
+                                              item['subtitle'] as String?;
+                                          final count = _counts[key];
+                                          final active =
+                                              selectedSceneKey == key;
                                           return Material(
-                                            color: active ? const Color(0xFFEAE6E1).withOpacity(0.35) : Colors.transparent,
+                                            color: active
+                                                ? const Color(0xFFEAE6E1)
+                                                    .withOpacity(0.35)
+                                                : Colors.transparent,
                                             child: InkWell(
                                               onTap: () => _onSceneTap(key),
                                               splashColor: Colors.transparent,
-                                              highlightColor: Colors.transparent,
+                                              highlightColor:
+                                                  Colors.transparent,
                                               child: SizedBox(
                                                 height: 58,
                                                 child: Padding(
-                                                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                                                  padding: const EdgeInsets
+                                                      .symmetric(horizontal: 8),
                                                   child: AnimatedOpacity(
-                                                    opacity: _listVisible ? 1 : 0,
-                                                    duration: const Duration(milliseconds: 320),
+                                                    opacity:
+                                                        _listVisible ? 1 : 0,
+                                                    duration: const Duration(
+                                                        milliseconds: 320),
                                                     child: AnimatedSlide(
-                                                      offset: _listVisible ? Offset.zero : const Offset(0, 0.12),
-                                                      duration: const Duration(milliseconds: 320),
+                                                      offset: _listVisible
+                                                          ? Offset.zero
+                                                          : const Offset(
+                                                              0, 0.12),
+                                                      duration: const Duration(
+                                                          milliseconds: 320),
                                                       curve: Curves.easeOut,
-                                                        child: Row(
-                                                          crossAxisAlignment: CrossAxisAlignment.center,
-                                                          children: [
-                                                            const Text(
-                                                              '☕️',
-                                                              style: TextStyle(
-                                                                fontSize: 16,
-                                                                height: 1.0,
-                                                              ),
+                                                      child: Row(
+                                                        crossAxisAlignment:
+                                                            CrossAxisAlignment
+                                                                .center,
+                                                        children: [
+                                                          const Text(
+                                                            '☕️',
+                                                            style: TextStyle(
+                                                              fontSize: 16,
+                                                              height: 1.0,
                                                             ),
-                                                            const SizedBox(width: 8),
-                                                            Expanded(
-                                                              child: Column(
-                                                                mainAxisAlignment: MainAxisAlignment.center,
-                                                                crossAxisAlignment: CrossAxisAlignment.start,
-                                                                children: [
+                                                          ),
+                                                          const SizedBox(
+                                                              width: 8),
+                                                          Expanded(
+                                                            child: Column(
+                                                              mainAxisAlignment:
+                                                                  MainAxisAlignment
+                                                                      .center,
+                                                              crossAxisAlignment:
+                                                                  CrossAxisAlignment
+                                                                      .start,
+                                                              children: [
+                                                                Text(
+                                                                  label,
+                                                                  style: _menuTextStyle(
+                                                                      context),
+                                                                  maxLines: 1,
+                                                                  overflow:
+                                                                      TextOverflow
+                                                                          .ellipsis,
+                                                                ),
+                                                                const SizedBox(
+                                                                    height: 2),
+                                                                if (subtitle !=
+                                                                    null)
                                                                   Text(
-                                                                    label,
-                                                                    style: _menuTextStyle(context),
+                                                                    subtitle,
+                                                                    style: Theme.of(
+                                                                            context)
+                                                                        .textTheme
+                                                                        .bodySmall
+                                                                        ?.copyWith(
+                                                                          color:
+                                                                              Colors.grey[700],
+                                                                          fontWeight:
+                                                                              FontWeight.w600,
+                                                                        ),
                                                                     maxLines: 1,
-                                                                    overflow: TextOverflow.ellipsis,
+                                                                    overflow:
+                                                                        TextOverflow
+                                                                            .ellipsis,
+                                                                  )
+                                                                else if (count ==
+                                                                    null)
+                                                                  const SizedBox(
+                                                                    height: 12,
+                                                                    width: 12,
+                                                                    child: CircularProgressIndicator(
+                                                                        strokeWidth:
+                                                                            2),
+                                                                  )
+                                                                else
+                                                                  Text(
+                                                                    '($count)',
+                                                                    style: Theme.of(
+                                                                            context)
+                                                                        .textTheme
+                                                                        .bodySmall
+                                                                        ?.copyWith(
+                                                                            color:
+                                                                                Colors.grey[600]),
                                                                   ),
-                                                                  const SizedBox(height: 2),
-                                                                  if (subtitle != null)
-                                                                    Text(
-                                                                      subtitle,
-                                                                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                                                                            color: Colors.grey[700],
-                                                                            fontWeight: FontWeight.w600,
-                                                                          ),
-                                                                      maxLines: 1,
-                                                                      overflow: TextOverflow.ellipsis,
-                                                                    )
-                                                                  else if (count == null)
-                                                                    const SizedBox(
-                                                                      height: 12,
-                                                                      width: 12,
-                                                                      child: CircularProgressIndicator(strokeWidth: 2),
-                                                                    )
-                                                                  else
-                                                                    Text(
-                                                                      '($count)',
-                                                                      style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey[600]),
-                                                                    ),
-                                                                ],
-                                                              ),
+                                                              ],
                                                             ),
-                                                          ],
-                                                        ),
+                                                          ),
+                                                        ],
                                                       ),
                                                     ),
                                                   ),
                                                 ),
+                                              ),
                                             ),
                                           );
                                         },
@@ -668,13 +759,18 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                                                 gradient: LinearGradient(
                                                   begin: Alignment.topCenter,
                                                   end: Alignment.bottomCenter,
-                                                  colors: [Color(0x00FFFFFF), Color(0x66FFFFFF)],
+                                                  colors: [
+                                                    Color(0x00FFFFFF),
+                                                    Color(0x66FFFFFF)
+                                                  ],
                                                 ),
                                               ),
                                               child: const Align(
-                                                alignment: Alignment.bottomCenter,
+                                                alignment:
+                                                    Alignment.bottomCenter,
                                                 child: Icon(
-                                                  Icons.keyboard_arrow_down_rounded,
+                                                  Icons
+                                                      .keyboard_arrow_down_rounded,
                                                   color: Colors.black54,
                                                   size: 16,
                                                 ),
@@ -688,7 +784,6 @@ class _CategorySelectionScreenState extends SubscriptionState<CategorySelectionS
                         ),
                       ),
                       const SizedBox(height: bottomGap),
-
                       const SizedBox(height: 12),
                     ],
                   ),

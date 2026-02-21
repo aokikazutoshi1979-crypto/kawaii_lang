@@ -58,38 +58,53 @@ class SubscriptionService {
   Future<void> _initImpl(String uid) async {
     // 毎回再評価前に false に戻す（一度 true になったまま残る誤検知を防ぐ）
     isSessionMismatch = false;
-    // 1) 端末ミスマッチ判定（今のロジックを活かす）
-    try {
-      final doc = await FirebaseFirestore.instance
-          .collection('users')
-          .doc(uid)
-          .get(const GetOptions(source: Source.server));
+    final isAnonymous = FirebaseAuth.instance.currentUser?.isAnonymous ?? true;
+    // 1) 端末ミスマッチ判定（匿名ユーザーは誤検知が起きやすいため対象外）
+    if (!isAnonymous) {
+      try {
+        final doc = await FirebaseFirestore.instance
+            .collection('users')
+            .doc(uid)
+            .get(const GetOptions(source: Source.server));
 
-      final data = doc.data();
-      final storedDeviceId =
-          (data?['lastLoginDeviceId'] as String?)?.trim() ?? '';
-      final currentDeviceId = (await DeviceService.getDeviceId()).trim();
+        final data = doc.data();
+        final storedDeviceId =
+            (data?['lastLoginDeviceId'] as String?)?.trim() ?? '';
+        final currentDeviceId = (await DeviceService.getDeviceId()).trim();
 
-      // 端末IDが空文字の場合は「未確定データ」とみなして不一致判定しない
-      if (storedDeviceId.isNotEmpty &&
-          currentDeviceId.isNotEmpty &&
-          storedDeviceId != currentDeviceId) {
-        isSessionMismatch = true;
-        return; // 以降スキップ
+        // 端末IDが空文字の場合は「未確定データ」とみなして不一致判定しない
+        if (storedDeviceId.isNotEmpty &&
+            currentDeviceId.isNotEmpty &&
+            storedDeviceId != currentDeviceId) {
+          isSessionMismatch = true;
+          return; // 以降スキップ
+        }
+
+        // Firestore側が未設定なら、現在端末IDで補完して誤検知を防ぐ
+        if (storedDeviceId.isEmpty && currentDeviceId.isNotEmpty) {
+          await FirebaseFirestore.instance.collection('users').doc(uid).set({
+            'lastLoginDeviceId': currentDeviceId,
+            'lastLoginAt': FieldValue.serverTimestamp(),
+          }, SetOptions(merge: true));
+        }
+      } catch (e, st) {
+        FirebaseCrashlytics.instance
+            .recordError(e, st, reason: 'Device mismatch check failed');
+        // 失敗しても初期化自体は続ける
+        isSessionMismatch = false;
       }
-
-      // 初回などでFirestore側が未設定なら、現在端末IDで補完して誤検知を防ぐ
-      if (storedDeviceId.isEmpty && currentDeviceId.isNotEmpty) {
-        await FirebaseFirestore.instance.collection('users').doc(uid).set({
-          'lastLoginDeviceId': currentDeviceId,
-          'lastLoginAt': FieldValue.serverTimestamp(),
-        }, SetOptions(merge: true));
+    } else {
+      try {
+        final currentDeviceId = (await DeviceService.getDeviceId()).trim();
+        if (currentDeviceId.isNotEmpty) {
+          await FirebaseFirestore.instance.collection('users').doc(uid).set({
+            'lastLoginDeviceId': currentDeviceId,
+            'lastLoginAt': FieldValue.serverTimestamp(),
+          }, SetOptions(merge: true));
+        }
+      } catch (_) {
+        // 匿名ユーザーでは失敗しても無視
       }
-    } catch (e, st) {
-      FirebaseCrashlytics.instance
-          .recordError(e, st, reason: 'Device mismatch check failed');
-      // 失敗しても初期化自体は続ける
-      isSessionMismatch = false;
     }
 
     // 2) RevenueCat 構成

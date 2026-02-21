@@ -342,6 +342,14 @@
   "similarExpressionHeader": "友好的相似表达",
   "incorrectMessageWithRaw": "{raw} \n此回答在语法或语义上不正确。",
   "answerMeaningAccurate": "此回答准确地表达了题目的含义。",
+  "tsumugiIntroTitle": "初次见面，我是紬",
+  "tsumugiIntroBody": "在这里，你可以从简短的一句话开始练习。说不好也没关系，我们慢慢来，一起进步吧？",
+  "tsumugiIntroStartButton": "开始",
+  "tsumugiIntroWhoIsButton": "紬是谁？",
+  "tsumugiIntroLaterButton": "稍后",
+  "tsumugiProfileMenuTitle": "关于紬",
+  "tsumugiProfileScreenTitle": "关于紬",
+  "tsumugiProfileBody": "紬会温柔地陪伴你的学习。\n说错也没关系。\n我们会一起发现你做得好的地方，然后继续前进。",
   "subscriptionUpsellTitle": "使用基础方案继续学习！",
   "subscriptionUpsellMessage": "免费方案只是体验。若想真正开口说话，现在就解锁所有场景！"
 }

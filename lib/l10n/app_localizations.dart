@@ -1211,6 +1211,54 @@ abstract class AppLocalizations {
   /// **'この回答は出題の意味ついて的確に表しています。'**
   String get answerMeaningAccurate;
 
+  /// No description provided for @tsumugiIntroTitle.
+  ///
+  /// In ja, this message translates to:
+  /// **'はじめまして、紬です'**
+  String get tsumugiIntroTitle;
+
+  /// No description provided for @tsumugiIntroBody.
+  ///
+  /// In ja, this message translates to:
+  /// **'ここでは、短い一言から練習できます。うまく言えなくても大丈夫。ゆっくり一緒にいこ？'**
+  String get tsumugiIntroBody;
+
+  /// No description provided for @tsumugiIntroStartButton.
+  ///
+  /// In ja, this message translates to:
+  /// **'はじめる'**
+  String get tsumugiIntroStartButton;
+
+  /// No description provided for @tsumugiIntroWhoIsButton.
+  ///
+  /// In ja, this message translates to:
+  /// **'紬って？'**
+  String get tsumugiIntroWhoIsButton;
+
+  /// No description provided for @tsumugiIntroLaterButton.
+  ///
+  /// In ja, this message translates to:
+  /// **'あとで'**
+  String get tsumugiIntroLaterButton;
+
+  /// No description provided for @tsumugiProfileMenuTitle.
+  ///
+  /// In ja, this message translates to:
+  /// **'紬って？'**
+  String get tsumugiProfileMenuTitle;
+
+  /// No description provided for @tsumugiProfileScreenTitle.
+  ///
+  /// In ja, this message translates to:
+  /// **'紬って？'**
+  String get tsumugiProfileScreenTitle;
+
+  /// No description provided for @tsumugiProfileBody.
+  ///
+  /// In ja, this message translates to:
+  /// **'紬は、あなたの学習をそっと支える存在です。\n間違えても大丈夫。\nできたところを一緒に見つけながら、進んでいきます。'**
+  String get tsumugiProfileBody;
+
   /// No description provided for @subscriptionUpsellTitle.
   ///
   /// In ja, this message translates to:
