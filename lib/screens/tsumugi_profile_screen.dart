@@ -21,12 +21,13 @@ class TsumugiProfileScreen extends StatelessWidget {
               children: [
                 Center(
                   child: ClipRRect(
-                    borderRadius: BorderRadius.circular(48),
+                    borderRadius: BorderRadius.circular(72),
                     child: Image.asset(
                       'assets/images/characters/tumugi/setting.png',
-                      width: 88,
-                      height: 88,
+                      width: 132,
+                      height: 132,
                       fit: BoxFit.cover,
+                      alignment: const Alignment(0, -0.5),
                     ),
                   ),
                 ),
