@@ -22,6 +22,7 @@ import 'package:kawaii_lang/config.dart';
 import 'dart:async';
 import 'dart:ui';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
+import 'package:kawaii_lang/widgets/particle_burst.dart';
 
 const Set<String> _supportedUserLangCodes = {
   'ja',
@@ -164,6 +165,24 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
         return const Locale('en');
       },
       // home: IdleGateScreen(),
+      builder: (context, child) {
+        return Listener(
+          behavior: HitTestBehavior.translucent,
+          onPointerDown: (event) {
+            final overlay = _navigatorKey.currentState?.overlay;
+            if (overlay == null) return;
+            late OverlayEntry entry;
+            entry = OverlayEntry(
+              builder: (_) => ParticleBurst(
+                center: event.position,
+                onDone: () => entry.remove(),
+              ),
+            );
+            overlay.insert(entry);
+          },
+          child: child!,
+        );
+      },
       home: SplashScreen(),
       routes: {
         '/idle': (_) => IdleGateScreen(),  // 必要に応じて名前を付けておく

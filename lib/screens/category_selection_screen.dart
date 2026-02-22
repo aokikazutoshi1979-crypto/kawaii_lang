@@ -547,7 +547,7 @@ class _CategorySelectionScreenState
                 const rowHeight = 58.0;
                 const dividerHeight = 1.0;
                 const rowsVisible = 5;
-                const quoteBodyHeight = 64.0;
+                const quoteBodyHeight = 80.0;
                 const quotePointerHeight = 10.0;
                 const quoteHeight = quoteBodyHeight + quotePointerHeight;
                 const quoteShiftUp = 80.0;
@@ -614,7 +614,7 @@ class _CategorySelectionScreenState
                                         14, quotePointerHeight + 10, 14, 10),
                                     child: Text(
                                       _tsumugiLine!,
-                                      maxLines: 2,
+                                      maxLines: 3,
                                       overflow: TextOverflow.ellipsis,
                                       softWrap: true,
                                       textAlign: TextAlign.center,
@@ -693,9 +693,9 @@ class _CategorySelectionScreenState
                                                             CrossAxisAlignment
                                                                 .center,
                                                         children: [
-                                                          const Text(
-                                                            '☕️',
-                                                            style: TextStyle(
+                                                          Text(
+                                                            _selectedCharacter == 'kasumi' ? '🎀' : '☕️',
+                                                            style: const TextStyle(
                                                               fontSize: 16,
                                                               height: 1.0,
                                                             ),
