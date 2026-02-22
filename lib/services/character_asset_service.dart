@@ -44,4 +44,33 @@ class CharacterAssetService {
     final c = normalize(character);
     return 'assets/images/characters/$c/01.png';
   }
+
+  /// キャラクター表示名を言語コードに応じて返す
+  static String characterDisplayName(String character, String langCode) {
+    final c = normalize(character);
+    final lang = langCode.replaceAll('-', '_').toLowerCase();
+    if (c == tumugi) {
+      switch (lang) {
+        case 'ja':
+        case 'zh':
+        case 'zh_tw':
+          return '紬';
+        case 'ko':
+          return '쓰무기';
+        default:
+          return 'Tsumugi';
+      }
+    } else {
+      switch (lang) {
+        case 'ja':
+        case 'zh':
+        case 'zh_tw':
+          return '香澄';
+        case 'ko':
+          return '카스미';
+        default:
+          return 'Kasumi';
+      }
+    }
+  }
 }

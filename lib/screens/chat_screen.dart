@@ -27,7 +27,7 @@ import 'dart:io' show Platform, File;
 import '../common/scene_label.dart';
 import 'package:kawaii_lang/services/language_catalog.dart';
 import 'question_list_screen.dart';
-import '../utils/tsumugi_prompt.dart';
+import '../utils/tsumugi_prompt.dart' as tsumugi_prompt;
 import '../services/character_asset_service.dart';
 
 
@@ -142,7 +142,10 @@ class _ChatScreenState extends State<ChatScreen> {
   String _selectedCharacter = CharacterAssetService.defaultCharacter;
 
   String _pickTumugiLine() {
-    final baseLines = tsumugiPraiseLines(_nativeCode);
+    final isKasumi = _selectedCharacter == CharacterAssetService.kasumi;
+    final baseLines = isKasumi
+        ? tsumugi_prompt.kasumiPraiseLines(_nativeCode)
+        : tsumugi_prompt.tsumugiPraiseLines(_nativeCode);
     final pool = List<String>.from(baseLines)
       ..removeWhere((line) => _recentTumugiLines.contains(line));
     if (pool.isEmpty) {
@@ -153,9 +156,11 @@ class _ChatScreenState extends State<ChatScreen> {
     while (_recentTumugiLines.length > 3) {
       _recentTumugiLines.removeFirst();
     }
-    final prefix = tsumugiNamePrefix(_nativeCode, _displayName);
-    final joiner = tsumugiSentenceJoiner(_nativeCode);
-    final nextPrompt = tsumugiNextPrompt(_nativeCode);
+    final prefix = tsumugi_prompt.tsumugiNamePrefix(_nativeCode, _displayName);
+    final joiner = tsumugi_prompt.tsumugiSentenceJoiner(_nativeCode);
+    final nextPrompt = isKasumi
+        ? tsumugi_prompt.kasumiNextPrompt(_nativeCode)
+        : tsumugi_prompt.tsumugiNextPrompt(_nativeCode);
     return '$prefix$baseLine$joiner$nextPrompt';
   }
 
@@ -448,10 +453,15 @@ class _ChatScreenState extends State<ChatScreen> {
       await LanguageCatalog.instance.ensureLoaded();
       if (mounted) {
         setState(() {
-          _tsumugiQuestionText = buildTsumugiQuestionLine(
-            uiLanguageCode: _nativeCode,
-            targetLanguageName: _displayLangName(widget.targetLang),
-          );
+          _tsumugiQuestionText = _selectedCharacter == CharacterAssetService.kasumi
+              ? tsumugi_prompt.buildKasumiQuestionLine(
+                  uiLanguageCode: _nativeCode,
+                  targetLanguageName: _displayLangName(widget.targetLang),
+                )
+              : tsumugi_prompt.buildTsumugiQuestionLine(
+                  uiLanguageCode: _nativeCode,
+                  targetLanguageName: _displayLangName(widget.targetLang),
+                );
         });
       }
     });
@@ -736,10 +746,15 @@ class _ChatScreenState extends State<ChatScreen> {
       _revealListeningText = false;
       _currentNativeText = nativeText;
       _isPromptExpanded = false;
-      _tsumugiQuestionText = buildTsumugiQuestionLine(
-        uiLanguageCode: _nativeCode,
-        targetLanguageName: _displayLangName(widget.targetLang),
-      );
+      _tsumugiQuestionText = _selectedCharacter == CharacterAssetService.kasumi
+          ? tsumugi_prompt.buildKasumiQuestionLine(
+              uiLanguageCode: _nativeCode,
+              targetLanguageName: _displayLangName(widget.targetLang),
+            )
+          : tsumugi_prompt.buildTsumugiQuestionLine(
+              uiLanguageCode: _nativeCode,
+              targetLanguageName: _displayLangName(widget.targetLang),
+            );
 
       if (isListening) {
         _messages = [
@@ -1916,10 +1931,10 @@ class _ChatScreenState extends State<ChatScreen> {
                                       color: Colors.black87,
                                     ),
                                   ),
-                                  if (formatPromptQuote(_nativeCode, _currentNativeText).isNotEmpty) ...[
+                                  if (tsumugi_prompt.formatPromptQuote(_nativeCode, _currentNativeText).isNotEmpty) ...[
                                     const SizedBox(height: 6),
                                     _ExpandablePromptText(
-                                      text: formatPromptQuote(_nativeCode, _currentNativeText),
+                                      text: tsumugi_prompt.formatPromptQuote(_nativeCode, _currentNativeText),
                                       isExpanded: _isPromptExpanded,
                                       maxLines: 2,
                                       expandLabel: loc.tapToExpand,

@@ -253,3 +253,177 @@ List<String> _questionLineTemplates(String lang) {
 }
 
 String _norm(String s) => s.replaceAll('-', '_').toLowerCase();
+
+// ─────────────────────────────────────────────
+// 香澄（ツンデレ・照れ屋・根は優しい）版
+// ─────────────────────────────────────────────
+
+String buildKasumiQuestionLine({
+  required String uiLanguageCode,
+  required String targetLanguageName,
+}) {
+  final target = targetLanguageName.trim();
+  final lang = _norm(uiLanguageCode);
+  final rnd = Random();
+  final templates = _kasumiQuestionLineTemplates(lang);
+  final tmpl = templates[rnd.nextInt(templates.length)];
+  return tmpl.replaceAll('{target}', target.isEmpty ? 'English' : target);
+}
+
+List<String> kasumiPraiseLines(String uiLanguageCode) {
+  switch (_norm(uiLanguageCode)) {
+    case 'ja':
+      return const [
+        'ちゃんとできてるじゃない。…少し見直したかも。',
+        'ま、まあ悪くなかったよ。次も行こ？',
+        'べ、別に感動したわけじゃないけど。よかったよ。',
+      ];
+    case 'ko':
+      return const [
+        '제법 잘하네. …조금 다시 봤어.',
+        '뭐, 나쁘지는 않았어. 다음 가자?',
+        '감동받은 건 아닌데. 잘했어.',
+      ];
+    case 'zh':
+      return const [
+        '还行嘛。…稍微对你改观了一点。',
+        '嗯，还不错。下一题？',
+        '我又没有感动什么的。挺好的。',
+      ];
+    case 'zh_tw':
+      return const [
+        '還行嘛。…稍微對你改觀了一點。',
+        '嗯，還不錯。下一題？',
+        '我又沒有感動什麼的。挺好的。',
+      ];
+    case 'es':
+      return const [
+        'Nada mal. …Quizá te subestimé un poco.',
+        'Bu-bueno, no estuvo mal. ¿Siguiente?',
+        'No estoy impresionada ni nada. Pero… bien hecho.',
+      ];
+    case 'fr':
+      return const [
+        'Pas mal du tout. …J\'ai peut-être un peu sous-estimé.',
+        'Bo-bon, c\'était correct. La suivante ?',
+        'Je suis pas impressionnée hein. Mais… bien joué.',
+      ];
+    case 'de':
+      return const [
+        'Gar nicht schlecht. …Vielleicht hab ich dich unterschätzt.',
+        'N-na gut, das war okay. Nächste?',
+        'Ich bin nicht beeindruckt oder so. Aber… gut gemacht.',
+      ];
+    case 'vi':
+      return const [
+        'Không tệ đâu. …Mình có thể đã đánh giá thấp bạn.',
+        'Thôi được, không tệ. Câu tiếp?',
+        'Mình không ấn tượng hay gì. Nhưng… làm tốt đấy.',
+      ];
+    case 'id':
+      return const [
+        'Lumayan juga. …Mungkin aku terlalu meremehkanmu.',
+        'Y-ya, tidak buruk. Selanjutnya?',
+        'Bukan berarti aku terkesan ya. Tapi… bagus.',
+      ];
+    case 'en':
+    default:
+      return const [
+        "Not bad at all… I might've underestimated you.",
+        "W-well, that wasn't too bad. Next one?",
+        "I'm not impressed or anything. But… good job.",
+      ];
+  }
+}
+
+String kasumiNextPrompt(String uiLanguageCode) {
+  switch (_norm(uiLanguageCode)) {
+    case 'ja':
+      return '次は？';
+    case 'ko':
+      return '다음은?';
+    case 'zh':
+      return '下一题？';
+    case 'zh_tw':
+      return '下一題？';
+    case 'es':
+      return '¿Siguiente?';
+    case 'fr':
+      return 'La suivante ?';
+    case 'de':
+      return 'Nächste?';
+    case 'vi':
+      return 'Câu tiếp?';
+    case 'id':
+      return 'Selanjutnya?';
+    case 'en':
+    default:
+      return 'Next one?';
+  }
+}
+
+List<String> _kasumiQuestionLineTemplates(String lang) {
+  switch (lang) {
+    case 'ja':
+      return [
+        '{target}で言えるかな？…別に試してるわけじゃないけど。',
+        'これ、{target}で言ってみて。難しくないでしょ、きっと。',
+        '{target}でどう言う？…一緒に考えてあげる。',
+      ];
+    case 'ko':
+      return [
+        '{target}로 말할 수 있어? …별로 시험하는 건 아닌데.',
+        '{target}로 말해봐. 어렵지 않을 거야, 아마.',
+        '{target}로 어떻게 말해? …같이 생각해줄게.',
+      ];
+    case 'zh':
+      return [
+        '能用{target}说出来吗？…我又没在考你什么。',
+        '用{target}说说看。应该不难，肯定的。',
+        '{target}怎么说？…帮你想想也行。',
+      ];
+    case 'zh_tw':
+      return [
+        '能用{target}說出來嗎？…我又沒在考你什麼。',
+        '用{target}說說看。應該不難，肯定的。',
+        '{target}怎麼說？…幫你想想也行。',
+      ];
+    case 'es':
+      return [
+        '¿Puedes decirlo en {target}? …No te estoy poniendo a prueba ni nada.',
+        'Dilo en {target}. No es difícil, seguro.',
+        '¿Cómo se dice en {target}? …Te ayudo a pensarlo.',
+      ];
+    case 'fr':
+      return [
+        'Tu peux le dire en {target} ? …Je te teste pas, hein.',
+        'Dis-le en {target}. C\'est pas dur, j\'en suis sûre.',
+        'Comment on dit en {target} ? …Je t\'aide à y réfléchir.',
+      ];
+    case 'de':
+      return [
+        'Kannst du es auf {target} sagen? …Ich teste dich nicht oder so.',
+        'Sag es auf {target}. Es ist bestimmt nicht schwer.',
+        'Wie sagt man das auf {target}? …Ich helfe dir nachdenken.',
+      ];
+    case 'vi':
+      return [
+        'Bạn có thể nói bằng {target} không? …Mình không phải đang thử bạn đâu.',
+        'Thử nói bằng {target} xem. Chắc không khó đâu.',
+        '{target} nói thế nào nhỉ? …Mình giúp bạn nghĩ.',
+      ];
+    case 'id':
+      return [
+        'Bisa bilang dalam {target}? …Bukan berarti aku mengujimu ya.',
+        'Bilang dalam {target} dong. Pasti tidak susah kok.',
+        'Gimana bilangnya dalam {target}? …Aku bantu mikir deh.',
+      ];
+    case 'en':
+    default:
+      return [
+        "Can you say it in {target}? …I'm not testing you or anything.",
+        "Try saying it in {target}. It's not that hard, I'm sure.",
+        "How do you say it in {target}? …I'll help you figure it out.",
+      ];
+  }
+}

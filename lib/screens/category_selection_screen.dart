@@ -22,6 +22,7 @@ import '../services/tsumugi_line_service.dart';
 import 'tsumugi_profile_screen.dart';
 import '../widgets/tsumugi_welcome_dialog.dart';
 import '../services/character_asset_service.dart';
+import '../services/kasumi_line_service.dart';
 
 class CategorySelectionScreen extends StatefulWidget {
   const CategorySelectionScreen({Key? key}) : super(key: key);
@@ -166,10 +167,19 @@ class _CategorySelectionScreenState
   Future<void> _loadTsumugiLine() async {
     await refreshSubscriptionStatus();
     if (!mounted) return;
-    final quote = await TsumugiLineService.instance.getLine(
-      loc: AppLocalizations.of(context)!,
-      hasSubscription: hasSubOnDevice,
-    );
+    final String quote;
+    if (_selectedCharacter == CharacterAssetService.kasumi) {
+      final langCode = selectedNativeLang ?? 'ja';
+      quote = await KasumiLineService.instance.getLine(
+        hasSubscription: hasSubOnDevice,
+        langCode: langCode,
+      );
+    } else {
+      quote = await TsumugiLineService.instance.getLine(
+        loc: AppLocalizations.of(context)!,
+        hasSubscription: hasSubOnDevice,
+      );
+    }
     if (!mounted) return;
     setState(() => _tsumugiLine = quote);
   }
