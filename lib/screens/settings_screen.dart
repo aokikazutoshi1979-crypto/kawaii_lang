@@ -789,6 +789,21 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                             ],
                           ),
                         ),
+                        Divider(height: 1, color: Colors.grey.shade200),
+                        _settingsRow(
+                          icon: Icons.auto_awesome_rounded,
+                          title: _selectedCharacter == 'kasumi'
+                              ? loc.kasumiProfileMenuTitle
+                              : loc.tsumugiProfileMenuTitle,
+                          onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => _selectedCharacter == 'kasumi'
+                                  ? const KasumiProfileScreen()
+                                  : const TsumugiProfileScreen(),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                     _sectionHeader(context, modeSectionTitle),
@@ -844,21 +859,6 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                           ),
                         if (selectedLang != null)
                           Divider(height: 1, color: Colors.grey.shade200),
-                        _settingsRow(
-                          icon: Icons.auto_awesome_rounded,
-                          title: _selectedCharacter == 'kasumi'
-                              ? loc.kasumiProfileMenuTitle
-                              : loc.tsumugiProfileMenuTitle,
-                          onTap: () => Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (_) => _selectedCharacter == 'kasumi'
-                                  ? const KasumiProfileScreen()
-                                  : const TsumugiProfileScreen(),
-                            ),
-                          ),
-                        ),
-                        Divider(height: 1, color: Colors.grey.shade200),
                         _settingsRow(
                           icon: Icons.help_outline_rounded,
                           title: loc.viewFaq,
