@@ -21,6 +21,7 @@ import 'chat_screen.dart';
 import '../services/tsumugi_line_service.dart';
 import 'tsumugi_profile_screen.dart';
 import '../widgets/tsumugi_welcome_dialog.dart';
+import '../services/character_asset_service.dart';
 
 class CategorySelectionScreen extends StatefulWidget {
   const CategorySelectionScreen({Key? key}) : super(key: key);
@@ -44,6 +45,7 @@ class _CategorySelectionScreenState
   QuizMode selectedMode = QuizMode.reading;
   static const String _quickStartPrefKey = 'has_used_quick_start';
   static const String _quizModePrefKey = 'quiz_mode';
+  String _selectedCharacter = CharacterAssetService.defaultCharacter;
   String? _tsumugiLine;
   bool _revealRequested = false;
   bool _revealStarted = false;
@@ -60,6 +62,7 @@ class _CategorySelectionScreenState
     _loadLanguage();
     _loadTargetLanguage();
     _loadQuizMode();
+    _loadCharacter();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
       _loadScenesJson();
@@ -154,6 +157,12 @@ class _CategorySelectionScreenState
     setState(() => selectedMode = mode);
   }
 
+  Future<void> _loadCharacter() async {
+    final character = await CharacterAssetService.loadSelectedCharacter();
+    if (!mounted) return;
+    setState(() => _selectedCharacter = character);
+  }
+
   Future<void> _loadTsumugiLine() async {
     await refreshSubscriptionStatus();
     if (!mounted) return;
@@ -194,8 +203,9 @@ class _CategorySelectionScreenState
   Future<void> _precacheQuestionBackground() async {
     if (_questionBgPrecached || !mounted) return;
     try {
+      final character = await CharacterAssetService.loadSelectedCharacter();
       await precacheImage(
-        const AssetImage('assets/images/characters/tumugi_questions.png'),
+        AssetImage(CharacterAssetService.questionBackground(character)),
         context,
       );
       _questionBgPrecached = true;
@@ -499,6 +509,7 @@ class _CategorySelectionScreenState
                 _loadLanguage();
                 _loadTargetLanguage();
                 _loadQuizMode();
+                _loadCharacter();
                 _loadTsumugiLine();
               });
             },
@@ -511,7 +522,7 @@ class _CategorySelectionScreenState
           Positioned.fill(
             child: Image(
               image: ResizeImage(
-                const AssetImage('assets/images/characters/tumugi_menu.png'),
+                AssetImage(CharacterAssetService.menuBackground(_selectedCharacter)),
                 width: bgCacheWidth,
               ),
               fit: BoxFit.cover,

@@ -64,6 +64,8 @@ flutter:
     - assets/feedback/feedback_labels.json
     - assets/images/backgrounds/
     - assets/images/characters/
+    - assets/images/characters/tumugi/
+    - assets/images/characters/kasumi/
     - assets/images/icon/
     - assets/images/
     - assets/questions/

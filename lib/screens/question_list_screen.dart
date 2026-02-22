@@ -20,6 +20,7 @@ import '../models/quiz_mode.dart';
 import '../common/scene_label.dart';
 import '../services/history_service.dart';
 import '../utils/lang_utils.dart'; // getLangCode を使うなら
+import '../services/character_asset_service.dart';
 
 class QuestionListScreen extends StatefulWidget {
   final String selectedScene;
@@ -112,6 +113,7 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
   Set<String> _cleared = {};
   bool _loadingCleared = false;
   bool _wroteHistory = false;
+  String _selectedCharacter = CharacterAssetService.defaultCharacter;
 
   late QuizMode _mode;
   // Helper to map scene key to localized label
@@ -537,10 +539,18 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
     // SubscriptionService のシングルトンを代入
     subscriptionService = SubscriptionService.instance; // ← ここを修正
 
+    _loadCharacter();
+
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _startTopControlsEntrance();
       _startDeferredInitialLoad();
     });
+  }
+
+  Future<void> _loadCharacter() async {
+    final character = await CharacterAssetService.loadSelectedCharacter();
+    if (!mounted) return;
+    setState(() => _selectedCharacter = character);
   }
 
   void _startTopControlsEntrance() {
@@ -977,20 +987,20 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
             child: _buildAnimatedTopSearchRow(loc),
           ),
         ),
-        body: const Stack(
+        body: Stack(
           fit: StackFit.expand,
           children: [
             DecoratedBox(
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage(
-                      'assets/images/characters/tumugi_questions.png'),
+                      CharacterAssetService.questionBackground(_selectedCharacter)),
                   fit: BoxFit.cover,
                   alignment: Alignment.center,
                 ),
               ),
             ),
-            Center(
+            const Center(
               child: SizedBox(
                 width: 28,
                 height: 28,
@@ -1055,11 +1065,11 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
       body: Stack(
         fit: StackFit.expand,
         children: [
-          const DecoratedBox(
+          DecoratedBox(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image:
-                    AssetImage('assets/images/characters/tumugi_questions.png'),
+                image: AssetImage(
+                    CharacterAssetService.questionBackground(_selectedCharacter)),
                 fit: BoxFit.cover,
                 alignment: Alignment.center,
               ),

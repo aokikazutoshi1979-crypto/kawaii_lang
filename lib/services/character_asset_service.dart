@@ -27,21 +27,21 @@ class CharacterAssetService {
 
   static String menuBackground(String character) {
     final c = normalize(character);
-    return 'assets/images/characters/$c/${c}_menu.png';
+    return 'assets/images/characters/$c/menu.png';
   }
 
   static String questionBackground(String character) {
     final c = normalize(character);
-    return 'assets/images/characters/$c/${c}_questions.png';
+    return 'assets/images/characters/$c/questions.png';
   }
 
   static String chatBackground(String character) {
     final c = normalize(character);
-    return 'assets/images/characters/$c/${c}_chat.png';
+    return 'assets/images/characters/$c/chat.png';
   }
 
   static String chatAvatar(String character) {
     final c = normalize(character);
-    return 'assets/images/characters/$c/${c}_01.png';
+    return 'assets/images/characters/$c/01.png';
   }
 }

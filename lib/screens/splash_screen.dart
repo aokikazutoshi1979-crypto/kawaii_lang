@@ -3,6 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import '../services/auth_service.dart';
 import '../services/idle_service.dart';
+import '../services/character_asset_service.dart';
 import 'category_selection_screen.dart';
 import 'user_name_screen.dart';
 import 'package:kawaii_lang/config.dart';
@@ -73,11 +74,12 @@ class _SplashScreenState extends State<SplashScreen> {
       await AuthService.signInAnonymouslyIfNeeded(force: isTestReset);
 
       // 2) 次画面の背景を先読みして遷移時の引っかかりを軽減
+      final character = await CharacterAssetService.loadSelectedCharacter();
       final dpr = MediaQuery.of(context).devicePixelRatio;
       final w = (MediaQuery.of(context).size.width * dpr).round();
       await precacheImage(
         ResizeImage(
-          const AssetImage('assets/images/characters/tumugi_menu.png'),
+          AssetImage(CharacterAssetService.menuBackground(character)),
           width: w,
         ),
         context,

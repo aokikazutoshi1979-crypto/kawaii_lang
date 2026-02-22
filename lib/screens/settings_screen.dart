@@ -22,6 +22,7 @@ import 'user_name_screen.dart';
 import 'package:kawaii_lang/widgets/mode_toggle_bar.dart';
 import '../models/quiz_mode.dart';
 import 'tsumugi_profile_screen.dart';
+import '../services/character_asset_service.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({Key? key}) : super(key: key);
@@ -46,6 +47,7 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
   final String _faqUrl = 'https://kawaiilang.com/faq.html';
   QuizMode _selectedMode = QuizMode.reading;
   static const String _quizModePrefKey = 'quiz_mode';
+  String _selectedCharacter = CharacterAssetService.defaultCharacter;
 
   final List<String> _languageCodes = const [
     'ja',
@@ -114,6 +116,7 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     _loadTargetLanguage();
     _loadDisplayName();
     _loadQuizMode();
+    _loadCharacter();
     _loadLanguageCatalog();
 
     // ２）RevenueCat の初期化＆オファー取得
@@ -171,6 +174,18 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     await prefs.setString(_quizModePrefKey, mode.name);
     if (!mounted) return;
     setState(() => _selectedMode = mode);
+  }
+
+  Future<void> _loadCharacter() async {
+    final character = await CharacterAssetService.loadSelectedCharacter();
+    if (!mounted) return;
+    setState(() => _selectedCharacter = character);
+  }
+
+  Future<void> _saveCharacter(String character) async {
+    await CharacterAssetService.saveSelectedCharacter(character);
+    if (!mounted) return;
+    setState(() => _selectedCharacter = character);
   }
 
   Future<void> _fetchUser() async {
@@ -688,6 +703,74 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                             onTap: () => Navigator.pushNamed(context, '/login'),
                           ),
                         ],
+                      ],
+                    ),
+                    _sectionHeader(context, 'キャラクター'),
+                    _sectionCard(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 12, vertical: 10),
+                          child: Row(
+                            children: [
+                              for (final char in CharacterAssetService
+                                  .supportedCharacters) ...[
+                                Expanded(
+                                  child: GestureDetector(
+                                    onTap: () => _saveCharacter(char),
+                                    child: AnimatedContainer(
+                                      duration:
+                                          const Duration(milliseconds: 200),
+                                      margin: const EdgeInsets.symmetric(
+                                          horizontal: 4),
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 10),
+                                      decoration: BoxDecoration(
+                                        color: _selectedCharacter == char
+                                            ? Colors.pink.shade400
+                                            : Colors.grey.shade100,
+                                        borderRadius:
+                                            BorderRadius.circular(12),
+                                        border: Border.all(
+                                          color: _selectedCharacter == char
+                                              ? Colors.pink.shade300
+                                              : Colors.grey.shade300,
+                                        ),
+                                      ),
+                                      child: Column(
+                                        children: [
+                                          ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(8),
+                                            child: Image.asset(
+                                              CharacterAssetService
+                                                  .chatAvatar(char),
+                                              width: 64,
+                                              height: 64,
+                                              fit: BoxFit.cover,
+                                            ),
+                                          ),
+                                          const SizedBox(height: 6),
+                                          Text(
+                                            char == CharacterAssetService.tumugi
+                                                ? '紬'
+                                                : '香澄',
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.w700,
+                                              color: _selectedCharacter == char
+                                                  ? Colors.white
+                                                  : Colors.grey.shade700,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                     _sectionHeader(context, modeSectionTitle),

@@ -28,6 +28,7 @@ import '../common/scene_label.dart';
 import 'package:kawaii_lang/services/language_catalog.dart';
 import 'question_list_screen.dart';
 import '../utils/tsumugi_prompt.dart';
+import '../services/character_asset_service.dart';
 
 
 class ChatScreen extends StatefulWidget {
@@ -138,6 +139,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   bool _revealListeningText = false;
   String? _displayName;
+  String _selectedCharacter = CharacterAssetService.defaultCharacter;
 
   String _pickTumugiLine() {
     final baseLines = tsumugiPraiseLines(_nativeCode);
@@ -166,7 +168,7 @@ class _ChatScreenState extends State<ChatScreen> {
       _messages.add({
         'role': 'tumugi',
         'text': _pickTumugiLine(),
-        'avatarPath': 'assets/images/characters/tumugi_01.png',
+        'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
       });
     });
   }
@@ -439,6 +441,7 @@ class _ChatScreenState extends State<ChatScreen> {
     _initTts();
 
     _loadDisplayName();
+    _loadCharacter();
 
     // ★ 言語カタログを読み込んでから一度だけ再描画
     Future.microtask(() async {
@@ -466,6 +469,12 @@ class _ChatScreenState extends State<ChatScreen> {
     setState(() {
       _displayName = prefs.getString('user_display_name');
     });
+  }
+
+  Future<void> _loadCharacter() async {
+    final character = await CharacterAssetService.loadSelectedCharacter();
+    if (!mounted) return;
+    setState(() => _selectedCharacter = character);
   }
 
   Future<void> _initTts() async {
@@ -1807,9 +1816,9 @@ class _ChatScreenState extends State<ChatScreen> {
 
       body: Stack(
         children: [
-          const Positioned.fill(
+          Positioned.fill(
             child: Image(
-              image: AssetImage('assets/images/characters/tumugi_chat.png'),
+              image: AssetImage(CharacterAssetService.chatBackground(_selectedCharacter)),
               fit: BoxFit.cover,
               alignment: Alignment.center,
             ),
@@ -1870,10 +1879,10 @@ class _ChatScreenState extends State<ChatScreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        const CircleAvatar(
+                        CircleAvatar(
                           radius: 31.5,
                           backgroundImage: AssetImage(
-                            'assets/images/characters/tumugi_01.png',
+                            CharacterAssetService.chatAvatar(_selectedCharacter),
                           ),
                         ),
                         const SizedBox(width: 10),
