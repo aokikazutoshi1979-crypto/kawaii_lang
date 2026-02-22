@@ -22,6 +22,7 @@ import 'user_name_screen.dart';
 import 'package:kawaii_lang/widgets/mode_toggle_bar.dart';
 import '../models/quiz_mode.dart';
 import 'tsumugi_profile_screen.dart';
+import 'kasumi_profile_screen.dart';
 import '../services/character_asset_service.dart';
 import '../widgets/particle_burst.dart';
 
@@ -845,11 +846,15 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                           Divider(height: 1, color: Colors.grey.shade200),
                         _settingsRow(
                           icon: Icons.auto_awesome_rounded,
-                          title: loc.tsumugiProfileMenuTitle,
+                          title: _selectedCharacter == 'kasumi'
+                              ? loc.kasumiProfileMenuTitle
+                              : loc.tsumugiProfileMenuTitle,
                           onTap: () => Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (_) => const TsumugiProfileScreen(),
+                              builder: (_) => _selectedCharacter == 'kasumi'
+                                  ? const KasumiProfileScreen()
+                                  : const TsumugiProfileScreen(),
                             ),
                           ),
                         ),

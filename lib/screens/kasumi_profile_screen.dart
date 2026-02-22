@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:kawaii_lang/l10n/app_localizations.dart';
 
-class TsumugiProfileScreen extends StatelessWidget {
-  const TsumugiProfileScreen({super.key});
+class KasumiProfileScreen extends StatelessWidget {
+  const KasumiProfileScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class TsumugiProfileScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFFF7F9FC),
       appBar: AppBar(
-        title: Text(loc.tsumugiProfileScreenTitle),
+        title: Text(loc.kasumiProfileScreenTitle),
       ),
       body: SafeArea(
         child: Center(
@@ -23,7 +23,7 @@ class TsumugiProfileScreen extends StatelessWidget {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(48),
                     child: Image.asset(
-                      'assets/images/characters/tumugi/setting.png',
+                      'assets/images/characters/kasumi/setting.png',
                       width: 88,
                       height: 88,
                       fit: BoxFit.cover,
@@ -32,7 +32,7 @@ class TsumugiProfileScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 16),
                 Text(
-                  loc.tsumugiCatchphrase,
+                  loc.kasumiCatchphrase,
                   textAlign: TextAlign.center,
                   style: const TextStyle(
                     fontSize: 15,
@@ -51,7 +51,7 @@ class TsumugiProfileScreen extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.fromLTRB(16, 18, 16, 18),
                     child: Text(
-                      loc.tsumugiProfileBody,
+                      loc.kasumiProfileBody,
                       style: const TextStyle(
                         fontSize: 16,
                         height: 1.7,

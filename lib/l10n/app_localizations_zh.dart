@@ -623,7 +623,23 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get tsumugiProfileBody =>
-      '紬会温柔地陪伴你的学习。\n说错也没关系。\n我们会一起发现你做得好的地方，然后继续前进。';
+      '我是紬。谢谢你来到这里。\n学习有时会很累。这种时候，稍微停下来歇一歇也没关系。\n不用着急。尊重你自己的节奏，我们一起慢慢走就好。\n随时都可以叫我。我在这里等你。☕\n\n这种时候来找我说说话吧\n・总觉得提不起劲\n・题目做不出来\n・想要有人夸夸你\n・想稍微休息一下\n・觉得今天已经很努力了\n\n小小的约定\n你说的事，只有我们之间知道。\n有时候不逼自己也没关系。你的节奏最重要。\n\n你能来，我一直都很期待呢。';
+
+  @override
+  String get tsumugiCatchphrase => '慢慢来就好。这里是安心的地方。';
+
+  @override
+  String get kasumiProfileMenuTitle => '关于香澄';
+
+  @override
+  String get kasumiProfileScreenTitle => '关于香澄';
+
+  @override
+  String get kasumiCatchphrase => '你有好好学习吗？……我在看着你呢。';
+
+  @override
+  String get kasumiProfileBody =>
+      '我是香澄。……才不是担心你啊。\n只是觉得，都要学的话，就好好学嘛。\n如果有什么不懂的……好吧，你可以来问我。我会回答的。\n遇到困难不要客气。……帮这点忙而已，没什么。\n\n这种时候来找我说说话吧\n・完全提不起劲的时候\n・被题目难住了\n・想要被人夸一夸\n・不知道自己还能不能继续的时候\n\n小小的约定\n你说的事，只有我们之间知道。\n不用逼自己。按你自己的节奏就好。\n\n……嗯，一起加油也不是不行。';
 
   @override
   String get tsumugiLineNormal1 => '今日は短くていいよ。1行だけ、やってみよっか。';

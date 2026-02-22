@@ -647,7 +647,23 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tsumugiProfileBody =>
-      'Tsumugi is here to gently support your learning.\nIt is okay to make mistakes.\nWe will find what you did well and keep moving forward together.';
+      'Hi, I\'m Tsumugi. Thank you for coming here.\nLearning can be tiring sometimes. On those days, it\'s okay to slow down and take a breath.\nEverything is fine at your own pace. Let\'s walk this path together, one step at a time.\nFeel free to talk to me anytime. I\'ll always be here. ☕\n\nTalk to me when...\n・You feel like you\'re not in the mood\n・You get stuck on a question\n・You just want someone to cheer you on\n・You need a little break\n・You feel like you did your best today\n\nA little promise\nWhat we talk about stays here, just between us.\nIt\'s okay to take a rest. Your pace is what matters most.\n\nI\'m always looking forward to the day you come back.';
+
+  @override
+  String get tsumugiCatchphrase => 'Take it slow. This is your safe space.';
+
+  @override
+  String get kasumiProfileMenuTitle => 'About Kasumi';
+
+  @override
+  String get kasumiProfileScreenTitle => 'About Kasumi';
+
+  @override
+  String get kasumiCatchphrase => 'Hey, are you keeping up? ...I\'m watching.';
+
+  @override
+  String get kasumiProfileBody =>
+      'I\'m Kasumi. ...Not like I\'m worried about you or anything.\nIt\'s just — if you\'re going to study, you might as well do it properly.\nIf something\'s confusing... well, you can ask me. I\'ll answer, okay?\nDon\'t hold back when you\'re stuck. ...I don\'t mind helping. A little.\n\nTalk to me when...\n・You can\'t get yourself motivated\n・A question has you totally confused\n・You want a little bit of praise\n・You\'re not sure if you can keep going\n\nA little promise\nWhat we talk about stays here, just between us.\nYou don\'t have to push yourself. Go at your own pace.\n\n...Well, working hard together isn\'t so bad, I guess.';
 
   @override
   String get tsumugiLineNormal1 =>

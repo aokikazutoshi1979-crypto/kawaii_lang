@@ -1256,8 +1256,38 @@ abstract class AppLocalizations {
   /// No description provided for @tsumugiProfileBody.
   ///
   /// In ja, this message translates to:
-  /// **'紬は、あなたの学習をそっと支える存在です。\n間違えても大丈夫。\nできたところを一緒に見つけながら、進んでいきます。'**
+  /// **'紬です。ここに来てくれて、ありがとう。\n勉強って、時に疲れることもあるよね。そんなときは、ちょっと立ち止まりながら進めばいい。\n焦らなくて大丈夫。あなたのペースを大切にしながら、ゆっくり一緒に歩いていくから。\nいつでも声をかけてね。ここで待ってるよ。☕\n\nこんな時に話しかけてね\n・なんとなく気分が乗らないとき\n・問題がうまく解けないとき\n・誰かにほめてもらいたいとき\n・ちょっと休憩したいとき\n・今日もよくがんばったと感じたとき\n\nちいさな約束\n話してくれたことは、ここだけのひみつ。\nつらいときは、無理しなくていい。あなたのペースがいちばん大切だから。\n\nあなたが来てくれる日を、いつも楽しみにしてるよ。'**
   String get tsumugiProfileBody;
+
+  /// No description provided for @tsumugiCatchphrase.
+  ///
+  /// In ja, this message translates to:
+  /// **'ゆっくりでいい。ここは安心の場所だから。'**
+  String get tsumugiCatchphrase;
+
+  /// No description provided for @kasumiProfileMenuTitle.
+  ///
+  /// In ja, this message translates to:
+  /// **'香澄って？'**
+  String get kasumiProfileMenuTitle;
+
+  /// No description provided for @kasumiProfileScreenTitle.
+  ///
+  /// In ja, this message translates to:
+  /// **'香澄って？'**
+  String get kasumiProfileScreenTitle;
+
+  /// No description provided for @kasumiCatchphrase.
+  ///
+  /// In ja, this message translates to:
+  /// **'ちゃんとやってる？……見てるから。'**
+  String get kasumiCatchphrase;
+
+  /// No description provided for @kasumiProfileBody.
+  ///
+  /// In ja, this message translates to:
+  /// **'香澄です。……別に、あなたのことが心配なわけじゃないけど。\nせっかく勉強するなら、ちゃんとやった方がいいと思って。\nわからないことがあったら……まぁ、聞いてもいいよ。ちゃんと答えてあげるから。\n困ったときは遠慮しないで。……そのくらいは付き合ってあげる。\n\nこんな時に話しかけてね\n・やる気がわかないとき\n・問題がわからなくて困ったとき\n・ちょっとほめてほしいとき\n・もう少しやれるか迷ったとき\n\nちいさな約束\n話してくれたことは、ここだけのひみつ。\n無理しなくていい。あなたのペースで進めばいいから。\n\n……まぁ、一緒にがんばるのも悪くないかな。'**
+  String get kasumiProfileBody;
 
   /// No description provided for @tsumugiLineNormal1.
   ///
