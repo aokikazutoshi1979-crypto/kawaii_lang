@@ -706,4 +706,40 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get subscriptionUpsellMessage =>
       'The free plan is just a trial. If you truly want to speak, unlock all scenes now!';
+
+  @override
+  String get basicPlan => 'Basic Plan';
+
+  @override
+  String get upsellBodyText =>
+      'This category is for Basic plan members only.\nUnlock all categories.\n7-day free trial. Cancel before trial ends and you won\'t be charged.';
+
+  @override
+  String get trialStartButton => 'Start 7-day free trial';
+
+  @override
+  String get planDetailsButton => 'View Plan Details';
+
+  @override
+  String get notNowButton => 'Not now';
+
+  @override
+  String get trialCopyText =>
+      '7-day free trial. Cancel anytime before trial ends and you will not be charged.';
+
+  @override
+  String get subscriptionBenefitAllCategories => 'All categories unlocked';
+
+  @override
+  String get subscriptionBenefitUnlimited => 'Unlimited practice';
+
+  @override
+  String get subscriptionBenefitCancelAnytime => 'Cancel anytime';
+
+  @override
+  String get iosCancelGuideText =>
+      'To cancel on iPhone: Settings > Apple Account > Subscriptions.';
+
+  @override
+  String get subscriptionActivated => 'Subscription activated.';
 }

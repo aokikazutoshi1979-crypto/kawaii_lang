@@ -341,5 +341,16 @@
   "incorrectMessageWithRaw": "{raw} \n這個回答在文法或語意上不正確。",
   "answerMeaningAccurate": "此回答準確地表達了題目的含義。",
   "subscriptionUpsellTitle": "使用基本方案繼續學習！",
-  "subscriptionUpsellMessage": "免費方案只是體驗。若想真正開口說話，現在就解鎖所有場景！"
+  "subscriptionUpsellMessage": "免費方案只是體驗。若想真正開口說話，現在就解鎖所有場景！",
+  "basicPlan": "基本方案",
+  "upsellBodyText": "此分類僅限基本方案會員。\n解鎖所有分類。\n7天免費試用。試用期內取消不收費。",
+  "trialStartButton": "開始7天免費試用",
+  "planDetailsButton": "查看方案詳情",
+  "notNowButton": "暫時不了",
+  "trialCopyText": "7天免費試用。試用期內取消不收費。",
+  "subscriptionBenefitAllCategories": "所有分類全開",
+  "subscriptionBenefitUnlimited": "練習次數無限制",
+  "subscriptionBenefitCancelAnytime": "隨時可取消",
+  "iosCancelGuideText": "在 iPhone 上取消：設定 > Apple 帳號 > 訂閱。",
+  "subscriptionActivated": "訂閱已啟用。"
 }

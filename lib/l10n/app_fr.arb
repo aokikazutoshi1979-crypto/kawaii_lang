@@ -342,5 +342,16 @@
   "incorrectMessageWithRaw": "{raw} \nCette réponse n'est pas correcte sur le plan grammatical ou sémantique.",
   "answerMeaningAccurate": "Cette réponse reflète fidèlement le sens de la question.",
   "subscriptionUpsellTitle": "Continuez à apprendre avec le forfait Basic !",
-  "subscriptionUpsellMessage": "Le plan gratuit n’est qu’un essai. Si vous voulez vraiment parler, débloquez toutes les scènes dès maintenant !"
+  "subscriptionUpsellMessage": "Le plan gratuit n’est qu’un essai. Si vous voulez vraiment parler, débloquez toutes les scènes dès maintenant !",
+  "basicPlan": "Plan de base",
+  "upsellBodyText": "Cette catégorie est réservée aux membres du plan Basic.\nDébloquez toutes les catégories.\n7 jours d’essai gratuit. Annulez avant la fin de l’essai et vous ne serez pas débité.",
+  "trialStartButton": "Essai gratuit de 7 jours",
+  "planDetailsButton": "Voir les détails du forfait",
+  "notNowButton": "Pas maintenant",
+  "trialCopyText": "7 jours d’essai gratuit. Annulez avant la fin de l’essai et vous ne serez pas débité.",
+  "subscriptionBenefitAllCategories": "Toutes les catégories débloquées",
+  "subscriptionBenefitUnlimited": "Pratique illimitée",
+  "subscriptionBenefitCancelAnytime": "Annuler à tout moment",
+  "iosCancelGuideText": "Pour annuler sur iPhone : Réglages > Apple Account > Abonnements.",
+  "subscriptionActivated": "Abonnement activé."
 }

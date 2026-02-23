@@ -342,5 +342,16 @@
   "incorrectMessageWithRaw": "{raw} \nJawaban ini tidak benar secara tata bahasa atau makna.",
   "answerMeaningAccurate": "Jawaban ini secara akurat mencerminkan makna dari pertanyaan.",
   "subscriptionUpsellTitle": "Lanjut belajar dengan Paket Basic!",
-  "subscriptionUpsellMessage": "Paket gratis hanya percobaan. Jika benar-benar ingin bisa berbicara, buka semua skenario sekarang juga!"
+  "subscriptionUpsellMessage": "Paket gratis hanya percobaan. Jika benar-benar ingin bisa berbicara, buka semua skenario sekarang juga!",
+  "basicPlan": "Paket Dasar",
+  "upsellBodyText": "Kategori ini khusus untuk anggota Paket Basic.\nBuka semua kategori.\n7 hari uji coba gratis. Batalkan sebelum akhir masa percobaan dan tidak akan dikenakan biaya.",
+  "trialStartButton": "Mulai uji coba gratis 7 hari",
+  "planDetailsButton": "Lihat Detail Paket",
+  "notNowButton": "Tidak sekarang",
+  "trialCopyText": "7 hari uji coba gratis. Batalkan sebelum masa percobaan berakhir dan Anda tidak akan dikenakan biaya.",
+  "subscriptionBenefitAllCategories": "Semua kategori dibuka",
+  "subscriptionBenefitUnlimited": "Latihan tanpa batas",
+  "subscriptionBenefitCancelAnytime": "Batalkan kapan saja",
+  "iosCancelGuideText": "Untuk membatalkan di iPhone: Pengaturan > Apple Account > Langganan.",
+  "subscriptionActivated": "Langganan diaktifkan."
 }

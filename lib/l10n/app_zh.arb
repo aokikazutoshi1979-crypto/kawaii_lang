@@ -356,5 +356,16 @@
   "kasumiCatchphrase": "你有好好学习吗？……我在看着你呢。",
   "kasumiProfileBody": "我是香澄。……才不是担心你啊。\n只是觉得，都要学的话，就好好学嘛。\n如果有什么不懂的……好吧，你可以来问我。我会回答的。\n遇到困难不要客气。……帮这点忙而已，没什么。\n\n这种时候来找我说说话吧\n・完全提不起劲的时候\n・被题目难住了\n・想要被人夸一夸\n・不知道自己还能不能继续的时候\n\n小小的约定\n你说的事，只有我们之间知道。\n不用逼自己。按你自己的节奏就好。\n\n……嗯，一起加油也不是不行。",
   "subscriptionUpsellTitle": "使用基础方案继续学习！",
-  "subscriptionUpsellMessage": "免费方案只是体验。若想真正开口说话，现在就解锁所有场景！"
+  "subscriptionUpsellMessage": "免费方案只是体验。若想真正开口说话，现在就解锁所有场景！",
+  "basicPlan": "基本计划",
+  "upsellBodyText": "此分类仅限基本方案会员。\n解锁所有分类。\n7天免费试用。试用期内取消不收费。",
+  "trialStartButton": "开始7天免费试用",
+  "planDetailsButton": "查看套餐详情",
+  "notNowButton": "暂时不了",
+  "trialCopyText": "7天免费试用。试用期内取消不收费。",
+  "subscriptionBenefitAllCategories": "所有分类全开",
+  "subscriptionBenefitUnlimited": "练习次数无限制",
+  "subscriptionBenefitCancelAnytime": "随时可取消",
+  "iosCancelGuideText": "在 iPhone 上取消：设置 > Apple 账户 > 订阅。",
+  "subscriptionActivated": "订阅已激活。"
 }

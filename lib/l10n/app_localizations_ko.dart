@@ -681,4 +681,38 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String get subscriptionUpsellMessage =>
       '무료 플랜은 체험일 뿐입니다. 정말 말하고 싶다면 지금 모든 장면을 해제하세요!';
+
+  @override
+  String get basicPlan => '기본 요금제';
+
+  @override
+  String get upsellBodyText =>
+      '이 카테고리는 베이식 플랜 전용입니다.\n모든 카테고리 해제.\n7일 무료 체험. 기간 내 취소 시 청구되지 않습니다.';
+
+  @override
+  String get trialStartButton => '7일 무료 체험 시작';
+
+  @override
+  String get planDetailsButton => '플랜 자세히 보기';
+
+  @override
+  String get notNowButton => '나중에';
+
+  @override
+  String get trialCopyText => '7일 무료 체험. 기간 내 취소 시 청구되지 않습니다.';
+
+  @override
+  String get subscriptionBenefitAllCategories => '전체 카테고리 개방';
+
+  @override
+  String get subscriptionBenefitUnlimited => '무제한 연습';
+
+  @override
+  String get subscriptionBenefitCancelAnytime => '언제든지 취소';
+
+  @override
+  String get iosCancelGuideText => 'iPhone에서 취소: 설정 > Apple 계정 > 구독.';
+
+  @override
+  String get subscriptionActivated => '구독이 활성화되었습니다.';
 }

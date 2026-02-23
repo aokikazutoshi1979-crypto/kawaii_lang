@@ -679,4 +679,39 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get subscriptionUpsellMessage => '無料プランは体験だけ。本気で話せるようになるなら、今すぐ全シーン解放！';
+
+  @override
+  String get basicPlan => 'ベーシックプラン';
+
+  @override
+  String get upsellBodyText =>
+      'このカテゴリはベーシック限定です\n全カテゴリ解放\n7日間無料。期間内にキャンセルで請求なし';
+
+  @override
+  String get trialStartButton => '7日間無料で試す';
+
+  @override
+  String get planDetailsButton => 'プラン詳細を見る';
+
+  @override
+  String get notNowButton => '今はしない';
+
+  @override
+  String get trialCopyText => '7日間無料、期間内キャンセルで請求なし';
+
+  @override
+  String get subscriptionBenefitAllCategories => '全カテゴリ解放';
+
+  @override
+  String get subscriptionBenefitUnlimited => '回数制限なし';
+
+  @override
+  String get subscriptionBenefitCancelAnytime => 'いつでも解約';
+
+  @override
+  String get iosCancelGuideText =>
+      '解約はiPhoneの「設定」→「Apple Account」→「サブスクリプション」から行えます。';
+
+  @override
+  String get subscriptionActivated => 'サブスクリプションに加入しました。';
 }

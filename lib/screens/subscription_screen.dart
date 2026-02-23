@@ -63,38 +63,20 @@ class _SubscriptionScreenState extends SubscriptionState<SubscriptionScreen> {
     if (raw != null && raw.isNotEmpty) {
       return raw.split('(').first.trim();
     }
-    return loc.localeName.startsWith('ja') ? 'ベーシックプラン' : 'Basic Plan';
+    return loc.basicPlan;
   }
 
-  String _mainCtaText(AppLocalizations loc) {
-    return loc.localeName.startsWith('ja')
-        ? '7日間無料で試す'
-        : 'Start 7-day free trial';
-  }
+  String _mainCtaText(AppLocalizations loc) => loc.trialStartButton;
 
-  String _trialCopy(AppLocalizations loc) {
-    return loc.localeName.startsWith('ja')
-        ? '7日間無料、期間内キャンセルで請求なし'
-        : '7-day free trial. Cancel anytime before trial ends and you will not be charged.';
-  }
+  String _trialCopy(AppLocalizations loc) => loc.trialCopyText;
 
-  List<String> _benefits(AppLocalizations loc) {
-    if (loc.localeName.startsWith('ja')) {
-      return const ['全カテゴリ解放', '回数制限なし', 'いつでも解約'];
-    }
-    return const [
-      'All categories unlocked',
-      'Unlimited practice',
-      'Cancel anytime'
-    ];
-  }
+  List<String> _benefits(AppLocalizations loc) => [
+        loc.subscriptionBenefitAllCategories,
+        loc.subscriptionBenefitUnlimited,
+        loc.subscriptionBenefitCancelAnytime,
+      ];
 
-  String _iosCancelGuide(AppLocalizations loc) {
-    if (loc.localeName.startsWith('ja')) {
-      return '解約はiPhoneの「設定」→「Apple Account」→「サブスクリプション」から行えます。';
-    }
-    return 'To cancel on iPhone: Settings > Apple Account > Subscriptions.';
-  }
+  String _iosCancelGuide(AppLocalizations loc) => loc.iosCancelGuideText;
 
   void _handleSubscriptionStateChanged() {
     if (!mounted) return;
@@ -143,11 +125,8 @@ class _SubscriptionScreenState extends SubscriptionState<SubscriptionScreen> {
       setState(() => _isPurchasing = false);
       if (!wasSubscribed && isNowSubscribed) {
         final loc = AppLocalizations.of(context)!;
-        final msg = loc.localeName.startsWith('ja')
-            ? 'サブスクリプションに加入しました。'
-            : 'Subscription activated.';
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(msg)),
+          SnackBar(content: Text(loc.subscriptionActivated)),
         );
       }
     } catch (_) {

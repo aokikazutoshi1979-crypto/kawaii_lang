@@ -1961,7 +1961,15 @@ class _ChatScreenState extends State<ChatScreen> {
                     padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),  // ★必須
                     child: Text(
                       loc.listeningPrompt,
-                      style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.white,
+                        shadows: [
+                          Shadow(color: Colors.black54, blurRadius: 4, offset: Offset(0, 1)),
+                          Shadow(color: Colors.black38, blurRadius: 10, offset: Offset(0, 2)),
+                        ],
+                      ),
                     ),
                   ),
                   // ぼかし＋大きい再生ボタン

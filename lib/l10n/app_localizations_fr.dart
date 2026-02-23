@@ -704,4 +704,41 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get subscriptionUpsellMessage =>
       'Le plan gratuit n’est qu’un essai. Si vous voulez vraiment parler, débloquez toutes les scènes dès maintenant !';
+
+  @override
+  String get basicPlan => 'Plan de base';
+
+  @override
+  String get upsellBodyText =>
+      'Cette catégorie est réservée aux membres du plan Basic.\nDébloquez toutes les catégories.\n7 jours d’essai gratuit. Annulez avant la fin de l’essai et vous ne serez pas débité.';
+
+  @override
+  String get trialStartButton => 'Essai gratuit de 7 jours';
+
+  @override
+  String get planDetailsButton => 'Voir les détails du forfait';
+
+  @override
+  String get notNowButton => 'Pas maintenant';
+
+  @override
+  String get trialCopyText =>
+      '7 jours d’essai gratuit. Annulez avant la fin de l’essai et vous ne serez pas débité.';
+
+  @override
+  String get subscriptionBenefitAllCategories =>
+      'Toutes les catégories débloquées';
+
+  @override
+  String get subscriptionBenefitUnlimited => 'Pratique illimitée';
+
+  @override
+  String get subscriptionBenefitCancelAnytime => 'Annuler à tout moment';
+
+  @override
+  String get iosCancelGuideText =>
+      'Pour annuler sur iPhone : Réglages > Apple Account > Abonnements.';
+
+  @override
+  String get subscriptionActivated => 'Abonnement activé.';
 }

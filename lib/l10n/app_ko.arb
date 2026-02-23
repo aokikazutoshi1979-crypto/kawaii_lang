@@ -342,5 +342,16 @@
   "incorrectMessageWithRaw": "{raw} \n이 답변은 문법적으로나 의미적으로 올바르지 않습니다.",
   "answerMeaningAccurate": "이 답변은 출제의 의미를 정확하게 반영합니다.",
   "subscriptionUpsellTitle": "베이식 플랜으로 학습을 이어가세요!",
-  "subscriptionUpsellMessage": "무료 플랜은 체험일 뿐입니다. 정말 말하고 싶다면 지금 모든 장면을 해제하세요!"
+  "subscriptionUpsellMessage": "무료 플랜은 체험일 뿐입니다. 정말 말하고 싶다면 지금 모든 장면을 해제하세요!",
+  "basicPlan": "기본 요금제",
+  "upsellBodyText": "이 카테고리는 베이식 플랜 전용입니다.\n모든 카테고리 해제.\n7일 무료 체험. 기간 내 취소 시 청구되지 않습니다.",
+  "trialStartButton": "7일 무료 체험 시작",
+  "planDetailsButton": "플랜 자세히 보기",
+  "notNowButton": "나중에",
+  "trialCopyText": "7일 무료 체험. 기간 내 취소 시 청구되지 않습니다.",
+  "subscriptionBenefitAllCategories": "전체 카테고리 개방",
+  "subscriptionBenefitUnlimited": "무제한 연습",
+  "subscriptionBenefitCancelAnytime": "언제든지 취소",
+  "iosCancelGuideText": "iPhone에서 취소: 설정 > Apple 계정 > 구독.",
+  "subscriptionActivated": "구독이 활성화되었습니다."
 }

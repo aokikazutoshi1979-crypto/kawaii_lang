@@ -1354,6 +1354,72 @@ abstract class AppLocalizations {
   /// In ja, this message translates to:
   /// **'無料プランは体験だけ。本気で話せるようになるなら、今すぐ全シーン解放！'**
   String get subscriptionUpsellMessage;
+
+  /// No description provided for @basicPlan.
+  ///
+  /// In ja, this message translates to:
+  /// **'ベーシックプラン'**
+  String get basicPlan;
+
+  /// No description provided for @upsellBodyText.
+  ///
+  /// In ja, this message translates to:
+  /// **'このカテゴリはベーシック限定です\n全カテゴリ解放\n7日間無料。期間内にキャンセルで請求なし'**
+  String get upsellBodyText;
+
+  /// No description provided for @trialStartButton.
+  ///
+  /// In ja, this message translates to:
+  /// **'7日間無料で試す'**
+  String get trialStartButton;
+
+  /// No description provided for @planDetailsButton.
+  ///
+  /// In ja, this message translates to:
+  /// **'プラン詳細を見る'**
+  String get planDetailsButton;
+
+  /// No description provided for @notNowButton.
+  ///
+  /// In ja, this message translates to:
+  /// **'今はしない'**
+  String get notNowButton;
+
+  /// No description provided for @trialCopyText.
+  ///
+  /// In ja, this message translates to:
+  /// **'7日間無料、期間内キャンセルで請求なし'**
+  String get trialCopyText;
+
+  /// No description provided for @subscriptionBenefitAllCategories.
+  ///
+  /// In ja, this message translates to:
+  /// **'全カテゴリ解放'**
+  String get subscriptionBenefitAllCategories;
+
+  /// No description provided for @subscriptionBenefitUnlimited.
+  ///
+  /// In ja, this message translates to:
+  /// **'回数制限なし'**
+  String get subscriptionBenefitUnlimited;
+
+  /// No description provided for @subscriptionBenefitCancelAnytime.
+  ///
+  /// In ja, this message translates to:
+  /// **'いつでも解約'**
+  String get subscriptionBenefitCancelAnytime;
+
+  /// No description provided for @iosCancelGuideText.
+  ///
+  /// In ja, this message translates to:
+  /// **'解約はiPhoneの「設定」→「Apple Account」→「サブスクリプション」から行えます。'**
+  String get iosCancelGuideText;
+
+  /// No description provided for @subscriptionActivated.
+  ///
+  /// In ja, this message translates to:
+  /// **'サブスクリプションに加入しました。'**
+  String get subscriptionActivated;
 }
 
 class _AppLocalizationsDelegate

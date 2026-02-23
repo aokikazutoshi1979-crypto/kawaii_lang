@@ -693,4 +693,40 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get subscriptionUpsellMessage =>
       'Gói miễn phí chỉ là bản dùng thử. Nếu bạn thực sự muốn nói, hãy mở khóa tất cả các tình huống ngay bây giờ!';
+
+  @override
+  String get basicPlan => 'Gói Cơ Bản';
+
+  @override
+  String get upsellBodyText =>
+      'Danh mục này dành riêng cho thành viên Gói Cơ Bản.\nMở khóa tất cả danh mục.\n7 ngày dùng thử miễn phí. Hủy trước khi kết thúc thử nghiệm sẽ không bị tính phí.';
+
+  @override
+  String get trialStartButton => 'Dùng thử miễn phí 7 ngày';
+
+  @override
+  String get planDetailsButton => 'Xem chi tiết gói';
+
+  @override
+  String get notNowButton => 'Không phải bây giờ';
+
+  @override
+  String get trialCopyText =>
+      '7 ngày dùng thử miễn phí. Hủy trước khi kết thúc thử nghiệm sẽ không bị tính phí.';
+
+  @override
+  String get subscriptionBenefitAllCategories => 'Mở khóa tất cả danh mục';
+
+  @override
+  String get subscriptionBenefitUnlimited => 'Luyện tập không giới hạn';
+
+  @override
+  String get subscriptionBenefitCancelAnytime => 'Hủy bất cứ lúc nào';
+
+  @override
+  String get iosCancelGuideText =>
+      'Để hủy trên iPhone: Cài đặt > Apple Account > Đăng ký.';
+
+  @override
+  String get subscriptionActivated => 'Đã kích hoạt đăng ký.';
 }

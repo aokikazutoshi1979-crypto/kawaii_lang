@@ -342,5 +342,16 @@
   "incorrectMessageWithRaw": "{raw} \nEsta respuesta no es correcta gramatical ni semánticamente.",
   "answerMeaningAccurate": "Esta respuesta refleja con precisión el significado de la pregunta.",
   "subscriptionUpsellTitle": "¡Sigue aprendiendo con el Plan Básico!",
-  "subscriptionUpsellMessage": "El plan gratuito es solo una prueba. Si realmente quieres hablar, ¡desbloquea todas las escenas ahora!"
+  "subscriptionUpsellMessage": "El plan gratuito es solo una prueba. Si realmente quieres hablar, ¡desbloquea todas las escenas ahora!",
+  "basicPlan": "Plan Básico",
+  "upsellBodyText": "Esta categoría es solo para miembros del Plan Básico.\nDesbloquea todas las categorías.\n7 días de prueba gratis. Cancela antes de que termine y no se te cobrará.",
+  "trialStartButton": "Prueba gratuita de 7 días",
+  "planDetailsButton": "Ver detalles del plan",
+  "notNowButton": "Ahora no",
+  "trialCopyText": "7 días de prueba gratis. Cancela antes de que termine y no se te cobrará.",
+  "subscriptionBenefitAllCategories": "Todas las categorías desbloqueadas",
+  "subscriptionBenefitUnlimited": "Práctica ilimitada",
+  "subscriptionBenefitCancelAnytime": "Cancela en cualquier momento",
+  "iosCancelGuideText": "Para cancelar en iPhone: Ajustes > Apple Account > Suscripciones.",
+  "subscriptionActivated": "Suscripción activada."
 }

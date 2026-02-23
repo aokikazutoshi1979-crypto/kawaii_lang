@@ -673,6 +673,39 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get subscriptionUpsellMessage => '免费方案只是体验。若想真正开口说话，现在就解锁所有场景！';
+
+  @override
+  String get basicPlan => '基本计划';
+
+  @override
+  String get upsellBodyText => '此分类仅限基本方案会员。\n解锁所有分类。\n7天免费试用。试用期内取消不收费。';
+
+  @override
+  String get trialStartButton => '开始7天免费试用';
+
+  @override
+  String get planDetailsButton => '查看套餐详情';
+
+  @override
+  String get notNowButton => '暂时不了';
+
+  @override
+  String get trialCopyText => '7天免费试用。试用期内取消不收费。';
+
+  @override
+  String get subscriptionBenefitAllCategories => '所有分类全开';
+
+  @override
+  String get subscriptionBenefitUnlimited => '练习次数无限制';
+
+  @override
+  String get subscriptionBenefitCancelAnytime => '随时可取消';
+
+  @override
+  String get iosCancelGuideText => '在 iPhone 上取消：设置 > Apple 账户 > 订阅。';
+
+  @override
+  String get subscriptionActivated => '订阅已激活。';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -1273,4 +1306,37 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get subscriptionUpsellMessage => '免費方案只是體驗。若想真正開口說話，現在就解鎖所有場景！';
+
+  @override
+  String get basicPlan => '基本方案';
+
+  @override
+  String get upsellBodyText => '此分類僅限基本方案會員。\n解鎖所有分類。\n7天免費試用。試用期內取消不收費。';
+
+  @override
+  String get trialStartButton => '開始7天免費試用';
+
+  @override
+  String get planDetailsButton => '查看方案詳情';
+
+  @override
+  String get notNowButton => '暫時不了';
+
+  @override
+  String get trialCopyText => '7天免費試用。試用期內取消不收費。';
+
+  @override
+  String get subscriptionBenefitAllCategories => '所有分類全開';
+
+  @override
+  String get subscriptionBenefitUnlimited => '練習次數無限制';
+
+  @override
+  String get subscriptionBenefitCancelAnytime => '隨時可取消';
+
+  @override
+  String get iosCancelGuideText => '在 iPhone 上取消：設定 > Apple 帳號 > 訂閱。';
+
+  @override
+  String get subscriptionActivated => '訂閱已啟用。';
 }

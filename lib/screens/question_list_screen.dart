@@ -823,10 +823,10 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                   ),
                 ),
                 const SizedBox(height: 12),
-                const Text(
-                  'このカテゴリはベーシック限定です\n全カテゴリ解放\n7日間無料。期間内にキャンセルで請求なし',
+                Text(
+                  loc.upsellBodyText,
                   textAlign: TextAlign.center,
-                  style: TextStyle(
+                  style: const TextStyle(
                     height: 1.5,
                     fontSize: 13.5,
                     color: Color(0xFF4A4A4A),
@@ -845,9 +845,9 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                     ),
                     elevation: 0,
                   ),
-                  child: const Text(
-                    '7日間無料で試す',
-                    style: TextStyle(
+                  child: Text(
+                    loc.trialStartButton,
+                    style: const TextStyle(
                       fontSize: 14.5,
                       fontWeight: FontWeight.w800,
                     ),
@@ -864,9 +864,9 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                       borderRadius: BorderRadius.circular(12),
                     ),
                   ),
-                  child: const Text(
-                    'プラン詳細を見る',
-                    style: TextStyle(
+                  child: Text(
+                    loc.planDetailsButton,
+                    style: const TextStyle(
                       fontSize: 13.5,
                       fontWeight: FontWeight.w700,
                     ),
@@ -875,7 +875,7 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
                 TextButton(
                   onPressed: () => Navigator.of(dialogContext).pop(),
                   child: Text(
-                    '今はしない',
+                    loc.notNowButton,
                     style: TextStyle(
                       color: Colors.grey.shade700,
                       fontSize: 12.5,

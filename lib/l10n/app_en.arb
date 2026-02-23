@@ -370,5 +370,16 @@
   "tsumugiLineNight2": "Stopping here is okay. We can continue tomorrow.",
   "tsumugiLineNight3": "At this hour, one gentle line is more than enough.",
   "subscriptionUpsellTitle": "Keep learning with the Basic Plan!",
-  "subscriptionUpsellMessage": "The free plan is just a trial. If you truly want to speak, unlock all scenes now!"
+  "subscriptionUpsellMessage": "The free plan is just a trial. If you truly want to speak, unlock all scenes now!",
+  "basicPlan": "Basic Plan",
+  "upsellBodyText": "This category is for Basic plan members only.\nUnlock all categories.\n7-day free trial. Cancel before trial ends and you won't be charged.",
+  "trialStartButton": "Start 7-day free trial",
+  "planDetailsButton": "View Plan Details",
+  "notNowButton": "Not now",
+  "trialCopyText": "7-day free trial. Cancel anytime before trial ends and you will not be charged.",
+  "subscriptionBenefitAllCategories": "All categories unlocked",
+  "subscriptionBenefitUnlimited": "Unlimited practice",
+  "subscriptionBenefitCancelAnytime": "Cancel anytime",
+  "iosCancelGuideText": "To cancel on iPhone: Settings > Apple Account > Subscriptions.",
+  "subscriptionActivated": "Subscription activated."
 }

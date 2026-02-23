@@ -699,4 +699,40 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get subscriptionUpsellMessage =>
       'Paket gratis hanya percobaan. Jika benar-benar ingin bisa berbicara, buka semua skenario sekarang juga!';
+
+  @override
+  String get basicPlan => 'Paket Dasar';
+
+  @override
+  String get upsellBodyText =>
+      'Kategori ini khusus untuk anggota Paket Basic.\nBuka semua kategori.\n7 hari uji coba gratis. Batalkan sebelum akhir masa percobaan dan tidak akan dikenakan biaya.';
+
+  @override
+  String get trialStartButton => 'Mulai uji coba gratis 7 hari';
+
+  @override
+  String get planDetailsButton => 'Lihat Detail Paket';
+
+  @override
+  String get notNowButton => 'Tidak sekarang';
+
+  @override
+  String get trialCopyText =>
+      '7 hari uji coba gratis. Batalkan sebelum masa percobaan berakhir dan Anda tidak akan dikenakan biaya.';
+
+  @override
+  String get subscriptionBenefitAllCategories => 'Semua kategori dibuka';
+
+  @override
+  String get subscriptionBenefitUnlimited => 'Latihan tanpa batas';
+
+  @override
+  String get subscriptionBenefitCancelAnytime => 'Batalkan kapan saja';
+
+  @override
+  String get iosCancelGuideText =>
+      'Untuk membatalkan di iPhone: Pengaturan > Apple Account > Langganan.';
+
+  @override
+  String get subscriptionActivated => 'Langganan diaktifkan.';
 }
