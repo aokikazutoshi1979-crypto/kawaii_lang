@@ -256,18 +256,20 @@
     "scene": "trial",
     "subScene": "greeting",
     "level": "starter",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "おはようございます。",
       "en": "Good morning.",
-      "zh": "",
-      "zh_TW": "",
-      "ko": "",
-      "es": "",
-      "fr": "",
-      "de": "",
-      "vi": "",
-      "id": ""
+      "zh": "早上好。",
+      "zh_TW": "早安。",
+      "ko": "좋은 아침입니다.",
+      "es": "Buenos días.",
+      "fr": "Bonjour.",
+      "de": "Guten Morgen.",
+      "vi": "Chào buổi sáng.",
+      "id": "Selamat pagi."
     }
   },
   {
@@ -275,18 +277,20 @@
     "scene": "trial",
     "subScene": "greeting",
     "level": "beginner",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "お元気ですか？",
       "en": "How have you been?",
-      "zh": "",
-      "zh_TW": "",
-      "ko": "",
-      "es": "",
-      "fr": "",
-      "de": "",
-      "vi": "",
-      "id": ""
+      "zh": "最近怎么样？",
+      "zh_TW": "最近好嗎？",
+      "ko": "그동안 잘 지내셨어요?",
+      "es": "¿Cómo has estado?",
+      "fr": "Comment allez-vous ces jours-ci ?",
+      "de": "Wie ist es dir in letzter Zeit ergangen?",
+      "vi": "Dạo này bạn thế nào?",
+      "id": "Apa kabar akhir-akhir ini?"
     }
   },
   {
@@ -294,18 +298,20 @@
     "scene": "trial",
     "subScene": "greeting",
     "level": "intermediate",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "お久しぶりです。",
       "en": "Long time no see.",
-      "zh": "",
-      "zh_TW": "",
-      "ko": "",
-      "es": "",
-      "fr": "",
-      "de": "",
-      "vi": "",
-      "id": ""
+      "zh": "好久不见。",
+      "zh_TW": "好久不見。",
+      "ko": "오랜만이에요.",
+      "es": "¡Cuánto tiempo sin verte!",
+      "fr": "Ça fait longtemps !",
+      "de": "Lange nicht gesehen!",
+      "vi": "Lâu rồi không gặp.",
+      "id": "Sudah lama tidak bertemu."
     }
   },
   {
@@ -313,18 +319,20 @@
     "scene": "trial",
     "subScene": "greeting",
     "level": "intermediate",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "よろしくお願いします。",
       "en": "I'm looking forward to working with you.",
-      "zh": "",
-      "zh_TW": "",
-      "ko": "",
-      "es": "",
-      "fr": "",
-      "de": "",
-      "vi": "",
-      "id": ""
+      "zh": "请多关照。",
+      "zh_TW": "請多指教。",
+      "ko": "잘 부탁드립니다.",
+      "es": "Será un placer trabajar contigo.",
+      "fr": "Ravi de travailler avec vous.",
+      "de": "Ich freue mich auf die Zusammenarbeit.",
+      "vi": "Rất mong được hợp tác với bạn.",
+      "id": "Senang bisa bekerja sama dengan Anda."
     }
   },
   {
@@ -332,18 +340,20 @@
     "scene": "trial",
     "subScene": "greeting",
     "level": "advanced",
-    "tags": ["greeting"],
+    "tags": [
+      "greeting"
+    ],
     "translations": {
       "ja": "ご無沙汰しております。",
       "en": "I haven't been in touch for so long.",
-      "zh": "",
-      "zh_TW": "",
-      "ko": "",
-      "es": "",
-      "fr": "",
-      "de": "",
-      "vi": "",
-      "id": ""
+      "zh": "好久没有联系了。",
+      "zh_TW": "好久沒有聯絡了。",
+      "ko": "오랫동안 연락을 못 드렸습니다.",
+      "es": "Hace mucho que no estamos en contacto.",
+      "fr": "Cela fait longtemps que nous n'avons pas eu de contact.",
+      "de": "Wir hatten lange keinen Kontakt mehr.",
+      "vi": "Lâu lắm rồi chúng ta chưa liên lạc.",
+      "id": "Sudah lama kita tidak berhubungan."
     }
   },
   {
@@ -351,18 +361,20 @@
     "scene": "trial",
     "subScene": "aizuchi",
     "level": "starter",
-    "tags": ["aizuchi"],
+    "tags": [
+      "aizuchi"
+    ],
     "translations": {
       "ja": "なるほど。",
       "en": "I see.",
-      "zh": "",
-      "zh_TW": "",
-      "ko": "",
-      "es": "",
-      "fr": "",
-      "de": "",
-      "vi": "",
-      "id": ""
+      "zh": "原来如此。",
+      "zh_TW": "原來如此。",
+      "ko": "그렇군요.",
+      "es": "Ya veo.",
+      "fr": "Je vois.",
+      "de": "Ach so.",
+      "vi": "Ra là vậy.",
+      "id": "Oh, begitu."
     }
   },
   {
@@ -370,18 +382,20 @@
     "scene": "trial",
     "subScene": "aizuchi",
     "level": "intermediate",
-    "tags": ["aizuchi"],
+    "tags": [
+      "aizuchi"
+    ],
     "translations": {
       "ja": "それは知らなかった！",
       "en": "I didn't know that!",
-      "zh": "",
-      "zh_TW": "",
-      "ko": "",
-      "es": "",
-      "fr": "",
-      "de": "",
-      "vi": "",
-      "id": ""
+      "zh": "这个我不知道！",
+      "zh_TW": "這我不知道！",
+      "ko": "그건 몰랐어요!",
+      "es": "¡No sabía eso!",
+      "fr": "Je ne savais pas !",
+      "de": "Das wusste ich nicht!",
+      "vi": "Tôi không biết điều đó!",
+      "id": "Saya tidak tahu itu!"
     }
   },
   {
@@ -389,18 +403,20 @@
     "scene": "trial",
     "subScene": "aizuchi",
     "level": "intermediate",
-    "tags": ["aizuchi"],
+    "tags": [
+      "aizuchi"
+    ],
     "translations": {
       "ja": "確かにそうですね。",
       "en": "You're right about that.",
-      "zh": "",
-      "zh_TW": "",
-      "ko": "",
-      "es": "",
-      "fr": "",
-      "de": "",
-      "vi": "",
-      "id": ""
+      "zh": "确实如此。",
+      "zh_TW": "的確如此。",
+      "ko": "정말 그렇네요.",
+      "es": "Tienes razón.",
+      "fr": "C'est vrai.",
+      "de": "Da hast du recht.",
+      "vi": "Đúng là như vậy.",
+      "id": "Memang benar begitu."
     }
   },
   {
@@ -408,18 +424,20 @@
     "scene": "trial",
     "subScene": "phrases",
     "level": "beginner",
-    "tags": ["phrases"],
+    "tags": [
+      "phrases"
+    ],
     "translations": {
       "ja": "少し待ってください。",
       "en": "Please wait a moment.",
-      "zh": "",
-      "zh_TW": "",
-      "ko": "",
-      "es": "",
-      "fr": "",
-      "de": "",
-      "vi": "",
-      "id": ""
+      "zh": "请稍等一下。",
+      "zh_TW": "請稍等一下。",
+      "ko": "잠시만 기다려 주세요.",
+      "es": "Espere un momento, por favor.",
+      "fr": "Veuillez patienter un moment, s'il vous plaît.",
+      "de": "Bitte warten Sie einen Moment.",
+      "vi": "Vui lòng chờ một chút.",
+      "id": "Mohon tunggu sebentar."
     }
   },
   {
@@ -427,18 +445,20 @@
     "scene": "trial",
     "subScene": "phrases",
     "level": "intermediate",
-    "tags": ["phrases"],
+    "tags": [
+      "phrases"
+    ],
     "translations": {
       "ja": "もう一度言ってもらえますか？",
       "en": "Could you say that again?",
-      "zh": "",
-      "zh_TW": "",
-      "ko": "",
-      "es": "",
-      "fr": "",
-      "de": "",
-      "vi": "",
-      "id": ""
+      "zh": "可以再说一遍吗？",
+      "zh_TW": "可以再說一次嗎？",
+      "ko": "한 번 더 말씀해 주시겠어요?",
+      "es": "¿Podría decirlo otra vez?",
+      "fr": "Pourriez-vous le répéter ?",
+      "de": "Könnten Sie das bitte noch einmal sagen?",
+      "vi": "Bạn có thể nói lại được không?",
+      "id": "Bisakah Anda mengatakannya sekali lagi?"
     }
   },
   {
@@ -446,18 +466,20 @@
     "scene": "trial",
     "subScene": "phrases",
     "level": "intermediate",
-    "tags": ["phrases"],
+    "tags": [
+      "phrases"
+    ],
     "translations": {
       "ja": "ゆっくり話してもらえますか？",
       "en": "Could you speak more slowly?",
-      "zh": "",
-      "zh_TW": "",
-      "ko": "",
-      "es": "",
-      "fr": "",
-      "de": "",
-      "vi": "",
-      "id": ""
+      "zh": "可以说慢一点吗？",
+      "zh_TW": "可以說慢一點嗎？",
+      "ko": "좀 더 천천히 말씀해 주시겠어요?",
+      "es": "¿Podría hablar más despacio?",
+      "fr": "Pourriez-vous parler plus lentement ?",
+      "de": "Könnten Sie bitte langsamer sprechen?",
+      "vi": "Bạn có thể nói chậm hơn được không?",
+      "id": "Bisakah Anda berbicara lebih pelan?"
     }
   },
   {
@@ -465,18 +487,20 @@
     "scene": "trial",
     "subScene": "phrases",
     "level": "advanced",
-    "tags": ["phrases"],
+    "tags": [
+      "phrases"
+    ],
     "translations": {
       "ja": "差し支えなければ、教えていただけますか？",
       "en": "If you don't mind, could you tell me?",
-      "zh": "",
-      "zh_TW": "",
-      "ko": "",
-      "es": "",
-      "fr": "",
-      "de": "",
-      "vi": "",
-      "id": ""
+      "zh": "如果方便的话，可以告诉我吗？",
+      "zh_TW": "如果方便的話，可以告訴我嗎？",
+      "ko": "괜찮으시다면 알려 주실 수 있을까요?",
+      "es": "Si no le importa, ¿podría decírmelo?",
+      "fr": "Si cela ne vous dérange pas, pourriez-vous me le dire ?",
+      "de": "Wenn es Ihnen nichts ausmacht, könnten Sie es mir sagen?",
+      "vi": "Nếu bạn không phiền, bạn có thể cho tôi biết được không?",
+      "id": "Jika Anda tidak keberatan, bisakah Anda memberi tahu saya?"
     }
   }
 ]
