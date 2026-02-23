@@ -59,10 +59,6 @@ class _SubscriptionScreenState extends SubscriptionState<SubscriptionScreen> {
   }
 
   String _planName(AppLocalizations loc, Package? pkg) {
-    final raw = pkg?.storeProduct.title.trim();
-    if (raw != null && raw.isNotEmpty) {
-      return raw.split('(').first.trim();
-    }
     return loc.basicPlan;
   }
 
