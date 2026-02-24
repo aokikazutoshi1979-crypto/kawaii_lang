@@ -641,30 +641,31 @@ class AppLocalizationsId extends AppLocalizations {
   String get tsumugiIntroLaterButton => 'あとで';
 
   @override
-  String get tsumugiProfileMenuTitle => '紬って？';
+  String get tsumugiProfileMenuTitle => 'Tentang Tsumugi';
 
   @override
-  String get tsumugiProfileScreenTitle => '紬って？';
+  String get tsumugiProfileScreenTitle => 'Tentang Tsumugi';
 
   @override
   String get tsumugiProfileBody =>
-      '紬です。ここに来てくれて、ありがとう。\n勉強って、時に疲れることもあるよね。そんなときは、ちょっと立ち止まりながら進めばいい。\n焦らなくて大丈夫。あなたのペースを大切にしながら、ゆっくり一緒に歩いていくから。\nいつでも声をかけてね。ここで待ってるよ。☕\n\nこんな時に話しかけてね\n・なんとなく気分が乗らないとき\n・問題がうまく解けないとき\n・誰かにほめてもらいたいとき\n・ちょっと休憩したいとき\n・今日もよくがんばったと感じたとき\n\nちいさな約束\n話してくれたことは、ここだけのひみつ。\nつらいときは、無理しなくていい。あなたのペースがいちばん大切だから。\n\nあなたが来てくれる日を、いつも楽しみにしてるよ。';
+      'Hai, aku Tsumugi. Terima kasih sudah datang ke sini.\nBelajar kadang memang melelahkan. Di hari-hari seperti itu, tidak apa-apa untuk melambat dan menarik napas.\nKamu tidak perlu terburu-buru. Kita jalan pelan-pelan, setahap demi setahap, dengan ritmemu sendiri.\nKapan pun kamu mau, ajak aku ngobrol ya. Aku selalu ada di sini. ☕\n\nAjak aku ngobrol saat...\n・Kamu sedang tidak bersemangat\n・Kamu mentok di satu soal\n・Kamu ingin ada yang menyemangati\n・Kamu butuh istirahat sebentar\n・Kamu merasa sudah berusaha keras hari ini\n\nJanji kecil\nApa pun yang kamu ceritakan, tetap di antara kita.\nKalau sedang berat, kamu tidak perlu memaksakan diri. Ritmemu adalah yang paling penting.\n\nAku selalu menantikan saat kamu kembali.';
 
   @override
-  String get tsumugiCatchphrase => 'ゆっくりでいい。ここは安心の場所だから。';
+  String get tsumugiCatchphrase => 'Pelan-pelan saja. Di sini tempat amanmu.';
 
   @override
-  String get kasumiProfileMenuTitle => '香澄って？';
+  String get kasumiProfileMenuTitle => 'Tentang Kasumi';
 
   @override
-  String get kasumiProfileScreenTitle => '香澄って？';
+  String get kasumiProfileScreenTitle => 'Tentang Kasumi';
 
   @override
-  String get kasumiCatchphrase => 'ちゃんとやってる？……見てるから。';
+  String get kasumiCatchphrase =>
+      'Belajarmu serius, kan? ...Aku memperhatikanmu.';
 
   @override
   String get kasumiProfileBody =>
-      '香澄です。……別に、あなたのことが心配なわけじゃないけど。\nせっかく勉強するなら、ちゃんとやった方がいいと思って。\nわからないことがあったら……まぁ、聞いてもいいよ。ちゃんと答えてあげるから。\n困ったときは遠慮しないで。……そのくらいは付き合ってあげる。\n\nこんな時に話しかけてね\n・やる気がわかないとき\n・問題がわからなくて困ったとき\n・ちょっとほめてほしいとき\n・もう少しやれるか迷ったとき\n\nちいさな約束\n話してくれたことは、ここだけのひみつ。\n無理しなくていい。あなたのペースで進めばいいから。\n\n……まぁ、一緒にがんばるのも悪くないかな。';
+      'Aku Kasumi. ...Bukan berarti aku khawatir soal kamu atau apa.\nCuma, kalau memang mau belajar, sekalian yang serius.\nKalau ada yang tidak kamu mengerti... ya sudah, tanya saja. Nanti aku jawab.\nKalau mentok, jangan dipendam. ...Aku bisa bantu, sedikit.\n\nAjak aku ngobrol saat...\n・Kamu benar-benar tidak bisa termotivasi\n・Satu soal bikin kamu bingung total\n・Kamu ingin sedikit dipuji\n・Kamu ragu bisa lanjut atau tidak\n\nJanji kecil\nApa pun yang kamu ceritakan, tetap di antara kita.\nKamu tidak perlu memaksakan diri. Jalan saja dengan ritmemu sendiri.\n\n...Yah, berjuang bareng juga tidak seburuk itu.';
 
   @override
   String get tsumugiLineNormal1 => '今日は短くていいよ。1行だけ、やってみよっか。';

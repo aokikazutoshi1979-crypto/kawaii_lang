@@ -645,30 +645,31 @@ class AppLocalizationsFr extends AppLocalizations {
   String get tsumugiIntroLaterButton => 'あとで';
 
   @override
-  String get tsumugiProfileMenuTitle => '紬って？';
+  String get tsumugiProfileMenuTitle => 'À propos de Tsumugi';
 
   @override
-  String get tsumugiProfileScreenTitle => '紬って？';
+  String get tsumugiProfileScreenTitle => 'À propos de Tsumugi';
 
   @override
   String get tsumugiProfileBody =>
-      '紬です。ここに来てくれて、ありがとう。\n勉強って、時に疲れることもあるよね。そんなときは、ちょっと立ち止まりながら進めばいい。\n焦らなくて大丈夫。あなたのペースを大切にしながら、ゆっくり一緒に歩いていくから。\nいつでも声をかけてね。ここで待ってるよ。☕\n\nこんな時に話しかけてね\n・なんとなく気分が乗らないとき\n・問題がうまく解けないとき\n・誰かにほめてもらいたいとき\n・ちょっと休憩したいとき\n・今日もよくがんばったと感じたとき\n\nちいさな約束\n話してくれたことは、ここだけのひみつ。\nつらいときは、無理しなくていい。あなたのペースがいちばん大切だから。\n\nあなたが来てくれる日を、いつも楽しみにしてるよ。';
+      'Salut, moi c\'est Tsumugi. Merci d\'être venu ici.\nÉtudier peut être fatigant, parfois. Ces jours-là, tu peux ralentir et respirer un peu.\nPas besoin de te presser. On avance ensemble, à ton rythme, pas à pas.\nTu peux me parler quand tu veux. Je serai toujours là. ☕\n\nParle-moi quand...\n・Tu n\'as pas la motivation\n・Tu bloques sur une question\n・Tu as juste besoin d\'un peu d\'encouragement\n・Tu veux faire une petite pause\n・Tu as l\'impression d\'avoir bien travaillé aujourd\'hui\n\nUne petite promesse\nCe que tu me confies reste entre nous.\nQuand c\'est trop dur, ne te force pas. Ton rythme passe avant tout.\n\nJe serai toujours contente de te revoir.';
 
   @override
-  String get tsumugiCatchphrase => 'ゆっくりでいい。ここは安心の場所だから。';
+  String get tsumugiCatchphrase => 'Prends ton temps. Ici, tu es en sécurité.';
 
   @override
-  String get kasumiProfileMenuTitle => '香澄って？';
+  String get kasumiProfileMenuTitle => 'À propos de Kasumi';
 
   @override
-  String get kasumiProfileScreenTitle => '香澄って？';
+  String get kasumiProfileScreenTitle => 'À propos de Kasumi';
 
   @override
-  String get kasumiCatchphrase => 'ちゃんとやってる？……見てるから。';
+  String get kasumiCatchphrase =>
+      'Tu t\'y mets sérieusement ? ...Je te garde à l\'œil.';
 
   @override
   String get kasumiProfileBody =>
-      '香澄です。……別に、あなたのことが心配なわけじゃないけど。\nせっかく勉強するなら、ちゃんとやった方がいいと思って。\nわからないことがあったら……まぁ、聞いてもいいよ。ちゃんと答えてあげるから。\n困ったときは遠慮しないで。……そのくらいは付き合ってあげる。\n\nこんな時に話しかけてね\n・やる気がわかないとき\n・問題がわからなくて困ったとき\n・ちょっとほめてほしいとき\n・もう少しやれるか迷ったとき\n\nちいさな約束\n話してくれたことは、ここだけのひみつ。\n無理しなくていい。あなたのペースで進めばいいから。\n\n……まぁ、一緒にがんばるのも悪くないかな。';
+      'Moi, c\'est Kasumi. ...Ce n\'est pas comme si je m\'inquiétais pour toi.\nMais si tu étudies, autant le faire sérieusement.\nSi quelque chose te dépasse... bon, tu peux me demander. Je te répondrai.\nQuand tu bloques, ne garde pas ça pour toi. ...Je peux t\'aider un peu.\n\nParle-moi quand...\n・Tu n\'arrives pas à te motiver\n・Une question te perd complètement\n・Tu as envie d\'être un peu félicité(e)\n・Tu ne sais pas si tu peux continuer\n\nUne petite promesse\nCe que tu me dis reste entre nous.\nPas besoin d\'en faire trop. Va à ton propre rythme.\n\n...Bon, faire des efforts ensemble, ce n\'est pas si mal.';
 
   @override
   String get tsumugiLineNormal1 => '今日は短くていいよ。1行だけ、やってみよっか。';

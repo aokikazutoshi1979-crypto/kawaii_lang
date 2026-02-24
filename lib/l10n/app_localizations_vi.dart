@@ -635,30 +635,32 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tsumugiIntroLaterButton => 'あとで';
 
   @override
-  String get tsumugiProfileMenuTitle => '紬って？';
+  String get tsumugiProfileMenuTitle => 'Về Tsumugi';
 
   @override
-  String get tsumugiProfileScreenTitle => '紬って？';
+  String get tsumugiProfileScreenTitle => 'Về Tsumugi';
 
   @override
   String get tsumugiProfileBody =>
-      '紬です。ここに来てくれて、ありがとう。\n勉強って、時に疲れることもあるよね。そんなときは、ちょっと立ち止まりながら進めばいい。\n焦らなくて大丈夫。あなたのペースを大切にしながら、ゆっくり一緒に歩いていくから。\nいつでも声をかけてね。ここで待ってるよ。☕\n\nこんな時に話しかけてね\n・なんとなく気分が乗らないとき\n・問題がうまく解けないとき\n・誰かにほめてもらいたいとき\n・ちょっと休憩したいとき\n・今日もよくがんばったと感じたとき\n\nちいさな約束\n話してくれたことは、ここだけのひみつ。\nつらいときは、無理しなくていい。あなたのペースがいちばん大切だから。\n\nあなたが来てくれる日を、いつも楽しみにしてるよ。';
+      'Mình là Tsumugi, cảm ơn bạn đã đến đây.\nHọc tập đôi khi cũng mệt lắm. Những lúc như vậy, chậm lại một chút và hít thở sâu cũng không sao.\nKhông cần vội đâu. Mình sẽ đi cùng bạn từng bước, theo đúng nhịp của bạn.\nLúc nào muốn, cứ nói chuyện với mình nhé. Mình luôn ở đây. ☕\n\nHãy tìm mình khi...\n・Bạn thấy chẳng có động lực\n・Bạn bị mắc ở một câu hỏi\n・Bạn chỉ muốn có ai đó cổ vũ\n・Bạn cần nghỉ một chút\n・Bạn thấy hôm nay mình đã cố gắng rất nhiều\n\nMột lời hứa nhỏ\nNhững điều bạn nói sẽ chỉ ở lại giữa hai chúng ta.\nKhi mệt mỏi, đừng ép bản thân. Nhịp độ của bạn là quan trọng nhất.\n\nMình luôn mong đến ngày bạn quay lại.';
 
   @override
-  String get tsumugiCatchphrase => 'ゆっくりでいい。ここは安心の場所だから。';
+  String get tsumugiCatchphrase =>
+      'Cứ chậm rãi thôi. Đây là nơi an toàn của bạn.';
 
   @override
-  String get kasumiProfileMenuTitle => '香澄って？';
+  String get kasumiProfileMenuTitle => 'Về Kasumi';
 
   @override
-  String get kasumiProfileScreenTitle => '香澄って？';
+  String get kasumiProfileScreenTitle => 'Về Kasumi';
 
   @override
-  String get kasumiCatchphrase => 'ちゃんとやってる？……見てるから。';
+  String get kasumiCatchphrase =>
+      'Bạn học hành nghiêm túc chứ? ...Tôi đang để ý đó.';
 
   @override
   String get kasumiProfileBody =>
-      '香澄です。……別に、あなたのことが心配なわけじゃないけど。\nせっかく勉強するなら、ちゃんとやった方がいいと思って。\nわからないことがあったら……まぁ、聞いてもいいよ。ちゃんと答えてあげるから。\n困ったときは遠慮しないで。……そのくらいは付き合ってあげる。\n\nこんな時に話しかけてね\n・やる気がわかないとき\n・問題がわからなくて困ったとき\n・ちょっとほめてほしいとき\n・もう少しやれるか迷ったとき\n\nちいさな約束\n話してくれたことは、ここだけのひみつ。\n無理しなくていい。あなたのペースで進めばいいから。\n\n……まぁ、一緒にがんばるのも悪くないかな。';
+      'Mình là Kasumi. ...Không phải là mình lo cho bạn đâu nhé.\nChỉ là đã học thì nên học cho ra học thôi.\nNếu có gì không hiểu... ừm, bạn cứ hỏi đi. Mình sẽ trả lời.\nKhi bí quá thì đừng ngại nói. ...Mình có thể giúp một chút.\n\nHãy tìm mình khi...\n・Bạn không thể tự lấy lại động lực\n・Một câu hỏi làm bạn rối tung\n・Bạn muốn được khen một chút\n・Bạn phân vân không biết có nên tiếp tục không\n\nMột lời hứa nhỏ\nNhững điều bạn nói sẽ chỉ ở lại giữa hai chúng ta.\nKhông cần gồng mình đâu. Cứ đi theo nhịp của bạn.\n\n...Thôi thì, cùng nhau cố gắng cũng không tệ.';
 
   @override
   String get tsumugiLineNormal1 => '今日は短くていいよ。1行だけ、やってみよっか。';

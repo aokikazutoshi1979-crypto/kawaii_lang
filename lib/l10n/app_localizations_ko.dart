@@ -623,30 +623,30 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tsumugiIntroLaterButton => 'あとで';
 
   @override
-  String get tsumugiProfileMenuTitle => '紬って？';
+  String get tsumugiProfileMenuTitle => '츠무기에 대해';
 
   @override
-  String get tsumugiProfileScreenTitle => '紬って？';
+  String get tsumugiProfileScreenTitle => '츠무기에 대해';
 
   @override
   String get tsumugiProfileBody =>
-      '紬です。ここに来てくれて、ありがとう。\n勉強って、時に疲れることもあるよね。そんなときは、ちょっと立ち止まりながら進めばいい。\n焦らなくて大丈夫。あなたのペースを大切にしながら、ゆっくり一緒に歩いていくから。\nいつでも声をかけてね。ここで待ってるよ。☕\n\nこんな時に話しかけてね\n・なんとなく気分が乗らないとき\n・問題がうまく解けないとき\n・誰かにほめてもらいたいとき\n・ちょっと休憩したいとき\n・今日もよくがんばったと感じたとき\n\nちいさな約束\n話してくれたことは、ここだけのひみつ。\nつらいときは、無理しなくていい。あなたのペースがいちばん大切だから。\n\nあなたが来てくれる日を、いつも楽しみにしてるよ。';
+      '안녕하세요, 츠무기예요. 와 줘서 고마워요.\n공부는 가끔 지치기도 하죠. 그럴 땐 잠깐 멈춰 숨을 고르셔도 괜찮아요.\n조급해하지 않아도 돼요. 당신의 속도를 소중히 여기면서, 한 걸음씩 같이 가요.\n언제든 편하게 말을 걸어 주세요. 저는 여기서 기다리고 있을게요. ☕\n\n이럴 때 말 걸어 주세요\n・왠지 의욕이 안 날 때\n・문제가 잘 안 풀릴 때\n・누군가에게 칭찬받고 싶을 때\n・잠깐 쉬고 싶을 때\n・오늘도 꽤 잘해냈다고 느낄 때\n\n작은 약속\n당신이 들려준 이야기는 우리 둘만의 비밀이에요.\n힘들 때는 무리하지 않아도 돼요. 당신의 페이스가 가장 중요하니까요.\n\n당신이 다시 와 줄 날을 늘 기다리고 있을게요.';
 
   @override
-  String get tsumugiCatchphrase => 'ゆっくりでいい。ここは安心の場所だから。';
+  String get tsumugiCatchphrase => '천천히 해도 괜찮아요. 여긴 당신의 안심 공간이에요.';
 
   @override
-  String get kasumiProfileMenuTitle => '香澄って？';
+  String get kasumiProfileMenuTitle => '카스미에 대해';
 
   @override
-  String get kasumiProfileScreenTitle => '香澄って？';
+  String get kasumiProfileScreenTitle => '카스미에 대해';
 
   @override
-  String get kasumiCatchphrase => 'ちゃんとやってる？……見てるから。';
+  String get kasumiCatchphrase => '제대로 하고 있어? …내가 보고 있으니까.';
 
   @override
   String get kasumiProfileBody =>
-      '香澄です。……別に、あなたのことが心配なわけじゃないけど。\nせっかく勉強するなら、ちゃんとやった方がいいと思って。\nわからないことがあったら……まぁ、聞いてもいいよ。ちゃんと答えてあげるから。\n困ったときは遠慮しないで。……そのくらいは付き合ってあげる。\n\nこんな時に話しかけてね\n・やる気がわかないとき\n・問題がわからなくて困ったとき\n・ちょっとほめてほしいとき\n・もう少しやれるか迷ったとき\n\nちいさな約束\n話してくれたことは、ここだけのひみつ。\n無理しなくていい。あなたのペースで進めばいいから。\n\n……まぁ、一緒にがんばるのも悪くないかな。';
+      '카스미야. …딱히 네가 걱정돼서 그러는 건 아니거든.\n그래도 공부할 거면 제대로 하는 게 좋잖아.\n모르는 게 있으면… 뭐, 물어봐도 돼. 내가 알려 줄게.\n막히면 참지 말고 말해. …그 정도는 도와줄 수 있으니까.\n\n이럴 때 말 걸어\n・도무지 의욕이 안 날 때\n・문제가 너무 헷갈릴 때\n・조금 칭찬이 받고 싶을 때\n・계속할 수 있을지 망설여질 때\n\n작은 약속\n네가 한 말은 여기서만, 우리끼리 비밀이야.\n무리할 필요 없어. 네 페이스대로 가면 돼.\n\n…뭐, 같이 열심히 하는 것도 나쁘진 않네.';
 
   @override
   String get tsumugiLineNormal1 => '今日は短くていいよ。1行だけ、やってみよっか。';

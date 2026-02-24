@@ -647,30 +647,31 @@ class AppLocalizationsEs extends AppLocalizations {
   String get tsumugiIntroLaterButton => 'あとで';
 
   @override
-  String get tsumugiProfileMenuTitle => '紬って？';
+  String get tsumugiProfileMenuTitle => 'Sobre Tsumugi';
 
   @override
-  String get tsumugiProfileScreenTitle => '紬って？';
+  String get tsumugiProfileScreenTitle => 'Sobre Tsumugi';
 
   @override
   String get tsumugiProfileBody =>
-      '紬です。ここに来てくれて、ありがとう。\n勉強って、時に疲れることもあるよね。そんなときは、ちょっと立ち止まりながら進めばいい。\n焦らなくて大丈夫。あなたのペースを大切にしながら、ゆっくり一緒に歩いていくから。\nいつでも声をかけてね。ここで待ってるよ。☕\n\nこんな時に話しかけてね\n・なんとなく気分が乗らないとき\n・問題がうまく解けないとき\n・誰かにほめてもらいたいとき\n・ちょっと休憩したいとき\n・今日もよくがんばったと感じたとき\n\nちいさな約束\n話してくれたことは、ここだけのひみつ。\nつらいときは、無理しなくていい。あなたのペースがいちばん大切だから。\n\nあなたが来てくれる日を、いつも楽しみにしてるよ。';
+      'Hola, soy Tsumugi. Gracias por estar aquí.\nEstudiar puede cansar a veces. En esos días, está bien bajar el ritmo y respirar.\nNo hace falta apresurarse. Vamos paso a paso, respetando tu propio ritmo.\nPuedes hablarme cuando quieras. Siempre estaré por aquí. ☕\n\nHáblame cuando...\n・No te salga la motivación\n・Te quedes atascado con una pregunta\n・Te apetezca que alguien te anime\n・Necesites un pequeño descanso\n・Sientas que hoy diste lo mejor de ti\n\nUna pequeña promesa\nLo que me cuentes se queda entre nosotros.\nCuando te sientas cansado, no te fuerces. Tu ritmo es lo más importante.\n\nSiempre me alegra cuando vuelves.';
 
   @override
-  String get tsumugiCatchphrase => 'ゆっくりでいい。ここは安心の場所だから。';
+  String get tsumugiCatchphrase => 'Tómate tu tiempo. Este es tu lugar seguro.';
 
   @override
-  String get kasumiProfileMenuTitle => '香澄って？';
+  String get kasumiProfileMenuTitle => 'Sobre Kasumi';
 
   @override
-  String get kasumiProfileScreenTitle => '香澄って？';
+  String get kasumiProfileScreenTitle => 'Sobre Kasumi';
 
   @override
-  String get kasumiCatchphrase => 'ちゃんとやってる？……見てるから。';
+  String get kasumiCatchphrase =>
+      '¿Vas en serio con esto? ...Te estoy observando.';
 
   @override
   String get kasumiProfileBody =>
-      '香澄です。……別に、あなたのことが心配なわけじゃないけど。\nせっかく勉強するなら、ちゃんとやった方がいいと思って。\nわからないことがあったら……まぁ、聞いてもいいよ。ちゃんと答えてあげるから。\n困ったときは遠慮しないで。……そのくらいは付き合ってあげる。\n\nこんな時に話しかけてね\n・やる気がわかないとき\n・問題がわからなくて困ったとき\n・ちょっとほめてほしいとき\n・もう少しやれるか迷ったとき\n\nちいさな約束\n話してくれたことは、ここだけのひみつ。\n無理しなくていい。あなたのペースで進めばいいから。\n\n……まぁ、一緒にがんばるのも悪くないかな。';
+      'Soy Kasumi. ...No es que esté preocupada por ti ni nada.\nPero si vas a estudiar, mejor hacerlo en serio.\nSi hay algo que no entiendes... bueno, puedes preguntarme. Te responderé.\nCuando te atasques, no te lo guardes. ...Puedo echarte una mano.\n\nHáblame cuando...\n・No logres arrancar\n・Una pregunta te tenga totalmente confundido\n・Te apetezca que te reconozcan un poco\n・No sepas si podrás seguir\n\nUna pequeña promesa\nLo que me cuentes se queda entre nosotros.\nNo necesitas exigirte de más. Ve a tu propio ritmo.\n\n...Bueno, esforzarnos juntos tampoco está tan mal.';
 
   @override
   String get tsumugiLineNormal1 => '今日は短くていいよ。1行だけ、やってみよっか。';
