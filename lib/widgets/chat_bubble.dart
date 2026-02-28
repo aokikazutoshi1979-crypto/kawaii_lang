@@ -216,9 +216,7 @@ class _ChatBubbleState extends State<ChatBubble> {
     );
 
     final botBubbleGradient = isKasumiBubble ? kasumiGradient : tsumugiGradient;
-    final botTailColor = isKasumiBubble
-        ? const Color(0xFFFFDCE6)
-        : const Color(0xFFFFE9F0);
+    final botBorderColor = Colors.pink.shade200.withOpacity(0.6);
     final userBubbleColor = Colors.blue[100]!;
 
     final hasRecording = widget.recordingPath != null &&
@@ -265,6 +263,9 @@ class _ChatBubbleState extends State<ChatBubble> {
         color: widget.isBot ? null : userBubbleColor,
         gradient: widget.isBot ? botBubbleGradient : null,
         borderRadius: borderRadius,
+        border: widget.isBot
+            ? Border.all(color: botBorderColor, width: 1)
+            : null,
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.07),
@@ -423,7 +424,9 @@ class _ChatBubbleState extends State<ChatBubble> {
     final tail = CustomPaint(
       size: tailSize,
       painter: _ChatTailPainter(
-        color: widget.isBot ? botTailColor : userBubbleColor,
+        color: widget.isBot ? null : userBubbleColor,
+        gradient: widget.isBot ? botBubbleGradient : null,
+        borderColor: widget.isBot ? botBorderColor : null,
         pointsLeft: widget.isBot,
       ),
     );
@@ -448,7 +451,7 @@ class _ChatBubbleState extends State<ChatBubble> {
             ),
             Transform.translate(
               // 尻尾をバブル側へ重ねて“隙間見え”を防ぐ
-              offset: const Offset(2, 0),
+              offset: const Offset(4, 0),
               child: tail,
             ),
             ConstrainedBox(
@@ -484,14 +487,20 @@ class _ChatBubbleState extends State<ChatBubble> {
 
 // ── LINE風しっぽ三角形
 class _ChatTailPainter extends CustomPainter {
-  final Color color;
+  final Color? color;
+  final Gradient? gradient;
+  final Color? borderColor;
   final bool pointsLeft; // true = bot(左向き), false = user(右向き)
 
-  const _ChatTailPainter({required this.color, required this.pointsLeft});
+  const _ChatTailPainter({
+    required this.pointsLeft,
+    this.color,
+    this.gradient,
+    this.borderColor,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
-    final paint = Paint()..color = color;
     final path = Path();
     if (pointsLeft) {
       // Bot: 右辺直角 → 左下に向かう三角形（吹き出し左側に接続）
@@ -505,10 +514,28 @@ class _ChatTailPainter extends CustomPainter {
       path.lineTo(size.width, size.height);
     }
     path.close();
-    canvas.drawPath(path, paint);
+
+    final fill = Paint()..style = PaintingStyle.fill;
+    if (gradient != null) {
+      fill.shader = gradient!.createShader(Offset.zero & size);
+    } else if (color != null) {
+      fill.color = color!;
+    }
+    canvas.drawPath(path, fill);
+
+    if (borderColor != null) {
+      final stroke = Paint()
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = 1
+        ..color = borderColor!;
+      canvas.drawPath(path, stroke);
+    }
   }
 
   @override
   bool shouldRepaint(covariant _ChatTailPainter old) =>
-      old.color != color || old.pointsLeft != pointsLeft;
+      old.color != color ||
+      old.gradient != gradient ||
+      old.borderColor != borderColor ||
+      old.pointsLeft != pointsLeft;
 }

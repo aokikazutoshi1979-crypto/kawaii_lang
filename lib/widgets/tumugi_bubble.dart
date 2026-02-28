@@ -46,9 +46,7 @@ class _TumugiBubbleState extends State<TumugiBubble> {
       end: Alignment.bottomRight,
     );
     final bubbleGradient = isKasumiBubble ? kasumiGradient : tsumugiGradient;
-    final borderColor = isKasumiBubble
-        ? const Color(0xFFFFCAD8)
-        : const Color(0xFFFFDBE6);
+    final borderColor = Colors.pink.shade200.withOpacity(0.6);
 
     final content = Row(
       crossAxisAlignment: CrossAxisAlignment.start,

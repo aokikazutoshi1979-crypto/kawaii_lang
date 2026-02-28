@@ -662,6 +662,8 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   Widget _buildChatHeader() {
+    const promptBubbleColor = Color(0xFFFFF0F5);
+    final promptBorderColor = Colors.pink.shade200.withOpacity(0.6);
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
@@ -724,52 +726,66 @@ class _ChatScreenState extends State<ChatScreen> {
                 ),
                 const SizedBox(width: 10),
                 Flexible(
-                  child: GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        _isPromptExpanded = !_isPromptExpanded;
-                      });
-                    },
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-                      decoration: BoxDecoration(
-                        color: const Color(0xFFFFF0F5),
-                        borderRadius: BorderRadius.circular(14),
-                        border: Border.all(
-                          color: Colors.pink.shade200.withOpacity(0.6),
+                  child: Stack(
+                    clipBehavior: Clip.none,
+                    children: [
+                      Positioned(
+                        left: -9,
+                        bottom: 2,
+                        child: CustomPaint(
+                          size: const Size(10, 12),
+                          painter: _PromptBubbleTailPainter(
+                            fillColor: promptBubbleColor,
+                            borderColor: promptBorderColor,
+                          ),
                         ),
                       ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            _tsumugiQuestionText.isNotEmpty
-                                ? _tsumugiQuestionText
-                                : _currentNativeText,
-                            textAlign: TextAlign.left,
-                            style: const TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black87,
-                            ),
+                      GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            _isPromptExpanded = !_isPromptExpanded;
+                          });
+                        },
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                          decoration: BoxDecoration(
+                            color: promptBubbleColor,
+                            borderRadius: BorderRadius.circular(14),
+                            border: Border.all(color: promptBorderColor),
                           ),
-                          if (tsumugi_prompt.formatPromptQuote(_nativeCode, _currentNativeText).isNotEmpty) ...[
-                            const SizedBox(height: 6),
-                            _ExpandablePromptText(
-                              text: tsumugi_prompt.formatPromptQuote(_nativeCode, _currentNativeText),
-                              isExpanded: _isPromptExpanded,
-                              maxLines: 2,
-                              expandLabel: loc.tapToExpand,
-                              style: const TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                                color: Color(0xFFE91E63),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                _tsumugiQuestionText.isNotEmpty
+                                    ? _tsumugiQuestionText
+                                    : _currentNativeText,
+                                textAlign: TextAlign.left,
+                                style: const TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black87,
+                                ),
                               ),
-                            ),
-                          ],
-                        ],
+                              if (tsumugi_prompt.formatPromptQuote(_nativeCode, _currentNativeText).isNotEmpty) ...[
+                                const SizedBox(height: 6),
+                                _ExpandablePromptText(
+                                  text: tsumugi_prompt.formatPromptQuote(_nativeCode, _currentNativeText),
+                                  isExpanded: _isPromptExpanded,
+                                  maxLines: 2,
+                                  expandLabel: loc.tapToExpand,
+                                  style: const TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    color: Color(0xFFE91E63),
+                                  ),
+                                ),
+                              ],
+                            ],
+                          ),
+                        ),
                       ),
-                    ),
+                    ],
                   ),
                 ),
               ],
@@ -2149,5 +2165,41 @@ class _ExpandablePromptText extends StatelessWidget {
         );
       },
     );
+  }
+}
+
+class _PromptBubbleTailPainter extends CustomPainter {
+  const _PromptBubbleTailPainter({
+    required this.fillColor,
+    required this.borderColor,
+  });
+
+  final Color fillColor;
+  final Color borderColor;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final path = Path()
+      ..moveTo(size.width, 0)
+      ..lineTo(size.width, size.height)
+      ..lineTo(0, size.height)
+      ..close();
+
+    final fill = Paint()
+      ..style = PaintingStyle.fill
+      ..color = fillColor;
+    canvas.drawPath(path, fill);
+
+    final stroke = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1
+      ..color = borderColor;
+    canvas.drawPath(path, stroke);
+  }
+
+  @override
+  bool shouldRepaint(covariant _PromptBubbleTailPainter oldDelegate) {
+    return oldDelegate.fillColor != fillColor ||
+        oldDelegate.borderColor != borderColor;
   }
 }
