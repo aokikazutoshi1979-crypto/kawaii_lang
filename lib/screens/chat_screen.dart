@@ -1983,6 +1983,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   child: MessageList(
                     messages: _messages,
                     header: _buildChatHeader(),
+                    botAvatarPath: CharacterAssetService.chatAvatar(_selectedCharacter),
                   ),
                 ),
 

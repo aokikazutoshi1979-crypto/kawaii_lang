@@ -5,8 +5,14 @@ import 'tumugi_bubble.dart';
 class MessageList extends StatelessWidget {
   final List<Map<String, dynamic>> messages;
   final Widget? header;
+  final String? botAvatarPath; // ← 追加: bot吹き出しに表示するキャラアイコン
 
-  const MessageList({required this.messages, this.header, Key? key}) : super(key: key);
+  const MessageList({
+    required this.messages,
+    this.header,
+    this.botAvatarPath, // ← 追加
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,20 +28,21 @@ class MessageList extends StatelessWidget {
             );
           }
           final isBot = msg['role'] != 'user';
-          final tts = msg['tts']; // ← 🔊 TTS対象テキストがある場合
           return ChatBubble(
             text: msg['text'] ?? '',
-            nativeText: msg['nativeText'],    // ← ここを追加
-            transcription: msg['transcription'],  // ← 追加
+            nativeText: msg['nativeText'],
+            transcription: msg['transcription'],
             isBot: isBot,
-            ttsText: msg['tts'], // 🔊 再生対象
-            targetLang: msg['targetLang'], // 🌐 言語を渡す
-            recordingPath: msg['audioPath'], // 🎤 追加
-            recordingDurationMs: msg['durationMs'],   // ← あれば渡す
-            labelType: msg['labelType'], // 'correct' | 'incorrect' | null
+            ttsText: msg['tts'],
+            targetLang: msg['targetLang'],
+            recordingPath: msg['audioPath'],
+            recordingDurationMs: msg['durationMs'],
+            labelType: msg['labelType'],
             highlightTitle: msg['highlightTitle'],
             highlightBody:  msg['highlightBody'],
             showTtsBody: msg['showTtsBody'] ?? true,
+            // bot メッセージにキャラアバターを渡す（userは不要なので null）
+            avatarPath: isBot ? (msg['avatarPath'] ?? botAvatarPath) : null,
           );
         }),
       ],

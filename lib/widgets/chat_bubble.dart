@@ -19,6 +19,7 @@ class ChatBubble extends StatefulWidget {
     this.highlightTitle,
     this.highlightBody,
     this.showTtsBody = true,
+    this.avatarPath,           // ← 追加: botアイコン画像パス
   }) : super(key: key);
 
   final String text;
@@ -33,6 +34,8 @@ class ChatBubble extends StatefulWidget {
   final String? highlightTitle;
   final String? highlightBody;
   final bool showTtsBody;
+  final String? avatarPath;      // ← 追加
+
   @override
   State<ChatBubble> createState() => _ChatBubbleState();
 }
@@ -52,13 +55,13 @@ class _ChatBubbleState extends State<ChatBubble> {
       margin: const EdgeInsets.only(right: 6),
       decoration: BoxDecoration(
         color: bg,
-        borderRadius: BorderRadius.circular(50), // 角丸50px相当
+        borderRadius: BorderRadius.circular(50),
       ),
       child: Text(
         text,
         style: const TextStyle(
           color: Colors.white,
-          fontSize: 12, // 本文より気持ち小さめ
+          fontSize: 12,
           fontWeight: FontWeight.bold,
         ),
       ),
@@ -70,7 +73,6 @@ class _ChatBubbleState extends State<ChatBubble> {
     super.initState();
     _player = AudioPlayer();
 
-    // 録音ファイルがある場合のみプレイヤーをセット
     final rp = widget.recordingPath;
     if (rp != null && rp.isNotEmpty && File(rp).existsSync()) {
       _player.setFilePath(rp).then((_) async {
@@ -95,12 +97,11 @@ class _ChatBubbleState extends State<ChatBubble> {
   @override
   void dispose() {
     _player.dispose();
-    _tts.stop(); // ← 追加
+    _tts.stop();
     super.dispose();
   }
 
   Future<void> _setTtsLanguage() async {
-    // ① —— まず最初に一度だけサポート言語・音声一覧を取得
     final List<dynamic>? langs = await _tts.getLanguages;
     debugPrint('🎤 Supported TTS languages: $langs');
 
@@ -115,21 +116,16 @@ class _ChatBubbleState extends State<ChatBubble> {
         await _tts.setLanguage('ja-JP');
         break;
       case 'zh':
-        // Chinese (Simplified)
         await _tts.setLanguage('zh-CN');
         break;
-      case 'zh_tw':  // 元コードの分岐をそのまま使う場合
-       // 正しい BCP-47 形式をセット
+      case 'zh_tw':
         await _tts.setLanguage('zh-TW');
-
-        // （デバッグ用）台湾音声だけフィルターしてみる
         final taiwanVoices = allVoices
             ?.where((v) => v['locale'] == 'zh-TW')
             .toList();
         debugPrint('🎤 zh‑TW voices: $taiwanVoices');
-
         await _tts.setVoice({
-          'name': 'Mei‑Jia',    // 実機で getVoices して一致を確認
+          'name': 'Mei‑Jia',
           'locale': 'zh-TW',
         });
         break;
@@ -140,10 +136,7 @@ class _ChatBubbleState extends State<ChatBubble> {
         await _tts.setLanguage('es-ES');
         break;
       case 'fr':
-        // 1) 言語を fr‑FR に設定
         await _tts.setLanguage('fr-FR');
-
-        // 2) iOS 標準の女性声 “Marie” を指定
         await _tts.setVoice({
           'name': 'Audrey',
           'locale': 'fr-FR',
@@ -161,9 +154,8 @@ class _ChatBubbleState extends State<ChatBubble> {
       default:
         await _tts.setLanguage('en-US');
     }
-    await _tts.setSpeechRate(0.4); // 任意：ゆっくり読み上げ
+    await _tts.setSpeechRate(0.4);
 
-    // ✅ iOSでサイレントモードでも再生されるようにする
     await _tts.setIosAudioCategory(
       IosTextToSpeechAudioCategory.playback,
       [
@@ -175,7 +167,7 @@ class _ChatBubbleState extends State<ChatBubble> {
 
   void _speak() async {
     if (widget.ttsText != null && widget.ttsText!.isNotEmpty) {
-      await _setTtsLanguage(); // 言語設定を先に実行
+      await _setTtsLanguage();
       await _tts.speak(widget.ttsText!);
     }
   }
@@ -200,7 +192,12 @@ class _ChatBubbleState extends State<ChatBubble> {
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
-    final bubbleColor = widget.isBot ? Colors.white : (Colors.blue[100]!);
+    final screenWidth = MediaQuery.of(context).size.width;
+
+    // ── bubble colors (unchanged)
+    final Color botBubbleColor = Colors.white;
+    final Color userBubbleColor = Colors.blue[100]!;
+    final bubbleColor = widget.isBot ? botBubbleColor : userBubbleColor;
 
     final hasRecording = widget.recordingPath != null &&
         widget.recordingPath!.isNotEmpty &&
@@ -216,204 +213,268 @@ class _ChatBubbleState extends State<ChatBubble> {
     Color? labelBg;
     if (!widget.isBot && widget.labelType != null) {
       if (widget.labelType == 'correct') {
-        labelText = loc.badgeCorrect;      // arb: "正解"
+        labelText = loc.badgeCorrect;
         labelBg   = Colors.red;
       } else if (widget.labelType == 'incorrect') {
-        labelText = loc.badgeNeedsImprovement;    // arb: "不正解"
-        labelBg   = const Color(0xFF1E88E5); // 青色に変更（お好みでOK）
+        labelText = loc.badgeNeedsImprovement;
+        labelBg   = const Color(0xFF1E88E5);
       }
     }
 
-    return Stack(
-      clipBehavior: Clip.none,
-      alignment: Alignment.topCenter,
-      children: [
-        FractionallySizedBox(
-          widthFactor: 0.95,
-          child: Container(
-            margin: const EdgeInsets.only(top: 10),
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-            decoration: BoxDecoration(
-              color: bubbleColor,
-              borderRadius: BorderRadius.circular(12),
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                // ★ ハイライト（見出し＋訳文）— 必要なときだけ表示
-                if (widget.highlightTitle != null || widget.highlightBody != null) ...[
-                  Container(
-                    width: double.infinity,
-                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-                    decoration: BoxDecoration(
-                      color: Colors.yellow[100],            // ← 黄色背景
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            if (widget.highlightTitle != null)
-                              Expanded(
-                                child: Text(
-                                  widget.highlightTitle!,
-                                  style: const TextStyle(
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.w600,
-                                  ),
-                                ),
-                              ),
-                            // 見出し行の右端にTTS（訳文を読み上げ）
-                            if (widget.isBot && (widget.ttsText?.isNotEmpty ?? false))
-                              if (hasTts) IconButton(
-                                icon: const Icon(Icons.volume_up),
-                                onPressed: _speak,
-                                tooltip: 'Play',
-                              ),
-                          ],
-                        ),
-                        if (widget.highlightBody != null) ...[
-                          const SizedBox(height: 6),
-                          Text(
-                            widget.highlightBody!,
-                            style: const TextStyle(fontSize: 16, height: 1.4),
-                          ),
-                        ],
-                      ],
-                    ),
-                  ),
-                  const SizedBox(height: 8), // ハイライトと本文の間を1行開ける
-                ],
+    // ── border radius: tail が接する角だけ小さくする
+    final borderRadius = widget.isBot
+        ? const BorderRadius.only(
+            topLeft:     Radius.circular(18),
+            topRight:    Radius.circular(18),
+            bottomRight: Radius.circular(18),
+            bottomLeft:  Radius.circular(4),  // tailが接する側
+          )
+        : const BorderRadius.only(
+            topLeft:     Radius.circular(18),
+            topRight:    Radius.circular(18),
+            bottomLeft:  Radius.circular(18),
+            bottomRight: Radius.circular(4),  // tailが接する側
+          );
 
-                // ① ユーザー発言でラベルがあるときだけ、ヘッダ行を表示
-                if (!widget.isBot && labelText != null) ...[
+    // ── 吹き出し本体コンテナ（内側の内容は変更なし）
+    final bubbleBox = Container(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      decoration: BoxDecoration(
+        color: bubbleColor,
+        borderRadius: borderRadius,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.07),
+            blurRadius: 4,
+            offset: const Offset(0, 2),
+          ),
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // ★ ハイライト（見出し＋訳文）
+          if (widget.highlightTitle != null || widget.highlightBody != null) ...[
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+              decoration: BoxDecoration(
+                color: Colors.yellow[100],
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
                   Row(
-                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Text(
-                        loc.userAnswerHeader, // 例: あなたの回答（arbで用意）
-                        style: const TextStyle(
-                          fontSize: 14,
-                          color: Colors.black87,
-                          fontWeight: FontWeight.w600,
+                      if (widget.highlightTitle != null)
+                        Expanded(
+                          child: Text(
+                            widget.highlightTitle!,
+                            style: const TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
                         ),
-                      ),
-                      const SizedBox(width: 8),
-                      _labelChip(labelText!, labelBg!), // ← 赤/青の角丸チップ
-                    ],
-                  ),
-                  const SizedBox(height: 6),
-                ],
-
-                // ② 本文（← ここからはラベルを外す）
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Expanded(
-                      child: Text(
-                        widget.text, // 例: こんにちは
-                        style: const TextStyle(fontSize: 18, height: 1.4),
-                      ),
-                    ),
-                    // BotのときだけTTSボタン
-                    if (widget.isBot && widget.ttsText != null && widget.ttsText!.isNotEmpty)
-                      if (!hasHighlight && hasTts)
-                        IconButton(
+                      if (widget.isBot && (widget.ttsText?.isNotEmpty ?? false))
+                        if (hasTts) IconButton(
                           icon: const Icon(Icons.volume_up),
                           onPressed: _speak,
+                          tooltip: 'Play',
                         ),
-                  ],
-                ),
-                if (!hasHighlight && widget.nativeText != null)
-                  Padding(
-                    padding: const EdgeInsets.only(top: 4),
-                    child: Text(widget.nativeText!, style: TextStyle(color: Colors.grey)),
-                  ),
-                if (!hasHighlight && widget.transcription != null && widget.transcription!.isNotEmpty)
-                  Padding(
-                    padding: const EdgeInsets.only(top: 4),
-                    child: Text(widget.transcription!, style: TextStyle(fontStyle: FontStyle.italic)),
-                  ),
-                if (widget.showTtsBody && widget.ttsText != null && widget.ttsText!.isNotEmpty) ...[
-                  const SizedBox(height: 8),
-                  Text(
-                    widget.ttsText!,
-                    style: const TextStyle(fontSize: 18, height: 1.4),
-                  ),
-                ],
-                // 🎤 録音がある場合は、下に「再生チップ」を表示
-                if (hasRecording) ...[
-                  const SizedBox(height: 8),
-                  Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      InkWell(
-                        onTap: _togglePlay,
-                        borderRadius: BorderRadius.circular(20),
-                        child: Container(
-                          width: 36,
-                          height: 36,
-                          alignment: Alignment.center,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: widget.isBot ? Colors.grey.shade600 : const Color(0xFF1E88E5),
-                          ),
-                          child: Icon(
-                            _isPlaying ? Icons.pause : Icons.play_arrow,
-                            color: Colors.white,
-                            size: 20,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(width: 8),
-                      const Text(
-                        'Your voice',
-                        style: TextStyle(fontSize: 12, color: Colors.black54),
-                      ),
-                      const SizedBox(width: 8),
-                      Text(
-                        '${_mmss(_position)} / ${_mmss(_duration.inMilliseconds > 0 ? _duration : Duration(milliseconds: widget.recordingDurationMs ?? 0))}',
-                        style: const TextStyle(fontSize: 13, color: Colors.black87),
-                      ),
                     ],
                   ),
+                  if (widget.highlightBody != null) ...[
+                    const SizedBox(height: 6),
+                    Text(
+                      widget.highlightBody!,
+                      style: const TextStyle(fontSize: 16, height: 1.4),
+                    ),
+                  ],
                 ],
+              ),
+            ),
+            const SizedBox(height: 8),
+          ],
+
+          // ① ユーザー発言でラベルがあるとき
+          if (!widget.isBot && labelText != null) ...[
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  loc.userAnswerHeader,
+                  style: const TextStyle(
+                    fontSize: 14,
+                    color: Colors.black87,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                const SizedBox(width: 8),
+                _labelChip(labelText!, labelBg!),
               ],
             ),
+            const SizedBox(height: 6),
+          ],
+
+          // ② 本文
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Expanded(
+                child: Text(
+                  widget.text,
+                  style: const TextStyle(fontSize: 18, height: 1.4),
+                ),
+              ),
+              if (widget.isBot && widget.ttsText != null && widget.ttsText!.isNotEmpty)
+                if (!hasHighlight && hasTts)
+                  IconButton(
+                    icon: const Icon(Icons.volume_up),
+                    onPressed: _speak,
+                  ),
+            ],
           ),
-        ),
-        // ▲ Bot気泡の三角形（色を気泡と合わせる）
-        if (widget.isBot)
-          Positioned(
-            top: 0,
-            child: CustomPaint(
-              size: const Size(20, 10),
-              painter: TrianglePainter(color: bubbleColor),
+          if (!hasHighlight && widget.nativeText != null)
+            Padding(
+              padding: const EdgeInsets.only(top: 4),
+              child: Text(widget.nativeText!, style: const TextStyle(color: Colors.grey)),
             ),
-          ),
-      ],
+          if (!hasHighlight && widget.transcription != null && widget.transcription!.isNotEmpty)
+            Padding(
+              padding: const EdgeInsets.only(top: 4),
+              child: Text(widget.transcription!, style: const TextStyle(fontStyle: FontStyle.italic)),
+            ),
+          if (widget.showTtsBody && widget.ttsText != null && widget.ttsText!.isNotEmpty) ...[
+            const SizedBox(height: 8),
+            Text(
+              widget.ttsText!,
+              style: const TextStyle(fontSize: 18, height: 1.4),
+            ),
+          ],
+          // 🎤 録音再生チップ
+          if (hasRecording) ...[
+            const SizedBox(height: 8),
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                InkWell(
+                  onTap: _togglePlay,
+                  borderRadius: BorderRadius.circular(20),
+                  child: Container(
+                    width: 36,
+                    height: 36,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: widget.isBot ? Colors.grey.shade600 : const Color(0xFF1E88E5),
+                    ),
+                    child: Icon(
+                      _isPlaying ? Icons.pause : Icons.play_arrow,
+                      color: Colors.white,
+                      size: 20,
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 8),
+                const Text(
+                  'Your voice',
+                  style: TextStyle(fontSize: 12, color: Colors.black54),
+                ),
+                const SizedBox(width: 8),
+                Text(
+                  '${_mmss(_position)} / ${_mmss(_duration.inMilliseconds > 0 ? _duration : Duration(milliseconds: widget.recordingDurationMs ?? 0))}',
+                  style: const TextStyle(fontSize: 13, color: Colors.black87),
+                ),
+              ],
+            ),
+          ],
+        ],
+      ),
     );
+
+    // ── tail（しっぽ三角形）
+    const tailSize = Size(9, 12);
+    final tail = CustomPaint(
+      size: tailSize,
+      painter: _ChatTailPainter(color: bubbleColor, pointsLeft: widget.isBot),
+    );
+
+    if (widget.isBot) {
+      // ── Bot: 左寄せ [avatar] [tail] [bubble]
+      return Padding(
+        padding: const EdgeInsets.symmetric(vertical: 6),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            CircleAvatar(
+              radius: 20,
+              backgroundColor: Colors.white,
+              foregroundImage: widget.avatarPath != null
+                  ? AssetImage(widget.avatarPath!) as ImageProvider
+                  : null,
+              child: widget.avatarPath == null
+                  ? const Icon(Icons.smart_toy, size: 20, color: Colors.grey)
+                  : null,
+            ),
+            tail,
+            ConstrainedBox(
+              constraints: BoxConstraints(maxWidth: screenWidth * 0.65),
+              child: bubbleBox,
+            ),
+          ],
+        ),
+      );
+    } else {
+      // ── User: 右寄せ [bubble] [tail]
+      return Padding(
+        padding: const EdgeInsets.symmetric(vertical: 6),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            ConstrainedBox(
+              constraints: BoxConstraints(maxWidth: screenWidth * 0.74),
+              child: bubbleBox,
+            ),
+            tail,
+          ],
+        ),
+      );
+    }
   }
 }
 
-class TrianglePainter extends CustomPainter {
+// ── LINE風しっぽ三角形
+class _ChatTailPainter extends CustomPainter {
   final Color color;
+  final bool pointsLeft; // true = bot(左向き), false = user(右向き)
 
-  TrianglePainter({required this.color});
+  const _ChatTailPainter({required this.color, required this.pointsLeft});
 
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()..color = color;
-    final path = Path()
-      ..moveTo(0, size.height)
-      ..lineTo(size.width / 2, 0)
-      ..lineTo(size.width, size.height)
-      ..close();
+    final path = Path();
+    if (pointsLeft) {
+      // Bot: 右辺直角 → 左下に向かう三角形（吹き出し左側に接続）
+      path.moveTo(size.width, 0);
+      path.lineTo(size.width, size.height);
+      path.lineTo(0, size.height);
+    } else {
+      // User: 左辺直角 → 右下に向かう三角形（吹き出し右側に接続）
+      path.moveTo(0, 0);
+      path.lineTo(0, size.height);
+      path.lineTo(size.width, size.height);
+    }
+    path.close();
     canvas.drawPath(path, paint);
   }
 
   @override
-  bool shouldRepaint(CustomPainter oldDelegate) => false;
+  bool shouldRepaint(covariant _ChatTailPainter old) =>
+      old.color != color || old.pointsLeft != pointsLeft;
 }
