@@ -241,20 +241,7 @@ class _ChatBubbleState extends State<ChatBubble> {
       }
     }
 
-    // ── border radius: tail が接する角だけ小さくする
-    final borderRadius = widget.isBot
-        ? const BorderRadius.only(
-            topLeft:     Radius.circular(18),
-            topRight:    Radius.circular(18),
-            bottomRight: Radius.circular(18),
-            bottomLeft:  Radius.circular(4),  // tailが接する側
-          )
-        : const BorderRadius.only(
-            topLeft:     Radius.circular(18),
-            topRight:    Radius.circular(18),
-            bottomLeft:  Radius.circular(18),
-            bottomRight: Radius.circular(4),  // tailが接する側
-          );
+    final borderRadius = const BorderRadius.all(Radius.circular(18));
 
     // ── 吹き出し本体コンテナ（内側の内容は変更なし）
     final bubbleBox = Container(
@@ -419,20 +406,8 @@ class _ChatBubbleState extends State<ChatBubble> {
       ),
     );
 
-    // ── tail（しっぽ三角形）
-    const tailSize = Size(10, 12);
-    final tail = CustomPaint(
-      size: tailSize,
-      painter: _ChatTailPainter(
-        color: widget.isBot ? null : userBubbleColor,
-        gradient: widget.isBot ? botBubbleGradient : null,
-        borderColor: widget.isBot ? botBorderColor : null,
-        pointsLeft: widget.isBot,
-      ),
-    );
-
     if (widget.isBot) {
-      // ── Bot: 左寄せ [avatar] [tail] [bubble]
+      // ── Bot: 左寄せ [avatar] [bubble]
       return Padding(
         padding: const EdgeInsets.symmetric(vertical: 6),
         child: Row(
@@ -449,11 +424,7 @@ class _ChatBubbleState extends State<ChatBubble> {
                   ? const Icon(Icons.smart_toy, size: 20, color: Colors.grey)
                   : null,
             ),
-            Transform.translate(
-              // 尻尾をバブル側へ重ねて“隙間見え”を防ぐ
-              offset: const Offset(4, 0),
-              child: tail,
-            ),
+            const SizedBox(width: 10),
             ConstrainedBox(
               constraints: BoxConstraints(maxWidth: screenWidth * 0.65),
               child: bubbleBox,
@@ -462,7 +433,7 @@ class _ChatBubbleState extends State<ChatBubble> {
         ),
       );
     } else {
-      // ── User: 右寄せ [bubble] [tail]
+      // ── User: 右寄せ [bubble]
       return Padding(
         padding: const EdgeInsets.symmetric(vertical: 6),
         child: Row(
@@ -472,11 +443,6 @@ class _ChatBubbleState extends State<ChatBubble> {
             ConstrainedBox(
               constraints: BoxConstraints(maxWidth: screenWidth * 0.74),
               child: bubbleBox,
-            ),
-            Transform.translate(
-              // 尻尾をバブル側へ重ねて“隙間見え”を防ぐ
-              offset: const Offset(-2, 0),
-              child: tail,
             ),
           ],
         ),

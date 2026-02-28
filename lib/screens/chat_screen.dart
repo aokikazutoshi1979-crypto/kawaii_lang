@@ -729,17 +729,6 @@ class _ChatScreenState extends State<ChatScreen> {
                   child: Stack(
                     clipBehavior: Clip.none,
                     children: [
-                      Positioned(
-                        left: -9,
-                        bottom: 2,
-                        child: CustomPaint(
-                          size: const Size(10, 12),
-                          painter: _PromptBubbleTailPainter(
-                            fillColor: promptBubbleColor,
-                            borderColor: promptBorderColor,
-                          ),
-                        ),
-                      ),
                       GestureDetector(
                         onTap: () {
                           setState(() {
