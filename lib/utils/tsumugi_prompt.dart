@@ -362,6 +362,156 @@ String kasumiNextPrompt(String uiLanguageCode) {
   }
 }
 
+// ─────────────────────────────────────────────
+// 正解案内セリフ（不正解時の黄色バブルの前に表示）
+// ─────────────────────────────────────────────
+
+String tsumugiCorrectAnswerIntro(String uiLanguageCode) {
+  final lang = _norm(uiLanguageCode);
+  final rnd = Random();
+  final lines = _tsumugiCorrectIntroLines(lang);
+  return lines[rnd.nextInt(lines.length)];
+}
+
+String kasumiCorrectAnswerIntro(String uiLanguageCode) {
+  final lang = _norm(uiLanguageCode);
+  final rnd = Random();
+  final lines = _kasumiCorrectIntroLines(lang);
+  return lines[rnd.nextInt(lines.length)];
+}
+
+List<String> _tsumugiCorrectIntroLines(String lang) {
+  switch (lang) {
+    case 'ja':
+      return [
+        'こっちが正解だよ☺️',
+        'こう言えると完璧！',
+        '正解はこれだよ〜',
+      ];
+    case 'ko':
+      return [
+        '이게 정답이야☺️',
+        '이렇게 하면 완벽해!',
+        '정답은 이거야~',
+      ];
+    case 'zh':
+      return [
+        '这才是正确答案☺️',
+        '这样说就对啦！',
+        '正确答案在这里~',
+      ];
+    case 'zh_tw':
+      return [
+        '這才是正確答案☺️',
+        '這樣說就對啦！',
+        '正確答案在這裡~',
+      ];
+    case 'es':
+      return [
+        '¡Aquí está la respuesta correcta☺️',
+        '¡Así es como se dice!',
+        '¡Esta es la respuesta correcta~',
+      ];
+    case 'fr':
+      return [
+        'Voilà la bonne réponse☺️',
+        'C\'est comme ça qu\'on le dit !',
+        'La bonne réponse, c\'est ça~',
+      ];
+    case 'de':
+      return [
+        'Das ist die richtige Antwort☺️',
+        'So sagt man es richtig!',
+        'Die Antwort ist diese~',
+      ];
+    case 'vi':
+      return [
+        'Đây là câu trả lời đúng☺️',
+        'Nói như thế này là đúng rồi!',
+        'Câu trả lời đúng là đây~',
+      ];
+    case 'id':
+      return [
+        'Ini jawaban yang benar☺️',
+        'Begini cara yang tepat!',
+        'Ini jawabannya~',
+      ];
+    case 'en':
+    default:
+      return [
+        'Here\'s the right answer☺️',
+        'This is how it goes!',
+        'Try this one next time~',
+      ];
+  }
+}
+
+List<String> _kasumiCorrectIntroLines(String lang) {
+  switch (lang) {
+    case 'ja':
+      return [
+        '…これが正解よ。覚えておいてよね。',
+        'ちゃんと覚えてよね。',
+        '正解はこっちよ。次は間違えないで。',
+      ];
+    case 'ko':
+      return [
+        '…이게 정답이야. 잘 기억해둬.',
+        '제대로 기억해둬.',
+        '정답은 이거야. 다음엔 틀리지 마.',
+      ];
+    case 'zh':
+      return [
+        '…这才是正确答案。记住了。',
+        '好好记住了。',
+        '正确答案是这个。下次别搞错了。',
+      ];
+    case 'zh_tw':
+      return [
+        '…這才是正確答案。記住了。',
+        '好好記住了。',
+        '正確答案是這個。下次別搞錯了。',
+      ];
+    case 'es':
+      return [
+        '…Esta es la respuesta correcta. Recuérdalo.',
+        'Memoriza esto bien.',
+        'La respuesta correcta es esta. La próxima no te equivoques.',
+      ];
+    case 'fr':
+      return [
+        '…Voilà la bonne réponse. Retiens-le.',
+        'Mémorise ça bien.',
+        'C\'est la bonne réponse. La prochaine fois, ne te trompe pas.',
+      ];
+    case 'de':
+      return [
+        '…Das ist die richtige Antwort. Merk dir das.',
+        'Präg dir das gut ein.',
+        'Die richtige Antwort ist diese. Nächstes Mal kein Fehler.',
+      ];
+    case 'vi':
+      return [
+        '…Đây là câu trả lời đúng. Nhớ nhé.',
+        'Nhớ lấy điều này.',
+        'Câu trả lời đúng là đây. Lần sau đừng sai nữa.',
+      ];
+    case 'id':
+      return [
+        '…Ini jawaban yang benar. Ingat ya.',
+        'Ingat-ingat ini baik-baik.',
+        'Jawaban yang benar adalah ini. Jangan salah lagi ya.',
+      ];
+    case 'en':
+    default:
+      return [
+        '…This is the right one. Don\'t forget.',
+        'At least remember this much.',
+        'Here. The correct answer. No more mistakes.',
+      ];
+  }
+}
+
 List<String> _kasumiQuestionLineTemplates(String lang) {
   switch (lang) {
     case 'ja':

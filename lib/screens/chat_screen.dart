@@ -1404,6 +1404,14 @@ class _ChatScreenState extends State<ChatScreen> {
         bodyLines.add(explanation01);
 
         setState(() {
+          // キャラクターの正解案内セリフ
+          _messages.add({
+            'role': 'tumugi',
+            'text': _selectedCharacter == CharacterAssetService.kasumi
+                ? tsumugi_prompt.kasumiCorrectAnswerIntro(_nativeCode)
+                : tsumugi_prompt.tsumugiCorrectAnswerIntro(_nativeCode),
+            'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
+          });
           _messages.add({
             'role': 'bot',
             // ★ ハイライト用（黄色ボックスの内容）
