@@ -20,6 +20,7 @@ class ChatBubble extends StatefulWidget {
     this.highlightBody,
     this.showTtsBody = true,
     this.avatarPath,           // ← 追加: botアイコン画像パス
+    this.showAvatar = true,
   }) : super(key: key);
 
   final String text;
@@ -35,6 +36,7 @@ class ChatBubble extends StatefulWidget {
   final String? highlightBody;
   final bool showTtsBody;
   final String? avatarPath;      // ← 追加
+  final bool showAvatar;
 
   @override
   State<ChatBubble> createState() => _ChatBubbleState();
@@ -428,17 +430,19 @@ class _ChatBubbleState extends State<ChatBubble> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            CircleAvatar(
-              radius: 31.5,
-              backgroundColor: Colors.white,
-              foregroundImage: widget.avatarPath != null
-                  ? AssetImage(widget.avatarPath!) as ImageProvider
-                  : null,
-              child: widget.avatarPath == null
-                  ? const Icon(Icons.smart_toy, size: 20, color: Colors.grey)
-                  : null,
-            ),
-            const SizedBox(width: 10),
+            if (widget.showAvatar) ...[
+              CircleAvatar(
+                radius: 31.5,
+                backgroundColor: Colors.white,
+                foregroundImage: widget.avatarPath != null
+                    ? AssetImage(widget.avatarPath!) as ImageProvider
+                    : null,
+                child: widget.avatarPath == null
+                    ? const Icon(Icons.smart_toy, size: 20, color: Colors.grey)
+                    : null,
+              ),
+              const SizedBox(width: 10),
+            ],
             ConstrainedBox(
               constraints: BoxConstraints(maxWidth: screenWidth * 0.65),
               child: bubbleBox,

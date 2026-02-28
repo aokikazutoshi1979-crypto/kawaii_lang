@@ -41,6 +41,7 @@ class MessageList extends StatelessWidget {
             highlightTitle: msg['highlightTitle'],
             highlightBody:  msg['highlightBody'],
             showTtsBody: msg['showTtsBody'] ?? true,
+            showAvatar: msg['showAvatar'] ?? true,
             // bot メッセージにキャラアバターを渡す（userは不要なので null）
             avatarPath: isBot ? (msg['avatarPath'] ?? botAvatarPath) : null,
           );

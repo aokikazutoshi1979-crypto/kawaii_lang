@@ -1385,6 +1385,7 @@ class _ChatScreenState extends State<ChatScreen> {
             'highlightTitle': loc.answerTranslationPrefix,  // 例: 修正例
             'highlightBody':  highlightLines.join('\n'),
             'text': '',
+            'showAvatar': false,
 
             // 🔊 音声ボタン（本文に重複表示はしない）
             'tts': translatedText,
@@ -1479,6 +1480,7 @@ class _ChatScreenState extends State<ChatScreen> {
             // ★ ハイライト用（薄い緑色のボックスの内容）
             'highlightTitle': loc.similarExpressionHeader, // 例: 類似表現
             'highlightBody':  simLines.join('\n'),                      // ← 再生ボタン＆本文表示
+            'showAvatar': false,
 
             // ★ 音声ボタン（本文は出さない）
             'tts': similar,              // ← これで再生アイコンが出る
@@ -1710,6 +1712,7 @@ class _ChatScreenState extends State<ChatScreen> {
               ? loc.answerMeaningPrefix(translatedText)
               : loc.answerTranslationPrefix,
           'highlightBody': translatedText,   // 本文（例: Nice to meet you.）
+          'showAvatar': false,
 
           'tts': translatedText,
           'showTtsBody': false,              // 本文に重複表示させない
@@ -1851,6 +1854,7 @@ class _ChatScreenState extends State<ChatScreen> {
         // 🔶 黄色ハイライト
         'highlightTitle': loc.similarExpressionHeader, // 例: 類似表現
         'highlightBody': simLines.join('\n'),
+        'showAvatar': false,
 
         // TTS は similar のみ
         'tts': similar,
