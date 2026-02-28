@@ -661,6 +661,143 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 
+  Widget _buildChatHeader() {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        if (widget.showRecommendedStartLink)
+          Padding(
+            padding: const EdgeInsets.only(top: 8, bottom: 4),
+            child: Align(
+              alignment: Alignment.center,
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.92),
+                  borderRadius: BorderRadius.circular(999),
+                  border: Border.all(color: Colors.black.withOpacity(0.08)),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.14),
+                      blurRadius: 8,
+                      offset: const Offset(0, 3),
+                    ),
+                  ],
+                ),
+                child: TextButton(
+                  onPressed: _openQuestionListFromRecommend,
+                  style: TextButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 12,
+                      vertical: 7,
+                    ),
+                    minimumSize: Size.zero,
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                    visualDensity: VisualDensity.compact,
+                    foregroundColor: Colors.black87,
+                  ),
+                  child: const Text(
+                    'おすすめから開始しました（問題を選び直す）',
+                    style: TextStyle(
+                      fontSize: 12.5,
+                      fontWeight: FontWeight.w700,
+                      color: Colors.black87,
+                      height: 1.2,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+
+        if (_mode == QuizMode.reading && _currentNativeText.isNotEmpty)
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                CircleAvatar(
+                  radius: 31.5,
+                  backgroundImage: AssetImage(
+                    CharacterAssetService.chatAvatar(_selectedCharacter),
+                  ),
+                ),
+                const SizedBox(width: 10),
+                Flexible(
+                  child: GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        _isPromptExpanded = !_isPromptExpanded;
+                      });
+                    },
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFFFF0F5),
+                        borderRadius: BorderRadius.circular(14),
+                        border: Border.all(
+                          color: Colors.pink.shade200.withOpacity(0.6),
+                        ),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            _tsumugiQuestionText.isNotEmpty
+                                ? _tsumugiQuestionText
+                                : _currentNativeText,
+                            textAlign: TextAlign.left,
+                            style: const TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black87,
+                            ),
+                          ),
+                          if (tsumugi_prompt.formatPromptQuote(_nativeCode, _currentNativeText).isNotEmpty) ...[
+                            const SizedBox(height: 6),
+                            _ExpandablePromptText(
+                              text: tsumugi_prompt.formatPromptQuote(_nativeCode, _currentNativeText),
+                              isExpanded: _isPromptExpanded,
+                              maxLines: 2,
+                              expandLabel: loc.tapToExpand,
+                              style: const TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                                color: Color(0xFFE91E63),
+                              ),
+                            ),
+                          ],
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+        if (_mode == QuizMode.listening) ...[
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
+            child: Text(
+              loc.listeningPrompt,
+              style: const TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+                color: Colors.white,
+                shadows: [
+                  Shadow(color: Colors.black54, blurRadius: 4, offset: Offset(0, 1)),
+                  Shadow(color: Colors.black38, blurRadius: 10, offset: Offset(0, 2)),
+                ],
+              ),
+            ),
+          ),
+          _listeningQuestionCard(),
+        ],
+      ],
+    );
+  }
+
   Future<void> _speakText(String text) async {
     if (!_ttsReady || _isSpeaking) return;
     text = text.replaceAll(RegExp(r'<[^>]+>'), ' ').replaceAll(RegExp(r'\s+'), ' ').trim();
@@ -1842,141 +1979,12 @@ class _ChatScreenState extends State<ChatScreen> {
             padding: EdgeInsets.only(top: topInset),
             child: Column(
               children: [
-                if (widget.showRecommendedStartLink)
-                  Padding(
-                    padding: const EdgeInsets.only(top: 8, bottom: 4),
-                    child: Align(
-                      alignment: Alignment.center,
-                      child: DecoratedBox(
-                        decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.92),
-                          borderRadius: BorderRadius.circular(999),
-                          border: Border.all(color: Colors.black.withOpacity(0.08)),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.black.withOpacity(0.14),
-                              blurRadius: 8,
-                              offset: const Offset(0, 3),
-                            ),
-                          ],
-                        ),
-                        child: TextButton(
-                          onPressed: _openQuestionListFromRecommend,
-                          style: TextButton.styleFrom(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 12,
-                              vertical: 7,
-                            ),
-                            minimumSize: Size.zero,
-                            tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                            visualDensity: VisualDensity.compact,
-                            foregroundColor: Colors.black87,
-                          ),
-                          child: const Text(
-                            'おすすめから開始しました（問題を選び直す）',
-                            style: TextStyle(
-                              fontSize: 12.5,
-                              fontWeight: FontWeight.w700,
-                              color: Colors.black87,
-                              height: 1.2,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
+                Expanded(
+                  child: MessageList(
+                    messages: _messages,
+                    header: _buildChatHeader(),
                   ),
-
-                // ★ 出題テキストを中央寄せ＆太字で表示（Readingモードのときだけ）
-                if (_mode == QuizMode.reading && _currentNativeText.isNotEmpty)
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        CircleAvatar(
-                          radius: 31.5,
-                          backgroundImage: AssetImage(
-                            CharacterAssetService.chatAvatar(_selectedCharacter),
-                          ),
-                        ),
-                        const SizedBox(width: 10),
-                        Flexible(
-                          child: GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _isPromptExpanded = !_isPromptExpanded;
-                              });
-                            },
-                            child: Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-                              decoration: BoxDecoration(
-                                color: const Color(0xFFFFF0F5),
-                                borderRadius: BorderRadius.circular(14),
-                                border: Border.all(
-                                  color: Colors.pink.shade200.withOpacity(0.6),
-                                ),
-                              ),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    _tsumugiQuestionText.isNotEmpty
-                                        ? _tsumugiQuestionText
-                                        : _currentNativeText,
-                                    textAlign: TextAlign.left,
-                                    style: const TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.black87,
-                                    ),
-                                  ),
-                                  if (tsumugi_prompt.formatPromptQuote(_nativeCode, _currentNativeText).isNotEmpty) ...[
-                                    const SizedBox(height: 6),
-                                    _ExpandablePromptText(
-                                      text: tsumugi_prompt.formatPromptQuote(_nativeCode, _currentNativeText),
-                                      isExpanded: _isPromptExpanded,
-                                      maxLines: 2,
-                                      expandLabel: loc.tapToExpand,
-                                      style: const TextStyle(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.bold,
-                                        color: Color(0xFFE91E63),
-                                      ),
-                                    ),
-                                  ],
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-
-                // Listening 見出し＋カード（Listeningのみ）
-                if (_mode == QuizMode.listening) ...[
-                  // 見出し
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),  // ★必須
-                    child: Text(
-                      loc.listeningPrompt,
-                      style: const TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.white,
-                        shadows: [
-                          Shadow(color: Colors.black54, blurRadius: 4, offset: Offset(0, 1)),
-                          Shadow(color: Colors.black38, blurRadius: 10, offset: Offset(0, 2)),
-                        ],
-                      ),
-                    ),
-                  ),
-                  // ぼかし＋大きい再生ボタン
-                  _listeningQuestionCard(),
-                ],
-
-                Expanded(child: MessageList(messages: _messages)),
+                ),
 
                 if (_isLoading)
                   Padding(
