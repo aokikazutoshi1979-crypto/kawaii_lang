@@ -27,12 +27,28 @@ class _TumugiBubbleState extends State<TumugiBubble> {
 
   @override
   Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    final bubbleColor = isDark
-        ? scheme.surface.withOpacity(0.92)
-        : const Color(0xFFFFF4F7).withOpacity(0.96);
-    final borderColor = scheme.primary.withOpacity(isDark ? 0.35 : 0.28);
+    final avatarPathLower = (widget.avatarPath ?? '').toLowerCase();
+    final isKasumiBubble = avatarPathLower.contains('kasumi');
+    const tsumugiGradient = LinearGradient(
+      colors: [
+        Color(0xFFFFF3F7),
+        Color(0xFFFFE9F0),
+      ],
+      begin: Alignment.topLeft,
+      end: Alignment.bottomRight,
+    );
+    const kasumiGradient = LinearGradient(
+      colors: [
+        Color(0xFFFFE9F0),
+        Color(0xFFFFDCE6),
+      ],
+      begin: Alignment.topLeft,
+      end: Alignment.bottomRight,
+    );
+    final bubbleGradient = isKasumiBubble ? kasumiGradient : tsumugiGradient;
+    final borderColor = isKasumiBubble
+        ? const Color(0xFFFFCAD8)
+        : const Color(0xFFFFDBE6);
 
     final content = Row(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -52,12 +68,12 @@ class _TumugiBubbleState extends State<TumugiBubble> {
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
             decoration: BoxDecoration(
-              color: bubbleColor,
+              gradient: bubbleGradient,
               borderRadius: BorderRadius.circular(18),
               border: Border.all(color: borderColor, width: 1),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(isDark ? 0.08 : 0.06),
+                  color: Colors.black.withOpacity(0.06),
                   blurRadius: 8,
                   offset: const Offset(0, 3),
                 ),

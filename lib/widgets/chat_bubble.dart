@@ -194,10 +194,32 @@ class _ChatBubbleState extends State<ChatBubble> {
     final loc = AppLocalizations.of(context)!;
     final screenWidth = MediaQuery.of(context).size.width;
 
-    // ── bubble colors (unchanged)
-    final Color botBubbleColor = Colors.white;
-    final Color userBubbleColor = Colors.blue[100]!;
-    final bubbleColor = widget.isBot ? botBubbleColor : userBubbleColor;
+    final avatarPathLower = (widget.avatarPath ?? '').toLowerCase();
+    final isKasumiBubble = widget.isBot && avatarPathLower.contains('kasumi');
+
+    // Character (left) bubble gradients
+    const tsumugiGradient = LinearGradient(
+      colors: [
+        Color(0xFFFFF3F7),
+        Color(0xFFFFE9F0),
+      ],
+      begin: Alignment.topLeft,
+      end: Alignment.bottomRight,
+    );
+    const kasumiGradient = LinearGradient(
+      colors: [
+        Color(0xFFFFE9F0),
+        Color(0xFFFFDCE6),
+      ],
+      begin: Alignment.topLeft,
+      end: Alignment.bottomRight,
+    );
+
+    final botBubbleGradient = isKasumiBubble ? kasumiGradient : tsumugiGradient;
+    final botTailColor = isKasumiBubble
+        ? const Color(0xFFFFDCE6)
+        : const Color(0xFFFFE9F0);
+    final userBubbleColor = Colors.blue[100]!;
 
     final hasRecording = widget.recordingPath != null &&
         widget.recordingPath!.isNotEmpty &&
@@ -240,7 +262,8 @@ class _ChatBubbleState extends State<ChatBubble> {
     final bubbleBox = Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       decoration: BoxDecoration(
-        color: bubbleColor,
+        color: widget.isBot ? null : userBubbleColor,
+        gradient: widget.isBot ? botBubbleGradient : null,
         borderRadius: borderRadius,
         boxShadow: [
           BoxShadow(
@@ -396,10 +419,13 @@ class _ChatBubbleState extends State<ChatBubble> {
     );
 
     // ── tail（しっぽ三角形）
-    const tailSize = Size(9, 12);
+    const tailSize = Size(10, 12);
     final tail = CustomPaint(
       size: tailSize,
-      painter: _ChatTailPainter(color: bubbleColor, pointsLeft: widget.isBot),
+      painter: _ChatTailPainter(
+        color: widget.isBot ? botTailColor : userBubbleColor,
+        pointsLeft: widget.isBot,
+      ),
     );
 
     if (widget.isBot) {
@@ -411,7 +437,7 @@ class _ChatBubbleState extends State<ChatBubble> {
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             CircleAvatar(
-              radius: 20,
+              radius: 31.5,
               backgroundColor: Colors.white,
               foregroundImage: widget.avatarPath != null
                   ? AssetImage(widget.avatarPath!) as ImageProvider
@@ -420,7 +446,11 @@ class _ChatBubbleState extends State<ChatBubble> {
                   ? const Icon(Icons.smart_toy, size: 20, color: Colors.grey)
                   : null,
             ),
-            tail,
+            Transform.translate(
+              // 尻尾をバブル側へ重ねて“隙間見え”を防ぐ
+              offset: const Offset(2, 0),
+              child: tail,
+            ),
             ConstrainedBox(
               constraints: BoxConstraints(maxWidth: screenWidth * 0.65),
               child: bubbleBox,
@@ -440,7 +470,11 @@ class _ChatBubbleState extends State<ChatBubble> {
               constraints: BoxConstraints(maxWidth: screenWidth * 0.74),
               child: bubbleBox,
             ),
-            tail,
+            Transform.translate(
+              // 尻尾をバブル側へ重ねて“隙間見え”を防ぐ
+              offset: const Offset(-2, 0),
+              child: tail,
+            ),
           ],
         ),
       );
