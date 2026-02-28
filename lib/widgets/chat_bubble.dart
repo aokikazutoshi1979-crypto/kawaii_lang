@@ -48,6 +48,7 @@ class _ChatBubbleState extends State<ChatBubble> {
   bool _isPlaying = false;
   Duration _position = Duration.zero;
   Duration _duration = Duration.zero;
+  bool _visible = false;
 
   final FlutterTts _tts = FlutterTts();
 
@@ -73,6 +74,9 @@ class _ChatBubbleState extends State<ChatBubble> {
   @override
   void initState() {
     super.initState();
+    Future.microtask(() {
+      if (mounted) setState(() => _visible = true);
+    });
     _player = AudioPlayer();
 
     final rp = widget.recordingPath;
@@ -430,7 +434,7 @@ class _ChatBubbleState extends State<ChatBubble> {
       // ── Bot: 左寄せ [avatar] [bubble]
       const double avatarRadius = 31.5;
       const double avatarSlotWidth = (avatarRadius * 2) + 10; // avatar + gap
-      return Padding(
+      final content = Padding(
         padding: const EdgeInsets.symmetric(vertical: 6),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -457,9 +461,23 @@ class _ChatBubbleState extends State<ChatBubble> {
           ],
         ),
       );
+      if (widget.labelType == 'info') {
+        return AnimatedSlide(
+          duration: const Duration(milliseconds: 200),
+          curve: Curves.easeOutCubic,
+          offset: _visible ? Offset.zero : const Offset(0, 0.08),
+          child: AnimatedOpacity(
+            duration: const Duration(milliseconds: 200),
+            curve: Curves.easeOut,
+            opacity: _visible ? 1.0 : 0.0,
+            child: content,
+          ),
+        );
+      }
+      return content;
     } else {
       // ── User: 右寄せ [bubble]
-      return Padding(
+      final content = Padding(
         padding: const EdgeInsets.symmetric(vertical: 6),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.end,
@@ -470,6 +488,17 @@ class _ChatBubbleState extends State<ChatBubble> {
               child: bubbleBox,
             ),
           ],
+        ),
+      );
+      return AnimatedSlide(
+        duration: const Duration(milliseconds: 200),
+        curve: Curves.easeOutCubic,
+        offset: _visible ? Offset.zero : const Offset(0, 0.08),
+        child: AnimatedOpacity(
+          duration: const Duration(milliseconds: 200),
+          curve: Curves.easeOut,
+          opacity: _visible ? 1.0 : 0.0,
+          child: content,
         ),
       );
     }

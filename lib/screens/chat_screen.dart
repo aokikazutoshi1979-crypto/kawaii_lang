@@ -1272,9 +1272,9 @@ class _ChatScreenState extends State<ChatScreen> {
           useAnswerPrefix: false,
           skipFirstBubble: true,           // ←①を出さない
           addAccuracyNoticeBubble: true,   // ←“的確です”通知を表示
+          addFollowupTumugiReply: true,    // ←正解時の追加コメントも同時表示
           onlyFirstBubble: false,          // ←②以降も続ける
         );
-        await _enqueueTumugiReply();
         return;
       }
 
@@ -1323,16 +1323,17 @@ class _ChatScreenState extends State<ChatScreen> {
         _pendingAudioPath = null;
         _pendingDurationMs = null;
 
-        // キャラクター精度フィードバック（意味NG）
-        setState(() {
-          _messages.add({
-            'role': 'bot',
-            'text': _selectedCharacter == CharacterAssetService.kasumi
-                ? loc.kasumiAccuracyIncorrect
-                : loc.tumugiAccuracyIncorrect,
-            'labelType': 'info',
+        final accuracyFeedbackText = _selectedCharacter == CharacterAssetService.kasumi
+            ? loc.kasumiAccuracyIncorrect
+            : loc.tumugiAccuracyIncorrect;
+        final pendingBotMessages = <Map<String, dynamic>>[];
+        void flushPendingBotMessages() {
+          if (!mounted || pendingBotMessages.isEmpty) return;
+          setState(() {
+            _messages.addAll(pendingBotMessages);
           });
-        });
+          pendingBotMessages.clear();
+        }
 
         // 1) オリジナルの翻訳（ターゲット言語）
         final prompt6 = PromptBuilders.buildOriginalQuestionTranslationPrompt(
@@ -1370,32 +1371,37 @@ class _ChatScreenState extends State<ChatScreen> {
             ..add(transcription6!);  // 転写テキストだけ追加
         }
 
-        setState(() {
-          // キャラクターの正解案内セリフ
-          _messages.add({
-            'role': 'tumugi',
-            'text': _selectedCharacter == CharacterAssetService.kasumi
-                ? tsumugi_prompt.kasumiCorrectAnswerIntro(_nativeCode)
-                : tsumugi_prompt.tsumugiCorrectAnswerIntro(_nativeCode),
-            'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
-          });
-          _messages.add({
-            'role': 'bot',
-            // ★ ハイライト用（黄色ボックスの内容）
-            'highlightTitle': loc.answerTranslationPrefix,  // 例: 修正例
-            'highlightBody':  highlightLines.join('\n'),
-            'text': '',
-            'showAvatar': false,
+        // キャラクター精度フィードバック（意味NG）
+        pendingBotMessages.add({
+          'role': 'bot',
+          'text': accuracyFeedbackText,
+          'labelType': 'info',
+        });
 
-            // 🔊 音声ボタン（本文に重複表示はしない）
-            'tts': translatedText,
-            'showTtsBody': false,
-            'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
+        // キャラクターの正解案内セリフ
+        pendingBotMessages.add({
+          'role': 'tumugi',
+          'text': _selectedCharacter == CharacterAssetService.kasumi
+              ? tsumugi_prompt.kasumiCorrectAnswerIntro(_nativeCode)
+              : tsumugi_prompt.tsumugiCorrectAnswerIntro(_nativeCode),
+          'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
+        });
+        pendingBotMessages.add({
+          'role': 'bot',
+          // ★ ハイライト用（黄色ボックスの内容）
+          'highlightTitle': loc.answerTranslationPrefix,  // 例: 修正例
+          'highlightBody':  highlightLines.join('\n'),
+          'text': '',
+          'showAvatar': false,
 
-            'targetLang': widget.targetLang,
-            // ← これで下側の「tts本文テキスト」を消せる
-            // 'showTtsBody': false,
-          });
+          // 🔊 音声ボタン（本文に重複表示はしない）
+          'tts': translatedText,
+          'showTtsBody': false,
+          'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
+
+          'targetLang': widget.targetLang,
+          // ← これで下側の「tts本文テキスト」を消せる
+          // 'showTtsBody': false,
         });
 
         // 5) 類似表現（ターゲット言語）を生成（同一文は再生成）
@@ -1410,7 +1416,10 @@ class _ChatScreenState extends State<ChatScreen> {
           loc: loc,
           avoidList: [rawInput, translatedText],
         );
-        if (similar == null || similar.isEmpty) return; // 念のためガード
+        if (similar == null || similar.isEmpty) {
+          flushPendingBotMessages();
+          return;
+        } // 念のためガード
 
         String? similarRomaji;
         if (_targetCode == 'ja' && userRomaji != null) {
@@ -1467,32 +1476,31 @@ class _ChatScreenState extends State<ChatScreen> {
 
         // 8) 2つ目の吹き出しを表示
         // テキスト部は見出し（類似表現）だけにして、本文は tts/nativetext/transcription に流す
-        setState(() {
-          _messages.add({
-            'role': 'tumugi',
-            'text': _selectedCharacter == CharacterAssetService.kasumi
-                ? tsumugi_prompt.kasumiSimilarExpressionIntro(_nativeCode)
-                : tsumugi_prompt.tsumugiSimilarExpressionIntro(_nativeCode),
-            'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
-          });
-          _messages.add({
-            'role': 'bot',
-            // ★ ハイライト用（薄い緑色のボックスの内容）
-            'highlightTitle': loc.similarExpressionHeader, // 例: 類似表現
-            'highlightBody':  simLines.join('\n'),                      // ← 再生ボタン＆本文表示
-            'showAvatar': false,
-
-            // ★ 音声ボタン（本文は出さない）
-            'tts': similar,              // ← これで再生アイコンが出る
-            'showTtsBody': false,        // ← ttsテキストを本文に重複表示しない
-
-            // ★ 通常本文（補足などを入れたいときだけ）
-            'targetLang': widget.targetLang,
-            // 'nativeText': nativeSimilar,         // ← 母語訳（ChatBubbleで本文下に表示）
-            // if (transcriptionSimilar != null) 'transcription': transcriptionSimilar,
-            // 'text': '', 
-          });
+        pendingBotMessages.add({
+          'role': 'tumugi',
+          'text': _selectedCharacter == CharacterAssetService.kasumi
+              ? tsumugi_prompt.kasumiSimilarExpressionIntro(_nativeCode)
+              : tsumugi_prompt.tsumugiSimilarExpressionIntro(_nativeCode),
+          'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
         });
+        pendingBotMessages.add({
+          'role': 'bot',
+          // ★ ハイライト用（薄い緑色のボックスの内容）
+          'highlightTitle': loc.similarExpressionHeader, // 例: 類似表現
+          'highlightBody':  simLines.join('\n'),                      // ← 再生ボタン＆本文表示
+          'showAvatar': false,
+
+          // ★ 音声ボタン（本文は出さない）
+          'tts': similar,              // ← これで再生アイコンが出る
+          'showTtsBody': false,        // ← ttsテキストを本文に重複表示しない
+
+          // ★ 通常本文（補足などを入れたいときだけ）
+          'targetLang': widget.targetLang,
+          // 'nativeText': nativeSimilar,         // ← 母語訳（ChatBubbleで本文下に表示）
+          // if (transcriptionSimilar != null) 'transcription': transcriptionSimilar,
+          // 'text': '',
+        });
+        flushPendingBotMessages();
 
         return;
       } 
@@ -1642,12 +1650,20 @@ class _ChatScreenState extends State<ChatScreen> {
     bool useAnswerPrefix = true,
     bool onlyFirstBubble = false,
     bool addAccuracyNoticeBubble = false,  // 追加：通知バブル
+    bool addFollowupTumugiReply = false,   // 追加：追従コメントも同時表示
     bool skipFirstBubble = false,          // 追加：①をスキップ
   }) async {
+    final pendingBotMessages = <Map<String, dynamic>>[];
+    void flushPendingBotMessages() {
+      if (!mounted || pendingBotMessages.isEmpty) return;
+      setState(() {
+        _messages.addAll(pendingBotMessages);
+      });
+      pendingBotMessages.clear();
+    }
+
     // ①：模範訳の生成（skipFirstBubble が false の場合のみやる）
     String? translatedText;
-    String? nativeOriginalText;
-    String? transcription6;
 
     if (!skipFirstBubble) {
       // ① 問6：模範訳の生成
@@ -1662,23 +1678,31 @@ class _ChatScreenState extends State<ChatScreen> {
       );
       if (res6 == null) {
         print('❌ 問6の翻訳に失敗しました');
+        if (addFollowupTumugiReply) {
+          pendingBotMessages.add({
+            'role': 'tumugi',
+            'text': _pickTumugiLine(),
+            'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
+          });
+        }
+        flushPendingBotMessages();
         return;
       }
-      final translatedText = res6.trim();
+      final translatedForFirst = res6.trim();
 
       // ——— ここから追加 ———
       // 問10’: オリジナル文の母語での逆翻訳
       final promptNative6 = PromptBuilders.buildSimilarQuestionInNativeLangPrompt(
-        translatedText: translatedText,
+        translatedText: translatedForFirst,
         nativeLang: nativeName,
       );
       final String? nativeOriginal = await GptService.getChatResponse(
         promptNative6,
-        translatedText,
+        translatedForFirst,
         loc,
       );
       // “null” を捨てる
-      nativeOriginalText =
+      final String? nativeOriginalText =
           (nativeOriginal == null || nativeOriginal.toLowerCase() == 'null')
               ? null
               : nativeOriginal.trim();
@@ -1687,12 +1711,12 @@ class _ChatScreenState extends State<ChatScreen> {
       String? rawTrans6;
       if (const {'ja', 'zh', 'zh_tw', 'ko'}.contains(widget.targetLang)) {
         final promptTts6 = PromptBuilders.buildSimilarQuestionTtsPrompt(
-          translatedText: translatedText,
+          translatedText: translatedForFirst,
           targetLang: widget.targetLang,
         );
         rawTrans6 = await GptService.getChatResponse(
           promptTts6,
-          translatedText,
+          translatedForFirst,
           loc,
         );
       } else {
@@ -1704,54 +1728,55 @@ class _ChatScreenState extends State<ChatScreen> {
               : rawTrans6.trim();
       // ——— ここまで追加 ———
 
-      // ①の ChatBubble を表示
-      setState(() {
-        _messages.add({
-          'role': 'bot',
-          'text': useAnswerPrefix
-              ? loc.answerMeaningPrefix(translatedText)
-              : loc.answerTranslationPrefix,
-          'highlightBody': translatedText,   // 本文（例: Nice to meet you.）
-          'showAvatar': false,
+      // ①の ChatBubble を追加
+      pendingBotMessages.add({
+        'role': 'bot',
+        'text': useAnswerPrefix
+            ? loc.answerMeaningPrefix(translatedForFirst)
+            : loc.answerTranslationPrefix,
+        'highlightBody': translatedForFirst,   // 本文（例: Nice to meet you.）
+        'showAvatar': false,
 
-          'tts': translatedText,
-          'showTtsBody': false,              // 本文に重複表示させない
+        'tts': translatedForFirst,
+        'showTtsBody': false,              // 本文に重複表示させない
 
-          'targetLang': widget.targetLang,
-          // 追加分をもし取れたらキーに含める
-          if (nativeOriginalText != null) 'nativeText': nativeOriginalText,
-          if (transcription6    != null) 'transcription': transcription6,
-        });
+        'targetLang': widget.targetLang,
+        // 追加分をもし取れたらキーに含める
+        if (nativeOriginalText != null) 'nativeText': nativeOriginalText,
+        if (transcription6    != null) 'transcription': transcription6,
       });
     }
 
     // ★ 正解通知バブル（②以降の”上”に差し込む）
     if (addAccuracyNoticeBubble) {
-      setState(() {
-        _messages.add({
-          'role': 'bot',
-          'text': _selectedCharacter == CharacterAssetService.kasumi
-              ? loc.kasumiAccuracyCorrect
-              : loc.tumugiAccuracyCorrect,
-          'labelType': 'info',
-        });
+      pendingBotMessages.add({
+        'role': 'bot',
+        'text': _selectedCharacter == CharacterAssetService.kasumi
+            ? loc.kasumiAccuracyCorrect
+            : loc.tumugiAccuracyCorrect,
+        'labelType': 'info',
       });
     }
 
-    // ✅ 「①だけで終わる」モードの早期終了は残すが、
-    //    今回は skipFirstBubble=true のときはここに来ないので影響なし
-    if (onlyFirstBubble) return;
+    // ✅ 「①だけで終わる」モード
+    if (onlyFirstBubble) {
+      if (addFollowupTumugiReply) {
+        pendingBotMessages.add({
+          'role': 'tumugi',
+          'text': _pickTumugiLine(),
+          'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
+        });
+      }
+      flushPendingBotMessages();
+      return;
+    }
 
     // ②：類似表現
-    //   ※ ①をスキップしているので、ここは questionText → translatedText を使わずに
-    //      「類似表現を直接生成」する既存のプロンプトを使用（translatedText ではなく questionText 由来の意味でOKな設計なら、buildSimilarQuestionPromptの引数を translatedText にしても良い）
     final String seedForSimilar = (translatedText ?? questionText);
-    
-    // ② 問8：類似表現を生成（同一文は再生成）
     final avoidList = <String>[];
     if (rawInput != null && rawInput.trim().isNotEmpty) avoidList.add(rawInput);
-    if (translatedText != null && translatedText!.trim().isNotEmpty) {
-      avoidList.add(translatedText!);
+    if (translatedText != null && translatedText.trim().isNotEmpty) {
+      avoidList.add(translatedText);
     }
     String? userRomaji;
     if (_targetCode == 'ja' && rawInput != null && rawInput.trim().isNotEmpty) {
@@ -1767,6 +1792,14 @@ class _ChatScreenState extends State<ChatScreen> {
 
     if (similar == null || similar.trim().isEmpty) {
       print('❌ 問8の類似表現生成に失敗しました');
+      if (addFollowupTumugiReply) {
+        pendingBotMessages.add({
+          'role': 'tumugi',
+          'text': _pickTumugiLine(),
+          'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
+        });
+      }
+      flushPendingBotMessages();
       return;
     }
 
@@ -1801,6 +1834,14 @@ class _ChatScreenState extends State<ChatScreen> {
 
     if (nativeSimilar == null) {
       print('❌ 問10の母語での訳生成に失敗しました');
+      if (addFollowupTumugiReply) {
+        pendingBotMessages.add({
+          'role': 'tumugi',
+          'text': _pickTumugiLine(),
+          'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
+        });
+      }
+      flushPendingBotMessages();
       return;
     }
 
@@ -1840,32 +1881,38 @@ class _ChatScreenState extends State<ChatScreen> {
     }
 
     // まとめて ChatBubble に表示
-    setState(() {
-      _messages.add({
+    pendingBotMessages.add({
+      'role': 'tumugi',
+      'text': _selectedCharacter == CharacterAssetService.kasumi
+          ? tsumugi_prompt.kasumiSimilarExpressionIntro(_nativeCode)
+          : tsumugi_prompt.tsumugiSimilarExpressionIntro(_nativeCode),
+      'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
+    });
+    pendingBotMessages.add({
+      'role': 'bot',
+
+      // 🔶 黄色ハイライト
+      'highlightTitle': loc.similarExpressionHeader, // 例: 類似表現
+      'highlightBody': simLines.join('\n'),
+      'showAvatar': false,
+
+      // TTS は similar のみ
+      'tts': similar,
+      'showTtsBody': false,
+
+      'targetLang': widget.targetLang,
+      // 'nativeText':  nativeSimilar,   // ← ChatBubble で拾って表示
+      // transcription が null のときはキーごと省略したい場合は
+      // if (transcription != null) 'transcription': transcription,
+    });
+    if (addFollowupTumugiReply) {
+      pendingBotMessages.add({
         'role': 'tumugi',
-        'text': _selectedCharacter == CharacterAssetService.kasumi
-            ? tsumugi_prompt.kasumiSimilarExpressionIntro(_nativeCode)
-            : tsumugi_prompt.tsumugiSimilarExpressionIntro(_nativeCode),
+        'text': _pickTumugiLine(),
         'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
       });
-      _messages.add({
-        'role': 'bot',
-
-        // 🔶 黄色ハイライト
-        'highlightTitle': loc.similarExpressionHeader, // 例: 類似表現
-        'highlightBody': simLines.join('\n'),
-        'showAvatar': false,
-
-        // TTS は similar のみ
-        'tts': similar,
-        'showTtsBody': false,
-
-        'targetLang': widget.targetLang,
-        // 'nativeText':  nativeSimilar,   // ← ChatBubble で拾って表示
-        // transcription が null のときはキーごと省略したい場合は
-        // if (transcription != null) 'transcription': transcription,
-      });
-    });
+    }
+    flushPendingBotMessages();
   }
 
   void _cancelInput() {
