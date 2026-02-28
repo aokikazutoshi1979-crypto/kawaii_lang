@@ -1288,7 +1288,7 @@ class _ChatScreenState extends State<ChatScreen> {
       final res7 = await GptService.getChatResponse(minimalPrompt, rawInput, loc);
       final answer7 = _parseAnswer(res7);
 
-      // ① or ② の両方で同じフロー（違いは incorrectLine を出すかどうかだけ）
+      // ① or ② の両方で同じフロー
       if (answer7 == '1' || answer7 == '2') {
         if (rawInput == null || rawInput.trim().isEmpty) {
           setState(() {
@@ -1358,33 +1358,7 @@ class _ChatScreenState extends State<ChatScreen> {
           }
         }
 
-        // 3) オリジナルの解説（100文字以内）
-        final prompt01 = PromptBuilders.buildPrompt01(
-          userAnswer:       rawInput,
-          originalQuestion: questionText,
-          targetLang:       targetName,
-          nativeLang:       nativeName,
-        );
-        final String? expl01 = await GptService.getChatResponse(prompt01, questionText, loc);
-        final String explanation01 = (expl01 ?? '').trim();
-
-        // ★ answer7==1 のときだけ Prompt02 を呼ぶ
-        String? explanation02;
-        if (answer7 == '1') {
-          final prompt02 = PromptBuilders.buildPrompt02(
-            userAnswer:       rawInput,
-            originalQuestion: questionText,
-            targetLang:       targetName,
-            nativeLang:       nativeName,
-          );
-          final String? expl02 = await GptService.getChatResponse(prompt02, questionText, loc);
-          explanation02 = (expl02 ?? '').trim();
-        }
-
-        // 4) 1つ目の吹き出しを表示
-        //    answer7==2 のときだけ incorrectLine を含める。==1 なら省く。
-        final bool showIncorrectLine = (answer7 == '2');
-        final incorrectLine = loc.incorrectMessageWithRaw('"$rawInput"');
+        // 3) 1つ目の吹き出し（修正例ハイライト）を表示
 
         // 🔶 ハイライト本文（訳文＋転写を全部ここに入れる）
         final highlightLines = <String>[];
@@ -1395,21 +1369,6 @@ class _ChatScreenState extends State<ChatScreen> {
             ..add('')                // 改行で1行空ける
             ..add(transcription6!);  // 転写テキストだけ追加
         }
-
-        final List<String> meaningLines = [];
-        if (showIncorrectLine) {
-          meaningLines.add(incorrectLine);
-        }
-        // ★ explanation02 があるときは 1行空けて追加
-        if (explanation02 != null && explanation02.isNotEmpty) {
-          if (meaningLines.isNotEmpty) meaningLines.add('');
-          meaningLines.add(explanation02);
-        }
-        if (explanation01.isNotEmpty) {
-          if (meaningLines.isNotEmpty) meaningLines.add('');
-          meaningLines.add(explanation01);
-        }
-        final meaningText = meaningLines.join('\n');
 
         setState(() {
           // キャラクターの正解案内セリフ
@@ -1436,14 +1395,6 @@ class _ChatScreenState extends State<ChatScreen> {
             // ← これで下側の「tts本文テキスト」を消せる
             // 'showTtsBody': false,
           });
-          if (meaningText.isNotEmpty) {
-            _messages.add({
-              'role': 'bot',
-              'text': meaningText,
-              'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
-              'targetLang': widget.targetLang,
-            });
-          }
         });
 
         // 5) 類似表現（ターゲット言語）を生成（同一文は再生成）
