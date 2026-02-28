@@ -428,6 +428,8 @@ class _ChatBubbleState extends State<ChatBubble> {
 
     if (widget.isBot) {
       // ── Bot: 左寄せ [avatar] [bubble]
+      const double avatarRadius = 31.5;
+      const double avatarSlotWidth = (avatarRadius * 2) + 10; // avatar + gap
       return Padding(
         padding: const EdgeInsets.symmetric(vertical: 6),
         child: Row(
@@ -436,7 +438,7 @@ class _ChatBubbleState extends State<ChatBubble> {
           children: [
             if (widget.showAvatar) ...[
               CircleAvatar(
-                radius: 31.5,
+                radius: avatarRadius,
                 backgroundColor: Colors.white,
                 foregroundImage: widget.avatarPath != null
                     ? AssetImage(widget.avatarPath!) as ImageProvider
@@ -446,7 +448,8 @@ class _ChatBubbleState extends State<ChatBubble> {
                     : null,
               ),
               const SizedBox(width: 10),
-            ],
+            ] else
+              const SizedBox(width: avatarSlotWidth),
             ConstrainedBox(
               constraints: BoxConstraints(maxWidth: screenWidth * 0.65),
               child: bubbleBox,
