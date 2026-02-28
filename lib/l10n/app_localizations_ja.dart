@@ -607,6 +607,18 @@ class AppLocalizationsJa extends AppLocalizations {
   String get answerMeaningAccurate => 'この回答は出題の意味ついて的確に表しています。';
 
   @override
+  String get tumugiAccuracyCorrect => '意味もバッチリ！すごく上手だよ！';
+
+  @override
+  String get kasumiAccuracyCorrect => '…ま、まあ意味はあってるわよ。べ、別にすごいって言ってるわけじゃないけど。';
+
+  @override
+  String get tumugiAccuracyIncorrect => '意味が少しズレちゃったかな…一緒に確認しようね！';
+
+  @override
+  String get kasumiAccuracyIncorrect => '意味が違うわよ…でもまあ、次はできるでしょ。';
+
+  @override
   String get tsumugiIntroTitle => 'はじめまして、紬です';
 
   @override

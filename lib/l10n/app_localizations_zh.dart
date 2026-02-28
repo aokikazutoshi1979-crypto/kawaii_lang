@@ -601,6 +601,22 @@ class AppLocalizationsZh extends AppLocalizations {
   String get answerMeaningAccurate => '此回答准确地表达了题目的含义。';
 
   @override
+  String get tumugiAccuracyCorrect =>
+      'Your answer captures the meaning just right!';
+
+  @override
+  String get kasumiAccuracyCorrect =>
+      'W-Well, the meaning is correct... not that I\'m saying you did great or anything.';
+
+  @override
+  String get tumugiAccuracyIncorrect =>
+      'Hmm, the meaning is a little off... let\'s look together!';
+
+  @override
+  String get kasumiAccuracyIncorrect =>
+      'The meaning is off... but hey, I know you\'ll get it next time.';
+
+  @override
   String get tsumugiIntroTitle => '初次见面，我是紬';
 
   @override
@@ -1300,6 +1316,22 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get answerMeaningAccurate => '此回答準確地表達了題目的含義。';
+
+  @override
+  String get tumugiAccuracyCorrect =>
+      'Your answer captures the meaning just right!';
+
+  @override
+  String get kasumiAccuracyCorrect =>
+      'W-Well, the meaning is correct... not that I\'m saying you did great or anything.';
+
+  @override
+  String get tumugiAccuracyIncorrect =>
+      'Hmm, the meaning is a little off... let\'s look together!';
+
+  @override
+  String get kasumiAccuracyIncorrect =>
+      'The meaning is off... but hey, I know you\'ll get it next time.';
 
   @override
   String get tsumugiProfileMenuTitle => '關於紬';

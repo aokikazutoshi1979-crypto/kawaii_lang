@@ -1211,6 +1211,30 @@ abstract class AppLocalizations {
   /// **'この回答は出題の意味ついて的確に表しています。'**
   String get answerMeaningAccurate;
 
+  /// 紬：ユーザーの回答が正解（意味OK）のときのセリフ
+  ///
+  /// In ja, this message translates to:
+  /// **'意味もバッチリ！すごく上手だよ！'**
+  String get tumugiAccuracyCorrect;
+
+  /// 香澄：ユーザーの回答が正解（意味OK）のときのセリフ
+  ///
+  /// In ja, this message translates to:
+  /// **'…ま、まあ意味はあってるわよ。べ、別にすごいって言ってるわけじゃないけど。'**
+  String get kasumiAccuracyCorrect;
+
+  /// 紬：ユーザーの回答が不正解（意味NG）のときのセリフ
+  ///
+  /// In ja, this message translates to:
+  /// **'意味が少しズレちゃったかな…一緒に確認しようね！'**
+  String get tumugiAccuracyIncorrect;
+
+  /// 香澄：ユーザーの回答が不正解（意味NG）のときのセリフ
+  ///
+  /// In ja, this message translates to:
+  /// **'意味が違うわよ…でもまあ、次はできるでしょ。'**
+  String get kasumiAccuracyIncorrect;
+
   /// No description provided for @tsumugiIntroTitle.
   ///
   /// In ja, this message translates to:

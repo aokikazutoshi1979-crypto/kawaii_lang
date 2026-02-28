@@ -366,6 +366,22 @@
   "@answerMeaningAccurate": {
     "description": "ユーザーの回答が出題の意味を的確に表している場合に表示されるメッセージ"
   },
+  "tumugiAccuracyCorrect": "意味もバッチリ！すごく上手だよ！",
+  "@tumugiAccuracyCorrect": {
+    "description": "紬：ユーザーの回答が正解（意味OK）のときのセリフ"
+  },
+  "kasumiAccuracyCorrect": "…ま、まあ意味はあってるわよ。べ、別にすごいって言ってるわけじゃないけど。",
+  "@kasumiAccuracyCorrect": {
+    "description": "香澄：ユーザーの回答が正解（意味OK）のときのセリフ"
+  },
+  "tumugiAccuracyIncorrect": "意味が少しズレちゃったかな…一緒に確認しようね！",
+  "@tumugiAccuracyIncorrect": {
+    "description": "紬：ユーザーの回答が不正解（意味NG）のときのセリフ"
+  },
+  "kasumiAccuracyIncorrect": "意味が違うわよ…でもまあ、次はできるでしょ。",
+  "@kasumiAccuracyIncorrect": {
+    "description": "香澄：ユーザーの回答が不正解（意味NG）のときのセリフ"
+  },
   "tsumugiIntroTitle": "はじめまして、紬です",
   "tsumugiIntroBody": "ここでは、短い一言から練習できます。うまく言えなくても大丈夫。ゆっくり一緒にいこ？",
   "tsumugiIntroStartButton": "はじめる",

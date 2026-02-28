@@ -1318,6 +1318,17 @@ class _ChatScreenState extends State<ChatScreen> {
         _pendingAudioPath = null;
         _pendingDurationMs = null;
 
+        // キャラクター精度フィードバック（意味NG）
+        setState(() {
+          _messages.add({
+            'role': 'bot',
+            'text': _selectedCharacter == CharacterAssetService.kasumi
+                ? loc.kasumiAccuracyIncorrect
+                : loc.tumugiAccuracyIncorrect,
+            'labelType': 'info',
+          });
+        });
+
         // 1) オリジナルの翻訳（ターゲット言語）
         final prompt6 = PromptBuilders.buildOriginalQuestionTranslationPrompt(
           originalQuestion: questionText,
@@ -1730,13 +1741,15 @@ class _ChatScreenState extends State<ChatScreen> {
       });
     }
 
-    // ★ 正解通知バブル（②以降の“上”に差し込む）
+    // ★ 正解通知バブル（②以降の”上”に差し込む）
     if (addAccuracyNoticeBubble) {
       setState(() {
         _messages.add({
           'role': 'bot',
-          'text': loc.answerMeaningAccurate, // ← arbのキー名に合わせて
-          'labelType': 'info',               // 任意（UIで淡色など）
+          'text': _selectedCharacter == CharacterAssetService.kasumi
+              ? loc.kasumiAccuracyCorrect
+              : loc.tumugiAccuracyCorrect,
+          'labelType': 'info',
         });
       });
     }
