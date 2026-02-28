@@ -254,6 +254,10 @@ class _ChatBubbleState extends State<ChatBubble> {
     final showRecording = hasRecording;
     final hasContentBelowHighlight =
         showUserLabel || showMainRow || showNativeText || showTranscription || showTtsBody || showRecording;
+    final mainTextStyle =
+        (widget.isBot && widget.labelType == 'info')
+            ? const TextStyle(fontSize: 16, height: 1.4)
+            : const TextStyle(fontSize: 18, height: 1.4);
 
     final borderRadius = const BorderRadius.all(Radius.circular(18));
 
@@ -353,7 +357,7 @@ class _ChatBubbleState extends State<ChatBubble> {
                   Expanded(
                     child: Text(
                       widget.text,
-                      style: const TextStyle(fontSize: 18, height: 1.4),
+                      style: mainTextStyle,
                     ),
                   ),
                 if (widget.isBot && widget.ttsText != null && widget.ttsText!.isNotEmpty)
