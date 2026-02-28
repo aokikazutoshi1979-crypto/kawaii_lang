@@ -1502,6 +1502,13 @@ class _ChatScreenState extends State<ChatScreen> {
         // テキスト部は見出し（類似表現）だけにして、本文は tts/nativetext/transcription に流す
         setState(() {
           _messages.add({
+            'role': 'tumugi',
+            'text': _selectedCharacter == CharacterAssetService.kasumi
+                ? tsumugi_prompt.kasumiSimilarExpressionIntro(_nativeCode)
+                : tsumugi_prompt.tsumugiSimilarExpressionIntro(_nativeCode),
+            'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
+          });
+          _messages.add({
             'role': 'bot',
             // ★ ハイライト用（薄い緑色のボックスの内容）
             'highlightTitle': loc.similarExpressionHeader, // 例: 類似表現
@@ -1865,6 +1872,13 @@ class _ChatScreenState extends State<ChatScreen> {
 
     // まとめて ChatBubble に表示
     setState(() {
+      _messages.add({
+        'role': 'tumugi',
+        'text': _selectedCharacter == CharacterAssetService.kasumi
+            ? tsumugi_prompt.kasumiSimilarExpressionIntro(_nativeCode)
+            : tsumugi_prompt.tsumugiSimilarExpressionIntro(_nativeCode),
+        'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
+      });
       _messages.add({
         'role': 'bot',
 

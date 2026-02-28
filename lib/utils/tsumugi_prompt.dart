@@ -512,6 +512,156 @@ List<String> _kasumiCorrectIntroLines(String lang) {
   }
 }
 
+// ─────────────────────────────────────────────
+// 類似表現案内セリフ（正解時の黄色バブルの前に表示）
+// ─────────────────────────────────────────────
+
+String tsumugiSimilarExpressionIntro(String uiLanguageCode) {
+  final lang = _norm(uiLanguageCode);
+  final rnd = Random();
+  final lines = _tsumugiSimilarIntroLines(lang);
+  return lines[rnd.nextInt(lines.length)];
+}
+
+String kasumiSimilarExpressionIntro(String uiLanguageCode) {
+  final lang = _norm(uiLanguageCode);
+  final rnd = Random();
+  final lines = _kasumiSimilarIntroLines(lang);
+  return lines[rnd.nextInt(lines.length)];
+}
+
+List<String> _tsumugiSimilarIntroLines(String lang) {
+  switch (lang) {
+    case 'ja':
+      return [
+        'こんな言い方もあるよ〜☺️',
+        'あとね、似たフレーズも教えるね！',
+        'こういう表現もあるんだ☺️',
+      ];
+    case 'ko':
+      return [
+        '이런 표현도 있어~☺️',
+        '비슷한 말도 알려줄게!',
+        '이렇게도 말할 수 있어☺️',
+      ];
+    case 'zh':
+      return [
+        '还有这种说法哦~☺️',
+        '来，再教你一个类似的表达！',
+        '这样说也可以☺️',
+      ];
+    case 'zh_tw':
+      return [
+        '還有這種說法哦~☺️',
+        '來，再教你一個類似的表達！',
+        '這樣說也可以☺️',
+      ];
+    case 'es':
+      return [
+        'También puedes decirlo así~☺️',
+        '¡Mira, hay otra forma de decirlo!',
+        'Esta expresión también funciona☺️',
+      ];
+    case 'fr':
+      return [
+        'On peut aussi le dire comme ça~☺️',
+        'Tiens, voici une autre façon de le dire !',
+        'Cette expression marche aussi☺️',
+      ];
+    case 'de':
+      return [
+        'Man kann es auch so sagen~☺️',
+        'Schau, hier ist noch eine andere Ausdrucksweise!',
+        'Das geht auch☺️',
+      ];
+    case 'vi':
+      return [
+        'Cũng có thể nói như thế này nè~☺️',
+        'Để mình chỉ thêm một cách nói tương tự nhé!',
+        'Cách này cũng được☺️',
+      ];
+    case 'id':
+      return [
+        'Ada juga cara lain untuk mengatakannya~☺️',
+        'Nih, ada ekspresi serupa yang bisa dipakai!',
+        'Ini juga bisa digunakan☺️',
+      ];
+    case 'en':
+    default:
+      return [
+        'Here\'s another way to say it~☺️',
+        'Oh, there\'s a similar expression too!',
+        'You could also say it like this☺️',
+      ];
+  }
+}
+
+List<String> _kasumiSimilarIntroLines(String lang) {
+  switch (lang) {
+    case 'ja':
+      return [
+        '…ついでに、こういう言い方もあるから。',
+        '参考程度に教えてあげる。',
+        'べ、別に親切にしてるわけじゃないけど。こんな表現も覚えておいて。',
+      ];
+    case 'ko':
+      return [
+        '…겸사겸사, 이런 말도 있으니까.',
+        '참고 삼아 알려줄게.',
+        '딱히 친절하게 구는 건 아닌데. 이런 표현도 기억해둬.',
+      ];
+    case 'zh':
+      return [
+        '…顺便说一句，还有这种说法。',
+        '给你参考一下。',
+        '不是特别好心才告诉你的。这个表达也记一下。',
+      ];
+    case 'zh_tw':
+      return [
+        '…順便說一句，還有這種說法。',
+        '給你參考一下。',
+        '不是特別好心才告訴你的。這個表達也記一下。',
+      ];
+    case 'es':
+      return [
+        '…Ya que estamos, también existe esta expresión.',
+        'Te lo digo de referencia.',
+        'No es que quiera ser amable o algo así. Recuerda esta también.',
+      ];
+    case 'fr':
+      return [
+        '…Tant qu\'on y est, il y a aussi cette façon de dire.',
+        'Pour ta culture personnelle.',
+        'C\'est pas que je sois sympa ou quoi. Retiens ça aussi.',
+      ];
+    case 'de':
+      return [
+        '…Und nebenbei, es gibt auch diesen Ausdruck.',
+        'Zur Information für dich.',
+        'Ich bin nicht besonders nett oder so. Merk dir das auch.',
+      ];
+    case 'vi':
+      return [
+        '…Nhân tiện, còn có cách nói này nữa.',
+        'Để tham khảo thêm cho bạn.',
+        'Không phải mình tốt bụng hay gì. Nhớ cả cái này đi.',
+      ];
+    case 'id':
+      return [
+        '…Sekalian, ada juga ungkapan seperti ini.',
+        'Sebagai referensi untukmu.',
+        'Bukan berarti aku baik hati ya. Ingat yang ini juga.',
+      ];
+    case 'en':
+    default:
+      return [
+        '…By the way, there\'s also this expression.',
+        'Just for your reference.',
+        'It\'s not like I\'m being nice or anything. Remember this one too.',
+      ];
+  }
+}
+
 List<String> _kasumiQuestionLineTemplates(String lang) {
   switch (lang) {
     case 'ja':
