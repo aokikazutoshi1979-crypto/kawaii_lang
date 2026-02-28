@@ -227,6 +227,7 @@ class _ChatBubbleState extends State<ChatBubble> {
         (widget.highlightTitle != null && widget.highlightTitle!.isNotEmpty) ||
         (widget.highlightBody  != null && widget.highlightBody!.isNotEmpty);
     final bool hasTts = widget.isBot && (widget.ttsText?.isNotEmpty ?? false);
+    final bool hasBodyText = widget.text.trim().isNotEmpty;
 
     // ラベル判定（ユーザー側のみ）
     String? labelText;
@@ -240,6 +241,17 @@ class _ChatBubbleState extends State<ChatBubble> {
         labelBg   = const Color(0xFF1E88E5);
       }
     }
+    final showUserLabel = !widget.isBot && labelText != null;
+    final showMainRow =
+        hasBodyText || (widget.isBot && !hasHighlight && hasTts);
+    final showNativeText = !hasHighlight && widget.nativeText != null;
+    final showTranscription =
+        !hasHighlight && widget.transcription != null && widget.transcription!.isNotEmpty;
+    final showTtsBody =
+        widget.showTtsBody && widget.ttsText != null && widget.ttsText!.isNotEmpty;
+    final showRecording = hasRecording;
+    final hasContentBelowHighlight =
+        showUserLabel || showMainRow || showNativeText || showTranscription || showTtsBody || showRecording;
 
     final borderRadius = const BorderRadius.all(Radius.circular(18));
 
@@ -307,11 +319,11 @@ class _ChatBubbleState extends State<ChatBubble> {
                 ],
               ),
             ),
-            const SizedBox(height: 8),
+            if (hasContentBelowHighlight) const SizedBox(height: 8),
           ],
 
           // ① ユーザー発言でラベルがあるとき
-          if (!widget.isBot && labelText != null) ...[
+          if (showUserLabel) ...[
             Row(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -331,34 +343,36 @@ class _ChatBubbleState extends State<ChatBubble> {
           ],
 
           // ② 本文
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Expanded(
-                child: Text(
-                  widget.text,
-                  style: const TextStyle(fontSize: 18, height: 1.4),
-                ),
-              ),
-              if (widget.isBot && widget.ttsText != null && widget.ttsText!.isNotEmpty)
-                if (!hasHighlight && hasTts)
-                  IconButton(
-                    icon: const Icon(Icons.volume_up),
-                    onPressed: _speak,
+          if (showMainRow)
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                if (hasBodyText)
+                  Expanded(
+                    child: Text(
+                      widget.text,
+                      style: const TextStyle(fontSize: 18, height: 1.4),
+                    ),
                   ),
-            ],
-          ),
-          if (!hasHighlight && widget.nativeText != null)
+                if (widget.isBot && widget.ttsText != null && widget.ttsText!.isNotEmpty)
+                  if (!hasHighlight && hasTts)
+                    IconButton(
+                      icon: const Icon(Icons.volume_up),
+                      onPressed: _speak,
+                    ),
+              ],
+            ),
+          if (showNativeText)
             Padding(
               padding: const EdgeInsets.only(top: 4),
               child: Text(widget.nativeText!, style: const TextStyle(color: Colors.grey)),
             ),
-          if (!hasHighlight && widget.transcription != null && widget.transcription!.isNotEmpty)
+          if (showTranscription)
             Padding(
               padding: const EdgeInsets.only(top: 4),
               child: Text(widget.transcription!, style: const TextStyle(fontStyle: FontStyle.italic)),
             ),
-          if (widget.showTtsBody && widget.ttsText != null && widget.ttsText!.isNotEmpty) ...[
+          if (showTtsBody) ...[
             const SizedBox(height: 8),
             Text(
               widget.ttsText!,
@@ -366,7 +380,7 @@ class _ChatBubbleState extends State<ChatBubble> {
             ),
           ],
           // 🎤 録音再生チップ
-          if (hasRecording) ...[
+          if (showRecording) ...[
             const SizedBox(height: 8),
             Row(
               mainAxisSize: MainAxisSize.min,

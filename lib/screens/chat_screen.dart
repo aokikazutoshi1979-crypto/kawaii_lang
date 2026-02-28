@@ -1396,17 +1396,20 @@ class _ChatScreenState extends State<ChatScreen> {
             ..add(transcription6!);  // 転写テキストだけ追加
         }
 
-        final List<String> bodyLines = ['']; // 1行空け
+        final List<String> meaningLines = [];
         if (showIncorrectLine) {
-          bodyLines.add(incorrectLine);
-          bodyLines.add(''); // もう1行空け
+          meaningLines.add(incorrectLine);
         }
         // ★ explanation02 があるときは 1行空けて追加
         if (explanation02 != null && explanation02.isNotEmpty) {
-          bodyLines.add(explanation02);
-          bodyLines.add('');
+          if (meaningLines.isNotEmpty) meaningLines.add('');
+          meaningLines.add(explanation02);
         }
-        bodyLines.add(explanation01);
+        if (explanation01.isNotEmpty) {
+          if (meaningLines.isNotEmpty) meaningLines.add('');
+          meaningLines.add(explanation01);
+        }
+        final meaningText = meaningLines.join('\n');
 
         setState(() {
           // キャラクターの正解案内セリフ
@@ -1422,18 +1425,25 @@ class _ChatScreenState extends State<ChatScreen> {
             // ★ ハイライト用（黄色ボックスの内容）
             'highlightTitle': loc.answerTranslationPrefix,  // 例: 修正例
             'highlightBody':  highlightLines.join('\n'),
+            'text': '',
 
             // 🔊 音声ボタン（本文に重複表示はしない）
             'tts': translatedText,
             'showTtsBody': false,
-
-            // ★ 通常本文（ハイライトの下に続くテキスト）
-            'text': bodyLines.join('\n'),
+            'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
 
             'targetLang': widget.targetLang,
             // ← これで下側の「tts本文テキスト」を消せる
             // 'showTtsBody': false,
           });
+          if (meaningText.isNotEmpty) {
+            _messages.add({
+              'role': 'bot',
+              'text': meaningText,
+              'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
+              'targetLang': widget.targetLang,
+            });
+          }
         });
 
         // 5) 類似表現（ターゲット言語）を生成（同一文は再生成）
