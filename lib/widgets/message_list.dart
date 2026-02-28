@@ -21,6 +21,13 @@ class MessageList extends StatelessWidget {
       children: [
         if (header != null) header!,
         ...messages.map((msg) {
+          if (msg['role'] == 'thinking') {
+            return _ThinkingBubble(
+              text: msg['text'] ?? '',
+              avatarPath: msg['avatarPath'],
+              fadingOut: msg['fadingOut'] == true,
+            );
+          }
           if (msg['role'] == 'tumugi') {
             return TumugiBubble(
               text: msg['text'] ?? '',
@@ -47,6 +54,31 @@ class MessageList extends StatelessWidget {
           );
         }),
       ],
+    );
+  }
+}
+
+class _ThinkingBubble extends StatelessWidget {
+  const _ThinkingBubble({
+    required this.text,
+    required this.avatarPath,
+    required this.fadingOut,
+  });
+
+  final String text;
+  final String? avatarPath;
+  final bool fadingOut;
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedOpacity(
+      duration: const Duration(milliseconds: 180),
+      curve: Curves.easeOut,
+      opacity: fadingOut ? 0.0 : 1.0,
+      child: TumugiBubble(
+        text: text,
+        avatarPath: avatarPath,
+      ),
     );
   }
 }

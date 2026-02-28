@@ -72,7 +72,6 @@ class _ChatScreenState extends State<ChatScreen> {
   String get nativeName => getLangLabelEn(widget.nativeLang);
   String get targetName => getLangLabelEn(widget.targetLang);
   List<Map<String, dynamic>> _messages = [];
-  bool _isLoading = false;
   bool _hasInput = false;
   bool _hasSubmitted = false;
 
@@ -140,6 +139,7 @@ class _ChatScreenState extends State<ChatScreen> {
   bool _revealListeningText = false;
   String? _displayName;
   String _selectedCharacter = CharacterAssetService.defaultCharacter;
+  static const String _thinkingRole = 'thinking';
 
   String _pickTumugiLine() {
     final isKasumi = _selectedCharacter == CharacterAssetService.kasumi;
@@ -164,17 +164,42 @@ class _ChatScreenState extends State<ChatScreen> {
     return '$prefix$baseLine$joiner$nextPrompt';
   }
 
-  Future<void> _enqueueTumugiReply() async {
-    if (_messages.isEmpty || _messages.last['role'] == 'user') return;
-    final delayMs = 300 + _rng.nextInt(301);
-    await Future.delayed(Duration(milliseconds: delayMs));
-    if (!mounted) return;
+  Map<String, dynamic> _buildThinkingMessage() {
+    return {
+      'role': _thinkingRole,
+      'text': _selectedCharacter == CharacterAssetService.kasumi
+          ? 'えーっと…'
+          : 'えーっと…',
+      'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
+      'fadingOut': false,
+    };
+  }
+
+  Future<void> _flushPendingBotMessages(
+    List<Map<String, dynamic>> pendingBotMessages,
+  ) async {
+    if (!mounted || pendingBotMessages.isEmpty) return;
+
+    final thinkingIndex = _messages.lastIndexWhere(
+      (msg) => msg['role'] == _thinkingRole,
+    );
+    if (thinkingIndex != -1) {
+      final thinking = Map<String, dynamic>.from(_messages[thinkingIndex]);
+      if (thinking['fadingOut'] != true) {
+        setState(() {
+          _messages[thinkingIndex] = {
+            ...thinking,
+            'fadingOut': true,
+          };
+        });
+        await Future.delayed(const Duration(milliseconds: 180));
+        if (!mounted) return;
+      }
+    }
+
     setState(() {
-      _messages.add({
-        'role': 'tumugi',
-        'text': _pickTumugiLine(),
-        'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
-      });
+      _messages.removeWhere((msg) => msg['role'] == _thinkingRole);
+      _messages.addAll(pendingBotMessages);
     });
   }
 
@@ -1157,7 +1182,6 @@ class _ChatScreenState extends State<ChatScreen> {
     setState(() {
       _controller.clear();
       _hasInput = false;
-      _isLoading = true;
       _hasSubmitted = true;
     });
 
@@ -1217,6 +1241,8 @@ class _ChatScreenState extends State<ChatScreen> {
             }
           }
           _messages.add(userMsg);
+          _messages.removeWhere((msg) => msg['role'] == _thinkingRole);
+          _messages.add(_buildThinkingMessage());
 
           // 入力欄のクリア（必要なら）
           _controller.clear();
@@ -1313,6 +1339,8 @@ class _ChatScreenState extends State<ChatScreen> {
             }
           }
           _messages.add(userMsg);
+          _messages.removeWhere((msg) => msg['role'] == _thinkingRole);
+          _messages.add(_buildThinkingMessage());
 
           // 入力欄のクリア（必要なら）
           _controller.clear();
@@ -1327,11 +1355,8 @@ class _ChatScreenState extends State<ChatScreen> {
             ? loc.kasumiAccuracyIncorrect
             : loc.tumugiAccuracyIncorrect;
         final pendingBotMessages = <Map<String, dynamic>>[];
-        void flushPendingBotMessages() {
-          if (!mounted || pendingBotMessages.isEmpty) return;
-          setState(() {
-            _messages.addAll(pendingBotMessages);
-          });
+        Future<void> flushPendingBotMessages() async {
+          await _flushPendingBotMessages(pendingBotMessages);
           pendingBotMessages.clear();
         }
 
@@ -1417,7 +1442,7 @@ class _ChatScreenState extends State<ChatScreen> {
           avoidList: [rawInput, translatedText],
         );
         if (similar == null || similar.isEmpty) {
-          flushPendingBotMessages();
+          await flushPendingBotMessages();
           return;
         } // 念のためガード
 
@@ -1500,7 +1525,7 @@ class _ChatScreenState extends State<ChatScreen> {
           // if (transcriptionSimilar != null) 'transcription': transcriptionSimilar,
           // 'text': '',
         });
-        flushPendingBotMessages();
+        await flushPendingBotMessages();
 
         return;
       } 
@@ -1541,6 +1566,7 @@ class _ChatScreenState extends State<ChatScreen> {
       if (err.contains("RATE_LIMIT")) {
         final retrySec = 60;
         setState(() {
+          _messages.removeWhere((msg) => msg['role'] == _thinkingRole);
           _rateLimitResetTime = DateTime.now().add(Duration(seconds: retrySec));
           _hasShownRateLimitError = true;
           _messages.add({'role': 'bot', 'text': loc.errorRateLimit});
@@ -1553,12 +1579,12 @@ class _ChatScreenState extends State<ChatScreen> {
         });
       } else {
         setState(() {
+          _messages.removeWhere((msg) => msg['role'] == _thinkingRole);
           _messages.add({'role': 'bot', 'text': loc.errorBrokenGpt});
         });
       }
     } finally {
       setState(() {
-        _isLoading = false;
         _isKeyboardMode = false;
       });
     }
@@ -1654,11 +1680,8 @@ class _ChatScreenState extends State<ChatScreen> {
     bool skipFirstBubble = false,          // 追加：①をスキップ
   }) async {
     final pendingBotMessages = <Map<String, dynamic>>[];
-    void flushPendingBotMessages() {
-      if (!mounted || pendingBotMessages.isEmpty) return;
-      setState(() {
-        _messages.addAll(pendingBotMessages);
-      });
+    Future<void> flushPendingBotMessages() async {
+      await _flushPendingBotMessages(pendingBotMessages);
       pendingBotMessages.clear();
     }
 
@@ -1685,7 +1708,7 @@ class _ChatScreenState extends State<ChatScreen> {
             'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
           });
         }
-        flushPendingBotMessages();
+        await flushPendingBotMessages();
         return;
       }
       final translatedForFirst = res6.trim();
@@ -1767,7 +1790,7 @@ class _ChatScreenState extends State<ChatScreen> {
           'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
         });
       }
-      flushPendingBotMessages();
+      await flushPendingBotMessages();
       return;
     }
 
@@ -1799,7 +1822,7 @@ class _ChatScreenState extends State<ChatScreen> {
           'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
         });
       }
-      flushPendingBotMessages();
+      await flushPendingBotMessages();
       return;
     }
 
@@ -1841,7 +1864,7 @@ class _ChatScreenState extends State<ChatScreen> {
           'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
         });
       }
-      flushPendingBotMessages();
+      await flushPendingBotMessages();
       return;
     }
 
@@ -1912,7 +1935,7 @@ class _ChatScreenState extends State<ChatScreen> {
         'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
       });
     }
-    flushPendingBotMessages();
+    await flushPendingBotMessages();
   }
 
   void _cancelInput() {
@@ -2038,27 +2061,6 @@ class _ChatScreenState extends State<ChatScreen> {
                     botAvatarPath: CharacterAssetService.chatAvatar(_selectedCharacter),
                   ),
                 ),
-
-                if (_isLoading)
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        const SizedBox(
-                          width: 32,
-                          height: 32,
-                          child: CircularProgressIndicator(strokeWidth: 2),
-                        ),
-                        const SizedBox(height: 8),
-                        Text(
-                          AppLocalizations.of(context)!.checking,
-                          style: const TextStyle(fontSize: 16, color: Colors.white),
-                        ),
-                      ],
-                    ),
-                  ),
-
                 MicArea(
                   isListening: _isListening,
                   isKeyboardMode: _isKeyboardMode,
