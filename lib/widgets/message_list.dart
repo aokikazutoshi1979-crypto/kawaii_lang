@@ -58,7 +58,7 @@ class MessageList extends StatelessWidget {
   }
 }
 
-class _ThinkingBubble extends StatelessWidget {
+class _ThinkingBubble extends StatefulWidget {
   const _ThinkingBubble({
     required this.text,
     required this.avatarPath,
@@ -70,14 +70,55 @@ class _ThinkingBubble extends StatelessWidget {
   final bool fadingOut;
 
   @override
+  State<_ThinkingBubble> createState() => _ThinkingBubbleState();
+}
+
+class _ThinkingBubbleState extends State<_ThinkingBubble>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _controller;
+  late final Animation<double> _floatAnimation;
+  late final Animation<double> _scaleAnimation;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 900),
+    )..repeat(reverse: true);
+    final curved = CurvedAnimation(parent: _controller, curve: Curves.easeInOut);
+    _floatAnimation = Tween<double>(begin: 0, end: -2).animate(curved);
+    _scaleAnimation = Tween<double>(begin: 0.985, end: 1.0).animate(curved);
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return AnimatedOpacity(
       duration: const Duration(milliseconds: 180),
       curve: Curves.easeOut,
-      opacity: fadingOut ? 0.0 : 1.0,
-      child: TumugiBubble(
-        text: text,
-        avatarPath: avatarPath,
+      opacity: widget.fadingOut ? 0.0 : 1.0,
+      child: AnimatedBuilder(
+        animation: _controller,
+        child: TumugiBubble(
+          text: widget.text,
+          avatarPath: widget.avatarPath,
+        ),
+        builder: (context, child) {
+          return Transform.translate(
+            offset: Offset(0, _floatAnimation.value),
+            child: Transform.scale(
+              scale: _scaleAnimation.value,
+              alignment: Alignment.centerLeft,
+              child: child,
+            ),
+          );
+        },
       ),
     );
   }

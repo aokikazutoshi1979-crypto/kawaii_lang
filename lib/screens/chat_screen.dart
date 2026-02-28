@@ -165,11 +165,34 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   Map<String, dynamic> _buildThinkingMessage() {
+    final isKasumi = _selectedCharacter == CharacterAssetService.kasumi;
+    final isEnglishNative = _nativeCode == 'en';
+    final candidates = isEnglishNative
+        ? (isKasumi
+            ? const [
+                "I-I'm not stuck, okay?",
+                'Give me a sec.',
+                "I'm thinking this through.",
+              ]
+            : const [
+                'Hmm, thinking...',
+                'One sec.',
+                "I'm putting it together.",
+              ])
+        : (isKasumi
+            ? const [
+                'べ、別に迷ってないし',
+                'ちょっと待ちなさいよ',
+                'ちゃんと考えてるから',
+              ]
+            : const [
+                'うーん、考え中…',
+                'ちょっと待ってね',
+                '今まとめてるよ',
+              ]);
     return {
       'role': _thinkingRole,
-      'text': _selectedCharacter == CharacterAssetService.kasumi
-          ? 'えーっと…'
-          : 'えーっと…',
+      'text': candidates[_rng.nextInt(candidates.length)],
       'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
       'fadingOut': false,
     };
