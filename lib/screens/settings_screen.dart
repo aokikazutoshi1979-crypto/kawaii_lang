@@ -25,6 +25,7 @@ import 'tsumugi_profile_screen.dart';
 import 'kasumi_profile_screen.dart';
 import '../services/character_asset_service.dart';
 import '../widgets/particle_burst.dart';
+import 'package:kawaii_lang/services/tts_test_service.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({Key? key}) : super(key: key);
@@ -940,6 +941,16 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                           onTap: () => _onDangerAction(isAnon),
                         ),
                       ],
+                    ),
+                    // DEBUG: TTS音声テストボタン
+                    Center(
+                      child: TextButton(
+                        onPressed: () => TtsTestService.instance.speak(
+                          '音声テストです。紬が話しています。',
+                          'tumugi',
+                        ),
+                        child: const Text('[DEBUG] 音声テスト'),
+                      ),
                     ),
                   ],
                 ),
