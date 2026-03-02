@@ -166,36 +166,545 @@ class _ChatScreenState extends State<ChatScreen> {
 
   Map<String, dynamic> _buildThinkingMessage() {
     final isKasumi = _selectedCharacter == CharacterAssetService.kasumi;
-    final isEnglishNative = _nativeCode == 'en';
-    final candidates = isEnglishNative
-        ? (isKasumi
-            ? const [
-                "I-I'm not stuck, okay?",
-                'Give me a sec.',
-                "I'm thinking this through.",
-              ]
-            : const [
-                'Hmm, thinking...',
-                'One sec.',
-                "I'm putting it together.",
-              ])
-        : (isKasumi
-            ? const [
-                'べ、別に迷ってないし',
-                'ちょっと待ちなさいよ',
-                'ちゃんと考えてるから',
-              ]
-            : const [
-                'うーん、考え中…',
-                'ちょっと待ってね',
-                '今まとめてるよ',
-              ]);
+    final code = _nativeCode.replaceAll('-', '_');
+    final candidates = () {
+      switch (code) {
+        case 'ja':
+          return isKasumi
+              ? const [
+                  'べ、別に迷ってないし',
+                  'ちょっと待ちなさいよ',
+                  'ちゃんと考えてるから',
+                ]
+              : const [
+                  'うーん、考え中…',
+                  'ちょっと待ってね',
+                  '今まとめてるよ',
+                ];
+        case 'en':
+          return isKasumi
+              ? const [
+                  "I-I'm not stuck, okay?",
+                  'Give me a sec.',
+                  "I'm thinking this through.",
+                ]
+              : const [
+                  'Hmm, thinking...',
+                  'One sec.',
+                  "I'm putting it together.",
+                ];
+        case 'zh':
+          return isKasumi
+              ? const [
+                  '我、我才没卡住呢',
+                  '等一下啦',
+                  '我在认真想啦',
+                ]
+              : const [
+                  '我想想…',
+                  '稍等一下哦',
+                  '我在整理一下',
+                ];
+        case 'zh_TW':
+          return isKasumi
+              ? const [
+                  '我、我才沒有卡住呢',
+                  '等一下啦',
+                  '我有在認真想啦',
+                ]
+              : const [
+                  '我想想…',
+                  '等我一下喔',
+                  '我整理一下',
+                ];
+        case 'ko':
+          return isKasumi
+              ? const [
+                  '벼, 별로 막힌 거 아니거든',
+                  '잠깐만 기다려',
+                  '나도 제대로 생각 중이야',
+                ]
+              : const [
+                  '음, 생각 중이야...',
+                  '잠깐만 기다려줘',
+                  '지금 정리하고 있어',
+                ];
+        case 'es':
+          return isKasumi
+              ? const [
+                  'N-no es que me haya bloqueado, ¿vale?',
+                  'Espera un momento.',
+                  'Lo estoy pensando en serio.',
+                ]
+              : const [
+                  'A ver, déjame pensar...',
+                  'Un segundito.',
+                  'Lo estoy ordenando.',
+                ];
+        case 'fr':
+          return isKasumi
+              ? const [
+                  "J-je ne bloque pas, d'accord ?",
+                  'Attends une seconde.',
+                  'Je réfléchis sérieusement.',
+                ]
+              : const [
+                  'Voyons... je réfléchis.',
+                  'Une petite seconde.',
+                  'Je mets ça au clair.',
+                ];
+        case 'de':
+          return isKasumi
+              ? const [
+                  'I-ich hänge nicht fest, klar?',
+                  'Warte kurz.',
+                  'Ich denke das gerade richtig durch.',
+                ]
+              : const [
+                  'Hm, ich überlege...',
+                  'Einen Moment bitte.',
+                  'Ich ordne das gerade.',
+                ];
+        case 'vi':
+          return isKasumi
+              ? const [
+                  'T-tôi đâu có bí đâu nhé.',
+                  'Đợi một chút.',
+                  'Tôi đang nghĩ nghiêm túc mà.',
+                ]
+              : const [
+                  'Ừm, để mình nghĩ chút...',
+                  'Chờ mình một chút nhé.',
+                  'Mình đang sắp xếp lại.',
+                ];
+        case 'id':
+          return isKasumi
+              ? const [
+                  'A-aku bukan kehabisan ide, ya.',
+                  'Tunggu sebentar.',
+                  'Aku lagi mikir serius kok.',
+                ]
+              : const [
+                  'Hmm, aku pikir dulu...',
+                  'Tunggu sebentar, ya.',
+                  'Lagi aku rapikan dulu.',
+                ];
+        default:
+          return isKasumi
+              ? const [
+                  "I-I'm not stuck, okay?",
+                  'Give me a sec.',
+                  "I'm thinking this through.",
+                ]
+              : const [
+                  'Hmm, thinking...',
+                  'One sec.',
+                  "I'm putting it together.",
+                ];
+      }
+    }();
     return {
       'role': _thinkingRole,
       'text': candidates[_rng.nextInt(candidates.length)],
       'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
       'fadingOut': false,
     };
+  }
+
+  String _pickTsumugiAccuracyCorrect(AppLocalizations loc) {
+    final code = _nativeCode.replaceAll('-', '_');
+    final base = loc.tumugiAccuracyCorrect;
+    final candidates = switch (code) {
+      'ja' => <String>[
+          base,
+          'ちゃんと意味が伝わってるよ！その調子！',
+          '意味はしっかり合ってる！よく伝わってくるよ。',
+          'うん、意味はばっちりだね！がんばってるね。',
+        ],
+      'en' => <String>[
+          base,
+          'The meaning comes through perfectly! Keep it up!',
+          "You've got the meaning down! That really works.",
+          "Meaning is spot on! You're doing great.",
+        ],
+      'zh' => <String>[
+          '意思表达得很准确！就是这样，继续加油！',
+          '你的意思完全对！这样就没问题啦。',
+          '意思完全正确！你表达得很好呢。',
+          '嗯，意思很到位！你真的很棒哦。',
+        ],
+      'zh_TW' => <String>[
+          '意思表達得很準確！就是這樣，繼續加油！',
+          '你的意思完全對！這樣就沒問題啦。',
+          '意思完全正確！你表達得很好呢。',
+          '嗯，意思很到位！你真的很棒喔。',
+        ],
+      'ko' => <String>[
+          '의미도 완벽해! 정말 잘하고 있어!',
+          '뜻이 딱 맞아! 그대로 계속해봐.',
+          '의미가 잘 전달됐어! 대단한걸.',
+          '응, 의미는 완벽해! 잘하고 있어.',
+        ],
+      'es' => <String>[
+          '¡El significado está perfecto! ¡Sigue así!',
+          '¡Tu respuesta transmite justo lo que se pide! ¡Muy bien!',
+          '¡Has captado el significado! Qué bien te ha salido.',
+          '¡El sentido es correcto! Lo estás haciendo genial.',
+        ],
+      'fr' => <String>[
+          'Le sens est parfait ! Continue comme ça !',
+          'Tu as bien saisi la signification ! Super !',
+          "Le sens passe très bien ! C'est vraiment bien.",
+          "Oui, le sens est bon ! Tu t'en sors vraiment bien.",
+        ],
+      'de' => <String>[
+          'Die Bedeutung stimmt genau! Weiter so!',
+          'Du hast den Sinn richtig erfasst! Das ist toll!',
+          'Die Bedeutung kommt super rüber! Wirklich gut.',
+          'Ja, die Bedeutung ist korrekt! Du machst das prima.',
+        ],
+      'vi' => <String>[
+          'Ý nghĩa hoàn toàn đúng! Tuyệt lắm, cứ tiếp tục nhé!',
+          'Bạn nắm bắt ý nghĩa rất chính xác! Cố lên!',
+          'Ý nghĩa truyền đạt rất tốt! Thật ấn tượng đấy.',
+          'Ừ, ý nghĩa rất chuẩn! Bạn đang làm tốt lắm.',
+        ],
+      'id' => <String>[
+          'Maknanya sudah tepat sekali! Terus semangat ya!',
+          'Kamu sudah menangkap maknanya dengan baik! Bagus banget!',
+          'Makna tersampaikan dengan sempurna! Keren banget.',
+          'Ya, maknanya sudah pas! Kamu hebat!',
+        ],
+      _ => <String>[base],
+    };
+    return candidates[_rng.nextInt(candidates.length)];
+  }
+
+  String _pickKasumiAccuracyCorrect(AppLocalizations loc) {
+    final code = _nativeCode.replaceAll('-', '_');
+    final base = loc.kasumiAccuracyCorrect;
+    final candidates = switch (code) {
+      'ja' => <String>[
+          base,
+          'ま、意味はちゃんと合ってるわ。…悪くないじゃない。',
+          'うん、意図は伝わってる。べ、別に褒めてるわけじゃないけど。',
+          '意味は合ってるわよ。ここまでできれば十分でしょ。',
+        ],
+      'en' => <String>[
+          base,
+          "Yeah, your meaning is right. D-don't get the wrong idea.",
+          'You got the meaning across. Not bad... I guess.',
+          "The meaning checks out. I mean, that's all.",
+        ],
+      'zh' => <String>[
+          '哼，意思是对的啦……我才不是在夸你呢。',
+          '嗯，意思表达到了。也、也就还行吧。',
+          '这句意思没问题。别误会，我可没特别夸你。',
+          '至少意思说对了，继续保持吧。',
+        ],
+      'zh_TW' => <String>[
+          '哼，意思是對的啦……我才沒有在誇你。',
+          '嗯，意思有傳達到。也、也就還可以吧。',
+          '這句意思沒問題。別誤會，我可不是特別稱讚你。',
+          '至少意思說對了，繼續保持吧。',
+        ],
+      'ko' => <String>[
+          '흥, 뜻은 맞았거든... 칭찬하는 건 아니야.',
+          '응, 의미는 제대로 전달됐어. 뭐, 나쁘진 않네.',
+          '이 문장은 뜻이 맞아. 오해하지 마, 특별히 칭찬한 건 아니니까.',
+          '적어도 의미는 정확해. 이대로 계속해.',
+        ],
+      'es' => <String>[
+          'B-bueno, el sentido está bien... no creas que te estoy halagando.',
+          'Sí, la idea se entiende. N-no te emociones.',
+          'Lograste transmitir el significado. No está mal... supongo.',
+          'El significado es correcto. Sigue así, ¿vale?',
+        ],
+      'fr' => <String>[
+          'B-bon, le sens est correct... ne va pas croire que je te félicite.',
+          "Oui, l'idée passe bien. N-ne prends pas la grosse tête.",
+          "Tu as bien transmis le sens. Ce n'est pas mal... enfin, voilà.",
+          "Le sens est juste. Continue comme ça, d'accord ?",
+        ],
+      'de' => <String>[
+          'N-na ja, die Bedeutung stimmt... bilde dir bloß nichts ein.',
+          'Ja, der Sinn kommt rüber. A-aber werde jetzt nicht überheblich.',
+          'Du hast die Bedeutung richtig getroffen. Nicht schlecht... denke ich.',
+          'Die Aussage passt so. Mach einfach weiter, klar?',
+        ],
+      'vi' => <String>[
+          'Ừm... ý thì đúng đó, nhưng đừng nghĩ là mình khen nhé.',
+          'Đúng rồi, ý bạn truyền đạt ổn. Đ-đừng tự mãn đấy.',
+          'Bạn diễn đạt đúng nghĩa rồi. Cũng không tệ... chắc vậy.',
+          'Nghĩa là chuẩn đó. Cứ giữ phong độ này nhé.',
+        ],
+      'id' => <String>[
+          'Y-ya, maknanya sudah benar... jangan geer dulu.',
+          'Iya, maksudnya tersampaikan. J-jangan salah paham, ya.',
+          'Kamu menyampaikan maknanya dengan tepat. Lumayan... kurasa.',
+          'Maknanya sudah pas. Lanjutkan saja begitu.',
+        ],
+      _ => <String>[base],
+    };
+    return candidates[_rng.nextInt(candidates.length)];
+  }
+
+  String _pickTsumugiAccuracyIncorrect(AppLocalizations loc) {
+    final code = _nativeCode.replaceAll('-', '_');
+    final base = loc.tumugiAccuracyIncorrect;
+    final candidates = switch (code) {
+      'ja' => <String>[
+          base,
+          '惜しい！意味が少し違うかも。もう一度一緒に見てみよう。',
+          'うーん、意味がちょっと違うみたい。大丈夫、一緒に直そう！',
+          '意味が合ってないかな…でも気にしないで！次はきっとできるよ。',
+          'ちょっとズレちゃったね。じっくり見直してみよう。',
+          '惜しかった！意味が少しズレちゃってるよ。もう一回挑戦してみて！',
+          '意味が違うみたいだね…一緒に確かめてみよう。',
+          'ほんのちょっとだけ意味が違うよ。次は合わせられると思う！',
+          'うまくいかなかったね。でも大丈夫、少しだけズレてるだけだから！',
+          '意味がずれちゃったかな。でも、ここを直せばきっと合うよ！',
+        ],
+      'en' => <String>[
+          base,
+          "Almost! The meaning is a bit different. Let's check it again together.",
+          "The meaning doesn't quite match... but don't worry! You'll get it next time.",
+          "Hmm, the meaning is a little off. Let's take another look!",
+          "Close, but the meaning slipped a little. Let's try again together!",
+          "The meaning is a bit different. Let's figure it out together!",
+          "Not quite the same meaning. But I believe you can get it right!",
+          "The meaning shifted a little. Let's review it and try again!",
+          "Oops, the meaning doesn't match. No worries — let's fix it together!",
+          "The meaning is a tiny bit off. You're so close though!",
+        ],
+      'zh' => <String>[
+          '意思有点偏差呢…我们一起来确认吧！',
+          '差一点！意思稍微不一样。我们再一起看看吧。',
+          '嗯，意思有点不一样。没关系，一起改正吧！',
+          '意思对不上呢…但不要气馁！下次一定能行的。',
+          '稍微偏了一点哟。我们仔细再看看吧。',
+          '可惜！意思稍微偏了。再挑战一次吧！',
+          '意思好像不太一样呢…我们一起确认一下吧。',
+          '意思只是稍微有点不同哦。下次一定能对上的！',
+          '这次没成功呢。但没关系，就只是偏了一点点！',
+          '意思偏了一点。但是，只要修正这里，一定能对上的！',
+        ],
+      'zh_TW' => <String>[
+          '意思有點偏差呢…我們一起來確認吧！',
+          '差一點！意思稍微不一樣。我們再一起看看吧。',
+          '嗯，意思有點不一樣。沒關係，一起改正吧！',
+          '意思對不上呢…但不要氣餒！下次一定能行的。',
+          '稍微偏了一點喔。我們仔細再看看吧。',
+          '可惜！意思稍微偏了。再挑戰一次吧！',
+          '意思好像不太一樣呢…我們一起確認一下吧。',
+          '意思只是稍微有點不同喔。下次一定能對上的！',
+          '這次沒成功呢。但沒關係，就只是偏了一點點！',
+          '意思偏了一點。但是，只要修正這裡，一定能對上的！',
+        ],
+      'ko' => <String>[
+          '의미가 조금 다른 것 같아…같이 확인해보자！',
+          '아깝다! 의미가 조금 달라. 다시 같이 봐보자.',
+          '음, 의미가 좀 다른 것 같아. 괜찮아, 같이 고쳐보자！',
+          '의미가 안 맞는 것 같은데…하지만 신경 쓰지 마! 다음엔 할 수 있어.',
+          '살짝 빗나갔네. 찬찬히 다시 봐보자.',
+          '아깝다! 의미가 조금 빗나갔어. 한 번 더 도전해봐！',
+          '의미가 다른 것 같은데…같이 확인해보자.',
+          '아주 조금 의미가 달라. 다음엔 맞출 수 있을 거야！',
+          '이번엔 아쉽게 됐네. 하지만 괜찮아, 조금 빗나간 것뿐이야！',
+          '의미가 살짝 달라졌어. 하지만 여기만 고치면 분명히 맞을 거야！',
+        ],
+      'es' => <String>[
+          "El significado no coincide del todo... ¡revisémoslo juntos!",
+          "¡Casi! El significado es un poco diferente. Veamos juntos.",
+          "Hmm, el significado no encaja. ¡No te preocupes, vamos a corregirlo!",
+          "El sentido no coincide... ¡pero no te rindas! La próxima seguro que sí.",
+          "Se desvió un poco. Revisémoslo con calma.",
+          "¡Qué pena! El sentido cambió un poco. ¡Inténtalo otra vez!",
+          "El significado parece diferente... ¡vamos a revisarlo juntos!",
+          "El sentido está un poquito desviado. ¡Seguro que la próxima lo logras!",
+          "No salió esta vez. Pero no pasa nada, ¡es solo un pequeño desvío!",
+          "El sentido se desvió un poco. Pero si corriges esto, ¡lo conseguirás!",
+        ],
+      'fr' => <String>[
+          "Le sens est un peu décalé... révisons ensemble !",
+          "Presque ! Le sens est légèrement différent. Regardons ensemble.",
+          "Hmm, le sens ne correspond pas tout à fait. Pas de souci, on va arranger ça !",
+          "Le sens ne colle pas... mais ne te décourage pas ! La prochaine fois sera la bonne.",
+          "C'est un peu décalé. Regardons ça tranquillement.",
+          "Dommage ! Le sens a glissé. Essaie encore !",
+          "Le sens semble différent... révisons-le ensemble !",
+          "C'est juste un tout petit décalage. Tu vas y arriver la prochaine fois !",
+          "Ça n'a pas marché cette fois. Pas grave, c'est juste un petit écart !",
+          "Le sens a un peu dévié. Mais si tu corriges ça, tu y seras !",
+        ],
+      'de' => <String>[
+          "Die Bedeutung ist etwas daneben... lass uns das gemeinsam überprüfen!",
+          "Fast! Die Bedeutung ist ein bisschen anders. Schauen wir es gemeinsam an.",
+          "Hmm, die Bedeutung passt nicht ganz. Kein Problem, lass es uns zusammen korrigieren!",
+          "Die Bedeutung stimmt nicht... aber nicht aufgeben! Beim nächsten Mal klappt es.",
+          "Ein kleines bisschen daneben. Lass uns in Ruhe nochmal schauen.",
+          "Schade! Die Bedeutung ist ein bisschen abgewichen. Noch mal versuchen!",
+          "Die Bedeutung scheint anders zu sein... lass uns das gemeinsam prüfen!",
+          "Die Bedeutung ist nur ein kleines bisschen anders. Beim nächsten Mal schaffst du es!",
+          "Hat diesmal nicht geklappt. Aber kein Stress, es ist nur ein kleiner Unterschied!",
+          "Die Bedeutung ist leicht verrutscht. Wenn du das korrigierst, passt es!",
+        ],
+      'vi' => <String>[
+          'Ý nghĩa hơi lệch một chút... hãy cùng nhau xem lại nhé!',
+          'Suýt rồi! Ý nghĩa hơi khác một chút. Hãy cùng nhau xem lại nào.',
+          'Ừm, ý nghĩa chưa khớp. Không sao, cùng nhau sửa lại nhé!',
+          'Ý nghĩa chưa khớp... nhưng đừng nản lòng! Lần sau chắc chắn được thôi.',
+          'Lệch một chút rồi. Hãy xem lại cẩn thận nhé.',
+          'Tiếc quá! Ý nghĩa bị lệch một chút. Thử lại lần nữa nhé!',
+          'Ý nghĩa có vẻ khác một chút... cùng nhau kiểm tra nhé!',
+          'Ý nghĩa chỉ khác một chút thôi. Lần sau bạn sẽ làm được!',
+          'Lần này không thành. Nhưng không sao, chỉ lệch một chút thôi!',
+          'Ý nghĩa lệch một chút rồi. Nhưng chỉ cần sửa chỗ này là được thôi!',
+        ],
+      'id' => <String>[
+          'Maknanya sedikit meleset... ayo kita periksa bersama!',
+          'Hampir! Maknanya sedikit berbeda. Yuk, kita lihat lagi bersama.',
+          'Hmm, maknanya kurang tepat. Tidak apa-apa, mari kita perbaiki bersama!',
+          'Maknanya belum cocok... tapi jangan menyerah! Pasti bisa di kesempatan berikutnya.',
+          'Sedikit meleset. Mari kita lihat dengan seksama.',
+          'Sayang sekali! Maknanya sedikit bergeser. Coba lagi ya!',
+          'Maknanya tampak berbeda... ayo kita periksa bersama!',
+          'Maknanya hanya sedikit berbeda. Pasti bisa di kesempatan berikutnya!',
+          'Kali ini belum berhasil. Tapi tidak apa-apa, cuma meleset sedikit!',
+          'Maknanya sedikit bergeser. Tapi kalau ini diperbaiki, pasti cocok!',
+        ],
+      _ => <String>[base],
+    };
+    return candidates[_rng.nextInt(candidates.length)];
+  }
+
+  String _pickKasumiAccuracyIncorrect(AppLocalizations loc) {
+    final code = _nativeCode.replaceAll('-', '_');
+    final base = loc.kasumiAccuracyIncorrect;
+    final candidates = switch (code) {
+      'ja' => <String>[
+          base,
+          '意味がズレてるわ。もう一回、落ち着いて見直しなさい。',
+          'ちょっと意味が違うわね。次は合わせられるでしょ。',
+          '惜しいけど、意味は別物よ。ここ直せばいけるわ。',
+          '全然違うとは言わないけど…意味がズレてる。ちゃんと確認して。',
+          '惜しいって言えば惜しいけど、意味が違うのよね。もう一回。',
+          '意味が合ってないわよ。こんなとこで詰まらないで。',
+          'はあ…意味がずれてるじゃない。落ち着いて読み直しなさい。',
+          '意味が違う。あなたならもっとできるはずよ。',
+          '次は絶対合わせなさいよ。意味がズレてるんだから。',
+        ],
+      'en' => <String>[
+          base,
+          'Your meaning is off. Take another look.',
+          'Close, but the meaning changed. Try one more time.',
+          "Not quite the same meaning. You'll get it next round.",
+          "The meaning doesn't match. Don't get tripped up here.",
+          "Hmm... the meaning is off. Just take a breath and read it again.",
+          "That's not the right meaning. You can do better than that.",
+          "The meaning slipped. Check it over and try again.",
+          "Off on the meaning. Make sure you get it right next time.",
+          "I know you can figure it out. The meaning's just a bit off.",
+        ],
+      'zh' => <String>[
+          '意思不太对。再看一遍吧。',
+          '差一点，但意思偏了。再试一次。',
+          '这句和题目的意思不一样，再调整一下。',
+          '还不完全对，不过你下一次能做好的。',
+          '意思不对嘛。别在这里犯错了。',
+          '哼…意思跑掉了。冷静下来再看看吧。',
+          '意思不对。你应该能做得更好的。',
+          '意思偏了。检查一下再试试。',
+          '意思不对。下次一定要对啊。',
+          '我知道你能搞清楚的。意思只是偏了一点而已。',
+        ],
+      'zh_TW' => <String>[
+          '意思不太對。再看一遍吧。',
+          '差一點，但意思跑掉了。再試一次。',
+          '這句和題目的意思不一樣，再調整一下。',
+          '還沒完全對，不過你下次可以的。',
+          '意思不對嘛。別在這裡出錯了。',
+          '哼…意思跑掉了。冷靜下來再看看吧。',
+          '意思不對。你應該能做得更好的。',
+          '意思偏了。檢查一下再試試。',
+          '意思不對。下次一定要對啊。',
+          '我知道你能搞清楚的。意思只是偏了一點而已。',
+        ],
+      'ko' => <String>[
+          '의미가 조금 달라. 다시 한번 보자.',
+          '아깝지만 뜻이 바뀌었어. 한 번 더 해봐.',
+          '문장은 괜찮은데 의도가 달라졌어.',
+          '완전히 틀린 건 아니야. 다음엔 맞출 수 있어.',
+          '의미가 다르잖아. 여기서 막히면 안 되지.',
+          '흠...의미가 달라졌어. 차분하게 다시 읽어봐.',
+          '의미가 틀렸어. 더 잘할 수 있을 텐데.',
+          '의미가 빗나갔네. 다시 확인하고 해봐.',
+          '의미가 틀렸잖아. 다음엔 꼭 맞추라고.',
+          '네가 알아낼 수 있다는 건 알아. 의미가 조금 틀린 것뿐이야.',
+        ],
+      'es' => <String>[
+          'El sentido no coincide. Revísalo otra vez.',
+          'Casi, pero cambió el significado. Inténtalo de nuevo.',
+          'La frase suena bien, pero la idea es distinta.',
+          'No está del todo mal. La próxima te sale.',
+          'El significado no cuadra. No te quedes atascado aquí.',
+          'Hm... el sentido se fue. Cálmate y léelo de nuevo.',
+          'El significado es incorrecto. Puedes hacerlo mejor.',
+          'El sentido se desvió. Revísalo y vuelve a intentarlo.',
+          'El sentido está mal. Asegúrate de acertar la próxima vez.',
+          'Sé que puedes resolverlo. El significado solo está un poco desviado.',
+        ],
+      'fr' => <String>[
+          "Le sens n'est pas tout à fait le bon. Regarde encore une fois.",
+          "Presque, mais l'idée a changé. Réessaie.",
+          "La phrase est correcte, mais l'intention n'est pas la même.",
+          "Ce n'est pas loin. La prochaine fois, tu l'auras.",
+          "Le sens ne correspond pas. Ne te bloque pas là-dessus.",
+          "Hmm... le sens a glissé. Calme-toi et relis.",
+          "Le sens est incorrect. Tu peux faire mieux que ça.",
+          "Le sens a dévié. Vérifie et réessaie.",
+          "Le sens est faux. Assure-toi de le trouver la prochaine fois.",
+          "Je sais que tu peux y arriver. Le sens n'est qu'un tout petit peu décalé.",
+        ],
+      'de' => <String>[
+          'Die Bedeutung passt noch nicht ganz. Schau es dir nochmal an.',
+          'Knapp daneben, aber der Sinn hat sich geändert.',
+          'Der Satz klingt okay, nur die Aussage ist anders.',
+          'Nicht komplett falsch. Beim nächsten Mal passt es.',
+          'Die Bedeutung stimmt nicht. Hänge hier nicht fest.',
+          'Hm... die Bedeutung ist abgerutscht. Beruhige dich und lies noch mal.',
+          'Die Bedeutung ist falsch. Du kannst das besser.',
+          'Der Sinn ist verrutscht. Überprüf es und versuch es nochmal.',
+          'Die Bedeutung ist falsch. Achte nächstes Mal darauf.',
+          'Ich weiß, dass du es herausfinden kannst. Der Sinn ist nur ein kleines bisschen daneben.',
+        ],
+      'vi' => <String>[
+          'Ý nghĩa chưa đúng lắm. Xem lại một lần nhé.',
+          'Gần đúng rồi, nhưng nghĩa đã bị lệch. Thử lại đi.',
+          'Câu ổn, nhưng ý định khác với đề bài.',
+          'Chưa chuẩn hẳn đâu, nhưng lần sau bạn làm được.',
+          'Ý nghĩa không đúng. Đừng bị vấp ở đây.',
+          'Hm... nghĩa bị lệch rồi. Bình tĩnh đọc lại đi.',
+          'Ý nghĩa sai rồi. Bạn có thể làm tốt hơn thế.',
+          'Nghĩa bị lệch rồi. Kiểm tra lại và thử nữa nhé.',
+          'Ý nghĩa sai. Lần sau phải chắc chắn đúng nhé.',
+          'Mình biết bạn có thể tìm ra được. Nghĩa chỉ lệch một chút thôi.',
+        ],
+      'id' => <String>[
+          'Maknanya belum pas. Coba cek sekali lagi.',
+          'Hampir benar, tapi maknanya jadi beda.',
+          'Kalimatnya oke, tapi maksudnya tidak sama.',
+          'Belum tepat sepenuhnya, tapi di percobaan berikutnya kamu pasti bisa.',
+          'Maknanya tidak cocok. Jangan tersangkut di sini.',
+          'Hm... maknanya meleset. Tenang dan baca lagi ya.',
+          'Maknanya salah. Kamu bisa lebih baik dari ini.',
+          'Maknanya meleset. Periksa lagi dan coba sekali lagi.',
+          'Maknanya salah. Pastikan benar di kesempatan berikutnya.',
+          'Aku tahu kamu bisa mencari tahu. Maknanya hanya sedikit meleset.',
+        ],
+      _ => <String>[base],
+    };
+    return candidates[_rng.nextInt(candidates.length)];
   }
 
   Future<void> _flushPendingBotMessages(
@@ -1375,8 +1884,8 @@ class _ChatScreenState extends State<ChatScreen> {
         _pendingDurationMs = null;
 
         final accuracyFeedbackText = _selectedCharacter == CharacterAssetService.kasumi
-            ? loc.kasumiAccuracyIncorrect
-            : loc.tumugiAccuracyIncorrect;
+            ? _pickKasumiAccuracyIncorrect(loc)
+            : _pickTsumugiAccuracyIncorrect(loc);
         final pendingBotMessages = <Map<String, dynamic>>[];
         Future<void> flushPendingBotMessages() async {
           await _flushPendingBotMessages(pendingBotMessages);
@@ -1528,7 +2037,7 @@ class _ChatScreenState extends State<ChatScreen> {
           'role': 'tumugi',
           'text': _selectedCharacter == CharacterAssetService.kasumi
               ? tsumugi_prompt.kasumiSimilarExpressionIntro(_nativeCode)
-              : tsumugi_prompt.tsumugiSimilarExpressionIntro(_nativeCode),
+              : await tsumugi_prompt.tsumugiSimilarExpressionIntro(_nativeCode),
           'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
         });
         pendingBotMessages.add({
@@ -1798,8 +2307,8 @@ class _ChatScreenState extends State<ChatScreen> {
       pendingBotMessages.add({
         'role': 'bot',
         'text': _selectedCharacter == CharacterAssetService.kasumi
-            ? loc.kasumiAccuracyCorrect
-            : loc.tumugiAccuracyCorrect,
+            ? _pickKasumiAccuracyCorrect(loc)
+            : _pickTsumugiAccuracyCorrect(loc),
         'labelType': 'info',
       });
     }
@@ -1931,7 +2440,7 @@ class _ChatScreenState extends State<ChatScreen> {
       'role': 'tumugi',
       'text': _selectedCharacter == CharacterAssetService.kasumi
           ? tsumugi_prompt.kasumiSimilarExpressionIntro(_nativeCode)
-          : tsumugi_prompt.tsumugiSimilarExpressionIntro(_nativeCode),
+          : await tsumugi_prompt.tsumugiSimilarExpressionIntro(_nativeCode),
       'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
     });
     pendingBotMessages.add({

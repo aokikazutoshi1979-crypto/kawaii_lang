@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'package:shared_preferences/shared_preferences.dart';
 
 String buildTsumugiPrompt({
   required String uiLanguageCode,
@@ -516,11 +517,47 @@ List<String> _kasumiCorrectIntroLines(String lang) {
 // 類似表現案内セリフ（正解時の黄色バブルの前に表示）
 // ─────────────────────────────────────────────
 
-String tsumugiSimilarExpressionIntro(String uiLanguageCode) {
+Future<String> tsumugiSimilarExpressionIntro(String uiLanguageCode) async {
   final lang = _norm(uiLanguageCode);
-  final rnd = Random();
   final lines = _tsumugiSimilarIntroLines(lang);
-  return lines[rnd.nextInt(lines.length)];
+  const historyKey = 'tsumugiSimilarIntroHistory';
+  const repeatGap = 3;
+  final rnd = Random();
+
+  final prefs = await SharedPreferences.getInstance();
+  final raw = prefs.getString(historyKey) ?? '';
+  final recent = raw.isEmpty
+      ? <int>[]
+      : raw
+          .split(',')
+          .map((s) => int.tryParse(s))
+          .whereType<int>()
+          .where((i) => i >= 0 && i < lines.length)
+          .toList();
+
+  final recentWindow =
+      recent.length <= repeatGap ? recent : recent.sublist(recent.length - repeatGap);
+  final blockCount = lines.length > repeatGap
+      ? recentWindow.length
+      : recentWindow.length.clamp(0, lines.length - 1);
+  final blocked = recentWindow.length > blockCount
+      ? recentWindow.sublist(recentWindow.length - blockCount).toSet()
+      : recentWindow.toSet();
+
+  var pool = [for (var i = 0; i < lines.length; i++) if (!blocked.contains(i)) i];
+  if (pool.isEmpty) {
+    final last = recentWindow.isNotEmpty ? recentWindow.last : -1;
+    pool = [for (var i = 0; i < lines.length; i++) if (i != last) i];
+    if (pool.isEmpty) pool = [0];
+  }
+  final picked = pool[rnd.nextInt(pool.length)];
+
+  final updated = [...recent, picked];
+  final maxKeep = repeatGap * 2;
+  final trimmed = updated.length > maxKeep ? updated.sublist(updated.length - maxKeep) : updated;
+  await prefs.setString(historyKey, trimmed.map((e) => e.toString()).join(','));
+
+  return lines[picked];
 }
 
 String kasumiSimilarExpressionIntro(String uiLanguageCode) {
@@ -537,54 +574,99 @@ List<String> _tsumugiSimilarIntroLines(String lang) {
         'こんな言い方もあるよ〜☺️',
         'あとね、似たフレーズも教えるね！',
         'こういう表現もあるんだ☺️',
+        'ちょっと似てる言い方も紹介するね！',
+        'ついでに、別の言い方も覚えちゃおう！',
+        'こんな表現も使えるよ〜！',
+        'おまけで、似たフレーズも見てみて☺️',
+        'あわせてこっちも覚えると便利だよ！',
       ];
     case 'ko':
       return [
         '이런 표현도 있어~☺️',
         '비슷한 말도 알려줄게!',
         '이렇게도 말할 수 있어☺️',
+        '비슷한 표현도 소개해줄게!',
+        '이 기회에 다른 말도 같이 외워봐!',
+        '이런 식으로도 쓸 수 있어~!',
+        '덤으로 비슷한 말도 확인해봐☺️',
+        '이것도 알아두면 편리해!',
       ];
     case 'zh':
       return [
         '还有这种说法哦~☺️',
         '来，再教你一个类似的表达！',
         '这样说也可以☺️',
+        '顺便介绍一个相似的说法！',
+        '趁这个机会，另一种说法也记下来吧！',
+        '这个表达也可以用哦~！',
+        '顺带看看这个类似的说法☺️',
+        '记住这个也很方便哦！',
       ];
     case 'zh_tw':
       return [
         '還有這種說法哦~☺️',
         '來，再教你一個類似的表達！',
         '這樣說也可以☺️',
+        '順便介紹一個相似的說法！',
+        '趁這個機會，另一種說法也記下來吧！',
+        '這個表達也可以用喔~！',
+        '順帶看看這個類似的說法☺️',
+        '記住這個也很方便喔！',
       ];
     case 'es':
       return [
         'También puedes decirlo así~☺️',
         '¡Mira, hay otra forma de decirlo!',
         'Esta expresión también funciona☺️',
+        '¡Te presento una expresión parecida!',
+        '¡Aprovecha y aprende otra forma de decirlo!',
+        '¡Esta manera de decirlo también vale~!',
+        'Echa un vistazo a esta expresión similar☺️',
+        '¡Saberlo también te será muy útil!',
       ];
     case 'fr':
       return [
         'On peut aussi le dire comme ça~☺️',
         'Tiens, voici une autre façon de le dire !',
         'Cette expression marche aussi☺️',
+        'Je te présente une expression similaire !',
+        'Profites-en pour apprendre une autre façon de le dire !',
+        'Cette formulation fonctionne aussi~!',
+        'Jette un œil à cette expression similaire☺️',
+        'La connaître sera bien utile !',
       ];
     case 'de':
       return [
         'Man kann es auch so sagen~☺️',
         'Schau, hier ist noch eine andere Ausdrucksweise!',
         'Das geht auch☺️',
+        'Hier ist ein ähnlicher Ausdruck für dich!',
+        'Lern doch gleich noch eine andere Variante!',
+        'So kann man es auch ausdrücken~!',
+        'Wirf mal einen Blick auf diesen ähnlichen Ausdruck☺️',
+        'Das kennst du zu wissen ist sehr praktisch!',
       ];
     case 'vi':
       return [
         'Cũng có thể nói như thế này nè~☺️',
         'Để mình chỉ thêm một cách nói tương tự nhé!',
         'Cách này cũng được☺️',
+        'Mình giới thiệu thêm một cách diễn đạt tương tự nhé!',
+        'Nhân tiện, học thêm một cách nói khác luôn nào!',
+        'Cách nói này cũng dùng được nha~!',
+        'Xem thêm cách diễn đạt tương tự này nhé☺️',
+        'Biết thêm cái này cũng rất tiện đó!',
       ];
     case 'id':
       return [
         'Ada juga cara lain untuk mengatakannya~☺️',
         'Nih, ada ekspresi serupa yang bisa dipakai!',
         'Ini juga bisa digunakan☺️',
+        'Yuk, kenalan sama ungkapan yang mirip ini!',
+        'Sekalian, pelajari cara lain untuk mengatakannya!',
+        'Cara ini juga bisa dipakai lho~!',
+        'Lihat juga ekspresi serupa ini ya☺️',
+        'Tahu yang ini juga sangat berguna!',
       ];
     case 'en':
     default:
@@ -592,6 +674,11 @@ List<String> _tsumugiSimilarIntroLines(String lang) {
         'Here\'s another way to say it~☺️',
         'Oh, there\'s a similar expression too!',
         'You could also say it like this☺️',
+        'Let me show you a similar phrase!',
+        'While we\'re at it, learn this one too!',
+        'This expression works the same way~!',
+        'Take a look at this similar phrase☺️',
+        'Knowing this one will come in handy!',
       ];
   }
 }
@@ -603,54 +690,81 @@ List<String> _kasumiSimilarIntroLines(String lang) {
         '…ついでに、こういう言い方もあるから。',
         '参考程度に教えてあげる。',
         'べ、別に親切にしてるわけじゃないけど。こんな表現も覚えておいて。',
+        '…一応、こっちの言い方もあるわ。',
+        'これも使えるから、覚えておきなさい。',
+        '勘違いしないでよね。ついでに別の言い方も見せただけ。',
       ];
     case 'ko':
       return [
         '…겸사겸사, 이런 말도 있으니까.',
         '참고 삼아 알려줄게.',
         '딱히 친절하게 구는 건 아닌데. 이런 표현도 기억해둬.',
+        '…덧붙여서, 이런 말도 써.',
+        '참고로 이것도 알아둬.',
+        '착각하지 마. 그냥 다른 표현도 보여준 거야.',
       ];
     case 'zh':
       return [
         '…顺便说一句，还有这种说法。',
         '给你参考一下。',
         '不是特别好心才告诉你的。这个表达也记一下。',
+        '…另外，这样说也很常见。',
+        '给你个参考，这句也能用。',
+        '别误会，我只是顺手多教你一种说法。',
       ];
     case 'zh_tw':
       return [
         '…順便說一句，還有這種說法。',
         '給你參考一下。',
         '不是特別好心才告訴你的。這個表達也記一下。',
+        '…另外，這樣說也很常見。',
+        '給你個參考，這句也能用。',
+        '別誤會，我只是順手多教你一種說法。',
       ];
     case 'es':
       return [
         '…Ya que estamos, también existe esta expresión.',
         'Te lo digo de referencia.',
         'No es que quiera ser amable o algo así. Recuerda esta también.',
+        '…Además, también se dice así.',
+        'Tómalo como referencia: esta también sirve.',
+        'No te confundas, solo te enseño otra forma de decirlo.',
       ];
     case 'fr':
       return [
         '…Tant qu\'on y est, il y a aussi cette façon de dire.',
         'Pour ta culture personnelle.',
         'C\'est pas que je sois sympa ou quoi. Retiens ça aussi.',
+        '…Au passage, on dit aussi comme ça.',
+        'Garde-la en tête, ça peut servir.',
+        'Ne te méprends pas, je te montre juste une autre tournure.',
       ];
     case 'de':
       return [
         '…Und nebenbei, es gibt auch diesen Ausdruck.',
         'Zur Information für dich.',
         'Ich bin nicht besonders nett oder so. Merk dir das auch.',
+        '…Nebenbei gesagt, so sagt man es auch.',
+        'Merk dir das ruhig, das kann nützlich sein.',
+        'Versteh das nicht falsch. Ich zeige dir nur noch eine Variante.',
       ];
     case 'vi':
       return [
         '…Nhân tiện, còn có cách nói này nữa.',
         'Để tham khảo thêm cho bạn.',
         'Không phải mình tốt bụng hay gì. Nhớ cả cái này đi.',
+        '…Tiện thể thì cũng nói kiểu này được.',
+        'Bạn cứ ghi nhớ câu này để tham khảo.',
+        'Đừng hiểu lầm, mình chỉ thêm một cách nói thôi.',
       ];
     case 'id':
       return [
         '…Sekalian, ada juga ungkapan seperti ini.',
         'Sebagai referensi untukmu.',
         'Bukan berarti aku baik hati ya. Ingat yang ini juga.',
+        '…Sekalian, ini juga sering dipakai.',
+        'Buat referensi, yang ini juga oke.',
+        'Jangan salah paham, aku cuma nunjukin satu cara lain.',
       ];
     case 'en':
     default:
@@ -658,6 +772,9 @@ List<String> _kasumiSimilarIntroLines(String lang) {
         '…By the way, there\'s also this expression.',
         'Just for your reference.',
         'It\'s not like I\'m being nice or anything. Remember this one too.',
+        '…And there\'s this way to say it too.',
+        'You can use this one as well, so remember it.',
+        'Don\'t get the wrong idea. I\'m just showing you another phrasing.',
       ];
   }
 }

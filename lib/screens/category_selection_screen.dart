@@ -17,7 +17,6 @@ import '../models/quiz_mode.dart';
 import 'package:flutter/foundation.dart'; // kReleaseMode
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import '../services/subscription_state.dart';
-import 'chat_screen.dart';
 import '../services/tsumugi_line_service.dart';
 import 'tsumugi_profile_screen.dart';
 import '../widgets/tsumugi_welcome_dialog.dart';
@@ -44,7 +43,6 @@ class _CategorySelectionScreenState
   Map<String, int> _counts = {};
 
   QuizMode selectedMode = QuizMode.reading;
-  static const String _quickStartPrefKey = 'has_used_quick_start';
   static const String _quizModePrefKey = 'quiz_mode';
   String _selectedCharacter = CharacterAssetService.defaultCharacter;
   String? _tsumugiLine;
@@ -279,15 +277,6 @@ class _CategorySelectionScreenState
       return;
     }
 
-    final prefs = await SharedPreferences.getInstance();
-    final hasUsedQuickStart = prefs.getBool(_quickStartPrefKey) ?? false;
-
-    if (!hasUsedQuickStart) {
-      await prefs.setBool(_quickStartPrefKey, true);
-      await _goToRecommendedChat();
-      return;
-    }
-
     // ③ OKなら通常の出題選択画面へ
     await _goToQuestionList();
   }
@@ -393,69 +382,6 @@ class _CategorySelectionScreenState
         },
       ),
     );
-  }
-
-  Future<void> _goToRecommendedChat() async {
-    final nativeLang = selectedNativeLang;
-    final targetLang = selectedTargetLang;
-    if (nativeLang == null || targetLang == null) return;
-
-    try {
-      final raw = await rootBundle.loadString('assets/questions/trial.json');
-      final arr = jsonDecode(raw) as List<dynamic>;
-      final questions =
-          arr.map((e) => Question.fromJson(e as Map<String, dynamic>)).toList();
-
-      if (questions.isEmpty) {
-        await _goToQuestionList();
-        return;
-      }
-
-      const previewId = 'trial_greeting_001';
-      var selectedIndex = questions.indexWhere((q) => q.id == previewId);
-      if (selectedIndex == -1) {
-        selectedIndex = questions.indexWhere(
-          (q) => q.getText('ja').contains('はじめまして'),
-        );
-        if (selectedIndex == -1) selectedIndex = 0;
-      }
-
-      final questionList = questions.map((qq) {
-        return {
-          'id': qq.id,
-          'scene': qq.scene,
-          'subScene': qq.subScene,
-          'level': qq.level,
-          nativeLang: qq.getText(nativeLang),
-          targetLang: qq.getText(targetLang),
-        };
-      }).toList();
-
-      if (!mounted) return;
-
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (_) => ChatScreen(
-            nativeLang: nativeLang,
-            targetLang: targetLang,
-            scene: 'trial',
-            promptLang: nativeLang,
-            isNativePrompt: true,
-            selectedQuestionText: questions[selectedIndex].getText(nativeLang),
-            correctAnswerText: questions[selectedIndex].getText(targetLang),
-            questionList: questionList,
-            selectedIndex: selectedIndex,
-            mode: selectedMode,
-            showRecommendedStartLink: true,
-            recommendedReturnScene: selectedSceneKey,
-          ),
-        ),
-      );
-    } catch (e) {
-      debugPrint('recommended chat load failed: $e');
-      await _goToQuestionList();
-    }
   }
 
   @override
