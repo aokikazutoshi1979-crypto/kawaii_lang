@@ -364,5 +364,9 @@
   "subscriptionBenefitUnlimited": "練習次數無限制",
   "subscriptionBenefitCancelAnytime": "隨時可取消",
   "iosCancelGuideText": "在 iPhone 上取消：設定 > Apple 帳號 > 訂閱。",
-  "subscriptionActivated": "訂閱已啟用。"
+  "subscriptionActivated": "訂閱已啟用。",
+  "retryButton": "再說一次",
+  "benefitNoCreditCard": "僅需 Apple ID 開始（無需信用卡）",
+  "benefitRenewalNotice": "續費前7天提醒",
+  "benefitAppleRefund": "7天內可透過Apple申請退款"
 }

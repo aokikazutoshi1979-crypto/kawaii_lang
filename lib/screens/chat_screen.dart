@@ -1111,7 +1111,9 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   Future<void> _initTts() async {
-    final double rate = Platform.isIOS ? 0.40 : 0.85; // AndroidはiOSより遅く感じやすい
+    final prefs = await SharedPreferences.getInstance();
+    final double savedRate = prefs.getDouble('tts_speech_rate') ?? 0.40;
+    final double rate = Platform.isIOS ? savedRate : (savedRate + 0.45).clamp(0.0, 1.0); // Androidはiosより速く感じにくい
     await _tts.setSpeechRate(rate);
 
     // （お好み）声の高さ
@@ -2704,6 +2706,19 @@ class _ChatScreenState extends State<ChatScreen> {
                         : null,
                   ),
                 ),
+                // 採点後「もう一回言う」ボタン
+                if (_hasSubmitted)
+                  TextButton.icon(
+                    onPressed: _resetChat,
+                    icon: const Text('🔄', style: TextStyle(fontSize: 16)),
+                    label: Text(
+                      AppLocalizations.of(context)!.retryButton,
+                      style: const TextStyle(fontSize: 13),
+                    ),
+                    style: TextButton.styleFrom(
+                      foregroundColor: Colors.pink.shade300,
+                    ),
+                  ),
                 // 残り回数バナー（無料ユーザーのみ・日本語学習時のみ）
                 if (_targetCode == 'ja')
                   _TtsRemainingBanner(

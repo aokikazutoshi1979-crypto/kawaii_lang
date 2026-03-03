@@ -731,4 +731,16 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get subscriptionActivated => '구독이 활성화되었습니다.';
+
+  @override
+  String get retryButton => '다시 말해보기';
+
+  @override
+  String get benefitNoCreditCard => 'Apple ID로 시작 (신용카드 불필요)';
+
+  @override
+  String get benefitRenewalNotice => '갱신 7일 전 알림';
+
+  @override
+  String get benefitAppleRefund => '7일 이내 Apple 통해 환불 신청 가능';
 }

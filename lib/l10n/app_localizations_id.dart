@@ -752,4 +752,18 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get subscriptionActivated => 'Langganan diaktifkan.';
+
+  @override
+  String get retryButton => 'Coba lagi';
+
+  @override
+  String get benefitNoCreditCard =>
+      'Mulai dengan Apple ID — tanpa kartu kredit';
+
+  @override
+  String get benefitRenewalNotice => 'Pengingat 7 hari sebelum pembaruan';
+
+  @override
+  String get benefitAppleRefund =>
+      'Pengembalian dana tersedia melalui Apple dalam 7 hari';
 }

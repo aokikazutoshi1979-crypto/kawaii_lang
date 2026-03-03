@@ -50,6 +50,7 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
   QuizMode _selectedMode = QuizMode.reading;
   static const String _quizModePrefKey = 'quiz_mode';
   String _selectedCharacter = CharacterAssetService.defaultCharacter;
+  double _ttsRate = 0.40;
 
   final List<String> _languageCodes = const [
     'ja',
@@ -119,6 +120,7 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     _loadDisplayName();
     _loadQuizMode();
     _loadCharacter();
+    _loadTtsRate();
     _loadLanguageCatalog();
 
     // ２）RevenueCat の初期化＆オファー取得
@@ -182,6 +184,20 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     final character = await CharacterAssetService.loadSelectedCharacter();
     if (!mounted) return;
     setState(() => _selectedCharacter = character);
+  }
+
+  Future<void> _loadTtsRate() async {
+    final prefs = await SharedPreferences.getInstance();
+    if (!mounted) return;
+    setState(() {
+      _ttsRate = prefs.getDouble('tts_speech_rate') ?? 0.40;
+    });
+  }
+
+  String _ttsRateLabel(double rate) {
+    if (rate <= 0.35) return '🐢';
+    if (rate >= 0.65) return '🐇';
+    return 'ふつう';
   }
 
   Future<void> _saveCharacter(String character) async {
@@ -962,6 +978,59 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                             onChanged: _saveQuizMode,
                             readingLabel: loc.readingLabel,
                             listeningLabel: loc.listeningLabel,
+                          ),
+                        ),
+                        Divider(height: 1, color: Colors.grey.shade200),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(14, 10, 14, 4),
+                          child: Row(
+                            children: [
+                              Icon(Icons.speed_rounded,
+                                  size: 20,
+                                  color: Colors.blueGrey.shade700),
+                              const SizedBox(width: 12),
+                              Text(
+                                selectedLang == 'ja' ? '読み上げ速度' : 'Reading Speed',
+                                style: const TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w700,
+                                  color: Color(0xFF1F2937),
+                                ),
+                              ),
+                              const Spacer(),
+                              Text(
+                                _ttsRateLabel(_ttsRate),
+                                style: TextStyle(
+                                  fontSize: 13,
+                                  color: Colors.blueGrey.shade600,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(8, 0, 8, 8),
+                          child: Row(
+                            children: [
+                              const Text('🐢', style: TextStyle(fontSize: 16)),
+                              Expanded(
+                                child: Slider(
+                                  value: _ttsRate,
+                                  min: 0.3,
+                                  max: 0.7,
+                                  divisions: 4,
+                                  activeColor: Colors.pink.shade300,
+                                  onChanged: (v) async {
+                                    setState(() => _ttsRate = v);
+                                    final prefs =
+                                        await SharedPreferences.getInstance();
+                                    await prefs.setDouble(
+                                        'tts_speech_rate', v);
+                                  },
+                                ),
+                              ),
+                              const Text('🐇', style: TextStyle(fontSize: 16)),
+                            ],
                           ),
                         ),
                       ],

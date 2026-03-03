@@ -365,5 +365,9 @@
   "subscriptionBenefitUnlimited": "무제한 연습",
   "subscriptionBenefitCancelAnytime": "언제든지 취소",
   "iosCancelGuideText": "iPhone에서 취소: 설정 > Apple 계정 > 구독.",
-  "subscriptionActivated": "구독이 활성화되었습니다."
+  "subscriptionActivated": "구독이 활성화되었습니다.",
+  "retryButton": "다시 말해보기",
+  "benefitNoCreditCard": "Apple ID로 시작 (신용카드 불필요)",
+  "benefitRenewalNotice": "갱신 7일 전 알림",
+  "benefitAppleRefund": "7일 이내 Apple 통해 환불 신청 가능"
 }

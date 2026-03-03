@@ -365,5 +365,9 @@
   "subscriptionBenefitUnlimited": "Pratique illimitée",
   "subscriptionBenefitCancelAnytime": "Annuler à tout moment",
   "iosCancelGuideText": "Pour annuler sur iPhone : Réglages > Apple Account > Abonnements.",
-  "subscriptionActivated": "Abonnement activé."
+  "subscriptionActivated": "Abonnement activé.",
+  "retryButton": "Réessayer",
+  "benefitNoCreditCard": "Commencez avec Apple ID — sans carte bancaire",
+  "benefitRenewalNotice": "Rappel 7 jours avant le renouvellement",
+  "benefitAppleRefund": "Remboursement possible via Apple sous 7 jours"
 }

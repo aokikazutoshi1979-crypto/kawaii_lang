@@ -365,5 +365,9 @@
   "subscriptionBenefitUnlimited": "Latihan tanpa batas",
   "subscriptionBenefitCancelAnytime": "Batalkan kapan saja",
   "iosCancelGuideText": "Untuk membatalkan di iPhone: Pengaturan > Apple Account > Langganan.",
-  "subscriptionActivated": "Langganan diaktifkan."
+  "subscriptionActivated": "Langganan diaktifkan.",
+  "retryButton": "Coba lagi",
+  "benefitNoCreditCard": "Mulai dengan Apple ID — tanpa kartu kredit",
+  "benefitRenewalNotice": "Pengingat 7 hari sebelum pembaruan",
+  "benefitAppleRefund": "Pengembalian dana tersedia melalui Apple dalam 7 hari"
 }

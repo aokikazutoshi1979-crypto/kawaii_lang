@@ -365,5 +365,9 @@
   "subscriptionBenefitUnlimited": "Unbegrenztes Üben",
   "subscriptionBenefitCancelAnytime": "Jederzeit kündigen",
   "iosCancelGuideText": "Zum Kündigen auf dem iPhone: Einstellungen > Apple Account > Abonnements.",
-  "subscriptionActivated": "Abonnement aktiviert."
+  "subscriptionActivated": "Abonnement aktiviert.",
+  "retryButton": "Nochmal versuchen",
+  "benefitNoCreditCard": "Start mit Apple ID – keine Kreditkarte erforderlich",
+  "benefitRenewalNotice": "Erinnerung 7 Tage vor Verlängerung",
+  "benefitAppleRefund": "Erstattung über Apple innerhalb von 7 Tagen möglich"
 }

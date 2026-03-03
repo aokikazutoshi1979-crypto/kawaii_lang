@@ -365,5 +365,9 @@
   "subscriptionBenefitUnlimited": "Luyện tập không giới hạn",
   "subscriptionBenefitCancelAnytime": "Hủy bất cứ lúc nào",
   "iosCancelGuideText": "Để hủy trên iPhone: Cài đặt > Apple Account > Đăng ký.",
-  "subscriptionActivated": "Đã kích hoạt đăng ký."
+  "subscriptionActivated": "Đã kích hoạt đăng ký.",
+  "retryButton": "Thử lại",
+  "benefitNoCreditCard": "Bắt đầu bằng Apple ID — không cần thẻ tín dụng",
+  "benefitRenewalNotice": "Nhắc nhở 7 ngày trước khi gia hạn",
+  "benefitAppleRefund": "Hoàn tiền qua Apple trong vòng 7 ngày"
 }

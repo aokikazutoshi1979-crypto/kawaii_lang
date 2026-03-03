@@ -726,4 +726,16 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get subscriptionActivated => 'サブスクリプションに加入しました。';
+
+  @override
+  String get retryButton => 'もう一回言う';
+
+  @override
+  String get benefitNoCreditCard => 'Apple IDだけで開始（クレカ不要）';
+
+  @override
+  String get benefitRenewalNotice => '更新7日前にお知らせ';
+
+  @override
+  String get benefitAppleRefund => '7日以内ならApple経由で返金申請可';
 }

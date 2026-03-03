@@ -1444,6 +1444,30 @@ abstract class AppLocalizations {
   /// In ja, this message translates to:
   /// **'サブスクリプションに加入しました。'**
   String get subscriptionActivated;
+
+  /// No description provided for @retryButton.
+  ///
+  /// In ja, this message translates to:
+  /// **'もう一回言う'**
+  String get retryButton;
+
+  /// No description provided for @benefitNoCreditCard.
+  ///
+  /// In ja, this message translates to:
+  /// **'Apple IDだけで開始（クレカ不要）'**
+  String get benefitNoCreditCard;
+
+  /// No description provided for @benefitRenewalNotice.
+  ///
+  /// In ja, this message translates to:
+  /// **'更新7日前にお知らせ'**
+  String get benefitRenewalNotice;
+
+  /// No description provided for @benefitAppleRefund.
+  ///
+  /// In ja, this message translates to:
+  /// **'7日以内ならApple経由で返金申請可'**
+  String get benefitAppleRefund;
 }
 
 class _AppLocalizationsDelegate

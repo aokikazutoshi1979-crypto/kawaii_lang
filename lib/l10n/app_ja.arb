@@ -416,5 +416,9 @@
   "subscriptionBenefitUnlimited": "回数制限なし",
   "subscriptionBenefitCancelAnytime": "いつでも解約",
   "iosCancelGuideText": "解約はiPhoneの「設定」→「Apple Account」→「サブスクリプション」から行えます。",
-  "subscriptionActivated": "サブスクリプションに加入しました。"
+  "subscriptionActivated": "サブスクリプションに加入しました。",
+  "retryButton": "もう一回言う",
+  "benefitNoCreditCard": "Apple IDだけで開始（クレカ不要）",
+  "benefitRenewalNotice": "更新7日前にお知らせ",
+  "benefitAppleRefund": "7日以内ならApple経由で返金申請可"
 }

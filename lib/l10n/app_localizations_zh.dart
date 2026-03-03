@@ -722,6 +722,18 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get subscriptionActivated => '订阅已激活。';
+
+  @override
+  String get retryButton => '再说一次';
+
+  @override
+  String get benefitNoCreditCard => '仅需 Apple ID 开始（无需信用卡）';
+
+  @override
+  String get benefitRenewalNotice => '续费前7天提醒';
+
+  @override
+  String get benefitAppleRefund => '7天内可通过Apple申请退款';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -1397,4 +1409,16 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get subscriptionActivated => '訂閱已啟用。';
+
+  @override
+  String get retryButton => '再說一次';
+
+  @override
+  String get benefitNoCreditCard => '僅需 Apple ID 開始（無需信用卡）';
+
+  @override
+  String get benefitRenewalNotice => '續費前7天提醒';
+
+  @override
+  String get benefitAppleRefund => '7天內可透過Apple申請退款';
 }

@@ -385,5 +385,9 @@
   "subscriptionBenefitUnlimited": "Unlimited practice",
   "subscriptionBenefitCancelAnytime": "Cancel anytime",
   "iosCancelGuideText": "To cancel on iPhone: Settings > Apple Account > Subscriptions.",
-  "subscriptionActivated": "Subscription activated."
+  "subscriptionActivated": "Subscription activated.",
+  "retryButton": "Try again",
+  "benefitNoCreditCard": "Start with Apple ID — no credit card needed",
+  "benefitRenewalNotice": "Reminder 7 days before renewal",
+  "benefitAppleRefund": "Refund available via Apple within 7 days"
 }

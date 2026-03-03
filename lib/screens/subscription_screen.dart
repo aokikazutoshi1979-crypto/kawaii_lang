@@ -69,7 +69,10 @@ class _SubscriptionScreenState extends SubscriptionState<SubscriptionScreen> {
   List<String> _benefits(AppLocalizations loc) => [
         loc.subscriptionBenefitAllCategories,
         loc.subscriptionBenefitUnlimited,
+        loc.benefitNoCreditCard,
         loc.subscriptionBenefitCancelAnytime,
+        loc.benefitRenewalNotice,
+        loc.benefitAppleRefund,
       ];
 
   String _iosCancelGuide(AppLocalizations loc) => loc.iosCancelGuideText;

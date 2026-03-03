@@ -747,4 +747,17 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get subscriptionActivated => 'Đã kích hoạt đăng ký.';
+
+  @override
+  String get retryButton => 'Thử lại';
+
+  @override
+  String get benefitNoCreditCard =>
+      'Bắt đầu bằng Apple ID — không cần thẻ tín dụng';
+
+  @override
+  String get benefitRenewalNotice => 'Nhắc nhở 7 ngày trước khi gia hạn';
+
+  @override
+  String get benefitAppleRefund => 'Hoàn tiền qua Apple trong vòng 7 ngày';
 }

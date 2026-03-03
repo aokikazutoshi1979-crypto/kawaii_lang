@@ -49,6 +49,10 @@ List<String> tsumugiPraiseLines(String uiLanguageCode) {
         'すごい、自然に聞こえたよ。',
         'いいね、ちゃんと伝わったよ☺️',
         'いい調子だよ。',
+        '発音、よくなってきてるよ！前より自信が出てきたね。',
+        'それ、日本人に通じる言い方だよ☺️',
+        '完璧じゃなくても大丈夫。伝わることが大事だよ。',
+        'ゆっくりでよかったんだよ。ちゃんと聞こえたよ☺️',
       ];
     case 'ko':
       return const [
@@ -106,6 +110,10 @@ List<String> tsumugiPraiseLines(String uiLanguageCode) {
         'Awesome! Keep going.',
         'Perfect!',
         'Yes! You nailed it.',
+        'Your pronunciation is getting better — I can really hear it!',
+        'A real Japanese person would understand that perfectly☺️',
+        "It doesn't have to be perfect. You got the meaning across!",
+        'Taking your time is totally fine. I heard you clearly☺️',
       ];
   }
 }

@@ -757,4 +757,18 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get subscriptionActivated => 'Abonnement aktiviert.';
+
+  @override
+  String get retryButton => 'Nochmal versuchen';
+
+  @override
+  String get benefitNoCreditCard =>
+      'Start mit Apple ID – keine Kreditkarte erforderlich';
+
+  @override
+  String get benefitRenewalNotice => 'Erinnerung 7 Tage vor Verlängerung';
+
+  @override
+  String get benefitAppleRefund =>
+      'Erstattung über Apple innerhalb von 7 Tagen möglich';
 }
