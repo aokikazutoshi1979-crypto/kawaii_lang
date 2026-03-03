@@ -205,7 +205,7 @@ const TTS_SPEAKER_MAP = {
 };
 
 // 日次上限（変更はここだけ）
-const TTS_DAILY_LIMIT_FREE = 100;
+const TTS_DAILY_LIMIT_FREE = 30;
 const TTS_DAILY_LIMIT_PREMIUM = 1000;
 
 // メモリ内レート制限
