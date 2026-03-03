@@ -424,45 +424,56 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                 const SizedBox(height: 8),
                 _voicevoxCreditTile('四国めたん'),
                 const SizedBox(height: 16),
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-                  decoration: BoxDecoration(
-                    color: Colors.pink.shade50,
-                    borderRadius: BorderRadius.circular(10),
-                    border: Border.all(color: Colors.pink.shade100),
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Icon(Icons.info_outline_rounded,
-                              size: 15, color: Colors.pink.shade400),
-                          const SizedBox(width: 6),
-                          Text(
-                            'VOICEVOX アニメ声の利用制限',
-                            style: TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w700,
-                              color: Colors.pink.shade700,
+                Builder(builder: (context) {
+                  final isJa = selectedLang == 'ja';
+                  final title = isJa
+                      ? 'VOICEVOX アニメ声の利用制限'
+                      : 'VOICEVOX Anime Voice Limits';
+                  final body = isJa
+                      ? '• 無料：1日30回まで（毎日0:00 JSTに回復）\n'
+                          '• サブスク：ほぼ無制限（1日1,000回）\n'
+                          '• 上限に達した場合は端末の標準音声で継続再生されます'
+                      : '• Free: up to 30 times/day (resets at 0:00 JST)\n'
+                          '• Subscription: almost unlimited (1,000/day)\n'
+                          '• When the limit is reached, device voice is used instead';
+                  return Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                    decoration: BoxDecoration(
+                      color: Colors.pink.shade50,
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(color: Colors.pink.shade100),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(Icons.info_outline_rounded,
+                                size: 15, color: Colors.pink.shade400),
+                            const SizedBox(width: 6),
+                            Text(
+                              title,
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w700,
+                                color: Colors.pink.shade700,
+                              ),
                             ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 6),
-                      Text(
-                        '• 無料：1日100回まで（毎日0:00 JSTに回復）\n'
-                        '• サブスク：ほぼ無制限（1日1,000回）\n'
-                        '• 上限に達した場合は端末の標準音声で継続再生されます',
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: Colors.pink.shade800,
-                          height: 1.6,
+                          ],
                         ),
-                      ),
-                    ],
-                  ),
-                ),
+                        const SizedBox(height: 6),
+                        Text(
+                          body,
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.pink.shade800,
+                            height: 1.6,
+                          ),
+                        ),
+                      ],
+                    ),
+                  );
+                }),
               ],
             ),
           ),

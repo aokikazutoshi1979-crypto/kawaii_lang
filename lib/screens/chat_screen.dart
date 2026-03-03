@@ -2881,7 +2881,7 @@ class _TtsRemainingBanner extends StatelessWidget {
           valueListenable: remainingNotifier,
           builder: (context, remaining, _) {
             if (remaining == null) return const SizedBox.shrink();
-            const limit = 100;
+            const limit = 30;
             final label = nativeCode == 'ja' ? '残り' : 'Left';
             return Container(
               width: double.infinity,
