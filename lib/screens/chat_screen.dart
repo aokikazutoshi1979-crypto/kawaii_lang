@@ -2667,7 +2667,8 @@ class _ChatScreenState extends State<ChatScreen> {
                     botAvatarPath: CharacterAssetService.chatAvatar(_selectedCharacter),
                     // 日本語学習時のみ VOICEVOX で読み上げ
                     onSpeak: _targetCode == 'ja'
-                        ? (text) => _voicevoxService.speak(text, _selectedCharacter)
+                        ? (text, onStart) => _voicevoxService.speak(
+                              text, _selectedCharacter, onPlayStart: onStart)
                         : null,
                   ),
                 ),

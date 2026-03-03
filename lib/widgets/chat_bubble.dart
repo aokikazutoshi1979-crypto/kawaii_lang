@@ -38,13 +38,14 @@ class ChatBubble extends StatefulWidget {
   final bool showTtsBody;
   final String? avatarPath;      // ← 追加
   final bool showAvatar;
-  final Future<void> Function(String)? onSpeak; // ← VOICEVOX用
+  final Future<void> Function(String, void Function(Duration)?)? onSpeak; // ← VOICEVOX用
 
   @override
   State<ChatBubble> createState() => _ChatBubbleState();
 }
 
-class _ChatBubbleState extends State<ChatBubble> {
+class _ChatBubbleState extends State<ChatBubble>
+    with SingleTickerProviderStateMixin {
   // 再生用
   late final AudioPlayer _player;
   bool _isPlaying = false;
@@ -52,6 +53,7 @@ class _ChatBubbleState extends State<ChatBubble> {
   Duration _duration = Duration.zero;
   bool _visible = false;
   bool _isTtsLoading = false; // TTS再生待ちローディング状態
+  late final AnimationController _karaokeController; // カラオケ進行アニメーション
 
   final FlutterTts _tts = FlutterTts();
 
@@ -77,6 +79,10 @@ class _ChatBubbleState extends State<ChatBubble> {
   @override
   void initState() {
     super.initState();
+    _karaokeController = AnimationController(
+      vsync: this,
+      duration: Duration.zero,
+    )..addListener(() { if (mounted) setState(() {}); });
     Future.microtask(() {
       if (mounted) setState(() => _visible = true);
     });
@@ -105,6 +111,7 @@ class _ChatBubbleState extends State<ChatBubble> {
 
   @override
   void dispose() {
+    _karaokeController.dispose();
     _player.dispose();
     _tts.stop();
     super.dispose();
@@ -177,19 +184,88 @@ class _ChatBubbleState extends State<ChatBubble> {
   void _speak() async {
     final text = widget.ttsText;
     if (text == null || text.isEmpty) return;
+    _karaokeController.stop();
+    _karaokeController.reset();
     if (mounted) setState(() => _isTtsLoading = true);
     try {
       if (widget.onSpeak != null) {
-        // VOICEVOX経由（日本語学習時）
-        await widget.onSpeak!(text);
+        // VOICEVOX経由（日本語学習時）: onPlayStart で音声開始タイミングを受け取る
+        await widget.onSpeak!(text, (audioDuration) {
+          if (!mounted) return;
+          setState(() => _isTtsLoading = false);
+          _karaokeController.duration = audioDuration;
+          _karaokeController.forward(from: 0.0);
+        });
       } else {
         // iPhoneデフォルトTTS（その他の言語）
         await _setTtsLanguage();
         await _tts.speak(text);
       }
     } finally {
-      if (mounted) setState(() => _isTtsLoading = false);
+      if (mounted) {
+        _karaokeController.stop();
+        _karaokeController.reset();
+        setState(() => _isTtsLoading = false);
+      }
     }
+  }
+
+  /// カラオケテロップ風テキスト。progress(0.0〜1.0)に応じて左から色が変わる。
+  Widget _karaokeText(String text, double progress, {double fontSize = 16}) {
+    final total = text.length;
+    final colored = (total * progress).round().clamp(0, total);
+    return RichText(
+      text: TextSpan(
+        children: [
+          if (colored > 0)
+            TextSpan(
+              text: text.substring(0, colored),
+              style: TextStyle(
+                fontSize: fontSize,
+                height: 1.4,
+                color: const Color(0xFFE91E63), // ピンク（再生済み）
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          if (colored < total)
+            TextSpan(
+              text: text.substring(colored),
+              style: TextStyle(
+                fontSize: fontSize,
+                height: 1.4,
+                color: Colors.black87,
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+
+  /// highlightBody を行ごとに分割し、先頭2つの非空行はカラオケ、残りは通常テキストで描画。
+  Widget _buildHighlightBody(String body) {
+    final lines = body.split('\n');
+    // 日本語（targetLang == 'ja'）のときのみカラオケを有効にする
+    final isJapanese = widget.targetLang == 'ja';
+    final progress = _karaokeController.value;
+    final children = <Widget>[];
+    int nonEmptyCount = 0;
+    for (final line in lines) {
+      if (line.trim().isEmpty) {
+        children.add(const SizedBox(height: 6));
+        continue;
+      }
+      final isKaraokeTarget = isJapanese && nonEmptyCount < 2 && progress > 0;
+      nonEmptyCount++;
+      children.add(
+        isKaraokeTarget
+            ? _karaokeText(line, progress)
+            : Text(line, style: const TextStyle(fontSize: 16, height: 1.4)),
+      );
+    }
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: children,
+    );
   }
 
   String _mmss(Duration d) {
@@ -344,10 +420,7 @@ class _ChatBubbleState extends State<ChatBubble> {
                   ),
                   if (widget.highlightBody != null) ...[
                     const SizedBox(height: 6),
-                    Text(
-                      widget.highlightBody!,
-                      style: const TextStyle(fontSize: 16, height: 1.4),
-                    ),
+                    _buildHighlightBody(widget.highlightBody!),
                   ],
                 ],
               ),

@@ -29,7 +29,12 @@ class VoicevoxTtsService {
 
   /// [text] を [character] の声で読み上げる。
   /// targetLang == 'ja' のときのみ呼ばれる前提。
-  Future<void> speak(String text, String character) async {
+  /// [onPlayStart] は音声再生が始まる直前に呼ばれ、音声の長さ(Duration)が渡される。
+  Future<void> speak(
+    String text,
+    String character, {
+    void Function(Duration)? onPlayStart,
+  }) async {
     text = text
         .replaceAll(RegExp(r'<[^>]+>'), ' ')
         .replaceAll(RegExp(r'\s+'), ' ')
@@ -83,7 +88,9 @@ class VoicevoxTtsService {
       final file = File('${dir.path}/voicevox_tts.wav');
       await file.writeAsBytes(bytes, flush: true);
 
-      await _player.setFilePath(file.path);
+      final audioDuration =
+          await _player.setFilePath(file.path) ?? const Duration(seconds: 3);
+      onPlayStart?.call(audioDuration);
       await _player.play();
     } catch (e) {
       debugPrint('[VoicevoxTTS] error: $e');

@@ -6,7 +6,7 @@ class MessageList extends StatelessWidget {
   final List<Map<String, dynamic>> messages;
   final Widget? header;
   final String? botAvatarPath; // ← 追加: bot吹き出しに表示するキャラアイコン
-  final Future<void> Function(String)? onSpeak; // ← VOICEVOX用コールバック
+  final Future<void> Function(String, void Function(Duration)?)? onSpeak; // ← VOICEVOX用コールバック
 
   const MessageList({
     required this.messages,
