@@ -4,24 +4,50 @@ import 'dart:typed_data';
 
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:path_provider/path_provider.dart';
 
+/// 日次上限に達したときに渡される情報
+class TtsDailyLimitInfo {
+  final int limit;
+  final int used;
+  final String resetAtJst;
+  final bool isPremium;
+
+  const TtsDailyLimitInfo({
+    required this.limit,
+    required this.used,
+    required this.resetAtJst,
+    required this.isPremium,
+  });
+}
+
 /// BotBubble 用 VOICEVOX TTS サービス。
 /// - 2秒スロットル（連打スキップ）
-/// - 30秒キャッシュ（同一テキスト再利用）
+/// - 24時間キャッシュ（同一テキスト・当日中は再生成しない）
 /// - キュー1個（新しいリクエストで前の再生をキャンセル）
 /// - 200文字上限（超過分は切り捨て）
-/// - 例外はすべて握りつぶして debugPrint のみ
+/// - 日次上限超過時は flutter_tts でフォールバック再生
 class VoicevoxTtsService {
   static const int _maxChars = 200;
   static const Duration _throttle = Duration(seconds: 2);
-  static const Duration _cacheTtl = Duration(seconds: 30);
+  // 同日内の同テキスト再生成を避けるため 24 時間キャッシュ
+  static const Duration _cacheTtl = Duration(hours: 24);
 
   final _cache = <String, _CacheEntry>{};
   DateTime? _lastPlayTime;
   int _currentSpeakId = 0;
   final _player = AudioPlayer();
+
+  /// 残り回数（null = 未取得）。プレミアムユーザーは表示不要。
+  final ValueNotifier<int?> remainingNotifier = ValueNotifier(null);
+
+  /// プレミアム判定（null = 未取得）
+  final ValueNotifier<bool?> isPremiumNotifier = ValueNotifier(null);
+
+  /// フォールバック用端末 TTS（日次上限超過時に使用）
+  final FlutterTts _fallbackTts = FlutterTts();
 
   late final HttpsCallable _ttsProxy = FirebaseFunctions.instanceFor(
     region: 'asia-northeast1',
@@ -29,11 +55,13 @@ class VoicevoxTtsService {
 
   /// [text] を [character] の声で読み上げる。
   /// targetLang == 'ja' のときのみ呼ばれる前提。
-  /// [onPlayStart] は音声再生が始まる直前に呼ばれ、音声の長さ(Duration)が渡される。
+  /// [onPlayStart]: 音声再生が始まる直前に呼ばれ、音声の長さ(Duration)が渡される。
+  /// [onDailyLimitFallback]: 日次上限に達し端末 TTS にフォールバックする直前に呼ばれる。
   Future<void> speak(
     String text,
     String character, {
     void Function(Duration)? onPlayStart,
+    void Function(TtsDailyLimitInfo)? onDailyLimitFallback,
   }) async {
     text = text
         .replaceAll(RegExp(r'<[^>]+>'), ' ')
@@ -65,13 +93,22 @@ class VoicevoxTtsService {
       final cached = _cache[cacheKey];
       if (cached != null && now.difference(cached.time) < _cacheTtl) {
         bytes = cached.bytes;
-        debugPrint('[VoicevoxTTS] cache hit');
+        debugPrint('[VoicevoxTTS] cache hit – skipping API call');
       } else {
         final result = await _ttsProxy.call<Map<String, dynamic>>({
           'text': text,
           'character': character,
         });
-        if (myId != _currentSpeakId) return; // 新しいリクエストが来ていたらキャンセル
+        if (myId != _currentSpeakId) return;
+
+        // サーバーから返ってきた使用量を反映
+        final usage = result.data['usage'] as Map<String, dynamic>?;
+        if (usage != null) {
+          final remaining = (usage['remaining'] as num?)?.toInt();
+          final premium = usage['isPremium'] as bool?;
+          remainingNotifier.value = remaining;
+          isPremiumNotifier.value = premium;
+        }
 
         final audioBase64 = result.data['audioBase64'] as String?;
         if (audioBase64 == null || audioBase64.isEmpty) {
@@ -92,8 +129,46 @@ class VoicevoxTtsService {
           await _player.setFilePath(file.path) ?? const Duration(seconds: 3);
       onPlayStart?.call(audioDuration);
       await _player.play();
+    } on FirebaseFunctionsException catch (e) {
+      if (e.code == 'resource-exhausted') {
+        final details = e.details;
+        if (details is Map && details['daily'] == true) {
+          // 日次上限超過 → 端末 TTS へフォールバック
+          final info = TtsDailyLimitInfo(
+            limit: (details['limit'] as num?)?.toInt() ?? 100,
+            used: (details['used'] as num?)?.toInt() ?? 0,
+            resetAtJst: details['resetAtJst'] as String? ?? '',
+            isPremium: details['isPremium'] as bool? ?? false,
+          );
+          isPremiumNotifier.value = info.isPremium;
+          onDailyLimitFallback?.call(info);
+          await _speakFallback(text);
+          return;
+        }
+      }
+      debugPrint('[VoicevoxTTS] error: $e');
     } catch (e) {
       debugPrint('[VoicevoxTTS] error: $e');
+    }
+  }
+
+  /// 端末標準 TTS でフォールバック再生（日本語固定）
+  Future<void> _speakFallback(String text) async {
+    try {
+      await _fallbackTts.setLanguage('ja-JP');
+      await _fallbackTts.setSpeechRate(0.4);
+      if (Platform.isIOS) {
+        await _fallbackTts.setIosAudioCategory(
+          IosTextToSpeechAudioCategory.playback,
+          [
+            IosTextToSpeechAudioCategoryOptions.defaultToSpeaker,
+            IosTextToSpeechAudioCategoryOptions.allowBluetooth,
+          ],
+        );
+      }
+      await _fallbackTts.speak(text);
+    } catch (e) {
+      debugPrint('[VoicevoxTTS] fallback TTS error: $e');
     }
   }
 
@@ -102,6 +177,9 @@ class VoicevoxTtsService {
     try {
       await _player.stop();
     } catch (_) {}
+    try {
+      await _fallbackTts.stop();
+    } catch (_) {}
   }
 
   Future<void> dispose() async {
@@ -109,6 +187,11 @@ class VoicevoxTtsService {
     try {
       await _player.dispose();
     } catch (_) {}
+    try {
+      await _fallbackTts.stop();
+    } catch (_) {}
+    remainingNotifier.dispose();
+    isPremiumNotifier.dispose();
   }
 }
 
