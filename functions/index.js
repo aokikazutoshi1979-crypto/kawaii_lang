@@ -204,8 +204,33 @@ const TTS_SPEAKER_MAP = {
   kasumi: "四国めたん",
 };
 
+// 日次上限（変更はここだけ）
+const TTS_DAILY_LIMIT_FREE = 100;
+const TTS_DAILY_LIMIT_PREMIUM = 1000;
+
 // メモリ内レート制限
 const ttsRateLimitMap = new Map();
+
+/** JST 基準で今日の日付文字列 "YYYY-MM-DD" を返す */
+function getJstDateString() {
+  return new Intl.DateTimeFormat("sv-SE", { timeZone: "Asia/Tokyo" }).format(
+    new Date()
+  );
+}
+
+/** JST 翌日 00:00 の表示文字列 "YYYY-MM-DD 00:00 JST" を返す */
+function getJstResetString() {
+  const now = new Date();
+  const jstNow = new Date(
+    now.toLocaleString("en-US", { timeZone: "Asia/Tokyo" })
+  );
+  jstNow.setDate(jstNow.getDate() + 1);
+  jstNow.setHours(0, 0, 0, 0);
+  const y = jstNow.getFullYear();
+  const m = String(jstNow.getMonth() + 1).padStart(2, "0");
+  const d = String(jstNow.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d} 00:00 JST`;
+}
 
 exports.ttsProxy = onCall(
   {
@@ -221,7 +246,7 @@ exports.ttsProxy = onCall(
 
     const uid = request.auth.uid;
 
-    // レート制限
+    // 短時間レート制限（既存: 10回/60秒）
     const now = Date.now();
     const timestamps = (ttsRateLimitMap.get(uid) || []).filter(
       (t) => now - t < 60000
@@ -244,11 +269,75 @@ exports.ttsProxy = onCall(
       throw new HttpsError("invalid-argument", "text is required");
     }
 
+    // ── プレミアム判定（Firestore users/{uid}）──────────────────
+    const db = admin.firestore();
+    const userDoc = await db.collection("users").doc(uid).get();
+    const userData = userDoc.data() || {};
+    const rawHasSub = userData.hasSubscription === true;
+    let isPremium = false;
+    if (rawHasSub) {
+      const expField = userData.expirationDate;
+      if (!expField) {
+        isPremium = true; // 有効期限なし = 有効
+      } else {
+        const expMs = expField.toMillis
+          ? expField.toMillis()
+          : Date.parse(String(expField));
+        isPremium = expMs > Date.now();
+      }
+    }
+    const limit = isPremium ? TTS_DAILY_LIMIT_PREMIUM : TTS_DAILY_LIMIT_FREE;
+
+    // ── 日次カウント（JST 基準）──────────────────────────────────
+    const dateStr = getJstDateString();
+    const usageRef = db
+      .collection("users")
+      .doc(uid)
+      .collection("usage")
+      .doc("ttsDaily");
+
+    let newCount;
+    let limitReached = false;
+
+    await db.runTransaction(async (t) => {
+      const usageSnap = await t.get(usageRef);
+      const usageData = usageSnap.exists ? usageSnap.data() : null;
+      let count = 0;
+      if (usageData && usageData.date === dateStr) {
+        count = usageData.count || 0;
+      }
+      if (count >= limit) {
+        limitReached = true;
+        newCount = count;
+        return;
+      }
+      newCount = count + 1;
+      t.set(usageRef, {
+        date: dateStr,
+        count: newCount,
+        updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+      });
+    });
+
+    if (limitReached) {
+      const resetAtJst = getJstResetString();
+      console.log(
+        `[ttsProxy] daily limit uid=${uid} date=${dateStr} count=${newCount} limit=${limit} isPremium=${isPremium}`
+      );
+      throw new HttpsError("resource-exhausted", "Daily voice limit reached", {
+        limit,
+        used: newCount,
+        resetAtJst,
+        isPremium,
+        daily: true,
+      });
+    }
+
     const speakerName =
       TTS_SPEAKER_MAP[character] ?? TTS_SPEAKER_MAP.tumugi;
 
     console.log(
-      `[ttsProxy] uid=${uid} speaker=${speakerName} text="${text.slice(0, 40)}"`
+      `[ttsProxy] uid=${uid} date=${dateStr} count=${newCount}/${limit} isPremium=${isPremium} speaker=${speakerName} text="${text.slice(0, 40)}"`
     );
 
     // VPSへ中継
@@ -269,12 +358,18 @@ exports.ttsProxy = onCall(
       const audioBase64 = Buffer.from(response.data).toString("base64");
 
       console.log(
-        `[ttsProxy] success uid=${uid} bytes=${response.data.byteLength}`
+        `[ttsProxy] success uid=${uid} date=${dateStr} count=${newCount}/${limit} bytes=${response.data.byteLength}`
       );
 
       return {
         audioBase64,
         contentType: "audio/wav",
+        usage: {
+          count: newCount,
+          limit,
+          remaining: limit - newCount,
+          isPremium,
+        },
       };
     } catch (err) {
       console.error(`[ttsProxy] VPS error: ${err.message}`);
