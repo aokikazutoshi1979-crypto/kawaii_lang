@@ -51,6 +51,7 @@ class _ChatBubbleState extends State<ChatBubble> {
   Duration _position = Duration.zero;
   Duration _duration = Duration.zero;
   bool _visible = false;
+  bool _isTtsLoading = false; // TTS再生待ちローディング状態
 
   final FlutterTts _tts = FlutterTts();
 
@@ -176,13 +177,18 @@ class _ChatBubbleState extends State<ChatBubble> {
   void _speak() async {
     final text = widget.ttsText;
     if (text == null || text.isEmpty) return;
-    if (widget.onSpeak != null) {
-      // VOICEVOX経由（日本語学習時）
-      await widget.onSpeak!(text);
-    } else {
-      // iPhoneデフォルトTTS（その他の言語）
-      await _setTtsLanguage();
-      await _tts.speak(text);
+    if (mounted) setState(() => _isTtsLoading = true);
+    try {
+      if (widget.onSpeak != null) {
+        // VOICEVOX経由（日本語学習時）
+        await widget.onSpeak!(text);
+      } else {
+        // iPhoneデフォルトTTS（その他の言語）
+        await _setTtsLanguage();
+        await _tts.speak(text);
+      }
+    } finally {
+      if (mounted) setState(() => _isTtsLoading = false);
     }
   }
 
@@ -249,10 +255,10 @@ class _ChatBubbleState extends State<ChatBubble> {
     if (!widget.isBot && widget.labelType != null) {
       if (widget.labelType == 'correct') {
         labelText = loc.badgeCorrect;
-        labelBg   = Colors.red;
+        labelBg   = const Color(0xFF43A047); // 緑
       } else if (widget.labelType == 'incorrect') {
         labelText = loc.badgeNeedsImprovement;
-        labelBg   = const Color(0xFF1E88E5);
+        labelBg   = const Color(0xFFE53935); // 赤
       }
     }
     final showUserLabel = !widget.isBot && labelText != null;
@@ -321,8 +327,17 @@ class _ChatBubbleState extends State<ChatBubble> {
                         ),
                       if (widget.isBot && (widget.ttsText?.isNotEmpty ?? false))
                         if (hasTts) IconButton(
-                          icon: const Icon(Icons.volume_up),
-                          onPressed: _speak,
+                          icon: _isTtsLoading
+                              ? const SizedBox(
+                                  width: 22,
+                                  height: 22,
+                                  child: CircularProgressIndicator(
+                                    strokeWidth: 2.5,
+                                    valueColor: AlwaysStoppedAnimation<Color>(Colors.orange),
+                                  ),
+                                )
+                              : const Icon(Icons.volume_up),
+                          onPressed: _isTtsLoading ? null : _speak,
                           tooltip: 'Play',
                         ),
                     ],
@@ -375,8 +390,17 @@ class _ChatBubbleState extends State<ChatBubble> {
                 if (widget.isBot && widget.ttsText != null && widget.ttsText!.isNotEmpty)
                   if (!hasHighlight && hasTts)
                     IconButton(
-                      icon: const Icon(Icons.volume_up),
-                      onPressed: _speak,
+                      icon: _isTtsLoading
+                          ? const SizedBox(
+                              width: 22,
+                              height: 22,
+                              child: CircularProgressIndicator(
+                                strokeWidth: 2.5,
+                                valueColor: AlwaysStoppedAnimation<Color>(Colors.orange),
+                              ),
+                            )
+                          : const Icon(Icons.volume_up),
+                      onPressed: _isTtsLoading ? null : _speak,
                     ),
               ],
             ),
