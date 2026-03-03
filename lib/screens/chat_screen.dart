@@ -130,6 +130,8 @@ class _ChatScreenState extends State<ChatScreen> {
 
   // VOICEVOX TTS（日本語学習時のみ使用）
   final VoicevoxTtsService _voicevoxService = VoicevoxTtsService();
+  // 日次上限 SnackBar は 1 セッションで 1 回だけ表示
+  bool _ttsDailyLimitSnackBarShown = false;
 
   // ── 送信前ボタン有効判定
   bool get _canSend {
@@ -1019,6 +1021,28 @@ class _ChatScreenState extends State<ChatScreen> {
   String _displayLangCode(String rawCode) {
     final code = getLangCode(rawCode).replaceAll('_', '-');
     return code.toUpperCase();
+  }
+
+  /// 日次上限超過時: 端末 TTS フォールバックの SnackBar を 1 回だけ表示
+  void _onTtsDailyLimitFallback(TtsDailyLimitInfo info) {
+    if (_ttsDailyLimitSnackBarShown) return;
+    _ttsDailyLimitSnackBarShown = true;
+    if (!mounted) return;
+
+    final String msg;
+    if (_nativeCode == 'ja') {
+      msg = '本日のアニメ声は上限に達したため、端末の標準音声で再生します（${info.resetAtJst}に回復）';
+    } else {
+      msg = 'Daily anime voice limit reached. Using device voice instead (resets at ${info.resetAtJst}).';
+    }
+
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(msg),
+        duration: const Duration(seconds: 6),
+        behavior: SnackBarBehavior.floating,
+      ),
+    );
   }
 
   @override
@@ -2668,10 +2692,19 @@ class _ChatScreenState extends State<ChatScreen> {
                     // 日本語学習時のみ VOICEVOX で読み上げ
                     onSpeak: _targetCode == 'ja'
                         ? (text, onStart) => _voicevoxService.speak(
-                              text, _selectedCharacter, onPlayStart: onStart)
+                              text, _selectedCharacter,
+                              onPlayStart: onStart,
+                              onDailyLimitFallback: _onTtsDailyLimitFallback,
+                            )
                         : null,
                   ),
                 ),
+                // 残り回数バナー（無料ユーザーのみ・日本語学習時のみ）
+                if (_targetCode == 'ja')
+                  _TtsRemainingBanner(
+                    remainingNotifier: _voicevoxService.remainingNotifier,
+                    isPremiumNotifier: _voicevoxService.isPremiumNotifier,
+                  ),
                 MicArea(
                   isListening: _isListening,
                   isKeyboardMode: _isKeyboardMode,
@@ -2815,5 +2848,48 @@ class _PromptBubbleTailPainter extends CustomPainter {
   bool shouldRepaint(covariant _PromptBubbleTailPainter oldDelegate) {
     return oldDelegate.fillColor != fillColor ||
         oldDelegate.borderColor != borderColor;
+  }
+}
+
+/// 無料ユーザー向け VOICEVOX 残り回数バナー
+/// isPremiumNotifier が true のとき、または残り回数が未取得のときは非表示。
+class _TtsRemainingBanner extends StatelessWidget {
+  const _TtsRemainingBanner({
+    required this.remainingNotifier,
+    required this.isPremiumNotifier,
+  });
+
+  final ValueNotifier<int?> remainingNotifier;
+  final ValueNotifier<bool?> isPremiumNotifier;
+
+  @override
+  Widget build(BuildContext context) {
+    return ValueListenableBuilder<bool?>(
+      valueListenable: isPremiumNotifier,
+      builder: (context, isPremium, _) {
+        // プレミアムユーザーは表示しない
+        if (isPremium == true) return const SizedBox.shrink();
+        return ValueListenableBuilder<int?>(
+          valueListenable: remainingNotifier,
+          builder: (context, remaining, _) {
+            if (remaining == null) return const SizedBox.shrink();
+            final limit = 100; // 無料の上限
+            return Container(
+              width: double.infinity,
+              color: Colors.black26,
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 3),
+              child: Text(
+                '🎙 残り $remaining/$limit',
+                style: const TextStyle(
+                  fontSize: 11,
+                  color: Colors.white70,
+                ),
+                textAlign: TextAlign.right,
+              ),
+            );
+          },
+        );
+      },
+    );
   }
 }
