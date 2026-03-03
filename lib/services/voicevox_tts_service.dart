@@ -2,7 +2,9 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:just_audio/just_audio.dart';
@@ -169,6 +171,64 @@ class VoicevoxTtsService {
       await _fallbackTts.speak(text);
     } catch (e) {
       debugPrint('[VoicevoxTTS] fallback TTS error: $e');
+    }
+  }
+
+  /// チャット画面起動時に今日の残り回数を Firestore から先読みする。
+  /// すでに取得済みなら何もしない。
+  Future<void> fetchUsageIfNeeded() async {
+    if (remainingNotifier.value != null) return;
+    try {
+      final uid = FirebaseAuth.instance.currentUser?.uid;
+      if (uid == null) return;
+
+      final db = FirebaseFirestore.instance;
+
+      // プレミアム判定
+      final userDoc = await db.collection('users').doc(uid).get();
+      final userData = userDoc.data() ?? {};
+      final hasSub = userData['hasSubscription'] == true;
+      bool isPremium = false;
+      if (hasSub) {
+        final expField = userData['expirationDate'];
+        if (expField == null) {
+          isPremium = true;
+        } else if (expField is Timestamp) {
+          isPremium = expField.millisecondsSinceEpoch > DateTime.now().millisecondsSinceEpoch;
+        }
+      }
+      isPremiumNotifier.value = isPremium;
+
+      // プレミアムユーザーは残り回数表示不要
+      if (isPremium) return;
+
+      // JST 今日の日付文字列
+      final jstNow = DateTime.now().toUtc().add(const Duration(hours: 9));
+      final dateStr =
+          '${jstNow.year}-${jstNow.month.toString().padLeft(2, '0')}-${jstNow.day.toString().padLeft(2, '0')}';
+
+      final usageSnap = await db
+          .collection('users')
+          .doc(uid)
+          .collection('usage')
+          .doc('ttsDaily')
+          .get();
+
+      const limit = 100;
+      if (usageSnap.exists) {
+        final data = usageSnap.data()!;
+        if (data['date'] == dateStr) {
+          final count = (data['count'] as num?)?.toInt() ?? 0;
+          remainingNotifier.value = (limit - count).clamp(0, limit);
+        } else {
+          // 昨日以前のデータ → 今日はまだ 0 回
+          remainingNotifier.value = limit;
+        }
+      } else {
+        remainingNotifier.value = limit;
+      }
+    } catch (e) {
+      debugPrint('[VoicevoxTTS] fetchUsage error: $e');
     }
   }
 

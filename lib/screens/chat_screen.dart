@@ -1066,6 +1066,11 @@ class _ChatScreenState extends State<ChatScreen> {
     _loadDisplayName();
     _loadCharacter();
 
+    // 日本語学習時: 残り回数を起動時に先読みしてバナーをすぐ表示
+    if (_targetCode == 'ja') {
+      _voicevoxService.fetchUsageIfNeeded();
+    }
+
     // ★ 言語カタログを読み込んでから一度だけ再描画
     Future.microtask(() async {
       await LanguageCatalog.instance.ensureLoaded();
