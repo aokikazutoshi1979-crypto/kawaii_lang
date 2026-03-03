@@ -65,6 +65,8 @@ app.post("/chat", async (req, res) => {
     return res.status(400).send({ errorCode: "TOO_LONG" });
   }
 
+  const requestId = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+
   try {
     // リクエストから message（=userMessage）と model を取得、model がなければ gpt-3.5-turbo
     const { message: userMessage, model = "gpt-3.5-turbo" } = req.body;
@@ -72,7 +74,7 @@ app.post("/chat", async (req, res) => {
     const response = await axios.post(
       "https://api.openai.com/v1/chat/completions",
       {
-        model,   // ここが可変になりました
+        model,
         messages: [
           { role: "system", content: "あなたは親切な英会話講師です。" },
           { role: "user",   content: userMessage },
@@ -88,8 +90,28 @@ app.post("/chat", async (req, res) => {
     const reply = response.data.choices[0].message.content;
     res.status(200).send({ reply });
   } catch (error) {
-    console.error("❌ OpenAIエラー:", error.message);
-    res.status(500).send({ errorCode: "SERVER_ERROR" });
+    const openAiStatus = error.response?.status ?? null;
+    const openAiError  = error.response?.data?.error ?? null;
+    console.error("❌ OpenAIエラー", {
+      requestId,
+      uid,
+      stage: "openai_chat",
+      httpStatus: openAiStatus,
+      openAiCode: openAiError?.code,
+      openAiType: openAiError?.type,
+      message: error.message,
+      stack: error.stack,
+    });
+    res.status(500).send({
+      errorCode: "SERVER_ERROR",
+      stage: "openai_chat",
+      requestId,
+      message: openAiStatus === 401
+        ? "OpenAI API key is invalid or expired"
+        : openAiStatus === 429
+        ? "OpenAI rate limit or quota exceeded"
+        : "Upstream API error",
+    });
   }
 });
 
@@ -168,3 +190,95 @@ exports.api = functions
   .region('asia-northeast1')
   .runWith({ secrets: [OPENAI_API_KEY] })
   .https.onRequest(app);
+
+// ============================================================
+// ttsProxy – VOICEVOX TTS 中継 (gen2 onCall)
+// ============================================================
+
+const { onCall, HttpsError } = require("firebase-functions/v2/https");
+
+const TTS_API_KEY = defineSecret("TTS_API_KEY");
+
+const TTS_SPEAKER_MAP = {
+  tumugi: "春日部つむぎ",
+  kasumi: "四国めたん",
+};
+
+// メモリ内レート制限
+const ttsRateLimitMap = new Map();
+
+exports.ttsProxy = onCall(
+  {
+    region: "asia-northeast1",
+    timeoutSeconds: 60,
+    secrets: [TTS_API_KEY],
+  },
+  async (request) => {
+    // 認証チェック
+    if (!request.auth) {
+      throw new HttpsError("unauthenticated", "Authentication required");
+    }
+
+    const uid = request.auth.uid;
+
+    // レート制限
+    const now = Date.now();
+    const timestamps = (ttsRateLimitMap.get(uid) || []).filter(
+      (t) => now - t < 60000
+    );
+
+    if (timestamps.length >= 10) {
+      const retryAfterSec = Math.ceil((60000 - (now - timestamps[0])) / 1000);
+      throw new HttpsError("resource-exhausted", "Rate limit exceeded", {
+        retryAfterSec,
+      });
+    }
+
+    timestamps.push(now);
+    ttsRateLimitMap.set(uid, timestamps);
+
+    // 入力チェック
+    const { text, character } = request.data;
+
+    if (!text || typeof text !== "string" || text.trim() === "") {
+      throw new HttpsError("invalid-argument", "text is required");
+    }
+
+    const speakerName =
+      TTS_SPEAKER_MAP[character] ?? TTS_SPEAKER_MAP.tumugi;
+
+    console.log(
+      `[ttsProxy] uid=${uid} speaker=${speakerName} text="${text.slice(0, 40)}"`
+    );
+
+    // VPSへ中継
+    try {
+      const response = await axios.post(
+        "https://tts.kawaiilang.com/tts",
+        { text, speakerName },
+        {
+          headers: {
+            "Content-Type": "application/json",
+            "x-api-key": TTS_API_KEY.value(),
+          },
+          responseType: "arraybuffer",
+          timeout: 30000,
+        }
+      );
+
+      const audioBase64 = Buffer.from(response.data).toString("base64");
+
+      console.log(
+        `[ttsProxy] success uid=${uid} bytes=${response.data.byteLength}`
+      );
+
+      return {
+        audioBase64,
+        contentType: "audio/wav",
+      };
+    } catch (err) {
+      console.error(`[ttsProxy] VPS error: ${err.message}`);
+      throw new HttpsError("internal", "TTS request failed");
+    }
+  }
+);
