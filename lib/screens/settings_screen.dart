@@ -380,6 +380,95 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     );
   }
 
+  void _showCreditsSheet() {
+    showModalBottomSheet<void>(
+      context: context,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(18)),
+      ),
+      builder: (ctx) {
+        return SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(20, 20, 20, 28),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Icon(Icons.copyright_rounded,
+                        color: Colors.blueGrey.shade600, size: 20),
+                    const SizedBox(width: 8),
+                    const Text(
+                      'Credits',
+                      style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w800,
+                        color: Color(0xFF1F2937),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 16),
+                Text(
+                  'VOICEVOX',
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.blueGrey.shade500,
+                    letterSpacing: 0.8,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                _voicevoxCreditTile('春日部つむぎ'),
+                const SizedBox(height: 8),
+                _voicevoxCreditTile('四国めたん'),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _voicevoxCreditTile(String characterName) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+      decoration: BoxDecoration(
+        color: Colors.grey.shade50,
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(color: Colors.grey.shade200),
+      ),
+      child: Row(
+        children: [
+          Icon(Icons.record_voice_over_rounded,
+              size: 18, color: Colors.pink.shade300),
+          const SizedBox(width: 10),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                characterName,
+                style: const TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                  color: Color(0xFF1F2937),
+                ),
+              ),
+              Text(
+                'VOICEVOX',
+                style: TextStyle(
+                  fontSize: 12,
+                  color: Colors.blueGrey.shade500,
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
   Future<void> _showLanguagePicker({required bool target}) async {
     final loc = AppLocalizations.of(context)!;
     final candidates = (target && selectedLang != null)
@@ -877,6 +966,12 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                           title: loc.privacyPolicy,
                           onTap: () =>
                               _launchUrl('https://kawaiilang.com/privacy.html'),
+                        ),
+                        Divider(height: 1, color: Colors.grey.shade200),
+                        _settingsRow(
+                          icon: Icons.copyright_rounded,
+                          title: 'Credits',
+                          onTap: _showCreditsSheet,
                         ),
                       ],
                     ),
