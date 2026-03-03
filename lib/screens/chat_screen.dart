@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../services/speech_service.dart';
@@ -707,6 +708,38 @@ class _ChatScreenState extends State<ChatScreen> {
     return candidates[_rng.nextInt(candidates.length)];
   }
 
+  /// thinking バブルを消してボットバブルを追加し、必ず setState で UI を更新する。
+  void _addBotBubble(String text) {
+    if (!mounted) return;
+    setState(() {
+      _messages.removeWhere((msg) => msg['role'] == _thinkingRole);
+      _messages.add({'role': 'bot', 'text': text});
+    });
+  }
+
+  /// API エラー情報をボットバブルとして表示する。
+  /// 詳細は常に debugPrint へ。UI には debug のみ詳細を出し、
+  /// release では汎用メッセージのみ表示する。
+  void _showApiError(
+    String stage, {
+    int? statusCode,
+    String? body,
+    Object? error,
+  }) {
+    final sb = StringBuffer('⚠️ APIエラー [$stage]');
+    if (statusCode != null) sb.write('\nHTTP: $statusCode');
+    if (body != null && body.isNotEmpty) sb.write('\nBody: $body');
+    if (error != null) sb.write('\n$error');
+    debugPrint(sb.toString());
+
+    if (kDebugMode) {
+      _addBotBubble(sb.toString());
+    } else {
+      final loc = AppLocalizations.of(context);
+      _addBotBubble(loc?.errorServerError ?? '⚠️ エラーが発生しました。もう一度お試しください。');
+    }
+  }
+
   Future<void> _flushPendingBotMessages(
     List<Map<String, dynamic>> pendingBotMessages,
   ) async {
@@ -950,7 +983,7 @@ class _ChatScreenState extends State<ChatScreen> {
     final String retryText = (retry ?? '').trim();
     if (retryText.isEmpty) return null;
     if (_isDuplicateSimilar(retryText, avoidList)) {
-      print('similar expression duplicated; skipped');
+      debugPrint('similar expression duplicated; skipped');
       return null;
     }
     return retryText;
@@ -1370,7 +1403,7 @@ class _ChatScreenState extends State<ChatScreen> {
       await _tts.stop();
       await _tts.speak(text);
     } catch (e) {
-      print('TTS failed: $e');
+      debugPrint('TTS failed: $e');
     } finally {
       _isSpeaking = false;
     }
@@ -1388,7 +1421,7 @@ class _ChatScreenState extends State<ChatScreen> {
           .trim();
 
       if (text.isEmpty) {
-        print('TTS: empty question text, skip.');
+        debugPrint('TTS: empty question text, skip.');
         return;
       }
 
@@ -1398,7 +1431,7 @@ class _ChatScreenState extends State<ChatScreen> {
     } catch (e) {
       if (!mounted) return;
       // フォールバック不要なら何もしない（ログだけでもOK）
-      print('TTS failed: $e');
+      debugPrint('TTS failed: $e');
     } finally {
       _isSpeaking = false;
     }
@@ -1521,7 +1554,7 @@ class _ChatScreenState extends State<ChatScreen> {
           );
         }
       } catch (e) {
-        print('record.start failed: $e');
+        debugPrint('record.start failed: $e');
       }
       setState(() {
         _isListening = true;
@@ -1631,7 +1664,7 @@ class _ChatScreenState extends State<ChatScreen> {
         _recStartAt = null;
       }
     } catch (e) {
-      print('record.stop failed: $e');
+      debugPrint('record.stop failed: $e');
     }
 
     if (autoStopped) {
@@ -1715,13 +1748,16 @@ class _ChatScreenState extends State<ChatScreen> {
       _controller.clear();
       _hasInput = false;
       _hasSubmitted = true;
+      // ① 処理中バブルを即時表示（エラー時も必ず置き換えられる）
+      _messages.removeWhere((msg) => msg['role'] == _thinkingRole);
+      _messages.add(_buildThinkingMessage());
     });
 
     final loc = AppLocalizations.of(context)!;
     // final questionText = _questionManager.current[_nativeCode] ?? '';
 
     try {
-      print('▶ Entering GPT request try-block');
+      debugPrint('▶ Entering GPT request try-block');
 
       // ⑤ 正解チェック（問1）だけ mode で分岐
       final prompt1 = (_mode == QuizMode.listening)
@@ -1739,13 +1775,25 @@ class _ChatScreenState extends State<ChatScreen> {
           );
 
 
-      final res1 = await GptService.getChatResponse(
-        prompt1,
-        rawInput,
-        loc,
-        model: 'gpt-4o',  // ←ここでモデルをオーバーライド
-        // model: 'gpt-3.5-turbo',  // ←ここでモデルをオーバーライド
-      );
+      // ② AccuracyCheck — 失敗時はエラーバブルを出して return（不正解扱いにしない）
+      final String res1;
+      try {
+        res1 = await GptService.getChatResponseOrThrow(
+          prompt1,
+          rawInput,
+          loc,
+          model: 'gpt-4o',
+        );
+      } on GptApiException catch (e) {
+        _showApiError('AccuracyCheck', statusCode: e.statusCode, body: e.responseBody, error: e.message);
+        return;
+      } on SessionMismatchException {
+        rethrow; // 外側 catch で処理
+      } catch (e) {
+        _showApiError('AccuracyCheck', error: e);
+        return;
+      }
+
       // ★ JSONから正誤boolを抽出
       final bool isCorrectFlag = _parseIsCorrectJson(res1);
 
@@ -1797,7 +1845,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
           try {
             final uid = FirebaseAuth.instance.currentUser?.uid;
-            print('→ recordAnswer call: q=$questionId target=$targetName native=$nativeName uid=$uid');
+            debugPrint('→ recordAnswer call: q=$questionId target=$targetName native=$nativeName uid=$uid');
 
             await HistoryService.instance.recordAnswer(
               questionId: questionId,
@@ -1812,9 +1860,9 @@ class _ChatScreenState extends State<ChatScreen> {
               nativeCode: _nativeCode,
             );
 
-            print('✓ recordAnswer saved');
+            debugPrint('✓ recordAnswer saved');
           } catch (e) {
-            print('▶ history record failed (ignored): $e');
+            debugPrint('▶ history record failed (ignored): $e');
           }
         }
 
@@ -1838,12 +1886,23 @@ class _ChatScreenState extends State<ChatScreen> {
 
 
 
-      // ① 問7：記号または数字のみ、不適切文、母語以外で書かれているかチェック
+      // ③ SymbolCheck（問7）：記号または数字のみ、不適切文、母語以外で書かれているかチェック
       final minimalPrompt = PromptBuilders.buildSymbolOrNumberOnlyCheckPrompt(
         userAnswer: rawInput,
         targetLang: targetName,
       );
-      final res7 = await GptService.getChatResponse(minimalPrompt, rawInput, loc);
+      final String res7;
+      try {
+        res7 = await GptService.getChatResponseOrThrow(minimalPrompt, rawInput, loc);
+      } on GptApiException catch (e) {
+        _showApiError('SymbolCheck', statusCode: e.statusCode, body: e.responseBody, error: e.message);
+        return;
+      } on SessionMismatchException {
+        rethrow;
+      } catch (e) {
+        _showApiError('SymbolCheck', error: e);
+        return;
+      }
       final answer7 = _parseAnswer(res7);
 
       // ① or ② の両方で同じフロー
@@ -2092,6 +2151,14 @@ class _ChatScreenState extends State<ChatScreen> {
       _pendingAudioPath = null;
       _pendingDurationMs = null;
 
+    } on GptApiException catch (e) {
+      // getChatResponseOrThrow 以外のヘルパー経由の GptApiException
+      _showApiError(
+        'API',
+        statusCode: e.statusCode,
+        body: e.responseBody,
+        error: e.message,
+      );
     } catch (e, st) {
 
       final err = e.toString();
@@ -2110,15 +2177,17 @@ class _ChatScreenState extends State<ChatScreen> {
           });
         });
       } else {
-        setState(() {
-          _messages.removeWhere((msg) => msg['role'] == _thinkingRole);
-          _messages.add({'role': 'bot', 'text': loc.errorBrokenGpt});
-        });
+        // 詳細付きエラーバブルを表示（kDebugMode/kReleaseMode 問わず）
+        _showApiError('UnhandledError', error: e);
       }
     } finally {
-      setState(() {
-        _isKeyboardMode = false;
-      });
+      if (mounted) {
+        setState(() {
+          // thinking バブルが残っていれば必ず除去してUIを復帰させる
+          _messages.removeWhere((msg) => msg['role'] == _thinkingRole);
+          _isKeyboardMode = false;
+        });
+      }
     }
   }
 
@@ -2232,7 +2301,7 @@ class _ChatScreenState extends State<ChatScreen> {
         loc,
       );
       if (res6 == null) {
-        print('❌ 問6の翻訳に失敗しました');
+        debugPrint('❌ 問6の翻訳に失敗しました');
         if (addFollowupTumugiReply) {
           pendingBotMessages.add({
             'role': 'tumugi',
@@ -2346,7 +2415,7 @@ class _ChatScreenState extends State<ChatScreen> {
     );
 
     if (similar == null || similar.trim().isEmpty) {
-      print('❌ 問8の類似表現生成に失敗しました');
+      debugPrint('❌ 問8の類似表現生成に失敗しました');
       if (addFollowupTumugiReply) {
         pendingBotMessages.add({
           'role': 'tumugi',
@@ -2388,7 +2457,7 @@ class _ChatScreenState extends State<ChatScreen> {
     );
 
     if (nativeSimilar == null) {
-      print('❌ 問10の母語での訳生成に失敗しました');
+      debugPrint('❌ 問10の母語での訳生成に失敗しました');
       if (addFollowupTumugiReply) {
         pendingBotMessages.add({
           'role': 'tumugi',

@@ -65,6 +65,8 @@ app.post("/chat", async (req, res) => {
     return res.status(400).send({ errorCode: "TOO_LONG" });
   }
 
+  const requestId = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+
   try {
     // リクエストから message（=userMessage）と model を取得、model がなければ gpt-3.5-turbo
     const { message: userMessage, model = "gpt-3.5-turbo" } = req.body;
@@ -72,7 +74,7 @@ app.post("/chat", async (req, res) => {
     const response = await axios.post(
       "https://api.openai.com/v1/chat/completions",
       {
-        model,   // ここが可変になりました
+        model,
         messages: [
           { role: "system", content: "あなたは親切な英会話講師です。" },
           { role: "user",   content: userMessage },
@@ -88,8 +90,28 @@ app.post("/chat", async (req, res) => {
     const reply = response.data.choices[0].message.content;
     res.status(200).send({ reply });
   } catch (error) {
-    console.error("❌ OpenAIエラー:", error.message);
-    res.status(500).send({ errorCode: "SERVER_ERROR" });
+    const openAiStatus = error.response?.status ?? null;
+    const openAiError  = error.response?.data?.error ?? null;
+    console.error("❌ OpenAIエラー", {
+      requestId,
+      uid,
+      stage: "openai_chat",
+      httpStatus: openAiStatus,
+      openAiCode: openAiError?.code,
+      openAiType: openAiError?.type,
+      message: error.message,
+      stack: error.stack,
+    });
+    res.status(500).send({
+      errorCode: "SERVER_ERROR",
+      stage: "openai_chat",
+      requestId,
+      message: openAiStatus === 401
+        ? "OpenAI API key is invalid or expired"
+        : openAiStatus === 429
+        ? "OpenAI rate limit or quota exceeded"
+        : "Upstream API error",
+    });
   }
 });
 
