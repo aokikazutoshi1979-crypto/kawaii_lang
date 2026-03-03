@@ -103,16 +103,22 @@ class VoicevoxTtsService {
         });
         if (myId != _currentSpeakId) return;
 
-        // サーバーから返ってきた使用量を反映
-        // cloud_functions はネストされた Map を Map<Object?,Object?> で返すことがあるため
-        // `is Map` で型チェックしてから安全にアクセスする
+        // 使用量を更新:
+        //   ① サーバーが usage を返した場合 → サーバー値で上書き（正確）
+        //   ② 返さなかった場合（Functions 旧バージョン等）→ ローカルで -1（フォールバック）
         final rawUsage = result.data['usage'];
         if (rawUsage is Map) {
           final remaining = rawUsage['remaining'];
           final premium = rawUsage['isPremium'];
           if (remaining is num) remainingNotifier.value = remaining.toInt();
           if (premium is bool) isPremiumNotifier.value = premium;
-          debugPrint('[VoicevoxTTS] usage updated: remaining=$remaining isPremium=$premium');
+          debugPrint('[VoicevoxTTS] usage from server: remaining=$remaining isPremium=$premium');
+        } else if (isPremiumNotifier.value != true &&
+            remainingNotifier.value != null) {
+          // 旧 Functions など usage が返ってこない場合はローカルで 1 減算
+          remainingNotifier.value =
+              (remainingNotifier.value! - 1).clamp(0, 9999);
+          debugPrint('[VoicevoxTTS] usage local decrement: remaining=${remainingNotifier.value}');
         }
 
         final audioBase64 = result.data['audioBase64'] as String?;
