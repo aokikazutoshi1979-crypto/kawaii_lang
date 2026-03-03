@@ -21,6 +21,7 @@ class ChatBubble extends StatefulWidget {
     this.showTtsBody = true,
     this.avatarPath,           // ← 追加: botアイコン画像パス
     this.showAvatar = true,
+    this.onSpeak,              // ← VOICEVOX用カスタム再生コールバック
   }) : super(key: key);
 
   final String text;
@@ -37,6 +38,7 @@ class ChatBubble extends StatefulWidget {
   final bool showTtsBody;
   final String? avatarPath;      // ← 追加
   final bool showAvatar;
+  final Future<void> Function(String)? onSpeak; // ← VOICEVOX用
 
   @override
   State<ChatBubble> createState() => _ChatBubbleState();
@@ -172,9 +174,15 @@ class _ChatBubbleState extends State<ChatBubble> {
   }
 
   void _speak() async {
-    if (widget.ttsText != null && widget.ttsText!.isNotEmpty) {
+    final text = widget.ttsText;
+    if (text == null || text.isEmpty) return;
+    if (widget.onSpeak != null) {
+      // VOICEVOX経由（日本語学習時）
+      await widget.onSpeak!(text);
+    } else {
+      // iPhoneデフォルトTTS（その他の言語）
       await _setTtsLanguage();
-      await _tts.speak(widget.ttsText!);
+      await _tts.speak(text);
     }
   }
 

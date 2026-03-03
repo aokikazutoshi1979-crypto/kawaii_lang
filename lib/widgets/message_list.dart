@@ -6,11 +6,13 @@ class MessageList extends StatelessWidget {
   final List<Map<String, dynamic>> messages;
   final Widget? header;
   final String? botAvatarPath; // ← 追加: bot吹き出しに表示するキャラアイコン
+  final Future<void> Function(String)? onSpeak; // ← VOICEVOX用コールバック
 
   const MessageList({
     required this.messages,
     this.header,
     this.botAvatarPath, // ← 追加
+    this.onSpeak,       // ← VOICEVOX用
     Key? key,
   }) : super(key: key);
 
@@ -51,6 +53,8 @@ class MessageList extends StatelessWidget {
             showAvatar: msg['showAvatar'] ?? true,
             // bot メッセージにキャラアバターを渡す（userは不要なので null）
             avatarPath: isBot ? (msg['avatarPath'] ?? botAvatarPath) : null,
+            // VOICEVOX: botバブルのみにコールバックを渡す
+            onSpeak: isBot ? onSpeak : null,
           );
         }),
       ],

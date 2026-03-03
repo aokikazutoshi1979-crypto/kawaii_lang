@@ -30,6 +30,7 @@ import 'package:kawaii_lang/services/language_catalog.dart';
 import 'question_list_screen.dart';
 import '../utils/tsumugi_prompt.dart' as tsumugi_prompt;
 import '../services/character_asset_service.dart';
+import '../services/voicevox_tts_service.dart';
 
 
 class ChatScreen extends StatefulWidget {
@@ -126,6 +127,9 @@ class _ChatScreenState extends State<ChatScreen> {
   late final FlutterTts _tts;   // ← 追加
   bool _ttsReady = false;       // ← 追加
   bool _isSpeaking = false;     // ← 追加
+
+  // VOICEVOX TTS（日本語学習時のみ使用）
+  final VoicevoxTtsService _voicevoxService = VoicevoxTtsService();
 
   // ── 送信前ボタン有効判定
   bool get _canSend {
@@ -1459,6 +1463,7 @@ class _ChatScreenState extends State<ChatScreen> {
     _rec.dispose();
     _stopAmplitudeStream(clear: false);
     _tts.stop();
+    _voicevoxService.dispose();
     _speechService.stop();
     _controller.dispose();
     _inputFocusNode.dispose();
@@ -2660,6 +2665,10 @@ class _ChatScreenState extends State<ChatScreen> {
                     messages: _messages,
                     header: _buildChatHeader(),
                     botAvatarPath: CharacterAssetService.chatAvatar(_selectedCharacter),
+                    // 日本語学習時のみ VOICEVOX で読み上げ
+                    onSpeak: _targetCode == 'ja'
+                        ? (text) => _voicevoxService.speak(text, _selectedCharacter)
+                        : null,
                   ),
                 ),
                 MicArea(
