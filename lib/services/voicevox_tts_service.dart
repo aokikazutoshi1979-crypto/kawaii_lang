@@ -39,6 +39,10 @@ class VoicevoxTtsService {
 
   final _cache = <String, _CacheEntry>{};
   DateTime? _lastPlayTime;
+
+  /// プレビュー用静的キャッシュ（インスタンスをまたいで共有、アプリ再起動まで保持）
+  /// キャッシュ命中時は API を呼ばないため日次カウントに影響しない。
+  static final Map<String, Uint8List> _previewCache = {};
   int _currentSpeakId = 0;
   final _player = AudioPlayer();
 
@@ -238,6 +242,57 @@ class VoicevoxTtsService {
       }
     } catch (e) {
       debugPrint('[VoicevoxTTS] fetchUsage error: $e');
+    }
+  }
+
+  /// 設定画面のテスト再生用。
+  /// - 初回のみ VOICEVOX API を呼ぶ（1回分カウント）
+  /// - 2回目以降は静的キャッシュから再生 → API 未呼び出し = 日次カウント対象外
+  /// - [ttsRate] は設定値 0.2〜0.8。0.5 で等倍(1.0x)再生。
+  Future<void> speakPreview(
+    String text,
+    String character,
+    double ttsRate, {
+    void Function()? onPlayStart,
+  }) async {
+    text = text.trim();
+    if (text.isEmpty) return;
+    final cacheKey = '$character:$text';
+    Uint8List bytes;
+
+    if (_previewCache.containsKey(cacheKey)) {
+      bytes = _previewCache[cacheKey]!;
+      debugPrint('[VoicevoxTTS] speakPreview: cache hit');
+    } else {
+      try {
+        final result = await _ttsProxy.call<Map<String, dynamic>>({
+          'text': text,
+          'character': character,
+        });
+        final audioBase64 = result.data['audioBase64'] as String?;
+        if (audioBase64 == null || audioBase64.isEmpty) return;
+        bytes = base64Decode(audioBase64);
+        _previewCache[cacheKey] = bytes;
+        debugPrint('[VoicevoxTTS] speakPreview: fetched and cached');
+      } catch (e) {
+        debugPrint('[VoicevoxTTS] speakPreview error: $e');
+        return;
+      }
+    }
+
+    try {
+      if (_player.playing) await _player.stop();
+      final dir = await getTemporaryDirectory();
+      final file = File('${dir.path}/voicevox_preview.wav');
+      await file.writeAsBytes(bytes, flush: true);
+      await _player.setFilePath(file.path);
+      // ttsRate 0.5 = 等倍(1.0x)、0.2 = 0.4x(遅い)、0.8 = 1.6x(速い)
+      final speed = (ttsRate * 2.0).clamp(0.3, 2.0);
+      await _player.setSpeed(speed);
+      onPlayStart?.call(); // 再生直前に通知
+      await _player.play();
+    } catch (e) {
+      debugPrint('[VoicevoxTTS] speakPreview play error: $e');
     }
   }
 

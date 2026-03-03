@@ -31,6 +31,8 @@ import 'question_list_screen.dart';
 import '../utils/tsumugi_prompt.dart' as tsumugi_prompt;
 import '../services/character_asset_service.dart';
 import '../services/voicevox_tts_service.dart';
+import '../services/subscription_service.dart';
+import 'subscription_screen.dart';
 
 
 class ChatScreen extends StatefulWidget {
@@ -132,6 +134,14 @@ class _ChatScreenState extends State<ChatScreen> {
   final VoicevoxTtsService _voicevoxService = VoicevoxTtsService();
   // 日次上限 SnackBar は 1 セッションで 1 回だけ表示
   bool _ttsDailyLimitSnackBarShown = false;
+
+  // P1-1: ふりがな表示
+  bool _showFurigana = true;
+  String? _currentTargetRomaji; // リスニング問題のローマ字（キャッシュ）
+
+  // P1-3: 日次会話上限
+  bool _isPremium = false;
+  int _dailyChatCount = 0;
 
   // ── 送信前ボタン有効判定
   bool get _canSend {
@@ -934,7 +944,10 @@ class _ChatScreenState extends State<ChatScreen> {
     );
     final res = await GptService.getChatResponse(prompt, t, loc);
     if (res == null) return null;
-    final r = res.trim();
+    // 複数行で返ってきた場合、末尾の非空行を採用（説明文を除去）
+    final lines = res.split('\n').map((l) => l.trim()).where((l) => l.isNotEmpty).toList();
+    if (lines.isEmpty) return null;
+    final r = lines.last;
     if (r.isEmpty || r.toLowerCase() == 'null') return null;
     return r;
   }
@@ -1065,6 +1078,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
     _loadDisplayName();
     _loadCharacter();
+    _initChatPrefs();
 
     // 日本語学習時: 残り回数を起動時に先読みしてバナーをすぐ表示
     if (_targetCode == 'ja') {
@@ -1110,16 +1124,79 @@ class _ChatScreenState extends State<ChatScreen> {
     setState(() => _selectedCharacter = character);
   }
 
+  /// P1-1/P1-3: SharedPreferencesとサブスク状態を一括ロード
+  Future<void> _initChatPrefs() async {
+    final premium = await SubscriptionService.instance.checkSubscriptionOnDevice();
+    final prefs = await SharedPreferences.getInstance();
+    final today = DateTime.now().toLocal().toString().substring(0, 10);
+    final savedDate = prefs.getString('daily_chat_date') ?? '';
+    final count = savedDate == today ? (prefs.getInt('daily_chat_count') ?? 0) : 0;
+    final showFurigana = prefs.getBool('show_furigana') ?? true;
+    if (!mounted) return;
+    setState(() {
+      _isPremium = premium;
+      _dailyChatCount = count;
+      _showFurigana = showFurigana;
+    });
+  }
+
+  /// P1-3: 日次カウントをインクリメント
+  Future<void> _incrementDailyChatCount() async {
+    final prefs = await SharedPreferences.getInstance();
+    final today = DateTime.now().toLocal().toString().substring(0, 10);
+    await prefs.setString('daily_chat_date', today);
+    final newCount = _dailyChatCount + 1;
+    await prefs.setInt('daily_chat_count', newCount);
+    if (mounted) setState(() => _dailyChatCount = newCount);
+  }
+
+  /// P1-3: 上限到達ダイアログ（温かいトーン）
+  void _showDailyLimitReached() {
+    final code = _nativeCode.replaceAll('-', '_');
+    final bool isJa = code == 'ja';
+    final title = isJa
+        ? '今日の練習、お疲れさま！🌸'
+        : 'Great practice today! 🌸';
+    final body = isJa
+        ? '今日は$_dailyChatCount回練習したよ。\nまた明日また話そうね☺️\n\nもっと練習したい人はプレミアムプランへ！'
+        : 'You practiced $_dailyChatCount times today!\nCome back tomorrow for more ☺️\n\nWant unlimited practice? Go Premium!';
+    final viewPlan = isJa ? 'プランを見る' : 'View Plans';
+
+    showDialog<void>(
+      context: context,
+      builder: (_) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+        title: Text(title),
+        content: Text(body),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: Text(loc.ok),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const SubscriptionScreen()),
+              );
+            },
+            child: Text(viewPlan),
+          ),
+        ],
+      ),
+    );
+  }
+
   Future<void> _initTts() async {
     final prefs = await SharedPreferences.getInstance();
     final double savedRate = prefs.getDouble('tts_speech_rate') ?? 0.40;
     final double rate = Platform.isIOS ? savedRate : (savedRate + 0.45).clamp(0.0, 1.0); // Androidはiosより速く感じにくい
-    await _tts.setSpeechRate(rate);
 
     // （お好み）声の高さ
     await _tts.setPitch(1.0);
 
-    await _setTtsLanguage();          // ← chat_bubble からコピペした関数を呼ぶ
+    await _setTtsLanguage();          // 言語設定（速度は上書きしない）
+    await _tts.setSpeechRate(rate);   // 言語設定の後に速度を確定する
     await _tts.setVolume(1.0);
     await _tts.awaitSpeakCompletion(true); // 任意：再生完了待ちを有効化
     _ttsReady = true;
@@ -1242,6 +1319,27 @@ class _ChatScreenState extends State<ChatScreen> {
       overflow: TextOverflow.ellipsis,
     );
 
+    // P1-1: ローマ字付き表示（reveal後）
+    final revealedContent = Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        plainText,
+        if (_showFurigana && _currentTargetRomaji != null)
+          Padding(
+            padding: const EdgeInsets.only(top: 4),
+            child: Text(
+              _currentTargetRomaji!,
+              style: TextStyle(
+                fontSize: 11,
+                color: Colors.grey.shade500,
+                fontStyle: FontStyle.italic,
+              ),
+            ),
+          ),
+      ],
+    );
+
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
       child: Container(
@@ -1269,14 +1367,14 @@ class _ChatScreenState extends State<ChatScreen> {
             ),
             const SizedBox(width: 12),
 
-            // ぼかし → 平文へスムーズに切替
+            // ぼかし → 平文＋ローマ字へスムーズに切替
             Expanded(
               child: AnimatedSwitcher(
                 duration: const Duration(milliseconds: 220),
                 switchInCurve: Curves.easeOut,
                 switchOutCurve: Curves.easeIn,
                 child: _revealListeningText
-                    ? plainText
+                    ? revealedContent
                     : blurredText,
               ),
             ),
@@ -1537,7 +1635,21 @@ class _ChatScreenState extends State<ChatScreen> {
       _hasInput = false;
       _hasSubmitted = false;
       _isKeyboardMode = false;
+      _currentTargetRomaji = null; // P1-1: 新問題ではリセット
     });
+
+    // P1-1: listening + 日本語のとき、問題テキストのローマ字を非同期で取得してキャッシュ
+    if (_targetCode == 'ja' && _showFurigana) {
+      final text = targetText;
+      if (text.isNotEmpty) {
+        Future.microtask(() async {
+          final romaji = await _romajiForJapanese(text, loc);
+          if (mounted && romaji != null) {
+            setState(() => _currentTargetRomaji = romaji);
+          }
+        });
+      }
+    }
   }
 
   void _speakIfListeningAfterBuild() {
@@ -1665,7 +1777,7 @@ class _ChatScreenState extends State<ChatScreen> {
       default:
         await _tts.setLanguage('en-US');
     }
-    await _tts.setSpeechRate(0.4); // 任意：ゆっくり読み上げ
+    // 速度は _initTts() 側で設定済み。ここでは上書きしない。
 
     // ✅ iOSでサイレントモードでも再生されるようにする
     await _tts.setIosAudioCategory(
@@ -1778,7 +1890,17 @@ class _ChatScreenState extends State<ChatScreen> {
       return;
     }
 
+    // P1-3: 日次会話上限チェック（無料ユーザーのみ）
+    if (!_isPremium && _dailyChatCount >= 20) {
+      _showDailyLimitReached();
+      return;
+    }
+
     _sendTimestamps.add(DateTime.now());
+    // P1-3: 日次カウントをインクリメント
+    if (!_isPremium) {
+      unawaited(_incrementDailyChatCount());
+    }
 
     setState(() {
       _controller.clear();
@@ -2042,7 +2164,7 @@ class _ChatScreenState extends State<ChatScreen> {
           'role': 'bot',
           // ★ ハイライト用（黄色ボックスの内容）
           'highlightTitle': loc.answerTranslationPrefix,  // 例: 修正例
-          'highlightBody':  highlightLines.join('\n'),
+          'highlightBody':  translatedText,               // テキストのみ（ふりがなは別フィールドへ）
           'text': '',
           'showAvatar': false,
 
@@ -2052,8 +2174,8 @@ class _ChatScreenState extends State<ChatScreen> {
           'avatarPath': CharacterAssetService.chatAvatar(_selectedCharacter),
 
           'targetLang': widget.targetLang,
-          // ← これで下側の「tts本文テキスト」を消せる
-          // 'showTtsBody': false,
+          // ふりがな（ひらがな転写）
+          if (transcription6 != null) 'transcription': transcription6,
         });
 
         // 5) 類似表現（ターゲット言語）を生成（同一文は再生成）
@@ -2116,18 +2238,14 @@ class _ChatScreenState extends State<ChatScreen> {
           }
         }
 
-        // ★ ハイライト本文（類似表現＋転写＋母語訳を全部まとめる）
+        // ★ ハイライト本文（類似表現＋母語訳）ふりがなは別フィールドへ
         final simLines = <String>[];
         simLines.add(similar); // 1行目：類似表現
-        if (transcriptionSimilar != null && transcriptionSimilar!.isNotEmpty) {
-          simLines..add('')..add(transcriptionSimilar!); // 見出し不要なら転写だけ
-        }
         if (nativeSimilar.isNotEmpty) {
-          simLines..add('')..add(nativeSimilar); // 見出し不要ならそのまま
+          simLines..add('')..add(nativeSimilar); // 母語訳
         }
 
         // 8) 2つ目の吹き出しを表示
-        // テキスト部は見出し（類似表現）だけにして、本文は tts/nativetext/transcription に流す
         pendingBotMessages.add({
           'role': 'tumugi',
           'text': _selectedCharacter == CharacterAssetService.kasumi
@@ -2137,20 +2255,18 @@ class _ChatScreenState extends State<ChatScreen> {
         });
         pendingBotMessages.add({
           'role': 'bot',
-          // ★ ハイライト用（薄い緑色のボックスの内容）
-          'highlightTitle': loc.similarExpressionHeader, // 例: 類似表現
-          'highlightBody':  simLines.join('\n'),                      // ← 再生ボタン＆本文表示
+          // ★ ハイライト用（類似表現＋母語訳）
+          'highlightTitle': loc.similarExpressionHeader,
+          'highlightBody':  simLines.join('\n'),
           'showAvatar': false,
 
-          // ★ 音声ボタン（本文は出さない）
-          'tts': similar,              // ← これで再生アイコンが出る
-          'showTtsBody': false,        // ← ttsテキストを本文に重複表示しない
+          // ★ 音声ボタン
+          'tts': similar,
+          'showTtsBody': false,
 
-          // ★ 通常本文（補足などを入れたいときだけ）
           'targetLang': widget.targetLang,
-          // 'nativeText': nativeSimilar,         // ← 母語訳（ChatBubbleで本文下に表示）
-          // if (transcriptionSimilar != null) 'transcription': transcriptionSimilar,
-          // 'text': '',
+          // ふりがな（ひらがな転写）
+          if (transcriptionSimilar != null) 'transcription': transcriptionSimilar,
         });
         await flushPendingBotMessages();
 
@@ -2530,14 +2646,11 @@ class _ChatScreenState extends State<ChatScreen> {
             ? null
             : rawTranscription;
 
-    // ★ ハイライト本文（類似表現＋転写＋母語訳を全部まとめる）
+    // ★ ハイライト本文（類似表現＋母語訳）ふりがなは別フィールドへ
     final simLines = <String>[];
     simLines.add(similar);                         // 1行目：類似表現
-    if (transcription != null && transcription.isNotEmpty) {
-      simLines..add('')..add(transcription);      // ラベル不要なら転写だけ
-    }
     if (nativeSimilar.isNotEmpty) {
-      simLines..add('')..add(nativeSimilar);      // ラベル不要ならそのまま
+      simLines..add('')..add(nativeSimilar);      // 母語訳
     }
 
     // まとめて ChatBubble に表示
@@ -2552,7 +2665,7 @@ class _ChatScreenState extends State<ChatScreen> {
       'role': 'bot',
 
       // 🔶 黄色ハイライト
-      'highlightTitle': loc.similarExpressionHeader, // 例: 類似表現
+      'highlightTitle': loc.similarExpressionHeader,
       'highlightBody': simLines.join('\n'),
       'showAvatar': false,
 
@@ -2561,9 +2674,8 @@ class _ChatScreenState extends State<ChatScreen> {
       'showTtsBody': false,
 
       'targetLang': widget.targetLang,
-      // 'nativeText':  nativeSimilar,   // ← ChatBubble で拾って表示
-      // transcription が null のときはキーごと省略したい場合は
-      // if (transcription != null) 'transcription': transcription,
+      // ふりがな（ひらがな転写）
+      if (transcription != null) 'transcription': transcription,
     });
     if (addFollowupTumugiReply) {
       pendingBotMessages.add({
@@ -2706,19 +2818,6 @@ class _ChatScreenState extends State<ChatScreen> {
                         : null,
                   ),
                 ),
-                // 採点後「もう一回言う」ボタン
-                if (_hasSubmitted)
-                  TextButton.icon(
-                    onPressed: _resetChat,
-                    icon: const Text('🔄', style: TextStyle(fontSize: 16)),
-                    label: Text(
-                      AppLocalizations.of(context)!.retryButton,
-                      style: const TextStyle(fontSize: 13),
-                    ),
-                    style: TextButton.styleFrom(
-                      foregroundColor: Colors.pink.shade300,
-                    ),
-                  ),
                 // 残り回数バナー（無料ユーザーのみ・日本語学習時のみ）
                 if (_targetCode == 'ja')
                   _TtsRemainingBanner(

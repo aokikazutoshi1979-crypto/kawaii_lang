@@ -197,21 +197,19 @@ static String buildSimilarQuestionPrompt({
     required String translatedText,
     required String targetLang,
   }) {
+    if (targetLang.toLowerCase() == 'ja') {
+      return '次の日本語テキストをひらがなに変換してください。ひらがなのみ返してください（説明・改行・空白禁止）。\n$translatedText';
+    }
     return '''
-以下のルールに従って,転写対象の音声転写の結果（声調記号・音節間スペース有り）またはnullのみ返して下さい.  
+Convert the following text to its phonetic transcription. Return ONLY the transcription or null, no explanation.
 
-転写言語: $targetLang
-転写対象: $translatedText
+Language: $targetLang
+Text: $translatedText
 
-判定ルール:
-- 転写言語 = ja = ヘボン式ローマ字（例：konnichi-ha）
-- 転写言語 = zh = 漢語拼音（Hanyu Pinyin）（例：nǐ hǎo）
-- 転写言語 = zh_TW = 漢語拼音（Hanyu Pinyin）（例：nǐ hǎo）
-- 転写言語 = ko = 改訂式ローマ字（Revised Romanization of Korean）（例：annyeonghaseyo）
-- 転写言語 = 上記以外 = null
-
-※音声転写の結果,またはnullのみ返して下さい.
-（説明,空白,改行は禁止です）
+Rules:
+- zh or zh_TW → Hanyu Pinyin with tone marks (e.g. nǐ hǎo)
+- ko → Revised Romanization (e.g. annyeonghaseyo)
+- other → null
 ''';
   }
 

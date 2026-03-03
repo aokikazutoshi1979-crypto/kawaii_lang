@@ -8,7 +8,7 @@ import 'splash_screen.dart';
 import 'login_screen.dart';
 import 'language_selection_screen.dart';
 import 'target_language_selection_screen.dart';
-import 'category_selection_screen.dart';
+import 'home_screen.dart';
 
 class AuthGate extends StatefulWidget {
   const AuthGate({Key? key}) : super(key: key);
@@ -68,7 +68,7 @@ class _AuthGateState extends State<AuthGate> {
             if (target == null) {
               return const TargetLanguageSelectionScreen();
             }
-            return CategorySelectionScreen();
+            return const HomeScreen();
           },
         );
       },

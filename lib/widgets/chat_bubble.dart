@@ -3,6 +3,7 @@ import 'package:flutter_tts/flutter_tts.dart';
 import 'dart:io';
 import 'package:just_audio/just_audio.dart';
 import 'package:kawaii_lang/l10n/app_localizations.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class ChatBubble extends StatefulWidget {
   const ChatBubble({
@@ -170,7 +171,7 @@ class _ChatBubbleState extends State<ChatBubble>
       default:
         await _tts.setLanguage('en-US');
     }
-    await _tts.setSpeechRate(0.4);
+    // 速度は _speak() 側で設定するためここでは上書きしない
 
     await _tts.setIosAudioCategory(
       IosTextToSpeechAudioCategory.playback,
@@ -182,15 +183,18 @@ class _ChatBubbleState extends State<ChatBubble>
   }
 
   void _speak() async {
-    final text = widget.ttsText;
-    if (text == null || text.isEmpty) return;
+    // ふりがな（ひらがな）があれば優先して読み上げる（日本語のみ）
+    final ttsSource = (widget.transcription?.isNotEmpty == true && widget.targetLang == 'ja')
+        ? widget.transcription!
+        : widget.ttsText;
+    if (ttsSource == null || ttsSource.isEmpty) return;
     _karaokeController.stop();
     _karaokeController.reset();
     if (mounted) setState(() => _isTtsLoading = true);
     try {
       if (widget.onSpeak != null) {
         // VOICEVOX経由（日本語学習時）: onPlayStart で音声開始タイミングを受け取る
-        await widget.onSpeak!(text, (audioDuration) {
+        await widget.onSpeak!(ttsSource, (audioDuration) {
           if (!mounted) return;
           setState(() => _isTtsLoading = false);
           _karaokeController.duration = audioDuration;
@@ -199,7 +203,12 @@ class _ChatBubbleState extends State<ChatBubble>
       } else {
         // iPhoneデフォルトTTS（その他の言語）
         await _setTtsLanguage();
-        await _tts.speak(text);
+        // 設定画面の速度スライダーを反映する
+        final prefs = await SharedPreferences.getInstance();
+        final savedRate = prefs.getDouble('tts_speech_rate') ?? 0.40;
+        final double rate = Platform.isIOS ? savedRate : (savedRate + 0.45).clamp(0.0, 1.0);
+        await _tts.setSpeechRate(rate);
+        await _tts.speak(ttsSource);
       }
     } finally {
       if (mounted) {
@@ -241,10 +250,10 @@ class _ChatBubbleState extends State<ChatBubble>
     );
   }
 
-  /// highlightBody を行ごとに分割し、先頭2つの非空行はカラオケ、残りは通常テキストで描画。
-  Widget _buildHighlightBody(String body) {
+  /// highlightBody を行ごとに分割し描画。
+  /// [furigana] が指定された場合、1行目（漢字）の直後にふりがなを挿入する。
+  Widget _buildHighlightBody(String body, {String? furigana}) {
     final lines = body.split('\n');
-    // 日本語（targetLang == 'ja'）のときのみカラオケを有効にする
     final isJapanese = widget.targetLang == 'ja';
     final progress = _karaokeController.value;
     final children = <Widget>[];
@@ -254,13 +263,29 @@ class _ChatBubbleState extends State<ChatBubble>
         children.add(const SizedBox(height: 6));
         continue;
       }
-      final isKaraokeTarget = isJapanese && nonEmptyCount < 2 && progress > 0;
+      final isKaraokeTarget = isJapanese && nonEmptyCount == 0 && progress > 0;
       nonEmptyCount++;
       children.add(
         isKaraokeTarget
             ? _karaokeText(line, progress)
             : Text(line, style: const TextStyle(fontSize: 16, height: 1.4)),
       );
+      // 1行目（漢字）の直後にふりがなを挿入
+      if (furigana != null && furigana.isNotEmpty && nonEmptyCount == 1) {
+        children.add(
+          Padding(
+            padding: const EdgeInsets.only(top: 2),
+            child: Text(
+              furigana,
+              style: TextStyle(
+                fontSize: 13,
+                color: Colors.pink.shade400,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        );
+      }
     }
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -341,8 +366,8 @@ class _ChatBubbleState extends State<ChatBubble>
     final showMainRow =
         hasBodyText || (widget.isBot && !hasHighlight && hasTts);
     final showNativeText = !hasHighlight && widget.nativeText != null;
-    final showTranscription =
-        !hasHighlight && widget.transcription != null && widget.transcription!.isNotEmpty;
+    // ハイライトがある場合はボックス内に表示するため、ボックス外では重複表示しない
+    final showTranscription = !hasHighlight && widget.transcription != null && widget.transcription!.isNotEmpty;
     final showTtsBody =
         widget.showTtsBody && widget.ttsText != null && widget.ttsText!.isNotEmpty;
     final showRecording = hasRecording;
@@ -420,7 +445,11 @@ class _ChatBubbleState extends State<ChatBubble>
                   ),
                   if (widget.highlightBody != null) ...[
                     const SizedBox(height: 6),
-                    _buildHighlightBody(widget.highlightBody!),
+                    // ふりがなは1行目（漢字）の直後に挿入
+                    _buildHighlightBody(
+                      widget.highlightBody!,
+                      furigana: widget.transcription,
+                    ),
                   ],
                 ],
               ),
@@ -484,8 +513,16 @@ class _ChatBubbleState extends State<ChatBubble>
             ),
           if (showTranscription)
             Padding(
-              padding: const EdgeInsets.only(top: 4),
-              child: Text(widget.transcription!, style: const TextStyle(fontStyle: FontStyle.italic)),
+              padding: const EdgeInsets.only(top: 6),
+              child: Text(
+                widget.transcription!,
+                style: TextStyle(
+                  fontSize: 13,
+                  color: Colors.pink.shade400,
+                  fontWeight: FontWeight.w500,
+                  height: 1.4,
+                ),
+              ),
             ),
           if (showTtsBody) ...[
             const SizedBox(height: 8),

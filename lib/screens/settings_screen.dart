@@ -2,6 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_tts/flutter_tts.dart';
+import 'dart:io';
+import '../services/voicevox_tts_service.dart';
 import '../main.dart';
 import 'package:kawaii_lang/l10n/app_localizations.dart';
 import '../widgets/keyboard_guide_button.dart';
@@ -51,6 +54,11 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
   static const String _quizModePrefKey = 'quiz_mode';
   String _selectedCharacter = CharacterAssetService.defaultCharacter;
   double _ttsRate = 0.40;
+  bool _showFurigana = true;
+  final FlutterTts _previewTts = FlutterTts();       // 日本語以外のフォールバック用
+  final VoicevoxTtsService _previewVoicevox = VoicevoxTtsService();
+  bool _isTtsPreviewLoading = false;  // API取得・ファイル準備中
+  bool _isTtsPreviewPlaying = false;  // 再生中
 
   final List<String> _languageCodes = const [
     'ja',
@@ -132,6 +140,13 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     _fetchUser();
   }
 
+  @override
+  void dispose() {
+    _previewTts.stop();
+    _previewVoicevox.stop();
+    super.dispose();
+  }
+
   Future<void> _loadSubscriptionOfferings() async {
     try {
       final off = await SubscriptionService.instance.getOfferings();
@@ -191,13 +206,75 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     if (!mounted) return;
     setState(() {
       _ttsRate = prefs.getDouble('tts_speech_rate') ?? 0.40;
+      _showFurigana = prefs.getBool('show_furigana') ?? true;
     });
   }
 
-  String _ttsRateLabel(double rate) {
-    if (rate <= 0.35) return '🐢';
-    if (rate >= 0.65) return '🐇';
-    return 'ふつう';
+  String _ttsRateLabel(double rate, BuildContext context) {
+    if (rate <= 0.33) return '🐢';
+    if (rate >= 0.67) return '🐇';
+    final isJa = _displayLangCode(context) == 'ja';
+    return isJa ? 'ふつう' : 'Normal';
+  }
+
+  /// テスト再生：日本語学習中は VOICEVOX（静的キャッシュ使用）、それ以外は flutter_tts。
+  /// VOICEVOX は初回のみ API 呼び出し → 2回目以降はキャッシュ再生で日次カウント対象外。
+  Future<void> _speakPreview() async {
+    // 再生中は停止
+    if (_isTtsPreviewPlaying || _isTtsPreviewLoading) {
+      await _previewVoicevox.stop();
+      await _previewTts.stop();
+      if (mounted) setState(() {
+        _isTtsPreviewPlaying = false;
+        _isTtsPreviewLoading = false;
+      });
+      return;
+    }
+    setState(() {
+      _isTtsPreviewLoading = true;  // まず「読込中」
+      _isTtsPreviewPlaying = false;
+    });
+    try {
+      if (selectedTargetLang == 'ja') {
+        // VOICEVOX：静的キャッシュがあれば API 未呼び出し
+        await _previewVoicevox.speakPreview(
+          'はじめまして、よろしくおねがいします。',
+          _selectedCharacter,
+          _ttsRate,
+          onPlayStart: () {
+            // 再生が始まった瞬間に「再生中」へ切替
+            if (mounted) setState(() {
+              _isTtsPreviewLoading = false;
+              _isTtsPreviewPlaying = true;
+            });
+          },
+        );
+      } else {
+        // 日本語以外：flutter_tts（読み込みほぼ一瞬なので即再生中に）
+        if (mounted) setState(() {
+          _isTtsPreviewLoading = false;
+          _isTtsPreviewPlaying = true;
+        });
+        await _previewTts.setLanguage('ja-JP');
+        final double rate = Platform.isIOS ? _ttsRate : (_ttsRate + 0.45).clamp(0.0, 1.0);
+        await _previewTts.setSpeechRate(rate);
+        await _previewTts.setPitch(1.0);
+        await _previewTts.setVolume(1.0);
+        await _previewTts.setIosAudioCategory(
+          IosTextToSpeechAudioCategory.playback,
+          [
+            IosTextToSpeechAudioCategoryOptions.defaultToSpeaker,
+            IosTextToSpeechAudioCategoryOptions.allowBluetooth,
+          ],
+        );
+        await _previewTts.speak('はじめまして、よろしくおねがいします。');
+      }
+    } finally {
+      if (mounted) setState(() {
+        _isTtsPreviewPlaying = false;
+        _isTtsPreviewLoading = false;
+      });
+    }
   }
 
   Future<void> _saveCharacter(String character) async {
@@ -999,7 +1076,7 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                               ),
                               const Spacer(),
                               Text(
-                                _ttsRateLabel(_ttsRate),
+                                _ttsRateLabel(_ttsRate, context),
                                 style: TextStyle(
                                   fontSize: 13,
                                   color: Colors.blueGrey.shade600,
@@ -1009,16 +1086,16 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.fromLTRB(8, 0, 8, 8),
+                          padding: const EdgeInsets.fromLTRB(8, 0, 8, 0),
                           child: Row(
                             children: [
                               const Text('🐢', style: TextStyle(fontSize: 16)),
                               Expanded(
                                 child: Slider(
                                   value: _ttsRate,
-                                  min: 0.3,
-                                  max: 0.7,
-                                  divisions: 4,
+                                  min: 0.2,
+                                  max: 0.8,
+                                  divisions: 6,
                                   activeColor: Colors.pink.shade300,
                                   onChanged: (v) async {
                                     setState(() => _ttsRate = v);
@@ -1033,6 +1110,87 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                             ],
                           ),
                         ),
+                        // テスト再生ボタン
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(14, 0, 14, 10),
+                          child: OutlinedButton(
+                            onPressed: _speakPreview,
+                            style: OutlinedButton.styleFrom(
+                              foregroundColor: Colors.pink.shade400,
+                              side: BorderSide(color: Colors.pink.shade200),
+                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                              minimumSize: const Size(0, 36),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                if (_isTtsPreviewLoading)
+                                  SizedBox(
+                                    width: 14,
+                                    height: 14,
+                                    child: CircularProgressIndicator(
+                                      strokeWidth: 2,
+                                      valueColor: AlwaysStoppedAnimation<Color>(
+                                        Colors.pink.shade400,
+                                      ),
+                                    ),
+                                  )
+                                else
+                                  Icon(
+                                    _isTtsPreviewPlaying
+                                        ? Icons.stop_rounded
+                                        : Icons.play_circle_outline_rounded,
+                                    size: 16,
+                                  ),
+                                const SizedBox(width: 6),
+                                Text(
+                                  _isTtsPreviewLoading
+                                      ? (selectedLang == 'ja' ? '読み込み中...' : 'Loading...')
+                                      : _isTtsPreviewPlaying
+                                          ? (selectedLang == 'ja' ? '停止' : 'Stop')
+                                          : (selectedLang == 'ja' ? '速度をテスト' : 'Test Speed'),
+                                  style: const TextStyle(fontSize: 13),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        // P1-1: ふりがな/ローマ字表示トグル（日本語学習時のみ）
+                        if (selectedTargetLang == 'ja') ...[
+                          Divider(height: 1, color: Colors.grey.shade200),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(14, 6, 14, 6),
+                            child: Row(
+                              children: [
+                                Icon(Icons.abc_rounded,
+                                    size: 20,
+                                    color: Colors.blueGrey.shade700),
+                                const SizedBox(width: 12),
+                                Text(
+                                  selectedLang == 'ja' ? 'ローマ字表示' : 'Show Romaji',
+                                  style: const TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w700,
+                                    color: Color(0xFF1F2937),
+                                  ),
+                                ),
+                                const Spacer(),
+                                Switch(
+                                  value: _showFurigana,
+                                  activeColor: Colors.pink.shade300,
+                                  onChanged: (v) async {
+                                    setState(() => _showFurigana = v);
+                                    final prefs = await SharedPreferences.getInstance();
+                                    await prefs.setBool('show_furigana', v);
+                                  },
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ],
                     ),
                     _sectionHeader(context, languageSectionTitle),
