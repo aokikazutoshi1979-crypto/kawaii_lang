@@ -2709,6 +2709,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   _TtsRemainingBanner(
                     remainingNotifier: _voicevoxService.remainingNotifier,
                     isPremiumNotifier: _voicevoxService.isPremiumNotifier,
+                    nativeCode: _nativeCode,
                   ),
                 MicArea(
                   isListening: _isListening,
@@ -2862,10 +2863,12 @@ class _TtsRemainingBanner extends StatelessWidget {
   const _TtsRemainingBanner({
     required this.remainingNotifier,
     required this.isPremiumNotifier,
+    required this.nativeCode,
   });
 
   final ValueNotifier<int?> remainingNotifier;
   final ValueNotifier<bool?> isPremiumNotifier;
+  final String nativeCode;
 
   @override
   Widget build(BuildContext context) {
@@ -2878,13 +2881,14 @@ class _TtsRemainingBanner extends StatelessWidget {
           valueListenable: remainingNotifier,
           builder: (context, remaining, _) {
             if (remaining == null) return const SizedBox.shrink();
-            final limit = 100; // 無料の上限
+            const limit = 100;
+            final label = nativeCode == 'ja' ? '残り' : 'Left';
             return Container(
               width: double.infinity,
               color: Colors.black26,
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 3),
               child: Text(
-                '🎙 残り $remaining/$limit',
+                '🎙 $label $remaining/$limit',
                 style: const TextStyle(
                   fontSize: 11,
                   color: Colors.white70,

@@ -104,12 +104,15 @@ class VoicevoxTtsService {
         if (myId != _currentSpeakId) return;
 
         // サーバーから返ってきた使用量を反映
-        final usage = result.data['usage'] as Map<String, dynamic>?;
-        if (usage != null) {
-          final remaining = (usage['remaining'] as num?)?.toInt();
-          final premium = usage['isPremium'] as bool?;
-          remainingNotifier.value = remaining;
-          isPremiumNotifier.value = premium;
+        // cloud_functions はネストされた Map を Map<Object?,Object?> で返すことがあるため
+        // `is Map` で型チェックしてから安全にアクセスする
+        final rawUsage = result.data['usage'];
+        if (rawUsage is Map) {
+          final remaining = rawUsage['remaining'];
+          final premium = rawUsage['isPremium'];
+          if (remaining is num) remainingNotifier.value = remaining.toInt();
+          if (premium is bool) isPremiumNotifier.value = premium;
+          debugPrint('[VoicevoxTTS] usage updated: remaining=$remaining isPremium=$premium');
         }
 
         final audioBase64 = result.data['audioBase64'] as String?;
