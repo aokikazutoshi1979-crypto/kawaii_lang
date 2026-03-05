@@ -1498,6 +1498,24 @@ abstract class AppLocalizations {
   /// In ja, this message translates to:
   /// **'🎤 真似してみよう！'**
   String get dailyPracticeTryButton;
+
+  /// No description provided for @dailyCompleteTitle.
+  ///
+  /// In ja, this message translates to:
+  /// **'今日の練習、完了！🎉'**
+  String get dailyCompleteTitle;
+
+  /// No description provided for @dailyCompleteSeeYouTomorrow.
+  ///
+  /// In ja, this message translates to:
+  /// **'また明日ね 👋'**
+  String get dailyCompleteSeeYouTomorrow;
+
+  /// No description provided for @dailyCompleteMorePractice.
+  ///
+  /// In ja, this message translates to:
+  /// **'もっと練習する →'**
+  String get dailyCompleteMorePractice;
 }
 
 class _AppLocalizationsDelegate

@@ -374,5 +374,8 @@
   "dailyPracticeTitle": "오늘의 연습",
   "dailyPracticeEncourage": "잘 못해도 괜찮아요! 몇 번이든 다시 할 수 있어요 🌸",
   "dailyPracticeListenButton": "▶ 먼저 들어보세요",
-  "dailyPracticeTryButton": "🎤 따라 말해봐요!"
+  "dailyPracticeTryButton": "🎤 따라 말해봐요!",
+  "dailyCompleteTitle": "오늘 연습 완료！🎉",
+  "dailyCompleteSeeYouTomorrow": "내일 봐요 👋",
+  "dailyCompleteMorePractice": "더 연습하기 →"
 }

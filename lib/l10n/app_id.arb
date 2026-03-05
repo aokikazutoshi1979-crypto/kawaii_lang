@@ -374,5 +374,8 @@
   "dailyPracticeTitle": "Latihan Hari Ini",
   "dailyPracticeEncourage": "Tidak apa-apa jika belum sempurna — coba saja! 🌸",
   "dailyPracticeListenButton": "▶ Dengarkan dulu",
-  "dailyPracticeTryButton": "🎤 Coba ucapkan!"
+  "dailyPracticeTryButton": "🎤 Coba ucapkan!",
+  "dailyCompleteTitle": "Latihan Selesai! 🎉",
+  "dailyCompleteSeeYouTomorrow": "Sampai besok 👋",
+  "dailyCompleteMorePractice": "Latihan lagi →"
 }

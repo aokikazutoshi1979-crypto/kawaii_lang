@@ -782,4 +782,13 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get dailyPracticeTryButton => '🎤 Coba ucapkan!';
+
+  @override
+  String get dailyCompleteTitle => 'Latihan Selesai! 🎉';
+
+  @override
+  String get dailyCompleteSeeYouTomorrow => 'Sampai besok 👋';
+
+  @override
+  String get dailyCompleteMorePractice => 'Latihan lagi →';
 }

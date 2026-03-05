@@ -374,5 +374,8 @@
   "dailyPracticeTitle": "Heutige Übung",
   "dailyPracticeEncourage": "Kein Problem, wenn es nicht perfekt ist — probier es einfach! 🌸",
   "dailyPracticeListenButton": "▶ Zuerst anhören",
-  "dailyPracticeTryButton": "🎤 Versuch es zu sagen!"
+  "dailyPracticeTryButton": "🎤 Versuch es zu sagen!",
+  "dailyCompleteTitle": "Übung abgeschlossen! 🎉",
+  "dailyCompleteSeeYouTomorrow": "Bis morgen 👋",
+  "dailyCompleteMorePractice": "Mehr üben →"
 }

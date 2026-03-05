@@ -788,4 +788,13 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get dailyPracticeTryButton => '🎤 Essaie de le dire !';
+
+  @override
+  String get dailyCompleteTitle => 'Pratique terminée ! 🎉';
+
+  @override
+  String get dailyCompleteSeeYouTomorrow => 'À demain 👋';
+
+  @override
+  String get dailyCompleteMorePractice => 'Plus d\'entraînement →';
 }

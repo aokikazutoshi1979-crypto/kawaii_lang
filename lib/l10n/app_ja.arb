@@ -425,5 +425,8 @@
   "dailyPracticeTitle": "今日の練習",
   "dailyPracticeEncourage": "うまく言えなくても大丈夫！何度でも言い直せるよ 🌸",
   "dailyPracticeListenButton": "▶ まず聞いてみよう",
-  "dailyPracticeTryButton": "🎤 真似してみよう！"
+  "dailyPracticeTryButton": "🎤 真似してみよう！",
+  "dailyCompleteTitle": "今日の練習、完了！🎉",
+  "dailyCompleteSeeYouTomorrow": "また明日ね 👋",
+  "dailyCompleteMorePractice": "もっと練習する →"
 }

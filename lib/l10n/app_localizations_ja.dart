@@ -753,4 +753,13 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get dailyPracticeTryButton => '🎤 真似してみよう！';
+
+  @override
+  String get dailyCompleteTitle => '今日の練習、完了！🎉';
+
+  @override
+  String get dailyCompleteSeeYouTomorrow => 'また明日ね 👋';
+
+  @override
+  String get dailyCompleteMorePractice => 'もっと練習する →';
 }

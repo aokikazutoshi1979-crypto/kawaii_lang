@@ -749,6 +749,15 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get dailyPracticeTryButton => '🎤 模仿说说看！';
+
+  @override
+  String get dailyCompleteTitle => '今日练习完成！🎉';
+
+  @override
+  String get dailyCompleteSeeYouTomorrow => '明天见 👋';
+
+  @override
+  String get dailyCompleteMorePractice => '继续练习 →';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -1451,4 +1460,13 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get dailyPracticeTryButton => '🎤 模仿說說看！';
+
+  @override
+  String get dailyCompleteTitle => '今日練習完成！🎉';
+
+  @override
+  String get dailyCompleteSeeYouTomorrow => '明天見 👋';
+
+  @override
+  String get dailyCompleteMorePractice => '繼續練習 →';
 }

@@ -3,6 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../l10n/app_localizations.dart';
 import '../services/character_asset_service.dart';
+import 'daily_complete_screen.dart';
 import '../services/daily_practice_service.dart';
 import '../services/gpt_service.dart';
 import '../services/prompt_builders.dart';
@@ -34,6 +35,7 @@ class _DailyPracticeScreenState extends State<DailyPracticeScreen> {
 
   Map<String, dynamic>? _question;
   String _selectedCharacter = CharacterAssetService.defaultCharacter;
+  int _streakDays = 0;
 
   late VoicevoxTtsService _voicevoxService;
   late SpeechService _speechService;
@@ -53,6 +55,7 @@ class _DailyPracticeScreenState extends State<DailyPracticeScreen> {
     );
     final showFurigana = prefs.getBool('show_furigana') ?? true;
     final userLevel = prefs.getString('user_level') ?? 'beginner';
+    final streakDays = prefs.getInt('streak_days') ?? 0;
 
     final question = await DailyPracticeService.instance.getTodaysQuestion(
       userLevel: userLevel,
@@ -63,6 +66,7 @@ class _DailyPracticeScreenState extends State<DailyPracticeScreen> {
         _selectedCharacter = character;
         _showFurigana = showFurigana;
         _question = question;
+        _streakDays = streakDays;
         _isLoading = false;
       });
     }
@@ -460,9 +464,19 @@ class _DailyPracticeScreenState extends State<DailyPracticeScreen> {
               ),
             ),
             const SizedBox(height: 8),
-            // 完了 →（次タスクでDailyCompleteScreenへ）
+            // 完了 → DailyCompleteScreenへ
             ElevatedButton(
-              onPressed: () => Navigator.pop(context),
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) => DailyCompleteScreen(
+                      practicedPhrase: _japaneseText,
+                      streakDays: _streakDays,
+                      character: _selectedCharacter,
+                    ),
+                  ),
+                );
+              },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.pink.shade300,
                 foregroundColor: Colors.white,

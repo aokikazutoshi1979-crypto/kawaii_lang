@@ -758,4 +758,13 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get dailyPracticeTryButton => '🎤 따라 말해봐요!';
+
+  @override
+  String get dailyCompleteTitle => '오늘 연습 완료！🎉';
+
+  @override
+  String get dailyCompleteSeeYouTomorrow => '내일 봐요 👋';
+
+  @override
+  String get dailyCompleteMorePractice => '더 연습하기 →';
 }

@@ -374,5 +374,8 @@
   "dailyPracticeTitle": "Pratique du jour",
   "dailyPracticeEncourage": "Ce n'est pas grave si ce n'est pas parfait — essaie juste ! 🌸",
   "dailyPracticeListenButton": "▶ Écouter d'abord",
-  "dailyPracticeTryButton": "🎤 Essaie de le dire !"
+  "dailyPracticeTryButton": "🎤 Essaie de le dire !",
+  "dailyCompleteTitle": "Pratique terminée ! 🎉",
+  "dailyCompleteSeeYouTomorrow": "À demain 👋",
+  "dailyCompleteMorePractice": "Plus d'entraînement →"
 }

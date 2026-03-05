@@ -374,5 +374,8 @@
   "dailyPracticeTitle": "Luyện tập hôm nay",
   "dailyPracticeEncourage": "Không sao nếu chưa hoàn hảo — cứ thử thôi! 🌸",
   "dailyPracticeListenButton": "▶ Nghe trước",
-  "dailyPracticeTryButton": "🎤 Hãy thử nói!"
+  "dailyPracticeTryButton": "🎤 Hãy thử nói!",
+  "dailyCompleteTitle": "Hoàn thành luyện tập! 🎉",
+  "dailyCompleteSeeYouTomorrow": "Hẹn ngày mai 👋",
+  "dailyCompleteMorePractice": "Luyện thêm →"
 }
