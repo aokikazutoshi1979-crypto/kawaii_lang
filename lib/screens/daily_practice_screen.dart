@@ -3,7 +3,10 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../l10n/app_localizations.dart';
 import '../services/character_asset_service.dart';
+import '../services/subscription_service.dart';
+import '../services/subscription_state.dart';
 import 'daily_complete_screen.dart';
+import 'subscription_screen.dart';
 import '../services/daily_practice_service.dart';
 import '../services/gpt_service.dart';
 import '../services/prompt_builders.dart';
@@ -26,12 +29,18 @@ class DailyPracticeScreen extends StatefulWidget {
   State<DailyPracticeScreen> createState() => _DailyPracticeScreenState();
 }
 
-class _DailyPracticeScreenState extends State<DailyPracticeScreen> {
+class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
   _PracticeStep _step = _PracticeStep.idle;
   bool _isCorrect = false;
   bool _isLoading = true;
   bool _showFurigana = true;
   bool _isProcessing = false; // STT→GPT処理中フラグ
+
+  bool _isPremium = false;
+  int _todaysPracticeCount = 0;
+  static const int _freeLimit = 3;
+  bool get _hasReachedLimit => !_isPremium && _todaysPracticeCount >= _freeLimit;
+  bool _isListeningTts = false; // VOICEVOX読み込み中フラグ
 
   Map<String, dynamic>? _question;
   String _selectedCharacter = CharacterAssetService.defaultCharacter;
@@ -42,7 +51,7 @@ class _DailyPracticeScreenState extends State<DailyPracticeScreen> {
 
   @override
   void initState() {
-    super.initState();
+    super.initState(); // SubscriptionState.initState() が hasSubOnDevice を取得
     _voicevoxService = VoicevoxTtsService();
     _speechService = SpeechService();
     _loadPrefs();
@@ -57,6 +66,9 @@ class _DailyPracticeScreenState extends State<DailyPracticeScreen> {
     final userLevel = prefs.getString('user_level') ?? 'beginner';
     final streakDays = prefs.getInt('streak_days') ?? 0;
 
+    final premium = await SubscriptionService.instance.checkSubscriptionOnDevice();
+    final count = await DailyPracticeService.instance.getTodaysPracticeCount();
+
     final question = await DailyPracticeService.instance.getTodaysQuestion(
       userLevel: userLevel,
     );
@@ -67,8 +79,16 @@ class _DailyPracticeScreenState extends State<DailyPracticeScreen> {
         _showFurigana = showFurigana;
         _question = question;
         _streakDays = streakDays;
+        _isPremium = premium;
+        _todaysPracticeCount = count;
         _isLoading = false;
       });
+      // 既に上限に達していれば即ダイアログ表示
+      if (!premium && count >= _freeLimit) {
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (mounted) _showLimitDialog();
+        });
+      }
     }
   }
 
@@ -112,13 +132,17 @@ class _DailyPracticeScreenState extends State<DailyPracticeScreen> {
   Future<void> _listenPhrase() async {
     final text = _japaneseText;
     if (text.isEmpty) return;
+    setState(() => _isListeningTts = true);
     await _voicevoxService.speak(
       text,
       _selectedCharacter,
       onDailyLimitFallback: (_) {},
     );
-    if (mounted && _step == _PracticeStep.idle) {
-      setState(() => _step = _PracticeStep.listened);
+    if (mounted) {
+      setState(() {
+        _isListeningTts = false;
+        if (_step == _PracticeStep.idle) _step = _PracticeStep.listened;
+      });
     }
   }
 
@@ -156,7 +180,8 @@ class _DailyPracticeScreenState extends State<DailyPracticeScreen> {
 
     final loc = AppLocalizations.of(context)!;
     final correct = _japaneseText;
-    final prompt = PromptBuilders.buildAccuracyPrompt(
+    // リピート練習なので同義ではなく完全一致チェックを使う
+    final prompt = PromptBuilders.buildListeningPrompt(
       userAnswer: recognized,
       originalQuestion: correct,
       targetLang: 'Japanese',
@@ -171,6 +196,7 @@ class _DailyPracticeScreenState extends State<DailyPracticeScreen> {
     if (isCorrect) {
       await DailyPracticeService.instance.markAsCompleted(_questionId);
       await DailyPracticeService.instance.incrementPracticeCount();
+      if (mounted) setState(() => _todaysPracticeCount++);
     }
 
     setState(() {
@@ -178,6 +204,43 @@ class _DailyPracticeScreenState extends State<DailyPracticeScreen> {
       _step = _PracticeStep.result;
       _isProcessing = false;
     });
+  }
+
+  // ---------- 制限ダイアログ ----------
+
+  void _showLimitDialog() {
+    final loc = AppLocalizations.of(context)!;
+    // ダイアログを閉じた後も有効なNavigatorを事前キャプチャ
+    final navigator = Navigator.of(context);
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (ctx) => AlertDialog(
+        title: Text(loc.dailyLimitTitle),
+        content: Text(loc.dailyLimitMessage),
+        actions: [
+          TextButton(
+            onPressed: () {
+              navigator.pop(); // ダイアログを閉じる
+              navigator.pop(); // HomeScreenに戻る
+            },
+            child: Text(loc.dailyLimitClose),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              navigator.pop(); // ダイアログを閉じる
+              navigator.push(
+                MaterialPageRoute(builder: (_) => const SubscriptionScreen()),
+              );
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.pink.shade400,
+            ),
+            child: Text(loc.dailyLimitUpgrade),
+          ),
+        ],
+      ),
+    );
   }
 
   // ---------- ヒントダイアログ ----------
@@ -475,7 +538,14 @@ class _DailyPracticeScreenState extends State<DailyPracticeScreen> {
                       character: _selectedCharacter,
                     ),
                   ),
-                );
+                ).then((_) {
+                  // DailyCompleteScreenから「もっと練習する」で戻ってきた時の制限チェック
+                  if (mounted && _hasReachedLimit) {
+                    WidgetsBinding.instance.addPostFrameCallback((_) {
+                      _showLimitDialog();
+                    });
+                  }
+                });
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.pink.shade300,
@@ -492,9 +562,18 @@ class _DailyPracticeScreenState extends State<DailyPracticeScreen> {
 
   Widget _buildListenButton(AppLocalizations loc) {
     return ElevatedButton.icon(
-      icon: const Icon(Icons.volume_up),
+      icon: _isListeningTts
+          ? SizedBox(
+              width: 18,
+              height: 18,
+              child: CircularProgressIndicator(
+                strokeWidth: 2,
+                valueColor: AlwaysStoppedAnimation<Color>(Colors.pink.shade700),
+              ),
+            )
+          : const Icon(Icons.volume_up),
       label: Text(loc.dailyPracticeListenButton),
-      onPressed: _listenPhrase,
+      onPressed: _isListeningTts ? null : _listenPhrase,
       style: ElevatedButton.styleFrom(
         backgroundColor: Colors.pink.shade100,
         foregroundColor: Colors.pink.shade700,

@@ -783,4 +783,17 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get levelSelectOptionIntermediateSub => '簡単な文なら言える';
+
+  @override
+  String get dailyLimitTitle => '今日もよく頑張ったね！🌸';
+
+  @override
+  String get dailyLimitMessage =>
+      '今日の無料練習3回、全部使ったよ！明日また練習しよう。ベーシックプランなら毎日無制限で練習できるよ♪';
+
+  @override
+  String get dailyLimitClose => 'ホームに戻る';
+
+  @override
+  String get dailyLimitUpgrade => 'ベーシックプランを見る ✨';
 }

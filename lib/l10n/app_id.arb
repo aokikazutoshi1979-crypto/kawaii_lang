@@ -384,5 +384,9 @@
   "levelSelectOptionBeginnerTitle": "Tahu Beberapa Kata",
   "levelSelectOptionBeginnerSub": "arigatou, konnichiwa...",
   "levelSelectOptionIntermediateTitle": "Punya Dasar",
-  "levelSelectOptionIntermediateSub": "Saya bisa mengucapkan kalimat sederhana"
+  "levelSelectOptionIntermediateSub": "Saya bisa mengucapkan kalimat sederhana",
+  "dailyLimitTitle": "Latihan yang luar biasa hari ini! 🌸",
+  "dailyLimitMessage": "Kamu sudah menyelesaikan 3 latihan gratis hari ini! Kembali besok, atau langganan Paket Dasar untuk latihan tak terbatas♪",
+  "dailyLimitClose": "Kembali ke Beranda",
+  "dailyLimitUpgrade": "Lihat Paket Dasar ✨"
 }

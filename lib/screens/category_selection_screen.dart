@@ -415,6 +415,30 @@ class _CategorySelectionScreenState
         backgroundColor: Colors.transparent,
         elevation: 0,
         scrolledUnderElevation: 0,
+        leading: Navigator.canPop(context)
+            ? IconButton(
+                icon: Container(
+                  padding: const EdgeInsets.all(6),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.9),
+                    shape: BoxShape.circle,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.1),
+                        blurRadius: 8,
+                        offset: const Offset(0, 3),
+                      ),
+                    ],
+                  ),
+                  child: const Icon(
+                    Icons.arrow_back_ios_new_rounded,
+                    color: Colors.black87,
+                    size: 18,
+                  ),
+                ),
+                onPressed: () => Navigator.pop(context),
+              )
+            : null,
         actions: [
           IconButton(
             icon: Container(

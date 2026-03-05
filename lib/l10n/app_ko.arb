@@ -384,5 +384,9 @@
   "levelSelectOptionBeginnerTitle": "조금 알아요",
   "levelSelectOptionBeginnerSub": "ありがとう、こんにちは 정도",
   "levelSelectOptionIntermediateTitle": "기본은 알아요",
-  "levelSelectOptionIntermediateSub": "간단한 문장은 말할 수 있어요"
+  "levelSelectOptionIntermediateSub": "간단한 문장은 말할 수 있어요",
+  "dailyLimitTitle": "오늘 정말 잘 했어요! 🌸",
+  "dailyLimitMessage": "오늘의 무료 연습 3회를 모두 사용했어요！내일 다시 연습해요. 베이직 플랜이면 매일 무제한 연습 가능♪",
+  "dailyLimitClose": "홈으로 돌아가기",
+  "dailyLimitUpgrade": "베이직 플랜 보기 ✨"
 }

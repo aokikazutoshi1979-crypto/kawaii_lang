@@ -435,5 +435,9 @@
   "levelSelectOptionBeginnerTitle": "少しだけ知ってる",
   "levelSelectOptionBeginnerSub": "ありがとう、こんにちは…くらい",
   "levelSelectOptionIntermediateTitle": "基本はわかる",
-  "levelSelectOptionIntermediateSub": "簡単な文なら言える"
+  "levelSelectOptionIntermediateSub": "簡単な文なら言える",
+  "dailyLimitTitle": "今日もよく頑張ったね！🌸",
+  "dailyLimitMessage": "今日の無料練習3回、全部使ったよ！明日また練習しよう。ベーシックプランなら毎日無制限で練習できるよ♪",
+  "dailyLimitClose": "ホームに戻る",
+  "dailyLimitUpgrade": "ベーシックプランを見る ✨"
 }

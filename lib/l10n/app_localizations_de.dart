@@ -818,4 +818,17 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get levelSelectOptionIntermediateSub =>
       'Ich kann einfache Sätze sagen';
+
+  @override
+  String get dailyLimitTitle => 'Tolle Übung heute! 🌸';
+
+  @override
+  String get dailyLimitMessage =>
+      'Du hast deine 3 kostenlosen Übungen für heute abgeschlossen! Komm morgen wieder, oder hole dir den Basic Plan für unbegrenzte Übungen♪';
+
+  @override
+  String get dailyLimitClose => 'Zurück zum Startbildschirm';
+
+  @override
+  String get dailyLimitUpgrade => 'Basic Plan ansehen ✨';
 }

@@ -822,4 +822,17 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get levelSelectOptionIntermediateSub =>
       'Puedo decir oraciones simples';
+
+  @override
+  String get dailyLimitTitle => '¡Excelente práctica hoy! 🌸';
+
+  @override
+  String get dailyLimitMessage =>
+      '¡Completaste 3 prácticas gratuitas de hoy! Vuelve mañana, o suscríbete al Plan Básico para práctica ilimitada♪';
+
+  @override
+  String get dailyLimitClose => 'Volver al inicio';
+
+  @override
+  String get dailyLimitUpgrade => 'Ver Plan Básico ✨';
 }

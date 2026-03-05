@@ -384,5 +384,9 @@
   "levelSelectOptionBeginnerTitle": "Je connais quelques mots",
   "levelSelectOptionBeginnerSub": "arigatou, konnichiwa...",
   "levelSelectOptionIntermediateTitle": "J'ai quelques bases",
-  "levelSelectOptionIntermediateSub": "Je peux dire des phrases simples"
+  "levelSelectOptionIntermediateSub": "Je peux dire des phrases simples",
+  "dailyLimitTitle": "Super entraînement aujourd'hui ! 🌸",
+  "dailyLimitMessage": "Tu as terminé tes 3 pratiques gratuites du jour ! Reviens demain, ou abonne-toi au Plan Basique pour une pratique illimitée♪",
+  "dailyLimitClose": "Retour à l'accueil",
+  "dailyLimitUpgrade": "Voir le Plan Basique ✨"
 }

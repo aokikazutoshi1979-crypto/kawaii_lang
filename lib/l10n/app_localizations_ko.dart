@@ -788,4 +788,17 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get levelSelectOptionIntermediateSub => '간단한 문장은 말할 수 있어요';
+
+  @override
+  String get dailyLimitTitle => '오늘 정말 잘 했어요! 🌸';
+
+  @override
+  String get dailyLimitMessage =>
+      '오늘의 무료 연습 3회를 모두 사용했어요！내일 다시 연습해요. 베이직 플랜이면 매일 무제한 연습 가능♪';
+
+  @override
+  String get dailyLimitClose => '홈으로 돌아가기';
+
+  @override
+  String get dailyLimitUpgrade => '베이직 플랜 보기 ✨';
 }

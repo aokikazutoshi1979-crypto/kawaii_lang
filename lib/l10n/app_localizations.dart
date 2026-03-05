@@ -1558,6 +1558,30 @@ abstract class AppLocalizations {
   /// In ja, this message translates to:
   /// **'簡単な文なら言える'**
   String get levelSelectOptionIntermediateSub;
+
+  /// No description provided for @dailyLimitTitle.
+  ///
+  /// In ja, this message translates to:
+  /// **'今日もよく頑張ったね！🌸'**
+  String get dailyLimitTitle;
+
+  /// No description provided for @dailyLimitMessage.
+  ///
+  /// In ja, this message translates to:
+  /// **'今日の無料練習3回、全部使ったよ！明日また練習しよう。ベーシックプランなら毎日無制限で練習できるよ♪'**
+  String get dailyLimitMessage;
+
+  /// No description provided for @dailyLimitClose.
+  ///
+  /// In ja, this message translates to:
+  /// **'ホームに戻る'**
+  String get dailyLimitClose;
+
+  /// No description provided for @dailyLimitUpgrade.
+  ///
+  /// In ja, this message translates to:
+  /// **'ベーシックプランを見る ✨'**
+  String get dailyLimitUpgrade;
 }
 
 class _AppLocalizationsDelegate

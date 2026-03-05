@@ -384,5 +384,9 @@
   "levelSelectOptionBeginnerTitle": "Biết một chút",
   "levelSelectOptionBeginnerSub": "arigatou, konnichiwa...",
   "levelSelectOptionIntermediateTitle": "Biết những điều cơ bản",
-  "levelSelectOptionIntermediateSub": "Tôi có thể nói những câu đơn giản"
+  "levelSelectOptionIntermediateSub": "Tôi có thể nói những câu đơn giản",
+  "dailyLimitTitle": "Luyện tập tốt lắm hôm nay! 🌸",
+  "dailyLimitMessage": "Bạn đã hoàn thành 3 lần luyện tập miễn phí hôm nay! Quay lại ngày mai, hoặc đăng ký Gói Cơ Bản để luyện tập không giới hạn♪",
+  "dailyLimitClose": "Quay về Trang chủ",
+  "dailyLimitUpgrade": "Xem Gói Cơ Bản ✨"
 }

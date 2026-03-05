@@ -813,4 +813,17 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get levelSelectOptionIntermediateSub =>
       'Saya bisa mengucapkan kalimat sederhana';
+
+  @override
+  String get dailyLimitTitle => 'Latihan yang luar biasa hari ini! 🌸';
+
+  @override
+  String get dailyLimitMessage =>
+      'Kamu sudah menyelesaikan 3 latihan gratis hari ini! Kembali besok, atau langganan Paket Dasar untuk latihan tak terbatas♪';
+
+  @override
+  String get dailyLimitClose => 'Kembali ke Beranda';
+
+  @override
+  String get dailyLimitUpgrade => 'Lihat Paket Dasar ✨';
 }

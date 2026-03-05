@@ -779,6 +779,18 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get levelSelectOptionIntermediateSub => '能说简单的句子';
+
+  @override
+  String get dailyLimitTitle => '今天练习得很棒！🌸';
+
+  @override
+  String get dailyLimitMessage => '今天的3次免费练习用完了！明天再来吧。订阅基础版，每天无限练习♪';
+
+  @override
+  String get dailyLimitClose => '返回首页';
+
+  @override
+  String get dailyLimitUpgrade => '查看基础版 ✨';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -1511,4 +1523,16 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get levelSelectOptionIntermediateSub => '能說簡單的句子';
+
+  @override
+  String get dailyLimitTitle => '今天練習得很棒！🌸';
+
+  @override
+  String get dailyLimitMessage => '今天的3次免費練習用完了！明天再來吧。訂閱基礎版，每天無限練習♪';
+
+  @override
+  String get dailyLimitClose => '返回首頁';
+
+  @override
+  String get dailyLimitUpgrade => '查看基礎版 ✨';
 }

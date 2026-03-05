@@ -390,5 +390,9 @@
   "levelSelectOptionBeginnerTitle": "了解一点点",
   "levelSelectOptionBeginnerSub": "ありがとう、こんにちは……这个程度",
   "levelSelectOptionIntermediateTitle": "有一定基础",
-  "levelSelectOptionIntermediateSub": "能说简单的句子"
+  "levelSelectOptionIntermediateSub": "能说简单的句子",
+  "dailyLimitTitle": "今天练习得很棒！🌸",
+  "dailyLimitMessage": "今天的3次免费练习用完了！明天再来吧。订阅基础版，每天无限练习♪",
+  "dailyLimitClose": "返回首页",
+  "dailyLimitUpgrade": "查看基础版 ✨"
 }

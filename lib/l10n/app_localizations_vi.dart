@@ -807,4 +807,17 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get levelSelectOptionIntermediateSub =>
       'Tôi có thể nói những câu đơn giản';
+
+  @override
+  String get dailyLimitTitle => 'Luyện tập tốt lắm hôm nay! 🌸';
+
+  @override
+  String get dailyLimitMessage =>
+      'Bạn đã hoàn thành 3 lần luyện tập miễn phí hôm nay! Quay lại ngày mai, hoặc đăng ký Gói Cơ Bản để luyện tập không giới hạn♪';
+
+  @override
+  String get dailyLimitClose => 'Quay về Trang chủ';
+
+  @override
+  String get dailyLimitUpgrade => 'Xem Gói Cơ Bản ✨';
 }

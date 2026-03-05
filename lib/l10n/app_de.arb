@@ -384,5 +384,9 @@
   "levelSelectOptionBeginnerTitle": "Ich kenne ein paar Wörter",
   "levelSelectOptionBeginnerSub": "arigatou, konnichiwa...",
   "levelSelectOptionIntermediateTitle": "Ich habe Grundkenntnisse",
-  "levelSelectOptionIntermediateSub": "Ich kann einfache Sätze sagen"
+  "levelSelectOptionIntermediateSub": "Ich kann einfache Sätze sagen",
+  "dailyLimitTitle": "Tolle Übung heute! 🌸",
+  "dailyLimitMessage": "Du hast deine 3 kostenlosen Übungen für heute abgeschlossen! Komm morgen wieder, oder hole dir den Basic Plan für unbegrenzte Übungen♪",
+  "dailyLimitClose": "Zurück zum Startbildschirm",
+  "dailyLimitUpgrade": "Basic Plan ansehen ✨"
 }
