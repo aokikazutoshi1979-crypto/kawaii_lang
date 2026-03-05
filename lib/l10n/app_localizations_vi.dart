@@ -785,4 +785,26 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get dailyCompleteMorePractice => 'Luyện thêm →';
+
+  @override
+  String get levelSelectQuestion => 'Trình độ tiếng Nhật của bạn là gì? 🌸';
+
+  @override
+  String get levelSelectOptionStarterTitle => 'Hoàn toàn mới bắt đầu';
+
+  @override
+  String get levelSelectOptionStarterSub => 'Tôi chưa biết tiếng Nhật';
+
+  @override
+  String get levelSelectOptionBeginnerTitle => 'Biết một chút';
+
+  @override
+  String get levelSelectOptionBeginnerSub => 'arigatou, konnichiwa...';
+
+  @override
+  String get levelSelectOptionIntermediateTitle => 'Biết những điều cơ bản';
+
+  @override
+  String get levelSelectOptionIntermediateSub =>
+      'Tôi có thể nói những câu đơn giản';
 }

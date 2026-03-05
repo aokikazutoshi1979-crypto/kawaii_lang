@@ -377,5 +377,12 @@
   "dailyPracticeTryButton": "🎤 Versuch es zu sagen!",
   "dailyCompleteTitle": "Übung abgeschlossen! 🎉",
   "dailyCompleteSeeYouTomorrow": "Bis morgen 👋",
-  "dailyCompleteMorePractice": "Mehr üben →"
+  "dailyCompleteMorePractice": "Mehr üben →",
+  "levelSelectQuestion": "Wie ist dein Japanisch-Niveau? 🌸",
+  "levelSelectOptionStarterTitle": "Absoluter Anfänger",
+  "levelSelectOptionStarterSub": "Ich kenne kein Japanisch",
+  "levelSelectOptionBeginnerTitle": "Ich kenne ein paar Wörter",
+  "levelSelectOptionBeginnerSub": "arigatou, konnichiwa...",
+  "levelSelectOptionIntermediateTitle": "Ich habe Grundkenntnisse",
+  "levelSelectOptionIntermediateSub": "Ich kann einfache Sätze sagen"
 }

@@ -383,5 +383,12 @@
   "dailyPracticeTryButton": "🎤 模仿说说看！",
   "dailyCompleteTitle": "今日练习完成！🎉",
   "dailyCompleteSeeYouTomorrow": "明天见 👋",
-  "dailyCompleteMorePractice": "继续练习 →"
+  "dailyCompleteMorePractice": "继续练习 →",
+  "levelSelectQuestion": "你的日语水平是？🌸",
+  "levelSelectOptionStarterTitle": "完全零基础",
+  "levelSelectOptionStarterSub": "一句日语都不会",
+  "levelSelectOptionBeginnerTitle": "了解一点点",
+  "levelSelectOptionBeginnerSub": "ありがとう、こんにちは……这个程度",
+  "levelSelectOptionIntermediateTitle": "有一定基础",
+  "levelSelectOptionIntermediateSub": "能说简单的句子"
 }

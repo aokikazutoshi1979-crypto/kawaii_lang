@@ -377,5 +377,12 @@
   "dailyPracticeTryButton": "🎤 따라 말해봐요!",
   "dailyCompleteTitle": "오늘 연습 완료！🎉",
   "dailyCompleteSeeYouTomorrow": "내일 봐요 👋",
-  "dailyCompleteMorePractice": "더 연습하기 →"
+  "dailyCompleteMorePractice": "더 연습하기 →",
+  "levelSelectQuestion": "일본어 실력이 어느 정도예요? 🌸",
+  "levelSelectOptionStarterTitle": "전혀 모릅니다",
+  "levelSelectOptionStarterSub": "한 마디도 모릅니다",
+  "levelSelectOptionBeginnerTitle": "조금 알아요",
+  "levelSelectOptionBeginnerSub": "ありがとう、こんにちは 정도",
+  "levelSelectOptionIntermediateTitle": "기본은 알아요",
+  "levelSelectOptionIntermediateSub": "간단한 문장은 말할 수 있어요"
 }

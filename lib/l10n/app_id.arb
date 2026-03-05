@@ -377,5 +377,12 @@
   "dailyPracticeTryButton": "🎤 Coba ucapkan!",
   "dailyCompleteTitle": "Latihan Selesai! 🎉",
   "dailyCompleteSeeYouTomorrow": "Sampai besok 👋",
-  "dailyCompleteMorePractice": "Latihan lagi →"
+  "dailyCompleteMorePractice": "Latihan lagi →",
+  "levelSelectQuestion": "Apa level bahasa Jepang-mu? 🌸",
+  "levelSelectOptionStarterTitle": "Pemula Mutlak",
+  "levelSelectOptionStarterSub": "Saya belum tahu bahasa Jepang",
+  "levelSelectOptionBeginnerTitle": "Tahu Beberapa Kata",
+  "levelSelectOptionBeginnerSub": "arigatou, konnichiwa...",
+  "levelSelectOptionIntermediateTitle": "Punya Dasar",
+  "levelSelectOptionIntermediateSub": "Saya bisa mengucapkan kalimat sederhana"
 }

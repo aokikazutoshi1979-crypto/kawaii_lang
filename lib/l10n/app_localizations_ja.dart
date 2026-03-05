@@ -762,4 +762,25 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get dailyCompleteMorePractice => 'もっと練習する →';
+
+  @override
+  String get levelSelectQuestion => '日本語はどれくらいわかる？🌸';
+
+  @override
+  String get levelSelectOptionStarterTitle => 'まったくわからない';
+
+  @override
+  String get levelSelectOptionStarterSub => 'ひとことも知らない';
+
+  @override
+  String get levelSelectOptionBeginnerTitle => '少しだけ知ってる';
+
+  @override
+  String get levelSelectOptionBeginnerSub => 'ありがとう、こんにちは…くらい';
+
+  @override
+  String get levelSelectOptionIntermediateTitle => '基本はわかる';
+
+  @override
+  String get levelSelectOptionIntermediateSub => '簡単な文なら言える';
 }

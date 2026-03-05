@@ -758,6 +758,27 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get dailyCompleteMorePractice => '继续练习 →';
+
+  @override
+  String get levelSelectQuestion => '你的日语水平是？🌸';
+
+  @override
+  String get levelSelectOptionStarterTitle => '完全零基础';
+
+  @override
+  String get levelSelectOptionStarterSub => '一句日语都不会';
+
+  @override
+  String get levelSelectOptionBeginnerTitle => '了解一点点';
+
+  @override
+  String get levelSelectOptionBeginnerSub => 'ありがとう、こんにちは……这个程度';
+
+  @override
+  String get levelSelectOptionIntermediateTitle => '有一定基础';
+
+  @override
+  String get levelSelectOptionIntermediateSub => '能说简单的句子';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -1469,4 +1490,25 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get dailyCompleteMorePractice => '繼續練習 →';
+
+  @override
+  String get levelSelectQuestion => '你的日語程度是？🌸';
+
+  @override
+  String get levelSelectOptionStarterTitle => '完全零基礎';
+
+  @override
+  String get levelSelectOptionStarterSub => '一句日語都不會';
+
+  @override
+  String get levelSelectOptionBeginnerTitle => '了解一點點';
+
+  @override
+  String get levelSelectOptionBeginnerSub => 'ありがとう、こんにちは……這個程度';
+
+  @override
+  String get levelSelectOptionIntermediateTitle => '有一定基礎';
+
+  @override
+  String get levelSelectOptionIntermediateSub => '能說簡單的句子';
 }

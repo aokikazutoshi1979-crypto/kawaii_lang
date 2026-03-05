@@ -377,5 +377,12 @@
   "dailyPracticeTryButton": "🎤 Hãy thử nói!",
   "dailyCompleteTitle": "Hoàn thành luyện tập! 🎉",
   "dailyCompleteSeeYouTomorrow": "Hẹn ngày mai 👋",
-  "dailyCompleteMorePractice": "Luyện thêm →"
+  "dailyCompleteMorePractice": "Luyện thêm →",
+  "levelSelectQuestion": "Trình độ tiếng Nhật của bạn là gì? 🌸",
+  "levelSelectOptionStarterTitle": "Hoàn toàn mới bắt đầu",
+  "levelSelectOptionStarterSub": "Tôi chưa biết tiếng Nhật",
+  "levelSelectOptionBeginnerTitle": "Biết một chút",
+  "levelSelectOptionBeginnerSub": "arigatou, konnichiwa...",
+  "levelSelectOptionIntermediateTitle": "Biết những điều cơ bản",
+  "levelSelectOptionIntermediateSub": "Tôi có thể nói những câu đơn giản"
 }

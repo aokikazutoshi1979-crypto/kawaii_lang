@@ -1516,6 +1516,48 @@ abstract class AppLocalizations {
   /// In ja, this message translates to:
   /// **'もっと練習する →'**
   String get dailyCompleteMorePractice;
+
+  /// No description provided for @levelSelectQuestion.
+  ///
+  /// In ja, this message translates to:
+  /// **'日本語はどれくらいわかる？🌸'**
+  String get levelSelectQuestion;
+
+  /// No description provided for @levelSelectOptionStarterTitle.
+  ///
+  /// In ja, this message translates to:
+  /// **'まったくわからない'**
+  String get levelSelectOptionStarterTitle;
+
+  /// No description provided for @levelSelectOptionStarterSub.
+  ///
+  /// In ja, this message translates to:
+  /// **'ひとことも知らない'**
+  String get levelSelectOptionStarterSub;
+
+  /// No description provided for @levelSelectOptionBeginnerTitle.
+  ///
+  /// In ja, this message translates to:
+  /// **'少しだけ知ってる'**
+  String get levelSelectOptionBeginnerTitle;
+
+  /// No description provided for @levelSelectOptionBeginnerSub.
+  ///
+  /// In ja, this message translates to:
+  /// **'ありがとう、こんにちは…くらい'**
+  String get levelSelectOptionBeginnerSub;
+
+  /// No description provided for @levelSelectOptionIntermediateTitle.
+  ///
+  /// In ja, this message translates to:
+  /// **'基本はわかる'**
+  String get levelSelectOptionIntermediateTitle;
+
+  /// No description provided for @levelSelectOptionIntermediateSub.
+  ///
+  /// In ja, this message translates to:
+  /// **'簡単な文なら言える'**
+  String get levelSelectOptionIntermediateSub;
 }
 
 class _AppLocalizationsDelegate

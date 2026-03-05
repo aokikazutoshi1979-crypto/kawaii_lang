@@ -767,4 +767,25 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get dailyCompleteMorePractice => '더 연습하기 →';
+
+  @override
+  String get levelSelectQuestion => '일본어 실력이 어느 정도예요? 🌸';
+
+  @override
+  String get levelSelectOptionStarterTitle => '전혀 모릅니다';
+
+  @override
+  String get levelSelectOptionStarterSub => '한 마디도 모릅니다';
+
+  @override
+  String get levelSelectOptionBeginnerTitle => '조금 알아요';
+
+  @override
+  String get levelSelectOptionBeginnerSub => 'ありがとう、こんにちは 정도';
+
+  @override
+  String get levelSelectOptionIntermediateTitle => '기본은 알아요';
+
+  @override
+  String get levelSelectOptionIntermediateSub => '간단한 문장은 말할 수 있어요';
 }

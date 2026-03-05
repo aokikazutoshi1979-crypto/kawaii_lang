@@ -796,4 +796,26 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get dailyCompleteMorePractice => 'Mehr üben →';
+
+  @override
+  String get levelSelectQuestion => 'Wie ist dein Japanisch-Niveau? 🌸';
+
+  @override
+  String get levelSelectOptionStarterTitle => 'Absoluter Anfänger';
+
+  @override
+  String get levelSelectOptionStarterSub => 'Ich kenne kein Japanisch';
+
+  @override
+  String get levelSelectOptionBeginnerTitle => 'Ich kenne ein paar Wörter';
+
+  @override
+  String get levelSelectOptionBeginnerSub => 'arigatou, konnichiwa...';
+
+  @override
+  String get levelSelectOptionIntermediateTitle => 'Ich habe Grundkenntnisse';
+
+  @override
+  String get levelSelectOptionIntermediateSub =>
+      'Ich kann einfache Sätze sagen';
 }

@@ -791,4 +791,26 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get dailyCompleteMorePractice => 'Latihan lagi →';
+
+  @override
+  String get levelSelectQuestion => 'Apa level bahasa Jepang-mu? 🌸';
+
+  @override
+  String get levelSelectOptionStarterTitle => 'Pemula Mutlak';
+
+  @override
+  String get levelSelectOptionStarterSub => 'Saya belum tahu bahasa Jepang';
+
+  @override
+  String get levelSelectOptionBeginnerTitle => 'Tahu Beberapa Kata';
+
+  @override
+  String get levelSelectOptionBeginnerSub => 'arigatou, konnichiwa...';
+
+  @override
+  String get levelSelectOptionIntermediateTitle => 'Punya Dasar';
+
+  @override
+  String get levelSelectOptionIntermediateSub =>
+      'Saya bisa mengucapkan kalimat sederhana';
 }
