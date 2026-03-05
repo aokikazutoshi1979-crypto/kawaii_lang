@@ -300,7 +300,7 @@ class _ChatBubbleState extends State<ChatBubble>
           ),
         );
         // ローマ字（カラオケ対応）
-        final romaji = _hiraganaToRomaji(furigana);
+        final romaji = hiraganaToRomaji(furigana);
         if (romaji.isNotEmpty) {
           children.add(
             Padding(
@@ -681,7 +681,7 @@ class _ChatBubbleState extends State<ChatBubble>
 }
 
 // ── ひらがな → ヘボン式ローマ字変換
-String _hiraganaToRomaji(String text) {
+String hiraganaToRomaji(String text) {
   const combos = <String, String>{
     'きゃ':'kya','きゅ':'kyu','きょ':'kyo',
     'しゃ':'sha','しゅ':'shu','しょ':'sho',

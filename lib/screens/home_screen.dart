@@ -91,9 +91,9 @@ class _HomeScreenState extends State<HomeScreen> {
           'color': const Color(0xFFFCE4EC),
         },
         {
-          'icon': '👂',
-          'title': 'リスニング練習',
-          'subtitle': '聞いた日本語を繰り返そう',
+          'icon': '📚',
+          'title': 'カテゴリー練習',
+          'subtitle': 'テーマ別にスピーキング＆リスニング',
           'color': const Color(0xFFE8F5E9),
         },
         {
@@ -122,9 +122,9 @@ class _HomeScreenState extends State<HomeScreen> {
           'color': const Color(0xFFFCE4EC),
         },
         {
-          'icon': '👂',
-          'title': 'Listening Practice',
-          'subtitle': 'Repeat the Japanese you hear',
+          'icon': '📚',
+          'title': 'Category Practice',
+          'subtitle': 'Speaking & Listening by topic',
           'color': const Color(0xFFE8F5E9),
         },
         {

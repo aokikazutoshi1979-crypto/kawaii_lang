@@ -14,6 +14,7 @@ import '../services/gpt_service.dart';
 import '../services/prompt_builders.dart';
 import '../services/speech_service.dart';
 import '../services/voicevox_tts_service.dart';
+import '../widgets/chat_bubble.dart' show hiraganaToRomaji;
 import '../widgets/tumugi_bubble.dart';
 import '../widgets/wave_animation.dart';
 
@@ -50,6 +51,9 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
   // カラオケ
   Timer? _karaokeTimer;
   int _karaokeIndex = 0;
+
+  // ふりがな（ひらがな転写）
+  String? _furigana;
 
   Map<String, dynamic>? _question;
   String _selectedCharacter = CharacterAssetService.defaultCharacter;
@@ -98,6 +102,23 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
           if (mounted) _showLimitDialog();
         });
       }
+      _fetchFurigana();
+    }
+  }
+
+  // ふりがな（ひらがな転写）をGPT経由で非同期取得
+  Future<void> _fetchFurigana() async {
+    final text = _japaneseText;
+    if (text.isEmpty || !mounted) return;
+    final loc = AppLocalizations.of(context);
+    if (loc == null) return;
+    final prompt = PromptBuilders.buildSimilarQuestionTtsPrompt(
+      translatedText: text,
+      targetLang: 'ja',
+    );
+    final res = await GptService.getChatResponse(prompt, text, loc);
+    if (res != null && res.trim().isNotEmpty && mounted) {
+      setState(() => _furigana = res.trim());
     }
   }
 
@@ -287,6 +308,7 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
       _step = _PracticeStep.idle;
       _attemptCount = 0;
       _karaokeIndex = 0;
+      _furigana = null;
     });
     await DailyPracticeService.instance.clearCurrentQuestion();
     final prefs = await SharedPreferences.getInstance();
@@ -299,6 +321,7 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
         _question = question;
         _isLoading = false;
       });
+      _fetchFurigana();
     }
   }
 
@@ -423,6 +446,50 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
     );
   }
 
+  // ふりがなからローマ字カラオケ用インデックスを計算
+  int get _romajiKaraokeIndex {
+    final phraseLen = _japaneseText.runes.length;
+    if (phraseLen == 0 || _furigana == null) return 0;
+    final romaji = hiraganaToRomaji(_furigana!);
+    return (_karaokeIndex / phraseLen * romaji.length).round().clamp(0, romaji.length);
+  }
+
+  // ローマ字カラオケ用 Widget
+  Widget _buildRomajiKaraoke() {
+    final f = _furigana;
+    if (f == null || f.isEmpty) return const SizedBox.shrink();
+    final romaji = hiraganaToRomaji(f);
+    if (romaji.isEmpty) return const SizedBox.shrink();
+    final idx = _romajiKaraokeIndex;
+    final highlighted = romaji.substring(0, idx);
+    final remaining = romaji.substring(idx);
+    return RichText(
+      text: TextSpan(
+        children: [
+          if (highlighted.isNotEmpty)
+            TextSpan(
+              text: highlighted,
+              style: TextStyle(
+                fontSize: 11,
+                color: Colors.pink.shade400,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 0.5,
+              ),
+            ),
+          if (remaining.isNotEmpty)
+            TextSpan(
+              text: remaining,
+              style: TextStyle(
+                fontSize: 11,
+                color: Colors.grey.shade500,
+                letterSpacing: 0.5,
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+
   // カラオケ用 TextSpan リスト
   List<InlineSpan> _buildKaraokeSpans() {
     final text = _japaneseText;
@@ -480,6 +547,21 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
                       ],
               ),
             ),
+            // ふりがな
+            if (_furigana != null && _furigana!.isNotEmpty) ...[
+              const SizedBox(height: 4),
+              Text(
+                _furigana!,
+                style: TextStyle(
+                  fontSize: 13,
+                  color: Colors.pink.shade400,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              const SizedBox(height: 2),
+              // ローマ字カラオケ
+              _buildRomajiKaraoke(),
+            ],
             const SizedBox(height: 8),
             // ネイティブ語訳
             Text(
