@@ -420,5 +420,10 @@
   "retryButton": "もう一回言う",
   "benefitNoCreditCard": "Apple IDだけで開始（クレカ不要）",
   "benefitRenewalNotice": "更新7日前にお知らせ",
-  "benefitAppleRefund": "7日以内ならApple経由で返金申請可"
+  "benefitAppleRefund": "7日以内ならApple経由で返金申請可",
+  "searchHint": "フレーズを検索",
+  "dailyPracticeTitle": "今日の練習",
+  "dailyPracticeEncourage": "うまく言えなくても大丈夫！何度でも言い直せるよ 🌸",
+  "dailyPracticeListenButton": "▶ まず聞いてみよう",
+  "dailyPracticeTryButton": "🎤 真似してみよう！"
 }

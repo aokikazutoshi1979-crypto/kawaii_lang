@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../services/character_asset_service.dart';
 import 'category_selection_screen.dart';
+import 'daily_practice_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -138,8 +139,16 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
+  void _goToDailyPractice() {
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (_) => const DailyPracticeScreen()),
+    ).then((_) {
+      _loadPrefs();
+    });
+  }
+
   void _goToPractice() {
-    Navigator.of(context).pushReplacement(
+    Navigator.of(context).push(
       MaterialPageRoute(builder: (_) => const CategorySelectionScreen()),
     );
   }
@@ -260,10 +269,13 @@ class _HomeScreenState extends State<HomeScreen> {
               const SizedBox(height: 12),
 
               // ミッションカード3枚
-              ...missions.map((m) => Padding(
+              ...missions.asMap().entries.map((entry) {
+                final index = entry.key;
+                final m = entry.value;
+                return Padding(
                     padding: const EdgeInsets.only(bottom: 10),
                     child: GestureDetector(
-                      onTap: _goToPractice,
+                      onTap: index == 0 ? _goToDailyPractice : _goToPractice,
                       child: Container(
                         padding: const EdgeInsets.all(14),
                         decoration: BoxDecoration(
@@ -311,7 +323,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                     ),
-                  )),
+                  );
+              }),
 
               const SizedBox(height: 24),
 

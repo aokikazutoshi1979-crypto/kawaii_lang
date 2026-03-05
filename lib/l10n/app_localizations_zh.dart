@@ -734,6 +734,21 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get benefitAppleRefund => '7天内可通过Apple申请退款';
+
+  @override
+  String get searchHint => '搜索短语';
+
+  @override
+  String get dailyPracticeTitle => '今日练习';
+
+  @override
+  String get dailyPracticeEncourage => '说错了也没关系！可以试很多次的 🌸';
+
+  @override
+  String get dailyPracticeListenButton => '▶ 先听一听';
+
+  @override
+  String get dailyPracticeTryButton => '🎤 模仿说说看！';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -1421,4 +1436,19 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get benefitAppleRefund => '7天內可透過Apple申請退款';
+
+  @override
+  String get searchHint => '搜尋短語';
+
+  @override
+  String get dailyPracticeTitle => '今日練習';
+
+  @override
+  String get dailyPracticeEncourage => '說錯了也沒關係！可以試很多次的 🌸';
+
+  @override
+  String get dailyPracticeListenButton => '▶ 先聽一聽';
+
+  @override
+  String get dailyPracticeTryButton => '🎤 模仿說說看！';
 }

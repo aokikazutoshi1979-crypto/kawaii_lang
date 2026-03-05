@@ -45,6 +45,13 @@ class CharacterAssetService {
     return 'assets/images/characters/$c/01.png';
   }
 
+  /// 「今日の練習」画面用のキャラクター画像パス
+  /// 画像ファイルは assets/images/characters/[character]/daily.png
+  static String dailyPracticeImage(String character) {
+    final c = normalize(character);
+    return 'assets/images/characters/$c/daily.png';
+  }
+
   /// キャラクター表示名を言語コードに応じて返す
   static String characterDisplayName(String character, String langCode) {
     final c = normalize(character);

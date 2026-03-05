@@ -389,5 +389,10 @@
   "retryButton": "Try again",
   "benefitNoCreditCard": "Start with Apple ID — no credit card needed",
   "benefitRenewalNotice": "Reminder 7 days before renewal",
-  "benefitAppleRefund": "Refund available via Apple within 7 days"
+  "benefitAppleRefund": "Refund available via Apple within 7 days",
+  "searchHint": "Search phrases",
+  "dailyPracticeTitle": "Today's Practice",
+  "dailyPracticeEncourage": "Don't worry if it's not perfect — just try it! 🌸",
+  "dailyPracticeListenButton": "▶ Listen first",
+  "dailyPracticeTryButton": "🎤 Try saying it!"
 }

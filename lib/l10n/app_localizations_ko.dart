@@ -743,4 +743,19 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get benefitAppleRefund => '7일 이내 Apple 통해 환불 신청 가능';
+
+  @override
+  String get searchHint => '문구 검색';
+
+  @override
+  String get dailyPracticeTitle => '오늘의 연습';
+
+  @override
+  String get dailyPracticeEncourage => '잘 못해도 괜찮아요! 몇 번이든 다시 할 수 있어요 🌸';
+
+  @override
+  String get dailyPracticeListenButton => '▶ 먼저 들어보세요';
+
+  @override
+  String get dailyPracticeTryButton => '🎤 따라 말해봐요!';
 }

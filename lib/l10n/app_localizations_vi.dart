@@ -760,4 +760,20 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get benefitAppleRefund => 'Hoàn tiền qua Apple trong vòng 7 ngày';
+
+  @override
+  String get searchHint => 'Tìm kiếm cụm từ';
+
+  @override
+  String get dailyPracticeTitle => 'Luyện tập hôm nay';
+
+  @override
+  String get dailyPracticeEncourage =>
+      'Không sao nếu chưa hoàn hảo — cứ thử thôi! 🌸';
+
+  @override
+  String get dailyPracticeListenButton => '▶ Nghe trước';
+
+  @override
+  String get dailyPracticeTryButton => '🎤 Hãy thử nói!';
 }

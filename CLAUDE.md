@@ -1,3 +1,20 @@
+  ## KawaiiLang プロジェクト 共通ルール
+
+  KawaiiLangはFlutter製の日本語スピーキング練習アプリです。
+  ターゲット：日本語初心者・シャイな学習者向け、かわいいAIキャラとの会話練習。
+
+  ### 絶対に触れないもの
+  - RevenueCatのサブスク課金ロジック（subscription_service.dart、subscription_state.dart）
+  - VOICEVOXのTTS上限設定（voicevox_tts_service.dart）
+  - 既存のARBキー（app_localizations_*.dart の既存ゲッター削除・変更禁止）
+
+  ### コーディング方針
+  - 変更は最小限に。既存ロジックを再利用する
+  - 新規ファイルは必要最小限
+  - ローカライズキーは全10言語（en/ja/zh/zh_TW/ko/es/fr/de/vi/id）に追加する
+
+---
+
 # KawaiiLang — Claude Code 作業指示書
 
 ## Operating Mode (Read first)

@@ -5,6 +5,7 @@ import '../services/auth_service.dart';
 import '../services/idle_service.dart';
 import '../services/character_asset_service.dart';
 import 'category_selection_screen.dart';
+import 'home_screen.dart';
 import 'user_name_screen.dart';
 import 'package:kawaii_lang/config.dart';
 
@@ -120,7 +121,7 @@ class _SplashScreenState extends State<SplashScreen> {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (_) => CategorySelectionScreen(),
+          builder: (_) => const HomeScreen(),
         ),
       );
       _startPostNavigationInit();

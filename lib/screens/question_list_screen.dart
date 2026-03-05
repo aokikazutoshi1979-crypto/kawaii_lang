@@ -219,7 +219,7 @@ class _QuestionListScreenState extends SubscriptionState<QuestionListScreen> {
               _applyFilter();
             },
             decoration: InputDecoration(
-              hintText: 'フレーズを検索',
+              hintText: loc.searchHint,
               prefixIcon: const Icon(Icons.search),
               filled: true,
               fillColor: Colors.white,

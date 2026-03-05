@@ -766,4 +766,20 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get benefitAppleRefund =>
       'Pengembalian dana tersedia melalui Apple dalam 7 hari';
+
+  @override
+  String get searchHint => 'Cari frasa';
+
+  @override
+  String get dailyPracticeTitle => 'Latihan Hari Ini';
+
+  @override
+  String get dailyPracticeEncourage =>
+      'Tidak apa-apa jika belum sempurna — coba saja! 🌸';
+
+  @override
+  String get dailyPracticeListenButton => '▶ Dengarkan dulu';
+
+  @override
+  String get dailyPracticeTryButton => '🎤 Coba ucapkan!';
 }

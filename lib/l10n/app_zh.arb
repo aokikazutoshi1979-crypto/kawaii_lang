@@ -375,5 +375,10 @@
   "retryButton": "再说一次",
   "benefitNoCreditCard": "仅需 Apple ID 开始（无需信用卡）",
   "benefitRenewalNotice": "续费前7天提醒",
-  "benefitAppleRefund": "7天内可通过Apple申请退款"
+  "benefitAppleRefund": "7天内可通过Apple申请退款",
+  "searchHint": "搜索短语",
+  "dailyPracticeTitle": "今日练习",
+  "dailyPracticeEncourage": "说错了也没关系！可以试很多次的 🌸",
+  "dailyPracticeListenButton": "▶ 先听一听",
+  "dailyPracticeTryButton": "🎤 模仿说说看！"
 }

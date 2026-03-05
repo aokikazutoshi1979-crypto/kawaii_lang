@@ -738,4 +738,19 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get benefitAppleRefund => '7日以内ならApple経由で返金申請可';
+
+  @override
+  String get searchHint => 'フレーズを検索';
+
+  @override
+  String get dailyPracticeTitle => '今日の練習';
+
+  @override
+  String get dailyPracticeEncourage => 'うまく言えなくても大丈夫！何度でも言い直せるよ 🌸';
+
+  @override
+  String get dailyPracticeListenButton => '▶ まず聞いてみよう';
+
+  @override
+  String get dailyPracticeTryButton => '🎤 真似してみよう！';
 }

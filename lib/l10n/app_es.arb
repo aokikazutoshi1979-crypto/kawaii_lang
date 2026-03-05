@@ -369,5 +369,10 @@
   "retryButton": "Intentar de nuevo",
   "benefitNoCreditCard": "Comienza con Apple ID — sin tarjeta de crédito",
   "benefitRenewalNotice": "Recordatorio 7 días antes de la renovación",
-  "benefitAppleRefund": "Reembolso disponible a través de Apple en 7 días"
+  "benefitAppleRefund": "Reembolso disponible a través de Apple en 7 días",
+  "searchHint": "Buscar frases",
+  "dailyPracticeTitle": "Práctica de hoy",
+  "dailyPracticeEncourage": "¡No te preocupes si no es perfecto — solo inténtalo! 🌸",
+  "dailyPracticeListenButton": "▶ Escuchar primero",
+  "dailyPracticeTryButton": "🎤 ¡Intenta decirlo!"
 }

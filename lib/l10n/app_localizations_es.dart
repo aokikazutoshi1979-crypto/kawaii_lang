@@ -775,4 +775,20 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get benefitAppleRefund =>
       'Reembolso disponible a través de Apple en 7 días';
+
+  @override
+  String get searchHint => 'Buscar frases';
+
+  @override
+  String get dailyPracticeTitle => 'Práctica de hoy';
+
+  @override
+  String get dailyPracticeEncourage =>
+      '¡No te preocupes si no es perfecto — solo inténtalo! 🌸';
+
+  @override
+  String get dailyPracticeListenButton => '▶ Escuchar primero';
+
+  @override
+  String get dailyPracticeTryButton => '🎤 ¡Intenta decirlo!';
 }

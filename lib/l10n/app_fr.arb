@@ -369,5 +369,10 @@
   "retryButton": "Réessayer",
   "benefitNoCreditCard": "Commencez avec Apple ID — sans carte bancaire",
   "benefitRenewalNotice": "Rappel 7 jours avant le renouvellement",
-  "benefitAppleRefund": "Remboursement possible via Apple sous 7 jours"
+  "benefitAppleRefund": "Remboursement possible via Apple sous 7 jours",
+  "searchHint": "Rechercher des phrases",
+  "dailyPracticeTitle": "Pratique du jour",
+  "dailyPracticeEncourage": "Ce n'est pas grave si ce n'est pas parfait — essaie juste ! 🌸",
+  "dailyPracticeListenButton": "▶ Écouter d'abord",
+  "dailyPracticeTryButton": "🎤 Essaie de le dire !"
 }

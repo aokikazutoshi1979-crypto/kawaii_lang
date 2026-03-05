@@ -369,5 +369,10 @@
   "retryButton": "Thử lại",
   "benefitNoCreditCard": "Bắt đầu bằng Apple ID — không cần thẻ tín dụng",
   "benefitRenewalNotice": "Nhắc nhở 7 ngày trước khi gia hạn",
-  "benefitAppleRefund": "Hoàn tiền qua Apple trong vòng 7 ngày"
+  "benefitAppleRefund": "Hoàn tiền qua Apple trong vòng 7 ngày",
+  "searchHint": "Tìm kiếm cụm từ",
+  "dailyPracticeTitle": "Luyện tập hôm nay",
+  "dailyPracticeEncourage": "Không sao nếu chưa hoàn hảo — cứ thử thôi! 🌸",
+  "dailyPracticeListenButton": "▶ Nghe trước",
+  "dailyPracticeTryButton": "🎤 Hãy thử nói!"
 }

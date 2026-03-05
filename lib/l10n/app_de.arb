@@ -369,5 +369,10 @@
   "retryButton": "Nochmal versuchen",
   "benefitNoCreditCard": "Start mit Apple ID – keine Kreditkarte erforderlich",
   "benefitRenewalNotice": "Erinnerung 7 Tage vor Verlängerung",
-  "benefitAppleRefund": "Erstattung über Apple innerhalb von 7 Tagen möglich"
+  "benefitAppleRefund": "Erstattung über Apple innerhalb von 7 Tagen möglich",
+  "searchHint": "Phrasen suchen",
+  "dailyPracticeTitle": "Heutige Übung",
+  "dailyPracticeEncourage": "Kein Problem, wenn es nicht perfekt ist — probier es einfach! 🌸",
+  "dailyPracticeListenButton": "▶ Zuerst anhören",
+  "dailyPracticeTryButton": "🎤 Versuch es zu sagen!"
 }

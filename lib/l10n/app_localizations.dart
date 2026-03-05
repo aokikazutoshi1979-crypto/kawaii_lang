@@ -1468,6 +1468,36 @@ abstract class AppLocalizations {
   /// In ja, this message translates to:
   /// **'7日以内ならApple経由で返金申請可'**
   String get benefitAppleRefund;
+
+  /// No description provided for @searchHint.
+  ///
+  /// In ja, this message translates to:
+  /// **'フレーズを検索'**
+  String get searchHint;
+
+  /// No description provided for @dailyPracticeTitle.
+  ///
+  /// In ja, this message translates to:
+  /// **'今日の練習'**
+  String get dailyPracticeTitle;
+
+  /// No description provided for @dailyPracticeEncourage.
+  ///
+  /// In ja, this message translates to:
+  /// **'うまく言えなくても大丈夫！何度でも言い直せるよ 🌸'**
+  String get dailyPracticeEncourage;
+
+  /// No description provided for @dailyPracticeListenButton.
+  ///
+  /// In ja, this message translates to:
+  /// **'▶ まず聞いてみよう'**
+  String get dailyPracticeListenButton;
+
+  /// No description provided for @dailyPracticeTryButton.
+  ///
+  /// In ja, this message translates to:
+  /// **'🎤 真似してみよう！'**
+  String get dailyPracticeTryButton;
 }
 
 class _AppLocalizationsDelegate
