@@ -198,7 +198,7 @@ static String buildSimilarQuestionPrompt({
     required String targetLang,
   }) {
     if (targetLang.toLowerCase() == 'ja') {
-      return '次の日本語テキストをひらがなに変換してください。ひらがなのみ返してください（説明・改行・空白禁止）。\n$translatedText';
+      return '次の<text>タグ内の日本語をひらがなのみに変換してください。ひらがな以外は一切出力しないでください（説明・改行・空白禁止）。\n\n<text>$translatedText</text>';
     }
     return '''
 Convert the following text to its phonetic transcription. Return ONLY the transcription or null, no explanation.

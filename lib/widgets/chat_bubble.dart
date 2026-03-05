@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
+import 'dart:async';
 import 'dart:io';
 import 'package:just_audio/just_audio.dart';
 import 'package:kawaii_lang/l10n/app_localizations.dart';
@@ -208,7 +209,19 @@ class _ChatBubbleState extends State<ChatBubble>
         final savedRate = prefs.getDouble('tts_speech_rate') ?? 0.40;
         final double rate = Platform.isIOS ? savedRate : (savedRate + 0.45).clamp(0.0, 1.0);
         await _tts.setSpeechRate(rate);
+        // 文字数・速度から再生時間を推定してカラオケを開始
+        final estimatedMs = ((ttsSource.length * 150.0) / savedRate).round().clamp(500, 20000);
+        final completer = Completer<void>();
+        _tts.setCompletionHandler(() { if (!completer.isCompleted) completer.complete(); });
+        if (mounted) setState(() => _isTtsLoading = false);
+        _karaokeController.duration = Duration(milliseconds: estimatedMs);
+        _karaokeController.forward(from: 0.0);
         await _tts.speak(ttsSource);
+        // TTS完了コールバックまで待機（タイムアウト付き）
+        await completer.future.timeout(
+          Duration(milliseconds: estimatedMs + 5000),
+          onTimeout: () {},
+        );
       }
     } finally {
       if (mounted) {
@@ -251,7 +264,7 @@ class _ChatBubbleState extends State<ChatBubble>
   }
 
   /// highlightBody を行ごとに分割し描画。
-  /// [furigana] が指定された場合、1行目（漢字）の直後にふりがなを挿入する。
+  /// [furigana] が指定された場合、1行目（漢字）の直後にふりがな・ローマ字を挿入する。
   Widget _buildHighlightBody(String body, {String? furigana}) {
     final lines = body.split('\n');
     final isJapanese = widget.targetLang == 'ja';
@@ -270,8 +283,9 @@ class _ChatBubbleState extends State<ChatBubble>
             ? _karaokeText(line, progress)
             : Text(line, style: const TextStyle(fontSize: 16, height: 1.4)),
       );
-      // 1行目（漢字）の直後にふりがなを挿入
+      // 1行目（漢字）の直後にふりがな・ローマ字を挿入
       if (furigana != null && furigana.isNotEmpty && nonEmptyCount == 1) {
+        // ふりがな（常に静的ピンク）
         children.add(
           Padding(
             padding: const EdgeInsets.only(top: 2),
@@ -285,6 +299,25 @@ class _ChatBubbleState extends State<ChatBubble>
             ),
           ),
         );
+        // ローマ字（カラオケ対応）
+        final romaji = _hiraganaToRomaji(furigana);
+        if (romaji.isNotEmpty) {
+          children.add(
+            Padding(
+              padding: const EdgeInsets.only(top: 1),
+              child: isKaraokeTarget
+                  ? _karaokeText(romaji, progress, fontSize: 11)
+                  : Text(
+                      romaji,
+                      style: TextStyle(
+                        fontSize: 11,
+                        color: Colors.grey.shade500,
+                        letterSpacing: 0.5,
+                      ),
+                    ),
+            ),
+          );
+        }
       }
     }
     return Column(
@@ -645,6 +678,68 @@ class _ChatBubbleState extends State<ChatBubble>
       );
     }
   }
+}
+
+// ── ひらがな → ヘボン式ローマ字変換
+String _hiraganaToRomaji(String text) {
+  const combos = <String, String>{
+    'きゃ':'kya','きゅ':'kyu','きょ':'kyo',
+    'しゃ':'sha','しゅ':'shu','しょ':'sho',
+    'ちゃ':'cha','ちゅ':'chu','ちょ':'cho',
+    'にゃ':'nya','にゅ':'nyu','にょ':'nyo',
+    'ひゃ':'hya','ひゅ':'hyu','ひょ':'hyo',
+    'みゃ':'mya','みゅ':'myu','みょ':'myo',
+    'りゃ':'rya','りゅ':'ryu','りょ':'ryo',
+    'ぎゃ':'gya','ぎゅ':'gyu','ぎょ':'gyo',
+    'じゃ':'ja', 'じゅ':'ju', 'じょ':'jo',
+    'びゃ':'bya','びゅ':'byu','びょ':'byo',
+    'ぴゃ':'pya','ぴゅ':'pyu','ぴょ':'pyo',
+  };
+  const singles = <String, String>{
+    'あ':'a', 'い':'i', 'う':'u', 'え':'e', 'お':'o',
+    'か':'ka','き':'ki','く':'ku','け':'ke','こ':'ko',
+    'さ':'sa','し':'shi','す':'su','せ':'se','そ':'so',
+    'た':'ta','ち':'chi','つ':'tsu','て':'te','と':'to',
+    'な':'na','に':'ni','ぬ':'nu','ね':'ne','の':'no',
+    'は':'ha','ひ':'hi','ふ':'fu','へ':'he','ほ':'ho',
+    'ま':'ma','み':'mi','む':'mu','め':'me','も':'mo',
+    'や':'ya','ゆ':'yu','よ':'yo',
+    'ら':'ra','り':'ri','る':'ru','れ':'re','ろ':'ro',
+    'わ':'wa','を':'wo','ん':'n',
+    'が':'ga','ぎ':'gi','ぐ':'gu','げ':'ge','ご':'go',
+    'ざ':'za','じ':'ji','ず':'zu','ぜ':'ze','ぞ':'zo',
+    'だ':'da','ぢ':'di','づ':'zu','で':'de','ど':'do',
+    'ば':'ba','び':'bi','ぶ':'bu','べ':'be','ぼ':'bo',
+    'ぱ':'pa','ぴ':'pi','ぷ':'pu','ぺ':'pe','ぽ':'po',
+    'ー':'-','　':' ',' ':' ',
+  };
+
+  final buf = StringBuffer();
+  int i = 0;
+  while (i < text.length) {
+    // 小さいっ：次の子音を重ねる
+    if (text[i] == 'っ') {
+      if (i + 1 < text.length) {
+        String? nextRomaji;
+        if (i + 2 < text.length) nextRomaji = combos[text.substring(i + 1, i + 3)];
+        nextRomaji ??= singles[text[i + 1]];
+        if (nextRomaji != null && nextRomaji.isNotEmpty) buf.write(nextRomaji[0]);
+      }
+      i++;
+      continue;
+    }
+    // 2文字組み合わせ（優先）
+    if (i + 2 <= text.length) {
+      final two = text.substring(i, i + 2);
+      final r = combos[two];
+      if (r != null) { buf.write(r); i += 2; continue; }
+    }
+    // 1文字
+    final r = singles[text[i]];
+    buf.write(r ?? text[i]);
+    i++;
+  }
+  return buf.toString();
 }
 
 // ── LINE風しっぽ三角形

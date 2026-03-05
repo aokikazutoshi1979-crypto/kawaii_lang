@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -33,7 +35,6 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
   _PracticeStep _step = _PracticeStep.idle;
   bool _isCorrect = false;
   bool _isLoading = true;
-  bool _showFurigana = true;
   bool _isProcessing = false; // STT→GPT処理中フラグ
 
   bool _isPremium = false;
@@ -41,6 +42,14 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
   static const int _freeLimit = 3;
   bool get _hasReachedLimit => !_isPremium && _todaysPracticeCount >= _freeLimit;
   bool _isListeningTts = false; // VOICEVOX読み込み中フラグ
+
+  // リトライ制限
+  int _attemptCount = 0;
+  static const int _maxAttempts = 5;
+
+  // カラオケ
+  Timer? _karaokeTimer;
+  int _karaokeIndex = 0;
 
   Map<String, dynamic>? _question;
   String _selectedCharacter = CharacterAssetService.defaultCharacter;
@@ -62,7 +71,6 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
     final character = CharacterAssetService.normalize(
       prefs.getString(CharacterAssetService.prefKey),
     );
-    final showFurigana = prefs.getBool('show_furigana') ?? true;
     final userLevel = prefs.getString('user_level') ?? 'beginner';
     final streakDays = prefs.getInt('streak_days') ?? 0;
 
@@ -76,11 +84,12 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
     if (mounted) {
       setState(() {
         _selectedCharacter = character;
-        _showFurigana = showFurigana;
         _question = question;
         _streakDays = streakDays;
         _isPremium = premium;
         _todaysPracticeCount = count;
+        _attemptCount = 0;
+        _karaokeIndex = 0;
         _isLoading = false;
       });
       // 既に上限に達していれば即ダイアログ表示
@@ -112,10 +121,6 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
     return '';
   }
 
-  String get _furigana {
-    return (_question?['furigana'] as String?) ?? '';
-  }
-
   String get _questionId {
     return (_question?['id'] as String?) ?? '';
   }
@@ -132,10 +137,16 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
   Future<void> _listenPhrase() async {
     final text = _japaneseText;
     if (text.isEmpty) return;
-    setState(() => _isListeningTts = true);
+    setState(() {
+      _isListeningTts = true;
+      _karaokeIndex = 0;
+    });
     await _voicevoxService.speak(
       text,
       _selectedCharacter,
+      onPlayStart: (duration) {
+        if (mounted) _startKaraoke(text, duration);
+      },
       onDailyLimitFallback: (_) {},
     );
     if (mounted) {
@@ -144,6 +155,20 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
         if (_step == _PracticeStep.idle) _step = _PracticeStep.listened;
       });
     }
+  }
+
+  void _startKaraoke(String text, Duration duration) {
+    _karaokeTimer?.cancel();
+    if (!mounted) return;
+    setState(() => _karaokeIndex = 0);
+    final total = text.runes.length;
+    if (total == 0 || duration.inMilliseconds <= 0) return;
+    final intervalMs = (duration.inMilliseconds / total).round().clamp(50, 1000);
+    _karaokeTimer = Timer.periodic(Duration(milliseconds: intervalMs), (timer) {
+      if (!mounted) { timer.cancel(); return; }
+      if (_karaokeIndex >= total) { timer.cancel(); return; }
+      setState(() => _karaokeIndex++);
+    });
   }
 
   // ---------- STT ----------
@@ -203,6 +228,7 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
       _isCorrect = isCorrect;
       _step = _PracticeStep.result;
       _isProcessing = false;
+      _attemptCount++;
     });
   }
 
@@ -231,7 +257,16 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
               navigator.pop(); // ダイアログを閉じる
               navigator.push(
                 MaterialPageRoute(builder: (_) => const SubscriptionScreen()),
-              );
+              ).then((_) async {
+                // サブスク画面から戻ってきた時にプレミアム状態を再確認
+                if (!mounted) return;
+                final premium = await SubscriptionService.instance.checkSubscriptionOnDevice();
+                if (mounted) setState(() => _isPremium = premium);
+                // まだ制限中なら再度ダイアログを表示
+                if (mounted && _hasReachedLimit) {
+                  _showLimitDialog();
+                }
+              });
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.pink.shade400,
@@ -241,6 +276,30 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
         ],
       ),
     );
+  }
+
+  // ---------- 次のフレーズを読み込む ----------
+
+  Future<void> _loadNextPhrase() async {
+    _karaokeTimer?.cancel();
+    setState(() {
+      _isLoading = true;
+      _step = _PracticeStep.idle;
+      _attemptCount = 0;
+      _karaokeIndex = 0;
+    });
+    await DailyPracticeService.instance.clearCurrentQuestion();
+    final prefs = await SharedPreferences.getInstance();
+    final userLevel = prefs.getString('user_level') ?? 'beginner';
+    final question = await DailyPracticeService.instance.getTodaysQuestion(
+      userLevel: userLevel,
+    );
+    if (mounted) {
+      setState(() {
+        _question = question;
+        _isLoading = false;
+      });
+    }
   }
 
   // ---------- ヒントダイアログ ----------
@@ -364,64 +423,78 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
     );
   }
 
+  // カラオケ用 TextSpan リスト
+  List<InlineSpan> _buildKaraokeSpans() {
+    final text = _japaneseText;
+    if (text.isEmpty) return [];
+    final chars = text.runes.map(String.fromCharCode).toList();
+    final idx = _karaokeIndex.clamp(0, chars.length);
+    final highlighted = chars.take(idx).join();
+    final remaining = chars.skip(idx).join();
+    return [
+      TextSpan(
+        text: highlighted,
+        style: TextStyle(
+          fontSize: 28,
+          fontWeight: FontWeight.bold,
+          color: Colors.pink.shade400,
+        ),
+      ),
+      if (remaining.isNotEmpty)
+        TextSpan(
+          text: remaining,
+          style: const TextStyle(
+            fontSize: 28,
+            fontWeight: FontWeight.bold,
+            color: Colors.black87,
+          ),
+        ),
+    ];
+  }
+
   Widget _buildPhraseCard(AppLocalizations loc) {
+    final spans = _buildKaraokeSpans();
     return Card(
       color: Colors.white,
       elevation: 2,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(16, 16, 12, 16),
-        child: Stack(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                // 右上：ふりがなトグル
-                Align(
-                  alignment: Alignment.topRight,
-                  child: IconButton(
-                    icon: Icon(
-                      _showFurigana ? Icons.text_fields : Icons.text_fields_outlined,
-                      color: Colors.pink.shade300,
-                    ),
-                    tooltip: 'ふりがな',
-                    onPressed: () async {
-                      final prefs = await SharedPreferences.getInstance();
-                      setState(() => _showFurigana = !_showFurigana);
-                      await prefs.setBool('show_furigana', _showFurigana);
-                    },
-                  ),
-                ),
-                // ふりがな
-                if (_showFurigana && _furigana.isNotEmpty)
-                  Text(
-                    _furigana,
-                    style: const TextStyle(fontSize: 14, color: Colors.grey),
-                  ),
-                const SizedBox(height: 4),
-                // 日本語テキスト
-                Text(
-                  _japaneseText,
-                  style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
-                ),
-                const SizedBox(height: 8),
-                // ネイティブ語訳
-                Text(
-                  _nativeText,
-                  style: const TextStyle(fontSize: 16, color: Colors.black54),
-                ),
-                const SizedBox(height: 4),
-                // ヒントボタン（result + 不正解のみ表示）
-                if (_step == _PracticeStep.result && !_isCorrect)
-                  Align(
-                    alignment: Alignment.bottomRight,
-                    child: IconButton(
-                      icon: const Icon(Icons.info_outline, color: Colors.grey),
-                      onPressed: _showHintDialog,
-                    ),
-                  ),
-              ],
+            // カラオケ付き日本語テキスト
+            RichText(
+              text: TextSpan(
+                children: spans.isNotEmpty
+                    ? spans
+                    : [
+                        TextSpan(
+                          text: _japaneseText,
+                          style: const TextStyle(
+                            fontSize: 28,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black87,
+                          ),
+                        ),
+                      ],
+              ),
             ),
+            const SizedBox(height: 8),
+            // ネイティブ語訳
+            Text(
+              _nativeText,
+              style: const TextStyle(fontSize: 16, color: Colors.black54),
+            ),
+            // ヒントボタン（result + 不正解のみ表示）
+            if (_step == _PracticeStep.result && !_isCorrect)
+              Align(
+                alignment: Alignment.bottomRight,
+                child: IconButton(
+                  icon: const Icon(Icons.info_outline, color: Colors.grey),
+                  onPressed: _showHintDialog,
+                ),
+              ),
           ],
         ),
       ),
@@ -513,19 +586,21 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
                 padding: const EdgeInsets.symmetric(vertical: 14),
               ),
             ),
-            const SizedBox(height: 8),
-            // もう一回言う
-            OutlinedButton.icon(
-              icon: const Icon(Icons.mic_outlined),
-              label: Text(loc.retryButton),
-              onPressed: _retry,
-              style: OutlinedButton.styleFrom(
-                foregroundColor: Colors.pink.shade400,
-                side: BorderSide(color: Colors.pink.shade200),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-                padding: const EdgeInsets.symmetric(vertical: 14),
+            // もう一回言う（上限5回まで）
+            if (_attemptCount < _maxAttempts) ...[
+              const SizedBox(height: 8),
+              OutlinedButton.icon(
+                icon: const Icon(Icons.mic_outlined),
+                label: Text(loc.retryButton),
+                onPressed: _retry,
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: Colors.pink.shade400,
+                  side: BorderSide(color: Colors.pink.shade200),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+                  padding: const EdgeInsets.symmetric(vertical: 14),
+                ),
               ),
-            ),
+            ],
             const SizedBox(height: 8),
             // 完了 → DailyCompleteScreenへ
             ElevatedButton(
@@ -539,11 +614,15 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
                     ),
                   ),
                 ).then((_) {
-                  // DailyCompleteScreenから「もっと練習する」で戻ってきた時の制限チェック
-                  if (mounted && _hasReachedLimit) {
+                  if (!mounted) return;
+                  if (_hasReachedLimit) {
+                    // 制限に達している → ダイアログ表示
                     WidgetsBinding.instance.addPostFrameCallback((_) {
-                      _showLimitDialog();
+                      if (mounted) _showLimitDialog();
                     });
+                  } else {
+                    // まだ練習できる → 次のフレーズを読み込む
+                    _loadNextPhrase();
                   }
                 });
               },
@@ -601,6 +680,7 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
 
   @override
   void dispose() {
+    _karaokeTimer?.cancel();
     _voicevoxService.dispose();
     _speechService.stop();
     super.dispose();

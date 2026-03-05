@@ -93,6 +93,12 @@ class DailyPracticeService {
     return prefs.getInt(_keyCount) ?? 0;
   }
 
+  /// 今日のフレーズキャッシュをクリアして次回呼び出し時に新しいフレーズを選ぶ
+  Future<void> clearCurrentQuestion() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove(_keyQuestionId);
+  }
+
   /// 練習回数をインクリメントする
   Future<void> incrementPracticeCount() async {
     final prefs = await SharedPreferences.getInstance();
