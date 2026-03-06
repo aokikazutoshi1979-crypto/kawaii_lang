@@ -800,7 +800,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get dailyLimitMessage =>
-      '오늘의 무료 연습 3회를 모두 사용했어요！내일 다시 연습해요. 베이직 플랜이면 매일 무제한 연습 가능♪';
+      '오늘의 무료 연습 10회를 모두 사용했어요！내일 다시 연습해요. 베이직 플랜이면 매일 무제한 연습 가능♪';
 
   @override
   String get dailyLimitClose => '홈으로 돌아가기';

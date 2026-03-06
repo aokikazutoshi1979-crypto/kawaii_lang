@@ -835,7 +835,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get dailyLimitMessage =>
-      '¡Completaste 3 prácticas gratuitas de hoy! Vuelve mañana, o suscríbete al Plan Básico para práctica ilimitada♪';
+      '¡Completaste 10 prácticas gratuitas de hoy! Vuelve mañana, o suscríbete al Plan Básico para práctica ilimitada♪';
 
   @override
   String get dailyLimitClose => 'Volver al inicio';

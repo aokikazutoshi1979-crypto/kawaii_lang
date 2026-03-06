@@ -832,7 +832,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get dailyLimitMessage =>
-      'Tu as terminé tes 3 pratiques gratuites du jour ! Reviens demain, ou abonne-toi au Plan Basique pour une pratique illimitée♪';
+      'Tu as terminé tes 10 pratiques gratuites du jour ! Reviens demain, ou abonne-toi au Plan Basique pour une pratique illimitée♪';
 
   @override
   String get dailyLimitClose => 'Retour à l\'accueil';

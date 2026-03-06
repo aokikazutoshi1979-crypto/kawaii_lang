@@ -826,7 +826,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get dailyLimitMessage =>
-      'Kamu sudah menyelesaikan 3 latihan gratis hari ini! Kembali besok, atau langganan Paket Dasar untuk latihan tak terbatas♪';
+      'Kamu sudah menyelesaikan 10 latihan gratis hari ini! Kembali besok, atau langganan Paket Dasar untuk latihan tak terbatas♪';
 
   @override
   String get dailyLimitClose => 'Kembali ke Beranda';

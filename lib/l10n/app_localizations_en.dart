@@ -830,7 +830,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get dailyLimitMessage =>
-      'You\'ve completed 3 practices for today. Come back tomorrow, or get the Basic Plan for unlimited daily practice!';
+      'You\'ve completed 10 practices for today. Come back tomorrow, or get the Basic Plan for unlimited daily practice!';
 
   @override
   String get dailyLimitClose => 'Back to Home';

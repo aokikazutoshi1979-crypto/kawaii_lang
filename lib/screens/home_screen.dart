@@ -88,10 +88,10 @@ class _HomeScreenState extends State<HomeScreen> {
           'icon': '🗣️',
           'title': '今日の練習',
           'subtitle': dayIndex == 0
-              ? (_isPremium ? '駅で道を聞こう' : '駅で道を聞こう（3問）')
+              ? (_isPremium ? '駅で道を聞こう' : '駅で道を聞こう（10問）')
               : dayIndex == 1
-                  ? (_isPremium ? 'レストランで注文しよう' : 'レストランで注文しよう（3問）')
-                  : (_isPremium ? 'ショッピングで話そう' : 'ショッピングで話そう（3問）'),
+                  ? (_isPremium ? 'レストランで注文しよう' : 'レストランで注文しよう（10問）')
+                  : (_isPremium ? 'ショッピングで話そう' : 'ショッピングで話そう（10問）'),
           'color': const Color(0xFFFCE4EC),
         },
         {
@@ -107,10 +107,10 @@ class _HomeScreenState extends State<HomeScreen> {
           'icon': '🗣️',
           'title': "Today's Practice",
           'subtitle': dayIndex == 0
-              ? (_isPremium ? 'Ask for directions at the station' : 'Ask for directions at the station (3 questions)')
+              ? (_isPremium ? 'Ask for directions at the station' : 'Ask for directions at the station (10 questions)')
               : dayIndex == 1
-                  ? (_isPremium ? 'Order at a restaurant' : 'Order at a restaurant (3 questions)')
-                  : (_isPremium ? 'Shop and talk' : 'Shop and talk (3 questions)'),
+                  ? (_isPremium ? 'Order at a restaurant' : 'Order at a restaurant (10 questions)')
+                  : (_isPremium ? 'Shop and talk' : 'Shop and talk (10 questions)'),
           'color': const Color(0xFFFCE4EC),
         },
         {

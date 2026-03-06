@@ -795,7 +795,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get dailyLimitMessage =>
-      '今日の無料練習3回、全部使ったよ！明日また練習しよう。ベーシックプランなら毎日無制限で練習できるよ♪';
+      '今日の無料練習10回、全部使ったよ！明日また練習しよう。ベーシックプランなら毎日無制限で練習できるよ♪';
 
   @override
   String get dailyLimitClose => 'ホームに戻る';

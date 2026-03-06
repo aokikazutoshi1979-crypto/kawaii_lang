@@ -820,7 +820,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get dailyLimitMessage =>
-      'Bạn đã hoàn thành 3 lần luyện tập miễn phí hôm nay! Quay lại ngày mai, hoặc đăng ký Gói Cơ Bản để luyện tập không giới hạn♪';
+      'Bạn đã hoàn thành 10 lần luyện tập miễn phí hôm nay! Quay lại ngày mai, hoặc đăng ký Gói Cơ Bản để luyện tập không giới hạn♪';
 
   @override
   String get dailyLimitClose => 'Quay về Trang chủ';

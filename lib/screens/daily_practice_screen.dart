@@ -41,7 +41,7 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
 
   bool _isPremium = false;
   int _todaysPracticeCount = 0;
-  static const int _freeLimit = 3;
+  static const int _freeLimit = 10;
   bool get _isPremiumUser =>
       _isPremium ||
       hasSubOnDevice ||
@@ -326,6 +326,7 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.pink.shade400,
+              foregroundColor: Colors.white,
             ),
             child: Text(loc.dailyLimitUpgrade),
           ),

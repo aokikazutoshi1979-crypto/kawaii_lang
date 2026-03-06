@@ -831,7 +831,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get dailyLimitMessage =>
-      'Du hast deine 3 kostenlosen Übungen für heute abgeschlossen! Komm morgen wieder, oder hole dir den Basic Plan für unbegrenzte Übungen♪';
+      'Du hast deine 10 kostenlosen Übungen für heute abgeschlossen! Komm morgen wieder, oder hole dir den Basic Plan für unbegrenzte Übungen♪';
 
   @override
   String get dailyLimitClose => 'Zurück zum Startbildschirm';

@@ -1580,7 +1580,7 @@ abstract class AppLocalizations {
   /// No description provided for @dailyLimitMessage.
   ///
   /// In ja, this message translates to:
-  /// **'今日の無料練習3回、全部使ったよ！明日また練習しよう。ベーシックプランなら毎日無制限で練習できるよ♪'**
+  /// **'今日の無料練習10回、全部使ったよ！明日また練習しよう。ベーシックプランなら毎日無制限で練習できるよ♪'**
   String get dailyLimitMessage;
 
   /// No description provided for @dailyLimitClose.

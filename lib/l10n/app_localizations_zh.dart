@@ -790,7 +790,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get dailyLimitTitle => '今天练习得很棒！🌸';
 
   @override
-  String get dailyLimitMessage => '今天的3次免费练习用完了！明天再来吧。订阅基础版，每天无限练习♪';
+  String get dailyLimitMessage => '今天的10次免费练习用完了！明天再来吧。订阅基础版，每天无限练习♪';
 
   @override
   String get dailyLimitClose => '返回首页';
@@ -1540,7 +1540,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get dailyLimitTitle => '今天練習得很棒！🌸';
 
   @override
-  String get dailyLimitMessage => '今天的3次免費練習用完了！明天再來吧。訂閱基礎版，每天無限練習♪';
+  String get dailyLimitMessage => '今天的10次免費練習用完了！明天再來吧。訂閱基礎版，每天無限練習♪';
 
   @override
   String get dailyLimitClose => '返回首頁';
