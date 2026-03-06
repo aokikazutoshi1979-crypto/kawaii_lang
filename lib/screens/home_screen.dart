@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../services/character_asset_service.dart';
+import '../services/subscription_service.dart';
 import 'category_selection_screen.dart';
 import 'daily_practice_screen.dart';
 
@@ -15,6 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   String _selectedCharacter = CharacterAssetService.defaultCharacter;
   int _streakDays = 0;
   String _nativeCode = 'ja';
+  bool _isPremium = false;
 
   static const _streakDaysKey = 'streak_days';
   static const _streakDateKey = 'streak_last_date';
@@ -53,11 +55,13 @@ class _HomeScreenState extends State<HomeScreen> {
     }
 
     final lang = prefs.getString('user_language') ?? 'en';
+    final premium = await SubscriptionService.instance.checkSubscriptionOnDevice();
     if (!mounted) return;
     setState(() {
       _selectedCharacter = character;
       _streakDays = streak;
       _nativeCode = lang;
+      _isPremium = premium;
     });
   }
 
@@ -84,10 +88,10 @@ class _HomeScreenState extends State<HomeScreen> {
           'icon': '🗣️',
           'title': '今日の練習',
           'subtitle': dayIndex == 0
-              ? '駅で道を聞こう（3問）'
+              ? (_isPremium ? '駅で道を聞こう' : '駅で道を聞こう（3問）')
               : dayIndex == 1
-                  ? 'レストランで注文しよう（3問）'
-                  : 'ショッピングで話そう（3問）',
+                  ? (_isPremium ? 'レストランで注文しよう' : 'レストランで注文しよう（3問）')
+                  : (_isPremium ? 'ショッピングで話そう' : 'ショッピングで話そう（3問）'),
           'color': const Color(0xFFFCE4EC),
         },
         {
@@ -96,18 +100,6 @@ class _HomeScreenState extends State<HomeScreen> {
           'subtitle': 'テーマ別にスピーキング＆リスニング',
           'color': const Color(0xFFE8F5E9),
         },
-        {
-          'icon': '✨',
-          'title': '自由会話',
-          'subtitle': _isJa
-              ? (_selectedCharacter == 'kasumi'
-                  ? 'かすみと話してみよう'
-                  : 'つむぎと話してみよう')
-              : (_selectedCharacter == 'kasumi'
-                  ? 'Chat with Kasumi'
-                  : 'Chat with Tsumugi'),
-          'color': const Color(0xFFF3E5F5),
-        },
       ];
     } else {
       return [
@@ -115,10 +107,10 @@ class _HomeScreenState extends State<HomeScreen> {
           'icon': '🗣️',
           'title': "Today's Practice",
           'subtitle': dayIndex == 0
-              ? 'Ask for directions at the station (3 questions)'
+              ? (_isPremium ? 'Ask for directions at the station' : 'Ask for directions at the station (3 questions)')
               : dayIndex == 1
-                  ? 'Order at a restaurant (3 questions)'
-                  : 'Shop and talk (3 questions)',
+                  ? (_isPremium ? 'Order at a restaurant' : 'Order at a restaurant (3 questions)')
+                  : (_isPremium ? 'Shop and talk' : 'Shop and talk (3 questions)'),
           'color': const Color(0xFFFCE4EC),
         },
         {
@@ -126,14 +118,6 @@ class _HomeScreenState extends State<HomeScreen> {
           'title': 'Category Practice',
           'subtitle': 'Speaking & Listening by topic',
           'color': const Color(0xFFE8F5E9),
-        },
-        {
-          'icon': '✨',
-          'title': 'Free Chat',
-          'subtitle': _selectedCharacter == 'kasumi'
-              ? 'Chat with Kasumi'
-              : 'Chat with Tsumugi',
-          'color': const Color(0xFFF3E5F5),
         },
       ];
     }

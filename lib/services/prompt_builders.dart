@@ -198,7 +198,10 @@ static String buildSimilarQuestionPrompt({
     required String targetLang,
   }) {
     if (targetLang.toLowerCase() == 'ja') {
-      return '次の<text>タグ内の日本語をひらがなのみに変換してください。ひらがな以外は一切出力しないでください（説明・改行・空白禁止）。\n\n<text>$translatedText</text>';
+      return '次の<text>タグ内の日本語を、日常会話で最もよく使われる自然な読み方のひらがなに変換してください。'
+          'ひらがな・長音符（ー）以外は一切出力しないでください（説明・記号・改行・空白禁止）。\n'
+          '例：洪水→こうずい、魚→さかな、友達→ともだち、群れ→むれ、被害→ひがい\n\n'
+          '<text>$translatedText</text>';
     }
     return '''
 Convert the following text to its phonetic transcription. Return ONLY the transcription or null, no explanation.
@@ -264,19 +267,22 @@ Rules:
     required String originalQuestion,
     required String targetLang,
     required String nativeLang,
+    String? furigana,
   }) {
+    final furiganaLine = (furigana != null && furigana.isNotEmpty)
+        ? '正解フレーズのふりがな：$furigana\n'
+        : '';
     return '''
-以下の判定ルールに従って,以下の判定対象の回答が正しいか判定し,必ず「1」または「2」のみを返して下さい.
+「ユーザーの発音」が「正解フレーズ」と同じ内容かどうか判定し、「1」または「2」のみを返してください。
 
-判定対象: $userAnswer
+正解フレーズ：$originalQuestion
+${furiganaLine}ユーザーの発音（STT認識結果）：$userAnswer
 
-判定ルール:
-- 「1」= 判定対象と,「$originalQuestion」は同じ文である.
-- 「2」= 判定対象と,「$originalQuestion」は同じ文ではない.
+判定ルール：
+- 「1」= 同じフレーズ（漢字・ひらがな・カタカナの表記揺れ、語尾の句読点の有無は無視する）
+- 「2」= 明らかに異なるフレーズ
 
-以下の形式で返して下さい：
-出力は必ず「1」または「2」のみを返して下さい.
-（説明,空白,改行は禁止です）
+出力は「1」または「2」のみ（説明・空白・改行禁止）
 ''';
   }
 

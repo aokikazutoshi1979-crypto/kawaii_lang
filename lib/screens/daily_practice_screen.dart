@@ -41,7 +41,12 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
   bool _isPremium = false;
   int _todaysPracticeCount = 0;
   static const int _freeLimit = 3;
-  bool get _hasReachedLimit => !_isPremium && _todaysPracticeCount >= _freeLimit;
+  bool get _isPremiumUser =>
+      _isPremium ||
+      hasSubOnDevice ||
+      SubscriptionService.instance.subscriptionActiveNotifier.value;
+
+  bool get _hasReachedLimit => !_isPremiumUser && _todaysPracticeCount >= _freeLimit;
   bool _isListeningTts = false; // VOICEVOX読み込み中フラグ
 
   // リトライ制限
@@ -97,7 +102,7 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
         _isLoading = false;
       });
       // 既に上限に達していれば即ダイアログ表示
-      if (!premium && count >= _freeLimit) {
+      if (!premium && !hasSubOnDevice && !SubscriptionService.instance.subscriptionActiveNotifier.value && count >= _freeLimit) {
         WidgetsBinding.instance.addPostFrameCallback((_) {
           if (mounted) _showLimitDialog();
         });
@@ -116,9 +121,17 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
       translatedText: text,
       targetLang: 'ja',
     );
-    final res = await GptService.getChatResponse(prompt, text, loc);
+    // gpt-4o-miniは漢字読みの精度がgpt-3.5-turboより大幅に高い
+    final res = await GptService.getChatResponse(prompt, text, loc, model: 'gpt-4o-mini');
     if (res != null && res.trim().isNotEmpty && mounted) {
-      setState(() => _furigana = res.trim());
+      // GPTが説明文を混ぜて返すことがあるため、ひらがな・長音符のみ抽出する
+      final hiraganaOnly = RegExp(r'[ぁ-んー]')
+          .allMatches(res)
+          .map((m) => m.group(0)!)
+          .join();
+      if (hiraganaOnly.isNotEmpty) {
+        setState(() => _furigana = hiraganaOnly);
+      }
     }
   }
 
@@ -156,7 +169,8 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
   // ---------- VOICEVOX ----------
 
   Future<void> _listenPhrase() async {
-    final text = _japaneseText;
+    // ふりがなが取得済みならそちらをTTS対象にする（より自然な読み上げのため）
+    final text = (_furigana != null && _furigana!.isNotEmpty) ? _furigana! : _japaneseText;
     if (text.isEmpty) return;
     setState(() {
       _isListeningTts = true;
@@ -226,16 +240,18 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
 
     final loc = AppLocalizations.of(context)!;
     final correct = _japaneseText;
-    // リピート練習なので同義ではなく完全一致チェックを使う
     final prompt = PromptBuilders.buildListeningPrompt(
       userAnswer: recognized,
       originalQuestion: correct,
       targetLang: 'Japanese',
       nativeLang: 'English',
+      furigana: _furigana,
     );
 
-    final response = await GptService.getChatResponse(prompt, recognized, loc);
-    final isCorrect = response?.trim() == '1';
+    final response = await GptService.getChatResponse(prompt, recognized, loc, model: 'gpt-4o-mini');
+    // GPTが「1」や 1. など余分な文字を返すことがあるため、最初の数字で判定する
+    final digit = RegExp(r'[12]').firstMatch(response ?? '')?.group(0);
+    final isCorrect = digit == '1';
 
     if (!mounted) return;
 
