@@ -796,6 +796,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get dailyPracticeTryButton => '🎤 Versuch es zu sagen!';
 
   @override
+  String get dailyPracticeStopButton => 'Stopp';
+
+  @override
+  String get dailyPracticeDoneButton => 'Fertig →';
+
+  @override
   String get dailyCompleteTitle => 'Übung abgeschlossen! 🎉';
 
   @override

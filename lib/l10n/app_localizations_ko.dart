@@ -766,6 +766,12 @@ class AppLocalizationsKo extends AppLocalizations {
   String get dailyPracticeTryButton => '🎤 따라 말해봐요!';
 
   @override
+  String get dailyPracticeStopButton => '중지';
+
+  @override
+  String get dailyPracticeDoneButton => '완료 →';
+
+  @override
   String get dailyCompleteTitle => '오늘 연습 완료！🎉';
 
   @override

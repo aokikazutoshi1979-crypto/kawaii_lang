@@ -659,7 +659,7 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
             const SizedBox(height: 12),
             OutlinedButton(
               onPressed: _stopRecording,
-              child: const Text('停止'),
+              child: Text(loc.dailyPracticeStopButton),
             ),
           ],
         );
@@ -755,7 +755,7 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
                 padding: const EdgeInsets.symmetric(vertical: 14),
               ),
-              child: const Text('完了 →', style: TextStyle(fontSize: 16)),
+              child: Text(loc.dailyPracticeDoneButton, style: const TextStyle(fontSize: 16)),
             ),
           ],
         );

@@ -757,6 +757,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get dailyPracticeTryButton => '🎤 模仿说说看！';
 
   @override
+  String get dailyPracticeStopButton => '停止';
+
+  @override
+  String get dailyPracticeDoneButton => '完成 →';
+
+  @override
   String get dailyCompleteTitle => '今日练习完成！🎉';
 
   @override
@@ -1505,6 +1511,12 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get dailyPracticeTryButton => '🎤 模仿說說看！';
+
+  @override
+  String get dailyPracticeStopButton => '停止';
+
+  @override
+  String get dailyPracticeDoneButton => '完成 →';
 
   @override
   String get dailyCompleteTitle => '今日練習完成！🎉';

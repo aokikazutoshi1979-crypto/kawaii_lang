@@ -785,6 +785,12 @@ class AppLocalizationsVi extends AppLocalizations {
   String get dailyPracticeTryButton => '🎤 Hãy thử nói!';
 
   @override
+  String get dailyPracticeStopButton => 'Dừng';
+
+  @override
+  String get dailyPracticeDoneButton => 'Hoàn thành →';
+
+  @override
   String get dailyCompleteTitle => 'Hoàn thành luyện tập! 🎉';
 
   @override

@@ -1511,6 +1511,18 @@ abstract class AppLocalizations {
   /// **'🎤 真似してみよう！'**
   String get dailyPracticeTryButton;
 
+  /// No description provided for @dailyPracticeStopButton.
+  ///
+  /// In ja, this message translates to:
+  /// **'停止'**
+  String get dailyPracticeStopButton;
+
+  /// No description provided for @dailyPracticeDoneButton.
+  ///
+  /// In ja, this message translates to:
+  /// **'完了 →'**
+  String get dailyPracticeDoneButton;
+
   /// No description provided for @dailyCompleteTitle.
   ///
   /// In ja, this message translates to:

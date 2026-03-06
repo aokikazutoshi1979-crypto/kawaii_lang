@@ -800,6 +800,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get dailyPracticeTryButton => '🎤 ¡Intenta decirlo!';
 
   @override
+  String get dailyPracticeStopButton => 'Detener';
+
+  @override
+  String get dailyPracticeDoneButton => 'Listo →';
+
+  @override
   String get dailyCompleteTitle => '¡Práctica completada! 🎉';
 
   @override
