@@ -718,6 +718,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get trialCopyText => '7일 무료 체험. 기간 내 취소 시 청구되지 않습니다.';
 
   @override
+  String get subscriptionBenefitDailyPractice => '오늘의 연습: 무제한 사용';
+
+  @override
   String get subscriptionBenefitAllCategories => '전체 카테고리 개방';
 
   @override

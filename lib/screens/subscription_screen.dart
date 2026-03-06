@@ -67,6 +67,7 @@ class _SubscriptionScreenState extends SubscriptionState<SubscriptionScreen> {
   String _trialCopy(AppLocalizations loc) => loc.trialCopyText;
 
   List<String> _benefits(AppLocalizations loc) => [
+        loc.subscriptionBenefitDailyPractice,
         loc.subscriptionBenefitAllCategories,
         loc.subscriptionBenefitUnlimited,
         loc.benefitNoCreditCard,

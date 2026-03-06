@@ -733,6 +733,10 @@ class AppLocalizationsVi extends AppLocalizations {
       '7 ngày dùng thử miễn phí. Hủy trước khi kết thúc thử nghiệm sẽ không bị tính phí.';
 
   @override
+  String get subscriptionBenefitDailyPractice =>
+      'Luyen tap hang ngay: khong gioi han';
+
+  @override
   String get subscriptionBenefitAllCategories => 'Mở khóa tất cả danh mục';
 
   @override

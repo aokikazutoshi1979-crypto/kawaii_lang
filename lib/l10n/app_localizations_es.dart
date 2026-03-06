@@ -745,6 +745,10 @@ class AppLocalizationsEs extends AppLocalizations {
       '7 días de prueba gratis. Cancela antes de que termine y no se te cobrará.';
 
   @override
+  String get subscriptionBenefitDailyPractice =>
+      'Practica diaria: sesiones ilimitadas';
+
+  @override
   String get subscriptionBenefitAllCategories =>
       'Todas las categorías desbloqueadas';
 

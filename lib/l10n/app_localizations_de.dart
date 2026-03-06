@@ -742,6 +742,10 @@ class AppLocalizationsDe extends AppLocalizations {
       '7 Tage kostenlos testen. Kündigung vor Ablauf der Testphase = keine Kosten.';
 
   @override
+  String get subscriptionBenefitDailyPractice =>
+      'Tagliche Ubung: unbegrenzte Sitzungen';
+
+  @override
   String get subscriptionBenefitAllCategories =>
       'Alle Kategorien freigeschaltet';
 

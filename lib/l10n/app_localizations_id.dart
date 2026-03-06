@@ -738,6 +738,10 @@ class AppLocalizationsId extends AppLocalizations {
       '7 hari uji coba gratis. Batalkan sebelum masa percobaan berakhir dan Anda tidak akan dikenakan biaya.';
 
   @override
+  String get subscriptionBenefitDailyPractice =>
+      'Latihan harian: sesi tanpa batas';
+
+  @override
   String get subscriptionBenefitAllCategories => 'Semua kategori dibuka';
 
   @override

@@ -709,6 +709,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get trialCopyText => '7天免费试用。试用期内取消不收费。';
 
   @override
+  String get subscriptionBenefitDailyPractice => '每日练习：无限次使用';
+
+  @override
   String get subscriptionBenefitAllCategories => '所有分类全开';
 
   @override
@@ -1451,6 +1454,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get trialCopyText => '7天免費試用。試用期內取消不收費。';
+
+  @override
+  String get subscriptionBenefitDailyPractice => '每日練習：無限次使用';
 
   @override
   String get subscriptionBenefitAllCategories => '所有分類全開';

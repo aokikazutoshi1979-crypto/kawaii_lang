@@ -1415,6 +1415,12 @@ abstract class AppLocalizations {
   /// **'7日間無料、期間内キャンセルで請求なし'**
   String get trialCopyText;
 
+  /// No description provided for @subscriptionBenefitDailyPractice.
+  ///
+  /// In ja, this message translates to:
+  /// **'今日の練習：無制限で使い放題'**
+  String get subscriptionBenefitDailyPractice;
+
   /// No description provided for @subscriptionBenefitAllCategories.
   ///
   /// In ja, this message translates to:

@@ -743,6 +743,10 @@ class AppLocalizationsFr extends AppLocalizations {
       '7 jours d’essai gratuit. Annulez avant la fin de l’essai et vous ne serez pas débité.';
 
   @override
+  String get subscriptionBenefitDailyPractice =>
+      'Pratique du jour : sessions illimitees';
+
+  @override
   String get subscriptionBenefitAllCategories =>
       'Toutes les catégories débloquées';
 

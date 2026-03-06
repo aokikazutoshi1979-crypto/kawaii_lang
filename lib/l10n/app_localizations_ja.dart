@@ -712,6 +712,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get trialCopyText => '7日間無料、期間内キャンセルで請求なし';
 
   @override
+  String get subscriptionBenefitDailyPractice => '今日の練習：無制限で使い放題';
+
+  @override
   String get subscriptionBenefitAllCategories => '全カテゴリ解放';
 
   @override
