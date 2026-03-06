@@ -579,6 +579,9 @@ class AppLocalizationsFr extends AppLocalizations {
       'L’enregistrement s’est arrêté automatiquement au bout de 10 secondes.';
 
   @override
+  String get recordingLabel => 'Enregistrement…';
+
+  @override
   String get readingLabel => 'Lecture';
 
   @override

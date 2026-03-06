@@ -551,6 +551,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get recordingAutoStopped => '录音已在 10 秒时自动停止。';
 
   @override
+  String get recordingLabel => '录音中…';
+
+  @override
   String get readingLabel => '阅读';
 
   @override
@@ -1338,6 +1341,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get recordingAutoStopped => '錄音已於 10 秒時自動停止。';
+
+  @override
+  String get recordingLabel => '錄音中…';
 
   @override
   String get readingLabel => '閱讀';

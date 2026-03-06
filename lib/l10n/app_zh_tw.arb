@@ -321,6 +321,7 @@
     "description": "每個題目卡片的副標題"
   },
   "recordingAutoStopped": "錄音已於 10 秒時自動停止。",
+  "recordingLabel": "錄音中…",
   "readingLabel": "閱讀",
   "listeningLabel": "聽力",
   "listeningPrompt": "在說什麼？",

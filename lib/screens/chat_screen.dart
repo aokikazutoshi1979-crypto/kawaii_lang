@@ -988,7 +988,7 @@ class _ChatScreenState extends State<ChatScreen> {
       translatedText: seed,
       targetLang: targetLang,
     );
-    final String? first = await GptService.getChatResponse(basePrompt, seed, loc);
+    final String? first = await GptService.getChatResponse(basePrompt, seed, loc, model: 'gpt-4o-mini');
     final String firstText = (first ?? '').trim();
     if (firstText.isEmpty) return null;
     if (!_isDuplicateSimilar(firstText, avoidList)) return firstText;
@@ -998,7 +998,7 @@ class _ChatScreenState extends State<ChatScreen> {
       targetLang: targetLang,
       avoidList: avoidList,
     );
-    final String? retry = await GptService.getChatResponse(retryPrompt, seed, loc);
+    final String? retry = await GptService.getChatResponse(retryPrompt, seed, loc, model: 'gpt-4o-mini');
     final String retryText = (retry ?? '').trim();
     if (retryText.isEmpty) return null;
     if (_isDuplicateSimilar(retryText, avoidList)) {

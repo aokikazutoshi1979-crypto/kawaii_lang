@@ -575,6 +575,9 @@ class AppLocalizationsId extends AppLocalizations {
       'Perekaman dihentikan otomatis pada 10 detik.';
 
   @override
+  String get recordingLabel => 'Merekam…';
+
+  @override
   String get readingLabel => 'Membaca';
 
   @override

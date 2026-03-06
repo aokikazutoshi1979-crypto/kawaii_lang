@@ -322,6 +322,7 @@
     "description": "Subjudul untuk setiap kartu soal"
   },
   "recordingAutoStopped": "Perekaman dihentikan otomatis pada 10 detik.",
+  "recordingLabel": "Merekam…",
   "readingLabel": "Membaca",
   "listeningLabel": "Menyimak",
   "listeningPrompt": "Sedang mengatakan apa?",

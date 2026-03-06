@@ -320,6 +320,7 @@
     "description": "出題カードのサブラベル"
   },
   "recordingAutoStopped": "録音は10秒で自動停止しました。",
+  "recordingLabel": "録音中…",
   "readingLabel": "リーディング",
   "listeningLabel": "リスニング",
   "listeningPrompt": "何と言っているでしょうか？",

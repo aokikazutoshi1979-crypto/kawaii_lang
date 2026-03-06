@@ -573,6 +573,9 @@ class AppLocalizationsEn extends AppLocalizations {
       'Recording stopped automatically at 10 seconds.';
 
   @override
+  String get recordingLabel => 'Recording…';
+
+  @override
   String get readingLabel => 'Reading';
 
   @override

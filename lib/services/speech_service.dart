@@ -31,7 +31,7 @@ class SpeechService {
     return true;
   }
 
-  void listen(Function(String) onResult) {
+  void listen(Function(String) onResult, {Function(double)? onSoundLevel}) {
     if (_localeId != null) {
       _speech.listen(
         localeId: _localeId!,
@@ -39,6 +39,11 @@ class SpeechService {
           if (val.finalResult) { // ← 最終確定の結果だけ渡す
             onResult(val.recognizedWords);
           }
+        },
+        onSoundLevelChange: onSoundLevel == null ? null : (level) {
+          // speech_to_text の level は概ね -45〜0 dBFS。0〜1 に正規化する
+          final normalized = ((level + 45.0) / 45.0).clamp(0.0, 1.0);
+          onSoundLevel(normalized);
         },
       );
     }

@@ -569,6 +569,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get recordingAutoStopped => 'Ghi âm đã tự dừng sau 10 giây.';
 
   @override
+  String get recordingLabel => 'Đang ghi âm…';
+
+  @override
   String get readingLabel => 'Đọc hiểu';
 
   @override

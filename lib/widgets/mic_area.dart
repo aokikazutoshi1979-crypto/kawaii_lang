@@ -343,3 +343,35 @@ class _WaveformPainter extends CustomPainter {
     return oldDelegate.samples != samples;
   }
 }
+
+/// チャット画面と同じデザインの波形バー（ボタンなし）。
+/// daily_practice_screen などで再利用できる公開ウィジェット。
+class LiveWaveformBar extends StatelessWidget {
+  final List<double> samples;
+
+  const LiveWaveformBar({required this.samples, super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: _RecordingBar._plateHeight,
+      decoration: BoxDecoration(
+        color: const Color(0xFFE91E63).withOpacity(0.14),
+        borderRadius: BorderRadius.circular(_RecordingBar._plateRadius),
+        boxShadow: const [
+          BoxShadow(
+            color: Color.fromRGBO(0, 0, 0, 0.08),
+            blurRadius: 10,
+            offset: Offset(0, 4),
+          ),
+        ],
+      ),
+      child: CustomPaint(
+        painter: _WaveformPainter(
+          samples: samples,
+          color: const Color(0xFFFFF1F5),
+        ),
+      ),
+    );
+  }
+}

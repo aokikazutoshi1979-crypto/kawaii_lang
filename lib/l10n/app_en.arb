@@ -328,6 +328,7 @@
   "@recordingAutoStopped": {
     "description": "Shown when the mic auto-stops after 10 seconds."
   },
+  "recordingLabel": "Recording…",
   "readingLabel": "Reading",
   "listeningLabel": "Listening",
   "listeningPrompt": "What is being said?",

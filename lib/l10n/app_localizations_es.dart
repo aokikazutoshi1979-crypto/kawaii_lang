@@ -581,6 +581,9 @@ class AppLocalizationsEs extends AppLocalizations {
       'La grabación se detuvo automáticamente a los 10 segundos.';
 
   @override
+  String get recordingLabel => 'Grabando…';
+
+  @override
   String get readingLabel => 'Lectura';
 
   @override

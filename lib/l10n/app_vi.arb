@@ -322,6 +322,7 @@
     "description": "Nhãn phụ cho mỗi thẻ câu hỏi"
   },
   "recordingAutoStopped": "Ghi âm đã tự dừng sau 10 giây.",
+  "recordingLabel": "Đang ghi âm…",
   "readingLabel": "Đọc hiểu",
   "listeningLabel": "Nghe hiểu",
   "listeningPrompt": "Đang nói gì vậy?",

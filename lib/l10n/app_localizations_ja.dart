@@ -557,6 +557,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get recordingAutoStopped => '録音は10秒で自動停止しました。';
 
   @override
+  String get recordingLabel => '録音中…';
+
+  @override
   String get readingLabel => 'リーディング';
 
   @override

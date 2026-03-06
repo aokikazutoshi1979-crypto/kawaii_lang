@@ -322,6 +322,7 @@
     "description": "Subetiqueta para cada tarjeta de pregunta"
   },
   "recordingAutoStopped": "La grabación se detuvo automáticamente a los 10 segundos.",
+  "recordingLabel": "Grabando…",
   "readingLabel": "Lectura",
   "listeningLabel": "Escucha",
   "listeningPrompt": "¿Qué se está diciendo?",

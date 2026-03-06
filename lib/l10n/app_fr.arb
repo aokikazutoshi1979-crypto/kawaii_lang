@@ -322,6 +322,7 @@
     "description": "Sous-libellé pour chaque carte de question"
   },
   "recordingAutoStopped": "L’enregistrement s’est arrêté automatiquement au bout de 10 secondes.",
+  "recordingLabel": "Enregistrement…",
   "readingLabel": "Lecture",
   "listeningLabel": "Écoute",
   "listeningPrompt": "Qu'est-ce qui est dit ?",

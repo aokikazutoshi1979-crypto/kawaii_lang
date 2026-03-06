@@ -558,6 +558,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get recordingAutoStopped => '녹음이 10초 후 자동으로 중지되었습니다.';
 
   @override
+  String get recordingLabel => '녹음 중…';
+
+  @override
   String get readingLabel => '리딩';
 
   @override

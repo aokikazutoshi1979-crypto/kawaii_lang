@@ -1115,6 +1115,12 @@ abstract class AppLocalizations {
   /// **'録音は10秒で自動停止しました。'**
   String get recordingAutoStopped;
 
+  /// No description provided for @recordingLabel.
+  ///
+  /// In ja, this message translates to:
+  /// **'録音中…'**
+  String get recordingLabel;
+
   /// No description provided for @readingLabel.
   ///
   /// In ja, this message translates to:

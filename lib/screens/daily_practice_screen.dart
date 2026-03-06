@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:collection';
 
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -16,7 +17,7 @@ import '../services/speech_service.dart';
 import '../services/voicevox_tts_service.dart';
 import '../widgets/chat_bubble.dart' show hiraganaToRomaji;
 import '../widgets/tumugi_bubble.dart';
-import '../widgets/wave_animation.dart';
+import '../widgets/mic_area.dart' show LiveWaveformBar;
 
 enum _PracticeStep {
   idle,      // フレーズ表示中、まだ聞いていない
@@ -48,6 +49,10 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
 
   bool get _hasReachedLimit => !_isPremiumUser && _todaysPracticeCount >= _freeLimit;
   bool _isListeningTts = false; // VOICEVOX読み込み中フラグ
+
+  // 波形用振幅キュー（チャット画面と同じ方式）
+  final Queue<double> _ampQueue = Queue<double>();
+  double _ampEma = 0.0;
 
   // リトライ制限
   int _attemptCount = 0;
@@ -218,16 +223,30 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
       }
       return;
     }
+    _ampQueue.clear();
+    _ampEma = 0.0;
     setState(() => _step = _PracticeStep.recording);
-    _speechService.listen((result) {
-      _handleSTTResult(result);
-    });
+    _speechService.listen(
+      (result) => _handleSTTResult(result),
+      onSoundLevel: (level) {
+        if (!mounted) return;
+        const alpha = 0.25;
+        _ampEma = (_ampEma * (1 - alpha)) + (level * alpha);
+        setState(() {
+          _ampQueue.add(_ampEma);
+          while (_ampQueue.length > 40) _ampQueue.removeFirst();
+        });
+      },
+    );
   }
 
   Future<void> _stopRecording() async {
     await _speechService.stop();
     if (mounted && _step == _PracticeStep.recording) {
-      setState(() => _step = _PracticeStep.listened);
+      setState(() {
+        _step = _PracticeStep.listened;
+        _ampQueue.clear();
+      });
     }
   }
 
@@ -627,10 +646,15 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
 
       case _PracticeStep.recording:
         return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            WaveAnimation(isListening: true),
+            LiveWaveformBar(samples: _ampQueue.toList()),
             const SizedBox(height: 8),
-            const Text('録音中…', style: TextStyle(color: Colors.pinkAccent)),
+            Text(
+              loc.recordingLabel,
+              textAlign: TextAlign.center,
+              style: const TextStyle(color: Colors.pinkAccent),
+            ),
             const SizedBox(height: 12),
             OutlinedButton(
               onPressed: _stopRecording,
