@@ -249,18 +249,26 @@ class VoicevoxTtsService {
   /// - 初回のみ VOICEVOX API を呼ぶ（1回分カウント）
   /// - 2回目以降は静的キャッシュから再生 → API 未呼び出し = 日次カウント対象外
   /// - [ttsRate] は設定値 0.2〜0.8。0.5 で等倍(1.0x)再生。
-  Future<void> speakPreview(
+  /// - 戻り値: true=再生成功、false=日次上限超過（呼び出し元でフォールバックすること）
+  Future<bool> speakPreview(
     String text,
     String character,
     double ttsRate, {
     void Function()? onPlayStart,
   }) async {
     text = text.trim();
-    if (text.isEmpty) return;
+    if (text.isEmpty) return false;
     final cacheKey = '$character:$text';
     Uint8List bytes;
 
     if (_previewCache.containsKey(cacheKey)) {
+      // キャッシュヒット時も日次上限を確認（上限超過なら端末TTSへ）
+      final isPremium = isPremiumNotifier.value;
+      final remaining = remainingNotifier.value;
+      if (isPremium == false && remaining != null && remaining <= 0) {
+        debugPrint('[VoicevoxTTS] speakPreview: cache hit but limit exceeded');
+        return false;
+      }
       bytes = _previewCache[cacheKey]!;
       debugPrint('[VoicevoxTTS] speakPreview: cache hit');
     } else {
@@ -270,13 +278,25 @@ class VoicevoxTtsService {
           'character': character,
         });
         final audioBase64 = result.data['audioBase64'] as String?;
-        if (audioBase64 == null || audioBase64.isEmpty) return;
+        if (audioBase64 == null || audioBase64.isEmpty) return false;
         bytes = base64Decode(audioBase64);
         _previewCache[cacheKey] = bytes;
         debugPrint('[VoicevoxTTS] speakPreview: fetched and cached');
+      } on FirebaseFunctionsException catch (e) {
+        if (e.code == 'resource-exhausted') {
+          final details = e.details;
+          if (details is Map && details['daily'] == true) {
+            // 日次上限超過 → remainingを0に更新して呼び出し元へ通知
+            remainingNotifier.value = 0;
+            debugPrint('[VoicevoxTTS] speakPreview: daily limit exceeded');
+            return false;
+          }
+        }
+        debugPrint('[VoicevoxTTS] speakPreview error: $e');
+        return false;
       } catch (e) {
         debugPrint('[VoicevoxTTS] speakPreview error: $e');
-        return;
+        return false;
       }
     }
 
@@ -291,8 +311,10 @@ class VoicevoxTtsService {
       await _player.setSpeed(speed);
       onPlayStart?.call(); // 再生直前に通知
       await _player.play();
+      return true;
     } catch (e) {
       debugPrint('[VoicevoxTTS] speakPreview play error: $e');
+      return false;
     }
   }
 

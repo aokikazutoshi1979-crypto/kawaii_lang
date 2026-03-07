@@ -59,6 +59,7 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
   final VoicevoxTtsService _previewVoicevox = VoicevoxTtsService();
   bool _isTtsPreviewLoading = false;  // API取得・ファイル準備中
   bool _isTtsPreviewPlaying = false;  // 再生中
+  bool _voiceboxLimitReached = false; // 日次上限超過で端末TTSにフォールバック中
 
   final List<String> _languageCodes = const [
     'ja',
@@ -130,6 +131,9 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     _loadCharacter();
     _loadTtsRate();
     _loadLanguageCatalog();
+
+    // テスト再生時に日次上限を即判定できるよう先読み
+    _previewVoicevox.fetchUsageIfNeeded();
 
     // ２）RevenueCat の初期化＆オファー取得
     SubscriptionService.instance.init();
@@ -236,19 +240,73 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
     });
     try {
       if (selectedTargetLang == 'ja') {
-        // VOICEVOX：静的キャッシュがあれば API 未呼び出し
-        await _previewVoicevox.speakPreview(
-          'はじめまして、よろしくおねがいします。',
-          _selectedCharacter,
-          _ttsRate,
-          onPlayStart: () {
-            // 再生が始まった瞬間に「再生中」へ切替
+        // 日次上限チェック（未取得なら先に取得）
+        await _previewVoicevox.fetchUsageIfNeeded();
+        final isPremium = _previewVoicevox.isPremiumNotifier.value == true;
+        final remaining = _previewVoicevox.remainingNotifier.value;
+        final limitReached = !isPremium && remaining != null && remaining <= 0;
+
+        if (limitReached) {
+          // 上限超過 → 端末TTSでフォールバック
+          if (mounted) setState(() {
+            _voiceboxLimitReached = true;
+            _isTtsPreviewLoading = false;
+            _isTtsPreviewPlaying = true;
+          });
+          final double rate = Platform.isIOS ? _ttsRate : (_ttsRate + 0.45).clamp(0.0, 1.0);
+          await _previewTts.setLanguage('ja-JP');
+          await _previewTts.setSpeechRate(rate);
+          await _previewTts.setPitch(1.0);
+          await _previewTts.setVolume(1.0);
+          if (Platform.isIOS) {
+            await _previewTts.setIosAudioCategory(
+              IosTextToSpeechAudioCategory.playback,
+              [
+                IosTextToSpeechAudioCategoryOptions.defaultToSpeaker,
+                IosTextToSpeechAudioCategoryOptions.allowBluetooth,
+              ],
+            );
+          }
+          await _previewTts.speak('はじめまして、よろしくおねがいします。');
+        } else {
+          // VOICEVOX：静的キャッシュがあれば API 未呼び出し
+          if (mounted) setState(() => _voiceboxLimitReached = false);
+          final voicevoxPlayed = await _previewVoicevox.speakPreview(
+            'はじめまして、よろしくおねがいします。',
+            _selectedCharacter,
+            _ttsRate,
+            onPlayStart: () {
+              // 再生が始まった瞬間に「再生中」へ切替
+              if (mounted) setState(() {
+                _isTtsPreviewLoading = false;
+                _isTtsPreviewPlaying = true;
+              });
+            },
+          );
+          if (!voicevoxPlayed) {
+            // API呼び出し時に上限超過が判明した場合は端末TTSへ
             if (mounted) setState(() {
+              _voiceboxLimitReached = true;
               _isTtsPreviewLoading = false;
               _isTtsPreviewPlaying = true;
             });
-          },
-        );
+            final double rate = Platform.isIOS ? _ttsRate : (_ttsRate + 0.45).clamp(0.0, 1.0);
+            await _previewTts.setLanguage('ja-JP');
+            await _previewTts.setSpeechRate(rate);
+            await _previewTts.setPitch(1.0);
+            await _previewTts.setVolume(1.0);
+            if (Platform.isIOS) {
+              await _previewTts.setIosAudioCategory(
+                IosTextToSpeechAudioCategory.playback,
+                [
+                  IosTextToSpeechAudioCategoryOptions.defaultToSpeaker,
+                  IosTextToSpeechAudioCategoryOptions.allowBluetooth,
+                ],
+              );
+            }
+            await _previewTts.speak('はじめまして、よろしくおねがいします。');
+          }
+        }
       } else {
         // 日本語以外：flutter_tts（読み込みほぼ一瞬なので即再生中に）
         if (mounted) setState(() {
@@ -1158,6 +1216,20 @@ class _SettingsScreenState extends SubscriptionState<SettingsScreen> {
                             ),
                           ),
                         ),
+                        // 日次上限超過時の説明テキスト
+                        if (selectedTargetLang == 'ja' && _voiceboxLimitReached)
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(14, 0, 14, 8),
+                            child: Text(
+                              selectedLang == 'ja'
+                                  ? '※ 本日のアニメ声の上限に達したため、スマホの標準音声でお届けしています'
+                                  : '※ Daily anime voice limit reached. Using standard voice.',
+                              style: TextStyle(
+                                fontSize: 11,
+                                color: Colors.orange.shade600,
+                              ),
+                            ),
+                          ),
                         // P1-1: ふりがな/ローマ字表示トグル（日本語学習時のみ）
                         if (selectedTargetLang == 'ja') ...[
                           Divider(height: 1, color: Colors.grey.shade200),
