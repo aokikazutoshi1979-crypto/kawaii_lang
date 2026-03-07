@@ -84,16 +84,16 @@ class DailyCompleteScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          '$streakDays日',
+                          loc.streakDaysDisplay(streakDays),
                           style: const TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
                           ),
                         ),
-                        const Text(
-                          '連続練習中！',
-                          style: TextStyle(
+                        Text(
+                          loc.streakContinuing,
+                          style: const TextStyle(
                             fontSize: 13,
                             color: Colors.white70,
                           ),
@@ -118,9 +118,9 @@ class DailyCompleteScreen extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text(
-                        '今日練習したフレーズ：',
-                        style: TextStyle(fontSize: 13, color: Colors.grey),
+                      Text(
+                        loc.dailyCompleteTodayPhrase,
+                        style: const TextStyle(fontSize: 13, color: Colors.grey),
                       ),
                       const SizedBox(height: 8),
                       Text(

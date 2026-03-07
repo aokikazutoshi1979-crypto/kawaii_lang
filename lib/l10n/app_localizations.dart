@@ -1541,6 +1541,24 @@ abstract class AppLocalizations {
   /// **'もっと練習する →'**
   String get dailyCompleteMorePractice;
 
+  /// No description provided for @streakDaysDisplay.
+  ///
+  /// In ja, this message translates to:
+  /// **'{days}日'**
+  String streakDaysDisplay(Object days);
+
+  /// No description provided for @streakContinuing.
+  ///
+  /// In ja, this message translates to:
+  /// **'連続練習中！'**
+  String get streakContinuing;
+
+  /// No description provided for @dailyCompleteTodayPhrase.
+  ///
+  /// In ja, this message translates to:
+  /// **'今日練習したフレーズ：'**
+  String get dailyCompleteTodayPhrase;
+
   /// No description provided for @levelSelectQuestion.
   ///
   /// In ja, this message translates to:

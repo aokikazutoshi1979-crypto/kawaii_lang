@@ -806,6 +806,17 @@ class AppLocalizationsId extends AppLocalizations {
   String get dailyCompleteMorePractice => 'Latihan lagi →';
 
   @override
+  String streakDaysDisplay(Object days) {
+    return '$days hari';
+  }
+
+  @override
+  String get streakContinuing => 'Streak sedang berjalan!';
+
+  @override
+  String get dailyCompleteTodayPhrase => 'Frasa hari ini:';
+
+  @override
   String get levelSelectQuestion => 'Apa level bahasa Jepang-mu? 🌸';
 
   @override

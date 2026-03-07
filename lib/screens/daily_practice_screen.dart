@@ -490,6 +490,49 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
     return (_karaokeIndex / phraseLen * romaji.length).round().clamp(0, romaji.length);
   }
 
+  // ふりがなカラオケ用インデックスを計算
+  int get _furiganaKaraokeIndex {
+    final phraseLen = _japaneseText.runes.length;
+    if (phraseLen == 0 || _furigana == null) return 0;
+    final furiganaLen = _furigana!.runes.length;
+    return (_karaokeIndex / phraseLen * furiganaLen).round().clamp(0, furiganaLen);
+  }
+
+  // ふりがなカラオケ用 Widget
+  Widget _buildFuriganaKaraoke() {
+    final f = _furigana;
+    if (f == null || f.isEmpty) return const SizedBox.shrink();
+    final chars = f.runes.map(String.fromCharCode).toList();
+    final idx = _furiganaKaraokeIndex;
+    final highlighted = chars.take(idx).join();
+    final remaining = chars.skip(idx).join();
+    const double fontSize = 28 * 2 / 3;
+    return RichText(
+      text: TextSpan(
+        children: [
+          if (highlighted.isNotEmpty)
+            TextSpan(
+              text: highlighted,
+              style: TextStyle(
+                fontSize: fontSize,
+                color: Colors.pink.shade400,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          if (remaining.isNotEmpty)
+            TextSpan(
+              text: remaining,
+              style: TextStyle(
+                fontSize: fontSize,
+                color: Colors.pink.shade300,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+
   // ローマ字カラオケ用 Widget
   Widget _buildRomajiKaraoke() {
     final f = _furigana;
@@ -499,6 +542,7 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
     final idx = _romajiKaraokeIndex;
     final highlighted = romaji.substring(0, idx);
     final remaining = romaji.substring(idx);
+    const double fontSize = 28 * 2 / 3;
     return RichText(
       text: TextSpan(
         children: [
@@ -506,7 +550,7 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
             TextSpan(
               text: highlighted,
               style: TextStyle(
-                fontSize: 11,
+                fontSize: fontSize,
                 color: Colors.pink.shade400,
                 fontWeight: FontWeight.bold,
                 letterSpacing: 0.5,
@@ -516,7 +560,7 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
             TextSpan(
               text: remaining,
               style: TextStyle(
-                fontSize: 11,
+                fontSize: fontSize,
                 color: Colors.grey.shade500,
                 letterSpacing: 0.5,
               ),
@@ -583,17 +627,10 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
                       ],
               ),
             ),
-            // ふりがな
+            // ふりがな（カラオケ）
             if (_furigana != null && _furigana!.isNotEmpty) ...[
               const SizedBox(height: 4),
-              Text(
-                _furigana!,
-                style: TextStyle(
-                  fontSize: 13,
-                  color: Colors.pink.shade400,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
+              _buildFuriganaKaraoke(),
               const SizedBox(height: 2),
               // ローマ字カラオケ
               _buildRomajiKaraoke(),

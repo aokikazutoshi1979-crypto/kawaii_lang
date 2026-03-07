@@ -815,6 +815,17 @@ class AppLocalizationsEs extends AppLocalizations {
   String get dailyCompleteMorePractice => 'Más práctica →';
 
   @override
+  String streakDaysDisplay(Object days) {
+    return '$days días';
+  }
+
+  @override
+  String get streakContinuing => '¡Racha en progreso!';
+
+  @override
+  String get dailyCompleteTodayPhrase => 'Frase de hoy:';
+
+  @override
   String get levelSelectQuestion => '¿Cuál es tu nivel de japonés? 🌸';
 
   @override

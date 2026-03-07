@@ -402,6 +402,14 @@
   "dailyCompleteTitle": "Practice Complete! 🎉",
   "dailyCompleteSeeYouTomorrow": "See you tomorrow 👋",
   "dailyCompleteMorePractice": "More practice →",
+  "streakDaysDisplay": "{days} days",
+  "@streakDaysDisplay": {
+    "placeholders": {
+      "days": {}
+    }
+  },
+  "streakContinuing": "Streak in progress!",
+  "dailyCompleteTodayPhrase": "Today's phrase:",
   "levelSelectQuestion": "What's your Japanese level? 🌸",
   "levelSelectOptionStarterTitle": "Complete Beginner",
   "levelSelectOptionStarterSub": "I don't know any Japanese yet",

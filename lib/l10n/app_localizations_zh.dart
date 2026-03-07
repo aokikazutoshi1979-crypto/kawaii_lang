@@ -772,6 +772,17 @@ class AppLocalizationsZh extends AppLocalizations {
   String get dailyCompleteMorePractice => '继续练习 →';
 
   @override
+  String streakDaysDisplay(Object days) {
+    return '$days天';
+  }
+
+  @override
+  String get streakContinuing => '连续练习中！';
+
+  @override
+  String get dailyCompleteTodayPhrase => '今天练习的短语：';
+
+  @override
   String get levelSelectQuestion => '你的日语水平是？🌸';
 
   @override
@@ -1526,6 +1537,17 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get dailyCompleteMorePractice => '繼續練習 →';
+
+  @override
+  String streakDaysDisplay(Object days) {
+    return '$days天';
+  }
+
+  @override
+  String get streakContinuing => '連續練習中！';
+
+  @override
+  String get dailyCompleteTodayPhrase => '今天練習的短語：';
 
   @override
   String get levelSelectQuestion => '你的日語程度是？🌸';

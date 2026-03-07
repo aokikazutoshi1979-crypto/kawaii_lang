@@ -800,6 +800,17 @@ class AppLocalizationsVi extends AppLocalizations {
   String get dailyCompleteMorePractice => 'Luyện thêm →';
 
   @override
+  String streakDaysDisplay(Object days) {
+    return '$days ngày';
+  }
+
+  @override
+  String get streakContinuing => 'Đang duy trì chuỗi!';
+
+  @override
+  String get dailyCompleteTodayPhrase => 'Cụm từ hôm nay:';
+
+  @override
   String get levelSelectQuestion => 'Trình độ tiếng Nhật của bạn là gì? 🌸';
 
   @override

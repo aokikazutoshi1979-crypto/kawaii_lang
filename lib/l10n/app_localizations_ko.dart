@@ -781,6 +781,17 @@ class AppLocalizationsKo extends AppLocalizations {
   String get dailyCompleteMorePractice => '더 연습하기 →';
 
   @override
+  String streakDaysDisplay(Object days) {
+    return '$days일';
+  }
+
+  @override
+  String get streakContinuing => '연속 연습 중!';
+
+  @override
+  String get dailyCompleteTodayPhrase => '오늘 연습한 표현:';
+
+  @override
   String get levelSelectQuestion => '일본어 실력이 어느 정도예요? 🌸';
 
   @override
