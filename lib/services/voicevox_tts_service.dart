@@ -9,6 +9,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 /// 日次上限に達したときに渡される情報
 class TtsDailyLimitInfo {
@@ -142,6 +143,11 @@ class VoicevoxTtsService {
 
       final audioDuration =
           await _player.setFilePath(file.path) ?? const Duration(seconds: 3);
+      // 設定画面のスピードスライダーを反映する（speakPreview と同じロジック）
+      final prefs = await SharedPreferences.getInstance();
+      final ttsRate = prefs.getDouble('tts_speech_rate') ?? 0.40;
+      final speed = (ttsRate * 2.0).clamp(0.3, 2.0);
+      await _player.setSpeed(speed);
       onPlayStart?.call(audioDuration);
       await _player.play();
     } on FirebaseFunctionsException catch (e) {
@@ -170,8 +176,11 @@ class VoicevoxTtsService {
   /// 端末標準 TTS でフォールバック再生（日本語固定）
   Future<void> _speakFallback(String text) async {
     try {
+      final prefs = await SharedPreferences.getInstance();
+      final savedRate = prefs.getDouble('tts_speech_rate') ?? 0.40;
+      final double rate = Platform.isIOS ? savedRate : (savedRate + 0.45).clamp(0.0, 1.0);
       await _fallbackTts.setLanguage('ja-JP');
-      await _fallbackTts.setSpeechRate(0.4);
+      await _fallbackTts.setSpeechRate(rate);
       if (Platform.isIOS) {
         await _fallbackTts.setIosAudioCategory(
           IosTextToSpeechAudioCategory.playback,
