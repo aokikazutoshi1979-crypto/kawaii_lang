@@ -581,7 +581,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get badgeCorrect => '正确';
 
   @override
-  String get badgeNeedsImprovement => '需要改进';
+  String get badgeNeedsImprovement => '差一点！再试一次吧 🌸';
+
+  @override
+  String get hintLabel => '💡 试着这样说：';
 
   @override
   String get originalTranslationHeader => '原文翻译';
@@ -612,12 +615,10 @@ class AppLocalizationsZh extends AppLocalizations {
       'W-Well, the meaning is correct... not that I\'m saying you did great or anything.';
 
   @override
-  String get tumugiAccuracyIncorrect =>
-      'Hmm, the meaning is a little off... let\'s look together!';
+  String get tumugiAccuracyIncorrect => '差一点！再听一次，一起试试☺️ ';
 
   @override
-  String get kasumiAccuracyIncorrect =>
-      'The meaning is off... but hey, I know you\'ll get it next time.';
+  String get kasumiAccuracyIncorrect => '嗯…差一点。不过你肯定能行的。再来一次。';
 
   @override
   String get tsumugiIntroTitle => '初次见面，我是紬';
@@ -1390,7 +1391,10 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get badgeCorrect => '正確';
 
   @override
-  String get badgeNeedsImprovement => '需要改進';
+  String get badgeNeedsImprovement => '差一點！再試一次吧 🌸';
+
+  @override
+  String get hintLabel => '💡 試著這樣說：';
 
   @override
   String get originalTranslationHeader => '原文翻譯';
@@ -1421,12 +1425,10 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       'W-Well, the meaning is correct... not that I\'m saying you did great or anything.';
 
   @override
-  String get tumugiAccuracyIncorrect =>
-      'Hmm, the meaning is a little off... let\'s look together!';
+  String get tumugiAccuracyIncorrect => '差一點！再聽一次，一起試試☺️ ';
 
   @override
-  String get kasumiAccuracyIncorrect =>
-      'The meaning is off... but hey, I know you\'ll get it next time.';
+  String get kasumiAccuracyIncorrect => '嗯…差一點。不過你肯定能行的。再來一次。';
 
   @override
   String get tsumugiProfileMenuTitle => '關於紬';

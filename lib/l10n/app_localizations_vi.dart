@@ -599,7 +599,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get badgeCorrect => 'Đúng';
 
   @override
-  String get badgeNeedsImprovement => 'Cần cải thiện';
+  String get badgeNeedsImprovement => 'Gần rồi! Thử thêm một lần nữa 🌸';
+
+  @override
+  String get hintLabel => '💡 Thử nói như thế này:';
 
   @override
   String get originalTranslationHeader => 'Bản dịch gốc';
@@ -632,11 +635,11 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get tumugiAccuracyIncorrect =>
-      'Hmm, the meaning is a little off... let\'s look together!';
+      'Gần lắm rồi! Nghe lại và thử thêm lần nữa☺️ ';
 
   @override
   String get kasumiAccuracyIncorrect =>
-      'The meaning is off... but hey, I know you\'ll get it next time.';
+      'Hmm... gần rồi. Nhưng tôi biết bạn làm được. Thử lại.';
 
   @override
   String get tsumugiIntroTitle => 'はじめまして、紬です';

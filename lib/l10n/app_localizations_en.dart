@@ -603,7 +603,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get badgeCorrect => 'Correct';
 
   @override
-  String get badgeNeedsImprovement => 'Needs improvement';
+  String get badgeNeedsImprovement => 'Almost! Try once more 🌸';
+
+  @override
+  String get hintLabel => '💡 Try saying it like this:';
 
   @override
   String get originalTranslationHeader => 'Original translation';
@@ -636,11 +639,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tumugiAccuracyIncorrect =>
-      'Hmm, the meaning is a little off... let\'s look together!';
+      'So close! Let\'s listen again and try once more☺️ ';
 
   @override
   String get kasumiAccuracyIncorrect =>
-      'The meaning is off... but hey, I know you\'ll get it next time.';
+      'Hmm... not quite. But I know you\'ll get it. Try again.';
 
   @override
   String get tsumugiIntroTitle => 'Nice to meet you, I am Tsumugi.';

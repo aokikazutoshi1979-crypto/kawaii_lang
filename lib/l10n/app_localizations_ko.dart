@@ -588,7 +588,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get badgeCorrect => '정답';
 
   @override
-  String get badgeNeedsImprovement => '개선 필요';
+  String get badgeNeedsImprovement => '아깝다！한 번 더 해봐요 🌸';
+
+  @override
+  String get hintLabel => '💡 이렇게 말해봐요：';
 
   @override
   String get originalTranslationHeader => '원문 번역';
@@ -619,12 +622,10 @@ class AppLocalizationsKo extends AppLocalizations {
       'W-Well, the meaning is correct... not that I\'m saying you did great or anything.';
 
   @override
-  String get tumugiAccuracyIncorrect =>
-      'Hmm, the meaning is a little off... let\'s look together!';
+  String get tumugiAccuracyIncorrect => '아까워！한 번 더 듣고 같이 해봐요☺️ ';
 
   @override
-  String get kasumiAccuracyIncorrect =>
-      'The meaning is off... but hey, I know you\'ll get it next time.';
+  String get kasumiAccuracyIncorrect => '음…아쉽네. 하지만 분명 할 수 있어. 한 번 더.';
 
   @override
   String get tsumugiIntroTitle => 'はじめまして、紬です';

@@ -164,13 +164,6 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
     return (_question?['id'] as String?) ?? '';
   }
 
-  // フレーズをモーラ単位で「・」区切りにする
-  String _buildMoraHint(String text) {
-    if (text.isEmpty) return '';
-    // ひらがな・カタカナ・漢字などをrune単位で分割
-    return text.runes.map((r) => String.fromCharCode(r)).join('・');
-  }
-
   // ---------- VOICEVOX ----------
 
   Future<void> _listenPhrase() async {
@@ -359,37 +352,6 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
       });
       _fetchFurigana();
     }
-  }
-
-  // ---------- ヒントダイアログ ----------
-
-  void _showHintDialog() {
-    final text = _japaneseText;
-    final native = _nativeText;
-    showModalBottomSheet(
-      context: context,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
-      builder: (_) => Padding(
-        padding: const EdgeInsets.all(24),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const Text('ヒント', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-            const SizedBox(height: 16),
-            Text(
-              _buildMoraHint(text),
-              style: const TextStyle(fontSize: 20, letterSpacing: 2),
-            ),
-            const SizedBox(height: 8),
-            Text(native, style: const TextStyle(fontSize: 16, color: Colors.grey)),
-            const SizedBox(height: 16),
-          ],
-        ),
-      ),
-    );
   }
 
   // ---------- リセット ----------
@@ -641,15 +603,6 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
               _nativeText,
               style: const TextStyle(fontSize: 16, color: Colors.black54),
             ),
-            // ヒントボタン（result + 不正解のみ表示）
-            if (_step == _PracticeStep.result && !_isCorrect)
-              Align(
-                alignment: Alignment.bottomRight,
-                child: IconButton(
-                  icon: const Icon(Icons.info_outline, color: Colors.grey),
-                  onPressed: _showHintDialog,
-                ),
-              ),
           ],
         ),
       ),
@@ -709,30 +662,64 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
             Container(
               padding: const EdgeInsets.symmetric(vertical: 10),
               decoration: BoxDecoration(
-                color: _isCorrect ? Colors.green.shade50 : Colors.orange.shade50,
+                color: _isCorrect ? Colors.green.shade50 : Colors.pink.shade50,
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(
-                  color: _isCorrect ? Colors.green.shade200 : Colors.orange.shade200,
+                  color: _isCorrect ? Colors.green.shade200 : Colors.pink.shade200,
                 ),
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    _isCorrect ? Icons.check_circle : Icons.refresh,
-                    color: _isCorrect ? Colors.green : Colors.orange,
+                    _isCorrect ? Icons.check_circle : Icons.favorite_outline,
+                    color: _isCorrect ? Colors.green : Colors.pink.shade400,
                   ),
                   const SizedBox(width: 8),
                   Text(
                     _isCorrect ? loc.badgeCorrect : loc.badgeNeedsImprovement,
                     style: TextStyle(
-                      color: _isCorrect ? Colors.green.shade700 : Colors.orange.shade700,
+                      color: _isCorrect ? Colors.green.shade700 : Colors.pink.shade700,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ],
               ),
             ),
+            // 不正解の場合のみ：インラインヒント表示
+            if (!_isCorrect && _furigana != null && _furigana!.isNotEmpty) ...[
+              const SizedBox(height: 12),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(color: Colors.pink.shade100),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      loc.hintLabel,
+                      style: TextStyle(
+                        fontSize: 13,
+                        color: Colors.pink.shade400,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 6),
+                    Text(
+                      _furigana!,
+                      style: const TextStyle(fontSize: 18, color: Colors.black87),
+                    ),
+                    Text(
+                      hiraganaToRomaji(_furigana!),
+                      style: TextStyle(fontSize: 14, color: Colors.grey.shade500),
+                    ),
+                  ],
+                ),
+              ),
+            ],
             const SizedBox(height: 16),
             // ▶ もう一度聞く
             OutlinedButton.icon(

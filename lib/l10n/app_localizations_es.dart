@@ -611,7 +611,10 @@ class AppLocalizationsEs extends AppLocalizations {
   String get badgeCorrect => 'Correcta';
 
   @override
-  String get badgeNeedsImprovement => 'Necesita mejora';
+  String get badgeNeedsImprovement => '¡Casi! Inténtalo una vez más 🌸';
+
+  @override
+  String get hintLabel => '💡 Inténtalo así:';
 
   @override
   String get originalTranslationHeader => 'Traducción original';
@@ -644,11 +647,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get tumugiAccuracyIncorrect =>
-      'Hmm, the meaning is a little off... let\'s look together!';
+      '¡Casi! Escucha otra vez y prueba de nuevo☺️ ';
 
   @override
   String get kasumiAccuracyIncorrect =>
-      'The meaning is off... but hey, I know you\'ll get it next time.';
+      'Hmm... casi. Pero sé que puedes. Inténtalo de nuevo.';
 
   @override
   String get tsumugiIntroTitle => 'はじめまして、紬です';

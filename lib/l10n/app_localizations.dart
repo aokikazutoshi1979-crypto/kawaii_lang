@@ -1178,8 +1178,14 @@ abstract class AppLocalizations {
   /// 不正解ラベル／改善が必要
   ///
   /// In ja, this message translates to:
-  /// **'改善点があります'**
+  /// **'惜しい！もう一回やってみよう 🌸'**
   String get badgeNeedsImprovement;
+
+  /// 不正解時のインラインヒントラベル
+  ///
+  /// In ja, this message translates to:
+  /// **'💡 こう言ってみよう：'**
+  String get hintLabel;
 
   /// オリジナル文の翻訳の見出し
   ///
@@ -1232,13 +1238,13 @@ abstract class AppLocalizations {
   /// 紬：ユーザーの回答が不正解（意味NG）のときのセリフ
   ///
   /// In ja, this message translates to:
-  /// **'意味が少しズレちゃったかな…一緒に確認しようね！'**
+  /// **'惜しかった！もう一回聞いてから、一緒に言ってみよう☺️ '**
   String get tumugiAccuracyIncorrect;
 
   /// 香澄：ユーザーの回答が不正解（意味NG）のときのセリフ
   ///
   /// In ja, this message translates to:
-  /// **'意味が違うわよ…でもまあ、次はできるでしょ。'**
+  /// **'う〜ん、惜しかったね。でも次はきっとできる。もう一回。'**
   String get kasumiAccuracyIncorrect;
 
   /// No description provided for @tsumugiIntroTitle.

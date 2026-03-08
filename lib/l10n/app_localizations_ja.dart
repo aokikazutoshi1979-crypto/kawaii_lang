@@ -587,7 +587,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get badgeCorrect => '正解';
 
   @override
-  String get badgeNeedsImprovement => '改善点があります';
+  String get badgeNeedsImprovement => '惜しい！もう一回やってみよう 🌸';
+
+  @override
+  String get hintLabel => '💡 こう言ってみよう：';
 
   @override
   String get originalTranslationHeader => 'オリジナルの翻訳';
@@ -616,10 +619,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get kasumiAccuracyCorrect => '…ま、まあ意味はあってるわよ。べ、別にすごいって言ってるわけじゃないけど。';
 
   @override
-  String get tumugiAccuracyIncorrect => '意味が少しズレちゃったかな…一緒に確認しようね！';
+  String get tumugiAccuracyIncorrect => '惜しかった！もう一回聞いてから、一緒に言ってみよう☺️ ';
 
   @override
-  String get kasumiAccuracyIncorrect => '意味が違うわよ…でもまあ、次はできるでしょ。';
+  String get kasumiAccuracyIncorrect => 'う〜ん、惜しかったね。でも次はきっとできる。もう一回。';
 
   @override
   String get tsumugiIntroTitle => 'はじめまして、紬です';

@@ -346,8 +346,10 @@
   "@userAnswerHeader": { "description": "ユーザーの回答見出し" },
   "badgeCorrect": "正解",
   "@badgeCorrect": { "description": "正解ラベル" },
-  "badgeNeedsImprovement": "改善点があります",
+  "badgeNeedsImprovement": "惜しい！もう一回やってみよう 🌸",
   "@badgeNeedsImprovement": { "description": "不正解ラベル／改善が必要" },
+  "hintLabel": "💡 こう言ってみよう：",
+  "@hintLabel": { "description": "不正解時のインラインヒントラベル" },
   "originalTranslationHeader": "オリジナルの翻訳",
   "@originalTranslationHeader": {"description": "オリジナル文の翻訳の見出し"},
   "originalTranscriptionHeader": "オリジナルの音声転写",
@@ -375,11 +377,11 @@
   "@kasumiAccuracyCorrect": {
     "description": "香澄：ユーザーの回答が正解（意味OK）のときのセリフ"
   },
-  "tumugiAccuracyIncorrect": "意味が少しズレちゃったかな…一緒に確認しようね！",
+  "tumugiAccuracyIncorrect": "惜しかった！もう一回聞いてから、一緒に言ってみよう☺️ ",
   "@tumugiAccuracyIncorrect": {
     "description": "紬：ユーザーの回答が不正解（意味NG）のときのセリフ"
   },
-  "kasumiAccuracyIncorrect": "意味が違うわよ…でもまあ、次はできるでしょ。",
+  "kasumiAccuracyIncorrect": "う〜ん、惜しかったね。でも次はきっとできる。もう一回。",
   "@kasumiAccuracyIncorrect": {
     "description": "香澄：ユーザーの回答が不正解（意味NG）のときのセリフ"
   },

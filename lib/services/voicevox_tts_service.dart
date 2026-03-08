@@ -76,6 +76,12 @@ class VoicevoxTtsService {
         .trim();
     if (text.isEmpty) return;
 
+    // 疑問文の語尾イントネーション: ASCII '?' → 全角 '？' に変換
+    // VOICEVOX は '？' を検知して is_interrogative=true を自動設定し、語尾ピッチを上昇させる
+    if (text.endsWith('?')) {
+      text = '${text.substring(0, text.length - 1)}？';
+    }
+
     if (text.length > _maxChars) text = text.substring(0, _maxChars);
 
     // スロットル
@@ -267,6 +273,11 @@ class VoicevoxTtsService {
   }) async {
     text = text.trim();
     if (text.isEmpty) return false;
+
+    // 疑問文の語尾イントネーション: ASCII '?' → 全角 '？' に変換
+    if (text.endsWith('?')) {
+      text = '${text.substring(0, text.length - 1)}？';
+    }
     final cacheKey = '$character:$text';
     Uint8List bytes;
 
