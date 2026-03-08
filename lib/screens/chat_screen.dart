@@ -139,6 +139,7 @@ class _ChatScreenState extends State<ChatScreen> {
   // P1-1: ふりがな表示
   bool _showFurigana = true;
   String? _currentTargetRomaji; // リスニング問題のローマ字（キャッシュ）
+  final Map<String, String> _hintRomajiCache = {}; // ヒントボタンのローマ字キャッシュ
 
   // P1-3: 日次会話上限
   bool _isPremium = false;
@@ -1152,14 +1153,23 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   /// ヒントシートを表示する
-  void _showHintSheet() {
+  Future<void> _showHintSheet() async {
     final loc = AppLocalizations.of(context)!;
 
     final jaText = (_questionManager.current[_targetCode] ?? '').trim();
     if (jaText.isEmpty) return;
 
-    final romaji = hiraganaToRomaji(jaText);
+    // キャッシュがあればAPI呼び出しをスキップ
+    final String romaji;
+    if (_hintRomajiCache.containsKey(jaText)) {
+      romaji = _hintRomajiCache[jaText]!;
+    } else {
+      final hiragana = await _romajiForJapanese(jaText, loc) ?? jaText;
+      romaji = hiraganaToRomaji(hiragana);
+      _hintRomajiCache[jaText] = romaji;
+    }
 
+    if (!mounted) return;
     showModalBottomSheet(
       context: context,
       barrierColor: Colors.black.withOpacity(0.4),

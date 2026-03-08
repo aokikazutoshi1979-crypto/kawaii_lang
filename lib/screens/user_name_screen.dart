@@ -3,8 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:kawaii_lang/l10n/app_localizations.dart';
-import 'category_selection_screen.dart';
-import 'level_selection_screen.dart';
+import 'purpose_selection_screen.dart';
 
 class UserNameScreen extends StatefulWidget {
   const UserNameScreen({
@@ -65,7 +64,7 @@ class _UserNameScreenState extends State<UserNameScreen> {
     if (widget.isOnboarding) {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (_) => const LevelSelectionScreen()),
+        MaterialPageRoute(builder: (_) => const PurposeSelectionScreen()),
       );
     } else {
       Navigator.pop(context, name);

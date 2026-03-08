@@ -825,6 +825,29 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get purposeSelectQuestion => 'Tại sao bạn muốn học tiếng Nhật? 🌸';
+
+  @override
+  String get purposeSelectOptionZeroTitle => 'Bắt đầu từ đầu';
+
+  @override
+  String get purposeSelectOptionZeroSub => 'Tôi chưa bao giờ học tiếng Nhật';
+
+  @override
+  String get purposeSelectOptionLearnedTitle => 'Tôi đã học một chút';
+
+  @override
+  String get purposeSelectOptionLearnedSub =>
+      'Tôi biết một số từ hoặc hiragana';
+
+  @override
+  String get purposeSelectOptionTravelTitle => 'Tôi muốn dùng khi đi du lịch';
+
+  @override
+  String get purposeSelectOptionTravelSub =>
+      'Tôi đến Nhật Bản và muốn có thể nói chuyện';
+
+  @override
   String get levelSelectQuestion => 'Trình độ tiếng Nhật của bạn là gì? 🌸';
 
   @override

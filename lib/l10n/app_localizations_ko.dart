@@ -804,6 +804,27 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get purposeSelectQuestion => '일본어를 배우는 목적이 무엇인가요？🌸';
+
+  @override
+  String get purposeSelectOptionZeroTitle => '처음부터 시작하고 싶어요';
+
+  @override
+  String get purposeSelectOptionZeroSub => '일본어를 전혀 배운 적이 없어요';
+
+  @override
+  String get purposeSelectOptionLearnedTitle => '조금 배운 적이 있어요';
+
+  @override
+  String get purposeSelectOptionLearnedSub => '히라가나나 단어를 조금 알아요';
+
+  @override
+  String get purposeSelectOptionTravelTitle => '여행에서 쓰고 싶어요';
+
+  @override
+  String get purposeSelectOptionTravelSub => '일본 여행에서 말할 수 있게 되고 싶어요';
+
+  @override
   String get levelSelectQuestion => '일본어 실력이 어느 정도예요? 🌸';
 
   @override

@@ -801,6 +801,27 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get purposeSelectQuestion => '日本語を学ぶ目的は何ですか？🌸';
+
+  @override
+  String get purposeSelectOptionZeroTitle => 'ゼロから始めたい';
+
+  @override
+  String get purposeSelectOptionZeroSub => '日本語はまったく初めてです';
+
+  @override
+  String get purposeSelectOptionLearnedTitle => '少し学んだことがある';
+
+  @override
+  String get purposeSelectOptionLearnedSub => 'ひらがなや単語を少し知っています';
+
+  @override
+  String get purposeSelectOptionTravelTitle => '旅行で使いたい';
+
+  @override
+  String get purposeSelectOptionTravelSub => '日本旅行に役立つ日本語を話したい';
+
+  @override
   String get levelSelectQuestion => '日本語はどれくらいわかる？🌸';
 
   @override

@@ -795,6 +795,27 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get purposeSelectQuestion => '你学日语的目的是什么？🌸';
+
+  @override
+  String get purposeSelectOptionZeroTitle => '从零开始';
+
+  @override
+  String get purposeSelectOptionZeroSub => '我完全没有学过日语';
+
+  @override
+  String get purposeSelectOptionLearnedTitle => '学过一点点';
+
+  @override
+  String get purposeSelectOptionLearnedSub => '我知道一些单词或平假名';
+
+  @override
+  String get purposeSelectOptionTravelTitle => '旅游时使用';
+
+  @override
+  String get purposeSelectOptionTravelSub => '想在日本旅行时能开口说话';
+
+  @override
   String get levelSelectQuestion => '你的日语水平是？🌸';
 
   @override
@@ -1572,6 +1593,27 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String dailyCompleteTodayCount(Object count) {
     return '今天練了$count次！🌟';
   }
+
+  @override
+  String get purposeSelectQuestion => '你學日語的目的是什麼？🌸';
+
+  @override
+  String get purposeSelectOptionZeroTitle => '從零開始';
+
+  @override
+  String get purposeSelectOptionZeroSub => '我完全沒有學過日語';
+
+  @override
+  String get purposeSelectOptionLearnedTitle => '學過一點點';
+
+  @override
+  String get purposeSelectOptionLearnedSub => '我知道一些單詞或平假名';
+
+  @override
+  String get purposeSelectOptionTravelTitle => '旅遊時使用';
+
+  @override
+  String get purposeSelectOptionTravelSub => '想在日本旅遊時能開口說話';
 
   @override
   String get levelSelectQuestion => '你的日語程度是？🌸';

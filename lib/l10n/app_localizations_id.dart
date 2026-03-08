@@ -831,6 +831,31 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String get purposeSelectQuestion =>
+      'Mengapa kamu ingin belajar bahasa Jepang? 🌸';
+
+  @override
+  String get purposeSelectOptionZeroTitle => 'Mulai dari nol';
+
+  @override
+  String get purposeSelectOptionZeroSub =>
+      'Saya belum pernah belajar bahasa Jepang';
+
+  @override
+  String get purposeSelectOptionLearnedTitle => 'Sudah belajar sedikit';
+
+  @override
+  String get purposeSelectOptionLearnedSub =>
+      'Saya tahu beberapa kata atau hiragana';
+
+  @override
+  String get purposeSelectOptionTravelTitle => 'Ingin pakai saat traveling';
+
+  @override
+  String get purposeSelectOptionTravelSub =>
+      'Saya ke Jepang dan ingin bisa berbicara';
+
+  @override
   String get levelSelectQuestion => 'Apa level bahasa Jepang-mu? 🌸';
 
   @override

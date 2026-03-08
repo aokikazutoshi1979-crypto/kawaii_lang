@@ -1583,6 +1583,48 @@ abstract class AppLocalizations {
   /// **'今日{count}問話せたよ！🌟'**
   String dailyCompleteTodayCount(Object count);
 
+  /// No description provided for @purposeSelectQuestion.
+  ///
+  /// In ja, this message translates to:
+  /// **'日本語を学ぶ目的は何ですか？🌸'**
+  String get purposeSelectQuestion;
+
+  /// No description provided for @purposeSelectOptionZeroTitle.
+  ///
+  /// In ja, this message translates to:
+  /// **'ゼロから始めたい'**
+  String get purposeSelectOptionZeroTitle;
+
+  /// No description provided for @purposeSelectOptionZeroSub.
+  ///
+  /// In ja, this message translates to:
+  /// **'日本語はまったく初めてです'**
+  String get purposeSelectOptionZeroSub;
+
+  /// No description provided for @purposeSelectOptionLearnedTitle.
+  ///
+  /// In ja, this message translates to:
+  /// **'少し学んだことがある'**
+  String get purposeSelectOptionLearnedTitle;
+
+  /// No description provided for @purposeSelectOptionLearnedSub.
+  ///
+  /// In ja, this message translates to:
+  /// **'ひらがなや単語を少し知っています'**
+  String get purposeSelectOptionLearnedSub;
+
+  /// No description provided for @purposeSelectOptionTravelTitle.
+  ///
+  /// In ja, this message translates to:
+  /// **'旅行で使いたい'**
+  String get purposeSelectOptionTravelTitle;
+
+  /// No description provided for @purposeSelectOptionTravelSub.
+  ///
+  /// In ja, this message translates to:
+  /// **'日本旅行に役立つ日本語を話したい'**
+  String get purposeSelectOptionTravelSub;
+
   /// No description provided for @levelSelectQuestion.
   ///
   /// In ja, this message translates to:

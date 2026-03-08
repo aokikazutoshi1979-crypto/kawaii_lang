@@ -836,6 +836,30 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
+  String get purposeSelectQuestion => 'Warum möchtest du Japanisch lernen? 🌸';
+
+  @override
+  String get purposeSelectOptionZeroTitle => 'Von Null anfangen';
+
+  @override
+  String get purposeSelectOptionZeroSub =>
+      'Ich habe noch nie Japanisch gelernt';
+
+  @override
+  String get purposeSelectOptionLearnedTitle => 'Ich habe etwas gelernt';
+
+  @override
+  String get purposeSelectOptionLearnedSub =>
+      'Ich kenne einige Wörter oder Hiragana';
+
+  @override
+  String get purposeSelectOptionTravelTitle => 'Ich will es auf Reisen nutzen';
+
+  @override
+  String get purposeSelectOptionTravelSub =>
+      'Ich besuche Japan und möchte sprechen können';
+
+  @override
   String get levelSelectQuestion => 'Wie ist dein Japanisch-Niveau? 🌸';
 
   @override

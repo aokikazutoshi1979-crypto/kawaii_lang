@@ -422,6 +422,13 @@
       "count": {}
     }
   },
+  "purposeSelectQuestion": "Why do you want to learn Japanese? 🌸",
+  "purposeSelectOptionZeroTitle": "Start from zero",
+  "purposeSelectOptionZeroSub": "I've never studied Japanese before",
+  "purposeSelectOptionLearnedTitle": "I've studied a little",
+  "purposeSelectOptionLearnedSub": "I know some words or hiragana",
+  "purposeSelectOptionTravelTitle": "I want to use it for travel",
+  "purposeSelectOptionTravelSub": "I'm visiting Japan and want to speak",
   "levelSelectQuestion": "What's your Japanese level? 🌸",
   "levelSelectOptionStarterTitle": "Complete Beginner",
   "levelSelectOptionStarterSub": "I don't know any Japanese yet",
