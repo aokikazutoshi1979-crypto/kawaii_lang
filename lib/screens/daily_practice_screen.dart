@@ -49,6 +49,7 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
 
   bool get _hasReachedLimit => !_isPremiumUser && _todaysPracticeCount >= _freeLimit;
   bool _isListeningTts = false; // VOICEVOX読み込み中フラグ
+  bool _limitSheetShown = false; // 制限BottomSheetを既に表示済みか
 
   // 波形用振幅キュー（チャット画面と同じ方式）
   final Queue<double> _ampQueue = Queue<double>();
@@ -556,70 +557,128 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
     );
   }
 
-  Widget _buildLimitCard(AppLocalizations loc) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
-      decoration: BoxDecoration(
-        color: Colors.pink.shade50,
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: Colors.pink.shade100),
+  void _showLimitDialog() {
+    final loc = AppLocalizations.of(context)!;
+    final navigator = Navigator.of(context);
+    showModalBottomSheet(
+      context: context,
+      barrierColor: Colors.black.withOpacity(0.4),
+      isDismissible: true,
+      enableDrag: true,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
       ),
-      child: Column(
-        children: [
-          Text(
-            loc.dailyLimitTitle,
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-              color: Colors.pink.shade700,
-            ),
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: 10),
-          Text(
-            loc.dailyLimitMessage,
-            style: TextStyle(fontSize: 14, color: Colors.pink.shade600),
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: 20),
-          SizedBox(
-            width: double.infinity,
-            child: ElevatedButton(
-              onPressed: () => Navigator.of(context).push(
-                MaterialPageRoute(builder: (_) => const SubscriptionScreen()),
-              ).then((_) async {
-                if (!mounted) return;
-                final premium = await SubscriptionService.instance.checkSubscriptionOnDevice();
-                if (mounted) setState(() => _isPremium = premium);
-              }),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.pink.shade400,
-                foregroundColor: Colors.white,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-                padding: const EdgeInsets.symmetric(vertical: 14),
-              ),
-              child: Text(loc.dailyLimitUpgrade),
-            ),
-          ),
-          const SizedBox(height: 10),
-          SizedBox(
-            width: double.infinity,
-            child: TextButton(
-              onPressed: () => Navigator.of(context).pop(),
-              child: Text(
-                loc.dailyLimitClose,
-                style: TextStyle(color: Colors.pink.shade400),
+      builder: (_) => Padding(
+        padding: const EdgeInsets.fromLTRB(24, 20, 24, 40),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            // ドラッグハンドル
+            Container(
+              width: 40,
+              height: 4,
+              decoration: BoxDecoration(
+                color: Colors.grey.shade300,
+                borderRadius: BorderRadius.circular(2),
               ),
             ),
-          ),
-        ],
+            const SizedBox(height: 20),
+
+            // キャラクターアバター
+            CircleAvatar(
+              radius: 36,
+              backgroundImage: AssetImage(
+                CharacterAssetService.chatAvatar(_selectedCharacter),
+              ),
+            ),
+            const SizedBox(height: 16),
+
+            // タイトル（お祝い）
+            Text(
+              loc.dailyLimitTitle,
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Color(0xFF1F2937),
+              ),
+            ),
+            const SizedBox(height: 10),
+
+            // メッセージ
+            Text(
+              loc.dailyLimitMessage,
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 15, color: Colors.grey.shade600),
+            ),
+            const SizedBox(height: 28),
+
+            // メインCTA：「また明日ね」
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () {
+                  navigator.pop(); // シートを閉じる
+                  navigator.pop(); // HomeScreenに戻る
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.pink.shade300,
+                  foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  padding: const EdgeInsets.symmetric(vertical: 14),
+                ),
+                child: Text(
+                  loc.dailyLimitClose,
+                  style: const TextStyle(fontSize: 16),
+                ),
+              ),
+            ),
+            const SizedBox(height: 12),
+
+            // サブCTA：「プランを見る」（控えめ）
+            SizedBox(
+              width: double.infinity,
+              child: TextButton(
+                onPressed: () {
+                  navigator.pop(); // シートを閉じる
+                  navigator.push(
+                    MaterialPageRoute(
+                      builder: (_) => const SubscriptionScreen(),
+                    ),
+                  ).then((_) async {
+                    if (!mounted) return;
+                    final premium = await SubscriptionService.instance
+                        .checkSubscriptionOnDevice();
+                    if (mounted) setState(() => _isPremium = premium);
+                    // プレミアムになっていなければ制限シートは再表示しない
+                  });
+                },
+                child: Text(
+                  loc.dailyLimitUpgrade,
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.grey.shade500,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
 
   Widget _buildStepArea(AppLocalizations loc) {
     if (_hasReachedLimit) {
-      return _buildLimitCard(loc);
+      if (!_limitSheetShown) {
+        _limitSheetShown = true;
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (mounted) _showLimitDialog();
+        });
+      }
+      return const SizedBox.shrink();
     }
     if (_isProcessing) {
       return const Center(child: CircularProgressIndicator());

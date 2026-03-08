@@ -2973,12 +2973,22 @@ class _ChatScreenState extends State<ChatScreen> {
                   padding: const EdgeInsets.symmetric(vertical: 4.0),
                   child: TextButton.icon(
                     onPressed: _showHintSheet,
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.white.withOpacity(0.85),
+                      foregroundColor: Colors.pink.shade400,
+                      side: BorderSide(color: Colors.pink.shade300, width: 1.2),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+                    ),
                     icon: const Text('💡', style: TextStyle(fontSize: 16)),
                     label: Text(
                       AppLocalizations.of(context)!.chatHintButtonLabel,
                       style: TextStyle(
                         color: Colors.pink.shade400,
                         fontSize: 14,
+                        fontWeight: FontWeight.w600,
                       ),
                     ),
                   ),
