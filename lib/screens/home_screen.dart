@@ -85,6 +85,13 @@ class _HomeScreenState extends State<HomeScreen> {
 
   bool get _isJa => _nativeCode == 'ja';
 
+  String _progressSuffix() {
+    if (_isPremium) return '';
+    if (_todayPracticeCount >= _freeLimit) return _isJa ? '\n今日の練習完了！🎉' : '\nToday\'s practice complete! 🎉';
+    if (_todayPracticeCount > 0) return _isJa ? '\n今日 $_todayPracticeCount/$_freeLimit 完了' : '\nToday $_todayPracticeCount/$_freeLimit done';
+    return _isJa ? '\n今日 0/$_freeLimit 完了' : '\nToday 0/$_freeLimit done';
+  }
+
   List<Map<String, dynamic>> _getMissions() {
     final dayIndex = DateTime.now().weekday % 3;
     if (_isJa) {
@@ -92,11 +99,11 @@ class _HomeScreenState extends State<HomeScreen> {
         {
           'icon': '🗣️',
           'title': '今日の練習',
-          'subtitle': dayIndex == 0
-              ? (_isPremium ? '駅で道を聞こう' : '駅で道を聞こう（10問）')
+          'subtitle': (dayIndex == 0
+              ? '駅で道を聞こう'
               : dayIndex == 1
-                  ? (_isPremium ? 'レストランで注文しよう' : 'レストランで注文しよう（10問）')
-                  : (_isPremium ? 'ショッピングで話そう' : 'ショッピングで話そう（10問）'),
+                  ? 'レストランで注文しよう'
+                  : 'ショッピングで話そう') + _progressSuffix(),
           'color': const Color(0xFFFCE4EC),
         },
         {
@@ -111,11 +118,11 @@ class _HomeScreenState extends State<HomeScreen> {
         {
           'icon': '🗣️',
           'title': "Today's Practice",
-          'subtitle': dayIndex == 0
-              ? (_isPremium ? 'Ask for directions at the station' : 'Ask for directions at the station (10 questions)')
+          'subtitle': (dayIndex == 0
+              ? 'Ask for directions at the station'
               : dayIndex == 1
-                  ? (_isPremium ? 'Order at a restaurant' : 'Order at a restaurant (10 questions)')
-                  : (_isPremium ? 'Shop and talk' : 'Shop and talk (10 questions)'),
+                  ? 'Order at a restaurant'
+                  : 'Shop and talk') + _progressSuffix(),
           'color': const Color(0xFFFCE4EC),
         },
         {
@@ -183,9 +190,13 @@ class _HomeScreenState extends State<HomeScreen> {
                         ],
                       ),
                       child: Text(
-                        _isJa
-                            ? '今日も一緒に練習しよう！☺️'
-                            : "Let's practice together today! ☺️",
+                        _todayPracticeCount == 0
+                            ? (_isJa ? '今日も一緒に練習しよう！☺️' : "Let's practice together today! ☺️")
+                            : _todayPracticeCount >= _freeLimit
+                                ? (_isJa ? '今日の練習、バッチリだね！🔥' : "Today's practice is complete! 🔥")
+                                : (_isJa
+                                    ? '今日も$_todayPracticeCount問練習したね！☺️'
+                                    : "You've practiced $_todayPracticeCount time(s) today! ☺️"),
                         style: const TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.w600,
