@@ -33,6 +33,7 @@ import '../services/character_asset_service.dart';
 import '../services/voicevox_tts_service.dart';
 import '../services/subscription_service.dart';
 import 'subscription_screen.dart';
+import '../widgets/chat_bubble.dart' show hiraganaToRomaji;
 
 
 class ChatScreen extends StatefulWidget {
@@ -1148,6 +1149,113 @@ class _ChatScreenState extends State<ChatScreen> {
     final newCount = _dailyChatCount + 1;
     await prefs.setInt('daily_chat_count', newCount);
     if (mounted) setState(() => _dailyChatCount = newCount);
+  }
+
+  /// ヒントシートを表示する
+  void _showHintSheet() {
+    final loc = AppLocalizations.of(context)!;
+
+    final jaText = (_questionManager.current[_targetCode] ?? '').trim();
+    if (jaText.isEmpty) return;
+
+    final romaji = hiraganaToRomaji(jaText);
+
+    showModalBottomSheet(
+      context: context,
+      barrierColor: Colors.black.withOpacity(0.4),
+      isDismissible: true,
+      enableDrag: true,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+      ),
+      builder: (_) => Padding(
+        padding: const EdgeInsets.fromLTRB(24, 20, 24, 40),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              width: 40,
+              height: 4,
+              decoration: BoxDecoration(
+                color: Colors.grey.shade300,
+                borderRadius: BorderRadius.circular(2),
+              ),
+            ),
+            const SizedBox(height: 20),
+            CircleAvatar(
+              radius: 32,
+              backgroundImage: AssetImage(
+                CharacterAssetService.chatAvatar(_selectedCharacter),
+              ),
+            ),
+            const SizedBox(height: 16),
+            Text(
+              loc.hintLabel,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 15,
+                color: Colors.pink.shade400,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 16),
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+              decoration: BoxDecoration(
+                color: Colors.pink.shade50,
+                borderRadius: BorderRadius.circular(16),
+                border: Border.all(color: Colors.pink.shade100),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text(
+                    jaText,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF1F2937),
+                    ),
+                  ),
+                  if (romaji.isNotEmpty && romaji != jaText) ...[
+                    const SizedBox(height: 6),
+                    Text(
+                      romaji,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.grey.shade500,
+                      ),
+                    ),
+                  ],
+                ],
+              ),
+            ),
+            const SizedBox(height: 24),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () => Navigator.of(context).pop(),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.pink.shade300,
+                  foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  padding: const EdgeInsets.symmetric(vertical: 14),
+                ),
+                child: Text(
+                  loc.chatHintSheetClose,
+                  style: const TextStyle(fontSize: 16),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 
   /// P1-3: 上限到達ダイアログ（温かいトーン）
@@ -2858,6 +2966,22 @@ class _ChatScreenState extends State<ChatScreen> {
                       });
                     }
                   },
+                ),
+
+                // 💡 ヒントボタン
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 4.0),
+                  child: TextButton.icon(
+                    onPressed: _showHintSheet,
+                    icon: const Text('💡', style: TextStyle(fontSize: 16)),
+                    label: Text(
+                      AppLocalizations.of(context)!.chatHintButtonLabel,
+                      style: TextStyle(
+                        color: Colors.pink.shade400,
+                        fontSize: 14,
+                      ),
+                    ),
+                  ),
                 ),
 
                 KeyboardGuideButton(targetLanguage: widget.targetLang),

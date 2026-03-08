@@ -594,6 +594,12 @@ class AppLocalizationsKo extends AppLocalizations {
   String get hintLabel => '💡 이렇게 말해봐요：';
 
   @override
+  String get chatHintButtonLabel => '뭐라고 해야 해요？';
+
+  @override
+  String get chatHintSheetClose => '알겠어요！👍';
+
+  @override
   String get originalTranslationHeader => '원문 번역';
 
   @override

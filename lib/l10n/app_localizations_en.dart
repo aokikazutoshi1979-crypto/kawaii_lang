@@ -609,6 +609,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get hintLabel => '💡 Try saying it like this:';
 
   @override
+  String get chatHintButtonLabel => 'What should I say?';
+
+  @override
+  String get chatHintSheetClose => 'Got it! 👍';
+
+  @override
   String get originalTranslationHeader => 'Original translation';
 
   @override

@@ -587,6 +587,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get hintLabel => '💡 试着这样说：';
 
   @override
+  String get chatHintButtonLabel => '我该说什么？';
+
+  @override
+  String get chatHintSheetClose => '明白了！👍';
+
+  @override
   String get originalTranslationHeader => '原文翻译';
 
   @override
@@ -1400,6 +1406,12 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get hintLabel => '💡 試著這樣說：';
+
+  @override
+  String get chatHintButtonLabel => '我該說什麼？';
+
+  @override
+  String get chatHintSheetClose => '明白了！👍';
 
   @override
   String get originalTranslationHeader => '原文翻譯';

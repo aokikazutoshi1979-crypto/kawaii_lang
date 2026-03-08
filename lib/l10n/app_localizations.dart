@@ -1187,6 +1187,18 @@ abstract class AppLocalizations {
   /// **'💡 こう言ってみよう：'**
   String get hintLabel;
 
+  /// ヒントボタンのラベル
+  ///
+  /// In ja, this message translates to:
+  /// **'何て言えばいい？'**
+  String get chatHintButtonLabel;
+
+  /// ヒントシートの閉じるボタン
+  ///
+  /// In ja, this message translates to:
+  /// **'わかった！👍'**
+  String get chatHintSheetClose;
+
   /// オリジナル文の翻訳の見出し
   ///
   /// In ja, this message translates to:

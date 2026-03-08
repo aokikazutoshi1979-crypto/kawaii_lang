@@ -605,6 +605,12 @@ class AppLocalizationsVi extends AppLocalizations {
   String get hintLabel => '💡 Thử nói như thế này:';
 
   @override
+  String get chatHintButtonLabel => 'Tôi nên nói gì?';
+
+  @override
+  String get chatHintSheetClose => 'Hiểu rồi! 👍';
+
+  @override
   String get originalTranslationHeader => 'Bản dịch gốc';
 
   @override

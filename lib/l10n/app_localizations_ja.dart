@@ -593,6 +593,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get hintLabel => '💡 こう言ってみよう：';
 
   @override
+  String get chatHintButtonLabel => '何て言えばいい？';
+
+  @override
+  String get chatHintSheetClose => 'わかった！👍';
+
+  @override
   String get originalTranslationHeader => 'オリジナルの翻訳';
 
   @override

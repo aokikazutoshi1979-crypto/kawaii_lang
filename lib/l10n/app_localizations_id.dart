@@ -611,6 +611,12 @@ class AppLocalizationsId extends AppLocalizations {
   String get hintLabel => '💡 Coba katakan seperti ini:';
 
   @override
+  String get chatHintButtonLabel => 'Apa yang harus saya katakan?';
+
+  @override
+  String get chatHintSheetClose => 'Mengerti! 👍';
+
+  @override
   String get originalTranslationHeader => 'Terjemahan asli';
 
   @override
