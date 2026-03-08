@@ -106,12 +106,6 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
         _karaokeIndex = 0;
         _isLoading = false;
       });
-      // 既に上限に達していれば即ダイアログ表示
-      if (!premium && !hasSubOnDevice && !SubscriptionService.instance.subscriptionActiveNotifier.value && count >= _freeLimit) {
-        WidgetsBinding.instance.addPostFrameCallback((_) {
-          if (mounted) _showLimitDialog();
-        });
-      }
       _fetchFurigana();
     }
   }
@@ -279,53 +273,6 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
       _isProcessing = false;
       _attemptCount++;
     });
-  }
-
-  // ---------- 制限ダイアログ ----------
-
-  void _showLimitDialog() {
-    final loc = AppLocalizations.of(context)!;
-    // ダイアログを閉じた後も有効なNavigatorを事前キャプチャ
-    final navigator = Navigator.of(context);
-    showDialog(
-      context: context,
-      barrierDismissible: false,
-      builder: (ctx) => AlertDialog(
-        title: Text(loc.dailyLimitTitle),
-        content: Text(loc.dailyLimitMessage),
-        actions: [
-          TextButton(
-            onPressed: () {
-              navigator.pop(); // ダイアログを閉じる
-              navigator.pop(); // HomeScreenに戻る
-            },
-            child: Text(loc.dailyLimitClose),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              navigator.pop(); // ダイアログを閉じる
-              navigator.push(
-                MaterialPageRoute(builder: (_) => const SubscriptionScreen()),
-              ).then((_) async {
-                // サブスク画面から戻ってきた時にプレミアム状態を再確認
-                if (!mounted) return;
-                final premium = await SubscriptionService.instance.checkSubscriptionOnDevice();
-                if (mounted) setState(() => _isPremium = premium);
-                // まだ制限中なら再度ダイアログを表示
-                if (mounted && _hasReachedLimit) {
-                  _showLimitDialog();
-                }
-              });
-            },
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.pink.shade400,
-              foregroundColor: Colors.white,
-            ),
-            child: Text(loc.dailyLimitUpgrade),
-          ),
-        ],
-      ),
-    );
   }
 
   // ---------- 次のフレーズを読み込む ----------
@@ -609,7 +556,71 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
     );
   }
 
+  Widget _buildLimitCard(AppLocalizations loc) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
+      decoration: BoxDecoration(
+        color: Colors.pink.shade50,
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: Colors.pink.shade100),
+      ),
+      child: Column(
+        children: [
+          Text(
+            loc.dailyLimitTitle,
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              color: Colors.pink.shade700,
+            ),
+            textAlign: TextAlign.center,
+          ),
+          const SizedBox(height: 10),
+          Text(
+            loc.dailyLimitMessage,
+            style: TextStyle(fontSize: 14, color: Colors.pink.shade600),
+            textAlign: TextAlign.center,
+          ),
+          const SizedBox(height: 20),
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton(
+              onPressed: () => Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const SubscriptionScreen()),
+              ).then((_) async {
+                if (!mounted) return;
+                final premium = await SubscriptionService.instance.checkSubscriptionOnDevice();
+                if (mounted) setState(() => _isPremium = premium);
+              }),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.pink.shade400,
+                foregroundColor: Colors.white,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+                padding: const EdgeInsets.symmetric(vertical: 14),
+              ),
+              child: Text(loc.dailyLimitUpgrade),
+            ),
+          ),
+          const SizedBox(height: 10),
+          SizedBox(
+            width: double.infinity,
+            child: TextButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: Text(
+                loc.dailyLimitClose,
+                style: TextStyle(color: Colors.pink.shade400),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
   Widget _buildStepArea(AppLocalizations loc) {
+    if (_hasReachedLimit) {
+      return _buildLimitCard(loc);
+    }
     if (_isProcessing) {
       return const Center(child: CircularProgressIndicator());
     }
@@ -762,15 +773,8 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
                   ),
                 ).then((_) {
                   if (!mounted) return;
-                  if (_hasReachedLimit) {
-                    // 制限に達している → ダイアログ表示
-                    WidgetsBinding.instance.addPostFrameCallback((_) {
-                      if (mounted) _showLimitDialog();
-                    });
-                  } else {
-                    // まだ練習できる → 次のフレーズを読み込む
-                    _loadNextPhrase();
-                  }
+                  // 制限中でも次フレーズを読み込む（ステップエリアが制限カードを表示する）
+                  _loadNextPhrase();
                 });
               },
               style: ElevatedButton.styleFrom(
