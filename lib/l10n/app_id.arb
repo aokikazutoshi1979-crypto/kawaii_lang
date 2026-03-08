@@ -88,8 +88,8 @@
   "sceneTrial": "Pratinjau gratis",
   "todaysSpecialTitle": "Rekomendasi hari ini",
   "freePreviewSubtitle": "Pratinjau gratis",
-  "lockedMessage": "Tersedia dengan berlangganan paket.",
-  "resetPassword": "Atur ulang kata sandi",
+  "lockedMessage": "Pertanyaan ini hanya tersedia bagi pelanggan.",
+  "resetPassword": "Lupa kata sandi?",
   "enterEmailForReset": "Silakan masukkan alamat email untuk mengatur ulang kata sandi.",
   "sendResetEmail": "Kirim email reset",
   "passwordResetSent": "Email reset kata sandi telah dikirim.",
@@ -133,7 +133,6 @@
   "loginFailed": "Gagal masuk",
   "loginError": "Kesalahan masuk",
   "noAccountRegister": "Belum punya akun? Daftar di sini",
-  "resetPassword": "Lupa kata sandi?",
   "register": "Daftar",
   "registerFailed": "Gagal mendaftar",
   "purchaseSuccess": "Terima kasih atas pembelian Anda!",
@@ -143,7 +142,6 @@
   "@lockedTitle": {
     "description": "ロック中アラートのタイトル"
   },
-  "lockedMessage": "Pertanyaan ini hanya tersedia bagi pelanggan.",
   "@lockedMessage": {
     "description": "ロック中アラートの本文"
   },
@@ -213,7 +211,6 @@
   "@enterPassword": {
     "description": "アカウント削除時にパスワード再入力を促すダイアログタイトル"
   },
-  "password": "Kata sandi",
   "@password": {
     "description": "パスワード入力フィールドのプレースホルダー"
   },
@@ -221,7 +218,6 @@
   "@cancel": {
     "description": "ダイアログのキャンセルボタンラベル"
   },
-  "ok": "OK",
   "@ok": {
     "description": "ダイアログのOKボタンラベル"
   },
@@ -331,17 +327,29 @@
   "sceneculture_entertainment": "Budaya & Hiburan",
   "scenecommunity_life": "Kehidupan komunitas",
   "userAnswerHeader": "Jawaban Anda",
-  "@userAnswerHeader": { "description": "Header untuk jawaban pengguna" },
+  "@userAnswerHeader": {
+    "description": "Header untuk jawaban pengguna"
+  },
   "badgeCorrect": "Benar",
-  "@badgeCorrect": { "description": "Lencana benar" },
+  "@badgeCorrect": {
+    "description": "Lencana benar"
+  },
   "badgeNeedsImprovement": "Hampir! Coba sekali lagi 🌸",
-  "@badgeNeedsImprovement": { "description": "Lencana perlu perbaikan" },
+  "@badgeNeedsImprovement": {
+    "description": "Lencana perlu perbaikan"
+  },
   "hintLabel": "💡 Coba katakan seperti ini:",
-  "@hintLabel": { "description": "Label petunjuk inline saat jawaban salah" },
+  "@hintLabel": {
+    "description": "Label petunjuk inline saat jawaban salah"
+  },
   "chatHintButtonLabel": "Apa yang harus saya katakan?",
-  "@chatHintButtonLabel": { "description": "Label tombol petunjuk" },
+  "@chatHintButtonLabel": {
+    "description": "Label tombol petunjuk"
+  },
   "chatHintSheetClose": "Mengerti! 👍",
-  "@chatHintSheetClose": { "description": "Tombol tutup lembar petunjuk" },
+  "@chatHintSheetClose": {
+    "description": "Tombol tutup lembar petunjuk"
+  },
   "originalTranslationHeader": "Terjemahan asli",
   "originalTranscriptionHeader": "Transkripsi asli",
   "originalExplanationHeader": "Penjelasan asli",
@@ -409,5 +417,8 @@
   "dailyLimitTitle": "Latihan yang luar biasa hari ini! 🌸",
   "dailyLimitMessage": "Kamu sudah menyelesaikan 10 latihan gratis hari ini! Kembali besok, atau langganan Paket Dasar untuk latihan tak terbatas♪",
   "dailyLimitClose": "Kembali ke Beranda",
-  "dailyLimitUpgrade": "Lihat Paket Dasar ✨"
+  "dailyLimitUpgrade": "Lihat Paket Dasar ✨",
+  "characterSelectQuestion": "Dengan siapa kamu ingin berlatih? 🌸",
+  "characterSelectTumugiDescription": "Ceria dan baik hati! Dia akan menyemangatimu setiap hari ☺️",
+  "characterSelectKasumiDescription": "Keren dan dewasa. Sebenarnya sangat baik dengan caranya sendiri 😏"
 }

@@ -1690,6 +1690,24 @@ abstract class AppLocalizations {
   /// In ja, this message translates to:
   /// **'ベーシックプランを見る ✨'**
   String get dailyLimitUpgrade;
+
+  /// No description provided for @characterSelectQuestion.
+  ///
+  /// In ja, this message translates to:
+  /// **'どっちのキャラクターと練習する？🌸'**
+  String get characterSelectQuestion;
+
+  /// No description provided for @characterSelectTumugiDescription.
+  ///
+  /// In ja, this message translates to:
+  /// **'明るくて優しい！毎日笑顔で応援してくれるよ☺️'**
+  String get characterSelectTumugiDescription;
+
+  /// No description provided for @characterSelectKasumiDescription.
+  ///
+  /// In ja, this message translates to:
+  /// **'クールで大人っぽい。本当は優しいツンデレキャラ😏'**
+  String get characterSelectKasumiDescription;
 }
 
 class _AppLocalizationsDelegate

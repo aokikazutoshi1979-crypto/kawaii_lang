@@ -88,8 +88,8 @@
   "sceneTrial": "Free Preview",
   "todaysSpecialTitle": "Today’s Special",
   "freePreviewSubtitle": "Free Preview",
-  "lockedMessage": "Available for subscription to the plan.",
-  "resetPassword": "Reset Password",
+  "lockedMessage": "This question is for subscribers only.",
+  "resetPassword": "Forgot your password?",
   "enterEmailForReset": "Enter your email address to reset your password.",
   "sendResetEmail": "Send Reset Email",
   "passwordResetSent": "A password reset email has been sent.",
@@ -133,7 +133,6 @@
   "loginFailed": "Login failed",
   "loginError": "Login error",
   "noAccountRegister": "Don't have an account? Register here",
-  "resetPassword": "Forgot your password?",
   "register": "Register",
   "registerFailed": "Registration failed",
   "purchaseSuccess": "Thank you for your purchase!",
@@ -143,7 +142,6 @@
   "@lockedTitle": {
     "description": "Title for locked question alert"
   },
-  "lockedMessage": "This question is for subscribers only.",
   "@lockedMessage": {
     "description": "Body text for locked question alert"
   },
@@ -164,10 +162,8 @@
   "subscriptionTitle": "Subscription",
   "subscriptionPlanTitle": "<Subscription details>",
   "subscriptionPlanMonthly": "• Plan name: Basic Plan",
-
   "subscriptionPlanPeriod": "• Duration: 1 month",
   "subscriptionPlanPrice": "• Price: ¥1,500 (tax included)",
-
   "subscriptionPlanTrial": "• If you are not a member, you can only try the Free Preview.",
   "subscriptionCurrentStatusTitle": "Current Status",
   "subscriptionStatusSubscribed": "• Subscribed: Unlocks all learning scenarios, including the Free Preview, with unlimited use.",
@@ -181,7 +177,6 @@
   "languageSelectionTitle": "Select your native language",
   "languageSelectionDescription": "Please choose your language",
   "similarExpressionPrefix": "Alternative expression:",
-  "@@locale": "en",
   "guest": "GUEST",
   "@guest": {
     "description": "Display name for anonymous users in welcome message"
@@ -200,17 +195,14 @@
   "@settings_deleteAccount": {
     "description": "Label for the delete-account button (registered users)"
   },
-
   "settings_resetData": "Reset Data",
   "@settings_resetData": {
     "description": "Label for the reset-data button (anonymous users)"
   },
-
   "settings_confirmDeleteAccount": "Are you sure you want to delete your account and all data? This action cannot be undone.",
   "@settings_confirmDeleteAccount": {
     "description": "Confirmation dialog message when deleting account"
   },
-
   "settings_confirmResetData": "Are you sure you want to reset your data? All progress will be lost.",
   "@settings_confirmResetData": {
     "description": "Confirmation dialog message when resetting anonymous data"
@@ -219,15 +211,16 @@
   "@enterPassword": {
     "description": "Dialog title prompting user to re-enter password when deleting account"
   },
-
-  "password": "Password",
   "@password": {
     "description": "Placeholder for password input field"
   },
   "cancel": "Cancel",
-  "@cancel": { "description": "Dialog cancel button label" },
-  "ok": "OK",
-  "@ok": { "description": "Dialog OK button label" },
+  "@cancel": {
+    "description": "Dialog cancel button label"
+  },
+  "@ok": {
+    "description": "Dialog OK button label"
+  },
   "logoutConfirmation": "Are you sure you want to log out?",
   "viewFaq": "Frequently Asked Questions",
   "checking": "Checking…",
@@ -337,17 +330,29 @@
   "sceneculture_entertainment": "Culture & Entertainment",
   "scenecommunity_life": "Community Life",
   "userAnswerHeader": "Your answer",
-  "@userAnswerHeader": { "description": "Header before user's answer" },
+  "@userAnswerHeader": {
+    "description": "Header before user's answer"
+  },
   "badgeCorrect": "Correct",
-  "@badgeCorrect": { "description": "Correct badge" },
+  "@badgeCorrect": {
+    "description": "Correct badge"
+  },
   "badgeNeedsImprovement": "Almost! Try once more 🌸",
-  "@badgeNeedsImprovement": { "description": "Incorrect badge / needs improvement" },
+  "@badgeNeedsImprovement": {
+    "description": "Incorrect badge / needs improvement"
+  },
   "hintLabel": "💡 Try saying it like this:",
-  "@hintLabel": { "description": "Inline hint label shown on incorrect result" },
+  "@hintLabel": {
+    "description": "Inline hint label shown on incorrect result"
+  },
   "chatHintButtonLabel": "What should I say?",
-  "@chatHintButtonLabel": { "description": "Hint button label" },
+  "@chatHintButtonLabel": {
+    "description": "Hint button label"
+  },
   "chatHintSheetClose": "Got it! 👍",
-  "@chatHintSheetClose": { "description": "Close button in hint sheet" },
+  "@chatHintSheetClose": {
+    "description": "Close button in hint sheet"
+  },
   "originalTranslationHeader": "Original translation",
   "originalTranscriptionHeader": "Original transcription",
   "originalExplanationHeader": "Original explanation",
@@ -439,5 +444,8 @@
   "dailyLimitTitle": "Great practice today! 🌸",
   "dailyLimitMessage": "You've completed 10 practices for today. Come back tomorrow, or get the Basic Plan for unlimited daily practice!",
   "dailyLimitClose": "Back to Home",
-  "dailyLimitUpgrade": "See Basic Plan ✨"
+  "dailyLimitUpgrade": "See Basic Plan ✨",
+  "characterSelectQuestion": "Who would you like to practice with? 🌸",
+  "characterSelectTumugiDescription": "Warm and cheerful. She'll cheer you on every day ☺️",
+  "characterSelectKasumiDescription": "Cool and calm. Secretly kind, in her own way 😏"
 }

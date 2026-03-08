@@ -88,8 +88,8 @@
   "sceneTrial": "Xem trước miễn phí",
   "todaysSpecialTitle": "Gợi ý hôm nay",
   "freePreviewSubtitle": "Xem trước miễn phí",
-  "lockedMessage": "Có thể sử dụng khi đăng ký gói.",
-  "resetPassword": "Đặt lại mật khẩu",
+  "lockedMessage": "Câu hỏi này chỉ dành cho người đăng ký.",
+  "resetPassword": "Quên mật khẩu?",
   "enterEmailForReset": "Vui lòng nhập địa chỉ email để đặt lại mật khẩu.",
   "sendResetEmail": "Gửi email đặt lại",
   "passwordResetSent": "Đã gửi email đặt lại mật khẩu.",
@@ -133,7 +133,6 @@
   "loginFailed": "Đăng nhập thất bại",
   "loginError": "Lỗi đăng nhập",
   "noAccountRegister": "Chưa có tài khoản? Đăng ký tại đây",
-  "resetPassword": "Quên mật khẩu?",
   "register": "Đăng ký",
   "registerFailed": "Đăng ký thất bại",
   "purchaseSuccess": "Cảm ơn bạn đã mua hàng!",
@@ -143,7 +142,6 @@
   "@lockedTitle": {
     "description": "ロック中アラートのタイトル"
   },
-  "lockedMessage": "Câu hỏi này chỉ dành cho người đăng ký.",
   "@lockedMessage": {
     "description": "ロック中アラートの本文"
   },
@@ -213,7 +211,6 @@
   "@enterPassword": {
     "description": "アカウント削除時にパスワード再入力を促すダイアログタイトル"
   },
-  "password": "Mật khẩu",
   "@password": {
     "description": "パスワード入力フィールドのプレースホルダー"
   },
@@ -221,7 +218,6 @@
   "@cancel": {
     "description": "ダイアログのキャンセルボタンラベル"
   },
-  "ok": "OK",
   "@ok": {
     "description": "ダイアログのOKボタンラベル"
   },
@@ -331,17 +327,29 @@
   "sceneculture_entertainment": "Văn hóa & Giải trí",
   "scenecommunity_life": "Đời sống cộng đồng",
   "userAnswerHeader": "Câu trả lời của bạn",
-  "@userAnswerHeader": { "description": "Tiêu đề câu trả lời của người dùng" },
+  "@userAnswerHeader": {
+    "description": "Tiêu đề câu trả lời của người dùng"
+  },
   "badgeCorrect": "Đúng",
-  "@badgeCorrect": { "description": "Huy hiệu đúng" },
+  "@badgeCorrect": {
+    "description": "Huy hiệu đúng"
+  },
   "badgeNeedsImprovement": "Gần rồi! Thử thêm một lần nữa 🌸",
-  "@badgeNeedsImprovement": { "description": "Huy hiệu cần cải thiện" },
+  "@badgeNeedsImprovement": {
+    "description": "Huy hiệu cần cải thiện"
+  },
   "hintLabel": "💡 Thử nói như thế này:",
-  "@hintLabel": { "description": "Nhãn gợi ý nội tuyến khi trả lời sai" },
+  "@hintLabel": {
+    "description": "Nhãn gợi ý nội tuyến khi trả lời sai"
+  },
   "chatHintButtonLabel": "Tôi nên nói gì?",
-  "@chatHintButtonLabel": { "description": "Nhãn nút gợi ý" },
+  "@chatHintButtonLabel": {
+    "description": "Nhãn nút gợi ý"
+  },
   "chatHintSheetClose": "Hiểu rồi! 👍",
-  "@chatHintSheetClose": { "description": "Nút đóng tờ gợi ý" },
+  "@chatHintSheetClose": {
+    "description": "Nút đóng tờ gợi ý"
+  },
   "originalTranslationHeader": "Bản dịch gốc",
   "originalTranscriptionHeader": "Phiên âm gốc",
   "originalExplanationHeader": "Giải thích bản gốc",
@@ -409,5 +417,8 @@
   "dailyLimitTitle": "Luyện tập tốt lắm hôm nay! 🌸",
   "dailyLimitMessage": "Bạn đã hoàn thành 10 lần luyện tập miễn phí hôm nay! Quay lại ngày mai, hoặc đăng ký Gói Cơ Bản để luyện tập không giới hạn♪",
   "dailyLimitClose": "Quay về Trang chủ",
-  "dailyLimitUpgrade": "Xem Gói Cơ Bản ✨"
+  "dailyLimitUpgrade": "Xem Gói Cơ Bản ✨",
+  "characterSelectQuestion": "Bạn muốn luyện tập cùng ai? 🌸",
+  "characterSelectTumugiDescription": "Vui vẻ và dịu dàng! Cô ấy sẽ cổ vũ bạn mỗi ngày ☺️",
+  "characterSelectKasumiDescription": "Lạnh lùng và trưởng thành. Thật ra rất tốt bụng theo cách riêng 😏"
 }

@@ -88,8 +88,8 @@
   "sceneTrial": "Aperçu gratuit",
   "todaysSpecialTitle": "La recommandation du jour",
   "freePreviewSubtitle": "Aperçu gratuit",
-  "lockedMessage": "Disponible avec un abonnement au forfait.",
-  "resetPassword": "Réinitialiser le mot de passe",
+  "lockedMessage": "Cette question est réservée aux abonnés.",
+  "resetPassword": "Mot de passe oublié ?",
   "enterEmailForReset": "Veuillez entrer votre adresse e-mail pour réinitialiser le mot de passe.",
   "sendResetEmail": "Envoyer l'e-mail de réinitialisation",
   "passwordResetSent": "L'e-mail de réinitialisation du mot de passe a été envoyé.",
@@ -133,7 +133,6 @@
   "loginFailed": "Échec de la connexion",
   "loginError": "Erreur de connexion",
   "noAccountRegister": "Vous n'avez pas de compte ? Inscrivez-vous ici",
-  "resetPassword": "Mot de passe oublié ?",
   "register": "S'inscrire",
   "registerFailed": "Échec de l'inscription",
   "purchaseSuccess": "Merci pour votre achat !",
@@ -143,7 +142,6 @@
   "@lockedTitle": {
     "description": "ロック中アラートのタイトル"
   },
-  "lockedMessage": "Cette question est réservée aux abonnés.",
   "@lockedMessage": {
     "description": "ロック中アラートの本文"
   },
@@ -213,7 +211,6 @@
   "@enterPassword": {
     "description": "アカウント削除時にパスワード再入力を促すダイアログタイトル"
   },
-  "password": "Mot de passe",
   "@password": {
     "description": "パスワード入力フィールドのプレースホルダー"
   },
@@ -221,7 +218,6 @@
   "@cancel": {
     "description": "ダイアログのキャンセルボタンラベル"
   },
-  "ok": "OK",
   "@ok": {
     "description": "ダイアログのOKボタンラベル"
   },
@@ -331,17 +327,29 @@
   "sceneculture_entertainment": "Culture et divertissement",
   "scenecommunity_life": "Vie communautaire",
   "userAnswerHeader": "Votre réponse",
-  "@userAnswerHeader": { "description": "En-tête de la réponse de l'utilisateur" },
+  "@userAnswerHeader": {
+    "description": "En-tête de la réponse de l'utilisateur"
+  },
   "badgeCorrect": "Correct",
-  "@badgeCorrect": { "description": "Badge correct" },
+  "@badgeCorrect": {
+    "description": "Badge correct"
+  },
   "badgeNeedsImprovement": "Presque ! Encore un essai 🌸",
-  "@badgeNeedsImprovement": { "description": "Badge à améliorer" },
+  "@badgeNeedsImprovement": {
+    "description": "Badge à améliorer"
+  },
   "hintLabel": "💡 Essaie de le dire comme ça :",
-  "@hintLabel": { "description": "Étiquette d'indice en ligne pour réponse incorrecte" },
+  "@hintLabel": {
+    "description": "Étiquette d'indice en ligne pour réponse incorrecte"
+  },
   "chatHintButtonLabel": "Que dois-je dire ?",
-  "@chatHintButtonLabel": { "description": "Étiquette du bouton d'indice" },
+  "@chatHintButtonLabel": {
+    "description": "Étiquette du bouton d'indice"
+  },
   "chatHintSheetClose": "Compris ! 👍",
-  "@chatHintSheetClose": { "description": "Bouton de fermeture de la feuille d'indice" },
+  "@chatHintSheetClose": {
+    "description": "Bouton de fermeture de la feuille d'indice"
+  },
   "originalTranslationHeader": "Traduction originale",
   "originalTranscriptionHeader": "Transcription originale",
   "originalExplanationHeader": "Explication originale",
@@ -409,5 +417,8 @@
   "dailyLimitTitle": "Super entraînement aujourd'hui ! 🌸",
   "dailyLimitMessage": "Tu as terminé tes 10 pratiques gratuites du jour ! Reviens demain, ou abonne-toi au Plan Basique pour une pratique illimitée♪",
   "dailyLimitClose": "Retour à l'accueil",
-  "dailyLimitUpgrade": "Voir le Plan Basique ✨"
+  "dailyLimitUpgrade": "Voir le Plan Basique ✨",
+  "characterSelectQuestion": "Avec qui veux-tu t'entraîner ? 🌸",
+  "characterSelectTumugiDescription": "Joyeuse et douce ! Elle t'encouragera chaque jour avec le sourire ☺️",
+  "characterSelectKasumiDescription": "Cool et mature. En réalité très gentille à sa façon 😏"
 }

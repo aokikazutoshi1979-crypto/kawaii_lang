@@ -51,7 +51,7 @@
   "keyboardGuideAndroid": "如果在 Android 上无法显示目标语言的键盘：请前往 设置 > 系统 > 语言和输入法 > 键盘 > 添加键盘，选择目标语言。",
   "keyboardGuideBody": "如果您的手机中未安装目标语言的键盘，您将无法在聊天界面输入。请按照以下步骤添加：\n\niOS:\n设置 > 通用 > 键盘 > 添加新键盘\n\nAndroid:\n设置 > 语言和输入法 > 键盘 > 添加键盘",
   "keyboardGuideTitle": "鍵盤設定指南",
-  "ok": "好的",
+  "ok": "确定",
   "correct": "回答正确！",
   "incorrect": "修改示例",
   "answerMeaningPrefix": "这就是你的答案的含义。:{translation}",
@@ -87,8 +87,8 @@
   "sceneTrial": "免费预览",
   "todaysSpecialTitle": "今日推荐",
   "freePreviewSubtitle": "免费预览",
-  "lockedMessage": "可供订阅该计划。",
-  "resetPassword": "重设密码",
+  "lockedMessage": "此期仅供订阅者阅读。",
+  "resetPassword": "忘记密码？",
   "enterEmailForReset": "请输入电子邮件地址以重设密码。",
   "sendResetEmail": "发送重设邮件",
   "passwordResetSent": "已发送密码重设邮件。",
@@ -132,7 +132,6 @@
   "loginFailed": "登录失败",
   "loginError": "登录错误",
   "noAccountRegister": "没有账户？点此注册",
-  "resetPassword": "忘记密码？",
   "register": "登记",
   "registerFailed": "注册失败",
   "purchaseSuccess": "感谢您的购买！",
@@ -142,7 +141,6 @@
   "@lockedTitle": {
     "description": "锁定警报标题"
   },
-  "lockedMessage": "此期仅供订阅者阅读。",
   "@lockedMessage": {
     "description": "锁定警报文本"
   },
@@ -163,10 +161,8 @@
   "subscriptionTitle": "订阅",
   "subscriptionPlanTitle": "<订阅详情>",
   "subscriptionPlanMonthly": "• 计划名称：基本计划",
-
   "subscriptionPlanPeriod": "• 持续时间：1个月",
   "subscriptionPlanPrice": "• 价格：1,500日元（含税）",
-
   "subscriptionPlanTrial": "• 如果您不是会员，您只能尝试免费预览。",
   "subscriptionCurrentStatusTitle": "当前状态",
   "subscriptionStatusSubscribed": "• 已订阅：解锁所有学习场景（包括免费预览），可无限制使用。",
@@ -198,17 +194,14 @@
   "@settings_deleteAccount": {
     "description": "“删除账户” 按钮标签（注册用户）"
   },
-
   "settings_resetData": "重置数据",
   "@settings_resetData": {
     "description": "“重置数据” 按钮标签（匿名用户）"
   },
-
   "settings_confirmDeleteAccount": "您确定要删除您的账户及所有数据吗？此操作不可撤销。",
   "@settings_confirmDeleteAccount": {
     "description": "删除账户时的确认对话框消息"
   },
-
   "settings_confirmResetData": "您确定要重置数据吗？所有进度将被删除。",
   "@settings_confirmResetData": {
     "description": "重置匿名数据时的确认对话框消息"
@@ -217,15 +210,16 @@
   "@enterPassword": {
     "description": "在删除账户时提示用户重新输入密码的对话框标题"
   },
-
-  "password": "密码",
   "@password": {
     "description": "密码输入字段的占位符"
   },
   "cancel": "取消",
-  "@cancel": { "description": "对话框取消按钮标签" },
-  "ok": "确定",
-  "@ok": { "description": "对话框确定按钮标签" },
+  "@cancel": {
+    "description": "对话框取消按钮标签"
+  },
+  "@ok": {
+    "description": "对话框确定按钮标签"
+  },
   "logoutConfirmation": "您确定要退出吗？",
   "viewFaq": "常见问题",
   "checking": "正在判定…",
@@ -332,17 +326,29 @@
   "sceneculture_entertainment": "文化和娱乐",
   "scenecommunity_life": "社区生活",
   "userAnswerHeader": "你的回答",
-  "@userAnswerHeader": { "description": "用户回答标题" },
+  "@userAnswerHeader": {
+    "description": "用户回答标题"
+  },
   "badgeCorrect": "正确",
-  "@badgeCorrect": { "description": "正确标签" },
+  "@badgeCorrect": {
+    "description": "正确标签"
+  },
   "badgeNeedsImprovement": "差一点！再试一次吧 🌸",
-  "@badgeNeedsImprovement": { "description": "需要改进标签" },
+  "@badgeNeedsImprovement": {
+    "description": "需要改进标签"
+  },
   "hintLabel": "💡 试着这样说：",
-  "@hintLabel": { "description": "不正解时的提示标签" },
+  "@hintLabel": {
+    "description": "不正解时的提示标签"
+  },
   "chatHintButtonLabel": "我该说什么？",
-  "@chatHintButtonLabel": { "description": "提示按钮标签" },
+  "@chatHintButtonLabel": {
+    "description": "提示按钮标签"
+  },
   "chatHintSheetClose": "明白了！👍",
-  "@chatHintSheetClose": { "description": "提示面板关闭按钮" },
+  "@chatHintSheetClose": {
+    "description": "提示面板关闭按钮"
+  },
   "originalTranslationHeader": "原文翻译",
   "originalTranscriptionHeader": "原文转写",
   "originalExplanationHeader": "原文说明",
@@ -415,5 +421,8 @@
   "dailyLimitTitle": "今天练习得很棒！🌸",
   "dailyLimitMessage": "今天的10次免费练习用完了！明天再来吧。订阅基础版，每天无限练习♪",
   "dailyLimitClose": "返回首页",
-  "dailyLimitUpgrade": "查看基础版 ✨"
+  "dailyLimitUpgrade": "查看基础版 ✨",
+  "characterSelectQuestion": "你想和谁一起练习？🌸",
+  "characterSelectTumugiDescription": "开朗温柔！每天都会笑着为你加油☺️",
+  "characterSelectKasumiDescription": "酷而成熟。其实是个傲娇角色😏"
 }

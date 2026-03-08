@@ -88,8 +88,8 @@
   "sceneTrial": "Vista previa gratuita",
   "todaysSpecialTitle": "Recomendación de hoy",
   "freePreviewSubtitle": "Vista previa gratis",
-  "lockedMessage": "Disponible al suscribirse al plan.",
-  "resetPassword": "Restablecer contraseña",
+  "lockedMessage": "Este ejercicio solo está disponible para suscriptores.",
+  "resetPassword": "¿Olvidaste tu contraseña?",
   "enterEmailForReset": "Por favor, ingrese su correo electrónico para restablecer la contraseña.",
   "sendResetEmail": "Enviar correo de restablecimiento",
   "passwordResetSent": "Se ha enviado el correo de restablecimiento de contraseña.",
@@ -133,7 +133,6 @@
   "loginFailed": "Error al iniciar sesión",
   "loginError": "Error de inicio de sesión",
   "noAccountRegister": "¿No tienes una cuenta? Regístrate aquí",
-  "resetPassword": "¿Olvidaste tu contraseña?",
   "register": "Registrarse",
   "registerFailed": "Error al registrarse",
   "purchaseSuccess": "¡Gracias por tu compra!",
@@ -143,7 +142,6 @@
   "@lockedTitle": {
     "description": "ロック中アラートのタイトル"
   },
-  "lockedMessage": "Este ejercicio solo está disponible para suscriptores.",
   "@lockedMessage": {
     "description": "ロック中アラートの本文"
   },
@@ -213,7 +211,6 @@
   "@enterPassword": {
     "description": "アカウント削除時にパスワード再入力を促すダイアログタイトル"
   },
-  "password": "Contraseña",
   "@password": {
     "description": "パスワード入力フィールドのプレースホルダー"
   },
@@ -221,7 +218,6 @@
   "@cancel": {
     "description": "ダイアログのキャンセルボタンラベル"
   },
-  "ok": "OK",
   "@ok": {
     "description": "ダイアログのOKボタンラベル"
   },
@@ -331,17 +327,29 @@
   "sceneculture_entertainment": "Cultura y entretenimiento",
   "scenecommunity_life": "Vida comunitaria",
   "userAnswerHeader": "Tu respuesta",
-  "@userAnswerHeader": { "description": "Encabezado de la respuesta del usuario" },
+  "@userAnswerHeader": {
+    "description": "Encabezado de la respuesta del usuario"
+  },
   "badgeCorrect": "Correcta",
-  "@badgeCorrect": { "description": "Insignia de correcto" },
+  "@badgeCorrect": {
+    "description": "Insignia de correcto"
+  },
   "badgeNeedsImprovement": "¡Casi! Inténtalo una vez más 🌸",
-  "@badgeNeedsImprovement": { "description": "Insignia de necesita mejora" },
+  "@badgeNeedsImprovement": {
+    "description": "Insignia de necesita mejora"
+  },
   "hintLabel": "💡 Inténtalo así:",
-  "@hintLabel": { "description": "Etiqueta de pista en línea para respuesta incorrecta" },
+  "@hintLabel": {
+    "description": "Etiqueta de pista en línea para respuesta incorrecta"
+  },
   "chatHintButtonLabel": "¿Qué debería decir?",
-  "@chatHintButtonLabel": { "description": "Etiqueta del botón de pista" },
+  "@chatHintButtonLabel": {
+    "description": "Etiqueta del botón de pista"
+  },
   "chatHintSheetClose": "¡Entendido！👍",
-  "@chatHintSheetClose": { "description": "Botón de cierre de la hoja de pista" },
+  "@chatHintSheetClose": {
+    "description": "Botón de cierre de la hoja de pista"
+  },
   "originalTranslationHeader": "Traducción original",
   "originalTranscriptionHeader": "Transcripción original",
   "originalExplanationHeader": "Explicación original",
@@ -409,5 +417,8 @@
   "dailyLimitTitle": "¡Excelente práctica hoy! 🌸",
   "dailyLimitMessage": "¡Completaste 10 prácticas gratuitas de hoy! Vuelve mañana, o suscríbete al Plan Básico para práctica ilimitada♪",
   "dailyLimitClose": "Volver al inicio",
-  "dailyLimitUpgrade": "Ver Plan Básico ✨"
+  "dailyLimitUpgrade": "Ver Plan Básico ✨",
+  "characterSelectQuestion": "¿Con quién quieres practicar? 🌸",
+  "characterSelectTumugiDescription": "¡Alegre y amable! Te animará con una sonrisa cada día ☺️",
+  "characterSelectKasumiDescription": "Fría y madura. En el fondo es muy amable 😏"
 }

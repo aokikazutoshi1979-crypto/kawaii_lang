@@ -88,8 +88,8 @@
   "sceneTrial": "無料プレビュー",
   "todaysSpecialTitle": "本日のおすすめ",
   "freePreviewSubtitle": "無料プレビュー",
-  "lockedMessage": "プラン加入でご利用いただけます。",
-  "resetPassword": "パスワードをリセット",
+  "lockedMessage": "この問題はサブスクリプション加入者のみ利用できます。",
+  "resetPassword": "パスワードを忘れた方はこちら",
   "enterEmailForReset": "パスワードをリセットするためにメールアドレスを入力してください。",
   "sendResetEmail": "リセットメールを送信",
   "passwordResetSent": "パスワードリセット用のメールを送信しました。",
@@ -133,7 +133,6 @@
   "loginFailed": "ログインに失敗しました",
   "loginError": "ログインエラー",
   "noAccountRegister": "アカウントをお持ちでない方はこちら",
-  "resetPassword": "パスワードを忘れた方はこちら",
   "register": "登録",
   "registerFailed": "登録に失敗しました",
   "purchaseSuccess": "ご購入ありがとうございます！",
@@ -143,7 +142,6 @@
   "@lockedTitle": {
     "description": "ロック中アラートのタイトル"
   },
-  "lockedMessage": "この問題はサブスクリプション加入者のみ利用できます。",
   "@lockedMessage": {
     "description": "ロック中アラートの本文"
   },
@@ -164,10 +162,8 @@
   "subscriptionTitle": "サブスクリプション",
   "subscriptionPlanTitle": "<サブスクリプション詳細>",
   "subscriptionPlanMonthly": "• プラン名：ベーシックプラン",
-
   "subscriptionPlanPeriod": "• 期間：1ヶ月",
   "subscriptionPlanPrice": "• 価格：¥1,500（税込）",
-
   "subscriptionPlanTrial": "• 未加入の場合：無料プレビューのみ体験可能です。",
   "subscriptionCurrentStatusTitle": "現在の状態",
   "subscriptionStatusSubscribed": "• 加入済みの場合：無料プレビューを含むすべての学習場面が開放され、何度でも利用可能。",
@@ -199,30 +195,32 @@
   "@settings_deleteAccount": {
     "description": "メール登録ユーザー向けの「アカウントを削除する」ボタンラベル"
   },
-
   "settings_resetData": "データを初期化する",
   "@settings_resetData": {
     "description": "匿名ユーザー向けの「データを初期化する」ボタンラベル"
   },
-
   "settings_confirmDeleteAccount": "本当にアカウントとすべてのデータを削除しますか？\nこの操作は取り消せません。",
   "@settings_confirmDeleteAccount": {
     "description": "アカウント削除時の確認ダイアログメッセージ"
   },
-
   "settings_confirmResetData": "本当にデータを初期化しますか？\nこれまでの進捗がすべて消えます。",
   "@settings_confirmResetData": {
     "description": "匿名データ初期化時の確認ダイアログメッセージ"
   },
   "enterPassword": "パスワードを入力",
-  "@enterPassword": { "description": "アカウント削除時にパスワード再入力を促すダイアログタイトル" },
-
-  "password": "パスワード",
-  "@password": { "description": "パスワード入力フィールドのプレースホルダー" },
+  "@enterPassword": {
+    "description": "アカウント削除時にパスワード再入力を促すダイアログタイトル"
+  },
+  "@password": {
+    "description": "パスワード入力フィールドのプレースホルダー"
+  },
   "cancel": "キャンセル",
-  "@cancel": { "description": "ダイアログのキャンセルボタンラベル" },
-  "ok": "OK",
-  "@ok": { "description": "ダイアログのOKボタンラベル" },
+  "@cancel": {
+    "description": "ダイアログのキャンセルボタンラベル"
+  },
+  "@ok": {
+    "description": "ダイアログのOKボタンラベル"
+  },
   "logoutConfirmation": "本当にログアウトしますか？",
   "viewFaq": "よくある質問",
   "checking": "判定中です…",
@@ -328,7 +326,6 @@
     "description": "Scene label for Work"
   },
   "sceneWork": "仕事",
-
   "@sceneSocial_interactions_hobbies": {
     "description": "Scene label for Social interactions and hobbies"
   },
@@ -337,36 +334,57 @@
     "description": "Scene label for Culture and Entertainment"
   },
   "sceneculture_entertainment": "文化・エンタメ",
-
   "@scenecommunity_life": {
     "description": "Scene label for Community life"
   },
   "scenecommunity_life": "地域生活",
   "userAnswerHeader": "あなたの回答",
-  "@userAnswerHeader": { "description": "ユーザーの回答見出し" },
+  "@userAnswerHeader": {
+    "description": "ユーザーの回答見出し"
+  },
   "badgeCorrect": "正解",
-  "@badgeCorrect": { "description": "正解ラベル" },
+  "@badgeCorrect": {
+    "description": "正解ラベル"
+  },
   "badgeNeedsImprovement": "惜しい！もう一回やってみよう 🌸",
-  "@badgeNeedsImprovement": { "description": "不正解ラベル／改善が必要" },
+  "@badgeNeedsImprovement": {
+    "description": "不正解ラベル／改善が必要"
+  },
   "hintLabel": "💡 こう言ってみよう：",
-  "@hintLabel": { "description": "不正解時のインラインヒントラベル" },
+  "@hintLabel": {
+    "description": "不正解時のインラインヒントラベル"
+  },
   "chatHintButtonLabel": "何て言えばいい？",
-  "@chatHintButtonLabel": { "description": "ヒントボタンのラベル" },
+  "@chatHintButtonLabel": {
+    "description": "ヒントボタンのラベル"
+  },
   "chatHintSheetClose": "わかった！👍",
-  "@chatHintSheetClose": { "description": "ヒントシートの閉じるボタン" },
+  "@chatHintSheetClose": {
+    "description": "ヒントシートの閉じるボタン"
+  },
   "originalTranslationHeader": "オリジナルの翻訳",
-  "@originalTranslationHeader": {"description": "オリジナル文の翻訳の見出し"},
+  "@originalTranslationHeader": {
+    "description": "オリジナル文の翻訳の見出し"
+  },
   "originalTranscriptionHeader": "オリジナルの音声転写",
-  "@originalTranscriptionHeader": {"description": "オリジナル文の音声転写の見出し"},
+  "@originalTranscriptionHeader": {
+    "description": "オリジナル文の音声転写の見出し"
+  },
   "originalExplanationHeader": "オリジナルの解説",
-  "@originalExplanationHeader": {"description": "オリジナル文の解説の見出し"},
+  "@originalExplanationHeader": {
+    "description": "オリジナル文の解説の見出し"
+  },
   "similarExpressionHeader": "フレンドリーな類似表現",
-  "@similarExpressionHeader": {"description": "類似表現の見出し"},
+  "@similarExpressionHeader": {
+    "description": "類似表現の見出し"
+  },
   "incorrectMessageWithRaw": "{raw} \nこちらの回答は、文法的や意味的に正しくありません。",
   "@incorrectMessageWithRaw": {
     "description": "誤答メッセージ。raw はユーザーの回答文字列",
     "placeholders": {
-      "raw": { "type": "String" }
+      "raw": {
+        "type": "String"
+      }
     }
   },
   "answerMeaningAccurate": "この回答は出題の意味ついて的確に表しています。",
@@ -460,5 +478,8 @@
   "dailyLimitTitle": "今日もよく頑張ったね！🌸",
   "dailyLimitMessage": "今日の無料練習10回、全部使ったよ！明日また練習しよう。ベーシックプランなら毎日無制限で練習できるよ♪",
   "dailyLimitClose": "ホームに戻る",
-  "dailyLimitUpgrade": "ベーシックプランを見る ✨"
+  "dailyLimitUpgrade": "ベーシックプランを見る ✨",
+  "characterSelectQuestion": "どっちのキャラクターと練習する？🌸",
+  "characterSelectTumugiDescription": "明るくて優しい！毎日笑顔で応援してくれるよ☺️",
+  "characterSelectKasumiDescription": "クールで大人っぽい。本当は優しいツンデレキャラ😏"
 }

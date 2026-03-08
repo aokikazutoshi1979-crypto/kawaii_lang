@@ -40,7 +40,7 @@
   "termsOfService": "서비스 약관",
   "privacyPolicy": "개인정보 처리방침",
   "termsContent": "이 앱을 사용하기 전에 다음 서비스 약관을 검토해주세요. 이 앱을 사용함으로써 모든 조건에 동의한 것으로 간주됩니다.",
-    "privacyContent": "본 앱은 사용자의 개인 정보를 존중합니다. 수집된 정보는 학습 지원 및 앱 개선을 위해서만 사용됩니다.",
+  "privacyContent": "본 앱은 사용자의 개인 정보를 존중합니다. 수집된 정보는 학습 지원 및 앱 개선을 위해서만 사용됩니다.",
   "termsOfServiceContent": "본 앱은 언어 학습을 지원하기 위해 제공됩니다.\n\n【사용 대상】\n본 앱은 모든 연령을 대상으로 합니다. 만 13세 미만의 사용자는 보호자 동의 하에 이용해주세요。\n\n【면책 조항】\n앱 사용으로 발생하는 불이익 또는 손해에 대해 운영자는 어떠한 책임도 지지 않습니다。\n\n【향후 유료 기능에 대하여】\n현재는 무료로 이용할 수 있지만, 향후 일부 기능에 요금이 부과될 수 있습니다。유료 기능 도입 시 사전에 안내드리겠습니다。\n\n【이용 중지】\n이용자가 본 약관을 위반할 경우 운영자는 사전 통지 없이 이용을 제한하거나 중지할 수 있습니다。",
   "privacyPolicyContent": "본 앱은 사용자의 프라이버시를 존중하며, 다음 정책에 따라 운영됩니다。\n\n【수집하는 정보】\n사용자의 언어 설정 및 앱 사용 기록 등 개인을 식별할 수 없는 범위의 정보를 수집할 수 있습니다。\n\n【이용 목적】\n앱 품질 향상 및 기능 개선을 위해 정보를 활용하며, 무단으로 제3자에게 제공하지 않습니다。\n\n【외부 서비스】\n향후 업데이트에서 유료 기능을 도입할 경우 외부 결제 서비스를 이용할 수 있습니다。\n\n【정보 관리】\n수집된 정보는 적절히 관리되어 안전하게 보관됩니다。",
   "errorTooLong": "메시지가 너무 깁니다. 약 100자 이내로 입력해주세요。",
@@ -88,8 +88,8 @@
   "sceneTrial": "무료 미리보기",
   "todaysSpecialTitle": "오늘의 추천",
   "freePreviewSubtitle": "무료 미리보기",
-  "lockedMessage": "구독 플랜에 가입해야 이용할 수 있습니다.",
-  "resetPassword": "비밀번호 재설정",
+  "lockedMessage": "이 문제는 구독자만 이용할 수 있습니다。",
+  "resetPassword": "비밀번호를 잊으셨나요?",
   "enterEmailForReset": "비밀번호를 재설정하려면 이메일 주소를 입력하세요.",
   "sendResetEmail": "재설정 이메일 보내기",
   "passwordResetSent": "비밀번호 재설정 이메일을 발송했습니다.",
@@ -133,7 +133,6 @@
   "loginFailed": "로그인에 실패했습니다",
   "loginError": "로그인 오류",
   "noAccountRegister": "계정이 없으신가요? 여기를 클릭하세요",
-  "resetPassword": "비밀번호를 잊으셨나요?",
   "register": "등록",
   "registerFailed": "등록에 실패했습니다",
   "purchaseSuccess": "구매해 주셔서 감사합니다!",
@@ -143,7 +142,6 @@
   "@lockedTitle": {
     "description": "ロック中アラートのタイトル"
   },
-  "lockedMessage": "이 문제는 구독자만 이용할 수 있습니다。",
   "@lockedMessage": {
     "description": "ロック中アラートの本文"
   },
@@ -213,7 +211,6 @@
   "@enterPassword": {
     "description": "アカウント削除時にパスワード再入力を促すダイアログタイトル"
   },
-  "password": "비밀번호",
   "@password": {
     "description": "パスワード入力フィールドのプレースホルダー"
   },
@@ -221,7 +218,6 @@
   "@cancel": {
     "description": "ダイアログのキャンセルボタンラベル"
   },
-  "ok": "확인",
   "@ok": {
     "description": "ダイアログのOKボタンラベル"
   },
@@ -331,17 +327,29 @@
   "sceneculture_entertainment": "문화 및 엔터테인먼트",
   "scenecommunity_life": "지역 생활",
   "userAnswerHeader": "당신의 답변",
-  "@userAnswerHeader": { "description": "사용자 답변 헤더" },
+  "@userAnswerHeader": {
+    "description": "사용자 답변 헤더"
+  },
   "badgeCorrect": "정답",
-  "@badgeCorrect": { "description": "정답 배지" },
+  "@badgeCorrect": {
+    "description": "정답 배지"
+  },
   "badgeNeedsImprovement": "아깝다！한 번 더 해봐요 🌸",
-  "@badgeNeedsImprovement": { "description": "오답/개선 필요 배지" },
+  "@badgeNeedsImprovement": {
+    "description": "오답/개선 필요 배지"
+  },
   "hintLabel": "💡 이렇게 말해봐요：",
-  "@hintLabel": { "description": "오답 시 인라인 힌트 라벨" },
+  "@hintLabel": {
+    "description": "오답 시 인라인 힌트 라벨"
+  },
   "chatHintButtonLabel": "뭐라고 해야 해요？",
-  "@chatHintButtonLabel": { "description": "힌트 버튼 라벨" },
+  "@chatHintButtonLabel": {
+    "description": "힌트 버튼 라벨"
+  },
   "chatHintSheetClose": "알겠어요！👍",
-  "@chatHintSheetClose": { "description": "힌트 시트 닫기 버튼" },
+  "@chatHintSheetClose": {
+    "description": "힌트 시트 닫기 버튼"
+  },
   "originalTranslationHeader": "원문 번역",
   "originalTranscriptionHeader": "원문 음성 전사",
   "originalExplanationHeader": "원문 설명",
@@ -409,5 +417,8 @@
   "dailyLimitTitle": "오늘 정말 잘 했어요! 🌸",
   "dailyLimitMessage": "오늘의 무료 연습 10회를 모두 사용했어요！내일 다시 연습해요. 베이직 플랜이면 매일 무제한 연습 가능♪",
   "dailyLimitClose": "홈으로 돌아가기",
-  "dailyLimitUpgrade": "베이직 플랜 보기 ✨"
+  "dailyLimitUpgrade": "베이직 플랜 보기 ✨",
+  "characterSelectQuestion": "누구와 함께 연습할까요？🌸",
+  "characterSelectTumugiDescription": "밝고 다정해！매일 웃으며 응원해줄 거예요☺️",
+  "characterSelectKasumiDescription": "쿨하고 어른스러워요. 사실은 상냥한 츤데레 캐릭터😏"
 }

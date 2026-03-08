@@ -51,7 +51,7 @@
   "keyboardGuideAndroid": "如果在 Android 上無法顯示目標語言的鍵盤：請前往 設定 > 系統 > 語言與輸入法 > 鍵盤 > 新增鍵盤，選擇目標語言。",
   "keyboardGuideBody": "如果您的手機中未安裝目標語言的鍵盤，您將無法在聊天介面輸入。請按照以下步驟新增：\n\niOS：\n設定 > 一般 > 鍵盤 > 新增鍵盤\n\nAndroid：\n設定 > 語言與輸入法 > 鍵盤 > 新增鍵盤",
   "keyboardGuideTitle": "鍵盤設定指南",
-  "ok": "好的",
+  "ok": "確定",
   "correct": "回答正確！",
   "incorrect": "需要修改。",
   "answerMeaningPrefix": "這就是你答案的含義：{translation}",
@@ -87,8 +87,8 @@
   "sceneTrial": "免費預覽",
   "todaysSpecialTitle": "今日推薦",
   "freePreviewSubtitle": "免費預覽",
-  "lockedMessage": "可供訂閱該方案。",
-  "resetPassword": "重設密碼",
+  "lockedMessage": "此內容僅供訂閱者閱讀。",
+  "resetPassword": "忘記密碼？",
   "enterEmailForReset": "請輸入電子郵件地址以重設密碼。",
   "sendResetEmail": "發送重設郵件",
   "passwordResetSent": "已發送密碼重設郵件。",
@@ -132,7 +132,6 @@
   "loginFailed": "登入失敗",
   "loginError": "登入錯誤",
   "noAccountRegister": "沒有帳戶？點此註冊",
-  "resetPassword": "忘記密碼？",
   "register": "註冊",
   "registerFailed": "註冊失敗",
   "purchaseSuccess": "感謝您的購買！",
@@ -142,7 +141,6 @@
   "@lockedTitle": {
     "description": "锁定警报标题"
   },
-  "lockedMessage": "此內容僅供訂閱者閱讀。",
   "@lockedMessage": {
     "description": "锁定警报文本"
   },
@@ -212,7 +210,6 @@
   "@enterPassword": {
     "description": "在删除账户时提示用户重新输入密码的对话框标题"
   },
-  "password": "密碼",
   "@password": {
     "description": "密码输入字段的占位符"
   },
@@ -220,7 +217,6 @@
   "@cancel": {
     "description": "对话框取消按钮标签"
   },
-  "ok": "確定",
   "@ok": {
     "description": "对话框确定按钮标签"
   },
@@ -330,17 +326,29 @@
   "sceneculture_entertainment": "文化和娛樂",
   "scenecommunity_life": "社區生活",
   "userAnswerHeader": "你的回答",
-  "@userAnswerHeader": { "description": "使用者回答標題" },
+  "@userAnswerHeader": {
+    "description": "使用者回答標題"
+  },
   "badgeCorrect": "正確",
-  "@badgeCorrect": { "description": "正確標籤" },
+  "@badgeCorrect": {
+    "description": "正確標籤"
+  },
   "badgeNeedsImprovement": "差一點！再試一次吧 🌸",
-  "@badgeNeedsImprovement": { "description": "需要改進標籤" },
+  "@badgeNeedsImprovement": {
+    "description": "需要改進標籤"
+  },
   "hintLabel": "💡 試著這樣說：",
-  "@hintLabel": { "description": "不正解時的提示標籤" },
+  "@hintLabel": {
+    "description": "不正解時的提示標籤"
+  },
   "chatHintButtonLabel": "我該說什麼？",
-  "@chatHintButtonLabel": { "description": "提示按鈕標籤" },
+  "@chatHintButtonLabel": {
+    "description": "提示按鈕標籤"
+  },
   "chatHintSheetClose": "明白了！👍",
-  "@chatHintSheetClose": { "description": "提示面板關閉按鈕" },
+  "@chatHintSheetClose": {
+    "description": "提示面板關閉按鈕"
+  },
   "originalTranslationHeader": "原文翻譯",
   "originalTranscriptionHeader": "原文轉寫",
   "originalExplanationHeader": "原文說明",
@@ -408,5 +416,8 @@
   "dailyLimitTitle": "今天練習得很棒！🌸",
   "dailyLimitMessage": "今天的10次免費練習用完了！明天再來吧。訂閱基礎版，每天無限練習♪",
   "dailyLimitClose": "返回首頁",
-  "dailyLimitUpgrade": "查看基礎版 ✨"
+  "dailyLimitUpgrade": "查看基礎版 ✨",
+  "characterSelectQuestion": "你想和誰一起練習？🌸",
+  "characterSelectTumugiDescription": "開朗溫柔！每天都會笑著為你加油☺️",
+  "characterSelectKasumiDescription": "酷而成熟。其實是個傲嬌角色😏"
 }

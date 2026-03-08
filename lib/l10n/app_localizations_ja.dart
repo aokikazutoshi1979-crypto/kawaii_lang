@@ -854,4 +854,13 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get dailyLimitUpgrade => 'ベーシックプランを見る ✨';
+
+  @override
+  String get characterSelectQuestion => 'どっちのキャラクターと練習する？🌸';
+
+  @override
+  String get characterSelectTumugiDescription => '明るくて優しい！毎日笑顔で応援してくれるよ☺️';
+
+  @override
+  String get characterSelectKasumiDescription => 'クールで大人っぽい。本当は優しいツンデレキャラ😏';
 }

@@ -894,4 +894,15 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get dailyLimitUpgrade => 'Voir le Plan Basique ✨';
+
+  @override
+  String get characterSelectQuestion => 'Avec qui veux-tu t\'entraîner ? 🌸';
+
+  @override
+  String get characterSelectTumugiDescription =>
+      'Joyeuse et douce ! Elle t\'encouragera chaque jour avec le sourire ☺️';
+
+  @override
+  String get characterSelectKasumiDescription =>
+      'Cool et mature. En réalité très gentille à sa façon 😏';
 }

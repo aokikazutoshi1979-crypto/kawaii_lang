@@ -847,6 +847,15 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get dailyLimitUpgrade => '查看基础版 ✨';
+
+  @override
+  String get characterSelectQuestion => '你想和谁一起练习？🌸';
+
+  @override
+  String get characterSelectTumugiDescription => '开朗温柔！每天都会笑着为你加油☺️';
+
+  @override
+  String get characterSelectKasumiDescription => '酷而成熟。其实是个傲娇角色😏';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -1647,4 +1656,13 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get dailyLimitUpgrade => '查看基礎版 ✨';
+
+  @override
+  String get characterSelectQuestion => '你想和誰一起練習？🌸';
+
+  @override
+  String get characterSelectTumugiDescription => '開朗溫柔！每天都會笑著為你加油☺️';
+
+  @override
+  String get characterSelectKasumiDescription => '酷而成熟。其實是個傲嬌角色😏';
 }

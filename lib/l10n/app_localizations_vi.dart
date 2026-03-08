@@ -881,4 +881,15 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get dailyLimitUpgrade => 'Xem Gói Cơ Bản ✨';
+
+  @override
+  String get characterSelectQuestion => 'Bạn muốn luyện tập cùng ai? 🌸';
+
+  @override
+  String get characterSelectTumugiDescription =>
+      'Vui vẻ và dịu dàng! Cô ấy sẽ cổ vũ bạn mỗi ngày ☺️';
+
+  @override
+  String get characterSelectKasumiDescription =>
+      'Lạnh lùng và trưởng thành. Thật ra rất tốt bụng theo cách riêng 😏';
 }

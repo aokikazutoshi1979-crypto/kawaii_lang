@@ -3,10 +3,16 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../l10n/app_localizations.dart';
 import '../services/character_asset_service.dart';
+import 'character_selection_screen.dart';
 import 'home_screen.dart';
 
 class LevelSelectionScreen extends StatefulWidget {
-  const LevelSelectionScreen({super.key});
+  final bool isOnboarding;
+
+  const LevelSelectionScreen({
+    super.key,
+    this.isOnboarding = false,
+  });
 
   @override
   State<LevelSelectionScreen> createState() => _LevelSelectionScreenState();
@@ -34,7 +40,11 @@ class _LevelSelectionScreenState extends State<LevelSelectionScreen> {
     await prefs.setString('user_level', level);
     if (!mounted) return;
     Navigator.of(context).pushReplacement(
-      MaterialPageRoute(builder: (_) => const HomeScreen()),
+      MaterialPageRoute(
+        builder: (_) => widget.isOnboarding
+            ? const CharacterSelectionScreen()
+            : const HomeScreen(),
+      ),
     );
   }
 

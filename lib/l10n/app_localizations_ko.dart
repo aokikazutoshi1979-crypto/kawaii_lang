@@ -857,4 +857,14 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get dailyLimitUpgrade => '베이직 플랜 보기 ✨';
+
+  @override
+  String get characterSelectQuestion => '누구와 함께 연습할까요？🌸';
+
+  @override
+  String get characterSelectTumugiDescription => '밝고 다정해！매일 웃으며 응원해줄 거예요☺️';
+
+  @override
+  String get characterSelectKasumiDescription =>
+      '쿨하고 어른스러워요. 사실은 상냥한 츤데레 캐릭터😏';
 }

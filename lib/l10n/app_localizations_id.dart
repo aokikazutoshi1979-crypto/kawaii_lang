@@ -889,4 +889,15 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get dailyLimitUpgrade => 'Lihat Paket Dasar ✨';
+
+  @override
+  String get characterSelectQuestion => 'Dengan siapa kamu ingin berlatih? 🌸';
+
+  @override
+  String get characterSelectTumugiDescription =>
+      'Ceria dan baik hati! Dia akan menyemangatimu setiap hari ☺️';
+
+  @override
+  String get characterSelectKasumiDescription =>
+      'Keren dan dewasa. Sebenarnya sangat baik dengan caranya sendiri 😏';
 }

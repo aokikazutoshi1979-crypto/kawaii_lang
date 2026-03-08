@@ -3,7 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../l10n/app_localizations.dart';
 import '../services/character_asset_service.dart';
-import 'home_screen.dart';
+import 'character_selection_screen.dart';
 import 'level_selection_screen.dart';
 
 class PurposeSelectionScreen extends StatefulWidget {
@@ -30,32 +30,34 @@ class _PurposeSelectionScreenState extends State<PurposeSelectionScreen> {
     if (mounted) setState(() => _selectedCharacter = character);
   }
 
-  // 🌱 ゼロから：starter + ふりがなON → HomeScreen
+  // 🌱 ゼロから：starter + ふりがなON → CharacterSelectionScreen
   Future<void> _selectZero() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString('user_level', 'starter');
     await prefs.setBool('show_furigana', true);
     if (!mounted) return;
     Navigator.of(context).pushReplacement(
-      MaterialPageRoute(builder: (_) => const HomeScreen()),
+      MaterialPageRoute(builder: (_) => const CharacterSelectionScreen()),
     );
   }
 
-  // 📚 少し学んだ：詳細レベル選択へ
+  // 📚 少し学んだ：詳細レベル選択へ（isOnboarding: true）
   void _selectLearned() {
     Navigator.of(context).pushReplacement(
-      MaterialPageRoute(builder: (_) => const LevelSelectionScreen()),
+      MaterialPageRoute(
+        builder: (_) => const LevelSelectionScreen(isOnboarding: true),
+      ),
     );
   }
 
-  // ✈️ 旅行：beginner + ふりがなON → HomeScreen
+  // ✈️ 旅行：beginner + ふりがなON → CharacterSelectionScreen
   Future<void> _selectTravel() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString('user_level', 'beginner');
     await prefs.setBool('show_furigana', true);
     if (!mounted) return;
     Navigator.of(context).pushReplacement(
-      MaterialPageRoute(builder: (_) => const HomeScreen()),
+      MaterialPageRoute(builder: (_) => const CharacterSelectionScreen()),
     );
   }
 
