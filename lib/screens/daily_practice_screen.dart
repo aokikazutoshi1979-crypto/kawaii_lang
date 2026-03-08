@@ -769,6 +769,7 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
                       practicedPhrase: _japaneseText,
                       streakDays: _streakDays,
                       character: _selectedCharacter,
+                      todayPracticeCount: _todaysPracticeCount,
                     ),
                   ),
                 ).then((_) {

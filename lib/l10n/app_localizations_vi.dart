@@ -814,6 +814,11 @@ class AppLocalizationsVi extends AppLocalizations {
   String get dailyCompleteTodayPhrase => 'Cụm từ hôm nay:';
 
   @override
+  String dailyCompleteTodayCount(Object count) {
+    return 'Bạn đã luyện $count lần hôm nay! 🌟';
+  }
+
+  @override
   String get levelSelectQuestion => 'Trình độ tiếng Nhật của bạn là gì? 🌸';
 
   @override

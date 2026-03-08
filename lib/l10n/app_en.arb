@@ -412,6 +412,12 @@
   },
   "streakContinuing": "Streak in progress!",
   "dailyCompleteTodayPhrase": "Today's phrase:",
+  "dailyCompleteTodayCount": "You practiced {count} times today! 🌟",
+  "@dailyCompleteTodayCount": {
+    "placeholders": {
+      "count": {}
+    }
+  },
   "levelSelectQuestion": "What's your Japanese level? 🌸",
   "levelSelectOptionStarterTitle": "Complete Beginner",
   "levelSelectOptionStarterSub": "I don't know any Japanese yet",

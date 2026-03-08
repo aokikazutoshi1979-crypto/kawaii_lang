@@ -8,11 +8,13 @@ class DailyCompleteScreen extends StatelessWidget {
   final String practicedPhrase;
   final int streakDays;
   final String character;
+  final int todayPracticeCount;
 
   const DailyCompleteScreen({
     required this.practicedPhrase,
     required this.streakDays,
     required this.character,
+    required this.todayPracticeCount,
     super.key,
   });
 
@@ -99,6 +101,33 @@ class DailyCompleteScreen extends StatelessWidget {
                           ),
                         ),
                       ],
+                    ),
+                  ],
+                ),
+              ),
+
+              const SizedBox(height: 16),
+
+              // 今日の練習回数達成バッジ
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                decoration: BoxDecoration(
+                  color: Colors.pink.shade50,
+                  borderRadius: BorderRadius.circular(14),
+                  border: Border.all(color: Colors.pink.shade200),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Text('✨', style: TextStyle(fontSize: 20)),
+                    const SizedBox(width: 8),
+                    Text(
+                      loc.dailyCompleteTodayCount(todayPracticeCount),
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.pink.shade700,
+                      ),
                     ),
                   ],
                 ),

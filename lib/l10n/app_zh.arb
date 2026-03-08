@@ -393,6 +393,7 @@
   "streakDaysDisplay": "{days}天",
   "streakContinuing": "连续练习中！",
   "dailyCompleteTodayPhrase": "今天练习的短语：",
+  "dailyCompleteTodayCount": "今天练了{count}次！🌟",
   "levelSelectQuestion": "你的日语水平是？🌸",
   "levelSelectOptionStarterTitle": "完全零基础",
   "levelSelectOptionStarterSub": "一句日语都不会",

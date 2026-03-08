@@ -387,6 +387,7 @@
   "streakDaysDisplay": "{days} hari",
   "streakContinuing": "Streak sedang berjalan!",
   "dailyCompleteTodayPhrase": "Frasa hari ini:",
+  "dailyCompleteTodayCount": "Kamu berlatih {count} kali hari ini! 🌟",
   "levelSelectQuestion": "Apa level bahasa Jepang-mu? 🌸",
   "levelSelectOptionStarterTitle": "Pemula Mutlak",
   "levelSelectOptionStarterSub": "Saya belum tahu bahasa Jepang",

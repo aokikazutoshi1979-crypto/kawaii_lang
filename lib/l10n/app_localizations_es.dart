@@ -829,6 +829,11 @@ class AppLocalizationsEs extends AppLocalizations {
   String get dailyCompleteTodayPhrase => 'Frase de hoy:';
 
   @override
+  String dailyCompleteTodayCount(Object count) {
+    return '¡Practicaste $count veces hoy! 🌟';
+  }
+
+  @override
   String get levelSelectQuestion => '¿Cuál es tu nivel de japonés? 🌸';
 
   @override

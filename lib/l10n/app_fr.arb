@@ -387,6 +387,7 @@
   "streakDaysDisplay": "{days} jours",
   "streakContinuing": "Série en cours !",
   "dailyCompleteTodayPhrase": "Expression d'aujourd'hui :",
+  "dailyCompleteTodayCount": "Tu as pratiqué {count} fois aujourd'hui ! 🌟",
   "levelSelectQuestion": "Quel est ton niveau de japonais ? 🌸",
   "levelSelectOptionStarterTitle": "Débutant complet",
   "levelSelectOptionStarterSub": "Je ne connais aucun japonais",

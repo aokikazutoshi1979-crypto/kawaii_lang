@@ -387,6 +387,7 @@
   "streakDaysDisplay": "{days} ngày",
   "streakContinuing": "Đang duy trì chuỗi!",
   "dailyCompleteTodayPhrase": "Cụm từ hôm nay:",
+  "dailyCompleteTodayCount": "Bạn đã luyện {count} lần hôm nay! 🌟",
   "levelSelectQuestion": "Trình độ tiếng Nhật của bạn là gì? 🌸",
   "levelSelectOptionStarterTitle": "Hoàn toàn mới bắt đầu",
   "levelSelectOptionStarterSub": "Tôi chưa biết tiếng Nhật",

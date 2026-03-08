@@ -793,6 +793,11 @@ class AppLocalizationsKo extends AppLocalizations {
   String get dailyCompleteTodayPhrase => '오늘 연습한 표현:';
 
   @override
+  String dailyCompleteTodayCount(Object count) {
+    return '오늘 $count번 연습했어요！🌟';
+  }
+
+  @override
   String get levelSelectQuestion => '일본어 실력이 어느 정도예요? 🌸';
 
   @override

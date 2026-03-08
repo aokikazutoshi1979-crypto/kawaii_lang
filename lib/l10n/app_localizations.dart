@@ -1565,6 +1565,12 @@ abstract class AppLocalizations {
   /// **'今日練習したフレーズ：'**
   String get dailyCompleteTodayPhrase;
 
+  /// No description provided for @dailyCompleteTodayCount.
+  ///
+  /// In ja, this message translates to:
+  /// **'今日{count}問話せたよ！🌟'**
+  String dailyCompleteTodayCount(Object count);
+
   /// No description provided for @levelSelectQuestion.
   ///
   /// In ja, this message translates to:

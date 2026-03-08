@@ -438,6 +438,7 @@
   "streakDaysDisplay": "{days}日",
   "streakContinuing": "連続練習中！",
   "dailyCompleteTodayPhrase": "今日練習したフレーズ：",
+  "dailyCompleteTodayCount": "今日{count}問話せたよ！🌟",
   "levelSelectQuestion": "日本語はどれくらいわかる？🌸",
   "levelSelectOptionStarterTitle": "まったくわからない",
   "levelSelectOptionStarterSub": "ひとことも知らない",

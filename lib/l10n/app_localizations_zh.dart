@@ -784,6 +784,11 @@ class AppLocalizationsZh extends AppLocalizations {
   String get dailyCompleteTodayPhrase => '今天练习的短语：';
 
   @override
+  String dailyCompleteTodayCount(Object count) {
+    return '今天练了$count次！🌟';
+  }
+
+  @override
   String get levelSelectQuestion => '你的日语水平是？🌸';
 
   @override
@@ -1550,6 +1555,11 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get dailyCompleteTodayPhrase => '今天練習的短語：';
+
+  @override
+  String dailyCompleteTodayCount(Object count) {
+    return '今天練了$count次！🌟';
+  }
 
   @override
   String get levelSelectQuestion => '你的日語程度是？🌸';

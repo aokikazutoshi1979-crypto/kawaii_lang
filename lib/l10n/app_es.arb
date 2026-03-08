@@ -387,6 +387,7 @@
   "streakDaysDisplay": "{days} días",
   "streakContinuing": "¡Racha en progreso!",
   "dailyCompleteTodayPhrase": "Frase de hoy:",
+  "dailyCompleteTodayCount": "¡Practicaste {count} veces hoy! 🌟",
   "levelSelectQuestion": "¿Cuál es tu nivel de japonés? 🌸",
   "levelSelectOptionStarterTitle": "Principiante absoluto",
   "levelSelectOptionStarterSub": "No sé nada de japonés",

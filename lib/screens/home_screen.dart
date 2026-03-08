@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../services/character_asset_service.dart';
+import '../services/daily_practice_service.dart';
 import '../services/subscription_service.dart';
 import 'category_selection_screen.dart';
 import 'daily_practice_screen.dart';
@@ -17,6 +18,8 @@ class _HomeScreenState extends State<HomeScreen> {
   int _streakDays = 0;
   String _nativeCode = 'ja';
   bool _isPremium = false;
+  int _todayPracticeCount = 0;
+  static const _freeLimit = 10;
 
   static const _streakDaysKey = 'streak_days';
   static const _streakDateKey = 'streak_last_date';
@@ -56,12 +59,14 @@ class _HomeScreenState extends State<HomeScreen> {
 
     final lang = prefs.getString('user_language') ?? 'en';
     final premium = await SubscriptionService.instance.checkSubscriptionOnDevice();
+    final practiceCount = await DailyPracticeService.instance.getTodaysPracticeCount();
     if (!mounted) return;
     setState(() {
       _selectedCharacter = character;
       _streakDays = streak;
       _nativeCode = lang;
       _isPremium = premium;
+      _todayPracticeCount = practiceCount;
     });
   }
 
@@ -134,7 +139,9 @@ class _HomeScreenState extends State<HomeScreen> {
   void _goToPractice() {
     Navigator.of(context).push(
       MaterialPageRoute(builder: (_) => const CategorySelectionScreen()),
-    );
+    ).then((_) {
+      _loadPrefs();
+    });
   }
 
   @override
@@ -234,6 +241,73 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ],
                     ),
+                  ],
+                ),
+              ),
+
+              const SizedBox(height: 12),
+
+              // 今日のチャット回数プログレス
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(14),
+                  border: Border.all(color: Colors.pink.shade100),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.04),
+                      blurRadius: 6,
+                      offset: const Offset(0, 2),
+                    ),
+                  ],
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          _isJa ? '🗣️ 今日の練習' : '🗣️ Today\'s Practice',
+                          style: const TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.w600,
+                            color: Color(0xFF1F2937),
+                          ),
+                        ),
+                        Text(
+                          _isPremium
+                              ? (_isJa ? '$_todayPracticeCount 回完了' : '$_todayPracticeCount done')
+                              : '$_todayPracticeCount / $_freeLimit',
+                          style: TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.bold,
+                            color: _isPremium
+                                ? Colors.pink.shade400
+                                : (_todayPracticeCount >= _freeLimit
+                                    ? Colors.orange.shade700
+                                    : Colors.pink.shade400),
+                          ),
+                        ),
+                      ],
+                    ),
+                    if (!_isPremium) ...[
+                      const SizedBox(height: 6),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(4),
+                        child: LinearProgressIndicator(
+                          value: (_todayPracticeCount / _freeLimit).clamp(0.0, 1.0),
+                          minHeight: 6,
+                          backgroundColor: Colors.pink.shade50,
+                          valueColor: AlwaysStoppedAnimation<Color>(
+                            _todayPracticeCount >= _freeLimit
+                                ? Colors.orange.shade400
+                                : Colors.pink.shade300,
+                          ),
+                        ),
+                      ),
+                    ],
                   ],
                 ),
               ),

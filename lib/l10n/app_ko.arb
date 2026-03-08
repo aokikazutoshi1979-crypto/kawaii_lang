@@ -387,6 +387,7 @@
   "streakDaysDisplay": "{days}일",
   "streakContinuing": "연속 연습 중!",
   "dailyCompleteTodayPhrase": "오늘 연습한 표현:",
+  "dailyCompleteTodayCount": "오늘 {count}번 연습했어요！🌟",
   "levelSelectQuestion": "일본어 실력이 어느 정도예요? 🌸",
   "levelSelectOptionStarterTitle": "전혀 모릅니다",
   "levelSelectOptionStarterSub": "한 마디도 모릅니다",
