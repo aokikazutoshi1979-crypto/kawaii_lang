@@ -327,6 +327,30 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
         backgroundColor: Colors.white,
         foregroundColor: Colors.black87,
         elevation: 0,
+        actions: [
+          if (!_isPremiumUser)
+            Padding(
+              padding: const EdgeInsets.only(right: 16),
+              child: Center(
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: Colors.pink.shade50,
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.pink.shade200),
+                  ),
+                  child: Text(
+                    '$_todaysPracticeCount / $_freeLimit',
+                    style: TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.pink.shade600,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+        ],
       ),
       backgroundColor: const Color(0xFFFFF8FB),
       body: _isLoading
