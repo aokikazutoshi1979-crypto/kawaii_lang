@@ -1,21 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:kawaii_lang/l10n/app_localizations.dart';
+import 'package:kawaii_lang/services/character_asset_service.dart';
 
 class TsumugiWelcomeDialog extends StatelessWidget {
   final VoidCallback onStart;
   final VoidCallback onWhoIs;
   final VoidCallback onLater;
+  final String character;
 
   const TsumugiWelcomeDialog({
     super.key,
     required this.onStart,
     required this.onWhoIs,
     required this.onLater,
+    this.character = CharacterAssetService.defaultCharacter,
   });
 
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
+    final isKasumi = character == CharacterAssetService.kasumi;
+    final title = isKasumi ? loc.kasumiIntroTitle : loc.tsumugiIntroTitle;
+    final body = isKasumi ? loc.kasumiIntroBody : loc.tsumugiIntroBody;
+    final whoIsLabel = isKasumi ? loc.kasumiIntroWhoIsButton : loc.tsumugiIntroWhoIsButton;
     return Dialog(
       backgroundColor: Colors.transparent,
       insetPadding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24),
@@ -40,7 +47,7 @@ class TsumugiWelcomeDialog extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Text(
-                  loc.tsumugiIntroTitle,
+                  title,
                   textAlign: TextAlign.center,
                   style: const TextStyle(
                     fontSize: 20,
@@ -50,7 +57,7 @@ class TsumugiWelcomeDialog extends StatelessWidget {
                 ),
                 const SizedBox(height: 12),
                 Text(
-                  loc.tsumugiIntroBody,
+                  body,
                   textAlign: TextAlign.center,
                   style: const TextStyle(
                     fontSize: 14.5,
@@ -90,7 +97,7 @@ class TsumugiWelcomeDialog extends StatelessWidget {
                     ),
                   ),
                   child: Text(
-                    loc.tsumugiIntroWhoIsButton,
+                    whoIsLabel,
                     style: const TextStyle(
                       fontSize: 14.5,
                       fontWeight: FontWeight.w700,

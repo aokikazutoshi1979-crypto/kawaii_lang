@@ -669,6 +669,16 @@ class AppLocalizationsId extends AppLocalizations {
   String get tsumugiIntroLaterButton => 'あとで';
 
   @override
+  String get kasumiIntroTitle => 'Senang berkenalan, aku Kasumi.';
+
+  @override
+  String get kasumiIntroBody =>
+      'Di sini, kamu bisa berlatih dengan kalimat pendek. Tidak apa-apa kalau belum sempurna. Mari pelan-pelan bersama.';
+
+  @override
+  String get kasumiIntroWhoIsButton => 'Siapa Kasumi?';
+
+  @override
   String get tsumugiProfileMenuTitle => 'Tentang Tsumugi';
 
   @override

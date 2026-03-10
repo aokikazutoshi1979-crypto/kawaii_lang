@@ -646,6 +646,15 @@ class AppLocalizationsJa extends AppLocalizations {
   String get tsumugiIntroLaterButton => 'あとで';
 
   @override
+  String get kasumiIntroTitle => 'はじめまして、香澄です';
+
+  @override
+  String get kasumiIntroBody => 'ここでは、短い一言から練習できます。うまく言えなくても大丈夫。ゆっくり一緒にいこ？';
+
+  @override
+  String get kasumiIntroWhoIsButton => '香澄って？';
+
+  @override
   String get tsumugiProfileMenuTitle => '紬って？';
 
   @override

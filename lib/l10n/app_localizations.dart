@@ -1289,6 +1289,24 @@ abstract class AppLocalizations {
   /// **'あとで'**
   String get tsumugiIntroLaterButton;
 
+  /// No description provided for @kasumiIntroTitle.
+  ///
+  /// In ja, this message translates to:
+  /// **'はじめまして、香澄です'**
+  String get kasumiIntroTitle;
+
+  /// No description provided for @kasumiIntroBody.
+  ///
+  /// In ja, this message translates to:
+  /// **'ここでは、短い一言から練習できます。うまく言えなくても大丈夫。ゆっくり一緒にいこ？'**
+  String get kasumiIntroBody;
+
+  /// No description provided for @kasumiIntroWhoIsButton.
+  ///
+  /// In ja, this message translates to:
+  /// **'香澄って？'**
+  String get kasumiIntroWhoIsButton;
+
   /// No description provided for @tsumugiProfileMenuTitle.
   ///
   /// In ja, this message translates to:

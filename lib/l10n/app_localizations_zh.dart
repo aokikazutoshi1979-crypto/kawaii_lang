@@ -642,6 +642,15 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tsumugiIntroLaterButton => '稍后';
 
   @override
+  String get kasumiIntroTitle => '初次见面，我是香澄';
+
+  @override
+  String get kasumiIntroBody => '在这里，你可以从简短的一句话开始练习。说不好也没关系，我们慢慢来，一起进步吧？';
+
+  @override
+  String get kasumiIntroWhoIsButton => '香澄是谁？';
+
+  @override
   String get tsumugiProfileMenuTitle => '关于紬';
 
   @override
@@ -1476,6 +1485,15 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get kasumiAccuracyIncorrect => '嗯…差一點。不過你肯定能行的。再來一次。';
+
+  @override
+  String get kasumiIntroTitle => '初次見面，我是香澄';
+
+  @override
+  String get kasumiIntroBody => '在這裡，你可以從簡短的一句話開始練習。說不好也沒關係，我們慢慢來，一起進步吧？';
+
+  @override
+  String get kasumiIntroWhoIsButton => '香澄是誰？';
 
   @override
   String get tsumugiProfileMenuTitle => '關於紬';

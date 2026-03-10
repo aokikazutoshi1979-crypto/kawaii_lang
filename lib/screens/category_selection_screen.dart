@@ -19,6 +19,7 @@ import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import '../services/subscription_state.dart';
 import '../services/tsumugi_line_service.dart';
 import 'tsumugi_profile_screen.dart';
+import 'kasumi_profile_screen.dart';
 import '../widgets/tsumugi_welcome_dialog.dart';
 import '../services/character_asset_service.dart';
 import '../services/kasumi_line_service.dart';
@@ -165,8 +166,12 @@ class _CategorySelectionScreenState
   Future<void> _loadTsumugiLine() async {
     await refreshSubscriptionStatus();
     if (!mounted) return;
+    // _loadCharacter() と並行実行される可能性があるため、ここで直接取得する
+    final character = await CharacterAssetService.loadSelectedCharacter();
+    if (!mounted) return;
+    setState(() => _selectedCharacter = character);
     final String quote;
-    if (_selectedCharacter == CharacterAssetService.kasumi) {
+    if (character == CharacterAssetService.kasumi) {
       final langCode = selectedNativeLang ?? 'ja';
       quote = await KasumiLineService.instance.getLine(
         hasSubscription: hasSubOnDevice,
@@ -229,13 +234,17 @@ class _CategorySelectionScreenState
     final seen = prefs.getBool(_tsumugiIntroSeenPrefKey) ?? false;
     if (seen || !mounted) return;
     await prefs.setBool(_tsumugiIntroSeenPrefKey, true);
+    // キャラクターを直接取得して正しいイントロを表示
+    final character = await CharacterAssetService.loadSelectedCharacter();
     if (!mounted) return;
+    final isKasumi = character == CharacterAssetService.kasumi;
     await showDialog<void>(
       context: context,
       barrierDismissible: true,
       barrierColor: Colors.black54,
       builder: (dialogContext) {
         return TsumugiWelcomeDialog(
+          character: character,
           onStart: () => Navigator.of(dialogContext).pop(),
           onLater: () => Navigator.of(dialogContext).pop(),
           onWhoIs: () {
@@ -243,7 +252,11 @@ class _CategorySelectionScreenState
             Future<void>.delayed(const Duration(milliseconds: 120), () {
               if (!mounted) return;
               Navigator.of(context).push(
-                MaterialPageRoute(builder: (_) => const TsumugiProfileScreen()),
+                MaterialPageRoute(
+                  builder: (_) => isKasumi
+                      ? const KasumiProfileScreen()
+                      : const TsumugiProfileScreen(),
+                ),
               );
             });
           },

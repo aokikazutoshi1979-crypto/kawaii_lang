@@ -672,6 +672,16 @@ class AppLocalizationsDe extends AppLocalizations {
   String get tsumugiIntroLaterButton => 'あとで';
 
   @override
+  String get kasumiIntroTitle => 'Schön, dich kennenzulernen, ich bin Kasumi.';
+
+  @override
+  String get kasumiIntroBody =>
+      'Hier kannst du mit kurzen Sätzen üben. Es ist okay, wenn es nicht perfekt ist. Wir gehen es gemeinsam an, in deinem Tempo.';
+
+  @override
+  String get kasumiIntroWhoIsButton => 'Wer ist Kasumi?';
+
+  @override
   String get tsumugiProfileMenuTitle => 'Über Tsumugi';
 
   @override

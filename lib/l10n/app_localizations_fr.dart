@@ -673,6 +673,16 @@ class AppLocalizationsFr extends AppLocalizations {
   String get tsumugiIntroLaterButton => 'あとで';
 
   @override
+  String get kasumiIntroTitle => 'Enchantée, je suis Kasumi.';
+
+  @override
+  String get kasumiIntroBody =>
+      'Ici, tu peux pratiquer avec des phrases courtes. Pas besoin d\'être parfait. On avance ensemble, à ton rythme.';
+
+  @override
+  String get kasumiIntroWhoIsButton => 'Qui est Kasumi ?';
+
+  @override
   String get tsumugiProfileMenuTitle => 'À propos de Tsumugi';
 
   @override

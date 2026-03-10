@@ -649,6 +649,16 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tsumugiIntroLaterButton => 'あとで';
 
   @override
+  String get kasumiIntroTitle => '처음 뵙겠습니다, 카스미입니다';
+
+  @override
+  String get kasumiIntroBody =>
+      '여기서는 짧은 한마디부터 연습할 수 있어요. 잘 못해도 괜찮아요. 천천히 같이 가요？';
+
+  @override
+  String get kasumiIntroWhoIsButton => '카스미는 누구？';
+
+  @override
   String get tsumugiProfileMenuTitle => '츠무기에 대해';
 
   @override

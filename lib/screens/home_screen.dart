@@ -19,6 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
   String _nativeCode = 'ja';
   bool _isPremium = false;
   int _todayPracticeCount = 0;
+  bool _streakBroken = false;
   static const _freeLimit = 10;
 
   static const _streakDaysKey = 'streak_days';
@@ -36,6 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
     final today = _todayStr();
     final lastDate = prefs.getString(_streakDateKey) ?? '';
     int streak = prefs.getInt(_streakDaysKey) ?? 0;
+    bool streakBroken = false;
 
     // ストリーク計算（アプリを開いた日に更新）
     if (lastDate == today) {
@@ -53,6 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
     } else {
       // 2日以上空いた → リセット
       streak = 1;
+      streakBroken = true;  // ← ストリーク切れフラグ
       await prefs.setInt(_streakDaysKey, streak);
       await prefs.setString(_streakDateKey, today);
     }
@@ -67,6 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
       _nativeCode = lang;
       _isPremium = premium;
       _todayPracticeCount = practiceCount;
+      _streakBroken = streakBroken;
     });
   }
 
@@ -190,13 +194,17 @@ class _HomeScreenState extends State<HomeScreen> {
                         ],
                       ),
                       child: Text(
-                        _todayPracticeCount == 0
-                            ? (_isJa ? '今日も一緒に練習しよう！☺️' : "Let's practice together today! ☺️")
-                            : _todayPracticeCount >= _freeLimit
-                                ? (_isJa ? '今日の練習、バッチリだね！🔥' : "Today's practice is complete! 🔥")
-                                : (_isJa
-                                    ? '今日も$_todayPracticeCount問練習したね！☺️'
-                                    : "You've practiced $_todayPracticeCount time(s) today! ☺️"),
+                        _streakBroken && _todayPracticeCount == 0
+                            ? (_isJa
+                                ? 'お久しぶり！また一緒に練習しようね☺️'
+                                : "Welcome back! Let's start again together ☺️")
+                            : _todayPracticeCount == 0
+                                ? (_isJa ? '今日も一緒に練習しよう！☺️' : "Let's practice together today! ☺️")
+                                : _todayPracticeCount >= _freeLimit
+                                    ? (_isJa ? '今日の練習、バッチリだね！🔥' : "Today's practice is complete! 🔥")
+                                    : (_isJa
+                                        ? '今日も$_todayPracticeCount問練習したね！☺️'
+                                        : "You've practiced $_todayPracticeCount time(s) today! ☺️"),
                         style: const TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.w600,

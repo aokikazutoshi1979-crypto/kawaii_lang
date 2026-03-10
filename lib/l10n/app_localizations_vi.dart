@@ -663,6 +663,16 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tsumugiIntroLaterButton => 'あとで';
 
   @override
+  String get kasumiIntroTitle => 'Rất vui được gặp bạn, mình là Kasumi.';
+
+  @override
+  String get kasumiIntroBody =>
+      'Ở đây, bạn có thể luyện tập với những câu ngắn. Không sao nếu chưa hoàn hảo. Chúng ta cùng đi chậm thôi.';
+
+  @override
+  String get kasumiIntroWhoIsButton => 'Kasumi là ai?';
+
+  @override
   String get tsumugiProfileMenuTitle => 'Về Tsumugi';
 
   @override

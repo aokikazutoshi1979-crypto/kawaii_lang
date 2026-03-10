@@ -668,6 +668,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tsumugiIntroLaterButton => 'Later';
 
   @override
+  String get kasumiIntroTitle => 'Nice to meet you, I am Kasumi.';
+
+  @override
+  String get kasumiIntroBody =>
+      'Here, you can practice with short phrases. It is okay if you cannot say it perfectly. Let us take it slow, together.';
+
+  @override
+  String get kasumiIntroWhoIsButton => 'Who is Kasumi?';
+
+  @override
   String get tsumugiProfileMenuTitle => 'About Tsumugi';
 
   @override
