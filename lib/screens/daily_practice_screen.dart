@@ -122,7 +122,8 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
       targetLang: 'ja',
     );
     // gpt-4o-miniは漢字読みの精度がgpt-3.5-turboより大幅に高い
-    final res = await GptService.getChatResponse(prompt, text, loc, model: 'gpt-4o-mini');
+    // userInputは空にする（textはpromptの<text>タグに既に含まれているため、渡すと2重になる）
+    final res = await GptService.getChatResponse(prompt, '', loc, model: 'gpt-4o-mini');
     if (res != null && res.trim().isNotEmpty && mounted) {
       // GPTが説明文を混ぜて返すことがあるため、ひらがな・長音符のみ抽出する
       final hiraganaOnly = RegExp(r'[ぁ-んー]')
