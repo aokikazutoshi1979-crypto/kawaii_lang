@@ -111,10 +111,18 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
     }
   }
 
-  // ふりがな（ひらがな転写）をGPT経由で非同期取得
+  // ふりがな（ひらがな転写）を取得。JSONに値があればそれを使い、なければGPT経由で取得
   Future<void> _fetchFurigana() async {
     final text = _japaneseText;
     if (text.isEmpty || !mounted) return;
+
+    // JSONにfuriganaフィールドがあればGPT呼び出しをスキップ
+    final cachedFurigana = _question?['furigana'] as String?;
+    if (cachedFurigana != null && cachedFurigana.trim().isNotEmpty) {
+      setState(() => _furigana = cachedFurigana.trim());
+      return;
+    }
+
     final loc = AppLocalizations.of(context);
     if (loc == null) return;
     final prompt = PromptBuilders.buildSimilarQuestionTtsPrompt(
