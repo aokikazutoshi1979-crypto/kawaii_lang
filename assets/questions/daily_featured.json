@@ -4,11 +4,20 @@
     "scene": "daily_featured",
     "subScene": "expression",
     "level": "starter",
-    "tags": ["expression"],
+    "tags": [
+      "expression"
+    ],
     "translations": {
       "ja": "かわいい！",
       "en": "Cute!",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
@@ -16,11 +25,20 @@
     "scene": "daily_featured",
     "subScene": "expression",
     "level": "starter",
-    "tags": ["expression"],
+    "tags": [
+      "expression"
+    ],
     "translations": {
       "ja": "すごい！",
       "en": "Amazing!",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
@@ -28,11 +46,20 @@
     "scene": "daily_featured",
     "subScene": "expression",
     "level": "starter",
-    "tags": ["expression"],
+    "tags": [
+      "expression"
+    ],
     "translations": {
       "ja": "だいすき！",
       "en": "I love it! / I love you!",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
@@ -40,11 +67,20 @@
     "scene": "daily_featured",
     "subScene": "daily",
     "level": "starter",
-    "tags": ["daily"],
+    "tags": [
+      "daily"
+    ],
     "translations": {
       "ja": "ありがとう。",
       "en": "Thank you.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
@@ -52,11 +88,20 @@
     "scene": "daily_featured",
     "subScene": "daily",
     "level": "starter",
-    "tags": ["daily"],
+    "tags": [
+      "daily"
+    ],
     "translations": {
       "ja": "おはよう。",
       "en": "Good morning.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
@@ -64,11 +109,20 @@
     "scene": "daily_featured",
     "subScene": "daily",
     "level": "starter",
-    "tags": ["daily"],
+    "tags": [
+      "daily"
+    ],
     "translations": {
       "ja": "おやすみ。",
       "en": "Good night.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
@@ -76,11 +130,20 @@
     "scene": "daily_featured",
     "subScene": "daily",
     "level": "starter",
-    "tags": ["daily"],
+    "tags": [
+      "daily"
+    ],
     "translations": {
       "ja": "いただきます。",
       "en": "Time to eat! (phrase before a meal)",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
@@ -88,11 +151,20 @@
     "scene": "daily_featured",
     "subScene": "expression",
     "level": "starter",
-    "tags": ["expression"],
+    "tags": [
+      "expression"
+    ],
     "translations": {
       "ja": "うれしい！",
       "en": "I'm so happy!",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
@@ -100,11 +172,20 @@
     "scene": "daily_featured",
     "subScene": "daily",
     "level": "starter",
-    "tags": ["daily"],
+    "tags": [
+      "daily"
+    ],
     "translations": {
       "ja": "またね。",
       "en": "See you later.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
@@ -112,371 +193,2540 @@
     "scene": "daily_featured",
     "subScene": "expression",
     "level": "starter",
-    "tags": ["expression"],
+    "tags": [
+      "expression"
+    ],
     "translations": {
       "ja": "がんばれ！",
       "en": "You can do it!",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_011",
     "scene": "daily_featured",
     "subScene": "expression",
-    "level": "beginner",
-    "tags": ["expression"],
+    "level": "starter",
+    "tags": [
+      "expression"
+    ],
     "translations": {
-      "ja": "好きです。",
-      "en": "I like it. / I like you.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "ねむい。",
+      "en": "I'm sleepy.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_012",
     "scene": "daily_featured",
-    "subScene": "daily",
-    "level": "beginner",
-    "tags": ["daily"],
+    "subScene": "expression",
+    "level": "starter",
+    "tags": [
+      "expression"
+    ],
     "translations": {
-      "ja": "ありがとうございます。",
-      "en": "Thank you very much.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "おなかすいた。",
+      "en": "I'm hungry.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_013",
     "scene": "daily_featured",
-    "subScene": "social",
-    "level": "beginner",
-    "tags": ["social"],
+    "subScene": "expression",
+    "level": "starter",
+    "tags": [
+      "expression"
+    ],
     "translations": {
-      "ja": "一緒に行きましょう！",
-      "en": "Let's go together!",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "やった！",
+      "en": "Yes! I did it!",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_014",
     "scene": "daily_featured",
-    "subScene": "social",
-    "level": "beginner",
-    "tags": ["social"],
+    "subScene": "expression",
+    "level": "starter",
+    "tags": [
+      "expression"
+    ],
     "translations": {
-      "ja": "大丈夫ですか？",
-      "en": "Are you okay?",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "えっ？",
+      "en": "Huh? What?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_015",
     "scene": "daily_featured",
     "subScene": "expression",
-    "level": "beginner",
-    "tags": ["expression"],
+    "level": "starter",
+    "tags": [
+      "expression"
+    ],
     "translations": {
-      "ja": "頑張って！",
-      "en": "Do your best!",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "いいな〜。",
+      "en": "That sounds nice. / Lucky you.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_016",
     "scene": "daily_featured",
     "subScene": "expression",
-    "level": "beginner",
-    "tags": ["expression"],
+    "level": "starter",
+    "tags": [
+      "expression"
+    ],
     "translations": {
-      "ja": "おいしい！",
-      "en": "Delicious!",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "たのしい！",
+      "en": "This is fun!",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_017",
     "scene": "daily_featured",
-    "subScene": "self",
-    "level": "beginner",
-    "tags": ["self"],
+    "subScene": "daily",
+    "level": "starter",
+    "tags": [
+      "daily"
+    ],
     "translations": {
-      "ja": "日本語を勉強しています。",
-      "en": "I'm studying Japanese.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "こんにちは。",
+      "en": "Hello.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_018",
     "scene": "daily_featured",
     "subScene": "daily",
-    "level": "beginner",
-    "tags": ["daily"],
+    "level": "starter",
+    "tags": [
+      "daily"
+    ],
     "translations": {
-      "ja": "よろしくお願いします。",
-      "en": "Nice to meet you. / Please treat me well.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "こんばんは。",
+      "en": "Good evening.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_019",
     "scene": "daily_featured",
-    "subScene": "social",
-    "level": "beginner",
-    "tags": ["social"],
+    "subScene": "daily",
+    "level": "starter",
+    "tags": [
+      "daily"
+    ],
     "translations": {
-      "ja": "また会いましょう。",
-      "en": "Let's meet again.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "ごめんなさい。",
+      "en": "I'm sorry.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_020",
     "scene": "daily_featured",
     "subScene": "expression",
-    "level": "beginner",
-    "tags": ["expression"],
+    "level": "starter",
+    "tags": [
+      "expression"
+    ],
     "translations": {
-      "ja": "本当にありがとう。",
-      "en": "Thank you so much.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "きれい！",
+      "en": "Beautiful! / Pretty!",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_021",
     "scene": "daily_featured",
-    "subScene": "hobby",
-    "level": "intermediate",
-    "tags": ["hobby"],
+    "subScene": "expression",
+    "level": "starter",
+    "tags": [
+      "expression"
+    ],
     "translations": {
-      "ja": "映画を見るのが好きです。",
-      "en": "I like watching movies.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "こわい！",
+      "en": "Scary!",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_022",
     "scene": "daily_featured",
-    "subScene": "dream",
-    "level": "intermediate",
-    "tags": ["dream"],
+    "subScene": "expression",
+    "level": "starter",
+    "tags": [
+      "expression"
+    ],
     "translations": {
-      "ja": "日本に行ってみたいです。",
-      "en": "I want to visit Japan.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "やばい！",
+      "en": "Wow! / That's crazy! (casual)",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_023",
     "scene": "daily_featured",
-    "subScene": "conversation",
-    "level": "intermediate",
-    "tags": ["conversation"],
+    "subScene": "expression",
+    "level": "starter",
+    "tags": [
+      "expression"
+    ],
     "translations": {
-      "ja": "もう一度言ってもらえますか？",
-      "en": "Could you say that again?",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "まじで？",
+      "en": "Really? / Seriously?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_024",
     "scene": "daily_featured",
-    "subScene": "social",
-    "level": "intermediate",
-    "tags": ["social"],
+    "subScene": "expression",
+    "level": "starter",
+    "tags": [
+      "expression"
+    ],
     "translations": {
-      "ja": "最近どうですか？",
-      "en": "How have you been lately?",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "なるほど。",
+      "en": "I see. / That makes sense.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_025",
     "scene": "daily_featured",
     "subScene": "daily",
-    "level": "intermediate",
-    "tags": ["daily"],
+    "level": "starter",
+    "tags": [
+      "daily"
+    ],
     "translations": {
-      "ja": "少し待ってください。",
-      "en": "Please wait a moment.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "ちょっとまって。",
+      "en": "Wait a moment.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_026",
     "scene": "daily_featured",
-    "subScene": "social",
-    "level": "intermediate",
-    "tags": ["social"],
+    "subScene": "daily",
+    "level": "starter",
+    "tags": [
+      "daily"
+    ],
     "translations": {
-      "ja": "どんな音楽が好きですか？",
-      "en": "What kind of music do you like?",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "いってきます。",
+      "en": "I'm off! (when leaving home)",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_027",
     "scene": "daily_featured",
-    "subScene": "hobby",
-    "level": "intermediate",
-    "tags": ["hobby"],
+    "subScene": "daily",
+    "level": "starter",
+    "tags": [
+      "daily"
+    ],
     "translations": {
-      "ja": "アニメが大好きです。",
-      "en": "I love anime.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "ただいま。",
+      "en": "I'm home!",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_028",
     "scene": "daily_featured",
-    "subScene": "social",
-    "level": "intermediate",
-    "tags": ["social"],
+    "subScene": "daily",
+    "level": "starter",
+    "tags": [
+      "daily"
+    ],
     "translations": {
-      "ja": "週末は何をしますか？",
-      "en": "What do you do on weekends?",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "おかえり。",
+      "en": "Welcome back.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_029",
     "scene": "daily_featured",
     "subScene": "expression",
-    "level": "intermediate",
-    "tags": ["expression"],
+    "level": "starter",
+    "tags": [
+      "expression"
+    ],
     "translations": {
-      "ja": "また会いたいです。",
-      "en": "I want to see you again.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "わかった！",
+      "en": "Got it! / I understand!",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_030",
     "scene": "daily_featured",
-    "subScene": "self",
-    "level": "intermediate",
-    "tags": ["self"],
+    "subScene": "expression",
+    "level": "starter",
+    "tags": [
+      "expression"
+    ],
     "translations": {
-      "ja": "日本語が少し話せます。",
-      "en": "I can speak a little Japanese.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "もちろん！",
+      "en": "Of course!",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_031",
     "scene": "daily_featured",
-    "subScene": "expression",
-    "level": "advanced",
-    "tags": ["expression"],
+    "subScene": "daily",
+    "level": "starter",
+    "tags": [
+      "daily"
+    ],
     "translations": {
-      "ja": "夢を諦めないでください。",
-      "en": "Please don't give up on your dreams.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "だいじょうぶ。",
+      "en": "It's okay. / I'm fine.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_032",
     "scene": "daily_featured",
     "subScene": "expression",
-    "level": "advanced",
-    "tags": ["expression"],
+    "level": "starter",
+    "tags": [
+      "expression"
+    ],
     "translations": {
-      "ja": "あなたのことをずっと応援しています。",
-      "en": "I've always been cheering for you.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "むずかしい。",
+      "en": "It's difficult.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_033",
     "scene": "daily_featured",
-    "subScene": "hobby",
-    "level": "advanced",
-    "tags": ["hobby"],
+    "subScene": "expression",
+    "level": "starter",
+    "tags": [
+      "expression"
+    ],
     "translations": {
-      "ja": "日本の文化にとても興味があります。",
-      "en": "I'm very interested in Japanese culture.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "かんたん！",
+      "en": "Easy!",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_034",
     "scene": "daily_featured",
-    "subScene": "social",
-    "level": "advanced",
-    "tags": ["social"],
+    "subScene": "daily",
+    "level": "starter",
+    "tags": [
+      "daily"
+    ],
     "translations": {
-      "ja": "もし時間があれば、一緒にご飯でも行きませんか？",
-      "en": "If you have time would you like to grab a meal?",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "まだ。",
+      "en": "Not yet.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_035",
     "scene": "daily_featured",
-    "subScene": "expression",
-    "level": "advanced",
-    "tags": ["expression"],
+    "subScene": "daily",
+    "level": "starter",
+    "tags": [
+      "daily"
+    ],
     "translations": {
-      "ja": "最初は難しかったけど、だんだん楽しくなりました。",
-      "en": "It was hard at first but gradually became fun.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "あとで。",
+      "en": "Later.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_036",
     "scene": "daily_featured",
     "subScene": "expression",
-    "level": "advanced",
-    "tags": ["expression"],
+    "level": "starter",
+    "tags": [
+      "expression"
+    ],
     "translations": {
-      "ja": "彼の言葉に、とても感動しました。",
-      "en": "I was deeply moved by his words.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "そうだね。",
+      "en": "That's right. / I agree.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_037",
     "scene": "daily_featured",
-    "subScene": "dream",
-    "level": "advanced",
-    "tags": ["dream"],
+    "subScene": "expression",
+    "level": "starter",
+    "tags": [
+      "expression"
+    ],
     "translations": {
-      "ja": "日本語をもっと上手に話せるようになりたいです。",
-      "en": "I want to get better at speaking Japanese.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "ほんとう？",
+      "en": "Really?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_038",
     "scene": "daily_featured",
-    "subScene": "dream",
-    "level": "advanced",
-    "tags": ["dream"],
+    "subScene": "expression",
+    "level": "starter",
+    "tags": [
+      "expression"
+    ],
     "translations": {
-      "ja": "いつか日本に住んでみたいな。",
-      "en": "I'd like to live in Japan someday.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "がんばろう！",
+      "en": "Let's do our best!",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_039",
     "scene": "daily_featured",
-    "subScene": "social",
-    "level": "advanced",
-    "tags": ["social"],
+    "subScene": "expression",
+    "level": "starter",
+    "tags": [
+      "expression"
+    ],
     "translations": {
-      "ja": "あの映画、見た？すごく感動したよ。",
-      "en": "Did you see that movie? I was really moved.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "ja": "いっしょに！",
+      "en": "Together!",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   },
   {
     "id": "featured_040",
     "scene": "daily_featured",
     "subScene": "expression",
+    "level": "starter",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "しらない。",
+      "en": "I don't know.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_041",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "beginner",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "好きです。",
+      "en": "I like it. / I like you.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_042",
+    "scene": "daily_featured",
+    "subScene": "daily",
+    "level": "beginner",
+    "tags": [
+      "daily"
+    ],
+    "translations": {
+      "ja": "ありがとうございます。",
+      "en": "Thank you very much.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_043",
+    "scene": "daily_featured",
+    "subScene": "social",
+    "level": "beginner",
+    "tags": [
+      "social"
+    ],
+    "translations": {
+      "ja": "一緒に行きましょう！",
+      "en": "Let's go together!",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_044",
+    "scene": "daily_featured",
+    "subScene": "social",
+    "level": "beginner",
+    "tags": [
+      "social"
+    ],
+    "translations": {
+      "ja": "大丈夫ですか？",
+      "en": "Are you okay?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_045",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "beginner",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "頑張って！",
+      "en": "Do your best!",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_046",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "beginner",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "おいしい！",
+      "en": "Delicious!",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_047",
+    "scene": "daily_featured",
+    "subScene": "self",
+    "level": "beginner",
+    "tags": [
+      "self"
+    ],
+    "translations": {
+      "ja": "日本語を勉強しています。",
+      "en": "I'm studying Japanese.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_048",
+    "scene": "daily_featured",
+    "subScene": "daily",
+    "level": "beginner",
+    "tags": [
+      "daily"
+    ],
+    "translations": {
+      "ja": "よろしくお願いします。",
+      "en": "Nice to meet you. / Please treat me well.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_049",
+    "scene": "daily_featured",
+    "subScene": "social",
+    "level": "beginner",
+    "tags": [
+      "social"
+    ],
+    "translations": {
+      "ja": "また会いましょう。",
+      "en": "Let's meet again.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_050",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "beginner",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "本当にありがとう。",
+      "en": "Thank you so much.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_051",
+    "scene": "daily_featured",
+    "subScene": "social",
+    "level": "beginner",
+    "tags": [
+      "social"
+    ],
+    "translations": {
+      "ja": "元気ですか？",
+      "en": "How are you? / Are you well?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_052",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "beginner",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "元気です！",
+      "en": "I'm great! / I'm doing well!",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_053",
+    "scene": "daily_featured",
+    "subScene": "daily",
+    "level": "beginner",
+    "tags": [
+      "daily"
+    ],
+    "translations": {
+      "ja": "何時ですか？",
+      "en": "What time is it?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_054",
+    "scene": "daily_featured",
+    "subScene": "daily",
+    "level": "beginner",
+    "tags": [
+      "daily"
+    ],
+    "translations": {
+      "ja": "どこですか？",
+      "en": "Where is it?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_055",
+    "scene": "daily_featured",
+    "subScene": "daily",
+    "level": "beginner",
+    "tags": [
+      "daily"
+    ],
+    "translations": {
+      "ja": "いくらですか？",
+      "en": "How much is it?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_056",
+    "scene": "daily_featured",
+    "subScene": "self",
+    "level": "beginner",
+    "tags": [
+      "self"
+    ],
+    "translations": {
+      "ja": "日本語が好きです。",
+      "en": "I like Japanese.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_057",
+    "scene": "daily_featured",
+    "subScene": "self",
+    "level": "beginner",
+    "tags": [
+      "self"
+    ],
+    "translations": {
+      "ja": "少しわかります。",
+      "en": "I understand a little.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_058",
+    "scene": "daily_featured",
+    "subScene": "conversation",
+    "level": "beginner",
+    "tags": [
+      "conversation"
+    ],
+    "translations": {
+      "ja": "ゆっくり話してください。",
+      "en": "Please speak slowly.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_059",
+    "scene": "daily_featured",
+    "subScene": "social",
+    "level": "beginner",
+    "tags": [
+      "social"
+    ],
+    "translations": {
+      "ja": "写真を撮ってもいいですか？",
+      "en": "May I take a photo?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_060",
+    "scene": "daily_featured",
+    "subScene": "social",
+    "level": "beginner",
+    "tags": [
+      "social"
+    ],
+    "translations": {
+      "ja": "友達になりましょう！",
+      "en": "Let's be friends!",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_061",
+    "scene": "daily_featured",
+    "subScene": "social",
+    "level": "beginner",
+    "tags": [
+      "social"
+    ],
+    "translations": {
+      "ja": "今、暇ですか？",
+      "en": "Are you free now?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_062",
+    "scene": "daily_featured",
+    "subScene": "social",
+    "level": "beginner",
+    "tags": [
+      "social"
+    ],
+    "translations": {
+      "ja": "おすすめは何ですか？",
+      "en": "What do you recommend?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_063",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "beginner",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "楽しかったです！",
+      "en": "It was so fun!",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_064",
+    "scene": "daily_featured",
+    "subScene": "hobby",
+    "level": "beginner",
+    "tags": [
+      "hobby"
+    ],
+    "translations": {
+      "ja": "日本のアニメが大好きです。",
+      "en": "I love Japanese anime.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_065",
+    "scene": "daily_featured",
+    "subScene": "social",
+    "level": "beginner",
+    "tags": [
+      "social"
+    ],
+    "translations": {
+      "ja": "好きな食べ物は何ですか？",
+      "en": "What is your favorite food?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_066",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "beginner",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "少し疲れました。",
+      "en": "I'm a little tired.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_067",
+    "scene": "daily_featured",
+    "subScene": "conversation",
+    "level": "beginner",
+    "tags": [
+      "conversation"
+    ],
+    "translations": {
+      "ja": "それはどういう意味ですか？",
+      "en": "What does that mean?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_068",
+    "scene": "daily_featured",
+    "subScene": "daily",
+    "level": "beginner",
+    "tags": [
+      "daily"
+    ],
+    "translations": {
+      "ja": "今日はありがとうございました。",
+      "en": "Thank you so much for today.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_069",
+    "scene": "daily_featured",
+    "subScene": "social",
+    "level": "beginner",
+    "tags": [
+      "social"
+    ],
+    "translations": {
+      "ja": "また連絡しますね。",
+      "en": "I'll be in touch again.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_070",
+    "scene": "daily_featured",
+    "subScene": "social",
+    "level": "beginner",
+    "tags": [
+      "social"
+    ],
+    "translations": {
+      "ja": "一緒に写真を撮りましょう！",
+      "en": "Let's take a photo together!",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_071",
+    "scene": "daily_featured",
+    "subScene": "hobby",
+    "level": "intermediate",
+    "tags": [
+      "hobby"
+    ],
+    "translations": {
+      "ja": "映画を見るのが好きです。",
+      "en": "I like watching movies.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_072",
+    "scene": "daily_featured",
+    "subScene": "dream",
+    "level": "intermediate",
+    "tags": [
+      "dream"
+    ],
+    "translations": {
+      "ja": "日本に行ってみたいです。",
+      "en": "I want to visit Japan.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_073",
+    "scene": "daily_featured",
+    "subScene": "conversation",
+    "level": "intermediate",
+    "tags": [
+      "conversation"
+    ],
+    "translations": {
+      "ja": "もう一度言ってもらえますか？",
+      "en": "Could you say that again?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_074",
+    "scene": "daily_featured",
+    "subScene": "social",
+    "level": "intermediate",
+    "tags": [
+      "social"
+    ],
+    "translations": {
+      "ja": "最近どうですか？",
+      "en": "How have you been lately?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_075",
+    "scene": "daily_featured",
+    "subScene": "daily",
+    "level": "intermediate",
+    "tags": [
+      "daily"
+    ],
+    "translations": {
+      "ja": "少し待ってください。",
+      "en": "Please wait a moment.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_076",
+    "scene": "daily_featured",
+    "subScene": "social",
+    "level": "intermediate",
+    "tags": [
+      "social"
+    ],
+    "translations": {
+      "ja": "どんな音楽が好きですか？",
+      "en": "What kind of music do you like?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_077",
+    "scene": "daily_featured",
+    "subScene": "hobby",
+    "level": "intermediate",
+    "tags": [
+      "hobby"
+    ],
+    "translations": {
+      "ja": "アニメが大好きです。",
+      "en": "I love anime.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_078",
+    "scene": "daily_featured",
+    "subScene": "social",
+    "level": "intermediate",
+    "tags": [
+      "social"
+    ],
+    "translations": {
+      "ja": "週末は何をしますか？",
+      "en": "What do you do on weekends?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_079",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "intermediate",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "また会いたいです。",
+      "en": "I want to see you again.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_080",
+    "scene": "daily_featured",
+    "subScene": "self",
+    "level": "intermediate",
+    "tags": [
+      "self"
+    ],
+    "translations": {
+      "ja": "日本語が少し話せます。",
+      "en": "I can speak a little Japanese.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_081",
+    "scene": "daily_featured",
+    "subScene": "hobby",
+    "level": "intermediate",
+    "tags": [
+      "hobby"
+    ],
+    "translations": {
+      "ja": "好きなアニメのキャラクターは誰ですか？",
+      "en": "Who is your favorite anime character?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_082",
+    "scene": "daily_featured",
+    "subScene": "self",
+    "level": "intermediate",
+    "tags": [
+      "self"
+    ],
+    "translations": {
+      "ja": "日本語で夢を見ることがあります。",
+      "en": "I sometimes dream in Japanese.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_083",
+    "scene": "daily_featured",
+    "subScene": "social",
+    "level": "intermediate",
+    "tags": [
+      "social"
+    ],
+    "translations": {
+      "ja": "この映画、一緒に見に行きませんか？",
+      "en": "Would you like to go see this movie together?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_084",
+    "scene": "daily_featured",
+    "subScene": "social",
+    "level": "intermediate",
+    "tags": [
+      "social"
+    ],
+    "translations": {
+      "ja": "旅行に行くとしたら、どこに行きたいですか？",
+      "en": "If you were to travel where would you want to go?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_085",
+    "scene": "daily_featured",
+    "subScene": "self",
+    "level": "intermediate",
+    "tags": [
+      "self"
+    ],
+    "translations": {
+      "ja": "日本語は難しいけど、面白いです。",
+      "en": "Japanese is difficult but interesting.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_086",
+    "scene": "daily_featured",
+    "subScene": "self",
+    "level": "intermediate",
+    "tags": [
+      "self"
+    ],
+    "translations": {
+      "ja": "友達に日本語を教えてもらっています。",
+      "en": "My friend is teaching me Japanese.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_087",
+    "scene": "daily_featured",
+    "subScene": "social",
+    "level": "intermediate",
+    "tags": [
+      "social"
+    ],
+    "translations": {
+      "ja": "趣味は何ですか？",
+      "en": "What are your hobbies?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_088",
+    "scene": "daily_featured",
+    "subScene": "daily",
+    "level": "intermediate",
+    "tags": [
+      "daily"
+    ],
+    "translations": {
+      "ja": "最近、新しいカフェに行きました。",
+      "en": "I recently went to a new cafe.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_089",
+    "scene": "daily_featured",
+    "subScene": "social",
+    "level": "intermediate",
+    "tags": [
+      "social"
+    ],
+    "translations": {
+      "ja": "日本に来たら、ぜひ連絡してください。",
+      "en": "If you come to Japan please be sure to contact me.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_090",
+    "scene": "daily_featured",
+    "subScene": "conversation",
+    "level": "intermediate",
+    "tags": [
+      "conversation"
+    ],
+    "translations": {
+      "ja": "その話、もっと聞かせてください。",
+      "en": "Tell me more about that.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_091",
+    "scene": "daily_featured",
+    "subScene": "self",
+    "level": "intermediate",
+    "tags": [
+      "self"
+    ],
+    "translations": {
+      "ja": "毎日少しずつ練習することが大切です。",
+      "en": "It's important to practice a little every day.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_092",
+    "scene": "daily_featured",
+    "subScene": "social",
+    "level": "intermediate",
+    "tags": [
+      "social"
+    ],
+    "translations": {
+      "ja": "そのドラマ、見たことありますか？",
+      "en": "Have you ever watched that drama?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_093",
+    "scene": "daily_featured",
+    "subScene": "hobby",
+    "level": "intermediate",
+    "tags": [
+      "hobby"
+    ],
+    "translations": {
+      "ja": "日本の春はとても綺麗です。",
+      "en": "Spring in Japan is very beautiful.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_094",
+    "scene": "daily_featured",
+    "subScene": "self",
+    "level": "intermediate",
+    "tags": [
+      "self"
+    ],
+    "translations": {
+      "ja": "新しい言葉を覚えるのが楽しいです。",
+      "en": "I enjoy learning new words.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_095",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "intermediate",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "彼と話すと、いつも元気になります。",
+      "en": "Talking with him always cheers me up.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_096",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "intermediate",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "一番大切なのは楽しむことだと思います。",
+      "en": "I think the most important thing is to enjoy yourself.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_097",
+    "scene": "daily_featured",
+    "subScene": "self",
+    "level": "intermediate",
+    "tags": [
+      "self"
+    ],
+    "translations": {
+      "ja": "日本語が上手になったと言われました。",
+      "en": "I was told my Japanese has improved.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_098",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "intermediate",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "今日は特別な日ですね。",
+      "en": "Today is a special day isn't it.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_099",
+    "scene": "daily_featured",
+    "subScene": "social",
+    "level": "intermediate",
+    "tags": [
+      "social"
+    ],
+    "translations": {
+      "ja": "一人旅をしたことがありますか？",
+      "en": "Have you ever traveled alone?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_100",
+    "scene": "daily_featured",
+    "subScene": "self",
+    "level": "intermediate",
+    "tags": [
+      "self"
+    ],
+    "translations": {
+      "ja": "来月、日本語の試験を受けます。",
+      "en": "Next month I'm taking a Japanese language exam.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_101",
+    "scene": "daily_featured",
+    "subScene": "expression",
     "level": "advanced",
-    "tags": ["expression"],
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "夢を諦めないでください。",
+      "en": "Please don't give up on your dreams.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_102",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "あなたのことをずっと応援しています。",
+      "en": "I've always been cheering for you.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_103",
+    "scene": "daily_featured",
+    "subScene": "hobby",
+    "level": "advanced",
+    "tags": [
+      "hobby"
+    ],
+    "translations": {
+      "ja": "日本の文化にとても興味があります。",
+      "en": "I'm very interested in Japanese culture.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_104",
+    "scene": "daily_featured",
+    "subScene": "social",
+    "level": "advanced",
+    "tags": [
+      "social"
+    ],
+    "translations": {
+      "ja": "もし時間があれば、一緒にご飯でも行きませんか？",
+      "en": "If you have time would you like to grab a meal?",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_105",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "最初は難しかったけど、だんだん楽しくなりました。",
+      "en": "It was hard at first but gradually became fun.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_106",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "彼の言葉に、とても感動しました。",
+      "en": "I was deeply moved by his words.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_107",
+    "scene": "daily_featured",
+    "subScene": "dream",
+    "level": "advanced",
+    "tags": [
+      "dream"
+    ],
+    "translations": {
+      "ja": "日本語をもっと上手に話せるようになりたいです。",
+      "en": "I want to get better at speaking Japanese.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_108",
+    "scene": "daily_featured",
+    "subScene": "dream",
+    "level": "advanced",
+    "tags": [
+      "dream"
+    ],
+    "translations": {
+      "ja": "いつか日本に住んでみたいな。",
+      "en": "I'd like to live in Japan someday.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_109",
+    "scene": "daily_featured",
+    "subScene": "social",
+    "level": "advanced",
+    "tags": [
+      "social"
+    ],
+    "translations": {
+      "ja": "あの映画、見た？すごく感動したよ。",
+      "en": "Did you see that movie? I was really moved.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_110",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
     "translations": {
       "ja": "一緒にいると、なんか安心するんだよね。",
       "en": "Being with you makes me feel at ease.",
-      "zh": "", "zh_TW": "", "ko": "", "es": "", "fr": "", "de": "", "vi": "", "id": ""
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_111",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "言葉にできない気持ちが、胸の中にあります。",
+      "en": "There are feelings in my heart that I can't put into words.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_112",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "失敗を恐れず、挑戦し続けることが大切です。",
+      "en": "It's important to keep challenging yourself without fear of failure.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_113",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "あなたと出会えて、本当によかったと思っています。",
+      "en": "I'm truly glad to have met you.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_114",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "この経験は、私の人生を大きく変えました。",
+      "en": "This experience greatly changed my life.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_115",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "どんなに辛くても、あなたのそばにいます。",
+      "en": "No matter how hard it gets I'll be by your side.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_116",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "彼女のことが気になって、夜も眠れません。",
+      "en": "I'm so preoccupied with thoughts of her that I can't sleep.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_117",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "今まで支えてくれた人たちに、心から感謝しています。",
+      "en": "I'm truly grateful to those who have supported me.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_118",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "言葉はいらない、ただ一緒にいてほしい。",
+      "en": "I don't need words I just want you to be with me.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_119",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "好きな人ができると、世界が輝いて見えます。",
+      "en": "When you fall for someone the world looks brighter.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_120",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "この街に来るたびに、懐かしい気持ちになります。",
+      "en": "Every time I come to this town I feel nostalgic.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_121",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "自分を信じることが、成功への第一歩です。",
+      "en": "Believing in yourself is the first step to success.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_122",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "どんな状況でも、笑顔を忘れないようにしています。",
+      "en": "No matter what situation I'm in I try not to forget to smile.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_123",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "彼との思い出は、一生忘れられません。",
+      "en": "The memories with him are ones I'll never forget.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_124",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "もっと自分に自信を持てたらいいなと思います。",
+      "en": "I wish I could have more confidence in myself.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_125",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "人生は短い、だから今を大切にしたい。",
+      "en": "Life is short so I want to cherish the present.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_126",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "あなたの言葉が、私に生きる勇気をくれました。",
+      "en": "Your words gave me the courage to keep going.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_127",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "時間が経つにつれて、だんだん気持ちが変わってきました。",
+      "en": "As time passed my feelings gradually changed.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_128",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "自分の気持ちに正直に生きることが、幸せへの近道だと思います。",
+      "en": "Living honestly with your feelings is the shortcut to happiness.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_129",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "毎日少しずつでも前に進めば、必ず夢は叶います。",
+      "en": "If you keep moving forward little by little your dreams will surely come true.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
+    }
+  },
+  {
+    "id": "featured_130",
+    "scene": "daily_featured",
+    "subScene": "expression",
+    "level": "advanced",
+    "tags": [
+      "expression"
+    ],
+    "translations": {
+      "ja": "彼女の笑顔を見ると、どんな辛いことも忘れられます。",
+      "en": "When I see her smile I can forget any hardship.",
+      "zh": "",
+      "zh_TW": "",
+      "ko": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "vi": "",
+      "id": ""
     }
   }
 ]
