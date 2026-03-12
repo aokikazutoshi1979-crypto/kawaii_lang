@@ -190,12 +190,15 @@ class _DailyPracticeScreenState extends SubscriptionState<DailyPracticeScreen> {
     _karaokeTimer?.cancel();
     if (!mounted) return;
     setState(() => _karaokeIndex = 0);
-    final total = text.runes.length;
-    if (total == 0 || duration.inMilliseconds <= 0) return;
-    final intervalMs = (duration.inMilliseconds / total).round().clamp(50, 1000);
+    // インターバルは発音テキスト（ふりがな、句読点なし）の長さで計算
+    final pronunciationLength = text.runes.length;
+    // カラオケの最大インデックスは表示テキスト（句読点込み）の文字数
+    final displayLength = _japaneseText.runes.length;
+    if (displayLength == 0 || duration.inMilliseconds <= 0) return;
+    final intervalMs = (duration.inMilliseconds / (pronunciationLength > 0 ? pronunciationLength : displayLength)).round().clamp(50, 1000);
     _karaokeTimer = Timer.periodic(Duration(milliseconds: intervalMs), (timer) {
       if (!mounted) { timer.cancel(); return; }
-      if (_karaokeIndex >= total) { timer.cancel(); return; }
+      if (_karaokeIndex >= displayLength) { timer.cancel(); return; }
       setState(() => _karaokeIndex++);
     });
   }
