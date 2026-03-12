@@ -14,8 +14,8 @@ class DailyPracticeService {
   static const _keyCountDate = 'daily_practice_count_date';
   static const _keyCount = 'daily_practice_count';
 
-  // 除外するファイル名
-  static const _excludedFiles = {'scenes.json', 'manifest.json', 'languages.json'};
+  // Today's Practice で使用するファイル（allowlist方式）
+  static const _allowedFile = 'assets/questions/daily_featured.json';
 
   String _todayString() {
     final now = DateTime.now();
@@ -112,24 +112,15 @@ class DailyPracticeService {
   // ---- private helpers ----
 
   Future<List<Map<String, dynamic>>> _loadAllQuestions() async {
-    final AssetManifest manifest = await AssetManifest.loadFromAssetBundle(rootBundle);
-    final keys = manifest.listAssets().where((key) {
-      if (!key.startsWith('assets/questions/') || !key.endsWith('.json')) return false;
-      final fileName = key.split('/').last;
-      return !_excludedFiles.contains(fileName);
-    });
-
     final List<Map<String, dynamic>> all = [];
-    for (final key in keys) {
-      try {
-        final raw = await rootBundle.loadString(key);
-        final list = jsonDecode(raw) as List<dynamic>;
-        for (final item in list) {
-          if (item is Map<String, dynamic>) all.add(item);
-        }
-      } catch (_) {
-        // 読み込み失敗は無視して続行
+    try {
+      final raw = await rootBundle.loadString(_allowedFile);
+      final list = jsonDecode(raw) as List<dynamic>;
+      for (final item in list) {
+        if (item is Map<String, dynamic>) all.add(item);
       }
+    } catch (_) {
+      // 読み込み失敗は無視
     }
     return all;
   }
